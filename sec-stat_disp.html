@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Dispersion</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Contemporary Mathematics">
+<meta property="book:author" content="Sunil Karna">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="math110.html"><span class="title">Contemporary Mathematics:</span> <span class="subtitle">An Introduction</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-stat_centerT.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-stat.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec_stat_example.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numb.html" class="internal"><span class="codenumber">1</span> <span class="title">Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-num_sys.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Classification of Numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-numb_example.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Example</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_first.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-set.html" class="internal"><span class="codenumber">2</span> <span class="title">Set Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-set_descrp.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Description</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleA.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Example A</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-set_type.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Types of Sets</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_second.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Exercise A</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-subset.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Subset</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-subset.html#subsec-superset" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Superset</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-subset.html#subsec-power_set" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Power Set</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-subset.html#subsec-universal" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Universal Set</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-subset.html#subsubsec-intervals" class="internal"><span class="codenumber">2.5.3.1</span> <span class="title">Intervals, for <span class="process-math">\(a, b \in \mathbb R\)</span></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-subset.html#subsec-" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Disjoint Sets:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondb.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise B</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set_op.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Operations on Sets</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-venn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Venn Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.2</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-vennD_shade" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Shading of Venn Diagram</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Example B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Exercise C</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-count.html" class="internal"><span class="codenumber">3</span> <span class="title">Principle of Counting</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-count_add.html" class="internal"><span class="codenumber">3.1</span> <span class="title">The Addition Principle</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_add-exampleA.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Example A</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-count_prod.html" class="internal"><span class="codenumber">3.3</span> <span class="title">The Multiplication Principle</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_prod-exampleB.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Example B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_third.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-perm_comb.html" class="internal"><span class="codenumber">4</span> <span class="title">Permutation and Combination</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-perm.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Permutations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-fact.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Factorial</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-perm_example.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Example A</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fourthA.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Exercise A</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-comb.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Combinations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-comb_example.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Example B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fourthB.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Exercise B</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-prob.html" class="internal"><span class="codenumber">5</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-prob_int.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-prob_int.html#subsec-prob_set" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Useful Set-Formulae for Probability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-prob_int.html#subsec-cond_prob" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Conditional probability:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-prob_exampleA.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Example A</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fifth.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-stat.html" class="internal"><span class="codenumber">6</span> <span class="title">Statistics</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-stat_int.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Data Analysis</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_int.html#subsec-pop_samp" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Population and Sample</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_int.html#subsec-dataTable" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Data Table</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-stat_centerT.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Central Tendency</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-mean" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Mean</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-rawD" class="internal"><span class="codenumber">6.2.1.1</span> <span class="title">Raw Data (individual series):</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-discrD" class="internal"><span class="codenumber">6.2.1.2</span> <span class="title">Discrete Series:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-contS" class="internal"><span class="codenumber">6.2.1.3</span> <span class="title">Continuous Series:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-combM" class="internal"><span class="codenumber">6.2.1.4</span> <span class="title">Combined Mean</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-mean_correct" class="internal"><span class="codenumber">6.2.1.5</span> <span class="title">Mean Correction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-mean_prop" class="internal"><span class="codenumber">6.2.1.6</span> <span class="title">Properties of mean</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-median" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Median</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-med_is" class="internal"><span class="codenumber">6.2.2.1</span> <span class="title">Raw Data (individual series)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-med_ds" class="internal"><span class="codenumber">6.2.2.2</span> <span class="title">Discrete Series (data)</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-med_cs" class="internal"><span class="codenumber">6.2.2.3</span> <span class="title">Continuous Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-med_prop" class="internal"><span class="codenumber">6.2.2.4</span> <span class="title">Properties of Median</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-mode" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Mode</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-mod_is" class="internal"><span class="codenumber">6.2.3.1</span> <span class="title">Individual Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-mod_ds" class="internal"><span class="codenumber">6.2.3.2</span> <span class="title">Discrete Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-mod_cs" class="internal"><span class="codenumber">6.2.3.3</span> <span class="title">Continuous Series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-rel_mmm" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Relation between Mean, Median, and Mode:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-stat_disp.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Dispersion</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsec-disp_msr" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Measurement of Dispersion</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-stat_disp.html#subsec-range" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Range</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-rng_is" class="internal"><span class="codenumber">6.3.2.1</span> <span class="title">Individual Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-rng_ds" class="internal"><span class="codenumber">6.3.2.2</span> <span class="title">Discrete Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-rng_cs" class="internal"><span class="codenumber">6.3.2.3</span> <span class="title">Continuous Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-rng_merit" class="internal"><span class="codenumber">6.3.2.4</span> <span class="title">Merits of Range:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-rng_limit" class="internal"><span class="codenumber">6.3.2.5</span> <span class="title">Limits of Range:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-rng_use" class="internal"><span class="codenumber">6.3.2.6</span> <span class="title">Uses of Range</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-stat_disp.html#subsec-qrt_dev" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Quartile Deviation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-qd_is" class="internal"><span class="codenumber">6.3.3.1</span> <span class="title">Individual series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-qd_ds" class="internal"><span class="codenumber">6.3.3.2</span> <span class="title">Discrete series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-qd_cs" class="internal"><span class="codenumber">6.3.3.3</span> <span class="title">Continuous series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-stat_disp.html#subsec-st_dev" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Standard Deviation, <span class="process-math">\(\sigma\)</span> and Variance, <span class="process-math">\(\sigma^2\)</span></span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-sd_is" class="internal"><span class="codenumber">6.3.4.1</span> <span class="title">Individual Series</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-sd_dscs" class="internal"><span class="codenumber">6.3.4.2</span> <span class="title">Discrete Series and Continuous Series</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-stat_disp.html#subsec-mean_dev" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Mean Deviation</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-m_devmean" class="internal"><span class="codenumber">6.3.5.1</span> <span class="title">Mean deviation from mean</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_stat_example.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Example</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_sixth.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="codenumber">B</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Symbols</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="codenumber">D</span> <span class="title">Answers</span></a></div></li>
+<li class="toc-item toc-references"><div class="toc-title-box"><a href="refs-list.html" class="internal"><span class="title">References</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-8.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-stat_disp"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.3</span><span class="space"> </span><span class="title">Dispersion</span>
+</h2>
+<section class="introduction" id="sec-stat_disp-2"><div class="para logical" id="sec-stat_disp-2-1">
+<div class="para">It is a measure of the extent to which the observations vary from some central value (mean, median, mode). It shows how the data are spread out (dispersed) from the central value. In simple terms, it shows how squeezed or scattered the variable is. For example: the mean of <span class="process-math">\(2,4,9\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+mean=\frac{\sum x}{n} = \frac{2+4+9}{3} =5.
+\end{equation*}
+</div>
+<div class="para">Here, the dispersion shows how far are the observations from the mean (central value). The difference in each data point from the central value is represents deviation of the data.</div>
+</div> <div class="para logical" id="sec-stat_disp-2-2">
+<div class="para">Suppose I have the three data set as shown below:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c|c|c} 
+\circ &amp; Series A (x) &amp; Series B (x) &amp; Series C (x) \\ \hline 
+1 &amp; 100 &amp; 98    &amp; 1 \\ 
+2 &amp;  100 &amp; 99    &amp; 2 \\ 
+3 &amp;  100 &amp; 100   &amp; 3 \\ 
+4 &amp;  100 &amp; 101   &amp; 4 \\ 
+5 &amp;  100 &amp; 102   &amp; 490 \\ \hline
+Total &amp;  500 &amp; 500   &amp; 500 \\  \hline 
+\bar{x} &amp;  100 &amp; 100   &amp; 100 \\  \hline 
+Dispersion &amp;  No &amp; Less   &amp; High \\  \hline 
+\end{array}
+\end{equation*}
+</div>
+<div class="para">The data shows the difference in <span class="process-math">\(x\)</span> and <span class="process-math">\(\bar{x}\text{.}\)</span> the observations in series A does not vary at all from the central value (mean), there is some variation in series B, b ut no observations are even close to the mean in series C.</div>
+</div></section><section class="subsection" id="subsec-disp_msr"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="space"> </span><span class="title">Measurement of Dispersion</span>
+</h3>
+<div class="para" id="subsec-disp_msr-2">Dispersion can be measured using two different approaches.</div>
+<div class="para logical" id="subsec-disp_msr-3">
+<ol class="decimal">
+<li id="subsec-disp_msr-3-1-1">
+<span class="heading"><span class="title">Absolute Measure (same unit).</span></span><div class="para logical" id="subsec-disp_msr-3-1-1-2">
+<div class="para">Absolute measures of dispersion use the original units of data, and are most useful on understanding the dispersion within the context of your experiment and measurements.</div>
+<ol class="lower-roman">
+<li id="subsec-disp_msr-3-1-1-2-1-1"><div class="para" id="subsec-disp_msr-3-1-1-2-1-1-1">Range</div></li>
+<li id="subsec-disp_msr-3-1-1-2-1-2"><div class="para" id="subsec-disp_msr-3-1-1-2-1-2-1">Quartile Deviation</div></li>
+<li id="subsec-disp_msr-3-1-1-2-1-3"><div class="para" id="subsec-disp_msr-3-1-1-2-1-3-1">Mean Deviation</div></li>
+<li id="subsec-disp_msr-3-1-1-2-1-4"><div class="para" id="subsec-disp_msr-3-1-1-2-1-4-1">Standard Deviation</div></li>
+<li id="subsec-disp_msr-3-1-1-2-1-5"><div class="para" id="subsec-disp_msr-3-1-1-2-1-5-1">Variance</div></li>
+</ol>
+</div>
+</li>
+<li id="subsec-disp_msr-3-1-2">
+<span class="heading"><span class="title">Relative Measure (unit free).</span></span><div class="para logical" id="subsec-disp_msr-3-1-2-2">
+<div class="para">In order to compare separate data sets or different experiments that might use different units and the difference in their central values are very high, we use relative measures.</div>
+<ol class="lower-roman">
+<li id="subsec-disp_msr-3-1-2-2-1-1"><div class="para" id="subsec-disp_msr-3-1-2-2-1-1-1">Coefficient of Range</div></li>
+<li id="subsec-disp_msr-3-1-2-2-1-2"><div class="para" id="subsec-disp_msr-3-1-2-2-1-2-1">Coefficient of Quartile Deviation</div></li>
+<li id="subsec-disp_msr-3-1-2-2-1-3"><div class="para" id="subsec-disp_msr-3-1-2-2-1-3-1">Coefficient of Mean Deviation</div></li>
+<li id="subsec-disp_msr-3-1-2-2-1-4"><div class="para" id="subsec-disp_msr-3-1-2-2-1-4-1">Coefficient of Standard Deviation</div></li>
+<li id="subsec-disp_msr-3-1-2-2-1-5"><div class="para" id="subsec-disp_msr-3-1-2-2-1-5-1">Coefficient of Variance</div></li>
+</ol>
+</div>
+</li>
+</ol>
+<div class="para">
+<dfn class="terminology">Note:</dfn> Low dospersion means more stable observations.</div>
+</div></section><section class="subsection" id="subsec-range"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="space"> </span><span class="title">Range</span>
+</h3>
+<section class="introduction" id="subsec-range-2"><div class="para" id="subsec-range-2-1">Range is the difference between the highest and the lowest value of observations for a given frequency distribution. The coefficient of range on the other hand is the ratio of difference between the highest and lowest value of observations to the sum of highest and lowest value of observations.</div> <div class="para logical" id="subsec-range-2-2"><div class="displaymath process-math" id="eqn-range1">
+\begin{equation}
+Range = L - S \tag{6.3.1}
+\end{equation}
+</div></div> <div class="para logical" id="subsec-range-2-3">
+<div class="displaymath process-math" id="eqn-co_range1">
+\begin{equation}
+\text{Coefficient of Range} = \left(\frac{L-S}{L+S}\right) \times 100\%\tag{6.3.2}
+\end{equation}
+</div>
+<div class="para">Here, <span class="process-math">\(L = \)</span> largest observation, and <span class="process-math">\(S = \)</span> smallest observation.</div>
+</div></section><section class="subsubsection" id="subsubsec-rng_is"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.1</span><span class="space"> </span><span class="title">Individual Series</span>
+</h4>
+<article class="example example-like" id="subsubsec-rng_is-2"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-rng_is-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+13,20,7,15, 29, 35
+\end{equation*}
+</div></div>
+<div class="solutions"><details id="subsubsec-rng_is-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsubsec-rng_is-2-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+Range = 35-7 =28.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Coefficient of Range}  = \left(\frac{35-7}{35+7}\right) \times 100 = 66.67\%
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="example example-like" id="subsubsec-rng_is-3"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-rng_is-3-1-1"><div class="displaymath process-math">
+\begin{equation*}
+50,69,92,75,45,20,30
+\end{equation*}
+</div></div>
+<div class="solutions"><details id="subsubsec-rng_is-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsubsec-rng_is-3-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+Range = 92-20 =72.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Coefficient of Range}  = \left(\frac{92-20}{92+20}\right) \times 100 = 64.28\%
+\end{equation*}
+</div>
+</div></div></details></div></article></section><section class="subsubsection" id="subsubsec-rng_ds"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.2</span><span class="space"> </span><span class="title">Discrete Series</span>
+</h4>
+<article class="example example-like" id="subsubsec-rng_ds-2"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-rng_ds-2-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+x_i &amp; f_i  \\ \hline 
+5 &amp; 3 \\ 
+10 &amp; 7 \\ 
+15 &amp; 5 \\ 
+20 &amp; 12 \\ 
+25 &amp; 9 
+\end{array}
+\end{equation*}
+</div></div>
+<div class="solutions"><details id="subsubsec-rng_ds-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsubsec-rng_ds-2-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+Range = 25-5 =20.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Coefficient of Range}  = \left(\frac{25-5}{25+5}\right) \times 100 = 66.67\%
+\end{equation*}
+</div>
+</div></div></details></div></article><article class="example example-like" id="subsubsec-rng_ds-3"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-rng_ds-3-1-1"><div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+x_i &amp; f_i  \\ \hline 
+133 &amp; 9 \\ 
+180 &amp; 2 \\ 
+80 &amp; 4 \\ 
+95 &amp; 5 \\ 
+40 &amp; 3  \\
+132 &amp; 10 
+\end{array}
+\end{equation*}
+</div></div>
+<div class="solutions"><details id="subsubsec-rng_ds-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="subsubsec-rng_ds-3-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+Range = 180-40=140.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Coefficient of Range}  = \left(\frac{180-40}{180+40}\right) \times 100 = 63.63\%
+\end{equation*}
+</div>
+</div></div></details></div></article></section><section class="subsubsection" id="subsubsec-rng_cs"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.3</span><span class="space"> </span><span class="title">Continuous Series</span>
+</h4>
+<div class="para logical" id="subsubsec-rng_cs-2"><ol class="decimal">
+<li id="subsubsec-rng_cs-2-1-1">
+<div class="para" id="subsubsec-rng_cs-2-1-1-1">Exclusive Series</div>
+<div class="para logical" id="subsubsec-rng_cs-2-1-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+class &amp; f_i  \\ \hline 
+20-25 &amp; 2 \\ 
+25-30 &amp; 5 \\ 
+30-35 &amp; 9 \\ 
+35-40 &amp; 4 \\ 
+40-45 &amp; 7 
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Range = 45-20=25.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Coefficient of Range}  = \left(\frac{45-20}{45+20}\right) \times 100 = 38.46\%
+\end{equation*}
+</div>
+</div>
+</li>
+<li id="subsubsec-rng_cs-2-1-2">
+<div class="para" id="subsubsec-rng_cs-2-1-2-1">Inclusive Series</div>
+<div class="para logical" id="subsubsec-rng_cs-2-1-2-2"><div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+class &amp; f_i  \\ \hline 
+20-24 &amp; 2 \\ 
+25-29 &amp; 5 \\ 
+30-34 &amp; 9 \\ 
+35-39 &amp; 4 \\ 
+40-44 &amp; 7 
+\end{array}
+\end{equation*}
+</div></div>
+<div class="para logical" id="subsubsec-rng_cs-2-1-2-3">
+<div class="para">First convert the inclusive series into exclusive one.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+class &amp; f_i  \\ \hline 
+19.5-24.5 &amp; 2 \\ 
+24.5-29.5 &amp; 5 \\ 
+29.5-34.5 &amp; 9 \\ 
+34.5-39.5 &amp; 4 \\ 
+39.5-44.5 &amp; 7 
+\end{array}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Range = 44.5-19.5=25.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Coefficient of Range}  = \left(\frac{44.5-19.5}{44.5+19.5}\right) \times 100 = 39.06\%
+\end{equation*}
+</div>
+</div>
+</li>
+</ol></div></section><section class="subsubsection" id="subsubsec-rng_merit"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.4</span><span class="space"> </span><span class="title">Merits of Range:</span>
+</h4>
+<div class="para logical" id="subsubsec-rng_merit-2"><ol class="decimal">
+<li id="subsubsec-rng_merit-2-1-1"><div class="para" id="subsubsec-rng_merit-2-1-1-1">Among all the methods of studing dispersion range is the simplest to understand and easiest to compare.</div></li>
+<li id="subsubsec-rng_merit-2-1-2"><div class="para" id="subsubsec-rng_merit-2-1-2-1">Range is quickest measure of dispersion.</div></li>
+</ol></div></section><section class="subsubsection" id="subsubsec-rng_limit"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.5</span><span class="space"> </span><span class="title">Limits of Range:</span>
+</h4>
+<div class="para logical" id="subsubsec-rng_limit-2"><ol class="decimal">
+<li id="subsubsec-rng_limit-2-1-1"><div class="para" id="subsubsec-rng_limit-2-1-1-1">Range is not based on each and every observation of series.</div></li>
+<li id="subsubsec-rng_limit-2-1-2"><div class="para" id="subsubsec-rng_limit-2-1-2-1">It is most affected by sampling fluctuations.</div></li>
+<li id="subsubsec-rng_limit-2-1-3"><div class="para" id="subsubsec-rng_limit-2-1-3-1">Range is most unreliable as a guide of the dispersion.</div></li>
+<li id="subsubsec-rng_limit-2-1-4"><div class="para" id="subsubsec-rng_limit-2-1-4-1">Range cannot be calculated for the open-end classification.</div></li>
+</ol></div></section><section class="subsubsection" id="subsubsec-rng_use"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.6</span><span class="space"> </span><span class="title">Uses of Range</span>
+</h4>
+<div class="para logical" id="subsubsec-rng_use-2"><ol class="decimal">
+<li id="subsubsec-rng_use-2-1-1"><div class="para" id="subsubsec-rng_use-2-1-1-1">Quality control</div></li>
+<li id="subsubsec-rng_use-2-1-2"><div class="para" id="subsubsec-rng_use-2-1-2-1">Fluctuations in the share prices</div></li>
+<li id="subsubsec-rng_use-2-1-3"><div class="para" id="subsubsec-rng_use-2-1-3-1">Weather forecast</div></li>
+<li id="subsubsec-rng_use-2-1-4"><div class="para" id="subsubsec-rng_use-2-1-4-1">Everyday life observations</div></li>
+</ol></div></section></section><section class="subsection" id="subsec-qrt_dev"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="space"> </span><span class="title">Quartile Deviation</span>
+</h3>
+<section class="introduction" id="subsec-qrt_dev-2"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="generated/latex-image/subsec-qrt_dev-2-1.svg" role="img" class="contained"></div> <div class="para" id="subsec-qrt_dev-2-2">Quartile deviation is a statistic that measures the deviation in the middle of the data. Quartile deviation is also referred to as the semi interquartile range and is half of the difference between the third quartile and the first quartile value. Quartiles divide a group of observations into four equal parts. The first quartile, denoted by <span class="process-math">\(Q_1\)</span> is defined as the <span class="process-math">\(25^{th}\)</span> percentile, the second quartile (<span class="process-math">\(Q_2\)</span>) is defined as the <span class="process-math">\(50^{th}\)</span> percentile (median), and the third quartile (<span class="process-math">\(Q_3\)</span>) is defined as the <span class="process-math">\(75^{th}\)</span> percentile.</div> <div class="para logical" id="subsec-qrt_dev-2-3">
+<div class="para">The formula for quartile deviation of the data is</div>
+<div class="displaymath process-math" id="eqn-qd1">
+\begin{equation}
+Q.D = \frac{Q_3 - Q_1}{2}.\tag{6.3.3}
+\end{equation}
+</div>
+</div> <div class="para" id="subsec-qrt_dev-2-4">The coefficient of quartile deviation is a measure of dispersion, which is used to describe the spread or distribution of data.</div> <div class="para logical" id="subsec-qrt_dev-2-5">
+<div class="para">Coefficient of quartile deviation,</div>
+<div class="displaymath process-math" id="eqn-cqd1">
+\begin{equation}
+CQD = \left(\frac{Q_3 - Q_1}{Q_3 + Q_1}\right) \times 100\%.\tag{6.3.4}
+\end{equation}
+</div>
+<div class="para">Here, <span class="process-math">\(Q_1\)</span> is first quartile (or, lower quartile),</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_1 = [(n+1)/4]^{th} \text{ item }
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\(Q_2\)</span> is second quartile (or, median),</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_2 = [(n+1)/2]^{th} \text{ item }
+\end{equation*}
+</div>
+<div class="para">and <span class="process-math">\(Q_3\)</span> is third quartile (or, upper quartile)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_3 = [3(n+1)/4]^{th} \text{ item }
+\end{equation*}
+</div>
+<div class="para">Where <span class="process-math">\(n\)</span> represents the total number of observations in the given data set.</div>
+</div></section><section class="subsubsection" id="subsubsec-qd_is"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.3.1</span><span class="space"> </span><span class="title">Individual series</span>
+</h4>
+<div class="para logical" id="subsubsec-qd_is-2">
+<div class="displaymath process-math">
+\begin{equation*}
+2,7,9,14,1
+\end{equation*}
+</div>
+<div class="para">arrange in order</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1, 2,7,9,14
+\end{equation*}
+</div>
+<div class="para">Here <span class="process-math">\(Q_2= 7\text{,}\)</span> which is median, <span class="process-math">\(Q_1= 2\)</span> is first quartile, and <span class="process-math">\(Q_3 = 9\)</span> is third quartile.</div>
+</div>
+<article class="example example-like" id="subsubsec-qd_is-3"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.5</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-qd_is-3-1-1">
+<div class="para">Find the quartiles and quartile deviation of the following data:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+17, 2, 7, 27, 15, 5, 14, 8, 10, 24, 48, 10, 8, 7, 18, 28
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details id="subsubsec-qd_is-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsubsec-qd_is-3-2-1">
+<div class="para">First arrange the data into order</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2, 5, 7, 7, 8, 8, 10, 10, 14, 15, 17, 18, 24, 27, 28, 48
+\end{equation*}
+</div>
+<div class="para">Number of data values = <span class="process-math">\(n = 16\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="subsubsec-qd_is-3-2-2">
+<div class="para">Median of the even number data set using <a href="sec-stat_centerT.html#eqn-median2" class="xref" data-knowl="./knowl/xref/eqn-median2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.7">(6.2.7)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-median2.html" id="subsubsec-qd_is-3-2-2-2">
+\begin{align*}
+Q_2  \amp = \frac{1}{2}\{\left( \frac{n}{2}\right)^{th} term + \left( \frac{n}{2}+1\right)^{th} term \} \\
+\amp = \frac{1}{2}\{ 8^{th} term +  9^{th} term \} \\
+\therefore Q_2 \amp = \frac{10+14}{2} = 12. 
+\end{align*}
+</div>
+</div> <div class="para logical" id="subsubsec-qd_is-3-2-3">
+<div class="para">Now, lower half of the data is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2, 5, 7, 7, 8, 8, 10, 10 
+\end{equation*}
+</div>
+<div class="para">(even number of observations)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_1 = \text{ Median of lower half of the data } 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= (1/2)[4^{th} \text{ term }   + 5^{th} \text{ term}] = \frac{7+8}{2} =7.5.
+\end{equation*}
+</div>
+</div> <div class="para logical" id="subsubsec-qd_is-3-2-4">
+<div class="para">Also, the upper half of the data is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+14, 15, 17, 18, 24, 27, 28, 48
+\end{equation*}
+</div>
+<div class="para">(even number of observations)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_3 = \text{ Median of upper half of the data } 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= (1/2)[4^{th} \text{ term } + 5^{th} \text{ term}]= \frac{18+24}{2} =21.
+\end{equation*}
+</div>
+</div> <div class="para logical" id="subsubsec-qd_is-3-2-5">
+<div class="para">Therefore the Quartile deviation,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-qd1.html">
+\begin{equation*}
+QD = \frac{1}{2}(Q_3-Q_1) = \frac{21-7.5}{2}=6.75.
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-qd1" class="xref" data-knowl="./knowl/xref/eqn-qd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.3">(6.3.3)</a>.</div>
+</div> <div class="para logical" id="subsubsec-qd_is-3-2-6">
+<div class="para">and the coefficient of Quartile deviation using <a href="sec-stat_disp.html#eqn-cqd1" class="xref" data-knowl="./knowl/xref/eqn-cqd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.4">(6.3.4)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-cqd1.html">
+\begin{equation*}
+CQD = \frac{Q_3-Q_1}{Q_3+Q_1}(100) =\frac{21-7.5}{21+7.5}(100) = 47.36\%.
+\end{equation*}
+</div>
+</div>
+</div></details></div></article></section><section class="subsubsection" id="subsubsec-qd_ds"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.3.2</span><span class="space"> </span><span class="title">Discrete series</span>
+</h4>
+<div class="para logical" id="subsubsec-qd_ds-2">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+x &amp; f_i  \\ \hline 
+5 &amp; 2 \\ 
+9 &amp; 2 \\ 
+2 &amp; 1 \\ 
+10 &amp; 5 \\ 
+15 &amp; 3 
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Arrange the table into asscending or discending order</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c|c} 
+x &amp; f_i &amp; CF \\ \hline 
+2 &amp; 1 &amp; 1\\ 
+5 &amp; 2 &amp; 3\\ 
+9 &amp; 2 &amp; 5  \\ 
+10 &amp; 5 &amp; 10 \\ 
+15 &amp; 3 &amp; 13 \\ \hline
+sum &amp; 13 &amp;  
+\end{array}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_ds-3">
+<div class="para">For first quartile,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_1 = \left( \frac{n+1}{4}\right)^{th} \text{ item} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or, \quad Q_1 = \left( \frac{13+1}{4}\right)^{th} \text{ item} = 3.5^{th}  \text{ item} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,  \quad Q_1 =  3^{rd}  \text{ item} + 0.5(4^{th} - 3^{rd})  \text{ item} =5+0.5(9-5) =7
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_ds-4">
+<div class="para">For third quartile,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_3 = 3\left( \frac{n+1}{4}\right)^{th} \text{ item} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or, \quad Q_3 = 3\left( \frac{13+1}{4}\right)^{th} \text{ item} = 10.5^{th}  \text{ item} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,  \quad Q_3 =  10^{th}  \text{ item} + 0.5(11^{th} - 10^{th})  \text{ item} = 10+0.5(15-10) =12.5
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_ds-5">
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+QD = \frac{12.5-7}{2} =2.75
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+and, \quad CQD = \frac{12.5-7}{12.5+7}\times 100 =28.2\%.
+\end{equation*}
+</div>
+</div>
+<article class="example example-like" id="subsubsec-qd_ds-6"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.6</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-qd_ds-6-1-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+x_i &amp; f_i  \\ \hline 
+5 &amp; 6 \\ 
+10 &amp; 4 \\ 
+15 &amp; 9 \\ 
+20 &amp; 5 \\ 
+25 &amp; 6 \\
+30 &amp; 2 
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Find Cumulative frequency</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c|c} 
+x_i &amp; f_i  &amp; CF \\ \hline 
+5 &amp; 6 &amp; 6 \\ 
+10 &amp; 4 &amp; 10 \\ 
+15 &amp; 9 &amp; 19 \\ 
+20 &amp; 5 &amp; 24 \\ 
+25 &amp; 6 &amp; 30 \\
+30 &amp; 2  &amp; 32 \\ \hline 
+sum &amp; 32  &amp; 
+\end{array}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="subsubsec-qd_ds-6-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+Q_1 = \left( \frac{n+1}{4}\right)^{th} \text{ item} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or, \quad Q_1 = \left( \frac{32+1}{4}\right)^{th} \text{ item} = 8.25^{th}  \text{ item} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,  \quad Q_1 =  8^{th}  \text{ item} + 0.25(9^{th} - 8^{th})  \text{ item} =10+0.25(10-10) =10.
+\end{equation*}
+</div>
+</div> <div class="para logical" id="subsubsec-qd_ds-6-1-3">
+<div class="displaymath process-math">
+\begin{equation*}
+Q_3 = 3\left( \frac{n+1}{4}\right)^{th} \text{ item} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or, \quad Q_3 = 3\left( \frac{32+1}{4}\right)^{th} \text{ item} = 24.75^{th}  \text{ item} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+or,  \quad Q_3 =  24^{th}  \text{ item} + 0.75(25^{th} - 24^{th})  \text{ item} = 20+0.75(25-20) = 23.75.
+\end{equation*}
+</div>
+</div> <div class="para logical" id="subsubsec-qd_ds-6-1-4">
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+QD = \frac{23.75-10}{2} =6.875.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+and, \quad CQD = \frac{23.75-10}{23.75+10}\times 100 =40.74\%.
+\end{equation*}
+</div>
+</div></article></section><section class="subsubsection" id="subsubsec-qd_cs"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.3.3</span><span class="space"> </span><span class="title">Continuous series</span>
+</h4>
+<div class="para logical" id="subsubsec-qd_cs-2">
+<div class="para">Quartile Deviation for Grouped Data:</div>
+<div class="displaymath process-math" id="eqn-gqd1">
+\begin{equation}
+Q_r = L+\frac{1}{f}\left[r\left(\frac{N}{4}\right)-CF \right]\times h\tag{6.3.5}
+\end{equation}
+</div>
+</div>
+<div class="para" id="subsubsec-qd_cs-3">
+<span class="process-math">\(Q_r =\)</span> the <span class="process-math">\(r^{th} \)</span> quartile,</div>
+<div class="para" id="subsubsec-qd_cs-4">
+<span class="process-math">\(L =\)</span> the lower limit of the quartile class,</div>
+<div class="para" id="subsubsec-qd_cs-5">
+<span class="process-math">\(h = \)</span> class interval,</div>
+<div class="para" id="subsubsec-qd_cs-6">
+<span class="process-math">\(f =\)</span> the frequency of the quartile class,</div>
+<div class="para" id="subsubsec-qd_cs-7">
+<span class="process-math">\(CF = \)</span>the cumulative frequency of the class preceding the quartile class,</div>
+<div class="para" id="subsubsec-qd_cs-8">
+<span class="process-math">\(N = \sum f \)</span> Number of observations in the given data set.</div>
+<div class="para logical" id="subsubsec-qd_cs-9">
+<div class="para"><code class="code-inline tex2jax_ignore">&lt;Exclusive series:&gt;</code></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c|c} 
+class &amp; f_i  &amp; CF \\ \hline 
+0-10 &amp; 3 &amp; 3 \\ 
+10-20 &amp; 9 &amp; 12 \\ 
+20-30 &amp; 12 &amp; 24 \\ 
+30-40 &amp; 11 &amp; 35 \\ 
+40-50 &amp; 5 &amp; 40 \\
+50-60 &amp; 6  &amp; 46 \\ \hline 
+sum &amp; 46  &amp; 
+\end{array}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-10">
+<div class="para">Class selection for <span class="process-math">\(Q_1\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_1 =\frac{N}{4} = 46/4 = 11.5^{th} item.
+\end{equation*}
+</div>
+<div class="para">modal Class for <span class="process-math">\(Q_1\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mbox{10-20 | 9 | 12 } 
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-11">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-gqd1.html">
+\begin{equation*}
+Q_1 = 10 + \left(\frac{11.5-3}{9}\right) \times 10 = 19.44.
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-gqd1" class="xref" data-knowl="./knowl/xref/eqn-gqd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.5">(6.3.5)</a>
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-12">
+<div class="para">Class selection for <span class="process-math">\(Q_3\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_3 =3\left(\frac{N}{4}\right) = 3\times 11.5 = 34.5^{th} item.
+\end{equation*}
+</div>
+<div class="para">modal Class for <span class="process-math">\(Q_3\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mbox{30-40 | 11 | 35  } 
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-13">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-gqd1.html">
+\begin{equation*}
+Q_3 = 30 + \left(\frac{34.5-24}{11}\right) \times 10 = 39.54.
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-gqd1" class="xref" data-knowl="./knowl/xref/eqn-gqd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.5">(6.3.5)</a>
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-14">
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+QD = \frac{39.54-19.44}{2} =10.05.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+and, \quad CQD = \frac{39.54-19.44}{39.54+19.44}\times 100 =34.07\%.
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-15">
+<div class="para"><code class="code-inline tex2jax_ignore">&lt;Inclusive series:&gt;</code></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+class &amp; f_i  \\ \hline 
+40-49 &amp; 5  \\ 
+50-59 &amp; 7  \\ 
+60-69 &amp; 10  \\ 
+70-79 &amp; 8  \\ 
+80-89 &amp; 9 \\
+90-99 &amp; 3  
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Convert this series into exclusive one.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+class &amp; f_i  &amp; CF \\ \hline 
+39.5-49.5 &amp; 5  &amp; 5 \\ 
+49.5-59.5 &amp; 7  &amp; 12 \\ 
+59.5-69.5 &amp; 10  &amp; 22 \\ 
+69.5-79.5 &amp; 8  &amp; 30 \\ 
+79.5-89.5 &amp; 9 &amp; 39 \\
+89.5-99.5 &amp; 3  &amp; 42 \\ \hline
+sum &amp;  &amp; 
+\end{array}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-16">
+<div class="para">Class selection for <span class="process-math">\(Q_1\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_1 =\frac{N}{4} = 42/4 = 10.5^{th} item.
+\end{equation*}
+</div>
+<div class="para">modal Class for <span class="process-math">\(Q_1\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mbox{ 49.5-59.5 | 7  | 12 } 
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-17">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-gqd1.html">
+\begin{equation*}
+Q_1 = 49.5 + \left(\frac{10.5-5}{7}\right) \times 10 = 57.35.
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-gqd1" class="xref" data-knowl="./knowl/xref/eqn-gqd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.5">(6.3.5)</a>
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-18">
+<div class="para">Class selection for <span class="process-math">\(Q_3\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q_3 =3\left(\frac{N}{4}\right) = 3\times 10.5 = 31.5^{th} item.
+\end{equation*}
+</div>
+<div class="para">modal Class for <span class="process-math">\(Q_3\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mbox{79.5-89.5 | 9  | 39 } 
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-19">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-gqd1.html">
+\begin{equation*}
+Q_3 = 79.5 + \left(\frac{31.5-30}{9}\right) \times 10 = 81.16.
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-gqd1" class="xref" data-knowl="./knowl/xref/eqn-gqd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.5">(6.3.5)</a>
+</div>
+</div>
+<div class="para logical" id="subsubsec-qd_cs-20">
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+QD = \frac{81.16-57.35}{2} =11.9.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+and, \quad CQD = \frac{81.16-57.35}{81.16+57.35}\times 100 =17.19\%.
+\end{equation*}
+</div>
+</div></section></section><section class="subsection" id="subsec-st_dev"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="space"> </span><span class="title">Standard Deviation, <span class="process-math">\(\sigma\)</span> and Variance, <span class="process-math">\(\sigma^2\)</span></span>
+</h3>
+<section class="introduction" id="subsec-st_dev-2"><div class="para" id="subsec-st_dev-2-1">Standard deviation tells how far a group of numbers (observation) is from the mean.</div> <div class="para" id="subsec-st_dev-2-2">Variance is the average of the squared differences of a group of numbers (observation) from the mean.</div> <div class="para logical" id="subsec-st_dev-2-3">
+<div class="para">Standard deviation is the square root of the variance. It is also called <em class="emphasis">root mean square deviation.</em> Standard deviation, Variance and their coefficients can be calculated using the following formulae:</div>
+<ol class="lower-roman">
+<li id="subsec-st_dev-2-3-2-1">
+<span class="heading"><span class="title">Actual Mean Method.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-1-2">
+<div class="displaymath process-math" id="eqn-sd1a">
+\begin{equation}
+\sigma = \sqrt{\frac{(x-\bar{x})^2}{n}}\tag{6.3.6}
+\end{equation}
+</div>
+<div class="para">
+<span class="process-math">\(n\)</span> is total number of observations.</div>
+</div>
+</li>
+<li id="subsec-st_dev-2-3-2-2">
+<span class="heading"><span class="title">Assumed Mean Method.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-2-2">
+<div class="displaymath process-math" id="eqn-sd1b">
+\begin{equation}
+\sigma = \sqrt{\frac{\sum{d^2}}{n}-\left(\frac{\sum d}{n}\right)^2}\tag{6.3.7}
+\end{equation}
+</div>
+<div class="para">here, <span class="process-math">\(d = x-A\text{,}\)</span> <span class="process-math">\(A\)</span> is assumed mean, and  <span class="process-math">\(n\)</span> is total number of observations..</div>
+</div>
+</li>
+<li id="subsec-st_dev-2-3-2-3">
+<span class="heading"><span class="title">Coefficient of standard deviation.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-3-2"><div class="displaymath process-math" id="eqn-csd1">
+\begin{equation}
+CSD = \frac{\sigma}{\bar{x}}\tag{6.3.8}
+\end{equation}
+</div></div>
+</li>
+<li id="subsec-st_dev-2-3-2-4">
+<span class="heading"><span class="title">Variance.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-4-2"><div class="displaymath process-math" id="eqn-var1">
+\begin{equation}
+\sigma^2 = \frac{(x-\bar{x})^2}{n}\tag{6.3.9}
+\end{equation}
+</div></div>
+</li>
+<li id="subsec-st_dev-2-3-2-5">
+<span class="heading"><span class="title">Coefficient of Variance.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-5-2"><div class="displaymath process-math" id="eqn-cv1">
+\begin{equation}
+CV = \frac{\sigma}{\bar{x}}\times 100\%\tag{6.3.10}
+\end{equation}
+</div></div>
+</li>
+</ol>
+</div></section><section class="subsubsection" id="subsubsec-sd_is"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.4.1</span><span class="space"> </span><span class="title">Individual Series</span>
+</h4>
+<div class="para" id="subsubsec-sd_is-2">The standard deviation of the data below: <span class="process-math">\(10,12,13,15,20\)</span>
+</div>
+<section class="paragraphs" id="subsubsec-sd_is-3"><h5 class="heading"><span class="title">Actual Mean Method (direct method).</span></h5> <div class="para logical" id="subsubsec-sd_is-3-2">
+<div class="para">from equation <a href="sec-stat_centerT.html#eqn-mean1" class="xref" data-knowl="./knowl/xref/eqn-mean1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.1">(6.2.1)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+\bar{x} = \frac{\sum x}{n} = \frac{10+12+13+15+20}{5} = 70/5=14.
+\end{equation*}
+</div>
+<div class="para">Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+\begin{array}{c|c|c} 
+x &amp; x-\bar{x}  &amp;( x-\bar{x})^2 \\ \hline 
+10 &amp; -4  &amp; 16 \\ 
+12 &amp; -2  &amp; 4 \\ 
+13 &amp; -1  &amp; 1 \\ 
+15 &amp; 1  &amp; 1 \\ 
+20 &amp; 6 &amp; 36 \\ \hline
+sum &amp;  &amp; 58
+\end{array}
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-sd1a" class="xref" data-knowl="./knowl/xref/eqn-sd1a.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.6">(6.3.6)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+\sigma = \sqrt{\frac{58}{5}} =\sqrt{11.6} =3.4.
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-csd1" class="xref" data-knowl="./knowl/xref/eqn-csd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.8">(6.3.8)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+CSD = \frac{\sigma}{\bar{x}} =3.4/14 =0.2428.
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-var1" class="xref" data-knowl="./knowl/xref/eqn-var1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.9">(6.3.9)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+\sigma^2 =11.6.
+\end{equation*}
+</div>
+<div class="para">using equation <a href="sec-stat_disp.html#eqn-cv1" class="xref" data-knowl="./knowl/xref/eqn-cv1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.10">(6.3.10)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+CV =\frac{\sigma}{\bar{x}}\times 100 = 24.28/%.
+\end{equation*}
+</div>
+</div></section><section class="paragraphs" id="subsubsec-sd_is-4"><h5 class="heading"><span class="title">Assumed Mean Method (short-cut method).</span></h5> <div class="para logical" id="subsubsec-sd_is-4-2">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-sd1b.html">
+\begin{equation*}
+\begin{array}{c|c|c} 
+x &amp; d=x-A  &amp; d^2 \\ \hline 
+10 &amp; -3  &amp; 9 \\ 
+12 &amp; -1  &amp; 1 \\ 
+13 &amp; 0  &amp; 0 \\ 
+15 &amp; 2  &amp; 4 \\ 
+20 &amp; 7 &amp; 49 \\ \hline
+sum &amp;  5  &amp;  63
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Assumed <span class="process-math">\(A = 13\)</span> and use <a href="sec-stat_disp.html#eqn-sd1b" class="xref" data-knowl="./knowl/xref/eqn-sd1b.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.7">(6.3.7)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-sd1b.html">
+\begin{equation*}
+\sigma = \sqrt{\frac{63}{5}-\left(\frac{5}{5}\right)^2} = \sqrt{12.6-1} =\sqrt{11.6} =3.4.
+\end{equation*}
+</div>
+</div></section></section><section class="subsubsection" id="subsubsec-sd_dscs"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.4.2</span><span class="space"> </span><span class="title">Discrete Series and Continuous Series</span>
+</h4>
+<div class="para logical" id="subsubsec-sd_dscs-2"><ol class="lower-alpha">
+<li id="subsubsec-sd_dscs-2-1-1">
+<span class="heading"><span class="title">Assumed Mean Method:.</span></span><div class="para logical" id="subsubsec-sd_dscs-2-1-1-2">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-amean1.html" id="eqn-asd2">
+\begin{equation}
+\sigma = \sqrt{\frac{\sum fd^2}{N} - \left(\frac{\sum fd}{N}\right)^2}\tag{6.3.11}
+\end{equation}
+</div>
+<div class="para">here,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-amean1.html">
+\begin{equation*}
+d=x-A,
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-amean1.html">
+\begin{equation*}
+\bar{x} =A+ \sum_{i=1}^{n} \frac{f_i d_i}{f_i}
+\end{equation*}
+</div>
+<div class="para">from equation <a href="sec-stat_centerT.html#eqn-amean1" class="xref" data-knowl="./knowl/xref/eqn-amean1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.2">(6.2.2)</a>
+</div>
+</div>
+</li>
+<li id="subsubsec-sd_dscs-2-1-2">
+<span class="heading"><span class="title">Step Deviation Method:.</span></span><div class="para logical" id="subsubsec-sd_dscs-2-1-2-2">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-smean3.html ./knowl/xref/eqn-smean2.html" id="eqn-ssd2">
+\begin{equation}
+\sigma = \left[\sqrt{\frac{\sum fd^2}{N} - \left(\frac{\sum fd}{N}\right)^2} \right]h\tag{6.3.12}
+\end{equation}
+</div>
+<div class="para">here,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-smean3.html ./knowl/xref/eqn-smean2.html">
+\begin{equation*}
+d = \frac{x-A}{h},
+\end{equation*}
+</div>
+<div class="para">from equation <a href="sec-stat_centerT.html#eqn-smean3" class="xref" data-knowl="./knowl/xref/eqn-smean3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.4">(6.2.4)</a> <span class="process-math">\(h = \)</span> class interval, and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-smean3.html ./knowl/xref/eqn-smean2.html">
+\begin{equation*}
+\bar{x} = A+\left( \frac{\sum f d}{\sum f}\right)h 
+\end{equation*}
+</div>
+<div class="para">from equation <a href="sec-stat_centerT.html#eqn-smean2" class="xref" data-knowl="./knowl/xref/eqn-smean2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.3">(6.2.3)</a>
+</div>
+</div>
+</li>
+</ol></div>
+<article class="example example-like" id="subsubsec-sd_dscs-3"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.7</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsubsec-sd_dscs-3-1-1">
+<div class="para">Use assumed mean method to solve the data below:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+x &amp;  f  \\ \hline 
+1 &amp; 1 \\ 
+3 &amp; 2  \\ 
+5 &amp; 3  \\ 
+7 &amp; 4  \\ 
+8 &amp; 5 
+\end{array}
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details id="subsubsec-sd_dscs-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsubsec-sd_dscs-3-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c|c|c|c|c} 
+x &amp;  f &amp; d  &amp; d^2  &amp; fd  &amp; fd^2 \\ \hline 
+1 &amp; 1 &amp; -4  &amp; 16 &amp; -4  &amp; 16 \\ 
+3 &amp; 2 &amp; -2  &amp; 4 &amp; -4  &amp; 8 \\ 
+5 &amp; 3 &amp; 0  &amp; 0 &amp; 0  &amp; 0 \\ 
+7 &amp; 4 &amp; 2  &amp; 4 &amp; 8  &amp; 16 \\ 
+8 &amp; 5 &amp; 3 &amp; 9 &amp; 15  &amp; 45 \\ \hline
+sum &amp;  &amp;   &amp;  &amp; 15  &amp; 85
+\end{array}
+\end{equation*}
+</div>
+<div class="para">here, we set <span class="process-math">\(A = 5\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="subsubsec-sd_dscs-3-2-2">
+<div class="para">Now from equation <a href="sec-stat_disp.html#eqn-asd2" class="xref" data-knowl="./knowl/xref/eqn-asd2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.11">(6.3.11)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-amean1.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+\sigma = \sqrt{\frac{85}{15} - \left(\frac{15}{15}\right)^2} =\sqrt{5.66-1} =\sqrt{4.66}= 2.16.
+\end{equation*}
+</div>
+<div class="para">here, <span class="process-math">\(N = \sum f = 15\)</span> also, using equation <a href="sec-stat_centerT.html#eqn-amean1" class="xref" data-knowl="./knowl/xref/eqn-amean1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.2.2">(6.2.2)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-amean1.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+\bar{x} = 5+\frac{15}{15} =6,
+\end{equation*}
+</div>
+<div class="para">and from eqn. <a href="sec-stat_disp.html#eqn-csd1" class="xref" data-knowl="./knowl/xref/eqn-csd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.8">(6.3.8)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-amean1.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+CSD =\sigma /\bar{x} = 2.16/6 =0.36.
+\end{equation*}
+</div>
+<div class="para">Also</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-amean1.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+\sigma ^2 = 4.99
+\end{equation*}
+</div>
+<div class="para">and using eqn. <a href="sec-stat_disp.html#eqn-cv1" class="xref" data-knowl="./knowl/xref/eqn-cv1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.10">(6.3.10)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-amean1.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
+\begin{equation*}
+CV = \frac{\sigma}{\bar{x}}\times 100 = 36/%.
+\end{equation*}
+</div>
+</div>
+</div></details></div></article></section></section><section class="subsection" id="subsec-mean_dev"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.5</span><span class="space"> </span><span class="title">Mean Deviation</span>
+</h3>
+<section class="introduction" id="subsec-mean_dev-2"><div class="para logical" id="subsec-mean_dev-2-1">
+<div class="para">The mean deviation is the average deviation from the mean value of the given data set. The mean deviation of the data values can be easily calculated using the procedure below.</div>
+<ol class="decimal">
+<li id="subsec-mean_dev-2-1-1-1"><div class="para" id="subsec-mean_dev-2-1-1-1-1">Step 1: Find the mean value for the given data values</div></li>
+<li id="subsec-mean_dev-2-1-1-2"><div class="para" id="subsec-mean_dev-2-1-1-2-1">Step 2: Now, subtract the mean value from each of the data values given (Note: Ignore the minus symbol)</div></li>
+<li id="subsec-mean_dev-2-1-1-3"><div class="para" id="subsec-mean_dev-2-1-1-3-1">Step 3: Now, find the mean of those values obtained in step 2.</div></li>
+</ol>
+</div> <div class="para logical" id="subsec-mean_dev-2-2">
+<div class="para">The formula to calculate the mean deviation is given below.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+MD = \left[ \frac{\sum{\vert x-\bar{x}\vert}}{N}\right]
+\end{equation*}
+</div>
+<div class="para">Here, <span class="process-math">\(X\)</span> represents each value in the data set, <span class="process-math">\(\bar{x}\)</span> represents the mean of the data set, <span class="process-math">\(N\)</span> represents the number of data values, and <span class="process-math">\(|\)</span> <span class="process-math">\(|\)</span> represents the absolute value, which ignores the “ <span class="process-math">\(-\)</span> ” symbol.</div>
+</div></section><section class="subsubsection" id="subsubsec-m_devmean"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.5.1</span><span class="space"> </span><span class="title">Mean deviation from mean</span>
+</h4>
+<div class="para logical" id="subsubsec-m_devmean-2">
+<div class="para">
+<dfn class="terminology">Step 1. Find the mean:</dfn> The Mean Deviation of <span class="process-math">\(3, 6, 6, 7, 8, 11, 15, 16.\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{x}= \frac{\sum x}{N} = \frac{3+6+6+7+8+11+15+16}{8} = \frac{72}{8} =9.
+\end{equation*}
+</div>
+<div class="para"><dfn class="terminology">Step 2. Find the distance of each value from that mean:</dfn></div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{c|c} 
+x &amp;  d = |x-\bar{x}|  \\ \hline 
+3 &amp; 6 \\ 
+6 &amp; 3  \\ 
+6 &amp; 3  \\ 
+7 &amp; 2  \\ 
+8 &amp; 1 \\
+11 &amp; 2 \\
+15 &amp; 6 \\
+16 &amp; 7 \\ \hline 
+sum &amp; 30
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Step 3. Find the mean of those distances:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+MD = 30/8 = 3.75.
+\end{equation*}
+</div>
+<div class="para">The values are, on average, 3.75 away from the middle.</div>
+</div></section></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-stat_centerT.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_stat_example.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
