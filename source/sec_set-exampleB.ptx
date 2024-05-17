@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_set-exampleB" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example B</title>
+  
+
+  <example xml:id="set_exmB1Q1">
+    <statement>
+      <p>
+        Find the union of each of the following pairs of sets:
+        <ol>
+          <li>
+            <p>
+              <m>X = \{1, 3, 5\}</m>, <m>Y=\{1, 2, 3\}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A = \{a, e, i, o, u\}</m>, <m>B=\{a, b, c\}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A = \{x : x \text{ is a natural number and multiple of } 3 \}</m>, 
+              <m>B=\{x : x \text{ is a natural number less than } 6 \}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A = \{x : x \text{ is a natural number and } 1 \lt x \leq 6 \}</m>, 
+              <m>B=\{x : x \text{ is a natural number and } 6 \lt x \lt 10 \}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A = \{1, 2, 3\}</m>, <m>B=\phi</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </example>
+    
+<example>
+  <statement>
+    <p>
+      Let <m>A = \{a, b\}</m>, <m>B = \{a, b, c\}</m> is <m>A \in B</m>? what is <m>A \cup B</m>?
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+     If <m>A</m> and <m>B</m> are two sets such that <m>A \subset B</m> What is <m>A \cup B</m>?
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>A = \{1, 2, 3, 4\}</m>, <m>B = \{3, 4, 5, 6\}</m>, <m>C = \{5, 6, 7, 8\}</m> and <m>D = \{7, 8, 9, 10\}</m>; find
+      <ol marker ="a">
+        <li>
+          <p>
+            <m>A \cup B</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cup C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B \cup C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B \cup D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cup B \cup C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cup B \cup D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B \cup C \cup D</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the intersection of each pair of sets of question <xref ref="set_exmB1Q1"/> above.
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>A =\{3, 5, 7, 9, 11\}</m>, <m>B=\{7, 9, 11, 13\}</m>, <m>C=\{11, 13, 15\}</m> and <m>D=\{15, 17\}</m>;
+      find 
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>A \cap B</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B \cap C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap C \cap D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B \cap D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap (B \cup C)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap (B \cup D)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(A \cap B) \cap (B \cup C)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(A \cup D) \cap (B \cup C)</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>A = \{x : x \text{is a natural number}\}</m>, 
+      <m>B = \{x : x \text{is an even natural number}\}</m>, <m>C = \{x : x \text{is an odd natural number}\}</m>, 
+      and <m>D = \{x : x \text{is a prime number}\}</m>, find 
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>A \cap B</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A \cap D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B \cap C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B \cap D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>C \cap D</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Which of the following pairs of sets are disjoint:
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>\{1,2,3,4\}</m> and <m>\{x : x \text{ is a natural number and } 4\leq x \leq 6\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{a,e,i,o,u\}</m> and   <m>\{c,d,e,f\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{x : x \text{ is an even integer } \}</m> and  <m>\{x : x \text{ is an odd integer } \}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      If <m>A =\{3, 6, 9,12,15,18,21\} </m>, <m>B =\{4, 8, 12, 16, 20\} </m>, <m>C =\{2,4,6,8,10,12,14,16\} </m>, 
+      <m>D =\{5,10,15,20\} </m>, find
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>A - B</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A - C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A-D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B-A</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>C-A</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>D-A</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B-C</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B-D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>C-B</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>D-B</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>C-D</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>D-C</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>X =\{a,b,c,d\} </m>, and <m>Y =\{f,b,d,g\}, </m> find 
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>X-Y</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>Y-x</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>X \cap Y</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+
+
+<example>
+  <statement>
+    <p>
+      Fill in the blanks to make each of the following a true statement:
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>A \cup A' = \ldots </m>
+          </p>
+          <solution>
+            <p>
+              <m>\bigcup</m>
+            </p>
+          </solution>
+        </li>
+        <li>
+          <p>
+            <m>\phi' \cap A = \ldots </m>
+            </p>
+            <solution>
+              <m>A</m>
+            </solution>
+        </li>
+        <li>
+          <p>
+            <m>A \cap A' = \ldots </m>
+          </p>
+          <solution>
+            <p>
+              <m>\phi</m>
+            </p>
+          </solution>
+        </li>
+        <li>
+          <p>
+            <m>\bigcup' \cap A = \ldots </m>  
+          </p>
+          <solution>
+            <p>
+              <m>\phi \cap A =\phi</m>
+            </p>
+          </solution>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+
+
+
+<example>
+  <statement>
+    <p>
+      If <m>\mathbb R</m> is the set of real numbers and <m>\mathbb Q</m> is the set of rational numbers, then 
+      find <m>\mathbb R - \mathbb Q</m>.
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+      State if the following pairs of sets are disjoint.
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>\{2,3,4,5\}</m> and <m>\{3,6\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{a,e,i,o,u\}</m> and <m>\{a,b,c,d\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{2,6,10,14\}</m> and <m>\{3,7,11,15\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{3,6,10\}</m> and <m>\{3,7,11\}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      In a class of 35 students, 24 like to play baseball and 16 like to play soccer. Also, each student likes to play at least 
+      one of the two games. How many students like to play both games?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <term>Venn diagram</term>
+
+      Total number of students, <m>n(B \cup S) = 35</m>. Number of students like to play Baseball, <m>n(B) = 24</m>.
+      Number of students like to play Soccer, <m>n(S) = 16</m>. Number of students like to play both game <m>n(B\cap S) = ?</m>
+    </p>
+    <p>
+      <me> 
+        n(B \cup S) =n(B) + n(S) -n(B\cap S)
+      </me> 
+      or,
+      <me> 
+         35 = 24 + 16 -n(B\cap S)
+      </me> 
+      or,
+      <me> 
+        n(B\cap S) = 24 + 16 - 35 = 5.
+      </me> 
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      In a group of 70 people, 37 like coffee, 52 like tea, and each person likes at least one of the two drinkes. 
+      How many people like both coffee and tea?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>n(C \cup T) \amp =n(C) +n(T) - n(C\cap T) </mrow>
+        <mrow> n(C\cap T)\amp = n(C) +n(T) -n(C \cup T) </mrow>
+        <mrow> \therefore \quad n(C\cap T) \amp = 37+52-70 =19</mrow>
+      </md>
+    </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      In a group of 65 people, 40 like baseball, 10 like both baseball and tennis. 
+      How many people like both tennis only and not baseball? How many like tennis?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>n(C \cup T) \amp =n(C) +n(T) - n(C\cap T) </mrow>
+        <mrow> n(T)\amp = n(B \cup T) - n(B) + n(B \cap T) </mrow>
+        <mrow> \therefore \quad n(T) \amp =65 -40 +10=35</mrow>
+      </md>
+      Hence, 35 people like tennis. Among them, some of also like baseball. Hence the only people who only like tennis is given by
+      <m>n(T) - 10 = 25.</m>
+    </p>
+  </solution>
+</example>
+
+
+
+<example>
+  <statement>
+    <p>
+      In a committee, 50 people speak French, 20 speak Spanish and 10 speak both Spanish and French. 
+      How many speak at least one of these two languages?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>n(F \cup S) \amp =n(F) +n(S) - n(F\cap S) </mrow>
+        <mrow> n(F \cup S)\amp = 50 + 20 - 10 </mrow>
+        <mrow> \therefore \quad n(F \cup S) \amp = 60</mrow>
+      </md>
+      Hence, 60 people speak at least one of these languages. 
+    </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      In a group of 400 people, 250 can speak Spanish and 200 can speak English. How many people can speak both Spanish and English?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me> 
+        n(S \cup E) =n(S) + n(E) -n(S\cap E)
+      </me> 
+      or,
+       <me> 
+        n(S\cap E) = 250 + 200 - 400 = 50.
+      </me> 
+    </p>
+  </solution>
+</example>
+
+
+</section>
+

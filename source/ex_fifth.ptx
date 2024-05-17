@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_fifth" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+  
+
+<exercise>
+  <statement>
+    <p>
+      Which of the following cannot be valid assignment of probabilities for outcomes of sample space.
+      <me>
+         S  = \{ \omega_1,  \omega_2,  \omega_3,  \omega_4,  \omega_5,  \omega_6,  \omega_7 \}
+      </me>
+    </p> 
+<p>
+  <me>
+    \begin{array}{c|ccccccc} 
+   \circ &amp; \omega_1  &amp; \omega_2 &amp; \omega_3 &amp; \omega_4 &amp; \omega_5 &amp; \omega_6 &amp; \omega_7 \\ \hline 
+   a &amp; 0.1  &amp; 0.01 &amp; 0.05 &amp; 0.03 &amp; 0.01 &amp; 0.2 &amp; 0.6 \\
+   b &amp; 1/7  &amp; 1/7 &amp; 1/7 &amp;1/7 &amp; 1/7 &amp; 1/7 &amp; 1/7 \\
+   c &amp; 0.1  &amp; 0.2 &amp; 0.3 &amp; 0.4 &amp; 0.5 &amp; 0.6 &amp; 0.7 \\
+   d &amp; -0.1  &amp; 0.2 &amp; 0.3 &amp; 0.4 &amp; -0.2 &amp; 1 &amp; 0.3 \\
+   e &amp; 1/14  &amp; 2/14 &amp; 3/14 &amp; 4/14 &amp; 5/14 &amp; 6/14 &amp; 15/14 \\   \hline 
+   \end{array}
+  </me>
+</p>
+  </statement>
+  <hint>
+    <p>
+      only A nad B are possible assignments. Total probabilities sum up to 1.
+    </p>
+  </hint>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Two dice are thrown together. Find the probability that the product of the numbers on the top of the dice is:
+      <ol marker ="a">
+        <li>
+          <p>
+            6
+          </p>
+        </li>
+        <li>
+          <p>
+            12
+          </p>
+        </li>
+        <li>
+          <p>
+            7
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+ 
+<exercise>
+  <statement>
+    <p>
+      A bag contains 10 red, 5 blue and 7 green balls. A ball is drawn at random. Find the probability of this ball being a
+      <ol marker ="a">
+        <li>
+          <p>
+            red ball 
+          </p>
+        </li>
+        <li>
+          <p>
+            green ball
+          </p>
+        </li>
+        <li>
+          <p>
+            not a blue ball
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      All the jacks, queens and kings are removed from a deck of 52 playing cards. The remaining cards are well 
+      shuffled and then one card is drawn at random. Giving ace a value 1 similar value for other cards, 
+      find the probability that the card has a value
+      <ol marker ="a">
+        <li>
+          <p>
+           7
+          </p>
+        </li>
+        <li>
+          <p>
+            greater than 7
+          </p>
+        </li>
+        <li>
+          <p>
+            less than 7
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+
+
+
+<exercise>
+  <statement>
+    <p>
+      A die has its six faces marked 0, 1, 1, 1, 6, 6. Two such dice are thrown together and the total score is recorded.
+      <ol marker ="a">
+        <li>
+          <p>
+            How many different scores are possible?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability of getting a total of 7?
+          </p>
+        </li>
+         </ol>
+    </p>
+  </statement>
+</exercise>
+
+
+
+
+<exercise>
+  <statement>
+    <p>
+      Two cards are drawn from a pack of 52 cards. What is the probability of given conditions:
+      <ol marker ="i">
+        <li>
+          <p>
+            Both cards will be Face cards?
+          </p>
+        </li>
+        <li>
+          <p>
+            Exactly one card should be Queen?
+          </p>
+        </li>
+        <li>
+          <p>
+            No any card is honor-cards?
+          </p>
+        </li>
+        <li>
+          <p>
+            No any card is digit cards?
+          </p>
+        </li>
+        <li>
+          <p>
+            One card is King and the other is Queen?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Four cards are drawn from a well-suffled deck of 52 cards. What is the probability of obtaining 3 diamonds and one spade?
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      A box contains 4 red, 5 green, and 6 white balls. A ball is drawn at random from the box, what is the probability that 
+    the ball drawn is  
+  <ol marker ="a">
+    <li>
+      <p>
+        either red or green?
+      </p>
+    </li>
+    <li>
+      <p>
+        neither red nor green?
+      </p>
+    </li>
+  </ol>
+  </p>
+  </statement>
+  <answer>
+    <p>
+      (a) 9/15 (b)  <m>6/15</m>
+    </p>
+  </answer>
+</exercise>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      A basket contains 5 red, 4 blue, and 3 green balls. If 2 balls are drawn at random from the basket, 
+      what is the probability that both ball are blue?  
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>^4C_2/^{12}C_2</m>
+    </p>
+  </answer>
+</exercise>
+
+
+
+
+<exercise>
+  <statement>
+    <p>
+      An urn contains 6 red, 4 blue, 2 green, and 3 yellow pens. If 2 pens are picked up at random, 
+      what is the probability that either both are green or both are yellow?  
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>^2C_2/^{15}C_2 + ^3C_2/^{15}C_2</m>
+    </p>
+  </answer>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      A basket contains 6 blue, 2 red, 4 green, and 3 yellow balls. If 4 balls are picked up at random, 
+      what is the probability that 2 are red or 2 are green?  
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\left(^2C_2 \times ^4C_2\right)/(^{15}C_4)</m>
+    </p>
+  </answer>
+</exercise>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      A basket contains 4 red, 5 blue, and 3 green marbles. If 3 marbles are picked up at random, 
+      what is the probability that at least one is blue?  
+    </p>
+  </statement>
+ <hint>
+  <p>
+    Find probability of being no blue marbles, then probability of at least one blue.
+  </p>
+  <p>
+    <me>
+      P(No Blue) = \frac{^7C_3}{^{12}C_3}
+    </me>
+    <me>
+      P(B) = 1-P(No Blue).
+    </me>  
+  </p>
+ </hint>
+</exercise>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      An urn contains 2 red, 3 green, and 3 blue balls. If 2 pens are drawn at random, 
+      find the probability no ball is blue.  
+    </p>
+  </statement>
+  <answer>
+    <p>
+     <me>
+      ^5C_2/^7C_2
+     </me>
+    </p>
+  </answer>
+</exercise>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      There are 6 boys and 4 girls in a class. If any 4 students are chosen at random, 
+      what is the probability that they must have at least one girl?
+    </p>
+  </statement>
+<hint>
+  <p>
+    Find the prob. of all boy, then prob. of being one girl is <m>P(G) = 1-P(B) = 13/14.</m>
+  </p>
+</hint>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      A speaks the truth 75% of the cases and B speaks the truth in 60% of the cases. 
+      Find the probability of contradiction between them.
+    </p>
+  </statement>
+<hint>
+  <p>
+   45%
+  </p>
+</hint>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+    Two players Dan and Marcia play a tennis match. It is known that the probability of Marcia winning the match is 0.62. 
+    What is the probability of Dan winning the match?
+    </p>
+  </statement>
+ <hint>
+  <p>
+    prob. of Marcia winning, 
+    P(M)= 0.62
+  </p>
+  <p>
+    Hence, prob. of Dan winning the match,
+    <me>
+      P(D)= 1- P(M)
+    </me>
+  </p>
+ </hint>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Find the probability of getting 53 Mondays  in a no leap year.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In no year total number of days = 365 days = 52 weaks + 1 day. Hence, the probablity of getting 53 Mondays is 
+      <me>
+        P(M) = 1/7.
+      </me>  
+    </p>
+  </solution>
+</exercise>
+
+
+</exercises>
+
+
+
+

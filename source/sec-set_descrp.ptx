@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-set_descrp" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Description</title>
+
+  <p> 
+    Sets are represented by three different forms: 
+    <ol>
+      <li>
+        Description or Statement Form: <m> 2, 4, 6, 8, \ldots = \{\text{even numbers} \}</m> by using statement.
+        <m> a, e, i, o, u = \{\text{vowels of english alphabet} \}</m>.
+       </li>
+      <li>
+       Roster or Tabular Form: <m>\{ a,e,i,o,u\}</m> by using commas.
+      </li>
+      <li>
+        Set-Builder or Rule Form: <m>\{ x: x \text{ is a vowel} \}</m> or  <m>\{ x| x \text{ is a vowel} \}</m>  by using its property.
+       
+      </li>
+    </ol> 
+  </p>
+  <p>
+    See examples in <xref ref="sec_set-exampleA"/>.
+  </p>
+
+
+
+
+</section>

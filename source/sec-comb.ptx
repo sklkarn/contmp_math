@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-comb" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Combinations</title>
+
+  
+<p>
+  Select the letters <m>A, B, C</m> by taking three at a time.
+</p>
+<p>
+  Here:
+  <me>
+    ABC
+  </me>
+  
+  so again <m>6</m> permutations.
+</p>
+
+<p>
+ Find all combinations of letters <m>A, B, C, D</m> by taking three at a time.
+</p>
+
+<p>
+ <me>
+  ABC, ABD, ACD, BCD
+ </me>
+</p>
+
+<theorem xml:id="thm-comb1">
+  <statement>
+    <p>
+      The number of all combinatios of <m>n</m> distinct objects, taken <m>r</m> at a time, where <m>0\leq r \leq n</m> 
+     is given by <m> (C,r) \quad \text{ or, } \quad  ^nC_r</m>. Here, 
+      <me>
+      ^nC_r = \frac{n!}{r!(n-r)!}.
+      </me>
+      </p>
+  </statement>
+</theorem>
+
+<corollary xml:id="cor-comb_1th1">
+  <statement>
+    <p>
+     <me>
+      ^nC_r = \frac{n(n-1)(n-2) \ldots \text{ to } r \text{ factors }}{r!} 
+     </me>
+    </p>
+  </statement>
+</corollary>
+
+
+<corollary xml:id="cor-comb_2th1">
+  <statement>
+    <p>
+     <me>
+      ^nC_n =  ^nC_0 = 1. 
+     </me>
+    </p>
+  </statement>
+</corollary>
+
+
+<corollary xml:id="cor-comb_3th1">
+  <statement>
+    <p>
+     <me>
+      ^nC_r =  \frac{^nP_r}{r!}. 
+     </me>
+    </p>
+  </statement>
+</corollary>
+
+
+
+<theorem xml:id="thm-comb2">
+  <statement>
+    <p>
+      For <m>0 \leq r \leq n,</m> we have 
+      <me>
+        ^nC_r = ^nC_{(n-r)}
+        </me>
+    </p>
+    </statement>
+</theorem>
+
+<theorem xml:id="thm-comb3">
+  <statement>
+    <p>
+      If <me>
+        ^nC_x = ^nC_y 
+      </me>
+      and <m>x\neq y</m>, then we have 
+      <me>x+y =n.</me>
+    </p>
+  </statement>
+</theorem>
+
+<theorem xml:id="thm-comb4">
+  <statement>
+    <p>
+      Let <m>1 \leq r \leq n,</m> then, we have 
+      <me>
+        ^nC_r + ^nC_{(r-1)} = ^{(n+1)}C_r \quad \text{ Pascal's Rule}
+      </me>
+          </p>
+          <p>
+            For example: (i) <me>
+              ^{10}C_4 + ^{10}C_3 = ^{11}C_4
+            </me>
+          </p>
+  </statement>
+</theorem>
+
+
+<theorem xml:id="thm-comb5">
+  <statement>
+    <p>
+      If <m>1\leq r \leq n,</m> then we have 
+      <me>
+        n \times ^{(n-1)}C_{(r-1)} = (n-r+1) \times ^nC_{(r-1)}
+      </me>
+      
+    </p>
+  </statement>
+</theorem>
+
+<theorem xml:id="thm-comb6">
+  <statement>
+    <p>
+      If <m>n</m> and <m>r</m> are positive integers such that <m>1\leq r\leq n,</m> then we have 
+      <ol marker ="I">
+        <li>
+          <p>
+            <me>
+              \frac{^nC_{r}}{^nC_{(r-1)}} = \frac{n-r+1}{r}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              \frac{^nC_{r}}{^{(n-1)}C_{(r-1)}} = \frac{n}{r}
+            </me> 
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              \frac{^nC_{r}}{^nC_{(r+1)}} = \frac{r+1}{n-r}.
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</theorem>
+
+
+</section>

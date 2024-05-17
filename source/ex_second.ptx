@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_second" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise A</title>
+  
+  <exercise>
+    <statement>
+      <p>
+        Which of the following are examples of the null set
+        <ol marker="a">
+          <li> Set of odd natural numbers divisible by 2.</li>
+          <li>Set of even prime numbers  </li>
+          <li><m>\{ x: x \text{ is a natural n umbers,} x \lt 5 \text{ and} x \gt 7 \}</m> </li>
+          <li><m>\{ y: y \text{ is a point commmon to any two parallel lines} \}</m> </li>
+        </ol>
+      </p>
+    </statement>
+    </exercise>
+
+
+    <exercise>
+      <statement>
+        <p>
+          Which of the following sets are finite and infinite. 
+          <ol marker="a">
+            <li> The set of months of a year.</li>
+            <li><m>\{ 1, 2, 3, \ldots \}</m>  </li>
+            <li><m>\{ 1, 2, 3, \ldots, 99, 100 \}</m> </li>
+            <li> The set of positive integers greater than 100. </li>
+            <li> The set of prime numbers less than 99. </li>
+          </ol>
+        </p>
+      </statement>
+      </exercise>
+
+
+      <exercise>
+        <statement>
+          <p>
+            State whether each of the following set is finite and infinite. 
+            <ol marker="a">
+              <li> The set of lines which are parallel to the x-axis.</li>
+              <li>The set of letters in the english alphabet. </li>
+              <li>The set of numbers which are multiple of 5.</li>
+              <li>The set of animals living on the earth.</li>
+              <li> The set of circles passing through the origin (0,0). </li>
+            </ol>
+          </p>
+        </statement>
+        </exercise>
+         
+
+        <exercise>
+          <statement>
+            <p>
+              In the following, state whether <m>A = B</m> or not.
+              <ol marker="a">
+                <li> <m>A = \{a, b, c, d\} </m>, <m>B = \{d, c, b, a\}</m></li>
+                <li> <m>A = \{4, 8, 12, 16\} </m>, <m>B = \{8, 4, 16, 18\}</m></li>
+                <li> <m>A = \{2, 4, 6, 8, 10\} </m>, <m>B = \{x : x \text{ is positive even integer and } x \leq 10 \}</m></li>
+                <li> <m>A = \{x : x \text{ is a multiple of } 10 \} </m>, <m>B = \{10, 15, 20, 25, 30, \ldots \}</m></li>
+               </ol>
+            </p>
+          </statement>
+          </exercise>
+
+
+          
+        <exercise>
+          <statement>
+            <p>
+            Are the following pair of sets equal? Give reasons.
+              <ol marker="a">
+                <li> <m>A = \{2, 3\} </m>, 
+                  <m>B = \{x : x \text{ is solution of} x^2+5x+6=0.\}</m></li>
+                <li> <m>A = \{x : x \text{ is a letter in the word FOLLOW} \} </m>, 
+                  <m>B = \{y : y \text{ is a letter in the word WOLF} \} </m></li>
+                </ol>
+            </p>
+          </statement>
+          </exercise>
+
+   
+          <exercise>
+            <statement>
+              <p>
+              From the sets given below, select equal sets:
+                 <m>A = \{2, 4, 8, 12\}, </m> <m>B = \{1, 2, 3, 4\}, </m> 
+                   <m>C = \{4, 8, 12, 14 \}, </m> <m>D = \{3, 1, 4, 2 \}, </m>
+                   <m>E = \{-1, 1 \}, </m>   <m>F = \{0, a \}, </m> 
+                   <m>G = \{1, -1 \}, </m>  <m>H = \{0, 1 \}. </m>
+                  </p>
+            </statement>
+            </exercise>
+
+            
+
+</exercises>
+
+
+
+

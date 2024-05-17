@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_third" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+
+  <exercise>
+    <statement>
+      <p>
+        How many numbers are there between 100 and 1000 such that every digit is either 2 or 9?
+      </p>
+    </statement>
+  </exercise>
+
+
+
+  <exercise>
+    <statement>
+      <p>
+        How many 3-digit numbers can be formed without using the digits <m>0, 2, 3, 4, 5,</m> and <m>6?</m>
+      </p>
+    </statement>
+  </exercise>
+
+
+
+  <exercise>
+    <statement>
+      <p>
+        In an auditorium, there are three entrances and two exit points. In how many ways can a person enter the hall and then come out?
+      </p>
+    </statement>
+  </exercise>
+
+
+
+  <exercise>
+    <statement>
+      <p>
+        In a room there are 5 vacant seats. How many ways three people can sits on them. 
+      </p>
+    </statement>
+  </exercise>
+
+
+  <exercise>
+    <statement>
+      <p>
+        The flag of a newly formed forum is in the form of three blocks, each to be colored differently. 
+        If there are six different colors to choose from, how many such designs are possible? 
+      </p>
+    </statement>
+  </exercise>
+
+
+  <exercise>
+    <statement>
+      <p>
+        How many 3 digit numbers can be formed from the digits <m>1, 2, 3, 4, 5</m> assuming that 
+        <ol marker ="i">
+          <li>
+            <p>
+              repetition of the digits is allowed.
+            </p>
+            <hint>
+              <p>
+                <m>5\times 5\times 5</m>
+              </p>
+            </hint>
+          </li>
+          <li>
+            <p>
+              repetition of the digits is not allowed.
+            </p>
+            <hint>
+              <p>
+                <m>5\times 4\times 3</m>
+              </p>
+            </hint>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+<exercise>
+  <statement>
+    <p>
+      How many 3 digit even numbers can be formed from the digits <m>1, 2, 3, 4, 5, 6</m> if the digits can be repeated? 
+    </p>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      How many 4-letter codes can be formed using the first 10 letters of the english alphabet, if no letter can be repeated? 
+    </p>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      How many 5-digit telephone numbers can be constructed using the digits 0 to 9, if each number starts with 6 7 and 
+      no digit appears more than once? 
+    </p>
+    <hint>
+      <p>
+        <m>1 \times 1 \times 8 \times 7 \times 6 = ------</m>
+      </p>
+      <p>
+        digits 6 and 7 are fixed at <m>5^{th}</m> and <m>4^{th}</m> place and no repetion is allowed hence, 
+        we can have 8 choices of digits to place at <m>3^{rd}</m> place,  7 choices of digits to place at <m>2^{nd}</m> place, and 
+        6 choices of digits to place at <m>1^{st}</m> place.
+      </p>
+    </hint>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+     A coin is tossed 3 times and the outcomes are recorded. How many possible outcomes are there? 
+    </p>
+  </statement>
+  <hint>
+    <p>
+      There are two outcomes for every toss of a coin, Head or Tail. 
+      <me>
+        \begin{array}{c|c|c} 
+        \circ &amp; I  &amp; II   &amp; III \\ \hline 
+        i.  &amp; H  &amp;  H &amp; H \\  
+        ii.  &amp; H  &amp;  H &amp; T \\ 
+        iii.  &amp; H  &amp;  T &amp; H \\   
+        iv.  &amp; H  &amp;  T &amp; T \\     
+        v.  &amp; T  &amp;  H &amp; T \\  
+        vi.  &amp; T  &amp; T &amp; H \\  
+        vii.  &amp; T  &amp;  H &amp; H \\ 
+        viii.  &amp; T  &amp;  T &amp; T \\      
+       \end{array}
+      </me>
+
+    </p>
+  </hint>
+</exercise>
+
+
+</exercises>
+
+
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-set" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Set Theory</title>
+
+  <introduction>
+    <p> A set is a collection of well-defined distinct objects.  
+      For example: collection of months of a year, collection of students in this class with grade points between 60-80, 
+      collection of all movies of disney. These all collection are well defined, hence they are considered as sets.
+      However, collection of intelegent students of the class is not well-defined, hence it is not a set.</p> 
+    <p> The objects that belong to a set are called its <term>elements</term> or <term>members</term>. 
+      <term>Notation of Set:</term> Set is usually specified by listing all of its elements inside a pair of curly brackets
+       or by stating the property that determines whether or not an object <m>x</m> belongs to the set. e.g.: 
+      <me>A = \{ a, e, i, o, u \}</me>
+      for a set containing elements <m>a, e, i, o, u </m>. Or,
+          <me>X = \{ x :x \, \text{ is a vowel of english alphbet}\}</me>
+        </p>
+     
+<p>
+  <alert>Note: </alert> <ol marker="a">
+    <li>
+      Sets are denoted by capital letters, such as <m>A, B, C, \ldots </m> or <m>X, Y, Z, \ldots</m>. 
+    </li>
+    <li>
+      Elements of sets are generally denoted by small letters. e.g.: <m>a, b, c, \ldots, etc.</m>
+     </li>
+     <li>
+      Elements are not repeated in a set e.g.: <m> A = \{a,a,b,c\} = \{a,b,c\}</m>.
+     </li>
+     <li>
+      if <m>a</m> is an element of the set <m>A</m>, we write <m>a \in A</m>. 
+     </li>
+  </ol>
+  <notation><usage><m>a \in A</m></usage><description><m>a</m> is in the set <m>A</m></description></notation>
+</p>
+<p>
+  <term>Standard notations of some special sets:</term> 
+  <md>
+    <mrow>{\mathbb N} &amp;= \{n: n \text{ is a natural number}\}  = \{1, 2, 3, 4, 5, \ldots \}</mrow>
+    <mrow>{\mathbb W} &amp;= \{w: w \text{ is a whole number}\}  = \{0, 1, 2, 3, 4, 5, \ldots \}</mrow>
+    <mrow>{\mathbb Z} &amp;= \{n : n \text{ is an integer} \} = \{\ldots, -2, -1, 0, 1,  2, \ldots \}</mrow>
+    <mrow>{\mathbb Q} &amp;= \{r : r \text{ is a rational number}\} = \{p/q : p, q \in {\mathbb Z} \text{ where } q \neq 0\}</mrow>
+    <mrow>{\mathbb R} &amp;= \{ x : x \text{ is a real number} \} = \{x :x \text {is rational or irrational number.} \}</mrow>
+    <mrow>{\mathbb E} &amp;= \{ x : x \text{ is an even number} \}  = \{\ldots, -6, -4, -2, 0, 2, 4, 6, \ldots \} </mrow>
+    <mrow>{\mathbb O} &amp;= \{ x : x \text{ is an odd number} \}  = \{\ldots, -3, -1, 1, 3, 5, \ldots \} </mrow>
+    <mrow>{\mathbb C} &amp;= \{z : z \text{ is a complex number}\}</mrow>
+</md>. <notation>
+    <usage><m>\N </m></usage>
+    <description>the natural numbers</description>
+</notation><notation>
+    <usage><m>{\mathbb Z}</m></usage>
+    <description>the integers</description>
+</notation><notation>
+    <usage><m>{\mathbb Q}</m></usage>
+    <description>the rational numbers</description>
+</notation><notation>
+    <usage><m>{\mathbb R}</m></usage>
+    <description>the real numbers</description></notation>
+<notation>
+    <usage><m>{\mathbb C}</m></usage>
+    <description>the complex numbers</description>
+</notation>
+</p>
+<p>
+  The symbol '<m>\in</m>' read as 'belongs to' or 'is an element of', 
+  where as '<m>\notin</m>' stands for 'does not belong to' or 'is not an element of'. 
+  Example: <me>A = \{ 2,4,8,10,12\}; 8 \in A; \text{ but } 14 \notin A.</me>
+</p>
+
+
+<p>
+  <me>\bigcup_{i = 1}^{n} A_{i} = A_{1} \cup \ldots \cup A_n</me>
+  <me>A \cup B = \{x : x \in A \text{ or } x \in B \}</me>
+  <me>A \cap B = \{x :  x \in A \text{ and } x \in B \}</me>.
+  <me>\bigcap_{i = 1}^{n} A_{i} = A_{1} \cap \ldots \cap A_n</me>
+</p>
+
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-set_descrp.ptx" />
+  <xi:include href="sec_set-exampleA.ptx" />
+  <xi:include href="sec-set_type.ptx" />
+  
+  <xi:include href="ex_second.ptx" />
+  <xi:include href="sec-subset.ptx" />
+  <xi:include href="ex_secondb.ptx" />
+
+  <xi:include href="sec-set_op.ptx" />
+  <xi:include href="sec_set-exampleB.ptx" />
+  <xi:include href="ex_secondc.ptx" />
+
+  
+</chapter>

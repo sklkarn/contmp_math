@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-stat_int" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Data Analysis</title>
+
+<introduction>
+  <p>
+    <term>Data:</term> Facts or pieces of information that can be measured. 
+    Data can be collected from investigations, observations, experiements, etc. Data are organized in two basic types 
+    <ol marker ="i">
+      <li>
+        <p>
+          Qualitative or Categorical Data: It describes the features such as color, gender, code, birth date, 
+          address, blood group, etc. It cannot be used to perform any mathematical operations.
+          <ol marker ="a">
+            <li>
+              <p>
+                Nominal Data: It helps to label the variables without providing the numerical value. 
+                Nominal data are letters, symbols, words, gender, numbers, cloth's size, etc. 
+                These data are grouped into categories, and then the frequency or the percentage of the data can be calculated. 
+                </p>
+            </li>
+            <li>
+              <p>
+                Ordinal Data: The order of data is presented here. In orderinal data, order is important but not their values. 
+                The information may be expressed using tables in which each row in the table shows the distinct category.
+              </p>
+              <p>
+                <me>
+                  \begin{array}{c|cc} 
+                  \circ &amp; Markes &amp; Rank  \\ \hline 
+                  1 &amp; 100 &amp; 1  \\ 
+                  2 &amp; 96 &amp;  2 \\ 
+                  3 &amp; 57 &amp;  4 \\ 
+                  4 &amp; 85 &amp;  3 \\ 
+                  5 &amp; 46 &amp;  5 \\ 
+                  \end{array}
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      <li>
+        <p>
+          Quantitative or Numerical Data: Numerical data gives information about the quantities of a specific thing. 
+          e.g., height, length, size, weight, and so on. It can be used for mathematical operations.
+          <ol marker ="a">
+            <li>
+              <p>
+                Discrete Data: It can take only discrete values. Discrete information contains only a finite number of possible values. 
+                e.g., number of bank account, number of children, number of students in the class. 
+              </p>
+            </li>
+            <li>
+              <p>
+                Continuous Data: It has an infinite number of probable values that can be selected within a given specific range. 
+                For example, height <m> = 60.4, 70.0, 50.15</m> inches; weight <m>= 45, 70.3, 65.6, 101.7</m> pounds, etc. 
+                </p>
+              <p>
+                Continuous data can also be classified as <term>Interval</term> and <term>Ratio</term> data. 
+                Interval scales can represent values below zero. Ratio variables never fall below zero. e.g., 
+                A certain temperature can fall below 0 degrees (interval data). 
+                Your height and weight cannot equal zero or be below zero (Ratio data).
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+     </ol>
+  </p>
+</introduction>
+
+
+<subsection xml:id="subsec-pop_samp">
+  <title>Population and Sample</title>
+  <p>
+    Sample is a small subset of a larger set of data used to draw inferences about the larger set. 
+    The larger set is known as the population from which the sample is drawn. 
+  </p>
+  <p>
+   <term> Population</term> is a complete set of all items that interest an investigator. Population size, <m>N</m> can be very large to even infinity. 
+     A <term>Sample</term> is an observed subset of the population of size <m>n.</m>
+       </p>
+       
+  <image width="25%">
+      <latex-image >
+    \begin{tikzpicture}
+    \draw (0,0) rectangle (5,3);
+    \draw [] (2.5,1.5) circle [radius=1];
+    \node [left] at (0,2.5) {$P$}   node at (2,1.5) {$S$} ;
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+      <p>
+        <term>Statistic:</term> It is a specific characteristics of a sample. <term>Parameter: </term> It is a characteristics of the population. 
+        Population average, <m>\mu </m> is a <em>parameter.</em> Sample average, <m>\bar{x}</m> is a <em>statistic</em>.
+      </p>
+        <exercise>
+          <p>
+            <alert>Simple Exercise: </alert> An airline claims that less than 6% of its flights from Lexington depart late. 
+            From a sample of 100 flight 6 flights were found to depart late.
+          </p>
+          <p>
+            <ol marker ="i">
+              <li>
+                <p>
+                  What is the population?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What is the sample?
+                </p>
+              </li>
+              <li>
+                <p>
+                  What is the statistic?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Is 6% a parameter or statistic?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </exercise>
+      
+      
+</subsection>
+
+
+<subsection xml:id="subsec-dataTable">
+  <title>Data Table</title>
+  <p>
+    <me>
+      \begin{array}{c|cccc} 
+      \circ &amp; \ldots &amp; \ldots  &amp; \ldots &amp; \ldots &amp; \ldots \\ \hline 
+      1 &amp; Aron &amp; M  &amp; 27 &amp; 95.00 &amp; 5\\ 
+      2 &amp; Morgan &amp;  F &amp; 25 &amp; 96.15 &amp; 2\\ 
+      3 &amp; Rita &amp;  F &amp; 26 &amp; 91.6 &amp; 3\\ 
+      4 &amp; Don &amp;  M &amp; 21 &amp; 97.44 &amp; 0\\ 
+      5 &amp; Eugine &amp; F &amp; 22 &amp; 98.25 &amp; 12\\ 
+      \end{array}
+    </me>
+    In data table <em>Columns</em> are called <term>Variables</term> and <em>rows</em> are called cases or <term>Observations.</term>
+  </p>
+  
+    <p>
+      Mention the types of data being used in the above data table and give the name of missing variables.
+    </p>
+ 
+
+  </subsection>
+
+
+</section>

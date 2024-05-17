@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-numb" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Number Systems</title>
+<introduction>
+  <p>
+    A number system is used to express the numbers. It is the mathematical notation for representing numbers of a given set 
+      by using digits or other symbols in a consistent manner. There are four types of number system:
+      <ol>
+        <li>
+          <p>
+            Binary: It has base of <m>2</m> and consists two digits family of <m>(0,1)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Decimal: It has base of <m>10</m> and consists ten digits family of <m>(0,1, 2,3,4,5,6,7,8,9)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Octal: It has base of <m>8</m> and consists eight digits family of <m>(0,1, 2,3,4,5,6,7)</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Hexadecimal: It has base of <m>16</m> and consists sixteen digits and symbols family of <m>(0,1, 2,3,4,5,6,7,8,9, A, B,C,D,E,F)</m>.
+          </p>
+        </li>
+      </ol>
+      It provides a unique representation of every number. It also allows us to operate mathematical operations 
+      like addition, subtraction, multiplication, and division.
+  </p>
+ <p>
+  Here we are going to discuss only decimsal number system. All the other number systems are mostly used in electronic world.
+ </p>
+ 
+      
+ <image width="50%" xml:id="set_numb-family">
+  
+  <latex-image >
+   \begin{tikzpicture}
+   
+   \node {Numbers}
+    child {node {Real}
+    			 child {node {Rational}
+    			 		 child {node {Integer}
+    			 		  		child {node {Whole} 
+    			 		  					child {node {Natural}
+    			 		  								child {node {Prime}}
+    			 		  								child {node {Composite}}
+    			 		  								child {node {Even}}
+    			 		  								child {node {odd}}
+    			 		  					}
+    			 		  					child {node {Zero}}
+    			 		  		}
+    			 		  		 child {node {Negative}}
+    			 		 }
+    			 		 child {node {Fraction}} 		  		
+    			 		 }
+      			child {node {Irrational}}
+    }
+    child {node {Complex}
+         };
+   \end{tikzpicture}
+  </latex-image>
+    </image>
+
+</introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-num_sys.ptx" />
+  <xi:include href="sec-numb_example.ptx" />
+  <xi:include href="ex_first.ptx" />
+
+</chapter>

@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-stat_disp" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Dispersion</title>
+ 
+<introduction>
+ 
+  <p>
+    It is a measure of the extent to which the observations vary from some central value (mean, median, mode). 
+    It shows how the data are spread out (dispersed) from the central value. In simple terms, 
+    it shows how squeezed or scattered the variable is.
+    For example: the mean of <m>2,4,9</m> is 
+
+    <me>
+     mean=\frac{\sum x}{n} = \frac{2+4+9}{3} =5.
+    </me>
+   Here, the dispersion shows how far are the observations from the mean (central value). The difference in each data point from the 
+   central value is represents deviation of the data. 
+  </p>
+<p>
+  Suppose I have the three data set as shown below:
+  <me>
+    \begin{array}{c|c|c|c} 
+   \circ &amp; Series A (x) &amp; Series B (x) &amp; Series C (x) \\ \hline 
+   1 &amp; 100 &amp; 98    &amp; 1 \\ 
+   2 &amp;  100 &amp; 99    &amp; 2 \\ 
+  3 &amp;  100 &amp; 100   &amp; 3 \\ 
+    4 &amp;  100 &amp; 101   &amp; 4 \\ 
+    5 &amp;  100 &amp; 102   &amp; 490 \\ \hline
+    Total &amp;  500 &amp; 500   &amp; 500 \\  \hline 
+    \bar{x} &amp;  100 &amp; 100   &amp; 100 \\  \hline 
+    Dispersion &amp;  No &amp; Less   &amp; High \\  \hline 
+   \end{array}
+  </me>
+  The data shows the difference in <m>x</m> and <m>\bar{x}</m>. 
+  the observations in series A does not vary at all from the central value (mean), there is some variation in series B, b
+  ut no observations are even close to the mean in series C. 
+</p>
+
+</introduction>
+
+<subsection xml:id="subsec-disp_msr">
+  <title>Measurement of Dispersion</title>
+
+    <p>
+      Dispersion can be measured using two different approaches. 
+    </p>
+    <p>
+      
+           <ol>
+    <li>
+      <title> Absolute Measure (same unit)</title>
+      <p>
+        Absolute measures of dispersion use the original units of data, and are most useful on 
+        understanding the dispersion within the context of your experiment and measurements. 
+      <ol marker="i">
+        <li>
+          <p>
+            Range
+          </p>
+        </li>
+        <li>
+          <p>
+            Quartile Deviation
+          </p>
+        </li>
+        <li>
+          <p>
+            Mean Deviation
+          </p>
+        </li>
+        <li>
+          <p>
+            Standard Deviation
+          </p>
+        </li>
+        <li>
+          <p>
+            Variance
+          </p>
+        </li>
+      </ol>     
+      </p>
+    </li>
+    <li>
+      <title> Relative Measure (unit free) </title>
+      <p>
+        In order to compare separate data sets or different experiments that might use different units 
+        and the difference in their central values are very high, we use relative measures.
+        <ol marker="i">
+          <li>
+            <p>
+              Coefficient of Range
+            </p>
+          </li>
+          <li>
+            <p>
+              Coefficient of Quartile Deviation
+            </p>
+          </li>
+          <li>
+            <p>
+              Coefficient of Mean Deviation
+            </p>
+          </li>
+          <li>
+            <p>
+              Coefficient of Standard Deviation
+            </p>
+          </li>
+          <li>
+            <p>
+              Coefficient of Variance
+            </p>
+          </li>
+        </ol>
+      </p>
+    </li>
+  </ol>
+  <term>Note: </term> Low dospersion means more stable observations.
+</p>
+
+</subsection>
+
+
+<subsection xml:id="subsec-range">
+  <title>Range</title>
+  <introduction>
+    <p>
+      Range is the difference between the highest and the lowest value of observations 
+      for a given frequency distribution. The coefficient of range on the other hand is 
+      the ratio of difference between the highest and lowest value of observations to the 
+      sum of highest and lowest value of observations.
+    </p>
+  <p>
+    <men xml:id="eqn-range1">
+      Range = L - S 
+    </men>
+     </p>
+  <p>
+    <men xml:id="eqn-co_range1">
+      \text{Coefficient of Range} = \left(\frac{L-S}{L+S}\right) \times 100\%
+    </men>
+    Here, <m>L = </m> largest observation, and <m>S = </m> smallest observation.
+  </p>
+  </introduction>
+
+<subsubsection xml:id="subsubsec-rng_is">
+  <title>Individual Series</title>
+  
+    <example>
+      <statement>
+        <p>
+          <me>
+            13,20,7,15, 29, 35
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            Range = 35-7 =28.
+          </me>
+          <me>
+           \text{Coefficient of Range}  = \left(\frac{35-7}{35+7}\right) \times 100 = 66.67\%
+          </me>
+        </p>
+      </solution>
+    </example>
+ 
+    <example>
+      <statement>
+        <p>
+          <me>
+            50,69,92,75,45,20,30
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            Range = 92-20 =72.
+          </me>
+          <me>
+           \text{Coefficient of Range}  = \left(\frac{92-20}{92+20}\right) \times 100 = 64.28\%
+          </me>
+        </p>
+      </solution>
+    </example>
+
+
+  </subsubsection>
+
+  <subsubsection xml:id="subsubsec-rng_ds">
+    <title>Discrete Series</title>
+    
+
+  <example>
+    <statement>
+      <p>
+          <me>
+    \begin{array}{c|c} 
+   x_i &amp; f_i  \\ \hline 
+   5 &amp; 3 \\ 
+   10 &amp; 7 \\ 
+  15 &amp; 5 \\ 
+    20 &amp; 12 \\ 
+    25 &amp; 9 
+   \end{array}
+  </me>
+      </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            Range = 25-5 =20.
+          </me>
+          <me>
+           \text{Coefficient of Range}  = \left(\frac{25-5}{25+5}\right) \times 100 = 66.67\%
+          </me>
+        </p>
+      </solution>
+  </example>
+ 
+  <example>
+    <statement>
+      <p>
+        <me>
+          \begin{array}{c|c} 
+         x_i &amp; f_i  \\ \hline 
+         133 &amp; 9 \\ 
+         180 &amp; 2 \\ 
+        80 &amp; 4 \\ 
+          95 &amp; 5 \\ 
+          40 &amp; 3  \\
+          132 &amp; 10 
+         \end{array}
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <me>
+          Range = 180-40=140.
+        </me>
+        <me>
+         \text{Coefficient of Range}  = \left(\frac{180-40}{180+40}\right) \times 100 = 63.63\%
+        </me>
+      </p>
+    </solution>
+  </example>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-rng_cs">
+  <title>Continuous Series</title>
+  
+  <p>
+    <ol>
+    <li>     
+        <p>
+          Exclusive Series
+        </p>
+        <p>
+              <me>
+        \begin{array}{c|c} 
+       class &amp; f_i  \\ \hline 
+       20-25 &amp; 2 \\ 
+       25-30 &amp; 5 \\ 
+      30-35 &amp; 9 \\ 
+        35-40 &amp; 4 \\ 
+       40-45 &amp; 7 
+       \end{array}
+      </me>
+        <me>
+                Range = 45-20=25.
+              </me>
+              <me>
+               \text{Coefficient of Range}  = \left(\frac{45-20}{45+20}\right) \times 100 = 38.46\%
+              </me>
+            </p>
+            </li>
+    <li>
+      <p>
+        Inclusive Series
+      </p>
+         <p>
+            <me>
+              \begin{array}{c|c} 
+             class &amp; f_i  \\ \hline 
+             20-24 &amp; 2 \\ 
+             25-29 &amp; 5 \\ 
+            30-34 &amp; 9 \\ 
+              35-39 &amp; 4 \\ 
+             40-44 &amp; 7 
+             \end{array}
+            </me>
+          </p>
+           <p>
+            First convert the inclusive series into exclusive one.
+            <me>
+              \begin{array}{c|c} 
+             class &amp; f_i  \\ \hline 
+             19.5-24.5 &amp; 2 \\ 
+             24.5-29.5 &amp; 5 \\ 
+            29.5-34.5 &amp; 9 \\ 
+              34.5-39.5 &amp; 4 \\ 
+             39.5-44.5 &amp; 7 
+             \end{array}
+            </me>
+            <me>
+              Range = 44.5-19.5=25.
+            </me>
+            <me>
+             \text{Coefficient of Range}  = \left(\frac{44.5-19.5}{44.5+19.5}\right) \times 100 = 39.06\%
+            </me>
+          </p>
+       </li>
+  </ol>
+</p>
+</subsubsection>
+
+
+<subsubsection xml:id="subsubsec-rng_merit">
+  <title>Merits of Range:</title>
+  
+    <p>
+      <ol>
+       <li>
+         <p>
+           Among all the methods of studing dispersion range is the simplest to understand and easiest to compare.
+         </p>
+       </li>
+       <li>
+         <p>
+           Range is quickest measure of dispersion.
+         </p>
+       </li>
+      </ol>
+     </p>
+    </subsubsection>
+
+
+ 
+<subsubsection xml:id="subsubsec-rng_limit">
+  <title>Limits of Range:</title>
+  
+  <p>
+   <ol>
+    <li>
+      <p>
+        Range is not based on each and every observation of series.
+      </p>
+    </li>
+    <li>
+      <p>
+        It is most affected by sampling fluctuations.
+      </p>
+    </li>
+    <li>
+      <p>
+        Range is most unreliable as a guide of the dispersion.
+      </p>
+    </li>
+    <li>
+      <p>
+        Range cannot be calculated for the open-end classification.
+      </p>
+    </li>
+   </ol>
+  </p>
+</subsubsection>
+
+
+
+<subsubsection xml:id="subsubsec-rng_use">
+  <title>Uses of Range</title>
+   
+<p>
+     <ol>
+    <li>
+      <p>
+        Quality control
+      </p>
+    </li>
+    <li>
+      <p>
+        Fluctuations in the share prices
+      </p>
+    </li>
+    <li>
+      <p>
+        Weather forecast
+      </p>
+    </li>
+    <li>
+      <p>
+        Everyday life observations
+      </p>
+    </li>
+  </ol>
+</p>
+</subsubsection>
+
+</subsection>
+
+
+<subsection xml:id="subsec-qrt_dev">
+  <title>Quartile Deviation</title>
+
+ <introduction>
+
+  <image width="40%">
+    <latex-image >
+  \begin{tikzpicture}
+  \draw (0,0) -- (4,0);
+  \filldraw [blue] (1,0) circle [radius=0.02];
+  \filldraw [red] (2,0) circle [radius=0.02];
+  \filldraw [blue] (3,0) circle [radius=0.02];
+ \node [above] at (1,0) {$Q_1$};   
+ \node [above] at (2,0) {$Q_2$}; 
+ \node [above] at (3,0) {$Q_3$};
+ \node [below] at (2,0) {median};
+   \end{tikzpicture}
+  </latex-image>
+    </image>
+
+  <p>
+    Quartile deviation is a statistic that measures the deviation in the middle of the data. 
+    Quartile deviation is also referred to as the semi interquartile range and is half of the difference 
+    between the third quartile and the first quartile value. 
+    Quartiles divide a group of observations into four equal parts. 
+    The first quartile, denoted by <m>Q_1</m> is defined as the <m>25^{th}</m> percentile, 
+    the second quartile (<m>Q_2</m>) is defined as the <m>50^{th}</m> percentile (median), 
+    and the third quartile (<m>Q_3</m>) is defined as the <m>75^{th}</m> percentile. 
+  </p> 
+
+  <p>  
+    The formula for quartile deviation of the data is 
+       <men xml:id="eqn-qd1">
+      Q.D = \frac{Q_3 - Q_1}{2}.
+    </men>
+  </p>
+   
+  <p>
+      The coefficient of quartile deviation is a measure of dispersion, which is used to describe the spread or distribution of data. 
+    </p>
+    <p>
+    Coefficient of quartile deviation, 
+    <men xml:id="eqn-cqd1">
+      CQD = \left(\frac{Q_3 - Q_1}{Q_3 + Q_1}\right) \times 100\%.
+    </men>
+    Here, <m>Q_1</m> is first quartile (or, lower quartile), 
+    <me>
+      Q_1 = [(n+1)/4]^{th} \text{ item }
+    </me>
+    <m>Q_2</m> is second quartile (or, median), 
+    <me>
+      Q_2 = [(n+1)/2]^{th} \text{ item }
+    </me>
+    and 
+    <m>Q_3</m> is third quartile (or, upper quartile) 
+    <me>
+      Q_3 = [3(n+1)/4]^{th} \text{ item }
+    </me>
+    Where <m>n</m> represents the total number of observations in the given data set.
+  </p>
+ 
+    
+   
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-qd_is">
+    <title>Individual series</title>
+    
+     <p>
+      <me>
+        2,7,9,14,1
+      </me>
+      arrange in order 
+      <me>
+        1, 2,7,9,14
+      </me>
+      Here <m>Q_2= 7</m>, which is median, <m>Q_1= 2</m> is first quartile, and <m>Q_3 = 9</m> is third quartile.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Find the quartiles and quartile deviation of the following data: 
+          <me>
+            17, 2, 7, 27, 15, 5, 14, 8, 10, 24, 48, 10, 8, 7, 18, 28
+          </me>
+           </p>
+      </statement>
+      <solution>
+        <p>
+          First arrange the data into order 
+          <me>
+            2, 5, 7, 7, 8, 8, 10, 10, 14, 15, 17, 18, 24, 27, 28, 48
+          </me>
+          Number of data values = <m>n = 16</m>.
+        </p>
+        <p>
+          Median of the even number data set using <xref ref="eqn-median2"/>, 
+          <md> 
+            <mrow> Q_2  \amp = \frac{1}{2}\{\left( \frac{n}{2}\right)^{th} term + \left( \frac{n}{2}+1\right)^{th} term \} </mrow>
+            <mrow> \amp = \frac{1}{2}\{ 8^{th} term +  9^{th} term \} </mrow>
+            <mrow> \therefore Q_2 \amp = \frac{10+14}{2} = 12. </mrow>
+          </md> 
+        </p>
+        <p>
+          Now, lower half of the data is:
+          <me>2, 5, 7, 7, 8, 8, 10, 10 </me>
+          (even number of observations)
+          <me>
+            Q_1 = \text{ Median of lower half of the data } 
+          </me>
+          <me>
+            = (1/2)[4^{th} \text{ term }   + 5^{th} \text{ term}] = \frac{7+8}{2} =7.5.
+          </me>
+           </p>
+          <p>
+            Also, the upper half of the data is: 
+            <me>
+              14, 15, 17, 18, 24, 27, 28, 48
+            </me>
+             (even number of observations)
+             <me>
+              Q_3 = \text{ Median of upper half of the data } 
+            </me>
+            <me>
+              = (1/2)[4^{th} \text{ term } + 5^{th} \text{ term}]= \frac{18+24}{2} =21.
+            </me>
+            
+            </p>
+            <p>
+             Therefore the Quartile deviation, 
+             <me>
+                QD = \frac{1}{2}(Q_3-Q_1) = \frac{21-7.5}{2}=6.75.
+             </me> 
+using equation <xref ref="eqn-qd1"/>.
+            </p>
+            <p>
+            and the coefficient of Quartile deviation using <xref ref="eqn-cqd1"/>, 
+                <me>
+                   CQD = \frac{Q_3-Q_1}{Q_3+Q_1}(100) =\frac{21-7.5}{21+7.5}(100) = 47.36\%.
+                </me> 
+            </p>
+        </solution>
+    </example>
+
+  </subsubsection>
+
+  <subsubsection xml:id="subsubsec-qd_ds">
+    <title>Discrete series</title>
+    
+    <p>
+
+      <me>
+        \begin{array}{c|c} 
+       x &amp; f_i  \\ \hline 
+       5 &amp; 2 \\ 
+      9 &amp; 2 \\ 
+      2 &amp; 1 \\ 
+        10 &amp; 5 \\ 
+       15 &amp; 3 
+       \end{array}
+      </me>
+      Arrange the table into asscending or discending order 
+      <me>
+        \begin{array}{c|c|c} 
+       x &amp; f_i &amp; CF \\ \hline 
+       2 &amp; 1 &amp; 1\\ 
+      5 &amp; 2 &amp; 3\\ 
+      9 &amp; 2 &amp; 5  \\ 
+        10 &amp; 5 &amp; 10 \\ 
+       15 &amp; 3 &amp; 13 \\ \hline
+       sum &amp; 13 &amp;  
+       \end{array}
+      </me>
+    </p>
+    <p>
+      For first quartile, 
+      <me>
+        Q_1 = \left( \frac{n+1}{4}\right)^{th} \text{ item} 
+      </me>
+       
+      <me>
+        or, \quad Q_1 = \left( \frac{13+1}{4}\right)^{th} \text{ item} = 3.5^{th}  \text{ item} 
+      </me>
+      <me>
+       or,  \quad Q_1 =  3^{rd}  \text{ item} + 0.5(4^{th} - 3^{rd})  \text{ item} =5+0.5(9-5) =7
+      </me>
+    </p>
+    <p>
+      For third quartile, 
+      <me>
+        Q_3 = 3\left( \frac{n+1}{4}\right)^{th} \text{ item} 
+      </me>
+       
+      <me>
+        or, \quad Q_3 = 3\left( \frac{13+1}{4}\right)^{th} \text{ item} = 10.5^{th}  \text{ item} 
+      </me>
+      <me>
+       or,  \quad Q_3 =  10^{th}  \text{ item} + 0.5(11^{th} - 10^{th})  \text{ item} = 10+0.5(15-10) =12.5
+      </me>
+    </p>
+    <p>
+      Hence, 
+      <me>
+        QD = \frac{12.5-7}{2} =2.75
+      </me>
+      <me>
+       and, \quad CQD = \frac{12.5-7}{12.5+7}\times 100 =28.2\%.
+      </me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          <me>
+            \begin{array}{c|c} 
+           x_i &amp; f_i  \\ \hline 
+           5 &amp; 6 \\ 
+          10 &amp; 4 \\ 
+          15 &amp; 9 \\ 
+            20 &amp; 5 \\ 
+           25 &amp; 6 \\
+           30 &amp; 2 
+           \end{array}
+          </me>
+          Find Cumulative frequency 
+          <me>
+            \begin{array}{c|c|c} 
+           x_i &amp; f_i  &amp; CF \\ \hline 
+           5 &amp; 6 &amp; 6 \\ 
+          10 &amp; 4 &amp; 10 \\ 
+          15 &amp; 9 &amp; 19 \\ 
+            20 &amp; 5 &amp; 24 \\ 
+           25 &amp; 6 &amp; 30 \\
+           30 &amp; 2  &amp; 32 \\ \hline 
+           sum &amp; 32  &amp; 
+           \end{array}
+          </me>
+        </p>
+        <p>
+          <me>
+            Q_1 = \left( \frac{n+1}{4}\right)^{th} \text{ item} 
+          </me>
+           
+          <me>
+            or, \quad Q_1 = \left( \frac{32+1}{4}\right)^{th} \text{ item} = 8.25^{th}  \text{ item} 
+          </me>
+          <me>
+           or,  \quad Q_1 =  8^{th}  \text{ item} + 0.25(9^{th} - 8^{th})  \text{ item} =10+0.25(10-10) =10.
+          </me>
+        </p>
+        <p>
+          <me>
+            Q_3 = 3\left( \frac{n+1}{4}\right)^{th} \text{ item} 
+          </me>
+           
+          <me>
+            or, \quad Q_3 = 3\left( \frac{32+1}{4}\right)^{th} \text{ item} = 24.75^{th}  \text{ item} 
+          </me>
+          <me>
+           or,  \quad Q_3 =  24^{th}  \text{ item} + 0.75(25^{th} - 24^{th})  \text{ item} = 20+0.75(25-20) = 23.75.
+          </me>
+        </p>
+        <p>
+          Hence, 
+          <me>
+            QD = \frac{23.75-10}{2} =6.875.
+          </me>
+          <me>
+           and, \quad CQD = \frac{23.75-10}{23.75+10}\times 100 =40.74\%.
+          </me>
+        </p>
+      </statement>
+    </example>
+  
+    
+  </subsubsection>
+
+  <subsubsection xml:id="subsubsec-qd_cs">
+    <title>Continuous series</title>
+    
+    <p>
+      Quartile Deviation for Grouped Data: 
+      <men xml:id="eqn-gqd1">
+        Q_r = L+\frac{1}{f}\left[r\left(\frac{N}{4}\right)-CF \right]\times h
+      </men>
+    </p>
+    <p>
+     <m> Q_r =</m> the <m>r^{th} </m> quartile,
+    </p>
+    <p> 
+     <m>L =</m> the lower limit of the quartile class, 
+    </p>
+    <p>
+     <m> h = </m> class interval,  
+    </p>
+    <p>
+      <m>f =</m> the frequency of the quartile class,
+    </p>
+    <p>
+      <m>CF = </m>the cumulative frequency of the class preceding the quartile class,
+        </p>
+        <p>
+      <m>N = \sum f </m> Number of observations in the given data set.
+        </p>
+        <p>
+          <tag>Exclusive series:</tag>
+          <me>
+            \begin{array}{c|c|c} 
+           class &amp; f_i  &amp; CF \\ \hline 
+           0-10 &amp; 3 &amp; 3 \\ 
+          10-20 &amp; 9 &amp; 12 \\ 
+          20-30 &amp; 12 &amp; 24 \\ 
+            30-40 &amp; 11 &amp; 35 \\ 
+           40-50 &amp; 5 &amp; 40 \\
+           50-60 &amp; 6  &amp; 46 \\ \hline 
+           sum &amp; 46  &amp; 
+           \end{array}
+          </me>
+        </p>
+        <p>
+          Class selection for <m>Q_1</m>,
+         <me> 
+          Q_1 =\frac{N}{4} = 46/4 = 11.5^{th} item.
+        </me>
+        modal Class for <m>Q_1</m>
+        <me>\mbox{10-20 | 9 | 12 } </me>
+        </p>
+        <p>
+          <me>
+            Q_1 = 10 + \left(\frac{11.5-3}{9}\right) \times 10 = 19.44.
+          </me>
+          using equation <xref ref="eqn-gqd1"/>
+        </p>
+        <p>
+          Class selection for <m>Q_3</m>,
+         <me> 
+          Q_3 =3\left(\frac{N}{4}\right) = 3\times 11.5 = 34.5^{th} item.
+        </me>
+        modal Class for <m>Q_3</m>
+        <me>\mbox{30-40 | 11 | 35  } </me>
+        </p>
+        <p>
+          <me>
+            Q_3 = 30 + \left(\frac{34.5-24}{11}\right) \times 10 = 39.54.
+          </me>
+          using equation <xref ref="eqn-gqd1"/>
+        </p>
+        <p>
+          Hence, 
+          <me>
+            QD = \frac{39.54-19.44}{2} =10.05.
+          </me>
+          <me>
+           and, \quad CQD = \frac{39.54-19.44}{39.54+19.44}\times 100 =34.07\%.
+          </me>
+        </p>
+
+        <p>
+          <tag>Inclusive series:</tag>
+          <me>
+            \begin{array}{c|c} 
+           class &amp; f_i  \\ \hline 
+           40-49 &amp; 5  \\ 
+          50-59 &amp; 7  \\ 
+          60-69 &amp; 10  \\ 
+            70-79 &amp; 8  \\ 
+           80-89 &amp; 9 \\
+           90-99 &amp; 3  
+          \end{array}
+          </me>
+          Convert this series into exclusive one. 
+          <me>
+            \begin{array}{c|c} 
+           class &amp; f_i  &amp; CF \\ \hline 
+           39.5-49.5 &amp; 5  &amp; 5 \\ 
+          49.5-59.5 &amp; 7  &amp; 12 \\ 
+          59.5-69.5 &amp; 10  &amp; 22 \\ 
+            69.5-79.5 &amp; 8  &amp; 30 \\ 
+           79.5-89.5 &amp; 9 &amp; 39 \\
+           89.5-99.5 &amp; 3  &amp; 42 \\ \hline
+           sum &amp;  &amp; 
+          \end{array}
+          </me>
+          </p>
+        <p>
+          Class selection for <m>Q_1</m>,
+         <me> 
+          Q_1 =\frac{N}{4} = 42/4 = 10.5^{th} item.
+        </me>
+        modal Class for <m>Q_1</m>
+        <me>\mbox{ 49.5-59.5 | 7  | 12 } </me>
+        </p>
+        <p>
+          <me>
+            Q_1 = 49.5 + \left(\frac{10.5-5}{7}\right) \times 10 = 57.35.
+          </me>
+          using equation <xref ref="eqn-gqd1"/>
+        </p>
+        <p>
+          Class selection for <m>Q_3</m>,
+         <me> 
+          Q_3 =3\left(\frac{N}{4}\right) = 3\times 10.5 = 31.5^{th} item.
+        </me>
+        modal Class for <m>Q_3</m>
+        <me>\mbox{79.5-89.5 | 9  | 39 } </me>
+        </p>
+        <p>
+          <me>
+            Q_3 = 79.5 + \left(\frac{31.5-30}{9}\right) \times 10 = 81.16.
+          </me>
+          using equation <xref ref="eqn-gqd1"/>
+        </p>
+        <p>
+          Hence, 
+          <me>
+            QD = \frac{81.16-57.35}{2} =11.9.
+          </me>
+          <me>
+           and, \quad CQD = \frac{81.16-57.35}{81.16+57.35}\times 100 =17.19\%.
+          </me>
+        </p>
+ 
+      </subsubsection>
+
+
+</subsection>
+
+
+<subsection xml:id="subsec-st_dev">
+  <title>Standard Deviation, <m>\sigma</m> and Variance, <m>\sigma^2</m></title>
+
+  <introduction>
+    <p>
+      Standard deviation tells how far a group of numbers (observation) is from the mean. 
+    </p>
+    <p>
+      Variance is the average of the squared differences of a group of numbers (observation) from the mean.
+    </p>
+    <p>
+     Standard deviation is the square root of the variance. It is also called <em>root mean square deviation.</em> 
+     Standard deviation, Variance and their coefficients can be calculated using the following formulae: 
+     <ol marker ="i">
+      <li>
+        <title>Actual Mean Method</title>       
+        <p>
+          <men xml:id="eqn-sd1a">
+            \sigma = \sqrt{\frac{(x-\bar{x})^2}{n}}
+           </men>
+           <m>n</m> is total number of observations.
+        </p>
+      </li>
+      <li>
+        <title>Assumed Mean Method</title> 
+        <p>
+          <men xml:id="eqn-sd1b">
+            \sigma = \sqrt{\frac{\sum{d^2}}{n}-\left(\frac{\sum d}{n}\right)^2}
+           </men>
+           here, <m>d = x-A</m>, <m>A</m> is assumed mean, and  <m>n</m> is total number of observations..
+        </p>
+      </li>
+      <li>
+        <title>  Coefficient of standard deviation</title>       
+        <p>
+            <men xml:id="eqn-csd1">
+            CSD = \frac{\sigma}{\bar{x}}
+          </men>
+           </p>
+      </li>
+      <li>
+        <title>Variance</title>  
+        <p>
+           <men xml:id="eqn-var1">
+             \sigma^2 = \frac{(x-\bar{x})^2}{n}
+           </men>
+          </p>
+      </li>
+      <li>
+        <title>Coefficient of Variance</title>  
+        <p>
+          <men xml:id="eqn-cv1">
+           CV = \frac{\sigma}{\bar{x}}\times 100\%
+          </men>
+        </p>
+      </li>
+     </ol>    
+    </p>
+   
+   
+      
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-sd_is">
+    <title>Individual Series</title>
+    <p>
+     The standard deviation of the data below:
+     <m>10,12,13,15,20</m>
+    </p>
+    <paragraphs>
+      <title>Actual Mean Method (direct method)</title>
+     
+    <p>
+      from equation <xref ref="eqn-mean1"/>
+      <me>
+        \bar{x} = \frac{\sum x}{n} = \frac{10+12+13+15+20}{5} = 70/5=14.
+      </me>
+      Now, 
+      <me>
+        \begin{array}{c|c|c} 
+      x &amp; x-\bar{x}  &amp;( x-\bar{x})^2 \\ \hline 
+      10 &amp; -4  &amp; 16 \\ 
+      12 &amp; -2  &amp; 4 \\ 
+      13 &amp; -1  &amp; 1 \\ 
+       15 &amp; 1  &amp; 1 \\ 
+       20 &amp; 6 &amp; 36 \\ \hline
+       sum &amp;  &amp; 58
+      \end{array}
+      </me>
+      using equation <xref ref="eqn-sd1a"/>
+      <me>
+        \sigma = \sqrt{\frac{58}{5}} =\sqrt{11.6} =3.4.
+      </me>
+      using equation <xref ref="eqn-csd1"/>
+      <me>
+       CSD = \frac{\sigma}{\bar{x}} =3.4/14 =0.2428.
+      </me>
+      using equation <xref ref="eqn-var1"/>
+      <me>
+      \sigma^2 =11.6.
+      </me>
+      using equation <xref ref="eqn-cv1"/>
+      <me>
+      CV =\frac{\sigma}{\bar{x}}\times 100 = 24.28/%.
+      </me>
+    </p>
+     
+  </paragraphs>
+
+  <paragraphs>
+    <title>Assumed Mean Method (short-cut method)</title>
+   
+  <p>
+    <me>
+      \begin{array}{c|c|c} 
+    x &amp; d=x-A  &amp; d^2 \\ \hline 
+    10 &amp; -3  &amp; 9 \\ 
+    12 &amp; -1  &amp; 1 \\ 
+    13 &amp; 0  &amp; 0 \\ 
+     15 &amp; 2  &amp; 4 \\ 
+     20 &amp; 7 &amp; 49 \\ \hline
+     sum &amp;  5  &amp;  63
+    \end{array}
+    </me>
+    Assumed <m>A = 13</m> and use <xref ref="eqn-sd1b"/>
+    <me>
+      \sigma = \sqrt{\frac{63}{5}-\left(\frac{5}{5}\right)^2} = \sqrt{12.6-1} =\sqrt{11.6} =3.4.
+    </me>
+     </p>
+   
+</paragraphs>
+
+  </subsubsection>
+
+  <subsubsection xml:id="subsubsec-sd_dscs">
+    <title>Discrete Series and Continuous Series</title>
+    <p>
+      <ol marker="a">
+        <li>
+          <title>Assumed Mean Method:</title>        
+          <p>
+            <men xml:id="eqn-asd2">
+              \sigma = \sqrt{\frac{\sum fd^2}{N} - \left(\frac{\sum fd}{N}\right)^2}
+            </men>
+            here, 
+            <me>d=x-A,</me> 
+            and 
+            <me>
+              \bar{x} =A+ \sum_{i=1}^{n} \frac{f_i d_i}{f_i}
+            </me>
+            from equation <xref ref="eqn-amean1"/>
+          </p>
+        </li>
+        <li>
+          <title>Step Deviation Method:</title>  
+          <p>
+            <men xml:id="eqn-ssd2">
+              \sigma = \left[\sqrt{\frac{\sum fd^2}{N} - \left(\frac{\sum fd}{N}\right)^2} \right]h
+            </men>
+            here, 
+            <me>
+              d = \frac{x-A}{h},
+            </me>
+            from equation <xref ref="eqn-smean3"/>
+            <m>h = </m> class interval, and 
+            <me>
+              \bar{x} = A+\left( \frac{\sum f d}{\sum f}\right)h 
+            </me>
+            from equation <xref ref="eqn-smean2"/> 
+          </p>
+        </li>
+      </ol>
+    </p>
+   
+    <example>      
+      <statement>
+        <p>
+          Use assumed mean method to solve the data below:
+          <me>
+            \begin{array}{c|c} 
+          x &amp;  f  \\ \hline 
+          1 &amp; 1 \\ 
+          3 &amp; 2  \\ 
+          5 &amp; 3  \\ 
+           7 &amp; 4  \\ 
+           8 &amp; 5 
+         \end{array}
+          </me>
+           </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \begin{array}{c|c|c|c|c|c} 
+          x &amp;  f &amp; d  &amp; d^2  &amp; fd  &amp; fd^2 \\ \hline 
+          1 &amp; 1 &amp; -4  &amp; 16 &amp; -4  &amp; 16 \\ 
+          3 &amp; 2 &amp; -2  &amp; 4 &amp; -4  &amp; 8 \\ 
+          5 &amp; 3 &amp; 0  &amp; 0 &amp; 0  &amp; 0 \\ 
+           7 &amp; 4 &amp; 2  &amp; 4 &amp; 8  &amp; 16 \\ 
+           8 &amp; 5 &amp; 3 &amp; 9 &amp; 15  &amp; 45 \\ \hline
+           sum &amp;  &amp;   &amp;  &amp; 15  &amp; 85
+          \end{array}
+          </me>
+          here, we set <m>A = 5</m>.
+        </p>
+        <p>
+          Now from equation <xref ref="eqn-asd2"/>
+          <me>
+            \sigma = \sqrt{\frac{85}{15} - \left(\frac{15}{15}\right)^2} =\sqrt{5.66-1} =\sqrt{4.66}= 2.16.
+          </me>
+          here, <m>N = \sum f = 15</m> also, 
+          using equation <xref ref="eqn-amean1"/>
+          <me>
+            \bar{x} = 5+\frac{15}{15} =6,
+          </me>
+          and from eqn. <xref ref="eqn-csd1"/>
+          <me>
+            CSD =\sigma /\bar{x} = 2.16/6 =0.36.
+          </me>
+          Also  
+          <me>
+            \sigma ^2 = 4.99
+          </me>
+          and using eqn. <xref ref="eqn-cv1"/>, we have
+          <me>
+            CV = \frac{\sigma}{\bar{x}}\times 100 = 36/%.
+          </me>
+            </p>
+      </solution>
+    </example>
+  </subsubsection>
+
+
+
+
+</subsection>
+   
+
+<subsection xml:id="subsec-mean_dev">
+  <title>Mean Deviation</title>
+  <introduction>
+    <p>
+      The mean deviation is the average deviation from the mean value of the given data set. 
+      The mean deviation of the data values can be easily calculated using the procedure below. 
+<ol>
+  <li>
+    <p>
+      Step 1: Find the mean value for the given data values
+    </p>
+  </li>
+  <li>
+    <p>
+      Step 2: Now, subtract the mean value from each of the data values given (Note: Ignore the minus symbol)
+    </p>
+  </li>
+  <li>
+    <p>
+      Step 3: Now, find the mean of those values obtained in step 2.
+    </p>
+  </li>
+</ol>
+    </p>
+    <p>
+      The formula to calculate the mean deviation is given below.
+<me>
+  MD = \left[ \frac{\sum{\vert x-\bar{x}\vert}}{N}\right]
+</me>
+
+Here, 
+<m>X</m> represents each value in the data set, <m>\bar{x}</m> represents the mean of the data set, <m>N</m> represents the number of data values, and 
+<m>|</m> <m>|</m> represents the absolute value, which ignores the “ <m>-</m> ” symbol.
+    </p>
+  </introduction>
+
+
+  <subsubsection xml:id="subsubsec-m_devmean">
+    <title>Mean deviation from mean</title>
+    <p>
+      <term>Step 1. Find the mean:</term>
+      The Mean Deviation of <m>3, 6, 6, 7, 8, 11, 15, 16.</m>
+      <me>
+        \bar{x}= \frac{\sum x}{N} = \frac{3+6+6+7+8+11+15+16}{8} = \frac{72}{8} =9.
+      </me>
+      <term>Step 2. Find the distance of each value from that mean:</term>
+      <me>
+        \begin{array}{c|c} 
+      x &amp;  d = |x-\bar{x}|  \\ \hline 
+      3 &amp; 6 \\ 
+      6 &amp; 3  \\ 
+      6 &amp; 3  \\ 
+       7 &amp; 2  \\ 
+       8 &amp; 1 \\
+       11 &amp; 2 \\
+       15 &amp; 6 \\
+       16 &amp; 7 \\ \hline 
+       sum &amp; 30
+     \end{array}
+      </me>
+      Step 3. Find the mean of those distances: 
+      <me>
+        MD = 30/8 = 3.75.
+      </me>
+      The values are, on average, 3.75 away from the middle.
+    </p>
+  </subsubsection>
+
+
+</subsection>
+
+</section>

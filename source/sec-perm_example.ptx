@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-perm_example" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example A</title>
+
+
+<example>
+  <statement>
+    <p>
+      Evaluate: <m>  ^{12}P_4.</m>
+      </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>  ^{12}P_4 \amp =  \frac{12!}{(12-4)!} </mrow>
+        <mrow> \amp =  \frac{12\times 11 \times 10 \times 9 \times \cancel{8!}}{\cancel{8!}} </mrow>
+        <mrow> \amp = 12\times 11 \times 10 \times 9 = 11880.</mrow>
+      </md>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the value of <m>n</m> such that 
+     <me>
+      \frac{ ^nP_4}{ ^{(n-1)}P_4}= \frac{5}{3}, \quad n \gt 4.
+     </me>
+      </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow> \frac{\frac{ n!}{ (n-4)!}}{\frac{ (n-1)!}{ (n-1-4)!}} \amp = \frac{5}{3} </mrow>
+        <mrow> \text { or,} \quad \frac{\frac{ n(n-1)(n-2)(n-3)\cancel{(n-4)!}}{ \cancel{(n-4)!}}}{\frac{ (n-1)(n-2)(n-3)(n-4)\cancel{(n-5)!}}{ \cancel{(n-5)!}}} \amp = \frac{5}{3} </mrow>
+     <mrow> \text { or,} \quad \frac{ n \cancel{(n-1)(n-2)(n-3)}}{ \cancel{(n-1)(n-2)(n-3)}(n-4)} \amp = \frac{5}{3}  </mrow>
+     <mrow>  \text { or,} \quad \frac{n}{n-4}\amp =\frac{5}{3}</mrow>
+     <mrow> \text { or,} \quad 3n \amp =5n -20</mrow>
+     <mrow>\therefore \quad n \amp =10.</mrow>
+    </md>
+    </p>
+  </solution>
+</example>
+  
+
+<example>
+  <statement>
+    <p>
+      If <m>5 \times ^4P_r = 6 \times ^5P_{(r-1)}, </m> find r.
+    </p>
+  </statement>
+<solution>
+  <p>
+    <md>
+      <mrow> 5 \times \frac{4!}{(4-r)!}  \amp  = 6 \times \frac{5!}{(5-(r-1))!}</mrow>
+      <mrow> or, \quad \frac{\cancel{5\times 4!}}{(4-r)!}  \amp  = \frac{ 6 \times \cancel{5 \times 4!}}{(6-r)!}</mrow>
+      <mrow> or, \quad \frac{1}{(4-r)!} \amp = \frac{6}{(6-r)!} </mrow>
+      <mrow> or, \quad \frac{1}{\cancel{(4-r)!}} \amp = \frac{6}{(6-r)(5-r)\cancel{(4-r)!}} </mrow>
+      <mrow>or, \quad (6-r)(5-r) \amp = 6</mrow>
+      <mrow>or, \quad (6-r)(5-r) \amp = 3\times 2</mrow>
+    </md>
+   by equating LHS and RHS, we get - 
+   <md>
+    <mrow> 6-r \amp = 3 </mrow>
+    <mrow>and \quad  5-r \amp = 2 </mrow>
+    <mrow>\therefore \quad r  \amp = 3.</mrow>
+   </md>
+    </p>
+</solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>^{15}P_r = 2730,</m> find the value of <m>r.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow> ^{15}P_r \amp = 2730 </mrow>
+        <mrow> or, \quad \frac{15!}{(15-r)!} \amp = 2\times 3 \times 5 \times7 \times 13</mrow>
+        <mrow> or, \quad \frac{15!}{(15-r)!} \amp = 15 \times 14 \times 13 </mrow>
+        <mrow> or, \quad \frac{\cancel{15!}}{(15-r)!} \amp =  \frac{\cancel{15!}}{12!}</mrow>
+        <mrow>(15-r)! \amp = 12! </mrow>
+        <mrow>\therefore \quad r \amp = 3.</mrow>
+      </md>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m> ^{56}P_(r+6) : ^{54}P_(r+3)  = (30800:1),</m> find the value of <m>r.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow> \frac{56!}{[56-(r+6)]!} \times \frac{(54-r-3)!}{54!}\amp = \frac{30800}{1}</mrow>
+        <mrow> or, \quad \frac{56\times 55}{(50-r)!} \times \frac{(51-r)!}{1}\amp = \frac{55\times 56 \times 10}{1}</mrow>
+        <mrow> or, \quad \frac{(51-r)!}{(50-r)!}\amp = 10</mrow>
+        <mrow>or, \quad \frac{(51-r)}{1}\amp = 10 </mrow>
+        <mrow> or, \quad 51-r \amp = 10 </mrow>
+        <mrow>\therefore \quad r \amp = 51-10 = 41.</mrow>
+      </md>
+    </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      Prove that 
+      <m>  ^nP_n = ^nP_{(n-1)}</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      LHS, <me>
+        ^nP_n = \frac{n!}{(n-n)!} = \frac{n!}{0!} = n!
+      </me>
+      RHS, 
+      <me>
+        ^nP_{(n-1)} = \frac{n!}{(n-n+1)!} =\frac{n!}{1!} = n!
+      </me>
+       </p>
+       <p>
+       see <xref ref="sec-fact"/>
+       </p>
+  </solution>
+</example>
+
+<p>
+  <alert> Permutations of distinct objects.</alert>
+</p>
+
+<example>
+  <statement>
+    <p>
+      3 men have 4 coats, 6 paints, and 5 caps. In how many ways can they wear them?
+    </p>
+  </statement>
+  <solution>
+<p>
+    <me>
+      \begin{array}{c|c|c} 
+      coats &amp; paints &amp; caps \\ \hline 
+      ^4P_3 &amp; ^6P_3 &amp; ^5P_3  \\ 
+      \end{array}
+  </me>
+</p>
+
+    <p>
+     <me> = ^4P_3\times ^6P_3 \times ^5P_3 </me> 
+     each of these outfits are compulsory to complete dressed up for the men, 
+     hence multiplication principle is used here to find the total ways of wearing them.
+     <me>
+      =\frac{4!}{1!} \times \frac{6!}{3!}\times \frac{5!}{2!} = \frac{4!\times 6\times 5\times \times 4!\times 5\times 4!}{3!\times 2!} = 172800.
+     </me>
+       </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      How many different signals can be made by using any number of flags from <m>4</m> flags of different colors?
+    </p>
+  </statement>
+  <solution>
+
+<p>
+  <me>
+    \begin{array}{c|c|c} 
+    \text{ I signal} &amp; \text{ II signal} &amp; \text{ III signal}  &amp; \text{ IV signal} \\ \hline 
+    ^4P_1 &amp; ^4P_2 &amp; ^4P_3  &amp; ^4P_4 \\ 
+    \end{array}
+</me>
+</p>
+
+
+ <p>
+  <me> = ^4P_1\times ^4P_2 \times ^4P_3 \times ^4P_4</me> 
+  Every signals are complete and independent on each other, 
+  hence addition principle is used to find the total numbers of signals.
+  <me>
+   =\frac{4!}{3!} + \frac{4!}{2!}\times \frac{4!}{1!} \times \frac{4!}{0!} = 4+12+24+24 = 64.
+  </me>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      A code is to consist of two distinct letters followed by two distinct numbers between 1 and 9. 
+      For example, CA35, DQ72, etc. are codes.
+      <ol marker ="i">
+        <li>
+          <p>
+            How many such codes are there?
+          </p>
+        </li>
+        <li>
+          <p>
+            How many of them end with an even integer?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+
+    <p>
+      <me>
+        \begin{array}{c|c|c} 
+        \text{ I  alphabet} &amp; \text{ II  alphabet} &amp; \text{ I digit}  &amp; \text{ II digit} \\ \hline 
+        26 &amp; 25 &amp; 9  &amp; 8 \\ 
+        \end{array}
+    </me>
+    </p>
+
+   
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            We need distinct alphabets and digits to make codes. Hence the total codes are <m>26\times 25\times 9\times 8 = 46800. </m>. 
+          </p>
+          <p>
+            or, we have -  <me> = ^{26}P_2\times ^9P_2 =  \frac{26!}{24!} \times \frac{9!}{7!} = 26\times 25\times 9\times 8 = 46800.</me> 
+          </p>
+        </li>
+        <li>
+          <p>
+            For even number on units place there are 4 choices <m>2, 4, 6, 8</m> and we need distinct 
+            numbers on each place so remaining 8-digits are only available for tens place. Hence, 
+            <me> = ^{26}P_2\times 8 \times 4 = 26\times 25\times 8\times 4 = 20800. </me>
+          </p>
+        </li>
+      </ol>
+      </p>
+
+      <p>
+        <me>
+          \begin{array}{c|c|c} 
+          \text{ I  alphabet} &amp; \text{ II  alphabet} &amp; \text{ I digit}  &amp; \text{ even no.} \\ \hline 
+          26 &amp; 25 &amp; 8  &amp; 4 \\ 
+          \end{array}
+      </me>
+      </p>
+
+  </solution>
+
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the number of ways in which 5 boys and 3 girls can be arranged in a row so that no two girls come together.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      To have no two girls together, we can arrange boys first and then place each girl between them 
+      or before or after the first and last boys.
+    </p>
+    <p>
+      <fillin characters="5" /> B1  <fillin characters="5" /> B2  <fillin characters="5" /> B3  <fillin characters="5" /> B4  <fillin characters="5" /> B5  <fillin characters="5" />.
+    </p>
+    <p>
+      <me>
+        ^5P_5 \times ^6P_3 = 5! \times 6 \times 5 \times 4 = 14400.
+      </me>
+      here 6 represents numbers of seats available for girls.
+    </p>
+   
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      There are 2 english, 3 spanish, and 4 hebrew books. In how many ways can 
+      they be arranged on a self so as to keep all the books of the same language toghether?
+    </p>
+  </statement>
+  <solution>
+
+    <p>
+      <me>
+        \begin{array}{c|c|c} 
+        \text{ E1, E2 } &amp; \text{ S1, S2, S3 } &amp; \text{ H1, H2, H3, H4 }  \\ \hline 
+        \text{ 1 object} &amp; \text{ 1 object} &amp; \text{ 1 object}   \\ 
+        \end{array}
+    </me>
+    </p>
+
+    <p>
+      Consider each language book as one bundle, so there are three bundles (objects). 
+       Hence, the number of ways we can arrange these bundles is given as 
+      <me>
+        ^3P_3
+      </me>
+      Now, among each books in a bundle can be suffled together, hence, internal arrangements are given as 
+      <me>
+        ^2P_2 \times ^3P_3 \times ^4P_4
+      </me>
+      Here, each tasks are compulsory to complete the work. Hence, the total number of ways to arrange the whole books are 
+      <me>
+        ^3P_3 \times ^2P_2 \times ^3P_3 \times ^4P_4 = 3! \times 2! \times 3! \times 4! = ......
+      </me>
+      
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      In how many ways can 7 test papers be arranged so that the best and the worst papers are never come together?
+    </p>
+  </statement>
+  <solution>
+    <p>
+     P1, P2, P3, P4, P5, P6, P7
+    </p>
+    <p>
+      Here, the total arrangements are <m>^7P_7</m> for all papers together.
+    </p>
+
+    <p>
+      <me>
+        \begin{array}{c|c|c} 
+        \text{ P1, P2, P3, P4, P5 } &amp; \text{ P6, P7 }   \\ \hline 
+        \text{ 5 object} &amp; \text{ 1 object}   \\ 
+        \end{array}
+    </me>
+    </p>
+
+
+   <p>
+    Now, number of ways in which the best and the worst papers come together is given by 
+    <m>^6P_6 \times ^2P_2</m>. First bundle of papers <m>P1, P2, P3, P4, P5</m> considered as 5 objects. 
+    and the second bundle <m>P6, P7 </m> is considered as 1 object, as they are coming together.
+   </p>
+   <p>
+    Hence, the number of ways when best and worst papers never come together is given by 
+    <me>
+      ^7P_7 - \left( ^6P_6 \times ^2P_2 \right) = 7! -(6!\times 2!) = ....
+    </me>
+    
+   </p>
+  </solution>
+</example>
+
+
+<p>
+  <alert> Permutations of the repeating objects.</alert>
+</p>
+
+<example>
+  <statement>
+    <p>
+      Find the number of permutations of <m>1,2,3,3,3,3,4,5,6,7,8</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <m>\frac{11!}{4!} = ----- </m>
+    </p>
+  </solution>
+</example>
+
+
+
+<example>
+  <statement>
+    <p>
+      Find the number of permutations of <m>A, B, C, D, D, E,E,E, 4,5, 5, 6, 6, 6,7.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <m>\frac{15!}{2!3!2!3!} = ------</m>
+    </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+     How many words can be formed using the letter <m>A</m> thrice, the letter <m>B</m> twice, and the letter <m>C</m> thrice?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Total number of letters = <m>3+2+3=8</m>. 
+      Hence, the total number of words can be formed =  
+      <m>\frac{8!}{3!2!3!} = ------</m>
+    </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+     <ol marker ="i">
+      <li>
+        <p>
+          Find how many arrangements can be made with the letters of the word <m>MATHEMATICS.</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          In how many of them are the vowels coming together?
+        </p>
+      </li>
+     </ol>
+     </p>
+  </statement>
+  <solution>
+        <ol marker ="i">
+        <li>
+          <p>
+            In the letter <m>M,A,T,H,E,M,A,T,I,C,S </m>
+            <me>
+              \frac{11!}{2!2!2!} = -----
+            </me>
+            here, the letter <m>M</m> is repeating 2 times, <m>A</m> is repeating 2 times, and <m>T</m> is repeating 2 times. 
+          </p>
+        </li>
+        <li>
+           <p>
+            Make a bundle of all vowels and considere them as 1 object and all the remaining consonants are seperate 7 objects. Hence, 
+            <me>
+              \frac{8!}{2!2!}\times  \frac{4!}{2!} = ----
+            </me>
+            </p>
+                         
+  <image width="40%"> <latex-image >
+    \begin{tikzpicture}    
+    \draw (-1,0) rectangle (3,1) node at (1, 0.5) {M,T,H,M,T,C,S}
+          (4,0) rectangle (6,1) node at (5,0.5) {A, E, A, I};
+    \end{tikzpicture}
+   </latex-image> </image>
+
+        </li>
+       </ol>
+      
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            Find the number of arrangements of the letters of the word <m>INDEPENDENCE</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            In how many of these arrangements:
+            <ol marker ="a">
+              <li>
+                <p>
+                  Do the words start with <m>P</m>?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Do all the vowels occur together?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Do the vowels never occur together?
+                </p>
+              </li>
+              <li>
+                <p>
+                  Do the word begin with <m>I</m> and end in <m>P</m>?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+       </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            <me>
+              \frac{12!}{3!2!4!} =---
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <ol marker ="a">
+              <li>
+                <p>
+                  Fix <m>P,</m> and then <m>I N D E E N D E N C E</m>
+                </p>
+               <p>
+                <me>
+                  \frac{11!}{3!2!4!} =---
+                </me>
+               </p>
+              </li>
+              <li>
+                <p>
+                  Bundle all vowels together as 1 object and rest as 7 objects: <m>N D P N D N C</m> and <m>I E E E E </m>.
+                </p>
+                <p>
+                  <me>
+                    \frac{7!}{3!2!} \times  \frac{5!}{4!} = -----
+                  </me>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Vowels never come together = Total arrangements - vowels together.
+                </p>
+                <p>
+                  <me>
+                    \frac{12!}{3!2!4!} - \left( \frac{7!}{3!2!} \times  \frac{5!}{4!} \right) = ----
+                  </me>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Fix the position of <m>I</m> at first place, <m>N D E E N D E N C E</m>, fix the position of <m>P</m> at the end.
+                </p>
+                <p>
+                  <me>
+                    \frac{10!}{3!2!4!} = ----
+                  </me>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      How many different words can be formed using all the letters of the word <m>ALLAHABAD.</m>
+    </p>
+    <p>
+      In how many of them 
+      <ol marker ="i">
+        <li>
+          <p>
+            Both <m>L</m> do not come together?
+          </p>
+        </li>
+        <li>
+          <p>
+            The vowels occupy the even positions?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \frac{9!}{4!2!} = ----
+      </me>
+    </p>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            Put all <m>L </m> into one box as 1 object and remaining others in another box as 7 objects.
+          </p>
+          <p>
+            <me>
+              \frac{7!}{4!} \times   \frac{2!}{2!} = ----
+            </me>
+          </p>
+          <p>
+            Now, for  both <m>L</m> do not come together is given by 
+            <me>
+              \frac{9!}{4!2!} -\left( \frac{7!}{4!} \times \frac{2!}{2!} \right) =----
+            </me>
+            </p>
+        </li>
+        <li>
+          <p>
+            For the vowels occupy the even positions 
+            </p>
+          <p>
+            <fillin characters="3" /> <m>A</m>   <fillin characters="3" /> <m>A</m>   <fillin characters="3" /> <m>A</m>  
+            <fillin characters="3" /> <m>A</m>   <fillin characters="3" />
+            <me>
+              \frac{5!}{2!} \times  \frac{4!}{4!} =---.
+            </me>
+            first term for consonants and second term for vowels.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      How many numbers greater than a million can be formed with the digits <m>2, 3, 0,3,4,2,3?</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      1 million is a 7 digits number.
+      <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> 
+      <fillin characters="3" /> <fillin characters="3" />  <fillin characters="3" />
+    </p>
+    <p>
+      Total numbers formed here are given by 
+      <me>
+        \frac{7!}{2!3!}
+      </me>
+      as 2 is repeating twice and 3 is repeating thrice.
+    </p>
+    <p>
+      Any arrangement where <m>0</m> takes the first position is less than a million. 
+      Hence, numbers less than a million are given as 
+      <me>
+        \frac{6!}{2!3!}
+      </me>
+      Therefore numbers greater than a million are given by 
+      <me>
+        \frac{7!}{2!3!} -  \frac{6!}{2!3!} = ----
+      </me>
+      </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      In how many ways can 4 letters be posted in 3 letter boxes?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Here repetition is allowed, so we can post all 4 letters into any of these 3 letter box. 
+      Hence the total number of ways is given by
+      <me>
+        3^4 = 81 
+      </me>
+      ways. Every letter has 3 choices.
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      In how many ways can 5 apples be distributed among 6 boys, 
+      if there is no restriction to the number of apples each boy may get?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        6^5 = ---
+      </me>
+      every apple has 6 choices.
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      In how many ways can 3 prizes be distributed among 4 boys, when 
+      <ol marker ="i">
+        <li>
+          <p>
+            No boys get more than 1 prize,
+          </p>
+        </li>
+        <li>
+          <p>
+            A boy may get any number of prizes,
+          </p>
+        </li>
+        <li>
+          <p>
+            No boy gets all the prizes?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Here, we have prizes: <m>P1, P2, P3</m> and boys: <m>B1, B2, B3, B4</m> 
+      <ol marker ="i">
+        <li>
+          <p>
+            First prize can be received by any one of the boys, so 4 choice, and 3 choice, and so on.
+            <m>4\times 3 \times 2 \times 1 = 4!.</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>4\times 4 \times 4 \times 4 = 4^3 = 64.</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            Boy gets all the prizes - all prizes go to any one of the boys.
+            <m>64-4 =60.</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      How many four digit numbers can be formed using digits <m>1, 2, 3, 4, 5, 6 </m> 
+      when a digit may be repeated any number of times in any arrangements?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" />
+    </p>
+    <p>
+      <m>6 \times 6 \times 6 \times 6 = 6^4.</m>
+    </p>
+  </solution>
+</example>
+
+</section>

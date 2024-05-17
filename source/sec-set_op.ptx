@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-set_op" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Operations on Sets</title>
+
+
+  <introduction>
+    <p>
+      <ol marker ="I">
+        <li>
+          <p>
+            <term>Union of Sets: </term> 
+            Let <m>A =\{2, 4, 6, 8\} </m> and <m>B=\{6, 8, 10, 12 \}</m> be two arbitrary sets, then union of <m>A</m> and <m>B</m> is written as 
+            <me>
+              A \cup B.
+            </me>
+            Where  <me>
+              A \cup B = \{2, 4, 6, 8, 10, 12\}
+            </me>
+            Union is an operation on sets that brings all elements of set <m>A</m> and all elements of set <m>B</m> together.
+            i.e., <me>
+              A \cup B = \{x : x \in A \text{ or } x \in B\}.
+            </me>
+            In mathematics, <alert>or</alert> means <term>either</term> or <term>both</term>.
+          </p>
+          <p>
+            If <m>A =\{a, e, i, o, u\} </m> and <m>B=\{i, u \}</m>, then  <m>A \cup B = \{a, e, i, o, u\}</m>
+            <term>Note: </term> if <m> B \subset A</m>, then <m>A \cup B = A.</m>
+          </p>
+          <p>
+          <alert>Properties of Union:</alert> 
+          </p> 
+          <p>
+          <ol marker ="i">
+            <li>
+              <p>
+                <m>A \cup B = B \cup A</m> (Commulative law)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(A \cup B) \cup C = A \cup (B \cup C)</m> (Associative law)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(A \cup \phi) = A</m> (Law of identity element)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(A \cup A) = A</m> (Indempotent Law)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(\bigcup \cup A) = \bigcup </m> (Law of Universal Set)
+              </p>
+            </li>
+          </ol>
+        </p>
+        </li>
+        <li>
+          <p>
+            <term>Intersection of Sets: </term> 
+            Let <m>A =\{2, 4, 6, 8\} </m> and <m>B=\{6, 8, 10, 12 \}</m> be two arbitrary sets, then intersection of <m>A</m> and <m>B</m> is written as 
+            <me>
+              A \cap B.
+            </me>
+            Where  <me>
+              A \cap B = \{6, 8\}
+            </me>
+            Intersection is an operation on sets that brings common elements of set <m>A</m> and set <m>B</m> together.
+            i.e., <me>
+              A \cap B = \{x : x \in A \text{ and } x \in B\}.
+            </me>
+            In mathematics, <term>and</term> means <term>simultaneously</term>.
+          </p>
+          <p>
+            If <m>A =\{a, e, i, o, u\} </m> and <m>B=\{i, u \}</m>, then  <m>A \cap B = \{i, u\}</m>
+            <term>Note: </term> if <m> B \subset A</m>, then <m>A \cap B = B.</m>
+          </p>
+          <p>
+          <alert>Properties of Intersection:</alert>
+          <ol marker ="i">
+            <li>
+              <p>
+                <m>A \cap B = B \cap A</m> (Commulative law)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(A \cap B) \cap C = A \cap (B \cap C)</m> (Associative law)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(\phi \cap A) = \phi </m>, <m>\bigcup \cap A = A</m> (Law of <m>\phi </m> &amp; <m> \bigcup </m>)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(A \cap A) = A</m> (Indempotent Law)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C) </m> (Distributive Law)
+              </p>
+            </li>
+          </ol>
+        </p>
+        </li>
+        <li>
+          <p>
+            <term>Difference of Sets:</term>
+            Let <m>A =\{1, 2, 3, 4, 5, 6\} </m> and <m>B=\{2, 4, 6, 8 \}</m> be two arbitrary sets, then difference of sets <m>A</m> and <m>B</m> is given as  
+            <me>
+              A - B = \{1, 3, 5\} 
+            </me>
+            and   <me>
+              B - A = \{ 8\}
+            </me>
+            Therefore <m>A - B \neq B - A.</m>
+          </p>
+          <p>
+            <me>
+              A - B = \{x : x \in A \text{ but } x \not\in B.\} 
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Complement of a Set:</term> 
+            It is the set of all elements in the universal set, <m>\cup</m> that are not in set, <m>A</m>. 
+            It is denoted by <m>A'</m> or <m>A^C</m>.
+             <me>
+              A' = \{x : x \in \cup \text{ and } x \not\in A\}
+             </me>
+             
+             Alternatively, complement of a set is the difference of the universal set, <m>\cup</m> and 
+             the subset, <m>A</m>. i.e., 
+             <me>
+              A' = \cup - A.
+             </me>
+             
+                      </p>
+                      <p>
+                        Suppose, the universal set  <m>\cup = \{ x: x \in \mathbb W \text{ and } 1 \leq x \leq 9 \}</m>.
+                          If  <m>A=\{1,2,4\}</m>, then <m>A^c=\{3,5,6,7,8,9\}</m>.
+                      </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
+ 
+
+
+  <subsection xml:id="subsec-venn">
+    <title>Venn Diagram</title>
+    <p>
+      It is used to represent all possible relations of different sets. It can be represented by any closed figure, 
+       (a Circle or a Polygon) but usually circles are prefered for each set. <term>Venn-Diagram of Universal set</term> including 
+       sets <m>A</m> and <m>B</m> are drawn below.
+         </p>
+       
+    <image width="25%" xml:id="set_vennU">
+  
+  <latex-image >
+  \begin{tikzpicture}
+  \draw (0,0) rectangle (5,3);
+  \draw [] (1.8,1.5) circle [radius=1];
+  \draw [] (3.3,1.5) circle [radius=1];
+  \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
+   \end{tikzpicture}
+  </latex-image>
+    </image>
+  
+  
+  </subsection>
+
+<subsection xml:id="subsec-DeMorgn">
+  <title>De Morgan's Law in Set Theory</title>
+  <p>
+    De Morgan's law defines the relationship between the union, intersection, and complements of the sets. 
+    In set theory, there are two De Morgan's Laws:
+       </p>
+       <p>
+        <term>First De Morgan's Law</term> The complement of the union of two sets is equal to the intersection 
+        of the complements of each set. That is,
+          <me>
+            (A \cup B)' = A' \cap B'
+          </me>
+           </p>
+       <p>
+        <term>Second De Morgan's Law</term> The complement of intersection of two sets is equal to the 
+        union of the complements of each set.
+        That is, 
+        <me>
+          (A \cap B)' = A' \cup B'
+        </me>
+       </p>
+</subsection>
+
+<subsection xml:id="subsec-vennD_shade">
+  <title>Shading of Venn Diagram</title>
+ <example>
+  <p>
+    Set <m>A</m>
+  </p>
+
+      
+  <image width="25%" xml:id="set_ven_A">
+  
+    <latex-image >
+    \begin{tikzpicture}
+    \draw (0,0) rectangle (5,3);
+    \filldraw [green, opacity =0.7] (1.8,1.5) circle [radius=1];
+    \draw [] (3.3,1.5) circle [radius=1];
+    \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+ </example>
+
+ <example>
+  <p>
+    Set <m>A\cup B</m>
+  </p>
+
+      
+  <image width="25%" xml:id="set_ven_AUB">
+  
+    <latex-image >
+    \begin{tikzpicture}
+    \draw (0,0) rectangle (5,3);
+    \filldraw [green, opacity = 0.7] (1.8,1.5) circle [radius=1];
+    \filldraw [red, opacity = 0.7] (3.3,1.5) circle [radius=1];
+    \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+ </example>
+
+
+ <example>
+  <p>
+    Set <m>A\cap B</m>
+  </p>
+
+      
+  <image width="25%" xml:id="set_ven_AIB">
+  
+    <latex-image >
+ \def\secondcircle{(210:1.75cm) circle (2.5cm)}
+  \def\thirdcircle{(330:1.75cm) circle (2.5cm)}
+    \begin{tikzpicture}
+    \begin{scope}
+    \clip \secondcircle;
+    \fill[cyan] \thirdcircle;
+     \end{scope}
+      \draw (-5,-4) rectangle (5,3);
+      \draw \secondcircle node [text=black,below left] {\LARGE $A$};
+      \draw \thirdcircle node [text=black,below right] {\Large $B$};
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+ </example>
+
+
+ <example>
+  <p>
+    Set <m>\bar{A}</m> (Not A or A')
+  </p>
+
+      
+  <image width="25%" xml:id="set_ven_A-comp">
+  
+    <latex-image >
+     \begin{tikzpicture}
+    \scope
+\clip (-1.5,-1.5) rectangle (2.5,1.5)
+      (0,0) circle (1);
+\fill (1,0) circle (1);
+\fill [gray] (-1.5,-1.5) rectangle (2.5,1.5);
+\endscope
+\draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+      (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
+      (-1.5,-1.5) rectangle (2.5,1.5) node [text=black,above] {$\bigcup$};
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+ </example>
+
+
+ <example>
+  <p>
+    Set <m>A-B</m> 
+  </p>
+
+      
+  <image width="25%" xml:id="set_ven_A-B">
+  
+    <latex-image >
+     \begin{tikzpicture}
+     \scope
+     \clip (-1.5,-1.5) rectangle (2.5,1.5)
+           (1,0) circle (1);
+     \fill[cyan] (0,0) circle (1);
+     
+     \endscope
+     \draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+           (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
+           (-1.5,-1.5) rectangle (2.5,1.5) node [text=black,above] {$\bigcup$};
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+ </example>
+
+
+ <example>
+  <p>
+    Set <m>(AUB)'</m> 
+  </p>
+
+      
+  <image width="25%" xml:id="set_ven_comp-AUB">
+  
+    <latex-image >
+     \begin{tikzpicture}
+     
+	\filldraw [cyan, opacity =0.7]   (-1.5,-1.5) rectangle (2.5,1.5) node [text=black,above] {$\bigcup$};		
+
+  \filldraw [white] (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+        (1,0) circle (1) (1,1)  node [text=black,above] {$B$};
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+ </example>
+
+
+ <example>
+  <p>
+    Set <m>(A\cap B)'</m> 
+  </p>
+
+      
+  <image width="25%" xml:id="set_ven_comp-AIB">
+  
+    <latex-image >
+     \begin{tikzpicture}
+     
+     \filldraw[fill=gray] (-1.5,-1.5) rectangle (2.5,1.5) node [text=black,above] {$\bigcup$};
+     \scope % A \cap B
+     \clip (0,0) circle (1);
+     \fill[white] (1,0) circle (1);
+     \endscope
+     % outline
+     \draw (0,0) circle (1) (0,1) node [text=black,above] {$A$}
+           (1,0) circle (1) (1,1) node [text=black,above] {$B$};
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+ </example>
+
+
+</subsection>
+
+
+
+</section>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-perm" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Permutations</title>
+
+  
+<p>
+  Arrange the letters <m>A, B, C</m> by taking three at a time.
+</p>
+<p>
+  Here they are:
+  <md>
+    <mrow> i. \quad \amp = ABC</mrow>
+    <mrow> ii. \quad \amp = ACB</mrow>
+    <mrow> iii. \quad \amp = BAC</mrow>
+    <mrow> iv. \quad \amp = BCA</mrow>
+    <mrow> v. \quad \amp = CAB</mrow>
+    <mrow> vi. \quad \amp = CBA</mrow>
+  </md>
+  so again <m>6</m> permutations.
+</p>
+
+<p>
+ Find all permutations of letters <m>A, B, C, D</m> by taking three at a time.
+</p>
+
+
+<tabular halign="center">
+  <row header="yes" bottom="minor" >
+    <cell>ABC </cell>
+    <cell>ABD </cell>
+    <cell>ACD </cell>
+    <cell>BCD </cell>
+  </row>
+  <row>
+    <cell><m>6 </m> </cell>
+    <cell><m>6 </m></cell>
+    <cell><m>6</m></cell>
+    <cell><m>6</m></cell>
+   </row>
+ </tabular>
+<p>
+  Hence, total of <m>6+6+6+6=24.</m> different arrangements.
+</p>
+
+<theorem xml:id="thm-perm1">
+  <statement>
+    <p>
+      The number of permutations of <m>n</m> different objects taken <m>r</m> at a time, where <m>0\lt r \leq n</m> 
+      and the objects do not repeat, is given by <m> (P,r) \quad \text{ or, } \quad  ^nP_r</m>. Here, 
+      <me>
+      ^nP_r = n(n-1)(n-2) \ldots (n-r+1) = \frac{n!}{(n-r)!}.
+      </me>
+      </p>
+  </statement>
+</theorem>
+
+<theorem xml:id="thm-perm2">
+  <statement>
+    <p>
+      The number of permutations of <m>n</m> things of which <m>p</m> are alike of one kind, 
+      <m>q</m> are alike of another kind and remaining all are distinct is given by 
+      <me>
+        \frac{n!}{p!\times q!}.
+        </me>
+    </p>
+  </statement>
+</theorem>
+
+
+</section>

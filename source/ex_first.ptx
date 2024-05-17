@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_first" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+
+
+  <exercise>
+    <statement>
+      <p>
+        Is zero a rational number? Can you write it in the form <m>\frac{p}{q}</m> where <m>p</m> and <m>q</m> are integers and <m>q \neq 0</m>?
+        </p>
+    </statement>
+    <solution>
+      <p>
+        Zero can be written in the form <m>\frac{p}{q}</m> = <m>\frac{0}{1}</m>. Hence it is a rational number.
+      </p>
+    </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Find six rational numbers between 3 and 4.
+        </p>
+      </statement>
+    </exercise>
+
+
+    <exercise>
+      <p>
+        Classify the following numbers as rational or irrational according to their type:
+      </p>
+      <ol marker ="i">
+        <li>
+          <p>
+          <m>  \sqrt{23}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>  \sqrt{225}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>0.3796</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>7.478478</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>1.101001000100001 \ldots</m>
+          </p>
+        </li>
+      </ol>
+    </exercise>
+
+    <exercise>
+      <p>
+        Classify the following numbers as rational or irrational:
+      </p>
+      <p>
+        <ol marker="i">
+          <li>
+            <p>
+              <m>2-\sqrt{5}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{2\sqrt{7}}{7\sqrt{7}}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1}{\sqrt{2}}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>2\pi</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exercise>
+
+</exercises>
+
+
+
+

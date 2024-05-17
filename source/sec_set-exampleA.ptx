@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_set-exampleA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example A</title>
+  
+
+  <example>
+    <statement>
+      <p>
+         Which of the following are sets? Justify your answers.
+        </p>
+        <p>
+        <ol marker ="i">
+          <li>
+            <p>
+              The collection of all the months of a year begining with letter 'J'.
+            </p>
+          </li>
+          <li>
+            <p>
+              The collection of ten-most popular movies in USA.
+            </p>
+          </li>
+          <li>
+            <p>
+              A team of eleven-best baseball players of the world.
+            </p>
+          </li>
+          <li>
+            <p>
+              The collection of all boys in your class.
+            </p>
+          </li>
+          <li>
+            <p>
+              The collection of all natural numbers less than 100.
+            </p>
+          </li>
+          <li>
+            <p>
+              The collection of novels written by Shakespeare.
+            </p>
+          </li>
+          <li>
+            <p>
+              The collection of all even integers.
+            </p>
+          </li>
+          <li>
+            <p>
+              The collection of most dangerous animals of the world.
+            </p>
+          </li>
+          <li>
+            <p>
+              The collection of math-teachers of this school.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </example>
+
+<example>
+  <statement>
+      <p>
+        Let <m>A = \{1, 2, 3, 4, 5, 6\}.</m> Insert the appropriate symbol <m>\in</m> or <m>\notin</m> in the spaces:
+      </p>
+      <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>5 \ldots A</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>8 \ldots A</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>0 \ldots A</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>4 \ldots A</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>2 \ldots A</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>10 \ldots A</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+      write the following sets in the roster form:
+    </p>
+    <p>
+    <ol marker ="i">
+      <li>
+        <p>
+          <m>X = \{ x : 2x^2-5x+2 =0, x\in \mathbb N \}</m>
+        </p>
+        <p>
+             Find the roots of x.
+          Here, <m>x = 2, \frac{1}{2}</m>
+              <me>
+                \therefore C = \{ 2\}
+              </me>
+            </p> 
+            <p>
+              <term>Remember <m>\frac{1}{2}</m> </term> is not a natural number.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A = \{ x : x \text{ is an integer and } -3 \leq x \leq 7 \}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>B = \{ x : x \text{ is a natural number less than } 6 \}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>C = \{ x : x \text{ is a two-digit natural number, the sum of which is } 8 \}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>D = \{ x : x \text{ is a prime number which is divisor of } 60. \}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>E = </m> The set of all letters in the word TRIGONOMETRY.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>C = </m> The set of all letters in the word BETTER.
+            </p>
+          </li>
+        </ol>
+        </p>
+  </statement>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      Write the following sets in a set-builder form:
+    </p>
+    <p>
+    <ol marker ="i">
+      <li>
+        <p>
+          <m>\{ 3, 6, 9, 12 \}</m>
+        </p>
+         <answer>
+           <p>
+            <me>
+              A = \{ x: x = 3n; n\in \mathbb N, 1\leq \mathbb N \leq 4\}
+            </me>
+           </p>
+            </answer>
+      </li>
+      <li>
+        <p>
+          <m>\{ 2, 4, 8, 16, 32 \}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\{ 1, 4, 9, \ldots, 100 \}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\{ 5, 25, 125, 625 \}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\{ 2, 4, 6, \ldots, \}</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\{1, \frac{1}{2},\frac{1}{3}, \frac{1}{4}, \ldots \}</m>
+          <answer>
+             <p>
+              <me>A =\{x :x=\frac{1}{n}, n \in \mathbb N\}</me>
+              <me>A =\{x :x \text{ is a reciprocal of natural number.} \}</me>
+             </p>
+          </answer>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\{ 1,2,4,8,16,32,64\} </m>
+          <answer>
+             <p>
+              <me>A = \{ x : x = 2^n; \quad  n=0,1,2,3,4,5,6 \} </me>
+            or,   <me>A = \{x : x = 2^{n-1}; n=1,2,\ldots, 7 \quad [or, 1\leq n \leq 7 \text{ and } n \in \mathbb N]\} </me>
+            but can not be written as 
+            <m>A=\{x : x \text{ is a factor of } 64\} </m> because negative numbers are also factors of 64.
+            </p>
+          </answer>
+        </p>
+      </li>
+     </ol>
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+        List all the elements of the following sets:
+      </p>
+      <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>A = \{ x: x \text{ is an integer,} -\frac{1}{2} \lt x \lt \frac{9}{2} \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B = \{ x: x \text{ is an odd natural number} \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>C = \{ x: x \text{ is an integer, } x^2 \leq 4 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>D = \{ x: x \text{ is a letter in the word 'LOYAL'} \}</m>
+            <answer>
+              <p>
+                <m>D = \{ L, O, Y, A\}</m>
+              </p>
+            </answer>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>E = \{ x: x \text{ is a month of a year not having 31 days.} \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>F = \{ x: x \text{ is a consonant in the english alphabet which preceds k.} \}</m>
+            <answer>
+              <p>
+                <m>F = \{b, c,d, f, g, h, j \}</m>
+              </p>
+            </answer>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</example>
+
+<example>
+  <statement>
+    <p>
+       Match each of the set in the roster form on left to the set-builder form on the right:</p>
+    
+      <tabular halign="center">
+        <row>
+          <cell>(a) <m>\{1,2,4,8\}</m></cell>
+          <cell>(i) <m>\{ x : x \text{ is a prime number and a divisor of } 6 \}</m></cell>
+        </row>
+        <row>
+          <cell>(b) <m>\{2,3\}</m></cell>
+          <cell>(ii) <m>\{ x : x \in \mathbb N \text{ and } x \text{ is a divisor of } 8 \}</m></cell>
+         </row>
+         <row>
+          <cell>(c) <m>\{A, C, E, L, H, I, M, S, T\}</m></cell>
+          <cell>(iii) <m>\{ x : x \in \mathbb N \text{ and } x \lt 9\}</m></cell>
+         </row>
+         <row>
+          <cell>(d) <m>\{M, A, T, H, E, I, C, S\}</m></cell>
+         <cell>(iv) <m>\{ x : x \text{ is a letter of the MATHEMATICS} \}</m></cell>
+         </row>
+         <row>
+          <cell>(e) <m>\{1, 3, 5, 7, 9\}</m></cell>
+          <cell>(v) <m>\{ x : x \text{ is a letter of the word ALCHEMIST} \}</m></cell>
+          </row>
+      </tabular>
+    
+  </statement>
+</example>
+  
+    
+
+</section>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-count_add" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Addition Principle</title>
+
+ 
+  <p>
+    The <term>Addition Rule</term> of counting is used to calculate the total number of possible 
+    outcomes when there are distinct multiple events or choices, and the events are not overlapping (mutually exclusive). 
+   <em> Mutually exclusive events are events that cannot occur simultaneously</em>. For example: If you toss coin you 
+   either get <term>Head</term> or <term>Tail</term>. There is no way you get head and tail together. Hence, tossing a 
+   coin is mutually exclusive event. when rolling a standard six-sided die, getting a 1 <term>OR</term> getting a 2 
+   are mutually exclusive events (they cannot be taken together). If you draw a card from a standard card deck, 
+   you may get <term>Ace</term> of <term>Heart</term>. Hence, this is a non-mutually exclusive event 
+   or we can call it is a simultaneous event that two things can happen together.
+       </p>
+       <p>
+        The addition rule can employ to determine the total number of ways of something can happen if we have to make one 
+    choice <alert>OR</alert> another choice <alert>OR</alert> another choice, and so on.  
+       </p>
+       <p>
+        The addition rule can be expressed as:
+        Total Outcomes = Number of Outcomes in Event A + Number of Outcomes in Event B + <m>\ldots</m> + Number of Outcomes in Event N.
+        In this formula, Event A, Event B, and so on, represent the different mutually exclusive events under consideration.  
+       </p>
+      
+            <p>
+        The Addition Rule of Counting can also be extended to more complex situations where events are not 
+        mutually exclusive. This principle allows us to calculate the total number of outcomes when events may overlap. 
+        The <term>Inclusion-Exclusion Principle</term> can be used to find possible outcomes. 
+        </p>
+        <p>
+          Total Outcomes = Number of Outcomes in Event A + Number of Outcomes in Event B + <m>\ldots</m>
+        - Number of Outcomes in (Event A <m>\cap</m> Event B) - <m>\ldots</m>
+        </p>
+        <p>
+        In this formula, the subtraction of overlapping outcomes (Event A <m>\cap</m> Event B) corrects for the double 
+        counting of outcomes that belong to both events. This principle is particularly useful in situations 
+        where events can occur together, such as when calculating the probability of two events happening simultaneously.
+        </p>
+        
+
+        <example>
+          <statement>
+            <p>
+              In a class there are 15 boys and 12 girls. The teacher wants to select either a boy or a girl to represent the class for a function.
+              In how many ways can the teacher make the selection?
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Select 1 boy <alert>OR</alert> 1 girl. Selecting a boy and a girl is not compulsory. Any one of them do the task complete. 
+              Hence, use principle of addition.
+              <m>\therefore \text{ total ways } = 15 + 12 = 27 </m> ways.
+            </p>
+          </solution>
+        </example>
+        
+
+</section>

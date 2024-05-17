@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_secondc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise C</title>
+  
+  <exercise>
+    <statement>
+      <p>
+        Let <m>\bigcup = \{1,2,3,4,5,6,7,8,9\}</m>, <m>A = \{1,2,3,4\}</m>,  <m>C = \{2,4,6,8\}</m>, 
+        and  <m>D = \{3,4,5,6\}</m>, find
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>A' </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B' </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(A \cup C)' </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> (A \cup B)' </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> (A')' </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(B-C)'</m>
+          </p>
+        </li>
+         </ol>
+      </p>
+    </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          If <m>\bigcup = \{a,b,c,d,e,f,g,h\}</m>, find the complements of the following sets:
+          <ol marker ="i">
+            <li>
+              <p>
+                <m>A = \{a,b,c\}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>B = \{d,e,f\}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>C = \{a,c,e,g\}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>D = \{f,g,h,a\}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Taking the set of natural numbers as the universal set, write the components of the following sets: 
+      <ol marker ="i">
+        <li>
+          <p>
+            <m> \{x : x \text{ is an even natural number} \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \text{ is an odd natural number} \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \text{ is a positive multiple of } 3 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \text{ is a prime number } \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \text{ is a natural number divisible by 3 and 5 } \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \text{ is a perfect square } \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \text{ is a perfect cube } \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x +5 =8 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : 2x +5 =9 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \geq 7 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \in \mathbb N \text{ and } 2x+1 \gt 10 \}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      If <m>\bigcup = \{1,2,3,4,5,6,7,8,9\}</m>, <m>A = \{2,4,6,8\}</m>, and <m>B=\{2,3,5,7\}</m>, verify that 
+      <ol marker="i">
+        <li>
+          <p>
+            <m>(A\cup B)' = A' \cap B'</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(A\cap B)' = A' \cup B'</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Draw Venn diagram for each of the following: 
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>(A \cup B)'</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A' \cap B'</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(A \cap B)'</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>A' \cup B'</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      If <m>X</m> and <m>Y</m> are two sets such that <m>n(X) =17,</m> <m>n(Y) =23, </m> and <m>n(X\cup Y) =38.</m> 
+      Find <m>n(X\cap Y).</m>
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      If <m>X</m> and <m>Y</m> are two sets such that <m>X\cup Y</m> has 18 elements, <m>X</m> has 8 elements and 
+      <m>Y</m> has 15 elements. How many elements does <m>X\cap Y</m> have?
+    </p>
+  </statement>
+</exercise>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      If <m>S</m> and <m>T</m> are two sets such that <m>S</m> has 21 elements, <m>T</m> has 32 elements, and 
+      <m>S \cap T</m> has 11 elements, how many elements does <m>S\cup T</m> have?
+    </p>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      If <m>X</m> and <m>Y</m> are two sets such that <m>X</m> has 40 elements, <m>X \cup Y</m> has 60 elements, and 
+      <m>X \cap Y</m> has 10 elements, how many elements does <m>Y</m> have?
+    </p>
+  </statement>
+</exercise>
+
+
+</exercises>
+
+
+
+

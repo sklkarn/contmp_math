@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-prob_int" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Definition</title>
+
+  <introduction>
+    <p>
+      If a random experiment has total of <m>(m+n)</m> mutually exclusive, mutually exhaustive, and equally likely outcomes, out of which 
+      there are <m>m</m> favourable events <m>E</m>, then the probability of occurance of event <m>E</m> is denoted by <m>P(E).</m>
+      <men xml:id="eqn-prob1">
+        P(E)  = \frac{\text { favourable outcomes}}{ \text{ total outcomes}}
+      </men>
+      </p> 
+<p>
+  In sample space, <me>
+    S = \{x_1, x_2, x_3, \ldots, x_n \}
+  </me>
+  each sample points are equally likely events, then we can find the probality of occurance using <xref ref="eqn-prob1"/>. 
+  However, if they are not equally likely then <xref ref="eqn-prob1"/> can not be used directly.
+</p>
+<p>
+  <term>Note: </term> If all outcomes of sample space are not equally likely, then 
+  <me>
+    P(E) = \text { sum of probability of all the favourable outcomes of E.}
+  </me>
+  here, in sample space, 
+   <me>
+    S = \{x_1, x_2, x_3, \ldots, x_n \}
+   </me>
+   <m>x_1, x_2, \ldots </m> are not equally likely outcomes, 
+   then <xref ref="eqn-prob1"/> cannot be applied.
+</p>
+
+<example>
+  <statement>
+    <p>
+      A coin is tossed, if it shows head then toss it again, otherwise throw a dice. Here, 
+      </p>
+      <p> 
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>E_1</m> = getting two heads.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>E_2</m> = getting an odd number.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>E_3</m> = getting tail in outcome.
+          </p>
+        </li>
+      </ol>
+      </p>
+     </statement>
+  <solution>
+    <p>
+      The sample space, 
+     <me>
+      S = \{(H,H), (H,T), (T,1),  (T,2),  (T,3),  (T,4), (T,5), (T,6)\}
+     </me>
+    </p>
+    <p>
+      has total outcomes = 8, but each outcome has different probabilty, i.e., they are not equally likely.
+    </p>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            <me>
+              E_1 = \{(H,H)\}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              E_2 = \{(T,1),  (T,3),  (T,5)\}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              E_3 = \{(H,T), (T,1), (T,2), (T,3), (T,4), (T,5), (T,6)\}
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      The probability of event <m>E_1</m> is given by 
+      <ol marker ="i">
+        <li>
+          <p>
+            <me>
+              P(E_1) = \frac{1}{2} \times \frac{1}{2} = \frac{1}{4}.
+            </me>
+            The probability of <m>1/2</m> for getting <m>H</m> and <m>1/2</m> for getting <m>T</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              P(E_2) = \frac{1}{12} + \frac{1}{12} + \frac{1}{12} = \frac{1}{4}.
+            </me>
+            The probability of <m>1/2</m> for getting <m>T</m> in a coin and <m>1/6</m> for getting <m>1</m> or <m>3</m>, etc in a dice.
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              P(E_3) = \frac{1}{4} + \frac{1}{12} + \frac{1}{12}+ \frac{1}{12}+ \frac{1}{12}+ \frac{1}{12}+ \frac{1}{12} 
+             </me>
+            <me>
+              \therefore P(E_3) = \frac{1}{4} +  \frac{6}{12} = \frac{3}{4}.
+            </me>
+            The probability of <m>1/4</m> for getting <m>(H,T)</m> and <m>1/12</m> for getting 
+            <m>(T,1), (T,2), \ldots </m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<p>
+  <term>Important Note: </term> 
+  <ol marker ="i">
+    <li>
+      <p>
+        Sum of probabilities of each sample point = 1.
+      </p>
+      <p>
+        or, probability of sample space = 1.
+      </p>
+      <p>
+        If sample space, 
+        <me>
+          S = \{ x_1, x_2, \ldots, x_n \} = \sum_{i=1}^{n} P{(x_i)}=1.
+        </me>
+      </p>
+    </li>
+    <li>
+      <p>
+        If <me>
+          P(E) = 0, 
+        </me>
+        then <m>E</m> is impossible event.
+      </p>
+      <p>
+        If <me>
+          P(E) = 1, 
+        </me>
+        then <m>E</m> is sure or certain event.
+      </p>
+      <p>
+        Hence, 
+        <me>
+          0 \leq P(E) \leq 1.
+        </me>
+      </p>
+    </li>
+    <li>
+      <p>
+        Probability of non-occurance of event, 
+        <me> 
+          E = P(\bar{E}) = 1-P(E).
+        </me>
+      </p>
+    </li>
+  </ol>
+</p>
+
+  </introduction>
+ 
+  <subsection xml:id="subsec-prob_set">
+    <title>Useful Set-Formulae for Probability</title>
+
+    <p>
+      <mdn>
+        <mrow>  P(A') \amp  = P(\bar{A}) = 1-P(A) </mrow>
+        <mrow> P(A\cap B)' \amp = 1-P(A \cap B) = P(A' \cup B') </mrow>
+        <mrow> P(A \text{ or }B ) \amp = P(A\cup B) = P(A) + P(B) -P(A\cap B) </mrow>
+        <mrow> P(A \text{ but not } B) \amp = P(A\cap B') = P(A) -P(A\cap B) </mrow>
+        <mrow> P(\text{ not } A \text{ not } B) \amp = P(A' \cap B') = 1-P(A\cup B) </mrow>
+        <mrow> P(\text{neither } A \text{ nor } B)   \amp = P(A' \cup B') = P(A \cap B)' = 1-P(A \cap B) </mrow>
+        <mrow> (A\cup B)' \amp = A' \cap B' \qquad \text{ De Morgan's I law} </mrow>
+        <mrow> (A\cap B)' \amp = A' \cup B' \qquad \text{ De Morgan's II law} </mrow>
+      </mdn>
+    </p>
+   
+  </subsection>
+
+
+  <subsection xml:id="subsec-cond_prob">
+    <title>Conditional probability: </title>
+    <p>
+      <term></term> It is the possibility of an event that 
+      based on the existence of a previous event or outcome. In other words, 
+      The probability of occurrence of any event A when another event B in relation to A has already occurred 
+      is known as conditional probability. It is depicted by <m>P(A|B)</m>, here "|" read as <term>given</term>. 
+     So <m>P(A|B)</m> reads as probability of A given B. 
+    </p>
+        <p>
+          Imagine a student is absent from school twice a week, excluding Sunday. 
+          If it is known that he will be absent from school on Tuesday, 
+          then what are the chances that he will also be absent on Friday in the same week? 
+          It is observed that in problems where the occurrence of one event affects the 
+          happening of the following event, these cases of probability are known as conditional probability.
+        </p>
+        <p>
+          <mdn>
+            <mrow xml:id="eqn-prob2"> P(A|B) \amp = \frac{P(A\cap B)}{P(B)}; \quad P(B) \neq 0. \quad \text{ conditional Prob.}</mrow>
+            <mrow> or, \quad P(A|B) \amp = \frac{N(A\cap B)}{N(B)}; \quad N(B) \neq 0. \quad \text{ conditional Prob.}  </mrow>
+        </mdn>
+        here <m>N(A\cap B)</m> is the number of elements common to both A and B. 
+        <m> N(B)</m> is the number of elements in B, and it cannot be equal to zero.
+        </p>
+        <p>
+          <alert>Bayes Theorem: </alert> Bayes' theorem defines the probability of occurrence of an event 
+          associated with any condition. This is known as the formula for the likelihood of “causes”.
+          <men xml:id="eqn-bayes1">
+            or, \quad P(A|B)  = \frac{P(B|A)P(A)}{P(B)}
+           </men>
+    </p>
+  </subsection>
+  
+
+
+</section>

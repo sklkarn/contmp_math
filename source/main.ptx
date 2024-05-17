@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+
+  <book xml:id="math110">
+    <title>Contemporary Mathematics</title>
+    <subtitle>An Introduction</subtitle>
+
+
+
+
+
+    <!-- Include frontmatter -->
+    <xi:include href="./frontmatter.ptx" />
+
+    <!-- Include chapters -->
+    <xi:include href="./ch-numb.ptx" />
+    <xi:include href="./ch-set.ptx" />
+    <xi:include href="./ch-count.ptx" />
+    <xi:include href="./ch-perm_comb.ptx" />
+    <xi:include href="./ch-prob.ptx" />
+    <xi:include href="./ch-stat.ptx" />
+
+    <!-- Include backmatter -->
+    <xi:include href="./backmatter.ptx" />
+
+  </book>
+
+  
+</pretext>

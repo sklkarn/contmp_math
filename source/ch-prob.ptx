@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-prob" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Probability</title>
+
+  <introduction>
+    <p>
+      Probability is a measure of the likelihood of an event to occur. 
+      Many events cannot be predicted with total certainty. 
+      Probability can help predict the chance of an event to occur i.e., it is a measure of how likely the events are going to happen. 
+      Probability can range from 0 to 1, where 0 means the event to be an impossible one and 1 indicates a certain event. 
+      The probability of all the events in a sample space adds up to 1.
+      </p>
+      <p>
+        For example, a fair coin is tossed, we can get either a Head OR a Tail. So, only two possible outcomes 
+        are possible <m>(H, T)</m>. But when two coins are tossed then there will be four possible outcomes, 
+        i.e <m>\{(H, H), (H, T), (T, H), (T, T)\}</m>.
+      </p>
+    <p> 
+      In this chapter we are going to discuss probability in the following steps.
+     <ol>
+      <li>
+        <p>
+          General terminology, definition, Probability using permutation and combination;
+        </p>
+      </li>
+      <li>
+        <p>
+          Probability using set theory, addition and multiplication theorem;
+        </p>
+      </li>
+      <li>
+        <p>
+          Independent events, conditional probability, total probabity theorem, Baye's theorem;
+        </p>
+      </li>
+      <li>
+        <p>
+          Probability distribution, random variable, binomial probability distribution, geometrical probability.
+        </p>
+      </li>
+     </ol> 
+    </p>
+
+    <p>
+      <alert>General Terminology</alert> 
+      <ol>
+        <li>
+          <p>
+            <alert>Random Experiment:</alert>  An experiment whose outcome is known.
+            e.g., tossing a coin, throwing a dice, drawing a card, etc.
+          </p>
+        </li>
+        <li>
+          <p>
+            <alert>Sample Space:</alert>  Set of all possible oucomes.
+           e.g., sample space of throwing a dice, 
+           <me> S = \{1,2,3,4,5,6 \}</me>. 
+           Here, 1, 2, 3,... etc. are sample points (or, sample outcomes); sample space of tossing a coin, 
+           <me>S = \{H,T \}</me>.
+          </p>
+        </li>
+        <li>
+          <p>
+           <alert> Event:</alert> Subset of sample space. Getting an odd number in a dice. 
+            e.g. <m>E = \{1,3,5\}</m>
+           </p>
+           <p>
+            <ol marker ="I">
+              <li>
+                <p>
+                  <alert>Null Event: </alert> It has no outcome, or no element in it. For example suppose a sample space 
+                  <me>
+                    S = \{ 1,2,3,4,5,6\}
+                  </me>
+                  Now, an event, A = number greater than 6.
+                  <me>
+                    A = \phi
+                  </me>
+                  <me>
+                    \therefore P(A) =0.
+                  </me>
+                  It is also called impossible or void event.
+                </p>
+              </li>
+              <li>
+                <p>
+            <alert>Simple Event: </alert> It is also called singleton event. It contains only one element or one outcome.
+             </p>
+             <p>
+              an event, B = Even prime number.
+              <me>
+                B = \{ 2\}
+              </me>
+               <me>
+                P(B) = \frac{1}{6}
+               </me>
+             </p>
+              </li>
+              <li>
+                <p>
+                 <alert> Mixed or Compound Events:</alert>  Events that have more than one outcome but less than all. 
+                </p>
+                <p>
+                  C = prime numbers.
+                  <me>
+                     C = \{2,3, 5 \}
+                  </me> 
+                </p>
+              </li>
+              <li>
+                <p>
+                  <alert>Sure Event: </alert> It is equal to sample space. e.g., 
+                  </p>
+                  <p>
+                    D = all number less than 7.
+                    <me>
+                      D = \{ 1,2,3,4,5,6\}
+                    </me>
+                    <me>
+                      P(D) =1.
+                    </me>
+                  </p>
+              </li>
+              <li>
+                <p>
+                  <term>Equally likely events: </term> Having equal chances of occurance.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <term>Mutually exclusive or disjoint or incompatible events: </term> Events whose simultaneous occurance is impossible.
+                  (getting a head and a tail at the same time is not possible in tossing a coin.)
+                 In mutually exclusive events there are nothing in common. 
+                </p>
+                <p>
+                  Let <m>A</m> = prime numbers, and <m>B</m> = composite numbers. 
+                  <me>
+                    A \cap B = \phi.
+                  </me>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <alert>Exhaustive Event: </alert> Two or more events that build complete set or sample space.
+                  
+                 If <m>A</m> = even numbers, and <m>B</m> = odd numbers, then 
+                 <me>
+                  S = A \cup B
+                </me>
+                </p>
+              </li>
+            </ol>
+           </p>
+          </li>
+        </ol>
+    </p>
+   
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-prob_int.ptx" />
+  <xi:include href="sec-prob_exampleA.ptx" />
+  <xi:include href="ex_fifth.ptx" />
+ 
+
+</chapter>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-count_prod" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Multiplication Principle</title>
+
+ 
+<p>
+  The <term>Multiplication Rule</term> states that "if an event can occur in <m> m</m> different ways, 
+  and another event can occur in <m>n</m> different ways, 
+  then the total number of occurrences (possible outcomes) of the events is <m>m \times n</m>. 
+  The answer of the following problem can be obtained by using <term>multiplication rule </term>. 
+  Suppose you have 3 pairs of shoes and 4 pairs of socks, then how many ways you can wear them.
+</p>
+
+
+<p>
+  The fundamental principle of counting only works when the choice that is to be made are independent of each other. 
+  If one possibility depends on another, then a simple multiplication does not work.
+</p>
+<p>
+  A boy has 4 shirts, 2 pairs of paints, and 3 hats. Find the total number of possible outfits he could have.
+</p>
+<p>
+  A tree diagram is a useful tool for visualizing systematic counting.
+ </p>
+
+  <image width="35%" xml:id="count3">
+
+<latex-image >
+  \tikzstyle{level 1}=[level distance=15mm, sibling distance=20mm]
+  \tikzstyle{level 2}=[level distance=20mm, sibling distance=10mm]
+  \tikzstyle{level 3}=[level distance=20mm, sibling distance=5mm]
+  \begin{tikzpicture}[grow=right]
+  \node {Boy}
+  child {node {S4}
+    child {node {P1}
+            child {node {H1}}
+            child {node {H2}}
+            child {node at (1,0){H3}}
+    }
+     child {node {P2}
+             child {node {H1}}
+            child {node {H2}}
+            child {node at (1,0){H3}}
+     }
+       }
+  child {node {S3}
+    child {node{P1}
+          child {node {H1}}
+            child {node {H2}}
+            child {node at (1,0){H3}}
+    }
+    child {node{P2}
+          child {node {H1}}
+            child {node {H2}}
+            child {node at (1,0){H3}}
+    }
+     }
+      child {node {S2}
+           child {node {P1}
+               child {node {H1}}
+            child {node {H2}}
+            child {node at (1,0){H3}}
+           }
+           child {node {P2}
+               child {node {H1}}
+            child {node {H2}}
+            child {node at (1,0) {H3}}
+           }
+      }
+       child {node {S1}
+          child {node {P1}
+              child {node {H1}}
+            child {node {H2}}
+            child {node at (1,0) {H3}}
+          }
+           child {node {P2}
+               child {node {H1}}
+            child {node {H2}}
+            child {node {H3}}
+           }
+       }
+     ;
+  \end{tikzpicture}
+</latex-image>
+  </image>
+ 
+
+<p>
+  <term>Difference in addition and multiplication rule</term>: The Addition Rule is used when you want to calculate the 
+  total number of outcomes when events are mutually exclusive, and you want to consider the possibilities for each event 
+  separately and then add them together. The Multiplication Rule, on the other hand, is used when you have multiple events 
+  or choices that are independent (the outcome of one event does not affect the outcome of the others, i.e., not mutually exclusive or simultaneous), 
+  and you want to calculate the combined possibilities by multiplying them.
+</p>
+
+
+ 
+  <example>
+    <statement>
+      <p>
+        In a class there are 15 boys and 12 girls. The teacher wants to select 1 boy and 1 girl to represent the class for a function.
+        In how many ways can the teacher make the selection?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Select 1 boy <alert>AND</alert> 1 girl. Selecting a boy and a girl is compulsory. Hence, use principle of multiplication.
+        <m>\therefore \text{ total ways } = 15 \times 12 = 180 </m> ways.
+      </p>
+    </solution>
+  </example>
+  
+
+</section>

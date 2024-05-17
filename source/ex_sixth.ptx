@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_sixth" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+  
+<exercise>
+  <p>
+    What kind of data (variable) is gender, marital status, river length, population of the state, song length, PIN Code?
+  </p>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      True or False:
+      <ol>
+        <li>
+          <p>
+            PIN Code are examples of numerical data.
+          </p>
+        </li>
+        <li>
+          <p>
+            Cases represents columns in a data table
+          </p>
+        </li>
+        <li>
+          <p>
+            Likert scale represents numerical data.
+          </p>
+        </li>
+        <li>
+          <p>
+            Aggregation of data adds more cases.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      If mean of <m>x=2,</m> then find the mean of <m>\left(\frac{4x+3}{5}\right)</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+     <me>
+      \left(\frac{4x+3}{5}\right) =  \left(\frac{4\times 2+3}{5}\right)  = 11/5.
+     </me>
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <p>
+    A garden contains 39 plants. The following plants were chosen at random, and their heights were recorded in cm: 
+    <m>38, 51, 46, 79,</m> and <m>57</m>. Calculate their heights' standard deviation.
+  </p>
+</exercise>
+
+<exercise>
+  <p>
+    Using the actual mean method, calculate the standard deviation for the data <m>3, 2, 5,</m> and <m>6</m>.
+  </p>
+</exercise>
+
+<exercise>
+  <p>
+    Find the standard deviation and variance for the following data: <m>10, 12, 8, 14, 16</m>.
+  </p>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      If mean of <m>u=3,</m> then find the mean of <m>\left(\frac{4-u}{3}\right)</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+     <me>
+      \left(\frac{4-u}{3}\right) =  \left(\frac{4-3}{3}\right)  = 1/3.
+     </me>
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <p>
+    Find the mean deviation from the mean for the following data set:  
+<m>57, 64, 43, 67, 49, 59, 44, 47, 61, 59.</m>
+  </p>
+</exercise>
+
+<exercise>
+  <p>
+    Calculate the mean deviation about the mean of the set of the first 10 natural numbers.
+  </p>
+</exercise>
+
+</exercises>
+
+
+
+

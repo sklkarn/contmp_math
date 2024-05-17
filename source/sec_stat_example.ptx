@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_stat_example" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example</title>
+  
+
+  
+
+ <example>
+  <statement>
+    <p>
+      Classify the data into four types and give unit for numerical data.
+      <ol marker ="i">
+        <li>
+          <p>
+            Salary (range)
+          </p>
+        </li>
+        <li>
+          <p>
+            Car model
+          </p>
+        </li>
+        <li>
+          <p>
+            Year of Graduation
+          </p>
+        </li>
+        <li>
+          <p>
+            Years of experience
+          </p>
+        </li>
+        <li>
+          <p>
+            Highest degree
+          </p>
+        </li>
+        <li>
+          <p>
+            Computer model
+          </p>
+        </li>
+        <li>
+          <p>
+            Number of children
+          </p>
+        </li>
+      </ol>
+      </p>
+  </statement>
+ </example>
+
+ 
+ <example>
+  <statement>
+    <p>
+      For the following variables, give a name and indicate the type of variables (categorical, ordinal, numerical):
+      <ol>
+        <li>
+          <p>
+            Car owned by 10 friends
+          </p>
+        </li>
+        <li>
+          <p>
+            Income of 20 employees
+          </p>
+        </li>
+        <li>
+          <p>
+            Size of clothes as S, M, L, XL.
+          </p>
+        </li>
+        <li>
+          <p>
+            Number of students absent for class.
+          </p>
+        </li>
+        <li>
+          <p>
+            Education of people as undergraduate, graduate, Ph.D.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \begin{array}{c|ccc} 
+        \circ &amp; Description &amp; \text{ Variable's Name}  &amp; \text{ Variable type} \\ \hline 
+        1 &amp; \text{ Car owned by 10 friends} &amp; \text{ Make and Model}  &amp; Categorical \\ 
+        2 &amp; \text{ Income of 20 employees} &amp;   \text{ Salary} &amp; Numerical \\ 
+        3 &amp; \text{ Size of clothes as S, M, L, XL.} &amp;   \text{ Cloth size} &amp; Ordinal \\ 
+        4 &amp;\text{ Number of students absent for class } &amp;   \text{ Absentees} &amp; Ratio \\ 
+        5 &amp; \text{ Education of people as undergraduate, graduate, Ph.D. } &amp; \text{ Education level} &amp; Categorical \\ 
+        \end{array}
+      </me>
+    </p>
+  </solution>
+ </example>
+
+ 
+<example>
+  <statement>
+    <p>
+      Average score of a class is 65. Average score of boys in that class is 60 and average score of girls is 75. Find the 
+      <ol marker ="a">
+        <li>
+          <p>
+            number of girls : number of boys
+          </p>
+        </li>
+        <li>
+          <p>
+            % Boys
+          </p>
+        </li>
+        <li>
+          <p>
+            % girls.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint>
+    <p>
+      (a) 1/2
+    </p>
+    <p>
+      66.66%
+    </p>
+    <p>
+      33.33%.
+    </p>
+  </hint>
+ 
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      The mean of 20 observations are found to be 10 on rechecking, it was found that an observation 8 was incorrect. 
+      Calculate the correct mean: 
+      <ol marker ="i">
+        <li>
+          <p>
+            if wrong item is omitted.
+          </p>
+        </li>
+        <li>
+          <p>
+            if wrong item is replaced by 12.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      using <xref ref="eqn-meancor1"/> 
+      <ol marker ="i">
+        <li>
+          <p>
+            <md>
+              <mrow>  \text{ Incorrect } \bar{x}  \amp  =  \frac{\text{ Incorrect} \sum {x}}{\text{ incorrect } N}  </mrow>
+              <mrow> or, \quad 10 \amp = \frac{\text{ Incorrect} \sum {x}}{20} </mrow>
+              <mrow> \text{ Incorrect }\sum {x} \amp = 200 </mrow>
+              </md>
+              <me>
+                \therefore  \text{ correct } \bar{x} = \frac{200-8}{19} =10.1
+               </me>
+               <m>N=19</m>, since one observation is removed.
+          </p>
+        </li>
+        <li>
+          <p>
+               <me>
+                \therefore  \text{ correct } \bar{x} = \frac{200-8+12}{20} =204/20 = 10.2
+               </me>
+               <m>N=19</m>, since one observation is removed.
+          </p>
+        </li>
+      </ol>
+      </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If mean of <m>y=5,</m> then find the mean of <m>x,</m> if <m>2x+2y =3.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow> 2x+2y  \amp =3 </mrow>
+        <mrow> x \amp = (3-2y)/2 = -7/2 =-3.5 </mrow>
+      </md>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Compute semi-inter quartile range and its coefficient from the following data.
+      <me>
+        \begin{array}{c|c} 
+       x &amp; f_i  \\ \hline 
+       1 &amp; 2 \\ 
+      2 &amp; 9 \\ 
+      3 &amp; 11 \\ 
+        4 &amp; 14 \\ 
+       5 &amp; 20 \\
+       6 &amp; 24 \\
+       7 &amp; 20 \\
+       8 &amp; 16 \\
+       9 &amp; 5 \\
+       10 &amp; 2
+       \end{array}
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \begin{array}{c|c|c} 
+       x &amp; f_i  &amp; CF \\ \hline 
+       1 &amp; 2 &amp; 2 \\ 
+      2 &amp; 9 &amp; 11 \\ 
+      3 &amp; 11 &amp; 22 \\ 
+        4 &amp; 14 &amp; 36 \\ 
+       5 &amp; 20 &amp; 56 \\
+       6 &amp; 24 &amp; 80 \\
+       7 &amp; 20 &amp; 100 \\
+       8 &amp; 16 &amp; 116 \\
+       9 &amp; 5 &amp; 121 \\
+       10 &amp; 2 &amp; 123 \\ \hline 
+       sum &amp; 123 &amp; 
+       \end{array}
+      </me>
+    </p>
+    <p>
+      <me>
+        Q_1 = \left( \frac{n+1}{4}\right)^{th} \text{ item} 
+      </me>
+       
+      <me>
+        or, \quad Q_1 = \left( \frac{123+1}{4}\right)^{th} \text{ item} = 31^{st}  \text{ item} = 4.
+      </me>
+         </p>
+    <p>
+      <me>
+        Q_3 = 3\left( \frac{n+1}{4}\right)^{th} \text{ item} 
+      </me>
+       
+      <me>
+        or, \quad Q_3 = 3\left( 31\right)^{st} \text{ item} = 93^{rd}  \text{ item} = 7.
+      </me>
+      </p>
+    <p>
+      Hence, 
+      <me>
+        QD = \frac{7-4}{2} =1.5.
+      </me>
+      <me>
+       and, \quad CQD = \frac{7-4}{7+4}\times 100 =27.27\%.
+      </me>
+     </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      Find the standard deviation, variance, and their coefficients of the data below: 
+      <m>48, 43,65,57,31,60,37,48,59,78.</m>
+        </p>
+  </statement>
+  <solution>
+    <p> Calculate mean of x using <xref ref="eqn-mean1"/>
+      <me>
+        \bar{x} = \frac{\sum x}{n} = \frac{48+43+\ldots}{10} = \frac{526}{10} =52.6.
+      </me>
+      Because <m>\bar{x}</m> has decimal point, it is easy to use assumed mean method. Hence, arrange the data in table as shown below:
+      <me>
+        \begin{array}{c|c|c} 
+      x &amp; d=x-A  &amp; d^2 \\ \hline 
+      31 &amp; -17  &amp; 289 \\ 
+      37 &amp; -11  &amp; 121 \\ 
+      43 &amp; -5  &amp; 25 \\ 
+       48 &amp; 0  &amp; 0 \\ 
+       48 &amp; 0 &amp; 0 \\ 
+       57 &amp; 9 &amp; 81 \\ 
+       59 &amp; 11 &amp; 121 \\ 
+       60 &amp; 12 &amp; 144 \\ 
+       65 &amp; 17 &amp; 289 \\ 
+       78 &amp; 30 &amp; 900 \\ \hline
+       sum &amp; 46  &amp; 1970
+      \end{array}
+      </me>
+      Assumed <m>A = 48</m> and use <xref ref="eqn-sd1b"/>
+      <me>
+        \sigma = \sqrt{\frac{1970}{10}-\left(\frac{46}{10}\right)^2}  =\sqrt{175.84} = 13.26.
+      </me>
+      From   <xref ref="eqn-csd1"/>
+      <me>
+        CSD = \frac{\sigma}{\bar{x}} =13.26/52.6 =0.2520
+      </me>
+      From   <xref ref="eqn-var1"/>
+      <me>
+        \sigma^2 =13.26^2 = 175.84.
+        </me>
+        using <xref ref="eqn-cv1"/>
+        <me>
+        CV =\frac{\sigma}{\bar{x}}\times 100 = 25.20/%.
+        </me>
+       </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      The annual salaries of a group of employees are given in tyhe following table. Find standard deviation and coefficient of variance. 
+      <me>
+        \begin{array}{c|c} 
+      Salary (x) in K &amp; No. of person (f)  \\ \hline 
+      45 &amp; 3 \\ 
+      50 &amp; 5  \\ 
+      55 &amp; 8  \\ 
+       60 &amp; 7  \\ 
+       65 &amp; 9 \\ 
+       70 &amp; 7  \\ 
+       75 &amp; 4  \\ 
+       80 &amp; 7 
+     \end{array}
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+     For step deviation method, 
+     <me>
+      \begin{array}{c|c|c|c|c|c} 
+    Salary (x) in K &amp; No. of person (f)  &amp; d &amp; d^2  &amp; fd &amp; fd^2 \\ \hline 
+    45 &amp; 3 &amp; -3 &amp; 9  &amp; -9 &amp; 27 \\ 
+    50 &amp; 5  &amp; -2 &amp; 4  &amp; -10 &amp; 20 \\ 
+    55 &amp; 8  &amp; -1 &amp; 1  &amp; -8 &amp; 8 \\ 
+     60 &amp; 7 &amp; 0 &amp; 0  &amp; 0 &amp; 0 \\ 
+     65 &amp; 9 &amp; 1 &amp; 1  &amp; 9 &amp; 9 \\ 
+     70 &amp; 7 &amp; 2 &amp; 4  &amp; 14 &amp; 28 \\ 
+     75 &amp; 4 &amp; 3 &amp; 9  &amp; 12 &amp; 36 \\ 
+     80 &amp; 7 &amp; 4 &amp; 16  &amp; 28 &amp; 112 \\ \hline 
+     sum &amp; 50 &amp;  &amp;   &amp; 36 &amp; 240 
+   \end{array}
+     </me>
+     here, <m>h=5,</m> and we set <m>A=60</m>, and  using equation <xref ref="eqn-smean3"/>
+     <me>
+      d= \frac{x-A}{h} =  \frac{x-60}{5}
+     </me>
+     using eqn. <xref ref="eqn-ssd2"/>
+     <me>
+      \sigma = \left[\sqrt{\frac{240}{50} - \left(\frac{36}{50}\right)^2} \right]\times 5 =10.35.
+    </me>
+       from equation <xref ref="eqn-smean2"/>
+       <me>
+      \bar{x} = 60+\left( \frac{36}{50}\right)5 =63.6.
+    </me>
+     also, 
+     <me>
+      CSD =\frac{\sigma}{\bar{x}} = 10.35/63.6 = 0.1627.
+     </me>
+    <me>
+    \sigma^2 =10.35^2 = 107.12.
+    </me>
+    using equation <xref ref="eqn-cv1"/>
+    <me>
+    CV =\frac{\sigma}{\bar{x}}\times 100 = 10.35/63.6 \times 100 = 16.27/%.
+    </me>
+    </p>
+  </solution>
+</example>
+
+
+
+
+<example>
+  <statement>
+    <p>
+       Find standard deviation and coefficient of variance. 
+      <me>
+        \begin{array}{c|c} 
+      x &amp; f  \\ \hline 
+      0-10 &amp; 15 \\ 
+     10-20 &amp; 15  \\ 
+      20-30 &amp; 23  \\ 
+       30-40 &amp; 22  \\ 
+       40-50 &amp; 25 \\ 
+       50-60 &amp; 10  \\ 
+       60-70 &amp; 5  \\ 
+       70-80 &amp; 10 
+     \end{array}
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+     For step deviation method, 
+     <me>
+      \begin{array}{c|c|c|c|c|c|c} 
+    class &amp; f  &amp; f_x (mid) &amp; d &amp; d^2  &amp; fd &amp; fd^2 \\ \hline 
+    0-10 &amp; 15 &amp; 5 &amp; -3  &amp; 9 &amp; -45  &amp; 135\\ 
+    10-20 &amp; 15  &amp; 15 &amp; -2  &amp; 4 &amp; -30  &amp; 60 \\ 
+    20-30 &amp; 23  &amp; 25 &amp; -1  &amp; 1 &amp; -23  &amp; 23 \\ 
+     30-40 &amp; 22 &amp; 35 &amp; 0  &amp; 0 &amp; 0  &amp; 0 \\ 
+     40-50 &amp; 25 &amp; 45 &amp; 1  &amp; 1 &amp; 25  &amp; 25 \\ 
+     50-60 &amp; 10 &amp; 55 &amp; 2  &amp; 4 &amp; 20  &amp; 40 \\ 
+     60-70 &amp; 5 &amp; 65 &amp; 3  &amp; 9 &amp; 15  &amp; 45 \\ 
+     70-80 &amp; 10 &amp; 75 &amp; 4  &amp; 16 &amp; 40  &amp; 160 \\ \hline 
+     sum &amp; 125 &amp;  &amp;   &amp;  &amp; 2  &amp; 488
+   \end{array}
+     </me>
+     here, <m>h=10,</m> and we set <m>A=35</m>, and  using equation <xref ref="eqn-smean3"/>
+     <me>
+      d= \frac{x-A}{h} =  \frac{x-35}{10}
+     </me>
+     using eqn. <xref ref="eqn-ssd2"/>
+     <me>
+      \sigma = \left[\sqrt{\frac{488}{125} - \left(\frac{2}{125}\right)^2} \right]\times 10 =19.76.
+    </me>
+       from equation <xref ref="eqn-smean2"/>
+       <me>
+      \bar{x} = 35+\left( \frac{2}{125}\right)10 = 35.16.
+    </me>
+     also, 
+     <me>
+      CSD =\frac{\sigma}{\bar{x}} = 19.76/35.16 = 0.5620
+     </me>
+     
+    <me>
+    \sigma^2 =19.76^2 = 390.45.
+    </me>
+    using equation <xref ref="eqn-cv1"/>
+    <me>
+    CV =\frac{\sigma}{\bar{x}}\times 100 = 56.20/%.
+    </me>
+    </p>
+  </solution>
+</example>
+
+
+
+</section>
+

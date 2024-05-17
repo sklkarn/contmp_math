@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-numb_example" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example</title>
+  
+
+  <example>
+    <statement>
+      <p>
+        Find five rational numbers between <m>\frac{2}{5}</m> and <m>\frac{3}{5}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There are infinite rational numbers between <m>\frac{2}{5}</m> and <m>\frac{3}{5}</m>. 
+        To find out <m>5</m> rational numbers between <m>\frac{2}{5}</m> and<m>\frac{3}{5}</m>, 
+        we will multiply and divide both the numbers with 5+1=6 (or any number greater than 5), 
+        i.e., <me>\frac{2}{5} \times \frac{6}{6} =  \frac{12}{30}</me> and, 
+        <me>\frac{3}{5} \times \frac{6}{6} =  \frac{18}{30}</me>. 
+        The numbers in between <m>\frac{12}{30}</m> and <m>\frac{18}{30}</m>  will be rational and will fall 
+        between <m>\frac{2}{5}</m>  and <m>\frac{3}{5}</m>. 
+        Hence, <m>\frac{13}{30}</m>, <m>\frac{14}{30}</m>, <m>\frac{15}{30}</m>, <m>\frac{16}{30}</m>, <m>\frac{17}{30}</m> 
+        are these numbers.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        State whether the following statements are true or false. Give reasons for your answers.
+     
+      <ol marker ="i">
+        <li>
+          <p>
+            Every natural number is a whole number.
+          </p>
+          </li>
+        <li>
+          <p>
+            Every integer is a whole number.
+          </p>
+         </li>
+        <li>
+          <p>
+            Every rational number is a whole number.
+          </p>
+            </li>
+        <li>
+          <p>
+            Every irrational number is a real number.
+          </p>
+            </li>
+            <li>
+              <p>
+                Every real number is an irrational number.
+              </p>
+            </li>
+                 </ol>
+                </p>
+    </statement>
+    <solution>
+      <p>
+        <ol marker="i">
+          <li>
+            <p>
+                <term>True</term> whole numbers have all the elements of natural numbers and zero. 
+                <alert>Natural numbers</alert>: Numbers starting from 1 to infinity (without fractions or decimals).
+              </p>
+             </li>
+             <li>
+              <p>
+                <term>False</term> Every whole number is an integer; however, every integer is not a whole number.
+               <alert> Integers</alert> are set of numbers that contain positive, negative and 0; 
+               excluding fractional and decimal numbers.
+              </p>
+             </li>
+             <li>
+              <p>
+                <term>False</term> All whole numbers are rational, however, all rational numbers are not whole numbers. 
+                <alert> Whole numbers</alert>: Numbers starting from 0 to infinity (without fractions or decimals).
+               <alert> Rational numbers</alert>: All numbers in the form <m>p/q</m>, where p and q are integers and <m>q \neq 0</m>.
+               </p>
+             </li>
+             <li>
+              <p>
+                <term>True</term> Every irrational number is a real number, however, every real number is not an irrational number.
+                <alert>Irrational Numbers</alert>: They cannot be written in the <m>\frac{p}{q}</m>, where p and q are integers and <m>q \neq 0</m>.
+                <alert>Real numbers</alert>: The collection of both rational and irrational numbers are known as real numbers.
+              </p>
+             </li>
+             <li>
+              <p>
+                <term>False</term> Real numbers include both irrational and rational numbers. 
+                Therefore, every real number cannot be an irrational number.
+              </p>
+             </li>
+                </ol>
+      </p>
+    </solution>
+  </example>
+
+
+    <example>
+      <statement>
+        <p>
+          Are the square roots of all positive integers irrational? 
+              If not, give an example of the square root of a number that is a rational number.
+            </p>
+               </statement>
+               <solution>
+                <p>
+                  No, the square roots of all positive integers are not irrational. For example, 
+                  <m>\sqrt{4}</m> = 2 is rational. <m>\sqrt{9}</m> = 3 is rational. 
+                  Hence, the square roots of positive integers 4 and 9 are not irrational.
+                </p>
+               </solution>
+    </example>
+
+
+    <example>
+      <statement>
+        <p>
+          Write the following in decimal form and say what kind of decimal expansion and number each has:
+     
+        <ol marker="i">
+          <li>
+            <p>
+              <m>\frac{26}{100}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{1}{11}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\frac{3}{13}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="i">
+            <li>
+              <p>
+                <m>\frac{26}{100} =0.26 </m> (terminating, rational).
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{1}{11} = \ldots </m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\frac{3}{13} = \ldots </m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+
+
+</section>
+

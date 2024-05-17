@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_secondb" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise B</title>
+  
+  <exercise>
+    <statement>
+      <p>
+        Make the correct statements by filling the symbol <m>\subset </m> or <m>\not \subset </m> in the blanck spaces:
+      <ol marker ="a">
+        <li>
+          <p>
+            <m>\{2, 3, 4\}\ldots \ldots \{1, 2, 3, 4, 5\} </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{a, b, c\} \ldots\ldots \{b, c, d\} </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{x : x \text{ is a student of this class} \}\ldots \ldots \{x : x \text{ is a student of this school} \} </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{x : x \text{ is a circle in a plane} \} \ldots \ldots \{x : x \text{ is a circle in the same plane with radius of 1 unit} \} </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{x : x \text{ is a triangle in a plane} \} \ldots \ldots \{x : x \text{ is a triangle in the same plane} \} </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{x : x \text{ is an equlateral triangle in a plane} \}\ldots \ldots \{x : x \text{ is a triangle in the same plane} \} </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{x : x \text{ is an even natural number} \} \ldots \ldots \{x : x \text{ is an integer} \}. </m>
+          </p>
+        </li>
+      </ol>
+      </p>
+    </statement>
+    </exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Examine whether the following statements are true or false:
+    </p>
+    <p>
+      <ol marker ="a">
+        <li>
+          <p>
+            <m>\{ a, b\} \not \subset \{b, c, a\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{ a, e\}  \subset \{x : x \text{ is a vowel in the english alphabet} \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{ 1, 2, 3\} \subset \{1, 3, 5\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{ a \} \subset \{a, b, c\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{ a \} \in \{a, b, c\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{ x : x \text{ is an even natural number less than } 6 \}  \subset \{x : x \text{ is a natural number which divides } 36 \}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+    
+<exercise>
+  <statement>
+    <p>
+      Let <m>A = \{1, 2, \{3, 4\}, 5 \}</m> which of the following statements are incorrect and why?
+      <ol marker ="a">
+        <li>
+          <p>
+            <m>\{3, 4\} \subset A </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{3, 4\} \in A </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{\{3, 4\}\} \subset A </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> 1 \in A </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> 1 \subset A </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{1, 2, 5\} \subset A </m> 
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{1, 2, 5\} \in A </m> 
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{1, 2, 3\} \subset A </m> 
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \phi \in A </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \phi \subset A </m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{\phi \} \subset A </m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Write down all the subsets of the following sets:
+      <ol marker ="a">
+        <li>
+          <p>
+            <m>\{a\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{a, b\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{1, 2, 3\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+           <m> \phi</m>
+          </p>
+        </li>
+        </ol>
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      How many elements does P(A) have if <m>A = \phi</m>
+    </p>
+  </statement>
+</exercise>
+
+
+
+
+<exercise>
+  <statement>
+    <p>
+      Write the following as intervals:
+    </p>
+    <p>
+      <ol marker ="a">
+        <li>
+          <p>
+           <m> \{x : x \in \mathbb R, -4 \lt x \leq 6 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \in \mathbb R, -12 \lt x \lt -10 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \in \mathbb R, 0 \leq x \lt 7 \}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> \{x : x \in \mathbb R, 3 \leq x \leq 4 \}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Write the following intervals in set-builder form:
+    </p>
+    <p>
+      <ol marker ="a">
+        <li>
+          <p>
+            <m>(-3, 0)</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>[6, 12]</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            (6, 12]
+          </p>
+        </li>
+        <li>
+          <p>
+            [-23, 5)
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Which Universal Set(s) would you propose for each of the following:
+    </p>
+    <ol marker ="i">
+      <li>
+        <p>
+          The set of right triangles
+        </p>
+      </li>
+      <li>
+        <p>
+          The set of isosceless triangles
+        </p>
+      </li>
+    </ol>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Given the sets <m>A = \{1, 3, 5\},</m> <m>B= \{2, 4, 6\}</m> and <m>C=\{0, 2, 4, 6, 8\}</m> 
+      which of the following may be considered as Universal set,  
+      <m>\bigcup </m> for all the three sets <m>A, B</m> and <m>C.</m>
+    </p>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            <m>\{0, 1, 2, 3, 4, 5\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\phi</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\{1, 2, 3, 4, 5, 6, 7, 8\}</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Two finite sets have <m>p</m> and <m>q</m> number of elements, respectively. The number of 
+      elements in the power set of the first set is <m>12</m> more then the number of elements in the power set of second set. 
+      Find <m>p</m> and <m>q.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>2^p - 2^q = 12</me>
+      or,
+      <me>
+        2^q (2^{p-q}-1) = 4 \times 3
+      </me>
+      
+      <me>
+      \therefore \quad  2^q = 4 
+      </me>
+      and <me>(2^{p-q}-1) = 3</me>
+      on solving these terms we get - 
+      <m>q = 2</m> and <m>p = 4.</m>
+    </p>
+  </solution>
+</exercise>
+
+
+
+</exercises>
+
+
+
+

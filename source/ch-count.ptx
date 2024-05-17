@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-count" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Principle of Counting</title>
+
+  <introduction>
+    <p>
+      <em>Counting</em> is a fundamental concept in Mathematics. In ancient times, people 
+      used fingers, beans, sticks, buttons, and beads for counting. Later it was realised that 
+      these methods of counting cannot be used in the cases where very large quantities of numbers were involved. 
+      </p>
+    <p> The (fundamental) counting principle gives an idea of <em>how to figure out the number of possible outcomes for 
+      a given situation.</em> The counting principle has two rules: The <term>addition rule</term> 
+      and the <term>multiplication rule</term>.
+    </p>
+   <p>
+    In doing any task, if the task is distributed into two or more parts and each part is compulsory to complete the task, then we use <em>principle of 
+    multiplication</em> to find the number of ways we can finish the task. However, if the each part is not compulsory 
+    but optional to complete the task then we use <em>principle of addition</em> to find the number of ways we can finish the task. For example: 
+    Suppose a person want to go from <term>city A</term> to <term>city C</term> via <term>city B</term> as shown in the figure below. 
+    There are <m>m</m> ways to go from <term>city A</term> to <term>city B</term> and <m>n</m> ways to go from <term>city B</term> 
+    to <term>city C</term>, then total number of ways he can go from <term>city A</term> to <term>city C</term> is given 
+    by <m>m\times n.</m> Here, the person cannot reach to <term>city C</term> without going to <term>city B.</term> 
+    So the each part of work is compulsory to him. Hence, we use the principle of multiplication.
+   </p>
+
+   <image width="35%" xml:id="count1">
+
+    <latex-image >
+      \tikzstyle{level 1}=[level distance=30mm, sibling distance=20mm]
+      \tikzstyle{level 2}=[level distance=30mm, sibling distance=10mm]
+      
+          \begin{tikzpicture}[grow=right]
+       \node {City A}
+          child {node {City B}
+          child {node {City C}   
+          }
+                     };
+      \end{tikzpicture}
+    </latex-image>
+      </image>
+
+      <p>
+        Now suppose a person has to go from <term>city A</term> to <term>city C</term>. But he has two choices to reach to <term>city C</term>. 
+        He can go either  via <term>city B</term> or via <term>city D</term> as shown in figure below. There are <m>m</m> ways (roads) to go from 
+    <term>city A</term> to <term>city C</term> via <term>city B</term> and <m>n</m> ways to go from <term>city A</term> to <term>city C</term> 
+    via <term>city D</term>, then total number of ways he can go from <term>city A</term> to <term>city C</term> is given by <m>m + n.</m> 
+    Here, the person can reach to <term>city C</term> from <term>city A</term> either by going through <term>city B</term> <em>or</em> 
+    by going through <term>city D</term>. So the each part of work is not compulsory to him. Hence, we use the principle of addition.
+      </p>
+
+      <image width="35%" xml:id="count2">
+
+        <latex-image >
+          \begin{tikzpicture}
+          \draw (0,0) -- (3,2) -- (6,0) -- (3,-2) -- cycle;
+          \node at (-0.6, 0) {City A}  
+                  node at (6.6, 0) {City C} node at (3, 2.3) {City B}  
+                  node at (3, -2.2) {City D}   ;
+                  \end{tikzpicture}
+        </latex-image>
+          </image>
+    
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-count_add.ptx" />
+  <xi:include href="sec_add-exampleA.ptx" />
+  <xi:include href="sec-count_prod.ptx" />
+  <xi:include href="sec_prod-exampleB.ptx" />
+  <xi:include href="ex_third.ptx" />
+
+</chapter>

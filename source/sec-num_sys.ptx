@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-num_sys" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Classification of Numbers</title>
+
+
+  
+  <introduction>
+    <p> 
+        A number is a mathematical value used for counting, measuring, or labelling objects. 
+       In our daily life, we use these numbers to perform all the mathematical operations like addition, subtraction, 
+       multiplication, and division. 
+    </p>
+ <p>
+  The counting number systems are given as 
+  <ol>
+    <li>
+      <p>
+       <term> Natural Numbers:</term> 
+       <me>1,2,3,4,5,6,7,8,9,10,11,\ldots, \infty</me> 
+       Natural numbers starts from 1 which is the first number to begin counting and continue endlessly. Each number in natural 
+       number can be obtained by adding 1 to the previous number. It may contain 10, 20, 100, etc. but not mare <em>zero</em>. 
+       Natural numbers are all positive numbers.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term> Whole Numbers:</term> 
+        <me>0, 1,2,3,4,5,6,7,8,9,10,11,\ldots, \infty</me>. Whole numbers also contain zero, (<m>0</m>) and every numbers in natural numbers.  
+          Whole numbers are also all positive.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term> Integers:</term> 
+        <me> -\infty, \ldots -5,-4,-3,-2, -1, 0, +1,+2,+3,+4,+5,\ldots, \infty</me>. Integers are the Whole numbers with both 
+        positive and negative numbers.  Hence, we have positive inegers as <m>0, +1,+2,+3,+4,+5,\ldots \infty </m> and 
+        negative integers as <m>-1,-2,-3, \ldots, -\infty </m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term> Prime Numbers:</term> The natural numbers which has two factors or divisible by only itself and by a <m>1</m> is known as prime numbers.
+        <me>
+          2, 3, 5, 7, 11, 13, \ldots, \infty. 
+        </me>
+        Number <m>2</m> is only even number in prime numbers. <m>1</m> is not considered as a prime number because it can 
+        be only divisible by itself and there is no other number which can divide <m>1</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term> Composite Numbers:</term>  The number which has at least three divisors is known as composite number. 
+        Example: 4 can be divisible by 1, 2, and 4. Hence 4 is one of the composite numbers. 
+        Similarly, <me>4, 6, 8, 9, 10, 12, 14, 15, \ldots </me> are composite numbers.
+           </p>
+    </li>
+    <li>
+      <p>
+        <term> Rational Numbers:</term> Rational numbers can be expressed as a fraction 
+        in the form of <m>\frac{p}{q}</m> where <m>p</m> and <m>q</m> are any integer but <m>q \neq 0</m>. Rational numbers are 
+        positive, negative, and zero. 
+         
+        <me>  
+          \frac{p}{q} =  \frac{5}{2},  -\frac{5}{1},  \frac{1}{2} =0.5,  -\frac{1}{3} =-0.33333, \frac{1}{3}, \frac{7}{8},
+          \frac{8}{4}, \sqrt{9}, 0, \ldots.
+        </me>
+        Rational numbers can be converted to both terminating and non-terminating decimal numbers but with repeating value.
+        Examples:
+        <me>
+          \frac{25}{4} = 6.25. \text{ (terminating value)}
+        </me>
+        <me>
+          \frac{1}{3} = 0.333 \ldots = 0.\dot{3} = 0.\bar{3}. \text{ (3 repeats forever)} 
+        </me>
+        <me>
+          \frac{1}{7} = 0.142857142857 \ldots. \text{ (14285714 repeats forever)}
+        </me>
+        <me>
+          \frac{77}{600} = 0.128333 \ldots. \text{ (3 repeats forever)}
+        </me>         
+        To show a repeating digits in a decimal number, we put either a dot or a line above the repeating digit as shown above.     
+      </p>
+      <p>
+        <term>Note:</term> The sum of two rational numbers or the product of two rational numbers is also rational. Examples:
+        <me>
+          \frac{1}{2} + \frac{1}{3} = \frac{5}{6} (\text{rational})
+        </me>
+        <me>
+          \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} (\text{rational})
+        </me>
+      </p>
+    </li>
+    <li>
+      <p>
+        <term> Irrational Numbers:</term> The numbers which are not rational numbers are called irrational numbers. 
+        Irrational numbers could be written in decimals but not in the form of fractions, which means they cannot 
+        be written as the ratio of two integers. Irrational numbers are non-terminating and non-repeating digits after decimal point. Examples: 
+        <me>
+          \sqrt{3} = 1.73205 \ldots.
+        </me>
+        <me>
+          \sqrt{8} = 2.8284271 \ldots.
+        </me>
+        <me>
+         \pi = 3.1415926 \ldots.
+        </me>
+        <m>\sqrt{2}, \sqrt{10}, 1.24387\ldots, \ldots </m> are irrational numbers.
+      </p>
+      <p>
+        <term>Note: </term> The sum of two irrational numbers or the product of two irrational numbers is not always irrational.
+        Examples: 
+        <me>
+          \sqrt{2}+ \sqrt{2} = 2\sqrt{2} (\text{irrational})
+        </me>
+        <me>
+          \sqrt{5} + (-\sqrt{5}) = 0 (\text{rational})
+        </me>
+        
+        <me>
+          \sqrt{2}\times \sqrt{3} = \sqrt{6} (\text{irrational})
+        </me>
+       <me>
+        \sqrt{2}\times \sqrt{2} = \sqrt{4} (\text{rational})
+       </me>
+       
+      </p>
+      <p>
+        <em>Rational numbers are finite and repeating decimals whereas irrational numbers are infinite and non-repeating.</em>
+      </p>
+    </li>
+    <li>
+      <p>
+        <term> Real Numbers:</term> A real number is any rational or irrational number, 
+        including positive and negative whole numbers, integers, decimals, fractions, and numbers such as pi <m>(\pi)</m> 
+        and Euler's number <m>(e)</m>. 
+      </p>
+      <p>
+        Infinity <m>(\infty)</m> and negative infinity <m>(-\infty)</m> are not real numbers. 
+        Because infinity and negative infinity can have different values. For example, the set of whole 
+        numbers is infinite. So is the set of integers. But, the two sets are not of the same size.
+      </p>
+      <p>
+       The four main properties of real numbers are the commutative property, associative property, 
+        distributive property, and identity property. If <m>m, n,</m> and <m>r</m> are real numbers, then:
+      </p>
+      <p>
+        <term> Commutative Property: </term> 
+        </p>
+        <p>
+          <em>Addition:</em> <m>m + n = n + m.</m> For example: <m>5 + 23 = 23 + 5</m>.
+         </p>
+         <p>
+          <em>Multiplication:</em> <m>m \times n = n \times m</m>. For example: <m>5 \times 2 = 2 \times 5</m>.
+         </p>
+        <p>
+          <term> Associative Property: </term> 
+        </p>
+        <p>
+          <em>Addition:</em> <m>m + (n+r) = (m+n) + r.</m> For example: <m>5 + (2+3) = (5+2) +3</m>.
+         </p>
+         <p>
+          <em>Multiplication:</em> <m> (mn) r = m(nr).</m> For example: <m>(5\times 2) \times 3 = 5 (2\times 3)</m>.
+         </p>
+         <p>
+          <term> Distributive Property: </term> <m>m (n + r) = mn + mr </m> and <m>(m + n) r = mr + nr.</m>
+          Example: <m>2(3 + 5) = 2 \times 3 + 2 \times 5 = 16.</m>
+        </p>
+        <p>
+          <term>Identity Property: </term> 
+        </p>
+          <p>
+            <em>Addition:</em> <m>m + 0 = m.</m> <m>0</m> is an additive identity.
+           </p>
+           <p>
+            <em>Multiplication:</em> <m> m \times 1 = 1 \times m =m.</m> <m>1</m> is a multiplicative identity.
+           </p>
+    </li>
+    <li>
+      <p>
+        <term> Complex Numbers:</term> The complex number is the combination of a real number and an imaginary number. 
+        The complex number is in the form of <m>a+ib</m>, where <m>a</m> = real number and <m>ib</m> = imaginary number. 
+        Also, <m>a,b</m> belongs to real numbers and <m>i = \sqrt{-1}.</m> This numbers are very useful in analysing 
+        phasor diagram in electricity. 
+        </p>
+        <p>
+          The numbers which are not real are imaginary numbers. When we square an imaginary number, it gives a negative result. 
+          It is represented as <m>Im()</m>. Example: <m>\sqrt{-2}, \sqrt{-7}, \sqrt{-11}</m> are all imaginary numbers. The roots of 
+          equation <m>x^2+1 = 0</m> is an imaginary number.
+        </p>
+    </li>
+  </ol>
+ </p>
+
+
+</introduction>
+
+
+</section>

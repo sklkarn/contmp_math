@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-perm_comb" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Permutation and Combination</title>
+
+
+  <introduction>
+
+    <p> <alert>Permutations</alert> 
+      A permutation is an arrangement of objects in a definite order. In other words, permutaions are 
+      different arrangements of a given numbers of things by taking some or all at a time. 
+      For example: Let's say we have three coins, a dime, D, a nickel, N, and a quarter, Q. 
+      In how many ways can you arrange these coins?
+       </p>
+       <p>
+        Here are the possible arrangements of <m>D, N, Q</m>: 
+        <md>
+          <mrow> i. \quad \amp = DNQ</mrow>
+          <mrow> ii. \quad \amp = DQN</mrow>
+          <mrow> iii. \quad \amp = NDQ</mrow>
+          <mrow> iv. \quad \amp = NQD</mrow>
+          <mrow> v. \quad \amp = QDN</mrow>
+          <mrow> vi. \quad \amp = QND</mrow>
+        </md>
+        So there are <m>6</m> different arrangements (or permutations).
+       </p>
+<p>
+  Find the permutations of the letters <m>A, B, C</m> by taking two at a time.
+ </p>
+ <p>
+  Here are the arrangements 
+  <md>
+    <mrow> i. \quad \amp = AB</mrow>
+    <mrow> ii. \quad \amp = BC</mrow>
+    <mrow> iii. \quad \amp = CA</mrow>
+    <mrow> iv. \quad \amp = AC</mrow>
+    <mrow> v. \quad \amp = CB</mrow>
+    <mrow> vi. \quad \amp = BA</mrow>
+  </md>
+  so <m>6</m> permutations. 
+ </p>
+ <p>
+  <alert>Remember:</alert> order (place) is very important in permutations.
+ </p>
+
+
+ 
+ <p> <alert>Combinations</alert> 
+  A combination is a selection of objects in any order. The combination means <em>Selection of things</em>, 
+  where the order of things has no importance. In other words, combinations are 
+  selection of a given numbers of things by taking some or all at a time without giving importance of their order (place). 
+  For example: Let's say we have three letters <m>A, B, C</m>.  In how many ways can you 
+  select (choose) these letters by taking two at a time.
+  </p>
+<p>
+Here are the selection without any order
+<md>
+<mrow> i. \quad \amp = AB</mrow>
+<mrow> ii. \quad \amp = BC</mrow>
+<mrow> iii. \quad \amp = CA</mrow>
+</md>
+so <m>3</m> combinations. 
+</p>
+<p>
+<alert>Remember:</alert> order (place) is not important in combination. In combination <m>AB </m> is same as <m>BA</m> or <m>AC =CA</m>.
+</p>
+<p>
+  All combinations of letters <m>A,B, C,D</m> taken two at a time: 
+  <me>
+    AB \quad AC \quad AD \quad BC \quad BD \quad CD
+  </me>
+  i.e., 6 total selections.
+</p>
+<p>
+  All combinations of letters <m>A,B, C,D</m> taken three at a time: 
+  <me>
+    ABC \quad BCD \quad ABD \quad CDA
+  </me>
+  i.e., 4 total selections.
+</p>
+  </introduction>
+
+  <!-- include sections -->
+
+  <xi:include href="sec-perm.ptx" />
+  <xi:include href="sec-fact.ptx" />
+  <xi:include href="sec-perm_example.ptx" />
+   <xi:include href="ex_fourthA.ptx" />
+   <xi:include href="sec-comb.ptx" />
+   <xi:include href="sec-comb_example.ptx" />
+   <xi:include href="ex_fourthB.ptx" />
+
+
+</chapter>

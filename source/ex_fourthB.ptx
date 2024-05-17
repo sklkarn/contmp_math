@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_fourthB" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise B</title>
+  
+<exercise>
+  <statement>
+    <p>
+    How many committee of 5 people with a chairperson can be selected from 12 people?
+    </p>
+  </statement>
+  <hint>
+    <p>
+      <me>
+        ^{12}C_1\times ^{11}C_4 = ---.
+      </me>
+    </p>
+  </hint>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      A group consists of 7 boys and 4 girls. In how many ways can a team of 5 members be selected, if team has 
+      <ol marker ="i">
+        <li>
+          <p>
+            no girls
+          </p>
+        </li>
+        <li>
+          <p>
+            at least 1 boy and 1 girl?
+          </p>
+        </li>
+        <li>
+          <p>
+            at least 3 girls?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Find the number of ways of choosing 4 cards from a pack of 52 playing cards. In how many of these 
+      <ol marker ="i">
+        <li>
+          <p>
+            4 cards are of the same suit?
+          </p>
+        </li>
+        <li>
+          <p>
+            4 cards belong to four different suits?
+          </p>
+        </li>
+        <li>
+          <p>
+            4 cards are face cards?
+          </p>
+        </li>
+        <li>
+          <p>
+            2 cards are red and 2 cards are black?
+          </p>
+        </li>
+        <li>
+          <p>
+            cards are of the same color?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <hint>
+    <p>
+      There are 13 cards in each suit <em>Diamond, Heart, Club, and Spade.</em>
+      <ol marker ="i">
+        <li>
+          <p>
+          <m>  ^{13}C_4 +  ^{13}C_4 +  ^{13}C_4 + ^{13}C_4 = ----</m>
+          </p>
+        </li>
+        <li>
+          <p>
+           <m> ^{13}C_1 \times  ^{13}C_1 \times  ^{13}C_1 \times ^{13}C_1 = ----</m>
+          </p>
+        </li>
+        <li>
+          <p>
+           <m> ^{12}C_4 = ----</m>
+          </p>
+        </li>
+        <li>
+          <p>
+           <m> ^{26}C_2 \times  ^{26}C_2  = ----</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m> ^{26}C_4 +  ^{26}C_4  = ----</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </hint>
+</exercise>
+
+</exercises>
+
+
+
+

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-comb_example" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example B</title>
+
+<example>
+  <statement>
+    <p>
+      Pascal's Rule. Prove that 
+      <me>
+        ^nC_r + ^nC_{(r-1)} = ^{(n+1)}C_r
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>^nC_r + ^nC_{(r-1)} \amp = \frac{n!}{r!(n-r)!} + \frac{n!}{(r-1)!(n-r+1)!}</mrow>
+        <mrow> \amp = \frac{n!}{r(r-1)!(n-r)!} + \frac{n!}{(r-1)!(n-r+1)(n-r)!} </mrow>
+        <mrow> \amp = \frac{n!}{(r-1)!(n-r)!} \left( \frac{1}{r}+ \frac{1}{n-r+1}\right) </mrow>
+        <mrow> \amp = \frac{n!}{(r-1)!(n-r)!} \left( \frac{(n+1)}{r(n-r+1)}\right) </mrow>
+        <mrow> \amp = \frac{(n+1)n!}{r(r-1)!(n-r+1)(n-r)!} </mrow>
+        <mrow> \amp = \frac{(n+1)!}{r!(n+1-r)!} </mrow>
+        <mrow> \amp = ^{n+1}C_{r} </mrow>
+      </md>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Evaluate: 
+      <me>
+        ^{11}C_8 
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        ^{11}C_8  = ^{11}C_{11-8} = ^{11}C_3 = \frac{11\times 10\times 9}{3!}
+      </me>
+      using <xref ref="thm-comb2"/> and <xref ref="cor-comb_1th1"/>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <me>
+        ^nC_8 = ^nC_6, 
+      </me>
+      find <m>^nC_3.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      From <xref ref="thm-comb3"/> we have 
+
+      <me>
+        x+y = n
+      </me>
+      i.e., <m>8+6 = 14.</m>
+    </p>
+   <p>
+    Hence, 
+    <me>
+      ^nC_3 = ^{14}C_3 = \frac{14\times 13\times 12}{3!} =364.
+    </me>
+    using <xref ref="cor-comb_1th1"/>
+   </p>
+    
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      If <me>
+        ^nC_{(r-1)}:^nC_r:^nC_{(r+1)}=3:4:5
+      </me>
+      find the value of <m>n</m> and <m>r.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>  ^nC_r : ^nC_{(r+1)}\amp = 4:5 </mrow>
+        <mrow>\frac{^nC_r}{^nC_{(r+1)}} \amp = \frac{4}{5}</mrow>
+        </md>
+      From <xref ref="thm-comb6"/> 
+      <me>
+        \frac{^nC_{r}}{^nC_{(r+1)}} = \frac{r+1}{n-r} = \frac{4}{5}
+      </me>
+      or, 
+      <me>
+        5(r+1) = 4(n-r) 
+      </me>
+
+      <men xml:id="eqn-comb1">
+        4n-9r =5
+      </men>
+       </p>
+       Now, 
+       <p>
+        <me>
+          ^nC_{(r-1)}:^nC_{r} = \frac{3}{4}
+        </me>
+        <me>
+          \frac{^nC_{(r-1)}}{^nC_{r}} =  \frac{3}{4}
+        </me>
+        <me>
+          \frac{^nC_{r}}{^nC_{(r-1)}} = \frac{n-r+1}{r} = \frac{4}{3}
+        </me>
+        <men xml:id="eqn-comb2">
+          3n-7r =-3
+        </men>
+        On solving <xref ref="eqn-comb1"/> and <xref ref="eqn-comb2"/>, we get -
+       </p>
+       <p>
+        <m>r=27</m> and <m>n=62.</m>
+       </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>^{2n}C_3:^nC_3 = 11:1,</m> find <m>n.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \frac{^{2n}C_3}{^nC_3} = \frac{11}{1}
+      </me>
+      or, 
+      <me>
+       \frac{ \frac{2n(2n-1)(2n-2)}{3!}}{ \frac{n(n-1)(n-2)}{3!}} = \frac{11}{1}
+      </me>
+      or, 
+      <me>
+       \frac{2n(2n-1)(2n-2)}{n(n-1)(n-2)} = \frac{11}{1}
+      </me>
+      or, 
+      <me>
+       \frac{2\times 2\cancel{n}(2n-1)\cancel{(n-1)}}{\cancel{n}\cancel{(n-1)}(n-2)} = \frac{11}{1}
+      </me>
+      or, 
+      <me>
+      \frac{4(2n-1)}{n-2} = 11
+      </me>
+      or, 
+      <me>
+      n = 6.
+      </me>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>^nP_r = ^nP_{r+1}</m> and <m>^nC_r = ^nC_{r-1}</m>, Find <m>n</m> and <m>r.</m>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow> ^nP_r \amp = ^nP_{r+1} </mrow>
+        <mrow> \frac{\cancel{n!}}{(n-r)!} \amp = \frac{\cancel{n!}}{(n-r-1)!} </mrow> 
+        <mrow> (n-r-1)! \amp = (n-r)! </mrow>
+        <mrow> \cancel{(n-r-1)}! \amp = (n-r)\cancel{(n-r-1)}! </mrow>
+        </md>
+        <men xml:id="eqn-comb3">
+          n  = 1+r 
+        </men>
+        </p>
+        <p>
+          also, 
+          <md>
+            <mrow> ^nC_r \amp = ^nC_{r-1} </mrow>
+            <mrow> \frac{\cancel{n!}}{r!(n-r)!} \amp = \frac{\cancel{n!}}{(r-1)!(n-r+1)!} </mrow> 
+            <mrow> (r-1)!(n-r+1)! \amp = r!(n-r)! </mrow>
+            <mrow> \cancel{(r-1)}!(n-r+1)\cancel{(n-r)!} \amp = r\cancel{(r-1)!}\cancel{(n-r)!} </mrow>
+          </md>
+          <men xml:id="eqn-comb4">
+            n  = 2r-1 
+          </men>
+        </p>
+        <p>
+          On solving <xref ref="eqn-comb3"/> and <xref ref="eqn-comb4"/>, we get -
+          <me>
+            r =2
+          </me>
+          
+        </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Prove that 
+      <me>
+        ^{2n}C_n = \frac{2^n\times [1.3.5\ldots (2n-1)]}{n!}
+      </me>
+      </p>
+  </statement>
+  <solution>
+    <p>
+      From LHS, 
+      <me>
+        ^{2n}C_n = \frac{(2n)!}{n!(2n-n)!} = \frac{(2n)(2n-1)(2n-2)!}{n!n!}
+      </me>
+       
+      <me>
+        = \frac{(2n)(2n-1)(2n-2)(2n-3) \ldots 4.3.2.1}{n!n!}
+      </me>
+      
+      <me>
+         = \frac{(2n)(2n-2)(2n-4) \ldots 4.2 (2n-1)(2n-3) \ldots 5.3.1}{n!n!}
+      </me>
+      <me>
+        = \frac{2^n\times n(n-1)(n-2) \ldots 3.2.1 (2n-1)(2n-3) \ldots 5.3.1}{n!n!}
+     </me>
+     <me>
+      = \frac{2^n\times \cancel{n!}\times[1.3.5.\ldots (2n-1)] }{n!\cancel{n!}}
+   </me>
+    </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+    If <m>^{(n+2)}C_8 : ^{(n-2)}P_4 = \frac{57}{16}</m>, find <m>n.</m>  
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <md>
+        <mrow>\frac{^{(n+2)C_8}}{^{(n-2)}P_4} \amp =\frac{57}{16} </mrow>
+        <mrow>\frac{\frac{(n+2)!}{8!(n+2-8)!}}{\frac{(n-2)!}{(n-2-4)!}} \amp   =\frac{57}{16} </mrow>
+        <mrow> \frac{(n+2)!}{8!\cancel{(n-6)!}} \times \frac{\cancel{(n-6)!}}{(n-2)!} \amp  =\frac{57}{16} </mrow>
+        <mrow>\frac{(n+2)(n+1)n(n-1)\cancel{(n-2)!}}{8!\cancel{(n-2)!}} \amp   =\frac{57}{16} </mrow>
+        <mrow>(n+2)(n+1)n(n-1) \amp = 21 \times 20\times 19 \times 18</mrow>
+      </md>
+    </p>
+    <p>
+      <me>
+        \therefore \quad n=19.
+      </me>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      In how many ways can eleven team members be chosen out of a batch of 15 players, if 
+      <ol marker ="i">
+        <li>
+          <p>
+            there is no restriction on the selection?
+          </p>
+        </li>
+        <li>
+          <p>
+            a particular player is always chosen?
+          </p>
+        </li>
+        <li>
+          <p>
+            a particular player is never chosen?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            <me>
+              ^{15}C_{11} \quad \Rightarrow \quad ^{15}C_{(15-11)} =  ^{15}C_{4}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            fix first Player and chose 10 players 
+            <me>
+              1\times ^{14}C_{10}
+            </me>
+            
+          </p>
+        </li>
+        <li>
+          <p>
+           <me>
+            ^{14}C_{11}
+           </me>
+           as one player is never selected.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      In how many ways can a committee of 5 members be selected from 6 men and 5 women, consisting of 3 men and 2 women?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> |  <fillin characters="3" /> <fillin characters="3" />
+        </p>
+        <p>
+       committee of 5 memebrs with  3M and 2W selected from 6 men and 5 women.
+        </p>
+<p>
+  <me>
+    ^6C_3 \times ^5C_2 = 200.
+  </me>
+</p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Out of 5 men and 2 women, a committee of 3 is to be formed. 
+      In how many ways can it be formed if at least one woman is to be included? 
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <term>Case I</term> 1 woman is included. 
+      <me>
+        ^5C_2 \times ^2C_1 
+      </me>
+      </p>
+      <p>
+        <term>Case II</term> 2 woman is included. 
+        <me>
+          ^5C_1 \times ^2C_2 
+        </me>
+        </p>
+        <p>
+          Therefore total ways of selection = 
+          <me>
+            \left(  ^5C_2 \times ^2C_1 \right) +  \left(  ^5C_1 \times ^2C_2 \right) = ----.
+          </me>
+        </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      A committee of 5 is to be formed one of 6 men and 4 women. In how many ways can this be done. When 
+      <ol marker ="i">
+        <li>
+          <p>
+            at least 2 women are included, 
+          </p>
+        </li>
+        <li>
+          <p>
+            at most 2 women are included?
+          </p>
+        </li>
+      </ol> 
+    </p>
+  </statement>
+  <solution>
+    <p>
+      (i)   
+      <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> |  <fillin characters="3" /> <fillin characters="3" />
+        </p>
+        <p>
+          <term>Case I</term> 2 woman is included. 
+          <me>
+            ^6C_3 \times ^4C_2 
+          </me>
+          </p>
+          <p>
+            <term>Case II</term> 3 woman is included. 
+            <me>
+              ^6C_2 \times ^4C_3 
+            </me>
+            </p>
+            <p>
+              <term>Case III</term> 4 woman is included. 
+              <me>
+                ^6C_1 \times ^4C_4 
+              </me>
+              </p>
+            <p>
+              Therefore total ways of selection = 
+              <me>
+                \left(  ^6C_3 \times ^4C_2 \right) +    \left(  ^6C_2 \times ^4C_3 \right) +   \left(  ^6C_1 \times ^4C_4 \right) = ----.
+              </me>
+        </p>
+        <p>
+          (ii) 
+            <term>Case I</term>  No woman is included. 
+            <me>
+              ^6C_5 \times ^4C_0 
+            </me>
+            </p>
+            <p>
+              <term>Case II</term> 1 woman is included. 
+              <me>
+                ^6C_4 \times ^4C_1 
+              </me>
+              </p>
+              <p>
+                <term>Case III</term> 2 woman is included. 
+                <me>
+                  ^6C_3 \times ^4C_2 
+                </me>
+                </p>
+              <p>
+                Therefore total ways of selection = 
+                <me>
+                  \left(  ^6C_5 \times ^4C_0 \right) +    \left(  ^6C_4 \times ^4C_1 \right) +   \left(  ^6C_3 \times ^4C_2 \right) = ----.
+                </me>
+        </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      An examination paper contains 12 questions and has two parts A and B. Part A contains 7 questions and part B 
+      contains 5 questions. A student has to attempt 8 questions among them 3 questions must be from each parts. 
+      How many ways he/she can do that?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Total of 12 Q; attempt 8Q among them 3 must be from each parts.
+    </p>
+    <p>
+     
+    </p>
+    <p><alert>Case I</alert> 3Q from part A.
+      <me> Part A <fillin characters="3" />part B</me>
+      <me>
+        ^7C_3 \times ^5C_5
+      </me>
+      <alert>Case II</alert> 4Q from part A.
+      <me>
+        ^7C_4 \times ^5C_4
+      </me>
+      <alert>Case III</alert> 5Q from part A.
+      <me>
+        ^7C_5 \times ^5C_3
+      </me>
+    </p>
+    <p>
+      Hence, the total number ways he/she make selections = 
+      <me>
+        \left( ^7C_3 \times ^5C_5 \right)+\left( ^7C_4 \times ^5C_4 \right)+\left( ^7C_5 \times ^5C_3 \right) = ----
+      </me>
+      
+    </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      How many diagonals are there in a polygon of <m>n</m> sides?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Polygon of <m>n</m> sides has <m>n</m> vertex. In polygon (number of sides = number of vertex).
+    </p>
+    <p>
+      That is, total points on polygon = <m>n.</m>
+    </p>
+    <p>
+      total line segments = <m>^nC_2.</m>
+    </p>
+    <p>
+      number of diagonals = (total line segments)-(number of sides of polygon) 
+      <me>
+        or, \quad \text{  number of diagonals } = ^nC_2-n 
+      </me>
+      <me>
+        = \frac{n!}{2!(n-2)!}-n = = \frac{n(n-1)\cancel{(n-2)!}}{2!\cancel{(n-2)!}}-n = \frac{n(n-1)}{2}-n
+      </me>
+      <me>
+        \therefore \quad \text{  number of diagonals } = ^nC_2-n = \frac{n}{2}[n-3].
+      </me>
+       </p>  
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      There are 10 points in a plane, three of which are not on the same straight line, 
+      except 4 points, which are collinear. Find  
+      <ol marker ="i">
+        <li>
+          <p>
+            The number of lines obtained from the pairs of these points.
+          </p>
+        </li>
+        <li>
+          <p>
+            The number of triangles that can be bormed with vertices as these points.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      10 points given, where 4 points are collinear.
+    </p>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+           Number of lines = <m>^nC_2 = ^{10}C_2 -^4C_2 +1</m> 
+          </p>
+          <p>
+            Repeated lines = <m>^4C_2</m> and 1 line generated due to 4 collinear points.
+          </p>
+        </li>
+        <li>
+          <p>
+           Number of triangles = <m>^{10}C_3 -^4C_3.</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      A box contains 6 red and 5 white balls. In how many ways can 6 balls 
+      selected so that there are at least two balls of each color?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Box - 6R and 5W
+    </p>
+    <p>
+      <alert>Case I</alert> 2R and 4W
+      <me>
+        ^6C_2 \times ^5C_4
+      </me>
+      <alert>Case II</alert> 3R and 3W
+      <me>
+        ^6C_3 \times ^5C_3
+      </me>
+      <alert>Case II</alert> 2R and 4W
+      <me>
+        ^6C_4 \times ^5C_2
+      </me>
+    </p>
+    <p>
+      Total number of ways = <m>\left(  ^6C_2 \times ^5C_4 \right) + \left(  ^6C_3 \times ^5C_3 \right) + \left(  ^6C_4 \times ^5C_2 \right)</m>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      A box consists of 3 black, 2 white, and 4 red balls. In how many ways can 3 balls be drawn from the box, 
+      if at least one black ball is to be involved in the drawn?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      3B, 2W,4R balls = 9 balls total. Choose 3 balls among them at least 1 ball must be black.
+    </p>
+    <p>
+      <alert>Case I</alert> 1 black ball 2 non-black balls.
+      <me>
+        ^3C_1 \times ^6C_2 
+      </me>
+      or, <m>  ^3C_1 \times ^2C_1 \times ^4C_1 </m>
+    </p>
+    <p>
+      <alert>Case II</alert> 2 black ball 1 non-black balls.
+      <me>
+        ^3C_2 \times ^6C_1 
+      </me>
+       </p>
+       <p>
+        <alert>Case III</alert> 3 black ball 0 non-black balls.
+        <me>
+          ^3C_3 \times ^6C_0 
+        </me>
+         </p>
+         <p>
+          So the total ways of drawing is given by 
+          <me>
+            \left(  ^3C_1 \times ^6C_2 \right) +  \left(  ^3C_2 \times ^6C_1 \right) +  \left(  ^3C_3 \times ^6C_0 \right) = ----
+          </me>
+          As each case is a complete task.
+         </p>
+  </solution>
+</example>
+
+
+<example>
+  <statement>
+    <p>
+      A bag contains 6 white marbles and 5 red marbles. Find the number of ways in which 4 marbles can be drawn from the bag, 
+      if 
+      <ol marker ="i">
+        <li>
+          <p>
+            They can be of any color?
+          </p>
+        </li>
+        <li>
+          <p>
+            2 must be white and 2 red.
+          </p>
+        </li>
+        <li>
+          <p>
+            They must all be of same color.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      6W, 5R = 11 balls among which select 4.
+    </p>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            <me>
+              ^{11}C_4
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+             ^6C_2 \times ^5C_2  = ----
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              ^6C_4 + ^5C_4  = ----
+             </me>
+          </p>
+        </li>
+      </ol>
+     
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      A convex polygon has 44 diagonals. Find the number of its sides?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Number of sides = <m>n</m> = number of vertex = number of points.
+    </p>
+    <p>
+     number of diagonal = 44
+    </p>
+    <p>
+      Total number of lines = <m>^nC_2</m> in a polygon. Two points for every line.
+    </p>
+    <p>
+      total lines = number of diagonal + number of sides.
+      <me>
+        \therefore \quad \text{ number of sides } = ^{44}C_2 - 44 = 22\times 41 = ----
+      </me>
+      
+    </p>
+  </solution>
+</example>
+
+</section>

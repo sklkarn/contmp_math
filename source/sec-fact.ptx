@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-fact" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Factorial</title>
+
+
+  <p>
+    The <term>factorial</term> of  <m>n</m>, read as “<m>n</m> factorial” is <me>n!=n(n-1)(n-2)(n-3)...(2)(1)</me>. 
+    It is very useful in counting problems like permutations and combinations. Factorial is a successive multiplication 
+    of numbers in reducing order by 1 digit all the way to number 1. Such as 
+    <me>
+      5! = 5\times 4 \times 3 \times 2 \times 1 = 120.
+    </me>
+    <md>
+      <mrow> 1! \amp = 1</mrow>
+      <mrow> 0! \amp =1 </mrow>
+    </md>
+     Factorial of negative numbers are not defined.
+    </p>
+ 
+    <p>
+      <m>10!</m> can be written as <me> 10! = 10\times 9\times 8 \times 7 \times 6 \times 5\times 4 \times 3 \times 2 \times 1</me> 
+      or, <me>10! = 10\times 9\times 8 \times 7! </me> 
+      or, <me>10! = 10\times 9! </me>, etc.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find the value of <m>x</m>, if 
+          <me>
+            \frac{x}{10!} = \frac{1}{8!} + \frac{1}{9!} 
+          </me>
+             </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow> \frac{x}{10!} \amp  = \frac{1}{8!} + \frac{1}{9!}  </mrow>
+            <mrow> \frac{x}{10\times 9 \times \cancel{8!}} \amp = \frac{1}{\cancel{8!}} + \frac{1}{9\times \cancel{8!}}  </mrow>
+            <mrow> \frac{x}{10\times 9}  \amp = 1 + \frac{1}{9} = \frac{10}{9}</mrow>
+            <mrow>\therefore \quad x  \amp = \frac{10\times 9\times 10}{9}=100.</mrow>
+          </md>
+          </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Express the following product in factorial form:
+          <ol marker ="i">
+            <li>
+              <p>
+                <m>5\times 6\times 7 \times 8 \times 9</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>2\times 4\times 6 \times 8 \times 10</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker ="i">
+            <li>
+              <p>
+               <md>
+                <mrow> 5\times 6\times 7 \times 8 \times 9 \amp = 9\times 8\times 7 \times 6 \times 5  </mrow>
+                <mrow> \amp =  9\times 8\times 7 \times 6 \times 5 \times \frac{4!}{4!}</mrow>
+                <mrow> \amp =   \frac{9!}{4!}</mrow>
+               </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                <md>
+                <mrow> 2\times 4\times 6 \times 8 \times 10 \amp  =  (2 \times 1) \times (2 \times 2) \times (2 \times 3) \times (2 \times 4) \times (2 \times 5)</mrow>
+                <mrow> \amp = (2 \times 2 \times 2 \times 2\times 2) \times (1 \times 2 \times 3 \times 4\times 5)</mrow>
+                <mrow> \amp =  2^5 \times 5! </mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find the Least common multiple, (LCM) of <m>(5!, 6!, 7!)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow> \text{ (LCM)  of } (5!, 6!, 7!) \amp  =  \text{ (LCM) of } (5!, 6 \times 5!, 7\times 6 \times 5!) </mrow>
+            <mrow> \amp =  5! \times \text{ (LCM) of } [1, 6, 7\times 6 ] </mrow>
+            <mrow> \amp = 42 \times 5! = 7\times 6 \times 5! = 7!</mrow>
+            </md>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          If <m>(n+1)! = 90\times (n-1)!</m>, find <m>n</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow> (n+1)! \amp  = 90\times (n-1)! </mrow>
+            <mrow>  (n+1) n \cancel{(n-1)!} \amp = 90\times \cancel{(n-1)!}  </mrow>
+            <mrow> (n+1) \times n \amp =  90 = 10 \times 9</mrow>
+            </md>
+            By equating right hand side and left hand side identities, we have 
+            <me>
+              n = 9.
+            </me>
+            
+        </p>
+      </solution>
+    </example>
+
+
+    <exercise>
+      <p>
+        If <m>(n+2)! = 60\times (n-1)!</m>, find <m>n</m>.
+      </p>
+    </exercise>
+
+    <exercise>
+      <p>
+        Prove that <m>n(n-1)(n-2) ------(n-r+1) = \frac{n!}{(n-r)!}</m>
+      </p>
+      <hint>
+        <p>
+          <md>
+            <mrow>\frac{n!}{(n-r)!} \amp = \frac{n(n-1)(n-2)(n-3) ---(n-r+1)\cancel{(n-r)!}}{\cancel{(n-r)!}} </mrow>
+            <mrow> \amp = n(n-1)(n-2) ------(n-r+1)</mrow>
+          </md>
+        </p>
+      </hint>
+    </exercise>
+
+
+
+</section>

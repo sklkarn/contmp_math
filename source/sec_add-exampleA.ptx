@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_add-exampleA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Example A</title>
+ 
+
+
+  <example>
+    <statement>
+      <p>
+        Jessica has a jar of cookies. It has chocolate and peanut cookies in it. 
+        Jessica only wants to eat one cookie. How many possible options does Jessica have?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since Jessica only wants one cookie, she has to choose only one cookie from 3 chocolate or 3 peanut cookies. 
+        The choices are mutually exclusives, so by applying the rule of sum, we have <m>3+3 =6</m> possible options.
+      </p>
+    </solution>
+  </example>
+
+
+  <example>
+    <statement>
+      <p>
+        Imagine you are getting dressed for the day, and you have the following choices: 
+         </p>
+         <p>
+          Choice A: Selecting a shirt (5 options). 
+              </p>
+              <p>
+                Choice B: Choosing pants (3 options). 
+                  </p>
+                  <p>
+                    Choice C: Picking shoes (2 options). 
+                            </p>
+                            <p>
+                              How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?
+                            </p>
+    </statement>
+    <solution>
+      <p>
+        Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options. 
+         </p>
+         <p>
+          Total Outfits = 5 + 3 + 2. 
+               </p>
+               <p>
+                Total Outfits = 10 different outfits. 
+                      </p>
+                      <p>
+                        You can create 10 different outfits by applying the Addition Rule.
+                      </p>
+    </solution>
+   </example>
+
+   <example>
+    <statement>
+      <p>
+        In a standard deck of playing cards, you have four suits (hearts, diamonds, clubs, spades), 
+        and each suit has 13 ranks (Ace through King). How many ways can you draw a card that is either a heart or a King? 
+         </p>
+          </statement>
+         <solution>
+          <p>
+             Using the Addition Rule: 
+                     </p>
+                     <p>
+                     Total Ways = Number of Ways to Draw a Heart + Number of Ways to Draw a King. 
+                    </p>
+                    <p>
+                      Total Ways = 13 (hearts) + 4 (Kings). 
+                          </p>
+                         <p>
+                          Total Ways = 17 ways. 
+                                  </p>
+                                  <p>
+                                    There are 17 ways to draw a card that is either a heart or a King from a standard deck.
+                                  </p>
+                   </solution>
+   </example>
+
+   <example>
+    <statement>
+      <p>
+        You and your friends are planning a movie night, and you have the following movie genre choices: 
+         </p>
+         <p>
+          Choice X: Action movies (4 options). 
+            </p>
+            <p>
+              Choice Y: Comedy movies (3 options). 
+                 </p>
+                 <p>
+                  Choice Z: Science fiction movies (2 options). 
+                    </p>
+                   <p>
+                    How many different combinations of movie genres can you choose for your movie night?
+                   </p>
+    </statement>
+    <solution>
+      <p>
+        Total Combinations = Number of Action Movies + Number of Comedy Movies + Number of Science Fiction Movies. 
+             </p>
+             <p>
+              Total Combinations = 4 + 3 + 2. 
+                  </p>
+                  <p>
+                    Total Combinations = 9 different combinations. 
+                        </p>
+                        <p>
+                          There are 9 different combinations of movie genres you can choose for your movie night.
+                        </p>
+    </solution>
+   </example>
+
+   <example>
+    <statement>
+      <p>
+        Imagine you are at a restaurant with a diverse menu. You have the following choices for each course: 
+          </p>
+          <p>
+            Choice A: Appetizer (3 options). 
+                    </p>
+                    <p>
+                      Choice B: Main Course (5 options). 
+                           </p>
+                           <p>
+                            Choice C: Dessert (2 options). 
+                                      </p>
+                                      <p>
+                                        You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). 
+                                        How many different meal combinations can you create?
+                                      </p>
+    </statement>
+    <solution>
+      <p>
+        Total Meal Combinations = Number of Appetizer Options + Number of Main Course Options + Number of Dessert Options. 
+       </p>
+       <p>
+        Total Meal Combinations = 3 (appetizers) + 5 (main courses) + 2 (desserts). 
+          </p>
+          <p>
+            Total Meal Combinations = 10 different meal combinations. 
+              </p>
+              <p>
+                So, there are 10 different meal combinations you can create by applying the Addition Rule.
+              </p>
+    </solution>
+   </example>
+
+   <example>
+    <statement>
+      <p>
+        Suppose you are planning a vacation with multiple destinations, and you have the following choices 
+        for your itinerary: 
+         </p>
+         <p>
+          Choice X: Visit a beach town (2 options). 
+            </p>
+            <p>
+              Choice Y: Explore a historic city (3 options). 
+                 </p>
+                 <p>
+                  Choice Z: Go on a nature hike (4 options). 
+                   </p>
+                   <p>
+                    You want to plan a vacation itinerary that includes visiting one destination from each category 
+                    (beach town, historic city, nature hike). How many different vacation itineraries can you create?
+                   </p>
+    </statement>
+    <solution>
+      <p>
+        Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options. 
+         </p>
+         <p>
+          Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes). 
+            </p>
+            <p>
+              Total Itinerary Options = 9 different vacation itineraries. 
+                  </p>
+                  <p>
+                    There are 9 different vacation itineraries you can plan using the Addition Rule.
+                  </p>
+    </solution>
+   </example>
+
+   <example>
+    <statement>
+      <p>
+        Suppose you are designing a logo for a new company, and you have the following color choices: 
+         </p>
+         <p>
+          Choice P: Primary colors (3 options). 
+         </p>
+         <p>
+          Choice S: Secondary colors (3 options). 
+           </p>
+           <p>
+            Choice M: Metallic colors (2 options). 
+              </p>
+              <p>
+                You want to select a color scheme by choosing one color from each category (primary, secondary, metallic). 
+                How many different color schemes can you create?
+              </p>
+    </statement>
+    <solution>
+      <p>
+        Total Color Schemes = Number of Primary Color Options + Number of Secondary Color Options + Number of Metallic Color Options. 
+         </p>
+         <p>
+          Total Color Schemes = 3 (primary colors) + 3 (secondary colors) + 2 (metallic colors). 
+            </p>
+            <p>
+              Total Color Schemes = 8 different color schemes. 
+                     </p>
+                     <p>
+                      There are 8 different color schemes you can create for the company logo using the Addition Rule.
+                     </p>
+    </solution>
+   </example>
+
+<example>
+<statement>
+<p>
+  In a local election, there are three candidates running for mayor (Candidate A, Candidate B, Candidate C) 
+  and two candidates running for city council (Candidate X, Candidate Y). 
+</p>
+<p>
+  How many different voting options are there if a voter must select one candidate for mayor and one 
+  candidate for city council?
+</p>
+</statement>
+<solution>
+<p>
+  Total Voting Options = Number of Mayor Candidates + Number of City Council Candidates. 
+ </p>
+ <p>
+  Total Voting Options = 3 (mayor candidates) + 2 (city council candidates). 
+  </p>
+  <p>
+    Total Voting Options = 5 different voting options. 
+    </p>
+    <p>
+      There are 5 different voting options in this local election using the Addition Rule.
+    </p>
+</solution>
+</example>
+
+
+    
+
+</section>
+

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-stat" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Statistics</title>
+
+
+
+  <introduction>
+    <p> 
+      Statistics is the science of collecting, arranging, and analyzing data for better decision making. It is of two types:
+      <ol marker ="I">
+        <li>
+          <p>
+            <term>Descriptive Statistics:</term> It consists of organizing and summarizing the data using quantitative methods.
+            </p>
+            <p>
+              Average salaries for various occupations in 2024.
+              <me>
+                \begin{array}{c|cc} 
+                \circ &amp; Profession &amp; Salary  \\ \hline 
+                1 &amp; dentists &amp; $200,000  \\ 
+                2 &amp; physicists &amp;  $60,000 \\ 
+                3 &amp; police &amp;  $80,000 \\ 
+                4 &amp; architects &amp;  $150,000 \\ 
+                5 &amp; Statitian &amp;  $200,000 \\ 
+                \end{array}
+              </me>
+            </p>
+          <p>
+            Histogram, probability, permutation, combination, mean, median, mode, standard deviation, Gaussian distribution, 
+            log-normal distribution, binomial distribution, etc.
+          </p>
+          <p>
+             <ol marker="i">
+              <li>
+                <p>
+                  Measure of central tendency
+                </p>
+              </li>
+              <li>
+                <p>
+                  Measure of dispersion
+                </p>
+              </li>
+            </ol>
+            </p>
+        </li>
+        <li>
+          <p>
+           <term> Inferential statistics:</term> It is technique taht we use to drawing conclusions and making predictions.
+            </p>
+            <p>
+              z test, t-test, anova test, chi-square test, hypothesis testing, p-value, confidence inetrval.
+            </p>
+        </li>
+      </ol>
+    </p>
+      
+<p>
+  Descriptive stat. tells about the questions like:  
+  What is the average marks of students in the class?  What percentage of students are passing the class?
+  Descriptive statistics include graphical and numerial procedure that are used to summarize data and to 
+  transform data into information.  Examples: The number of customers who visited a jeweelery shop in the last 10 days were 
+  <m>83, 80, 79, 84, 85, 106, 110, 120, 74, 77.</m> By looking to the data one can see there is not much variation in the first 5 days, 
+  high sale in next two days (Weekend?), high again in the next day (specific occasion?).
+</p>
+
+<p>
+ Inferential stat. tells about the questions like: Are the markes of the students of this class room similar to the markes of other 
+ math classes in the school. Here we are comparing the data set of one class room to the other many math class rooms. Inferential statistics 
+ provides bases for forcast, predictioins, and estimations that are used to transform information into knowledge. 
+ Estimating parameter: average age of customers, test a hypothesis, forcast for rain tomorrow.
+</p>
+
+ 
+<example>
+  <statement>
+    <p>
+      <alert>Compare: </alert> 
+      <ol marker ="i">
+        <li>
+          <p>
+            6'3" boy to a 5'1" boy.
+          </p>
+        </li>
+        <li>
+          <p>
+            GPA of 4.0 to GPA of 2.5
+          </p>
+        </li>
+        <li>
+          <p>
+            Income of $24,000 to income $15,000.
+          </p>
+        </li>
+        <li>
+          <p>
+            President to a professor.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <term>Interpret or infer: </term> 
+      <ol marker ="i">
+        <li>
+          <p>
+           taller
+          </p>
+        </li>
+        <li>
+          <p>
+           more intelligent
+          </p>
+        </li>
+        <li>
+          <p>
+           wealth
+          </p>
+        </li>
+        <li>
+          <p>
+            power.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+
+
+  <example>
+   <statement>
+    <p>
+      <ol marker="i">
+        <li>
+          <p>
+            How do I price this car?
+          </p>
+        </li>
+        <li>
+          <p>
+            How much the customer is willing to pay?
+          </p>
+        </li>
+        <li>
+          <p>
+            What should be the capacity of the plant?
+          </p>
+        </li>
+      </ol>
+    </p>
+   </statement>
+  </example>
+
+
+<p>
+  <term>Why study Statistics: </term> It helps in decision making or prediction in an uncertain environment. We collect and analyze data to 
+  make decision.
+</p>
+
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-stat_int.ptx" />  
+  <xi:include href="sec-stat_centerT.ptx" />  
+  <xi:include href="sec-stat_disp.ptx" />  
+  
+  <xi:include href="sec_stat_example.ptx" />  
+  <xi:include href="ex_sixth.ptx" />  
+
+</chapter>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_fourthA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise A</title>
+  
+<exercise>
+  <statement>
+    <p>
+      If <m> ^{22}P_(r+1) : ^{20}P_(r+2)  = 11:52,</m> find the value of <m>r.</m>
+    </p>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Prove that 
+      <m>  ^nP_r = n\times ^{(n-1)}P_{(r-1)}</m> 
+    </p>
+  </statement>
+</exercise>
+
+
+
+
+<exercise>
+  <title>Permutations of distinct objects.</title>
+  <statement>
+    <p>
+      In how many ways can <m>6</m> people stand in a queue?
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      How many different ways can <m>3</m> different rings be worn in <m>4</m> fingers with at most one in each finger?
+    </p>
+  </statement>
+</exercise>
+
+
+
+<exercise>
+  <title>Permutations of the repeating objects.</title>
+ <p>
+  In how many of the distinct permutations of the letters in <m>MISSISSIPPI</m> do the 4 <m>I's</m> not come together?
+ </p>
+</exercise>
+
+<exercise>
+  <p>
+   How many words can be formed with the letters of the word <m>MISSOURI</m> 
+  </p>
+  <p>
+    <ol marker ="i">
+      <li>
+        <p>
+          Have <m>M</m> and <m>R</m> together?
+        </p>
+      </li>
+      <li>
+        <p>
+          Begin with <m>M</m> and end in <m>R</m>?
+        </p>
+      </li>
+      <li>
+        <p>
+          Have all vowels come together?
+        </p>
+      </li>
+    </ol>
+  </p>
+</exercise>
+
+<exercise>
+  <p>
+    In how many ways can the letters of the word <m>PERMUTATIONS</m> be arranged, if 
+    <ol marker ="i">
+      <li>
+        <p>
+          the words start with <m>P </m> and end with <m>S?</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          the vowels are all together?
+        </p>
+      </li>
+    </ol>
+  </p>
+</exercise>
+
+<exercise>
+  <p>
+    If the different permutations of the word <m>EXAMINATION</m> are listed as in a dictionary, 
+    how many items are there in the list before the first word starting with <m>E?</m>
+  </p>
+  <hint>
+    <p>
+      List of words in dictionary is arranged in alphabetical order. 
+      Hence, the total number of words before starting with <m>E</m> are fixed at <m>A</m> as <m>AAE ----</m>
+      <me>
+        \frac{10!}{2!2!} =----
+      </me>
+      where <m>I</m> is repeating twice and <m>N</m> is repeating twice among 10 letters except the first <m>A.</m> 
+      Fixed first <m>A</m> and then remaining letters <m>A E I I M N O N T X.</m>
+    </p>
+  </hint>
+</exercise>
+
+<exercise>
+ <statement>
+  <p>
+    Find the number of word which can be made using all the letters of the word <m>AGAIN.</m>
+        <me>
+        \frac{5!}{2!} = 60.
+      </me>
+    </p>
+    <p>
+    If these words are written as in a dictionary what will be the <m>50^{th}</m> word?
+  </p>
+ </statement>
+  <solution>
+       <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            In alphabetical order <m>A A G I N </m>
+           </p>
+          <p>
+            For the word starts with <m>A</m> fix its position at first place and then <m>A G I N</m>
+            <me>
+              4! =24.
+            </me>
+            No repetition in <m>A G I N</m>.
+          </p>
+          </li>
+          <li>
+             <p>
+                For the word starts with <m>G</m> fix its position at first place and then <m>A A I N</m>
+                <me>
+                  \frac{4!}{2!} =12
+                </me>
+                </p>
+           </li>
+           <li>
+            <p>
+              For the word starts with <m>I</m> fix its position at first place and then <m>A A G N</m>
+              <me>
+                \frac{4!}{2!} =12
+              </me>
+              </p>
+              <p>
+                Total words count = <m>24+12+12= 48.</m>
+              </p>
+           </li>
+           <li>
+            <p>
+              for the word at <m>49^{th}</m> position in a list, fix <m>N</m> and then <m>AAGI</m> 
+            </p>
+           </li>
+           <li>
+            <p>
+              for the word at <m>50^{th}</m> position in a list, fix <m>N</m> and then <m>AAIG</m> 
+            </p>
+           </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+
+
+<exercise>
+ <statement>
+  <p>
+    How many words, with or without meaning can be formed using all the 
+    letters of the word <m>EQUATION</m>, taking each letter exactly once?
+  </p>
+ </statement>
+ <hint>
+  <p>
+    <m>^8P_8</m> 
+    </p>
+    <p>
+      or, fill each person in 8 position without repeating.
+      <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> 
+      <fillin characters="3" />  <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" />
+       </p>
+       <p>
+        <m>8\times 7 \times 6 \times 5 \times 4 \times 3  \times 2 \times 1 = 8! </m>
+       </p>
+ </hint>
+</exercise>
+
+<exercise>
+ <statement>
+  <p>
+    How many words with or without meaning can be made from the letters of the word <m>MONDAY</m>, that no letter is repeated, if 
+    <ol marker="i">
+      <li>
+        <p>
+          4 letters are used at a time,
+        </p>
+      </li>
+      <li>
+        <p>
+          All letters are used at a time,
+        </p>
+      </li>
+      <li>
+        <p>
+          All letters are used but first letter is vowel?
+        </p>
+      </li>
+    </ol>
+  </p>
+ </statement>
+  <hint>
+    <p>
+    <ol marker="i">
+      <li>
+        <p>
+          <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> = <m>^6P_4</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>^6P_6 =----</m>
+        </p>
+      </li>
+      <li>
+        <p>
+         vowel <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> = <m>^6P_4 = ---</m> 
+        </p>
+        <p>
+          vowel has 2 choices. Therefore <m>2\times 5\times 4\times 3\times 2 \times 1 = ----</m>
+        </p>
+      </li>
+    </ol>   
+    </p>
+     </hint>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Find the value of <m>r</m> if 
+      <ol>
+        <li>
+          <p>
+            <me>
+                ^5P_r = 2 \times ^6P_{(r-1)}
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <me>
+              ^5P_r = ^6P_{(r-1)}
+          </me>
+          </p>
+        </li>
+      </ol>
+     
+    </p>
+  </statement>
+  <answer>
+    <p>
+      (i) r = 3
+        </p>
+        <p>
+         <md>
+          <mrow>\frac{5!}{(5-r)!} \amp = 2\times \frac{6!}{(6-r+1)!} </mrow>
+         </md>
+        </p>
+  </answer>
+</exercise>
+
+
+
+</exercises>
+
+
+
+
