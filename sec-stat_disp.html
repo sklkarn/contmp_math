@@ -206,7 +206,7 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-stat_centerT.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Central Tendency</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-mean" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Mean</span></a></div>
+<div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-mean" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Mean (Arithmatic Mean)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-rawD" class="internal"><span class="codenumber">6.2.1.1</span> <span class="title">Raw Data (individual series):</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-discrD" class="internal"><span class="codenumber">6.2.1.2</span> <span class="title">Discrete Series:</span></a></div></li>
@@ -234,6 +234,8 @@ window.MathJax = {
 </ul>
 </li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-rel_mmm" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Relation between Mean, Median, and Mode:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-geom_mean" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Geometric Mean (GM)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-harm_mean" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Harmonic Mean (HM)</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section active">
@@ -270,6 +272,7 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-stat_disp.html#subsec-mean_dev" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Mean Deviation</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-m_devmean" class="internal"><span class="codenumber">6.3.5.1</span> <span class="title">Mean deviation from mean</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsec-QDP" class="internal"><span class="codenumber">6.3.6</span> <span class="title">Quartiles, Deciles, Percentiles</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_stat_example.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Example</span></a></div></li>
@@ -1343,7 +1346,123 @@ MD = 30/8 = 3.75.
 \end{equation*}
 </div>
 <div class="para">The values are, on average, 3.75 away from the middle.</div>
-</div></section></section></section></div>
+</div></section></section><section class="subsection" id="subsec-QDP"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.6</span><span class="space"> </span><span class="title">Quartiles, Deciles, Percentiles</span>
+</h3>
+<div class="para logical" id="subsec-QDP-2">
+<div class="para">
+<dfn class="terminology">Quartiles:</dfn> there are three quartiles, called I quartile (or lower quartile), II quartile (or median), and III quartile (or upper quartile).</div>
+<div class="displaymath process-math" id="eqn-qrt1">
+\begin{equation}
+Q_1 = \text{ size of 1 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{6.3.13}
+\end{equation}
+</div>
+<div class="displaymath process-math" id="eqn-qrt2">
+\begin{equation}
+Q_2 = \text{ size of 2 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{6.3.14}
+\end{equation}
+</div>
+<div class="displaymath process-math" id="eqn-qrt3">
+\begin{equation}
+Q_3 = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{6.3.15}
+\end{equation}
+</div>
+</div>
+<div class="para logical" id="subsec-QDP-3">
+<div class="para">
+<dfn class="terminology">Deciles:</dfn> there are 9 deciles:</div>
+<div class="displaymath process-math" id="eqn-dec1">
+\begin{equation}
+D_1 = \text{ size of 1 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{6.3.16}
+\end{equation}
+</div>
+<div class="displaymath process-math" id="eqn-dec2">
+\begin{equation}
+D_2 = \text{ size of 2 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{6.3.17}
+\end{equation}
+</div>
+<div class="displaymath process-math" id="eqn-dec3">
+\begin{equation}
+D_3 = \text{ size of 3 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{6.3.18}
+\end{equation}
+</div>
+<div class="para">and so on.</div>
+</div>
+<div class="para logical" id="subsec-QDP-4">
+<div class="para">
+<dfn class="terminology">Percentiles:</dfn> there are 99 deciles:</div>
+<div class="displaymath process-math" id="eqn-per1">
+\begin{equation}
+P_1 = \text{ size of 1 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{6.3.19}
+\end{equation}
+</div>
+<div class="displaymath process-math" id="eqn-per2">
+\begin{equation}
+P_2 = \text{ size of 2 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{6.3.20}
+\end{equation}
+</div>
+<div class="displaymath process-math" id="eqn-per3">
+\begin{equation}
+P_3 = \text{ size of 3 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{6.3.21}
+\end{equation}
+</div>
+<div class="para">and so on.</div>
+</div>
+<article class="example example-like" id="subsec-QDP-5"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.8</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="subsec-QDP-5-1-1">
+<div class="para">Calculate the <span class="process-math">\(3^{rd}\)</span> quartile, <span class="process-math">\(6^{th}\)</span> decile, and <span class="process-math">\(70^{th}\)</span> percentile of the following data:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+28,17,12,25,26,19,13,27,21,16,29
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details id="subsec-QDP-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-QDP-5-2-1">
+<div class="para">Arrange the data in ascending order as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+12,13,16,17,19,21,25,26,27,28,29
+\end{equation*}
+</div>
+<div class="para">Number of item, <span class="process-math">\(n = 11.\)</span>
+</div>
+</div> <div class="para logical" id="subsec-QDP-5-2-2">
+<div class="para">Using <a href="sec-stat_disp.html#eqn-qrt3" class="xref" data-knowl="./knowl/xref/eqn-qrt3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.3.15">(6.3.15)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-qrt3.html" id="subsec-QDP-5-2-2-2">
+\begin{align*}
+Q_3  \amp = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} \text{ item} \\
+\amp  = \text{ size of 3 } \left[ \frac{11+1}{4}\right]^{th} \text{ item} \\
+\amp  = \text{ size of 3 } \left[ 3^{rd}\right] \text{ item} \\
+\amp  = \text{ size of } 9^{th} \text{ item} = 27. 
+\end{align*}
+</div>
+</div> <div class="para logical" id="subsec-QDP-5-2-3"><div class="displaymath process-math" id="subsec-QDP-5-2-3-1">
+\begin{align*}
+D_6  \amp = \text{ size of 6 } \left[ \frac{n+1}{10}\right]^{th} \text{ item} \\
+\amp  = \text{ size of 6 } \left[ \frac{11+1}{10}\right]^{th} \text{ item} \\
+\amp  = \text{ size of 6 } \left[ 1.2^{th}\right] \text{ item} \\
+\amp  = \text{ size of } 7.2^{th} \text{ item} \\
+\amp  = \text{ size of } 7^{th} \text{ item} + 0.2\times \text{ size of } \left[8^{th} \text{ item} - 7^{th} \text{ item} \right] \\
+\amp  = 25 + 0.2\times  \left[26 - 25\right] \\
+\amp  = 25 + 0.2\times  1 \\
+\amp  = 25.2 
+\end{align*}
+</div></div> <div class="para logical" id="subsec-QDP-5-2-4"><div class="displaymath process-math" id="subsec-QDP-5-2-4-1">
+\begin{align*}
+P_{70}  \amp = \text{ size of 70 } \left[ \frac{n+1}{100}\right]^{th} \text{ item} \\
+\amp  = \text{ size of 70 } \left[ \frac{11+1}{100}\right]^{th} \text{ item} \\
+\amp  = \text{ size of 70 } \left[ 0.12^{th}\right] \text{ item} \\
+\amp  = \text{ size of } 8.4^{th} \text{ item} \\
+\amp  = \text{ size of } 8^{th} \text{ item} + 0.4\times \text{ size of } \left[9^{th} \text{ item} - 8^{th} \text{ item} \right] \\
+\amp  = 26 + 0.4\times  \left[27 - 26\right] \\
+\amp  = 26.4 
+\end{align*}
+</div></div>
+</div></details></div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-stat_centerT.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec_stat_example.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

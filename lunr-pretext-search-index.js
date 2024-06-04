@@ -2482,7 +2482,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Data Analysis",
-  "body": " Data Analysis    Data: Facts or pieces of information that can be measured. Data can be collected from investigations, observations, experiements, etc. Data are organized in two basic types   Qualitative or Categorical Data: It describes the features such as color, gender, code, birth date, address, blood group, etc. It cannot be used to perform any mathematical operations.   Nominal Data: It helps to label the variables without providing the numerical value. Nominal data are letters, symbols, words, gender, numbers, cloth's size, etc. These data are grouped into categories, and then the frequency or the percentage of the data can be calculated.    Ordinal Data: The order of data is presented here. In orderinal data, order is important but not their values. The information may be expressed using tables in which each row in the table shows the distinct category.          Quantitative or Numerical Data: Numerical data gives information about the quantities of a specific thing. e.g., height, length, size, weight, and so on. It can be used for mathematical operations.   Discrete Data: It can take only discrete values. Discrete information contains only a finite number of possible values. e.g., number of bank account, number of children, number of students in the class.    Continuous Data: It has an infinite number of probable values that can be selected within a given specific range. For example, height inches; weight pounds, etc.  Continuous data can also be classified as Interval and Ratio data. Interval scales can represent values below zero. Ratio variables never fall below zero. e.g., A certain temperature can fall below 0 degrees (interval data). Your height and weight cannot equal zero or be below zero (Ratio data).          Population and Sample  Sample is a small subset of a larger set of data used to draw inferences about the larger set. The larger set is known as the population from which the sample is drawn.   Population is a complete set of all items that interest an investigator. Population size, can be very large to even infinity. A Sample is an observed subset of the population of size       Statistic: It is a specific characteristics of a sample. Parameter: It is a characteristics of the population. Population average, is a parameter. Sample average, is a statistic .   Simple Exercise: An airline claims that less than 6% of its flights from Lexington depart late. From a sample of 100 flight 6 flights were found to depart late.    What is the population?    What is the sample?    What is the statistic?    Is 6% a parameter or statistic?       Data Table   In data table Columns are called Variables and rows are called cases or Observations.   Mention the types of data being used in the above data table and give the name of missing variables.   "
+  "body": " Data Analysis    Data: Facts or pieces of information that can be measured. Data can be collected from investigations, observations, experiements, etc. Data are organized in two basic types    Qualitative or Categorical Data: It describes the features such as color, gender, code, birth date, address, blood group, etc. It cannot be used to perform any mathematical operations.   Nominal Data: It helps to label the variables without providing the numerical value. Nominal data are letters, symbols, words, gender, numbers, cloth's size, etc. These data are grouped into categories, and then the frequency or the percentage of the data can be calculated.    Ordinal Data: The order of data is presented here. In orderinal data, order is important but not their values. The information may be expressed using tables in which each row in the table shows the distinct category.           Quantitative or Numerical Data: Numerical data gives information about the quantities of a specific thing. e.g., height, length, size, weight, and so on. It can be used for mathematical operations.   Discrete Data: It can take only discrete values. Discrete information contains only a finite number of possible values. e.g., number of bank account, number of children, number of students in the class.    Continuous Data: It has an infinite number of probable values that can be selected within a given specific range. For example, height inches; weight pounds, etc.  Continuous data can also be classified as Interval and Ratio data. Interval scales can represent values below zero. Ratio variables never fall below zero. e.g., A certain temperature can fall below 0 degrees (interval data). Your height and weight cannot equal zero or be below zero (Ratio data).          Population and Sample  Sample is a small subset of a larger set of data used to draw inferences about the larger set. The larger set is known as the population from which the sample is drawn.   Population is a complete set of all items that interest an investigator. Population size, can be very large to even infinity. A Sample is an observed subset of the population of size       Statistic: It is a specific characteristics of a sample. Parameter: It is a specific characteristics of the population. Population average, is a parameter. Sample average, is a statistic .   Simple Exercise: An airline claims that less than 6% of its flights from Lexington depart late. From a sample of 100 flight 6 flights were found to depart late.    What is the population?    What is the sample?    What is the statistic?    Is 6% a parameter or statistic?       Data Table   In data table Columns are called Variables and rows are called cases or Observations.   Mention the types of data being used in the above data table and give the name of missing variables.   Variable: A variable is a property that can take many values. It is used in singular mode, meaning it takes only one value. e.g. age = 12, 24, 48, 60, 100 years; weight = 172, 172.5, 180 cms; height etc. are variable. But, ages: [12, 24, 48, 60, 200] taken in plural mode is not a variable.   Variable Types:      "
 },
 {
   "id": "sec-stat_int-2-1",
@@ -2491,7 +2491,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Data: Interval Ratio "
+  "body": "Data: Qualitative or Categorical Data: Quantitative or Numerical Data: Interval Ratio "
 },
 {
   "id": "subsec-pop_samp-3",
@@ -2530,13 +2530,31 @@ var ptx_lunr_docs = [
   "body": "Variables Observations. "
 },
 {
+  "id": "subsec-dataTable-4",
+  "level": "2",
+  "url": "sec-stat_int.html#subsec-dataTable-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Variable: ages: "
+},
+{
+  "id": "subsec-dataTable-5",
+  "level": "2",
+  "url": "sec-stat_int.html#subsec-dataTable-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Variable Types: "
+},
+{
   "id": "sec-stat_centerT",
   "level": "1",
   "url": "sec-stat_centerT.html",
   "type": "Section",
   "number": "6.2",
   "title": "Central Tendency",
-  "body": " Central Tendency   In statistics, understanding the data is very import to draw any information and conclusion. Central tendency and dispersion help us know the data distribution and their characteristics. Central tendency is the descriptive summary of a data set. It aims to provide an accurate description of the entire data in the distribution. The central tendency of the dataset can be found using the three important measures namely mean, median and mode .    Mean   There are three types of mean being used in mathematical operations: Arithmatic mean, geometric mean, and harmonic mean. Here we only discuss the arithmatic mean. The value of mean can be calculated as Here, is the observation of sample, and is number of observations.  The mean (also known as the average) is the sum of all values divided by the total number of values. It provides a balanced representation of the entire dataset. To acknowledge that we are calculating the population mean and not the sample mean, we use the Greek lower case letter \"mu\", denoted as : An important property of the mean is that it includes every value in your data set as part of the calculation. In addition, the mean is the only measure of central tendency where the sum of the deviations of each value from the mean is always zero.    Raw Data (individual series):  The mean of    The mean of ungrouped data     The mean of ungrouped data       Discrete Series:  The mean can be calculated using the following methods:   Direct method:     Assumed mean method: here, is assumed mean (middle mean value), is frequency of observation, and the deviation of observation,         Direct method to calculate Mean of grouped data:  Here is the caculation: Now,     Assumed mean method to calculate Mean of grouped data  Here is the caculation: To find the assumed mean, A we select the central observation (in case of two items at the middle, we need to select those observation which has high frequency). For the table above we select  Now,      If observations are not in order then first need to arrange the observation either in asscending or descending order as shown below:   First arrange in asscending order. Take , as observation 10 has higher frequency than 12. Now,     Continuous Series:  In continuous series, the observations are presented in different class intervals rather than by a single number and the frequency. It can be presented in two different types of class inetvals: Exclusive series and Inclusive series. Continuous series includes the upper limit and the lower limit in the class inetrval. If the upper limit interval does not repeat itself as a lower limit of the next class interval then it is an inclusive series. There is a gap between upper limit of any class interval to the and lower limit of the next class interval. e.g., If the upper limit interval repeats itself as a lower limit of the next class interval then it is an exclusive series. There is no gap between the upper limit of any class interval to the and lower limit of the next class interval. e.g.,   The mean ( weighted mean of grouped data ) can be calculated using the following methods:   Direct method:  take average of each class range and the value in column.     Step deviation method: here, , class interval. take .        Combined Mean       The mean weight of 15 students is 110 kg. The mean of 5 of them is 100 kg and another 5 kg of them is 125 kg, then the mean weight of remaining students is   120    105    115    none.        here       Mean Correction  Some time during mean calculation mistake happen, then we can use the following formula to correct it, without going through all the procedures.      The mean scores of 100 students were found to be 40. Later it was discovered that a score of 53 was missed as 83. Find the correct mean of corresponding correction.     using        Properties of mean  If origin or scale of data is changed then their mean is also changed by the same corresponding value. For example:    Change of origin: Suppose we have an individual series (raw data) It's mean = 3. (if the difference between every neighbours is same then, mean is the value at the middle term.)  If its origin is shifted (subtracted or added) by 10, then new  mean = 13, if 10 is added (new series ), or  mean = - 7, if 10 is subtracted (new series ).     Change of scale: For the same raw data, It's mean = 3.  If its scale is changed (multiplied or divided) by 10, then new  mean = 30, if 10 is ultiplied into the data (new series ), or  mean = 0.3, if 10 is divided to the data (new series ).       If mean of , then find the mean of y, if           Other properties:   Mean is the best measure of central tendency, it is the most stable average of the data based on all the observations.    It is affected by the extreme values of the data.    it cannot be calculated for the open ended classification.        Median   Median, in statistics, is the middle value of the given list of data when arranged in an order. It is also called the positional average.    Raw Data (individual series)  The median of the following data can be found by rearranging them either in asscending or in descending order then select middle item.    after arranging it in icreasing order Here, appeared at the middle term, so it is a median of the given data.     after arranging it in icreasing order Here, and appeared as the middle terms, so it's median is average of these numbers.         Median for odd number of terms is given by here is number of terms in a series.    Median for even number of terms is given by here is number of terms in a series.       If median of is 10, then find the value of     Arrange the series in order, Now, take average of two middle terms from even number series.          Discrete Series (data)  Find the median of the following series   First arrange the observations in order  is cumulative frequency. Number of observation, = odd. Therefore, Hence, .          Median for even numbers observations Therefore,       Continuous Series    = Lower limit of median class, , upper CF, = frequency, class interval.     Exclusive class series:    Arrange the series in order , Hence, the median class.    from         Inclusive class series:    Convert the inclusive class series into exclusive series   median class selection = term. Hence, the median class. from        Properties of Median     Median is a Middle most values of asscending or descending order of the series.    It is a positional average    It is Not based on all the observation.    It is not affected by extreme fluctuations.    it is a best measure for open ended classification.        Mode   It is the most frequent value of the data.    Individual Series      mode = 10 (unimodal)     it has two most freuent data points, hence, the mode is and (Bimodal)     No mode possible.     No modal possible.       Discrete Series   Most frequent observation is appeared times. Hence, .   Most frequent observation is and both appeared times. Hence, and     Continuous Series   Exclusive class series:   L = lower limit of modal class, frequency of modal class, frequency of pre-modal class, frequency of post-modal class, class interval.  Modal class is the highest frequency class data. In the given series, is the modal class.    Inclusive class series  convert the inclusive class into exclusive class. now modal class =   therefore,    Properties of mode    It is the most frequent value.    Series can have unimodal, bimodal, multimodal, or no modal.    It is the most unstable average.    It is not based on all observations.    It is not affected by extreme values.        Relation between Mean, Median, and Mode:   Perfectly symmetric distribution  here calculated, .     In perfectly symmetric distribution, mean, median, and mode are coinsident on one another. That is,    Positively skewed distribution  here calculated, , and Hence, in perfectly symmetric distribution,      In positively skewed distribution, In skewed distribution, median always comes between mean and mode and follow the following relation.    Negatively skewed distribution  here calculated, , and .     In negatively skewed distribution, In skewed distribution, median always comes between mean and mode and follow the following relation.    "
+  "body": " Central Tendency   In statistics, understanding the data is very import to draw any information and conclusion. Central tendency and dispersion help us know the data distribution and their characteristics. Central tendency is the descriptive summary of a data set. It aims to provide an accurate description of the entire data in the distribution. The central tendency of the dataset can be found using the three important measures namely mean, median and mode .  An average of the data can be the best measurement of central tendency. There are two ways to determine an average of the data:   Mathematical:   Arithmatic Mean (Mean)    Geometric Mean    Harmonic Mean       Positional:   Median    Mode          Mean (Arithmatic Mean)   There are three types of mean being used in mathematical operations: Arithmatic mean, geometric mean, and harmonic mean. Here we only discuss the arithmatic mean. There are three methods to determine the arithmatic mean.   Direct Method    Assume Mean Method, and    Step Deviation Method     Here we are trying to build an idea to find mean of the three different data (series):   Individual Series    Discrete Series, and    Continuous Series.       Raw Data (individual series):  The value of mean can be calculated as Here, is the observation of sample, and is number of observations.  The mean (also known as the average) is the sum of all values divided by the total number of values. It provides a balanced representation of the entire dataset. To acknowledge that we are calculating the population mean and not the sample mean, we use the Greek lower case letter \"mu\", denoted as : An important property of the mean is that it includes every value in your data set as part of the calculation. In addition, the mean is the only measure of central tendency where the sum of the deviations of each value from the mean is always zero.  The mean of    The mean of ungrouped data     The mean of ungrouped data       Discrete Series:  The mean can be calculated using the following methods:    Direct method:       Assumed mean method:  here, is assumed mean (middle mean value), is frequency of observation, and the deviation of observation,         Direct method to calculate Mean of grouped data:  Here is the caculation: Now,     Assumed mean method to calculate Mean of grouped data  Here is the caculation: To find the assumed mean, A we select the central observation (in case of two items at the middle, we need to select those observation which has high frequency). For the table above we select  Now,      If observations are not in order then first need to arrange the observation either in asscending or descending order as shown below:   First arrange in asscending order. Take , as observation 10 has higher frequency than 12. Now,     Continuous Series:  In continuous series, the observations are presented in different class intervals rather than by a single number and the frequency. It can be presented in two different types of class inetvals: Exclusive series and Inclusive series. Continuous series includes the upper limit and the lower limit in the class inetrval. If the upper limit interval does not repeat itself as a lower limit of the next class interval then it is an inclusive series. There is a gap between upper limit of any class interval to the and lower limit of the next class interval. e.g., If the upper limit interval repeats itself as a lower limit of the next class interval then it is an exclusive series. There is no gap between the upper limit of any class interval to the and lower limit of the next class interval. e.g.,   The mean ( weighted mean of grouped data ) can be calculated using the following methods:   Direct method:  take average of each class range and the value in column.      Step deviation method: This method is only applicable for continuous series. here, , class interval. take .        Combined Mean       The mean weight of 15 students is 110 kg. The mean of 5 of them is 100 kg and another 5 kg of them is 125 kg, then the mean weight of remaining students is   120    105    115    none.        here       Mean Correction  Some time during mean calculation mistake happen, then we can use the following formula to correct it, without going through all the procedures.      The mean scores of 100 students were found to be 40. Later it was discovered that a score of 53 was missed as 83. Find the correct mean of corresponding correction.     using        Properties of mean  If origin or scale of data is changed then their mean is also changed by the same corresponding value. For example:    Change of origin: Suppose we have an individual series (raw data) It's mean = 3. (if the difference between every neighbours is same then, mean is the value at the middle term.)  If its origin is shifted (subtracted or added) by 10, then new  mean = 13, if 10 is added (new series ), or  mean = - 7, if 10 is subtracted (new series ).     Change of scale: For the same raw data, It's mean = 3.  If its scale is changed (multiplied or divided) by 10, then new  mean = 30, if 10 is ultiplied into the data (new series ), or  mean = 0.3, if 10 is divided to the data (new series ).       If mean of , then find the mean of y, if           Other properties:   Mean is the best measure of central tendency, it is the most stable average of the data based on all the observations.    It is affected by the extreme values of the data.    it cannot be calculated for the open ended classification.        Median   Median, in statistics, is the middle value of the given list of data when arranged in an order. It is also called the positional average.    Raw Data (individual series)  The median of the following data can be found by rearranging them either in asscending or in descending order then select middle item.    after arranging it in icreasing order Here, appeared at the middle term, so it is a median of the given data.     after arranging it in icreasing order Here, and appeared as the middle terms, so it's median is average of these numbers.         Median for odd number of terms is given by here is number of terms in a series.    Median for even number of terms is given by here is number of terms in a series.       If median of is 10, then find the value of     Arrange the series in order, Now, take average of two middle terms from even number series.          Discrete Series (data)  Find the median of the following series   First arrange the observations in order  is cumulative frequency. Number of observation, = odd. Therefore, Hence, .          Median for even numbers observations Therefore,       Continuous Series    = Lower limit of median class, , upper CF, = frequency, class interval.     Exclusive class series:    Arrange the series in order , Hence, the median class.    from         Inclusive class series:    Convert the inclusive class series into exclusive series   median class selection = term. Hence, the median class. from        Properties of Median     Median is a Middle most values of asscending or descending order of the series.    It is a positional average    It is Not based on all the observation.    It is not affected by extreme fluctuations.    it is a best measure for open ended classification.        Mode   It is the most frequent value of the data.    Individual Series      mode = 10 (unimodal)     it has two most freuent data points, hence, the mode is and (Bimodal)     No mode possible.     No modal possible.       Discrete Series   Most frequent observation is appeared times. Hence, .   Most frequent observation is and both appeared times. Hence, and     Continuous Series   Exclusive class series:   L = lower limit of modal class, frequency of modal class, frequency of pre-modal class, frequency of post-modal class, class interval.  Modal class is the highest frequency class data. In the given series, is the modal class.    Inclusive class series  convert the inclusive class into exclusive class. now modal class =   therefore,    Properties of mode    It is the most frequent value.    Series can have unimodal, bimodal, multimodal, or no modal.    It is the most unstable average.    It is not based on all observations.    It is not affected by extreme values.        Relation between Mean, Median, and Mode:   Perfectly symmetric distribution  here calculated, .     In perfectly symmetric distribution, mean, median, and mode are coinsident on one another. That is,    Positively skewed distribution  here calculated, , and Hence, in perfectly symmetric distribution,      In positively skewed distribution, In skewed distribution, median always comes between mean and mode and follow the following relation.    Negatively skewed distribution  here calculated, , and .     In negatively skewed distribution, In skewed distribution, median always comes between mean and mode and follow the following relation.     Geometric Mean (GM)   Individual Series:  Make a table as shown below:     Discrete Series:      Continuous Series:       Harmonic Mean (HM)   Individual Series:  Make a table as shown below:     Discrete Series:      Continuous Series:      "
 },
 {
   "id": "sec-stat_centerT-2-1",
@@ -2548,31 +2566,40 @@ var ptx_lunr_docs = [
   "body": "Central tendency dispersion mean, median mode "
 },
 {
-  "id": "subsec-mean-2-2",
-  "level": "2",
-  "url": "sec-stat_centerT.html#subsec-mean-2-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "mean "
-},
-{
   "id": "subsubsec-rawD-3",
   "level": "2",
   "url": "sec-stat_centerT.html#subsubsec-rawD-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
+  "body": "mean "
+},
+{
+  "id": "subsubsec-rawD-5",
+  "level": "2",
+  "url": "sec-stat_centerT.html#subsubsec-rawD-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
   "body": "ungrouped data "
 },
 {
-  "id": "subsubsec-rawD-4",
+  "id": "subsubsec-rawD-6",
   "level": "2",
-  "url": "sec-stat_centerT.html#subsubsec-rawD-4",
+  "url": "sec-stat_centerT.html#subsubsec-rawD-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "mean of ungrouped data "
+},
+{
+  "id": "subsec-discrD-2",
+  "level": "2",
+  "url": "sec-stat_centerT.html#subsec-discrD-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Direct method: Assumed mean method: "
 },
 {
   "id": "subsec-discrD-3",
@@ -2599,7 +2626,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "weighted mean of grouped data "
+  "body": "weighted mean of grouped data Step deviation method: "
 },
 {
   "id": "subsec-combM-3",
@@ -2737,13 +2764,67 @@ var ptx_lunr_docs = [
   "body": "Negatively skewed distribution "
 },
 {
+  "id": "subsec-geom_mean-2",
+  "level": "2",
+  "url": "sec-stat_centerT.html#subsec-geom_mean-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Individual Series: "
+},
+{
+  "id": "subsec-geom_mean-3",
+  "level": "2",
+  "url": "sec-stat_centerT.html#subsec-geom_mean-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Discrete Series: "
+},
+{
+  "id": "subsec-geom_mean-4",
+  "level": "2",
+  "url": "sec-stat_centerT.html#subsec-geom_mean-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Continuous Series: "
+},
+{
+  "id": "subsec-harm_mean-2",
+  "level": "2",
+  "url": "sec-stat_centerT.html#subsec-harm_mean-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Individual Series: "
+},
+{
+  "id": "subsec-harm_mean-3",
+  "level": "2",
+  "url": "sec-stat_centerT.html#subsec-harm_mean-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Discrete Series: "
+},
+{
+  "id": "subsec-harm_mean-4",
+  "level": "2",
+  "url": "sec-stat_centerT.html#subsec-harm_mean-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Continuous Series: "
+},
+{
   "id": "sec-stat_disp",
   "level": "1",
   "url": "sec-stat_disp.html",
   "type": "Section",
   "number": "6.3",
   "title": "Dispersion",
-  "body": " Dispersion   It is a measure of the extent to which the observations vary from some central value (mean, median, mode). It shows how the data are spread out (dispersed) from the central value. In simple terms, it shows how squeezed or scattered the variable is. For example: the mean of is Here, the dispersion shows how far are the observations from the mean (central value). The difference in each data point from the central value is represents deviation of the data.  Suppose I have the three data set as shown below: The data shows the difference in and . the observations in series A does not vary at all from the central value (mean), there is some variation in series B, b ut no observations are even close to the mean in series C.    Measurement of Dispersion  Dispersion can be measured using two different approaches.     Absolute Measure (same unit)  Absolute measures of dispersion use the original units of data, and are most useful on understanding the dispersion within the context of your experiment and measurements.   Range    Quartile Deviation    Mean Deviation    Standard Deviation    Variance       Relative Measure (unit free)  In order to compare separate data sets or different experiments that might use different units and the difference in their central values are very high, we use relative measures.   Coefficient of Range    Coefficient of Quartile Deviation    Coefficient of Mean Deviation    Coefficient of Standard Deviation    Coefficient of Variance       Note: Low dospersion means more stable observations.    Range   Range is the difference between the highest and the lowest value of observations for a given frequency distribution. The coefficient of range on the other hand is the ratio of difference between the highest and lowest value of observations to the sum of highest and lowest value of observations.      Here, largest observation, and smallest observation.    Individual Series                              Discrete Series                              Continuous Series     Exclusive Series         Inclusive Series     First convert the inclusive series into exclusive one.          Merits of Range:     Among all the methods of studing dispersion range is the simplest to understand and easiest to compare.    Range is quickest measure of dispersion.       Limits of Range:     Range is not based on each and every observation of series.    It is most affected by sampling fluctuations.    Range is most unreliable as a guide of the dispersion.    Range cannot be calculated for the open-end classification.       Uses of Range     Quality control    Fluctuations in the share prices    Weather forecast    Everyday life observations        Quartile Deviation      Quartile deviation is a statistic that measures the deviation in the middle of the data. Quartile deviation is also referred to as the semi interquartile range and is half of the difference between the third quartile and the first quartile value. Quartiles divide a group of observations into four equal parts. The first quartile, denoted by is defined as the percentile, the second quartile ( ) is defined as the percentile (median), and the third quartile ( ) is defined as the percentile.  The formula for quartile deviation of the data is   The coefficient of quartile deviation is a measure of dispersion, which is used to describe the spread or distribution of data.  Coefficient of quartile deviation, Here, is first quartile (or, lower quartile),  is second quartile (or, median), and is third quartile (or, upper quartile) Where represents the total number of observations in the given data set.    Individual series   arrange in order Here , which is median, is first quartile, and is third quartile.    Find the quartiles and quartile deviation of the following data:     First arrange the data into order Number of data values = .  Median of the even number data set using ,   Now, lower half of the data is: (even number of observations)    Also, the upper half of the data is: (even number of observations)    Therefore the Quartile deviation, using equation .  and the coefficient of Quartile deviation using ,       Discrete series   Arrange the table into asscending or discending order   For first quartile,     For third quartile,     Hence,       Find Cumulative frequency             Hence,        Continuous series  Quartile Deviation for Grouped Data:    the quartile,   the lower limit of the quartile class,   class interval,   the frequency of the quartile class,   the cumulative frequency of the class preceding the quartile class,   Number of observations in the given data set.   <Exclusive series:>    Class selection for , modal Class for     using equation   Class selection for , modal Class for     using equation   Hence,     <Inclusive series:>  Convert this series into exclusive one.   Class selection for , modal Class for     using equation   Class selection for , modal Class for     using equation   Hence,       Standard Deviation, and Variance,   Standard deviation tells how far a group of numbers (observation) is from the mean.  Variance is the average of the squared differences of a group of numbers (observation) from the mean.  Standard deviation is the square root of the variance. It is also called root mean square deviation. Standard deviation, Variance and their coefficients can be calculated using the following formulae:   Actual Mean Method    is total number of observations.    Assumed Mean Method   here, , is assumed mean, and is total number of observations..    Coefficient of standard deviation       Variance       Coefficient of Variance          Individual Series  The standard deviation of the data below:    Actual Mean Method (direct method)  from equation  Now, using equation  using equation  using equation  using equation      Assumed Mean Method (short-cut method)   Assumed and use       Discrete Series and Continuous Series     Assumed Mean Method:   here, and from equation     Step Deviation Method:   here, from equation  class interval, and from equation        Use assumed mean method to solve the data below:      here, we set .  Now from equation  here, also, using equation  and from eqn.  Also and using eqn. , we have        Mean Deviation   The mean deviation is the average deviation from the mean value of the given data set. The mean deviation of the data values can be easily calculated using the procedure below.   Step 1: Find the mean value for the given data values    Step 2: Now, subtract the mean value from each of the data values given (Note: Ignore the minus symbol)    Step 3: Now, find the mean of those values obtained in step 2.     The formula to calculate the mean deviation is given below. Here, represents each value in the data set, represents the mean of the data set, represents the number of data values, and  represents the absolute value, which ignores the “ ” symbol.    Mean deviation from mean   Step 1. Find the mean: The Mean Deviation of   Step 2. Find the distance of each value from that mean:  Step 3. Find the mean of those distances: The values are, on average, 3.75 away from the middle.    "
+  "body": " Dispersion   It is a measure of the extent to which the observations vary from some central value (mean, median, mode). It shows how the data are spread out (dispersed) from the central value. In simple terms, it shows how squeezed or scattered the variable is. For example: the mean of is Here, the dispersion shows how far are the observations from the mean (central value). The difference in each data point from the central value is represents deviation of the data.  Suppose I have the three data set as shown below: The data shows the difference in and . the observations in series A does not vary at all from the central value (mean), there is some variation in series B, b ut no observations are even close to the mean in series C.    Measurement of Dispersion  Dispersion can be measured using two different approaches.     Absolute Measure (same unit)  Absolute measures of dispersion use the original units of data, and are most useful on understanding the dispersion within the context of your experiment and measurements.   Range    Quartile Deviation    Mean Deviation    Standard Deviation    Variance       Relative Measure (unit free)  In order to compare separate data sets or different experiments that might use different units and the difference in their central values are very high, we use relative measures.   Coefficient of Range    Coefficient of Quartile Deviation    Coefficient of Mean Deviation    Coefficient of Standard Deviation    Coefficient of Variance       Note: Low dospersion means more stable observations.    Range   Range is the difference between the highest and the lowest value of observations for a given frequency distribution. The coefficient of range on the other hand is the ratio of difference between the highest and lowest value of observations to the sum of highest and lowest value of observations.      Here, largest observation, and smallest observation.    Individual Series                              Discrete Series                              Continuous Series     Exclusive Series         Inclusive Series     First convert the inclusive series into exclusive one.          Merits of Range:     Among all the methods of studing dispersion range is the simplest to understand and easiest to compare.    Range is quickest measure of dispersion.       Limits of Range:     Range is not based on each and every observation of series.    It is most affected by sampling fluctuations.    Range is most unreliable as a guide of the dispersion.    Range cannot be calculated for the open-end classification.       Uses of Range     Quality control    Fluctuations in the share prices    Weather forecast    Everyday life observations        Quartile Deviation      Quartile deviation is a statistic that measures the deviation in the middle of the data. Quartile deviation is also referred to as the semi interquartile range and is half of the difference between the third quartile and the first quartile value. Quartiles divide a group of observations into four equal parts. The first quartile, denoted by is defined as the percentile, the second quartile ( ) is defined as the percentile (median), and the third quartile ( ) is defined as the percentile.  The formula for quartile deviation of the data is   The coefficient of quartile deviation is a measure of dispersion, which is used to describe the spread or distribution of data.  Coefficient of quartile deviation, Here, is first quartile (or, lower quartile),  is second quartile (or, median), and is third quartile (or, upper quartile) Where represents the total number of observations in the given data set.    Individual series   arrange in order Here , which is median, is first quartile, and is third quartile.    Find the quartiles and quartile deviation of the following data:     First arrange the data into order Number of data values = .  Median of the even number data set using ,   Now, lower half of the data is: (even number of observations)    Also, the upper half of the data is: (even number of observations)    Therefore the Quartile deviation, using equation .  and the coefficient of Quartile deviation using ,       Discrete series   Arrange the table into asscending or discending order   For first quartile,     For third quartile,     Hence,       Find Cumulative frequency             Hence,        Continuous series  Quartile Deviation for Grouped Data:    the quartile,   the lower limit of the quartile class,   class interval,   the frequency of the quartile class,   the cumulative frequency of the class preceding the quartile class,   Number of observations in the given data set.   <Exclusive series:>    Class selection for , modal Class for     using equation   Class selection for , modal Class for     using equation   Hence,     <Inclusive series:>  Convert this series into exclusive one.   Class selection for , modal Class for     using equation   Class selection for , modal Class for     using equation   Hence,       Standard Deviation, and Variance,   Standard deviation tells how far a group of numbers (observation) is from the mean.  Variance is the average of the squared differences of a group of numbers (observation) from the mean.  Standard deviation is the square root of the variance. It is also called root mean square deviation. Standard deviation, Variance and their coefficients can be calculated using the following formulae:   Actual Mean Method    is total number of observations.    Assumed Mean Method   here, , is assumed mean, and is total number of observations..    Coefficient of standard deviation       Variance       Coefficient of Variance          Individual Series  The standard deviation of the data below:    Actual Mean Method (direct method)  from equation  Now, using equation  using equation  using equation  using equation      Assumed Mean Method (short-cut method)   Assumed and use       Discrete Series and Continuous Series     Assumed Mean Method:   here, and from equation     Step Deviation Method:   here, from equation  class interval, and from equation        Use assumed mean method to solve the data below:      here, we set .  Now from equation  here, also, using equation  and from eqn.  Also and using eqn. , we have        Mean Deviation   The mean deviation is the average deviation from the mean value of the given data set. The mean deviation of the data values can be easily calculated using the procedure below.   Step 1: Find the mean value for the given data values    Step 2: Now, subtract the mean value from each of the data values given (Note: Ignore the minus symbol)    Step 3: Now, find the mean of those values obtained in step 2.     The formula to calculate the mean deviation is given below. Here, represents each value in the data set, represents the mean of the data set, represents the number of data values, and  represents the absolute value, which ignores the “ ” symbol.    Mean deviation from mean   Step 1. Find the mean: The Mean Deviation of   Step 2. Find the distance of each value from that mean:  Step 3. Find the mean of those distances: The values are, on average, 3.75 away from the middle.     Quartiles, Deciles, Percentiles   Quartiles: there are three quartiles, called I quartile (or lower quartile), II quartile (or median), and III quartile (or upper quartile).      Deciles: there are 9 deciles:   and so on.   Percentiles: there are 99 deciles:   and so on.    Calculate the quartile, decile, and percentile of the following data:     Arrange the data in ascending order as Number of item,   Using             "
 },
 {
   "id": "subsec-disp_msr-3",
@@ -2825,6 +2906,42 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "Step 1. Find the mean: Step 2. Find the distance of each value from that mean: "
+},
+{
+  "id": "subsec-QDP-2",
+  "level": "2",
+  "url": "sec-stat_disp.html#subsec-QDP-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Quartiles: "
+},
+{
+  "id": "subsec-QDP-3",
+  "level": "2",
+  "url": "sec-stat_disp.html#subsec-QDP-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Deciles: "
+},
+{
+  "id": "subsec-QDP-4",
+  "level": "2",
+  "url": "sec-stat_disp.html#subsec-QDP-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Percentiles: "
+},
+{
+  "id": "subsec-QDP-5",
+  "level": "2",
+  "url": "sec-stat_disp.html#subsec-QDP-5",
+  "type": "Example",
+  "number": "6.3.8",
+  "title": "",
+  "body": "  Calculate the quartile, decile, and percentile of the following data:     Arrange the data in ascending order as Number of item,   Using           "
 },
 {
   "id": "sec_stat_example",

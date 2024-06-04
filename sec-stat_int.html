@@ -206,7 +206,7 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-stat_centerT.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Central Tendency</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-mean" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Mean</span></a></div>
+<div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-mean" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Mean (Arithmatic Mean)</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsubsec-rawD" class="internal"><span class="codenumber">6.2.1.1</span> <span class="title">Raw Data (individual series):</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-discrD" class="internal"><span class="codenumber">6.2.1.2</span> <span class="title">Discrete Series:</span></a></div></li>
@@ -234,6 +234,8 @@ window.MathJax = {
 </ul>
 </li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-rel_mmm" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Relation between Mean, Median, and Mode:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-geom_mean" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Geometric Mean (GM)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_centerT.html#subsec-harm_mean" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Harmonic Mean (HM)</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -270,6 +272,7 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-stat_disp.html#subsec-mean_dev" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Mean Deviation</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsubsec-m_devmean" class="internal"><span class="codenumber">6.3.5.1</span> <span class="title">Mean deviation from mean</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-stat_disp.html#subsec-QDP" class="internal"><span class="codenumber">6.3.6</span> <span class="title">Quartiles, Deciles, Percentiles</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_stat_example.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Example</span></a></div></li>
@@ -297,12 +300,13 @@ window.MathJax = {
 <dfn class="terminology">Data:</dfn> Facts or pieces of information that can be measured. Data can be collected from investigations, observations, experiements, etc. Data are organized in two basic types</div>
 <ol class="lower-roman">
 <li id="sec-stat_int-2-1-2-1"><div class="para logical" id="sec-stat_int-2-1-2-1-1">
-<div class="para">Qualitative or Categorical Data: It describes the features such as color, gender, code, birth date, address, blood group, etc. It cannot be used to perform any mathematical operations.</div>
+<div class="para">
+<dfn class="terminology">Qualitative or Categorical Data:</dfn> It describes the features such as color, gender, code, birth date, address, blood group, etc. It cannot be used to perform any mathematical operations.</div>
 <ol class="lower-alpha">
-<li id="sec-stat_int-2-1-2-1-1-1-1"><div class="para" id="sec-stat_int-2-1-2-1-1-1-1-1">Nominal Data: It helps to label the variables without providing the numerical value. Nominal data are letters, symbols, words, gender, numbers, cloth’s size, etc. These data are grouped into categories, and then the frequency or the percentage of the data can be calculated.</div></li>
-<li id="sec-stat_int-2-1-2-1-1-1-2">
-<div class="para" id="sec-stat_int-2-1-2-1-1-1-2-1">Ordinal Data: The order of data is presented here. In orderinal data, order is important but not their values. The information may be expressed using tables in which each row in the table shows the distinct category.</div>
-<div class="para logical" id="sec-stat_int-2-1-2-1-1-1-2-2"><div class="displaymath process-math">
+<li id="sec-stat_int-2-1-2-1-1-2-1"><div class="para" id="sec-stat_int-2-1-2-1-1-2-1-1">Nominal Data: It helps to label the variables without providing the numerical value. Nominal data are letters, symbols, words, gender, numbers, cloth’s size, etc. These data are grouped into categories, and then the frequency or the percentage of the data can be calculated.</div></li>
+<li id="sec-stat_int-2-1-2-1-1-2-2">
+<div class="para" id="sec-stat_int-2-1-2-1-1-2-2-1">Ordinal Data: The order of data is presented here. In orderinal data, order is important but not their values. The information may be expressed using tables in which each row in the table shows the distinct category.</div>
+<div class="para logical" id="sec-stat_int-2-1-2-1-1-2-2-2"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{c|cc} 
 \circ &amp; Markes &amp; Rank  \\ \hline 
@@ -318,12 +322,13 @@ window.MathJax = {
 </ol>
 </div></li>
 <li id="sec-stat_int-2-1-2-2"><div class="para logical" id="sec-stat_int-2-1-2-2-1">
-<div class="para">Quantitative or Numerical Data: Numerical data gives information about the quantities of a specific thing. e.g., height, length, size, weight, and so on. It can be used for mathematical operations.</div>
+<div class="para">
+<dfn class="terminology">Quantitative or Numerical Data:</dfn> Numerical data gives information about the quantities of a specific thing. e.g., height, length, size, weight, and so on. It can be used for mathematical operations.</div>
 <ol class="lower-alpha">
-<li id="sec-stat_int-2-1-2-2-1-1-1"><div class="para" id="sec-stat_int-2-1-2-2-1-1-1-1">Discrete Data: It can take only discrete values. Discrete information contains only a finite number of possible values. e.g., number of bank account, number of children, number of students in the class.</div></li>
-<li id="sec-stat_int-2-1-2-2-1-1-2">
-<div class="para" id="sec-stat_int-2-1-2-2-1-1-2-1">Continuous Data: It has an infinite number of probable values that can be selected within a given specific range. For example, height <span class="process-math">\(= 60.4, 70.0, 50.15\)</span> inches; weight <span class="process-math">\(= 45, 70.3, 65.6, 101.7\)</span> pounds, etc.</div>
-<div class="para" id="sec-stat_int-2-1-2-2-1-1-2-2">Continuous data can also be classified as <dfn class="terminology">Interval</dfn> and <dfn class="terminology">Ratio</dfn> data. Interval scales can represent values below zero. Ratio variables never fall below zero. e.g., A certain temperature can fall below 0 degrees (interval data). Your height and weight cannot equal zero or be below zero (Ratio data).</div>
+<li id="sec-stat_int-2-1-2-2-1-2-1"><div class="para" id="sec-stat_int-2-1-2-2-1-2-1-1">Discrete Data: It can take only discrete values. Discrete information contains only a finite number of possible values. e.g., number of bank account, number of children, number of students in the class.</div></li>
+<li id="sec-stat_int-2-1-2-2-1-2-2">
+<div class="para" id="sec-stat_int-2-1-2-2-1-2-2-1">Continuous Data: It has an infinite number of probable values that can be selected within a given specific range. For example, height <span class="process-math">\(= 60.4, 70.0, 50.15\)</span> inches; weight <span class="process-math">\(= 45, 70.3, 65.6, 101.7\)</span> pounds, etc.</div>
+<div class="para" id="sec-stat_int-2-1-2-2-1-2-2-2">Continuous data can also be classified as <dfn class="terminology">Interval</dfn> and <dfn class="terminology">Ratio</dfn> data. Interval scales can represent values below zero. Ratio variables never fall below zero. e.g., A certain temperature can fall below 0 degrees (interval data). Your height and weight cannot equal zero or be below zero (Ratio data).</div>
 </li>
 </ol>
 </div></li>
@@ -337,7 +342,7 @@ window.MathJax = {
 </div>
 <div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="generated/latex-image/subsec-pop_samp-4.svg" role="img" class="contained"></div>
 <div class="para" id="subsec-pop_samp-5">
-<dfn class="terminology">Statistic:</dfn> It is a specific characteristics of a sample. <dfn class="terminology">Parameter:</dfn> It is a characteristics of the population. Population average, <span class="process-math">\(\mu \)</span> is a <em class="emphasis">parameter.</em> Sample average, <span class="process-math">\(\bar{x}\)</span> is a <em class="emphasis">statistic</em>.</div>
+<dfn class="terminology">Statistic:</dfn> It is a specific characteristics of a sample. <dfn class="terminology">Parameter:</dfn> It is a specific characteristics of the population. Population average, <span class="process-math">\(\mu \)</span> is a <em class="emphasis">parameter.</em> Sample average, <span class="process-math">\(\bar{x}\)</span> is a <em class="emphasis">statistic</em>.</div>
 <details id="subsec-pop_samp-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-pop_samp-6-1">
@@ -366,7 +371,11 @@ window.MathJax = {
 <div class="para">In data table <em class="emphasis">Columns</em> are called <dfn class="terminology">Variables</dfn> and <em class="emphasis">rows</em> are called cases or <dfn class="terminology">Observations.</dfn>
 </div>
 </div>
-<div class="para" id="subsec-dataTable-3">Mention the types of data being used in the above data table and give the name of missing variables.</div></section></section></div>
+<div class="para" id="subsec-dataTable-3">Mention the types of data being used in the above data table and give the name of missing variables.</div>
+<div class="para" id="subsec-dataTable-4">
+<dfn class="terminology">Variable:</dfn> A variable is a property that can take many values. It is used in singular mode, meaning it takes only one value. e.g. <em class="emphasis">age</em> = 12, 24, 48, 60, 100 years; <em class="emphasis">weight</em> = 172, 172.5, 180 cms; <em class="emphasis">height</em> etc. are variable. But, <dfn class="terminology">ages:</dfn> [12, 24, 48, 60, 200] taken in plural mode is not a variable.</div>
+<div class="para" id="subsec-dataTable-5"><dfn class="terminology">Variable Types:</dfn></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/tree.png" class="contained"></div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-stat.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-stat_centerT.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
