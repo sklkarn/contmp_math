@@ -12,17 +12,107 @@
       It aims to provide an accurate description of the entire data in the distribution. The central tendency of the dataset can be found using 
       the three important measures namely <term>mean, median </term> and <term>mode</term>.
     </p>
+    <p>
+      An <alert>average</alert> of the data can be the best measurement of central tendency. There are two ways to determine an average  
+      of the data: 
+      <ol>
+        <li>
+          <p>
+            Mathematical: 
+            <ol marker="i">
+              <li>
+                <p>
+                  Arithmatic Mean (Mean)
+                </p>
+              </li>
+              <li>
+                <p>
+                  Geometric Mean
+                </p>
+              </li>
+              <li>
+                <p>
+                  Harmonic Mean
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Positional:
+            <ol marker="i">
+              <li>
+                <p>
+                  Median
+                </p>
+              </li>
+              <li>
+                <p>
+                  Mode
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ol>
+    </p>
    </introduction>
     
     
   <subsection xml:id="subsec-mean">
-    <title>Mean</title>
+    <title>Mean (Arithmatic Mean)</title>
 
    <introduction>
    
     <p>
       There are three types of mean being used in mathematical operations: Arithmatic mean, geometric mean, and harmonic mean. 
-      Here we only discuss the arithmatic mean. The value of mean can be calculated as 
+      Here we only discuss the arithmatic mean. There are three methods to determine the arithmatic mean. 
+      <ol marker="I">
+        <li>
+          <p>
+            Direct Method
+          </p>
+        </li>
+        <li>
+          <p>
+            Assume Mean Method, and
+          </p>
+        </li>
+        <li>
+          <p>
+            Step Deviation Method
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      Here we are trying to build an idea to find mean of the three different data (series):
+      <ol marker ="i">
+        <li>
+          <p>
+            Individual Series
+          </p>
+        </li>
+        <li>
+          <p>
+            Discrete Series, and
+          </p>
+        </li>
+        <li>
+          <p>
+            Continuous Series.
+          </p>
+        </li>
+      </ol>
+    </p>
+  
+  </introduction>
+
+    <subsubsection xml:id="subsubsec-rawD">
+      <title>Raw Data (individual series):</title>
+      <p>
+        The value of mean can be calculated as 
       <men xml:id="eqn-mean1">
         \bar{x} =\sum_{i=1}^{n} \frac{x_i}{n}
       </men>
@@ -40,11 +130,6 @@
       In addition, the mean is the only measure of central tendency where the sum of the deviations of each value 
       from the mean is always zero.
     </p>
-  </introduction>
-
-    <subsubsection xml:id="subsubsec-rawD">
-      <title>Raw Data (individual series):</title>
-      
       <p>
         The mean of 
     <me>
@@ -76,13 +161,12 @@
    
      <subsubsection xml:id="subsec-discrD">
       <title>Discrete Series: </title>
-      
-            <p>
+          <p>
         The mean can be calculated using the following methods:
         <ol marker="i">
           <li>
             <p>
-              Direct method: 
+             <term> Direct method: </term>
               <me>
                 \bar{x} = \sum_{i=1}^{n} \frac{f_i x_i}{f_i}
               </me>
@@ -90,7 +174,7 @@
           </li>
           <li>
             <p>
-              Assumed mean method:  
+             <term> Assumed mean method:  </term>
               <men xml:id="eqn-amean1">
                 \bar{x} =A+ \sum_{i=1}^{n} \frac{f_i d_i}{f_i}
               </men>
@@ -249,7 +333,7 @@ Here is the caculation:
       </li>
       <li>
         <p>
-          Step deviation method: 
+          <term>Step deviation method: </term> This method is only applicable for continuous series.
           <men xml:id="eqn-smean2">
             \bar{x} = A+\left(\sum_{i=1}^{n} \frac{f_i d_i}{f_i}\right)h. 
           </men>
@@ -1081,6 +1165,136 @@ Here is the caculation:
           <me> mode= 3(median)-2(mean).</me>
         </p>
 
+</subsection>
+
+<subsection xml:id="subsec-geom_mean">
+  <title>Geometric Mean (GM)</title>
+  <p>
+    <term>Individual Series:</term> 
+    <me>
+      3,2,1,5,4
+    </me>
+    Make a table as shown below: 
+    <me>
+      \begin{array}{c|c} 
+     x &amp; \log(x)  \\ \hline 
+     3 &amp; 0.477 \\ 
+     2 &amp; 0.301 \\ 
+    1 &amp; 0 \\ 
+      5 &amp; 0.698 \\ 
+      4 &amp; 0.602 \\ \hline 
+      N = 5 &amp; \sum{\log(x)} = 2.078 \\ 
+    \end{array}
+    </me>
+    <me>
+      GM = Antilog\left[\frac{\sum{\log(x)}}{N}\right] = \log^{-1}(0.4156) = 2.60
+    </me>
+    
+  </p>
+
+  <p>
+    <term>Discrete Series:</term> 
+    
+    <me>
+      \begin{array}{c|c|c|c} 
+     x &amp; f  &amp; \log(x) &amp; f \log(x)\\ \hline 
+     3 &amp; 4  &amp; 0.477 &amp; 1.908 \\ 
+     2 &amp; 1 &amp; 0.301 &amp; 0.301 \\ 
+     5 &amp; 3  &amp; 0.6989 &amp; 2.0967\\ 
+     7 &amp; 2  &amp; 0.8450 &amp; 1.69 \\  \hline 
+       &amp; N = 10 &amp;  &amp; \sum f{\log(x)} = 5.9957 \\ 
+    \end{array}
+    </me>
+    <me>
+      GM = Antilog\left[\frac{\sum{f \log(x)}}{N}\right] = \log^{-1}(0.59957) = 3.98
+    </me>
+    
+  </p>
+
+
+  <p>
+    <term>Continuous Series:</term> 
+    
+    <me>
+      \begin{array}{c|c|c|c|c} 
+     Class &amp; f  &amp; mid-value (x)  &amp; \log(x) &amp; f \log(x)\\ \hline 
+     0-10 &amp; 3  &amp; 5 &amp; 0.6989 &amp; 2.0967 \\ 
+     10-20 &amp; 1 &amp; 15 &amp; 1.1760 &amp; 1.1760 \\ 
+     20-30 &amp; 2  &amp; 25 &amp; 1.3979 &amp; 2.7958 \\ 
+     30-40 &amp; 4  &amp; 35 &amp; 1.5440 &amp; 6.1760 \\  \hline 
+       &amp; N = 10 &amp;  &amp; &amp; \sum f{\log(x)} = 12.2445 \\ 
+    \end{array}
+    </me>
+    <me>
+      GM = Antilog\left[\frac{\sum{f \log(x)}}{N}\right] = \log^{-1}(1.22445) = 16.77.
+    </me>
+    
+  </p>
+</subsection>
+
+
+<subsection xml:id="subsec-harm_mean">
+  <title>Harmonic Mean (HM)</title>
+  <p>
+    <term>Individual Series:</term> 
+    <me>
+      3,2,1,5,4
+    </me>
+    Make a table as shown below: 
+    <me>
+      \begin{array}{c|c} 
+     x &amp; \frac{1}{x}  \\ \hline 
+     3 &amp; 0.333 \\ 
+     2 &amp; 0.5 \\ 
+    1 &amp; 1 \\ 
+      5 &amp; 0.2 \\ 
+      4 &amp; 0.25 \\ \hline 
+      N = 5 &amp; \sum{1/x} = 2.283 \\ 
+    \end{array}
+    </me>
+    <me>
+      HM = \frac{N}{\sum{1/x}} = \frac{5}{2.283} = 2.190.
+    </me>
+    
+  </p>
+
+  <p>
+    <term>Discrete Series:</term> 
+    
+    <me>
+      \begin{array}{c|c|c|c} 
+     x &amp; f  &amp; 1/x &amp; f (1/x) \\ \hline 
+     3 &amp; 4  &amp; 0.333 &amp; 1.332 \\ 
+     2 &amp; 1 &amp; 0.5 &amp; 0.5 \\ 
+     5 &amp; 3  &amp; 0.2 &amp; 2.6 \\ 
+     7 &amp; 2  &amp; 0.1428 &amp; 0.2856 \\  \hline 
+       &amp; N = 10 &amp;  &amp; \sum f{1/x} = 2.7176 \\ 
+    \end{array}
+    </me>
+    <me>
+      HM = \frac{N}{\sum{f(1/x)}} = \frac{10}{2.7176} = 3.67.
+    </me>
+  </p>
+
+
+  <p>
+    <term>Continuous Series:</term> 
+    
+    <me>
+      \begin{array}{c|c|c|c|c} 
+     Class &amp; f  &amp; mid-value (x)  &amp; 1/x &amp; f (1/x)\\ \hline 
+     0-10 &amp; 3  &amp; 5 &amp; 0.2 &amp; 0.6 \\ 
+     10-20 &amp; 1 &amp; 15 &amp; 0.066 &amp; 0.0666 \\ 
+     20-30 &amp; 2  &amp; 25 &amp; 0.04 &amp; 0.08 \\ 
+     30-40 &amp; 4  &amp; 35 &amp; 0.0285 &amp; 0.114 \\  \hline 
+       &amp; N = 10 &amp;  &amp; &amp; \sum f{(1/x)} = 0.8606 \\ 
+    \end{array}
+    </me>
+    <me>
+      HM = \frac{N}{\sum{f(1/x)}} = \frac{10}{0.8606} = 11.61.
+    </me>
+    
+  </p>
 </subsection>
 
  </section>

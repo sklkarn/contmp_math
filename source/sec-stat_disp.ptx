@@ -1141,4 +1141,101 @@ Here,
 
 </subsection>
 
+<subsection xml:id="subsec-QDP">
+  <title>Quartiles, Deciles, Percentiles</title>
+  <p>
+    <term>Quartiles: </term> there are three quartiles, called I quartile (or lower quartile), 
+    II quartile (or median), and III quartile (or upper quartile).
+    <men xml:id="eqn-qrt1">
+      Q_1 = \text{ size of 1 } \left[ \frac{n+1}{4}\right]^{th} term.
+    </men>
+    <men xml:id="eqn-qrt2">
+      Q_2 = \text{ size of 2 } \left[ \frac{n+1}{4}\right]^{th} term.
+    </men>
+    <men xml:id="eqn-qrt3">
+      Q_3 = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} term.
+    </men>
+  </p>
+  <p>
+    <term>Deciles: </term> there are 9 deciles:
+    <men xml:id="eqn-dec1">
+      D_1 = \text{ size of 1 } \left[ \frac{n+1}{10}\right]^{th} term.
+    </men>
+    <men xml:id="eqn-dec2">
+      D_2 = \text{ size of 2 } \left[ \frac{n+1}{10}\right]^{th} term.
+    </men>
+    <men xml:id="eqn-dec3">
+      D_3 = \text{ size of 3 } \left[ \frac{n+1}{10}\right]^{th} term.
+    </men>
+    and so on.
+  </p>
+
+  <p>
+    <term>Percentiles: </term> there are 99 deciles:
+    <men xml:id="eqn-per1">
+      P_1 = \text{ size of 1 } \left[ \frac{n+1}{100}\right]^{th} term.
+    </men>
+    <men xml:id="eqn-per2">
+      P_2 = \text{ size of 2 } \left[ \frac{n+1}{100}\right]^{th} term.
+    </men>
+    <men xml:id="eqn-per3">
+      P_3 = \text{ size of 3 } \left[ \frac{n+1}{100}\right]^{th} term.
+    </men>
+    and so on.
+  </p>
+
+  
+    <example>
+     <statement>
+      <p>
+        Calculate the <m>3^{rd}</m> quartile, <m>6^{th}</m> decile, and <m>70^{th}</m> percentile of the following data: 
+        <me>
+          28,17,12,25,26,19,13,27,21,16,29
+        </me>
+         </p>
+     </statement>
+         <solution>
+          <p>
+           Arrange the data in ascending order as 
+           <me>
+            12,13,16,17,19,21,25,26,27,28,29
+           </me>
+           Number of item, <m>n = 11.</m>
+          </p>
+          <p> Using <xref ref="eqn-qrt3"/>
+            <md>
+              <mrow>  Q_3  \amp = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} \text{ item} </mrow>
+              <mrow>   \amp  = \text{ size of 3 } \left[ \frac{11+1}{4}\right]^{th} \text{ item} </mrow>
+              <mrow>   \amp  = \text{ size of 3 } \left[ 3^{rd}\right] \text{ item} </mrow>
+              <mrow>   \amp  = \text{ size of } 9^{th} \text{ item} = 27. </mrow> 
+            </md>
+            </p>
+            <p> 
+              <md>
+                <mrow>  D_6  \amp = \text{ size of 6 } \left[ \frac{n+1}{10}\right]^{th} \text{ item} </mrow>
+                <mrow>   \amp  = \text{ size of 6 } \left[ \frac{11+1}{10}\right]^{th} \text{ item} </mrow>
+                <mrow>   \amp  = \text{ size of 6 } \left[ 1.2^{th}\right] \text{ item} </mrow>
+                <mrow>   \amp  = \text{ size of } 7.2^{th} \text{ item} </mrow> 
+                <mrow>   \amp  = \text{ size of } 7^{th} \text{ item} + 0.2\times \text{ size of } \left[8^{th} \text{ item} - 7^{th} \text{ item} \right] </mrow> 
+                <mrow>   \amp  = 25 + 0.2\times  \left[26 - 25\right] </mrow> 
+                <mrow>   \amp  = 25 + 0.2\times  1 </mrow> 
+                <mrow>   \amp  = 25.2 </mrow> 
+              </md>
+              </p>
+              <p> 
+                <md>
+                  <mrow>  P_{70}  \amp = \text{ size of 70 } \left[ \frac{n+1}{100}\right]^{th} \text{ item} </mrow>
+                  <mrow>   \amp  = \text{ size of 70 } \left[ \frac{11+1}{100}\right]^{th} \text{ item} </mrow>
+                  <mrow>   \amp  = \text{ size of 70 } \left[ 0.12^{th}\right] \text{ item} </mrow>
+                  <mrow>   \amp  = \text{ size of } 8.4^{th} \text{ item} </mrow> 
+                  <mrow>   \amp  = \text{ size of } 8^{th} \text{ item} + 0.4\times \text{ size of } \left[9^{th} \text{ item} - 8^{th} \text{ item} \right] </mrow> 
+                  <mrow>   \amp  = 26 + 0.4\times  \left[27 - 26\right] </mrow> 
+                 <mrow>   \amp  = 26.4 </mrow> 
+                </md>
+                </p>
+         </solution>
+    </example>
+  
+</subsection>
+
 </section>

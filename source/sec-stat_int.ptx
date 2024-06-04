@@ -10,7 +10,7 @@
     <ol marker ="i">
       <li>
         <p>
-          Qualitative or Categorical Data: It describes the features such as color, gender, code, birth date, 
+          <term>Qualitative or Categorical Data:</term> It describes the features such as color, gender, code, birth date, 
           address, blood group, etc. It cannot be used to perform any mathematical operations.
           <ol marker ="a">
             <li>
@@ -43,7 +43,7 @@
       </li>
       <li>
         <p>
-          Quantitative or Numerical Data: Numerical data gives information about the quantities of a specific thing. 
+          <term>Quantitative or Numerical Data:</term> Numerical data gives information about the quantities of a specific thing. 
           e.g., height, length, size, weight, and so on. It can be used for mathematical operations.
           <ol marker ="a">
             <li>
@@ -94,7 +94,7 @@
       </image>
 
       <p>
-        <term>Statistic:</term> It is a specific characteristics of a sample. <term>Parameter: </term> It is a characteristics of the population. 
+        <term>Statistic:</term> It is a specific characteristics of a sample. <term>Parameter: </term> It is a specific characteristics of the population. 
         Population average, <m>\mu </m> is a <em>parameter.</em> Sample average, <m>\bar{x}</m> is a <em>statistic</em>.
       </p>
         <exercise>
@@ -152,8 +152,17 @@
       Mention the types of data being used in the above data table and give the name of missing variables.
     </p>
  
-
-  </subsection>
+<p>
+  <term>Variable:</term> A variable is a property that can take many values. It is used in singular mode, meaning it takes only one value. e.g. 
+  <em>age</em> = 12, 24, 48, 60, 100 years; <em>weight</em> = 172, 172.5, 180 cms; <em>height</em> etc. are variable. But, 
+  <term>ages:</term> [12, 24, 48, 60, 200] taken in plural mode is not a variable.
+</p>
+<p>
+  <term>Variable Types:</term>
+</p>
+<image source="tree.png" width="50%"> </image>
+   
+ </subsection>
 
 
 </section>
