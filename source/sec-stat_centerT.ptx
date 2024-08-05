@@ -61,13 +61,13 @@
     
     
   <subsection xml:id="subsec-mean">
-    <title>Mean (Arithmatic Mean)</title>
+    <title>Mean (Arithmetic Mean)</title>
 
    <introduction>
    
     <p>
-      There are three types of mean being used in mathematical operations: Arithmatic mean, geometric mean, and harmonic mean. 
-      Here we only discuss the arithmatic mean. There are three methods to determine the arithmatic mean. 
+      There are three types of mean being used in mathematical operations: Arithmetic mean, geometric mean, and harmonic mean. 
+      Here we only discuss the arithmetic mean. There are three methods to determine the arithmetic mean. 
       <ol marker="I">
         <li>
           <p>
@@ -296,9 +296,9 @@ Here is the caculation:
     <p>
       In continuous series, the observations are presented in different class intervals rather 
       than by a single number and the frequency.  
-      It can be presented in two different types of class inetvals: <term>Exclusive series</term> 
+      It can be presented in two different types of class intervals: <term>Exclusive series</term> 
       and <term>Inclusive series.</term> Continuous series includes the upper limit and the lower 
-      limit in the class inetrval. If the upper limit interval does not repeat itself as a lower limit 
+      limit in the class interval. If the upper limit interval does not repeat itself as a lower limit 
       of the next class interval then it is an inclusive series. There is a gap between upper limit of any class interval to the 
       and lower limit of the next class interval. e.g., <m>20-29, 30-39, 40-49, 50-59, etc.</m> 
       If the upper limit interval repeats itself as a lower limit of the next class interval then it is an exclusive series. 
@@ -492,7 +492,7 @@ Here is the caculation:
           If its scale is changed (multiplied or divided) by 10, then new  
         </p>
         <p>
-          mean = 30, if 10 is ultiplied into the data (new series <m>10,20,30,40,50</m>), or 
+          mean = 30, if 10 is multiplied into the data (new series <m>10,20,30,40,50</m>), or 
         </p>
         <p>
         mean = 0.3, if 10 is divided to the data (new series <m>0.1,0.2,0.3,0.4,0.5</m>).
@@ -559,7 +559,7 @@ Here is the caculation:
   <title>Raw Data (individual series)</title>
   
     <p>
-      The median of the following data can be found by rearranging them either in asscending 
+      The median of the following data can be found by rearranging them either in ascending 
       or in descending order then select middle item.
       <ol marker="i">
         <li>
@@ -567,7 +567,7 @@ Here is the caculation:
             <me>
               7,3,11,15,4,20,23
             </me>
-            after arranging it in icreasing order 
+            after arranging it in increasing order 
             <me>
               3,4,7,11,15,20,23
             </me>
@@ -579,7 +579,7 @@ Here is the caculation:
             <me>
               12,18,4,9, 17,8
             </me>
-            after arranging it in icreasing order 
+            after arranging it in increasing order 
             <me>
               4,8,9,12,17,18
             </me>
@@ -832,7 +832,7 @@ Here is the caculation:
 <ol marker="i">
   <li>
     <p>
-      Median is a Middle most values of asscending or descending order of the series.
+      Median is a Middle most values of ascending or descending order of the series.
     </p>
   </li>
   <li>

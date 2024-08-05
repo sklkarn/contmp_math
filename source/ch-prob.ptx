@@ -31,7 +31,7 @@
       </li>
       <li>
         <p>
-          Independent events, conditional probability, total probabity theorem, Baye's theorem;
+          Independent events, conditional probability, total probability theorem, Baye's theorem;
         </p>
       </li>
       <li>
@@ -53,7 +53,7 @@
         </li>
         <li>
           <p>
-            <alert>Sample Space:</alert>  Set of all possible oucomes.
+            <alert>Sample Space:</alert>  Set of all possible outcomes.
            e.g., sample space of throwing a dice, 
            <me> S = \{1,2,3,4,5,6 \}</me>. 
            Here, 1, 2, 3,... etc. are sample points (or, sample outcomes); sample space of tossing a coin, 
@@ -124,12 +124,12 @@
               </li>
               <li>
                 <p>
-                  <term>Equally likely events: </term> Having equal chances of occurance.
+                  <term>Equally likely events: </term> Having equal chances of occurrence.
                 </p>
               </li>
               <li>
                 <p>
-                  <term>Mutually exclusive or disjoint or incompatible events: </term> Events whose simultaneous occurance is impossible.
+                  <term>Mutually exclusive or disjoint or incompatible events: </term> Events whose simultaneous occurrence is impossible.
                   (getting a head and a tail at the same time is not possible in tossing a coin.)
                  In mutually exclusive events there are nothing in common. 
                 </p>

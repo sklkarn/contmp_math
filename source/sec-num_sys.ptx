@@ -2,8 +2,6 @@
 
 <section xml:id="sec-num_sys" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Classification of Numbers</title>
-
-
   
   <introduction>
     <p> 
@@ -192,8 +190,182 @@
   </ol>
  </p>
 
+ <p>
+  In addition to these numbers there are some famous numbers pairs such as <term>Amicable Numbers Pair</term> and <term>Co-prime Numbers pair.</term>
+  <ol marker="i">
+    <li>
+      <p>
+        <term>Amicable Numbers: </term> Pairs of distinct natural numbers where each number 
+        is the sum of the proper divisors of the other. 
+      </p>
+      <p>
+        Steps to Find Amicable Pairs: 
+        <ul>
+          <li>
+            <p>
+              Identify Proper Divisors: For a given number <m>n</m>, identify all proper divisors 
+              (divisors less than <m>n</m> that divide <m>n</m> without leaving a remainder).
+            </p>
+          </li>
+          <li>
+            <p>
+              Sum of Proper Divisors: Calculate the sum of these proper divisors.
+            </p>
+          </li>
+          <li>
+            <p>
+              Check for Amicability: For a number <m>A</m>, if the sum of its proper divisors is <m>B</m>, 
+              and the sum of the proper divisors of <m>B</m> is <m>A</m>, then <m>A</m> and <m>B</m> form an amicable pair.
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+      Example: Identify Proper Divisors: 
+     </p>
+     <p>
+      Proper divisors of 220: 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110
+     </p>
+     <p>
+      Proper divisors of 284: 1, 2, 4, 71, 142
+     </p>
+     <p>
+      Sum of Proper Divisors:
+     </p>
+     <p>
+      Sum of divisors of 220: 1+2+4+5+10+11+20+22+44+55+110=2841+2+4+5+10+11+20+22+44+55+110=284
+     </p>
+     <p>
+      Sum of divisors of 284: 1+2+4+71+142=2201+2+4+71+142=220
+     </p>
+     <p>
+      Check for Amicability: Since the sum of the proper divisors of 220 is 284 and the sum of the 
+      proper divisors of 284 is 220, (220, 284) is an amicable pair
+     </p>
+    </li>
+    <li>
+      <p>
+        <term>Co-prime Numbers: </term> pairs of numbers that have no common positive integer divisors 
+        other than 1. In other words, their greatest common divisor (GCD) is 1.
+      </p>
+      <p>
+        Examples of Coprime Numbers:
+      </p>
+      <p>
+        8 and 15:
+       </p>
+       <p>
+        Divisors of 8: 1, 2, 4, 8
+        </p>
+        <p>
+          Divisors of 15: 1, 3, 5, 15
+        </p>
+        <p>
+          Common divisor: 1
+        </p>
+    </li>
+  </ol>
+ </p>
 
 </introduction>
 
+<subsection xml:id="subsec-prime">
+  <title>Prime Numbers</title>
+  <p>
+    If a number has no positive divisors other than 1 and itself is falls under prime number. 
+    Here is one basic step to identify prime numbers:
+   </p>
+   <p>
+    <term>Basic Division Method Steps:</term> 
+  </p>
+  <p>
+    Check Divisibility: Divide the number by all integers from 2 up to the square root of the number.
+  </p>
+  <p>
+    Prime Confirmation: If none of these divisions result in a whole number, the number is prime.
+  </p>
+  <p>
+    Example: Check if 29 is prime.
+  </p>
+  <p>
+    <m>\sqrt{29} \approx 5.39</m> (so check divisors up to 5)
+  </p>
+  <p>
+    29 is not divisible by 2, 3, or 5. Therefore, 29 is prime.
+  </p>
+
+  <paragraphs>
+    <title>Divisibility rules</title>
+    <p>
+      <ol marker ="i">
+        <li>
+          <p>
+            <em>Divisible by 1: </em> all numbers are divisible by <m>1.</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Divisible by 2: </em> numbers that have either even number or zero at the unit place are divisible by <m>2.</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Divisible by 3: </em> A number is divisible by 3 if the sum of its digits is divisible by 3.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Divisible by 4: </em> divide the last two numbers (numbers at tenth and unit place) of the given number, 
+            if it is divisible by <m>4</m> then the given number must be divisible by <m>4.</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Divisible by 5: </em> numbers that contain either zero or <m>5</m> at the unit place must be divisible by <m>5.</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Divisible by 6: </em> if the number divisible by both <m>2</m> and <m>3</m> then the number must be divisible by <m>6.</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Divisible by 7: </em> double the number at the unit place and subtract it from the remaining numbers of the given number 
+            (repeat the process if needed), if the result is 0 or a multiple of 7, then the original number is divisible by <m>7</m>.
+            Example: Check if 203 is divisible by 7: 
+          </p>
+          <p>
+            Step I: double the last number, <m>3 \times 2 = 6</m>
+           </p>
+           <p>
+            Step II: subtract from rest of the given numbers,  <m>20-6 = 14</m>
+           </p>
+           <p>
+            Step III: Since 14 is divisible by 7, 203 is also divisible by 7.
+           </p>
+        </li>
+        <li>
+          <p>
+            <em>Divisible by 8: </em> divide the the last three numbers (hundreds, tenths, unit) by 8, if they are divisible 
+            by 8 then the original number is also divisible by <m>8</m>.
+              Example: Check if 4728 is divisible by 8: 
+          </p>
+          <p>
+            Last three digits: 728, 
+               </p>
+               <p>
+                Check divisibility: <m>728 \div 8 = 91</m> (no remainder), Since 728 is divisible by 8, hence, 4728 is also divisible by 8.
+               </p>
+          </li>
+        <li>
+          <p>
+            <em>Divisible by 9: </em> A number is divisible by 9 if the sum of its digits is divisible by 9.
+          </p>
+        </li>
+      </ol>
+    </p>     
+  </paragraphs>
+</subsection>
 
 </section>

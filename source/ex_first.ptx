@@ -91,6 +91,65 @@
       </p>
     </exercise>
 
+    <exercise>
+      <statement>
+        <p>
+          Which of the following pairs are coprime numbers?
+          <ol marker ="a">
+            <li>
+              <p>
+                35 and 64
+              </p>
+            </li>
+            <li>
+              <p>
+                14 and 25 
+              </p>
+            </li>
+            <li>
+              <p>
+                14 and 11
+              </p>
+            </li>
+            <li>
+              <p>
+                3 and 2
+              </p>
+            </li>
+          </ol>
+          </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Which of the following pairs is an amicable pair?
+          <ol marker ="a">
+            <li>
+              <p>
+                12 and 18
+              </p>
+            </li>
+            <li>
+              <p>
+                100 and 200
+              </p>
+            </li>
+            <li>
+              <p>
+                15 and 30
+              </p>
+            </li>
+            <li>
+              <p>
+                1184 and 1210
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
 </exercises>
 
 

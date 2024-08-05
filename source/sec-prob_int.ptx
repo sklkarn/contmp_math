@@ -6,22 +6,22 @@
   <introduction>
     <p>
       If a random experiment has total of <m>(m+n)</m> mutually exclusive, mutually exhaustive, and equally likely outcomes, out of which 
-      there are <m>m</m> favourable events <m>E</m>, then the probability of occurance of event <m>E</m> is denoted by <m>P(E).</m>
+      there are <m>m</m> favorable events <m>E</m>, then the probability of occurrence of event <m>E</m> is denoted by <m>P(E).</m>
       <men xml:id="eqn-prob1">
-        P(E)  = \frac{\text { favourable outcomes}}{ \text{ total outcomes}}
+        P(E)  = \frac{\text { favorable outcomes}}{ \text{ total outcomes}}
       </men>
       </p> 
 <p>
   In sample space, <me>
     S = \{x_1, x_2, x_3, \ldots, x_n \}
   </me>
-  each sample points are equally likely events, then we can find the probality of occurance using <xref ref="eqn-prob1"/>. 
+  each sample points are equally likely events, then we can find the probability of occurrence using <xref ref="eqn-prob1"/>. 
   However, if they are not equally likely then <xref ref="eqn-prob1"/> can not be used directly.
 </p>
 <p>
   <term>Note: </term> If all outcomes of sample space are not equally likely, then 
   <me>
-    P(E) = \text { sum of probability of all the favourable outcomes of E.}
+    P(E) = \text { sum of probability of all the favorable outcomes of E.}
   </me>
   here, in sample space, 
    <me>
@@ -64,7 +64,7 @@
      </me>
     </p>
     <p>
-      has total outcomes = 8, but each outcome has different probabilty, i.e., they are not equally likely.
+      has total outcomes = 8, but each outcome has different probability, i.e., they are not equally likely.
     </p>
     <p>
       <ol marker ="i">
@@ -166,7 +166,7 @@
     </li>
     <li>
       <p>
-        Probability of non-occurance of event, 
+        Probability of non-occurrence of event, 
         <me> 
           E = P(\bar{E}) = 1-P(E).
         </me>

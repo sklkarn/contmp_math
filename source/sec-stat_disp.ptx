@@ -33,8 +33,8 @@
    \end{array}
   </me>
   The data shows the difference in <m>x</m> and <m>\bar{x}</m>. 
-  the observations in series A does not vary at all from the central value (mean), there is some variation in series B, b
-  ut no observations are even close to the mean in series C. 
+  the observations in series A does not vary at all from the central value (mean), there is some variation in series B, 
+  but no observations are even close to the mean in series C. 
 </p>
 
 </introduction>
@@ -117,7 +117,7 @@
       </p>
     </li>
   </ol>
-  <term>Note: </term> Low dospersion means more stable observations.
+  <term>Note: </term> Low dispersion means more stable observations.
 </p>
 
 </subsection>
@@ -327,7 +327,7 @@
       <ol>
        <li>
          <p>
-           Among all the methods of studing dispersion range is the simplest to understand and easiest to compare.
+           Among all the methods of studying dispersion range is the simplest to understand and easiest to compare.
          </p>
        </li>
        <li>
