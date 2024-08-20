@@ -233,7 +233,7 @@
       Sum of Proper Divisors:
      </p>
      <p>
-      Sum of divisors of 220: 1+2+4+5+10+11+20+22+44+55+110=2841+2+4+5+10+11+20+22+44+55+110=284
+      Sum of divisors of 220: 1+2+4+5+10+11+20+22+44+55+110=284
      </p>
      <p>
       Sum of divisors of 284: 1+2+4+71+142=2201+2+4+71+142=220
@@ -268,6 +268,61 @@
  </p>
 
 </introduction>
+
+<subsection xml:id="subsec-divisors">
+  <title>Finding Divisors:</title>
+  
+ <p>
+  <ul>
+  <li>
+    <p>
+      To find the divisors (or factors) of 220, you need to determine all the integers 
+      that divide 220 exactly (without leaving a remainder). Here's a step-by-step method:
+    </p>
+    <p>
+      <em>Prime Factorization of 220: </em> 
+      <me>220\div 2=110</me>(since 220 is even, divide by 2)
+        <me>110\div 2=55</me>
+        <me>55\div 5=11</me>(since 55 ends in 5, divide by 5)
+        <me>11\div 11=1</me>(since 11 is a prime number, divide by 11)
+      So, the prime factorization of 220 is: 
+      <me>
+        220=2^2\times 5\times 11
+      </me>
+    </p>
+  </li>
+  <li>
+    <p>
+     <em> Generate All Divisors:</em>  To find all divisors of 220, take every combination of the 
+     prime factors raised to their respective powers:
+        </p>
+        <p>
+          Start with the powers of 2: <me>2^0,2^1,2^2</me>
+        Then combine with the powers of 5: <me>5^0,5^1</me>
+        Finally, combine with the powers of 11: <me>11^0,11^1</me>
+        </p>
+        <p>
+          The divisors are all the products of these combinations:
+          <md>
+            <mrow>2^0\times 5^0\times 11^0 \amp =1</mrow>
+            <mrow>2^0\times 5^1\times 11^0 \amp =5</mrow>
+            <mrow>2^0\times 5^1\times 11^1 \amp =55</mrow>
+            <mrow>2^0\times 5^0\times 11^1 \amp =11</mrow>
+            <mrow>2^1\times 5^0\times 11^0 \amp =2</mrow>
+            <mrow>2^1\times 5^1\times 11^0 \amp =10</mrow>
+            <mrow>2^1\times 5^0\times 11^1 \amp =22</mrow>
+            <mrow>2^1\times 5^1\times 11^1 \amp =110</mrow>
+            <mrow>2^2\times 5^0\times 11^0 \amp =4</mrow>
+            <mrow>2^2\times 5^1\times 11^0 \amp =20</mrow>
+            <mrow>2^2\times 5^0\times 11^1 \amp =44</mrow>
+            <mrow>2^2\times 5^1\times 11^1 \amp =220</mrow>
+          </md>
+           </p>
+         </li>
+ </ul>
+  </p>
+</subsection>
+
 
 <subsection xml:id="subsec-prime">
   <title>Prime Numbers</title>
