@@ -121,7 +121,10 @@ window.MathJax = {
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec-num_sys.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Classification of Numbers</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-prime" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Prime Numbers</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-divisors" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Finding Divisors:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-prime" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Prime Numbers</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-numb_example.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Example</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_first.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercise</span></a></div></li>
@@ -503,7 +506,7 @@ window.MathJax = {
 <div class="para" id="sec-num_sys-2-3-3-1-4">Proper divisors of 220: 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110</div>
 <div class="para" id="sec-num_sys-2-3-3-1-5">Proper divisors of 284: 1, 2, 4, 71, 142</div>
 <div class="para" id="sec-num_sys-2-3-3-1-6">Sum of Proper Divisors:</div>
-<div class="para" id="sec-num_sys-2-3-3-1-7">Sum of divisors of 220: 1+2+4+5+10+11+20+22+44+55+110=2841+2+4+5+10+11+20+22+44+55+110=284</div>
+<div class="para" id="sec-num_sys-2-3-3-1-7">Sum of divisors of 220: 1+2+4+5+10+11+20+22+44+55+110=284</div>
 <div class="para" id="sec-num_sys-2-3-3-1-8">Sum of divisors of 284: 1+2+4+71+142=2201+2+4+71+142=220</div>
 <div class="para" id="sec-num_sys-2-3-3-1-9">Check for Amicability: Since the sum of the proper divisors of 220 is 284 and the sum of the proper divisors of 284 is 220, (220, 284) is an amicable pair</div>
 </li>
@@ -517,8 +520,89 @@ window.MathJax = {
 <div class="para" id="sec-num_sys-2-3-3-2-6">Common divisor: 1</div>
 </li>
 </ol>
-</div></section><section class="subsection" id="subsec-prime"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Prime Numbers</span>
+</div></section><section class="subsection" id="subsec-divisors"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Finding Divisors:</span>
+</h3>
+<div class="para logical" id="subsec-divisors-2"><ul class="disc">
+<li id="subsec-divisors-2-1-1">
+<div class="para" id="subsec-divisors-2-1-1-1">To find the divisors (or factors) of 220, you need to determine all the integers that divide 220 exactly (without leaving a remainder). Here’s a step-by-step method:</div>
+<div class="para logical" id="subsec-divisors-2-1-1-2">
+<div class="para"><em class="emphasis">Prime Factorization of 220:</em></div>
+<div class="displaymath process-math">
+\begin{equation*}
+220\div 2=110
+\end{equation*}
+</div>
+<div class="para">(since 220 is even, divide by 2)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+110\div 2=55
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+55\div 5=11
+\end{equation*}
+</div>
+<div class="para">(since 55 ends in 5, divide by 5)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+11\div 11=1
+\end{equation*}
+</div>
+<div class="para">(since 11 is a prime number, divide by 11) So, the prime factorization of 220 is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+220=2^2\times 5\times 11
+\end{equation*}
+</div>
+</div>
+</li>
+<li id="subsec-divisors-2-1-2">
+<div class="para" id="subsec-divisors-2-1-2-1">
+<em class="emphasis">Generate All Divisors:</em>  To find all divisors of 220, take every combination of the prime factors raised to their respective powers:</div>
+<div class="para logical" id="subsec-divisors-2-1-2-2">
+<div class="para">Start with the powers of 2:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2^0,2^1,2^2
+\end{equation*}
+</div>
+<div class="para">Then combine with the powers of 5:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+5^0,5^1
+\end{equation*}
+</div>
+<div class="para">Finally, combine with the powers of 11:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+11^0,11^1
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="subsec-divisors-2-1-2-3">
+<div class="para">The divisors are all the products of these combinations:</div>
+<div class="displaymath process-math" id="subsec-divisors-2-1-2-3-1">
+\begin{align*}
+2^0\times 5^0\times 11^0 \amp =1\\
+2^0\times 5^1\times 11^0 \amp =5\\
+2^0\times 5^1\times 11^1 \amp =55\\
+2^0\times 5^0\times 11^1 \amp =11\\
+2^1\times 5^0\times 11^0 \amp =2\\
+2^1\times 5^1\times 11^0 \amp =10\\
+2^1\times 5^0\times 11^1 \amp =22\\
+2^1\times 5^1\times 11^1 \amp =110\\
+2^2\times 5^0\times 11^0 \amp =4\\
+2^2\times 5^1\times 11^0 \amp =20\\
+2^2\times 5^0\times 11^1 \amp =44\\
+2^2\times 5^1\times 11^1 \amp =220
+\end{align*}
+</div>
+</div>
+</li>
+</ul></div></section><section class="subsection" id="subsec-prime"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="space"> </span><span class="title">Prime Numbers</span>
 </h3>
 <div class="para" id="subsec-prime-2">If a number has no positive divisors other than 1 and itself is falls under prime number. Here is one basic step to identify prime numbers:</div>
 <div class="para" id="subsec-prime-3"><dfn class="terminology">Basic Division Method Steps:</dfn></div>
