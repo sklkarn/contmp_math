@@ -189,143 +189,12 @@
     </li>
   </ol>
  </p>
-
- <p>
-  In addition to these numbers there are some famous numbers pairs such as <term>Amicable Numbers Pair</term> and <term>Co-prime Numbers pair.</term>
-  <ol marker="i">
-    <li>
-      <p>
-        <term>Amicable Numbers: </term> Pairs of distinct natural numbers where each number 
-        is the sum of the proper divisors of the other. 
-      </p>
-      <p>
-        Steps to Find Amicable Pairs: 
-        <ul>
-          <li>
-            <p>
-              Identify Proper Divisors: For a given number <m>n</m>, identify all proper divisors 
-              (divisors less than <m>n</m> that divide <m>n</m> without leaving a remainder).
-            </p>
-          </li>
-          <li>
-            <p>
-              Sum of Proper Divisors: Calculate the sum of these proper divisors.
-            </p>
-          </li>
-          <li>
-            <p>
-              Check for Amicability: For a number <m>A</m>, if the sum of its proper divisors is <m>B</m>, 
-              and the sum of the proper divisors of <m>B</m> is <m>A</m>, then <m>A</m> and <m>B</m> form an amicable pair.
-            </p>
-          </li>
-        </ul>
-      </p>
-      <p>
-      Example: Identify Proper Divisors: 
-     </p>
-     <p>
-      Proper divisors of 220: 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110
-     </p>
-     <p>
-      Proper divisors of 284: 1, 2, 4, 71, 142
-     </p>
-     <p>
-      Sum of Proper Divisors:
-     </p>
-     <p>
-      Sum of divisors of 220: 1+2+4+5+10+11+20+22+44+55+110=284
-     </p>
-     <p>
-      Sum of divisors of 284: 1+2+4+71+142=2201+2+4+71+142=220
-     </p>
-     <p>
-      Check for Amicability: Since the sum of the proper divisors of 220 is 284 and the sum of the 
-      proper divisors of 284 is 220, (220, 284) is an amicable pair
-     </p>
-    </li>
-    <li>
-      <p>
-        <term>Co-prime Numbers: </term> pairs of numbers that have no common positive integer divisors 
-        other than 1. In other words, their greatest common divisor (GCD) is 1.
-      </p>
-      <p>
-        Examples of Coprime Numbers:
-      </p>
-      <p>
-        8 and 15:
-       </p>
-       <p>
-        Divisors of 8: 1, 2, 4, 8
-        </p>
-        <p>
-          Divisors of 15: 1, 3, 5, 15
-        </p>
-        <p>
-          Common divisor: 1
-        </p>
-    </li>
-  </ol>
- </p>
-
 </introduction>
-
-<subsection xml:id="subsec-divisors">
-  <title>Finding Divisors:</title>
-  
- <p>
-  <ul>
-  <li>
-    <p>
-      To find the divisors (or factors) of 220, you need to determine all the integers 
-      that divide 220 exactly (without leaving a remainder). Here's a step-by-step method:
-    </p>
-    <p>
-      <em>Prime Factorization of 220: </em> 
-      <me>220\div 2=110</me>(since 220 is even, divide by 2)
-        <me>110\div 2=55</me>
-        <me>55\div 5=11</me>(since 55 ends in 5, divide by 5)
-        <me>11\div 11=1</me>(since 11 is a prime number, divide by 11)
-      So, the prime factorization of 220 is: 
-      <me>
-        220=2^2\times 5\times 11
-      </me>
-    </p>
-  </li>
-  <li>
-    <p>
-     <em> Generate All Divisors:</em>  To find all divisors of 220, take every combination of the 
-     prime factors raised to their respective powers:
-        </p>
-        <p>
-          Start with the powers of 2: <me>2^0,2^1,2^2</me>
-        Then combine with the powers of 5: <me>5^0,5^1</me>
-        Finally, combine with the powers of 11: <me>11^0,11^1</me>
-        </p>
-        <p>
-          The divisors are all the products of these combinations:
-          <md>
-            <mrow>2^0\times 5^0\times 11^0 \amp =1</mrow>
-            <mrow>2^0\times 5^1\times 11^0 \amp =5</mrow>
-            <mrow>2^0\times 5^1\times 11^1 \amp =55</mrow>
-            <mrow>2^0\times 5^0\times 11^1 \amp =11</mrow>
-            <mrow>2^1\times 5^0\times 11^0 \amp =2</mrow>
-            <mrow>2^1\times 5^1\times 11^0 \amp =10</mrow>
-            <mrow>2^1\times 5^0\times 11^1 \amp =22</mrow>
-            <mrow>2^1\times 5^1\times 11^1 \amp =110</mrow>
-            <mrow>2^2\times 5^0\times 11^0 \amp =4</mrow>
-            <mrow>2^2\times 5^1\times 11^0 \amp =20</mrow>
-            <mrow>2^2\times 5^0\times 11^1 \amp =44</mrow>
-            <mrow>2^2\times 5^1\times 11^1 \amp =220</mrow>
-          </md>
-           </p>
-         </li>
- </ul>
-  </p>
-</subsection>
 
 
 <subsection xml:id="subsec-prime">
   <title>Prime Numbers</title>
+
   <p>
     If a number has no positive divisors other than 1 and itself is falls under prime number. 
     Here is one basic step to identify prime numbers:
@@ -348,9 +217,10 @@
   <p>
     29 is not divisible by 2, 3, or 5. Therefore, 29 is prime.
   </p>
+</subsection>
 
-  <paragraphs>
-    <title>Divisibility rules</title>
+<subsection xml:id="subsec-div_rule">
+     <title>Divisibility rules</title>
     <p>
       <ol marker ="i">
         <li>
@@ -420,7 +290,155 @@
         </li>
       </ol>
     </p>     
-  </paragraphs>
+ 
 </subsection>
+
+
+<subsection xml:id="subsec-divisors">
+  <title>Finding Divisors:</title>
+  
+ <p>
+  <ul>
+  <li>
+    <p>
+      To find the divisors (or factors) of 220, you need to determine all the integers 
+      that divide 220 exactly (without leaving a remainder). Here's a step-by-step method:
+    </p>
+    <p>
+      <em>Prime Factorization of 220: </em> 
+      <me>220\div 2=110</me>(since 220 is even, divide by 2)
+        <me>110\div 2=55</me>
+        <me>55\div 5=11</me>(since 55 ends in 5, divide by 5)
+        <me>11\div 11=1</me>(since 11 is a prime number, divide by 11)
+      So, the prime factorization of 220 is: 
+      <me>
+        220=2^2\times 5\times 11
+      </me>
+    </p>
+  </li>
+  <li>
+    <p>
+     <em> Generate All Divisors:</em>  To find all divisors of 220, take every combination of the 
+     prime factors raised to their respective powers:
+        </p>
+        <p>
+          Start with the powers of 2: <me>2^0,2^1,2^2</me>
+        Then combine with the powers of 5: <me>5^0,5^1</me>
+        Finally, combine with the powers of 11: <me>11^0,11^1</me>
+        </p>
+        <p>
+          The divisors are all the products of these combinations:
+          <md>
+            <mrow>2^0\times 5^0\times 11^0 \amp =1</mrow>
+            <mrow>2^0\times 5^1\times 11^0 \amp =5</mrow>
+            <mrow>2^0\times 5^1\times 11^1 \amp =55</mrow>
+            <mrow>2^0\times 5^0\times 11^1 \amp =11</mrow>
+            <mrow>2^1\times 5^0\times 11^0 \amp =2</mrow>
+            <mrow>2^1\times 5^1\times 11^0 \amp =10</mrow>
+            <mrow>2^1\times 5^0\times 11^1 \amp =22</mrow>
+            <mrow>2^1\times 5^1\times 11^1 \amp =110</mrow>
+            <mrow>2^2\times 5^0\times 11^0 \amp =4</mrow>
+            <mrow>2^2\times 5^1\times 11^0 \amp =20</mrow>
+            <mrow>2^2\times 5^0\times 11^1 \amp =44</mrow>
+            <mrow>2^2\times 5^1\times 11^1 \amp =220</mrow>
+          </md>
+           </p>
+         </li>
+ </ul>
+  </p>
+</subsection>
+
+
+  <subsection xml:id="subsec-fam_pair">
+    <title>Famous Pairs</title>
+    
+ <p>
+  In addition to these numbers there are some famous numbers pairs such as <term>Amicable Numbers Pair</term> and <term>Co-prime Numbers pair.</term>
+  <ol marker="i">
+    <li>
+      <p>
+        <term>Amicable Numbers: </term> Pairs of distinct natural numbers where each number 
+        is the sum of the proper divisors of the other. 
+      </p>
+      <p>
+        Steps to Find Amicable Pairs: 
+        <ul>
+          <li>
+            <p>
+              Identify Proper Divisors: For a given number <m>n</m>, identify all proper divisors 
+              (divisors less than <m>n</m> that divide <m>n</m> without leaving a remainder).
+            </p>
+          </li>
+          <li>
+            <p>
+              Sum of Proper Divisors: Calculate the sum of these proper divisors.
+            </p>
+          </li>
+          <li>
+            <p>
+              Check for Amicability: For a number <m>A</m>, if the sum of its proper divisors is <m>B</m>, 
+              and the sum of the proper divisors of <m>B</m> is <m>A</m>, then <m>A</m> and <m>B</m> form an amicable pair.
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+      Example: Identify Proper Divisors, except itself: 
+     </p>
+     <p>
+      Proper divisors of 220: 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110
+     </p>
+     <p>
+      Proper divisors of 284: 1, 2, 4, 71, 142
+     </p>
+     <p>
+      Sum of Proper Divisors:
+     </p>
+     <p>
+      Sum of divisors of 220: 1+2+4+5+10+11+20+22+44+55+110=284
+     </p>
+     <p>
+      Sum of divisors of 284: 1+2+4+71+142=220
+     </p>
+     <p>
+      Check for Amicability: Since the sum of the proper divisors of 220 is 284 and the sum of the 
+      proper divisors of 284 is 220, (220, 284) is an amicable pair.
+     </p>
+    </li>
+    <li>
+      <p>
+        <term>Co-prime Numbers: </term> pairs of numbers that have no common positive integer divisors 
+        other than 1. In other words, their greatest common divisor (GCD) is 1.
+      </p>
+      <p>
+        Examples of Coprime Numbers:
+      </p>
+      <p>
+        8 and 15:
+       </p>
+       <p>
+        Divisors of 8: 1, 2, 4, 8
+        </p>
+        <p>
+          Divisors of 15: 1, 3, 5, 15
+        </p>
+        <p>
+          Common divisor: 1
+        </p>
+    </li>
+    <li>
+      <p>
+        <term>Twin Prime Pairs: </term> twin primes are pairs of prime numbers that their difference is exactly two. 
+        For example: If <m>p</m> and <m>p+2</m> are both prime numbers, then they are called the twin primes.
+        Such as (3,5), (11,13), (17,19), etc.
+      </p>
+      <p>
+        Note: All twin primes are coprime pairs but all coprime pairs are not twin prime pair.
+      </p>
+    </li>
+  </ol>
+ </p>
+  </subsection>
+
 
 </section>
