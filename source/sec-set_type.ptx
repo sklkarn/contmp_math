@@ -19,29 +19,44 @@
         <li>
           <p>
             <alert>Finite Set: </alert> A set which is either empty or has finite number of elements is called a finite set. 
-            For example: <m>A = \{ 1,2,3\}</m> or <m>B= \{ \} </m> or <m>B = \emptyset </m>. In set <m>A</m> there are 4 elements. 
+            For example:  
           </p>
           <p>
-            Set of days of week.
+            W = Set of days of week. 
+          </p>
+          <p>
+              Or
+             <me>A = \{ 1,2,3\}</me> 
+            or 
+            <me>B= \{ \} </me>  or <me>B = \emptyset </me>. 
+            In set <m>A</m> there are 4 elements. 
           </p>
           <p>
             <remark>
-              Number of elements in a finite set is called the order or the cardinality of the set. 
-              It is denoted by <m>n(A) </m> or, <m> o(A)</m>.
-              For examples: <ol marker ="a">
-                <li>
-                  <m>A = \{1, 2, 3 \}</m> has n(A) = 3.
-                </li>
-                <li>
-                  <m>B = \{1, 2, \phi, \{3\} \}</m> has n(B) = 4.
-                </li>
-                <li>
-                  <m>C = \{ \{1, 2\}, 3 \}</m> has n(C) = 2.
-                </li>
-              </ol>
-            </remark>
+              <p>
+                Number of elements in a finite set is called the order or the cardinality of the set. 
+                It is denoted by <m>n(A) </m>  or, <m> o(A)</m>.  For examples: 
+               <ol marker ="a">
+                  <li>
+                   <p>
+                    <m>A = \{1, 2, 3 \}</m> has n(A) = 3.
+                   </p>
+                  </li>
+                  <li>
+                   <p>
+                    <m>B = \{1, 2, \phi, \{3\} \}</m> has n(B) = 4.
+                   </p>
+                  </li>
+                  <li>
+                   <p>
+                    <m>C = \{ \{1, 2\}, 3 \}</m> has n(C) = 2.
+                   </p>
+                  </li>
+                </ol>
+             </p>
+             </remark>
           </p>
-        </li>
+          </li>
         <li>
           <p>
             <term>Infinite Set: </term> A set having infinite number of elements is called an infinite set. 
@@ -56,7 +71,10 @@
           <p>
             <term>Equal Sets: </term> The sets <m>A</m> and <m>B</m> are said to be identical or equal if they have exactly the same elements. 
             In other words, <m>A</m> and <m>B</m> are equal if every element of <m>A</m> is an element of <m>B</m> 
-            and conversely every element of <m>B</m> is also an element of <m>A.</m> Equal sets are denoted as <me>A = b</me>. 
+            and conversely every element of <m>B</m> is also an element of <m>A.</m> 
+          </p>
+          <p>
+            Equal sets are denoted as <me>A = B</me>. 
             If the sets are not equal we write them as <me>A \neq B</me>.
           </p>
           <p>
@@ -112,13 +130,12 @@ because each set can be written as <m>\{ F, O, L, W\}.</m>   Also <m>n(A) = n(B)
     </li>
   </ol>
 </p>
-        </li>
-      
-      </ol>
-    
-    </p>
+   </li>
+       </ol>
+      </p>
+   
    
   </introduction>
-   
+ 
 
 </section>

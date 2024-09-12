@@ -7,15 +7,23 @@
     Sets are represented by three different forms: 
     <ol>
       <li>
-        Description or Statement Form: <m> 2, 4, 6, 8, \ldots = \{\text{even numbers} \}</m> by using statement.
-        <m> a, e, i, o, u = \{\text{vowels of english alphabet} \}</m>.
+       <p>
+        Description or Statement Form: <me> 2, 4, 6, 8, \ldots = \{\text{even numbers} \}</me> by using statement.
+        <me> a, e, i, o, u = \{\text{vowels of english alphabet} \}</me>
+       </p>
        </li>
       <li>
-       Roster or Tabular Form: <m>\{ a,e,i,o,u\}</m> by using commas.
+      <p>
+        Roster or Tabular Form: <me>\{ a, \, e,\, i,\,o, \,u \}</me> by using commas.
+      </p>
       </li>
       <li>
-        Set-Builder or Rule Form: <m>\{ x: x \text{ is a vowel} \}</m> or  <m>\{ x| x \text{ is a vowel} \}</m>  by using its property.
-       
+        <p>
+          Set-Builder or Rule Form: <me>\{ x: x \text{ is a vowel} \}</me> 
+          or  
+          <me>\{ x| x \text{ is a vowel} \}</me>  
+          by using its property.
+        </p>
       </li>
     </ol> 
   </p>
