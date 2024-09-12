@@ -125,7 +125,7 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-prime" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Prime Numbers</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-div_rule" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Divisibility rules</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-divisors" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Finding Divisors:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-fam_pair" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Famous Pairs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-fam_pair" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Famous prime Pairs</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-numb_example.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Example</span></a></div></li>
@@ -321,18 +321,43 @@ A =\{ \}.
 </li>
 <li id="sec-set_type-2-1-1-2">
 <div class="para" id="sec-set_type-2-1-1-2-1">
-<em class="alert">Finite Set:</em> A set which is either empty or has finite number of elements is called a finite set. For example: <span class="process-math">\(A = \{ 1,2,3\}\)</span> or <span class="process-math">\(B= \{ \} \)</span> or <span class="process-math">\(B = \emptyset \text{.}\)</span> In set <span class="process-math">\(A\)</span> there are 4 elements.</div>
-<div class="para" id="sec-set_type-2-1-1-2-2">Set of days of week.</div>
-<div class="para" id="sec-set_type-2-1-1-2-3"><article class="remark remark-like" id="sec-set_type-2-1-1-2-3-1"><h3 class="heading">
+<em class="alert">Finite Set:</em> A set which is either empty or has finite number of elements is called a finite set. For example:</div>
+<div class="para" id="sec-set_type-2-1-1-2-2">W = Set of days of week.</div>
+<div class="para logical" id="sec-set_type-2-1-1-2-3">
+<div class="para">Or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A = \{ 1,2,3\}
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B= \{ \} 
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B = \emptyset \text{.}
+\end{equation*}
+</div>
+<div class="para">In set <span class="process-math">\(A\)</span> there are 4 elements.</div>
+</div>
+<div class="para" id="sec-set_type-2-1-1-2-4"><article class="remark remark-like" id="sec-set_type-2-1-1-2-4-1"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span>
-</h3>Number of elements in a finite set is called the order or the cardinality of the set. It is denoted by <span class="process-math">\(n(A) \)</span> or, <span class="process-math">\(o(A)\text{.}\)</span> For examples: <ol class="lower-alpha">
-<li id="sec-set_type-2-1-1-2-3-1-3-1"><div class="para" id="p-derived-sec-set_type-2-1-1-2-3-1-3-1">
+</h3>
+<div class="para logical" id="sec-set_type-2-1-1-2-4-1-1">
+<div class="para">Number of elements in a finite set is called the order or the cardinality of the set. It is denoted by <span class="process-math">\(n(A) \)</span>  or, <span class="process-math">\(o(A)\text{.}\)</span>  For examples:</div>
+<ol class="lower-alpha">
+<li id="sec-set_type-2-1-1-2-4-1-1-3-1"><div class="para" id="sec-set_type-2-1-1-2-4-1-1-3-1-1">
 <span class="process-math">\(A = \{1, 2, 3 \}\)</span> has n(A) = 3.</div></li>
-<li id="sec-set_type-2-1-1-2-3-1-3-2"><div class="para" id="p-derived-sec-set_type-2-1-1-2-3-1-3-2">
+<li id="sec-set_type-2-1-1-2-4-1-1-3-2"><div class="para" id="sec-set_type-2-1-1-2-4-1-1-3-2-1">
 <span class="process-math">\(B = \{1, 2, \phi, \{3\} \}\)</span> has n(B) = 4.</div></li>
-<li id="sec-set_type-2-1-1-2-3-1-3-3"><div class="para" id="p-derived-sec-set_type-2-1-1-2-3-1-3-3">
+<li id="sec-set_type-2-1-1-2-4-1-1-3-3"><div class="para" id="sec-set_type-2-1-1-2-4-1-1-3-3-1">
 <span class="process-math">\(C = \{ \{1, 2\}, 3 \}\)</span> has n(C) = 2.</div></li>
-</ol></article></div>
+</ol>
+</div></article></div>
 </li>
 <li id="sec-set_type-2-1-1-3">
 <div class="para" id="sec-set_type-2-1-1-3-1">
@@ -341,12 +366,14 @@ A =\{ \}.
 </div>
 </li>
 <li id="sec-set_type-2-1-1-4">
-<div class="para logical" id="sec-set_type-2-1-1-4-1">
-<div class="para">
-<dfn class="terminology">Equal Sets:</dfn> The sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are said to be identical or equal if they have exactly the same elements. In other words, <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are equal if every element of <span class="process-math">\(A\)</span> is an element of <span class="process-math">\(B\)</span> and conversely every element of <span class="process-math">\(B\)</span> is also an element of <span class="process-math">\(A.\)</span> Equal sets are denoted as</div>
+<div class="para" id="sec-set_type-2-1-1-4-1">
+<dfn class="terminology">Equal Sets:</dfn> The sets <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are said to be identical or equal if they have exactly the same elements. In other words, <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are equal if every element of <span class="process-math">\(A\)</span> is an element of <span class="process-math">\(B\)</span> and conversely every element of <span class="process-math">\(B\)</span> is also an element of <span class="process-math">\(A.\)</span>
+</div>
+<div class="para logical" id="sec-set_type-2-1-1-4-2">
+<div class="para">Equal sets are denoted as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A = b\text{.}
+A = B\text{.}
 \end{equation*}
 </div>
 <div class="para">If the sets are not equal we write them as</div>
@@ -356,7 +383,7 @@ A \neq B\text{.}
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="sec-set_type-2-1-1-4-2">
+<div class="para logical" id="sec-set_type-2-1-1-4-3">
 <div class="para">Examples:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -370,7 +397,7 @@ B =\{ cat, dog, monkey\}
 </div>
 <div class="para">Here <span class="process-math">\(A = B.\)</span> <span class="process-math">\(X = \{ 1, 2, 3, 4\}\)</span> and <span class="process-math">\(Y = \{ 2, 2, 1, 3, 4 \}\)</span> are equal sets. Since <span class="process-math">\(Y\)</span> has repeated element <span class="process-math">\(2\)</span> and set contains only distinct elements.</div>
 </div>
-<div class="para" id="sec-set_type-2-1-1-4-3">If  <span class="process-math">\(X=\{ 0\} \)</span> and <span class="process-math">\(Y=\{ \phi\}\text{,}\)</span> then <span class="process-math">\(X \neq Y,\)</span> they are two different sets.</div>
+<div class="para" id="sec-set_type-2-1-1-4-4">If  <span class="process-math">\(X=\{ 0\} \)</span> and <span class="process-math">\(Y=\{ \phi\}\text{,}\)</span> then <span class="process-math">\(X \neq Y,\)</span> they are two different sets.</div>
 </li>
 <li id="sec-set_type-2-1-1-5">
 <div class="para" id="sec-set_type-2-1-1-5-1">
