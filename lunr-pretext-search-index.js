@@ -313,16 +313,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "Subset",
-  "body": " Subset   If all elements of set are present in set , then set is called a subset of set . It is denoted by In other words, is contained in  [Set is a subset of if every elements of is also an element of ]   Example: If  then  is a subset of        Every set is a subset of itself, .    Null set is a subset of every set,      If and then         Superset  When set is a subset of , then set is called the superset of Symbolically, .  Example:  , then and but     Power Set  The collection of all subsets of a set is called the power set of It is denoted by In , every element is a set. i.e., Since, the empty set and the set itself are subsets of and therefore elements of Thus, the power set of a given set is always non-empty.  Example: If then   The number of elements in power set is given by where is a cardinal number of the set.  or, the number of subset, where is a cardinal number of the set.    Universal Set   A set that contains all the elements of the related sets is called an universal set. It is denoted by . The set is a subset of universal set .   Note: If Universal set contains Sets A, B and C, then these sets are also called subsets of Universal set. Denoted by: , , and .  Example: Let the sets  and , then their Universal set is defined as     Intervals, for  In mathematics, an interval can be defined as a set of real numbers that contains all real numbers lying within any two specific numbers of the set . Interval Notation uses inequalities to represent a subset of real numbers by those numbers that bound them.  Consider an interval signified as , which means a set of numbers lying between 0 and 5 (excluding 0 but including 5) represent the value of x.   Types of Interval Notation: There are different types of notations of intervals that are classified based on the endpoints of intervals. They are: Open intervals, Closed intervals, Half-open intervals, Degenerate intervals, and Bounded and Unbounded intervals.      Open Interval: (a, b) or,         Closed Interval: [a, b] or,         Closed - open Interval:  including but excluding [a, b) or,         Open - closed Interval:  excluding but including (a, b] or,            Disjoint Sets:  Two sets are said to be disjoint if they do not have any common element. If and are two disjoint sets, then . There is a difference between the intersection of two sets and the difference of two sets. In the case of disjoint, only intersection will be considered. The empty set is disjoint with itself. i.e.,    Difference between Joint and Disjoint Sets: If and , then . Hence, X and Y are joint sets.  But, if and , then . Therefore, X and Y are disjoint sets.   "
+  "body": " Subset   If all elements of set are present in set , then set is called a subset of set . It is denoted by In other words, is contained in  [Set is a subset of if every elements of is also an element of ]   Example: If  then  is a subset of     Note: Subset has less elements or equal to the set. For example: If then Also, if then       Every set is a subset of itself, .    Null set is a subset of every set,      If and then        Proper subset Proper subset has less elements than the set. For example: If then     Superset  When set is a subset of , then set is called the superset of Symbolically, .  Example:  , then and but    Superset: If Set has more elements or equal to set then we can say  Proper Superset: If Set has more elements than set then we can say  or, But,     Power Set  The collection of all subsets of a set is called the power set of It is denoted by In , every element is a set. i.e., Since, the empty set and the set itself are subsets of and therefore elements of Thus, the power set of a given set is always non-empty.  Example: If then   The number of elements in power set is given by where is a cardinal number of the set.  or, the number of subset, where is a cardinal number of the set.    Universal Set   A set that contains all the elements of the related sets is called an universal set. It is denoted by . The set is a subset of universal set .   Note: If Universal set contains Sets A, B and C, then these sets are also called subsets of Universal set. Denoted by: , , and .  Example: Let the sets  and , then their Universal set is defined as     Intervals, for  In mathematics, an interval can be defined as a set of real numbers that contains all real numbers lying within any two specific numbers of the set . Interval Notation uses inequalities to represent a subset of real numbers by those numbers that bound them.  Consider an interval signified as , which means a set of numbers lying between 0 and 5 (excluding 0 but including 5) represent the value of x.   Types of Interval Notation: There are different types of notations of intervals that are classified based on the endpoints of intervals. They are: Open intervals, Closed intervals, Half-open intervals, Degenerate intervals, and Bounded and Unbounded intervals.      Open Interval: (a, b) or,         Closed Interval: [a, b] or,         Closed - open Interval:  including but excluding [a, b) or,         Open - closed Interval:  excluding but including (a, b] or,            Disjoint Sets:  Two sets are said to be disjoint if they do not have any common element. If and are two disjoint sets, then . There is a difference between the intersection of two sets and the difference of two sets. In the case of disjoint, only intersection will be considered. The empty set is disjoint with itself. i.e.,    Difference between Joint and Disjoint Sets: If and , then . Hence, X and Y are joint sets.  But, if and , then . Therefore, X and Y are disjoint sets.   "
 },
 {
-  "id": "sec-subset-2-3-1",
+  "id": "sec-subset-2-3",
   "level": "2",
-  "url": "sec-subset.html#sec-subset-2-3-1",
+  "url": "sec-subset.html#sec-subset-2-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Note: "
+},
+{
+  "id": "sec-subset-2-4",
+  "level": "2",
+  "url": "sec-subset.html#sec-subset-2-4",
   "type": "Remark",
   "number": "2.5.8",
   "title": "",
-  "body": "   Every set is a subset of itself, .    Null set is a subset of every set,      If and then     "
+  "body": "    Every set is a subset of itself, .    Null set is a subset of every set,      If and then      "
+},
+{
+  "id": "sec-subset-2-5",
+  "level": "2",
+  "url": "sec-subset.html#sec-subset-2-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Proper subset "
+},
+{
+  "id": "subsec-superset-4",
+  "level": "2",
+  "url": "sec-subset.html#subsec-superset-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Superset: Proper Superset: "
 },
 {
   "id": "subsec-universal-2-2",

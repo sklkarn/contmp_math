@@ -306,7 +306,7 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-subset"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">Subset</span>
 </h2>
-<section class="introduction" id="sec-subset-2"><div class="para" id="sec-subset-2-1">If all elements of set <span class="process-math">\(A\)</span> are present in set <span class="process-math">\(B\text{,}\)</span> then set <span class="process-math">\(A\)</span> is called a subset of set <span class="process-math">\(B\text{.}\)</span> It is denoted by <span class="process-math">\(A \subset B.\)</span> In other words, <span class="process-math">\(A\)</span> is contained in <span class="process-math">\(B.\)</span> <em class="emphasis">[Set <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(B\)</span> if every elements of <span class="process-math">\(A\)</span> is also an element of <span class="process-math">\(B.\)</span>]</em>
+<section class="introduction" id="sec-subset-2"><div class="para" id="sec-subset-2-1">If all elements of set <span class="process-math">\(A\)</span> are present in set <span class="process-math">\(B\text{,}\)</span> then set <span class="process-math">\(A\)</span> is called a subset of set <span class="process-math">\(B\text{.}\)</span> It is denoted by <span class="process-math">\(A \subseteq B.\)</span> In other words, <span class="process-math">\(A\)</span> is contained in <span class="process-math">\(B.\)</span> <em class="emphasis">[Set <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(B\)</span> if every elements of <span class="process-math">\(A\)</span> is also an element of <span class="process-math">\(B.\)</span>]</em>
 </div> <div class="para logical" id="sec-subset-2-2">
 <div class="para">Example: If</div>
 <div class="displaymath process-math">
@@ -322,30 +322,106 @@ B = \{1, 2, 3 4, 5, 6, 7, 8\}
 <div class="para">then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A \subset B
+A \subseteq B
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\{4,5,8\} \subset \{2, 3, 4, 5, 6, 7, 8, 9 \}
+\{4,5,8\} \subseteq \{2, 3, 4, 5, 6, 7, 8, 9 \}
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-subset-2-3"><article class="remark remark-like" id="sec-subset-2-3-1"><h3 class="heading">
+</div> <div class="para logical" id="sec-subset-2-3">
+<div class="para">
+<dfn class="terminology">Note:</dfn> Subset has less elements or equal to the set. For example: If</div>
+<div class="displaymath process-math" id="sec-subset-2-3-2">
+\begin{align*}
+X \amp =\{2,5,7\}\\
+\text{ and } Y  \amp =\{2,3,5,7\}
+\end{align*}
+</div>
+<div class="para">then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X \subseteq Y
+\end{equation*}
+</div>
+<div class="para">Also, if</div>
+<div class="displaymath process-math" id="sec-subset-2-3-4">
+\begin{align*}
+X \amp =\{2,5,7\}\\
+\text{ and } Y  \amp =\{2,5,7\}
+\end{align*}
+</div>
+<div class="para">then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X \subseteq Y
+\end{equation*}
+</div>
+</div> <article class="remark remark-like" id="sec-subset-2-4"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
 </h3>
-<ol class="lower-alpha">
-<li id="sec-subset-2-3-1-1-1"><div class="para" id="sec-subset-2-3-1-1-1-1">Every set is a subset of itself, <span class="process-math">\(A \subset A\text{.}\)</span>
+<div class="para logical" id="sec-subset-2-4-1"><ol class="lower-alpha">
+<li id="sec-subset-2-4-1-1-1"><div class="para" id="sec-subset-2-4-1-1-1-1">Every set is a subset of itself, <span class="process-math">\(A \subset A\text{.}\)</span>
 </div></li>
-<li id="sec-subset-2-3-1-1-2"><div class="para" id="sec-subset-2-3-1-1-2-1">Null set is a subset of every set, <span class="process-math">\(\phi \subset A, \)</span> <span class="process-math">\(\phi \subset B.\)</span>
+<li id="sec-subset-2-4-1-1-2"><div class="para" id="sec-subset-2-4-1-1-2-1">Null set is a subset of every set, <span class="process-math">\(\phi \subset A, \)</span> <span class="process-math">\(\phi \subset B.\)</span>
 </div></li>
-<li id="sec-subset-2-3-1-1-3"><div class="para" id="sec-subset-2-3-1-1-3-1">If <span class="process-math">\(A \subset B\)</span> and <span class="process-math">\(B \subset A\)</span> then <span class="process-math">\(A = B.\)</span>
+<li id="sec-subset-2-4-1-1-3"><div class="para" id="sec-subset-2-4-1-1-3-1">If <span class="process-math">\(A \subset B\)</span> and <span class="process-math">\(B \subset A\)</span> then <span class="process-math">\(A = B.\)</span>
 </div></li>
-</ol></article></div></section><section class="subsection" id="subsec-superset"><h3 class="heading hide-type">
+</ol></div></article> <div class="para logical" id="sec-subset-2-5">
+<div class="para">
+<dfn class="terminology">Proper subset</dfn> Proper subset has less elements than the set. For example: If</div>
+<div class="displaymath process-math" id="sec-subset-2-5-2">
+\begin{align*}
+X \amp =\{2,5,7\}\\
+\text{ and } Y  \amp =\{2,3,5,7\}
+\end{align*}
+</div>
+<div class="para">then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X \subset Y
+\end{equation*}
+</div>
+</div></section><section class="subsection" id="subsec-superset"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="space"> </span><span class="title">Superset</span>
 </h3>
-<div class="para" id="subsec-superset-2">When set <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(B\text{,}\)</span> then set <span class="process-math">\(B\)</span> is called the superset of <span class="process-math">\(A.\)</span> Symbolically, <span class="process-math">\(B \supset A\text{.}\)</span>
+<div class="para" id="subsec-superset-2">When set <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(B\text{,}\)</span> then set <span class="process-math">\(B\)</span> is called the superset of <span class="process-math">\(A.\)</span> Symbolically, <span class="process-math">\(B \supseteq A\text{.}\)</span>
 </div>
-<div class="para" id="subsec-superset-3">Example: <span class="process-math">\(A = \{vowels\},\)</span> <span class="process-math">\(B = \{alphabet\}\text{,}\)</span> then <span class="process-math">\(A \subset B,\)</span> and <span class="process-math">\(B \supset A,\)</span> but <span class="process-math">\(B \not \subset A.\)</span>
+<div class="para" id="subsec-superset-3">Example: <span class="process-math">\(A = \{vowels\},\)</span> <span class="process-math">\(B = \{alphabet\}\text{,}\)</span> then <span class="process-math">\(A \subseteq B,\)</span> and <span class="process-math">\(B \supseteq A,\)</span> but <span class="process-math">\(B \not \subset A.\)</span>
+</div>
+<div class="para logical" id="subsec-superset-4">
+<div class="para">
+<dfn class="terminology">Superset:</dfn> If Set <span class="process-math">\(B\)</span> has more elements or equal to set <span class="process-math">\(A\)</span> then we can say</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B \supseteq A
+\end{equation*}
+</div>
+<div class="para">
+<dfn class="terminology">Proper Superset:</dfn> If Set <span class="process-math">\(B\)</span> has more elements than set <span class="process-math">\(A\)</span> then we can say</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B \supset A
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{4, 14, 24\} \supseteq \{4, 14, 24\}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{4, 14, 24, 34, 44\} \supseteq \{4, 14, 24\}
+\end{equation*}
+</div>
+<div class="para">But,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{4, 14, 24, 34, 44\} \supset \{4, 14\}
+\end{equation*}
+</div>
 </div></section><section class="subsection" id="subsec-power_set"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="space"> </span><span class="title">Power Set</span>
 </h3>
