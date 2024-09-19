@@ -5,21 +5,41 @@
 <introduction>
   <p>
     If all elements of set <m>A</m> are present in set <m>B</m>, then set <m>A</m> is called a subset of set <m>B</m>.
-    It is denoted by <m>A \subset B.</m> In other words, <m>A</m> is contained in <m>B.</m> 
+    It is denoted by <m>A \subseteq B.</m> In other words, <m>A</m> is contained in <m>B.</m> 
     <em>[Set <m>A</m> is a subset of <m>B</m> if every elements of <m>A</m> is also an element of <m>B.</m>]</em>
   </p>
   <p>
     Example: If <me>A = \{3, 5, 7\},</me> 
     <me>B = \{1, 2, 3 4, 5, 6, 7, 8\}</me> then 
     <me>
-      A \subset B
+      A \subseteq B
     </me>
-    <notation><usage><m>A \subset B</m></usage><description><m>A</m> is a subset of <m>B</m></description></notation>
-    <me>\{4,5,8\} \subset \{2, 3, 4, 5, 6, 7, 8, 9 \}</me>
+    <notation><usage><m>A \subseteq B</m></usage><description><m>A</m> is a subset of <m>B</m></description></notation>
+    <me>\{4,5,8\} \subseteq \{2, 3, 4, 5, 6, 7, 8, 9 \}</me>
   </p>
-
- <p>
+<p>
+  <term>Note:</term> Subset has less elements or equal to the set. For example: If
+  <md>
+    <mrow>X \amp =\{2,5,7\}</mrow>
+    <mrow>\text{ and } Y  \amp =\{2,3,5,7\}</mrow>
+  </md>
+  then 
+  <me>
+    X \subseteq Y
+  </me>
+  Also, if 
+  <md>
+    <mrow>X \amp =\{2,5,7\}</mrow>
+    <mrow>\text{ and } Y  \amp =\{2,5,7\}</mrow>
+  </md>
+  then 
+  <me>
+    X \subseteq Y
+  </me>
+</p>
+ 
  <remark>
+  <p>
   <ol marker ="a">
     <li>
       <p>
@@ -37,9 +57,21 @@
       </p>
     </li>
   </ol>
+</p>
 </remark>
- </p>
 
+<p>
+  <term>Proper subset</term>
+  Proper subset has less elements than the set. For example: If
+  <md>
+    <mrow>X \amp =\{2,5,7\}</mrow>
+    <mrow>\text{ and } Y  \amp =\{2,3,5,7\}</mrow>
+  </md>
+  then 
+  <me>
+    X \subset Y
+  </me>
+  </p>
  
 </introduction>
 
@@ -47,12 +79,32 @@
   <title>Superset</title>
   <p>
     When set <m>A</m> is a subset of <m>B</m>, then set <m>B</m> is called the superset of <m>A.</m> Symbolically,
-    <m>B \supset A</m>. 
+    <m>B \supseteq A</m>. 
   </p>
   <p>
-    Example: <m>A = \{vowels\},</m> <m>B = \{alphabet\}</m>, then <m>A \subset B,</m> and <m>B \supset A,</m> but <m>B \not \subset A.</m>
+    Example: <m>A = \{vowels\},</m> <m>B = \{alphabet\}</m>, then <m>A \subseteq B,</m> and <m>B \supseteq A,</m> but <m>B \not \subset A.</m>
   </p>
-  
+  <p>
+   <term> Superset:</term> If Set <m>B</m> has more elements or equal to set <m>A</m> then we can say 
+   <me>
+    B \supseteq A
+   </me>
+   <term> Proper Superset:</term> If Set <m>B</m> has more elements than set <m>A</m> then we can say 
+   <me>
+    B \supset A
+   </me>
+   <me>
+    \{4, 14, 24\} \supseteq \{4, 14, 24\}
+   </me>
+   or, 
+   <me>
+    \{4, 14, 24, 34, 44\} \supseteq \{4, 14, 24\}
+   </me>
+   But,
+   <me>
+    \{4, 14, 24, 34, 44\} \supset \{4, 14\}
+   </me>
+  </p>
 </subsection>
 
 
