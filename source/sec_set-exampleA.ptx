@@ -238,12 +238,12 @@
       <ol marker ="i">
         <li>
           <p>
-            <m>A = \{ x: x \text{ is an integer,} -\frac{1}{2} \lt x \lt \frac{9}{2} \}</m>
+            <m>A = \{ x: x \text{ is an integer, } -\frac{1}{2} \lt x \lt \frac{9}{2} \}</m>
           </p>
         </li>
         <li>
           <p>
-            <m>B = \{ x: x \text{ is an odd natural number} \}</m>
+            <m>B = \{ x: x \text{ is an odd natural number } \}</m>
           </p>
         </li>
         <li>
@@ -253,7 +253,7 @@
         </li>
         <li>
           <p>
-            <m>D = \{ x: x \text{ is a letter in the word 'LOYAL'} \}</m>
+            <m>D = \{ x: x \text{ is a letter in the word 'LOYAL' } \}</m>
             <answer>
               <p>
                 <m>D = \{ L, O, Y, A\}</m>
@@ -297,7 +297,7 @@
          </row>
          <row>
           <cell>(c) <m>\{A, C, E, L, H, I, M, S, T\}</m></cell>
-          <cell>(iii) <m>\{ x : x \in \mathbb N \text{ and } x \leq 9\}</m></cell>
+          <cell>(iii) <m>\{ x : x \in \mathbb N \text{ and } x \text{ is odd number less than} 9\}</m></cell>
          </row>
          <row>
           <cell>(d) <m>\{M, A, T, H, E, I, C, S\}</m></cell>

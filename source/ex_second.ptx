@@ -81,9 +81,9 @@
             Are the following pair of sets equal? Give reasons.
               <ol marker="a">
                 <li> <me>A = \{2, 3\} </me>, 
-                  <me>B = \{x : x \text{ is solution of} x^2+5x+6=0.\}</me></li>
-                <li> <me>A = \{x : x \text{ is a letter in the word FOLLOW} \} </me>, 
-                  <me>B = \{y : y \text{ is a letter in the word WOLF} \} </me></li>
+                  <me>B = \{x : x \text{ is solution of } x^2+5x+6=0.\}</me></li>
+                <li> <me>A = \{x : x \text{ is a letter in the word FOLLOW } \} </me>, 
+                  <me>B = \{y : y \text{ is a letter in the word WOLF } \} </me></li>
                 </ol>
             </p>
           </statement>
