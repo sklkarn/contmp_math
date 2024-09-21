@@ -61,6 +61,40 @@
   </example>
 
   
+  <example>
+    <statement>
+      <p>
+        Imagine you are getting dressed up for the day, and you have the following choices: 
+         </p>
+         <p>
+          Choice A: Selecting a shirt (5 options). 
+              </p>
+              <p>
+                Choice B: Choosing pants (3 options). 
+                  </p>
+                  <p>
+                    Choice C: Picking shoes (2 options). 
+                            </p>
+                            <p>
+                              How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?
+                            </p>
+    </statement>
+    <solution>
+      <p>
+        Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options. 
+         </p>
+         <p>
+          Total Outfits = <m>5 \times 3 \times 2. </m>
+               </p>
+               <p>
+                Total Outfits = 30 different outfits. 
+                      </p>
+                      <p>
+                        You can create 30 different outfits by applying the product rule.
+                      </p>
+    </solution>
+   </example>
+
 <example>
   <statement>
     <p>

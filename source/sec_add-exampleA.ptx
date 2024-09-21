@@ -20,46 +20,11 @@
     </solution>
   </example>
 
-
-  <example>
-    <statement>
-      <p>
-        Imagine you are getting dressed for the day, and you have the following choices: 
-         </p>
-         <p>
-          Choice A: Selecting a shirt (5 options). 
-              </p>
-              <p>
-                Choice B: Choosing pants (3 options). 
-                  </p>
-                  <p>
-                    Choice C: Picking shoes (2 options). 
-                            </p>
-                            <p>
-                              How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?
-                            </p>
-    </statement>
-    <solution>
-      <p>
-        Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options. 
-         </p>
-         <p>
-          Total Outfits = 5 + 3 + 2. 
-               </p>
-               <p>
-                Total Outfits = 10 different outfits. 
-                      </p>
-                      <p>
-                        You can create 10 different outfits by applying the Addition Rule.
-                      </p>
-    </solution>
-   </example>
-
    <example>
     <statement>
       <p>
         In a standard deck of playing cards, you have four suits (hearts, diamonds, clubs, spades), 
-        and each suit has 13 ranks (Ace through King). How many ways can you draw a card that is either a heart or a King? 
+        and each suit has 13 ranks (Ace through King). How many ways can you draw a card that is either a Heart or a King? 
          </p>
           </statement>
          <solution>
