@@ -47,7 +47,7 @@
       <ol>
         <li>
           <p>
-            <alert>Random Experiment:</alert>  An experiment whose outcome is known.
+            <alert>Random Experiment:</alert>  An experiment whose all outcomes are known but cannot be predicted.
             e.g., tossing a coin, throwing a dice, drawing a card, etc.
           </p>
         </li>
