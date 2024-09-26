@@ -168,6 +168,111 @@
   </solution>
 </example>
 
+<example>
+  <statement>
+    <p>
+      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course: 
+        </p>
+        <p>
+          Choice A: Appetizer (3 options). 
+                  </p>
+                  <p>
+                    Choice B: Main Course (5 options). 
+                         </p>
+                         <p>
+                          Choice C: Dessert (2 options). 
+                                    </p>
+                                    <p>
+                                      You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). 
+                                      How many different meal combinations can you create?
+                                    </p>
+  </statement>
+  <solution>
+    <p>
+      Total Meal Combinations = Number of Appetizer Options <m>\times</m> Number of Main Course Options <m>\times</m> Number of Dessert Options. 
+     </p>
+     <p>
+      Total Meal Combinations = 3 (appetizers) <m>\times</m> 5 (main courses) <m>\times</m> 2 (desserts). 
+        </p>
+        <p>
+          Total Meal Combinations = 30 different meal combinations. 
+            </p>
+            <p>
+              So, there are 30 different meal combinations you can create by applying the Product Rule.
+            </p>
+  </solution>
+ </example>
+
+
+<example>
+  <statement>
+    <p>
+      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course: 
+        </p>
+        <p>
+          Choice A: Appetizer (3 options). 
+                  </p>
+                  <p>
+                    Choice B: Main Course (5 options). 
+                         </p>
+                         <p>
+                          Choice C: Dessert (2 options). 
+                                    </p>
+                                    <p>
+                                      You want to create a two-course meal by selecting one option from each category (appetizer, main course, dessert). 
+                                      How many different meal combinations can you create?
+                                    </p>
+  </statement>
+  <solution>
+    <p>
+      Total Meal Combinations = (Number of Appetizer Options <m>\times</m> Number of Main Course Options) + 
+      (Number of Appetizer Options <m>\times</m> Number of Dessert Options) + (Number of Dessert Options <m>\times</m> Number of Main Course Options). 
+     </p>
+     <p>
+      Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31. 
+        </p>
+        <p>
+          Total Meal Combinations = 31 different meal combinations. 
+            </p>
+      </solution>
+ </example>
+
+ <example>
+  <statement>
+    <p>
+      Suppose you are planning a vacation with multiple destinations, and you have the following choices 
+      for your itinerary: 
+       </p>
+       <p>
+        Choice X: Visit a beach town (2 options). 
+          </p>
+          <p>
+            Choice Y: Explore a historic city (3 options). 
+               </p>
+               <p>
+                Choice Z: Go on a nature hike (4 options). 
+                 </p>
+                 <p>
+                  You want to plan a vacation itinerary that includes visiting one destination from each category 
+                  (beach town, historic city, nature hike). How many different vacation itineraries can you create?
+                 </p>
+  </statement>
+  <solution>
+    <p>
+      Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options. 
+       </p>
+       <p>
+        Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes). 
+          </p>
+          <p>
+            Total Itinerary Options = 9 different vacation itineraries. 
+                </p>
+                <p>
+                  There are 9 different vacation itineraries you can plan using the Addition Rule.
+                </p>
+  </solution>
+ </example>
+
 
 <example>
   <statement>
