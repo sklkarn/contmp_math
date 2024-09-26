@@ -144,11 +144,12 @@ window.MathJax = {
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-subset.html#subsec-superset" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Superset</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-subset.html#subsec-power_set" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Power Set</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-subset.html#subsec-powerset" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Power Set</span></a></div></li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-subset.html#subsec-universal" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Universal Set</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-subset.html#subsubsec-intervals" class="internal"><span class="codenumber">2.5.3.1</span> <span class="title">Intervals, for <span class="process-math">\(a, b \in \mathbb R\)</span></span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-subset.html#subsec-universal" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Universal Set</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-subset.html#subsubsec-intervals" class="internal"><span class="codenumber">2.5.4.1</span> <span class="title">Intervals, for <span class="process-math">\(a, b \in \mathbb R\)</span></span></a></div></li></ul>
 </li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-subset.html#subsec-" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Disjoint Sets:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-subset.html#subsec-" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Disjoint Sets:</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondb.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise B</span></a></div></li>
@@ -306,8 +307,7 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-subset"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">Subset</span>
 </h2>
-<section class="introduction" id="sec-subset-2"><div class="para" id="sec-subset-2-1">If all elements of set <span class="process-math">\(A\)</span> are present in set <span class="process-math">\(B\text{,}\)</span> then set <span class="process-math">\(A\)</span> is called a subset of set <span class="process-math">\(B\text{.}\)</span> It is denoted by <span class="process-math">\(A \subseteq B.\)</span> In other words, <span class="process-math">\(A\)</span> is contained in <span class="process-math">\(B.\)</span> <em class="emphasis">[Set <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(B\)</span> if every elements of <span class="process-math">\(A\)</span> is also an element of <span class="process-math">\(B.\)</span>]</em>
-</div> <div class="para logical" id="sec-subset-2-2">
+<section class="introduction" id="sec-subset-2"><div class="para" id="sec-subset-2-1">If all elements of set <span class="process-math">\(A\)</span> are present in set <span class="process-math">\(B\text{,}\)</span> then set <span class="process-math">\(A\)</span> is called a subset of set <span class="process-math">\(B\text{.}\)</span> It is denoted by <span class="process-math">\(A \subseteq B.\)</span> In other words, <em class="emphasis">Set <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(B\)</span> if every elements of <span class="process-math">\(A\)</span> is also an element of <span class="process-math">\(B \)</span></em> even if the set <span class="process-math">\(B\)</span> has same elements as set <span class="process-math">\(A\)</span> has.</div> <div class="para logical" id="sec-subset-2-2">
 <div class="para">Example: If</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -332,8 +332,8 @@ A \subseteq B
 </div>
 </div> <div class="para logical" id="sec-subset-2-3">
 <div class="para">
-<dfn class="terminology">Note:</dfn> Subset has less elements or equal to the set. For example: If</div>
-<div class="displaymath process-math" id="sec-subset-2-3-2">
+<dfn class="terminology">Note:</dfn> Subset <span class="process-math">\(A\)</span> has less elements or equal to the set <span class="process-math">\(B\text{.}\)</span> For example: If</div>
+<div class="displaymath process-math" id="sec-subset-2-3-4">
 \begin{align*}
 X \amp =\{2,5,7\}\\
 \text{ and } Y  \amp =\{2,3,5,7\}
@@ -346,7 +346,7 @@ X \subseteq Y
 \end{equation*}
 </div>
 <div class="para">Also, if</div>
-<div class="displaymath process-math" id="sec-subset-2-3-4">
+<div class="displaymath process-math" id="sec-subset-2-3-6">
 \begin{align*}
 X \amp =\{2,5,7\}\\
 \text{ and } Y  \amp =\{2,5,7\}
@@ -358,17 +358,8 @@ X \amp =\{2,5,7\}\\
 X \subseteq Y
 \end{equation*}
 </div>
-</div> <article class="remark remark-like" id="sec-subset-2-4"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
-</h3>
-<div class="para logical" id="sec-subset-2-4-1"><ol class="lower-alpha">
-<li id="sec-subset-2-4-1-1-1"><div class="para" id="sec-subset-2-4-1-1-1-1">Every set is a subset of itself, <span class="process-math">\(A \subset A\text{.}\)</span>
-</div></li>
-<li id="sec-subset-2-4-1-1-2"><div class="para" id="sec-subset-2-4-1-1-2-1">Null set is a subset of every set, <span class="process-math">\(\phi \subset A, \)</span> <span class="process-math">\(\phi \subset B.\)</span>
-</div></li>
-<li id="sec-subset-2-4-1-1-3"><div class="para" id="sec-subset-2-4-1-1-3-1">If <span class="process-math">\(A \subset B\)</span> and <span class="process-math">\(B \subset A\)</span> then <span class="process-math">\(A = B.\)</span>
-</div></li>
-</ol></div></article> <div class="para logical" id="sec-subset-2-5">
+</div> <div class="para" id="sec-subset-2-4">If <span class="process-math">\(A\)</span> is a <dfn class="terminology">subset</dfn> of <span class="process-math">\(B\)</span> then <span class="process-math">\(A \subseteq B,\)</span> and <span class="process-math">\(A=B.\)</span>
+</div> <div class="para logical" id="sec-subset-2-5">
 <div class="para">
 <dfn class="terminology">Proper subset</dfn> Proper subset has less elements than the set. For example: If</div>
 <div class="displaymath process-math" id="sec-subset-2-5-2">
@@ -383,7 +374,18 @@ X \amp =\{2,5,7\}\\
 X \subset Y
 \end{equation*}
 </div>
-</div></section><section class="subsection" id="subsec-superset"><h3 class="heading hide-type">
+</div> <div class="para" id="sec-subset-2-6">If <span class="process-math">\(A\)</span> is a <dfn class="terminology">proper subset</dfn> of <span class="process-math">\(B\)</span> then <span class="process-math">\(A \subseteq B,\)</span> and <span class="process-math">\(A \neq B.\)</span>
+</div> <article class="remark remark-like" id="sec-subset-2-7"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-subset-2-7-1"><ol class="lower-alpha">
+<li id="sec-subset-2-7-1-1-1"><div class="para" id="sec-subset-2-7-1-1-1-1">Every set is a subset of itself, <span class="process-math">\(A \subset A\text{.}\)</span>
+</div></li>
+<li id="sec-subset-2-7-1-1-2"><div class="para" id="sec-subset-2-7-1-1-2-1">Null set is a subset of every set, <span class="process-math">\(\phi \subset A, \)</span> <span class="process-math">\(\phi \subset B.\)</span>
+</div></li>
+<li id="sec-subset-2-7-1-1-3"><div class="para" id="sec-subset-2-7-1-1-3-1">If <span class="process-math">\(A \subset B\)</span> and <span class="process-math">\(B \subset A\)</span> then <span class="process-math">\(A = B.\)</span>
+</div></li>
+</ol></div></article></section><section class="subsection" id="subsec-superset"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="space"> </span><span class="title">Superset</span>
 </h3>
 <div class="para" id="subsec-superset-2">When set <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(B\text{,}\)</span> then set <span class="process-math">\(B\)</span> is called the superset of <span class="process-math">\(A.\)</span> Symbolically, <span class="process-math">\(B \supseteq A\text{.}\)</span>
@@ -441,10 +443,13 @@ P(A) = \{s : s \subseteq A\}.
 P(A) = \{\phi, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\} \}.
 \end{equation*}
 </div>
-</div>
-<div class="para" id="subsec-power_set-4">The number of elements in power set is given by <span class="process-math">\(|P(A)| = 2^n, \)</span> where <span class="process-math">\(n = 0, 1, 2, \ldots \)</span> is a cardinal number of the set.</div>
-<div class="para" id="subsec-power_set-5">or, the  number of subset, <span class="process-math">\(|P(A)| = 2^n, \)</span> where <span class="process-math">\(n = 0, 1, 2, \ldots \)</span> is a cardinal number of the set.</div></section><section class="subsection" id="subsec-universal"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="space"> </span><span class="title">Universal Set</span>
+</div></section><section class="subsection" id="subsec-powerset"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="space"> </span><span class="title">Power Set</span>
+</h3>
+<div class="para" id="subsec-powerset-2">The possible number of subsets of any set is called a power set.</div>
+<div class="para" id="subsec-powerset-3">The  number of subsets of a set with <span class="process-math">\(n\)</span> number of elements is given by <span class="process-math">\(|P(A)| = 2^n, \)</span> where <span class="process-math">\(n = 0, 1, 2, \ldots \)</span> is a cardinal number of the set.</div>
+<div class="para" id="subsec-powerset-4">However, the  number of proper subsets of a set with <span class="process-math">\(n\)</span> number of elements is given by <span class="process-math">\(|P(A)| = 2^n-1, \)</span> where <span class="process-math">\(n = 0, 1, 2, \ldots \)</span> is a cardinal number of that power set.</div></section><section class="subsection" id="subsec-universal"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="space"> </span><span class="title">Universal Set</span>
 </h3>
 <section class="introduction" id="subsec-universal-2"><div class="para" id="subsec-universal-2-1">A set that contains all the elements of the related sets is called an universal set. It is denoted by <span class="process-math">\(\bigcup \text{.}\)</span> The set <span class="process-math">\(A = \{March, April\} \)</span> is a subset of universal set <span class="process-math">\(\bigcup =\{ \text{ Months of a year} \} \text{.}\)</span>
 </div> <div class="para" id="subsec-universal-2-2">
@@ -457,7 +462,7 @@ P(A) = \{\phi, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\} \}
 \end{equation*}
 </div>
 </div></section><section class="subsubsection" id="subsubsec-intervals"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.5.3.1</span><span class="space"> </span><span class="title">Intervals, for <span class="process-math">\(a, b \in \mathbb R\)</span></span>
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.5.4.1</span><span class="space"> </span><span class="title">Intervals, for <span class="process-math">\(a, b \in \mathbb R\)</span></span>
 </h4>
 <div class="para" id="subsubsec-intervals-2">In mathematics, an interval can be defined as a set of real numbers that contains all real numbers lying within any two specific numbers of the set <span class="process-math">\(\mathbb R\text{.}\)</span> <dfn class="terminology">Interval Notation</dfn> uses inequalities to represent a subset of real numbers by those numbers that bound them.</div>
 <div class="para" id="subsubsec-intervals-3">Consider an interval signified as <span class="process-math">\(0 \lt x \leq 5\text{,}\)</span> which means a set of numbers lying between 0 and 5 (excluding 0 but including 5) represent the value of x.</div>
@@ -489,7 +494,7 @@ P(A) = \{\phi, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\} \}
 <div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="generated/latex-image/set_intrvld.svg" role="img" class="contained"></div>
 </li>
 </ol></div></section></section><section class="subsection" id="subsec-"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="space"> </span><span class="title">Disjoint Sets:</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="space"> </span><span class="title">Disjoint Sets:</span>
 </h3>
 <div class="para" id="subsec--2">Two sets are said to be disjoint if they do not have any common element. If <span class="process-math">\(A=\{1, 2, 3\}\)</span> and <span class="process-math">\(B = \{4, 5, 6\}\)</span> are two disjoint sets, then <span class="process-math">\(A \cap B = \phi \text{.}\)</span> <article class="remark remark-like" id="subsec--2-4"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.5.9</span><span class="period">.</span>
