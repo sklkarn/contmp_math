@@ -229,6 +229,88 @@
     </p>
   </subsection>
   
+<subsection xml:id="subsec-add_prod">
+  <title>Rules of Probability</title>
+  <p> 
+    <ol marker="I">
+      <li>
+        <p>
+          <term>Additional Rule:</term> It is used to calculate the probability that either (or both) of two events will happen. 
+         <em> Notation:</em> <m>P(A \cup B), P(A + B), P(A \text{ or } B), P( \text{ either} A \text { or} B), P(\text{ at least } 1).</m>
+          <ol marker="i">
+            <li>
+              <p>
+                For <term>mutually exclusive</term> (disjoint) events (A) and (B) [events that cannot happen at the same time], 
+                the probability of (A) or (B) occuring is 
+                <men xml:id="prob_eqn1"> P(A \cup B) = P(A) + P(B).</men>
+               For example: tossing a <em>coin once</em> .
+              </p>
+              <p>
+                The probability of getting a Head or a Tail on tossing a coin. 
+                <me>
+                  P(H \cup T) = P(H) + P(T) = \frac{1}{2}+\frac{1}{2} = 1.
+                </me>
+                 </p>
+            </li>
+            <li>
+              <p>
+                For <term>non-mutually exclusive</term> events (A) and (B) [events that can happen at the same time], 
+                the probability of (A) or (B) occuring is 
+                <men xml:id="prob_eqn2"> P(A \cup B) = P(A) + P(B)-P(A\cap B).</men>
+                For example: drawing a <em>king of heart</em> from a deck of card.
+              </p>
+              <p>
+                The probability of getting a King of Heart on drawing a card from a deck of cards. 
+                <me>
+                  P(K \cup H) = P(K) + P(H) -P(K\cap H) = \frac{4}{52}+\frac{13}{52}-\frac{1}{52} = \frac{16}{52}.
+                </me>
+                 </p>
+            </li>
+          </ol>
+         </p>
+      </li>
+      <li>
+        <p>
+          <term>Multiplication Rule:</term> It allows us to calculate the joint probability of multiple events 
+          occurring together using known probabilities of those events individually. 
+          <ol marker="i">
+            <li>
+              <p>
+                For <term>Independent events</term> (A) and (B) [events where occurance of one does not affect the other], 
+                the probability of (A) and (B) occuring is 
+                <men xml:id="prob_eqn3"> P(A \cap B) = P(A) \times P(B).</men>
+                For example: tossing a <em>coin twice</em>. Tossing a coin first time does not affect what it comes in the second time.
+                In independent events, total number of outcomes do not reduce. 
+              </p>
+              <p>
+                The probability of getting a 1 and then a 3 on rolling a fair dice. 
+                <me>
+                  P(1 \cap 3) = P(1) \times P(3) = \frac{1}{6}\times \frac{1}{6} = \frac{1}{36}.
+                </me>
+                 </p>
+            </li>
+            <li>
+              <p>
+                For <term>dependent events</term> (A) and (B) [events where occurance of one does affect the other], 
+                the probability of (A) and (B) occuring is 
+                <men xml:id="prob_eqn4"> P(A \cap B) = P(A) \times P(B|A).</men>
+                Where <m>P(B|A)</m> is a conditional probability of (B) given (A). 
+                For example: Drawing I card affect the drawing of the II card without replacement. 
+                In dependent events, total number of outcomes reduce. 
+              </p>
+              <p>
+                The probability of getting a King and then a Queen on drawing cards from a deck without replacement. 
+                <me>
+                  P(K \cap Q) = P(K) \times P(Q/A) = \frac{1}{52}\times \frac{1}{51} = \frac{1}{2652}.
+                </me>
+                 </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol> 
+  </p>
 
+</subsection>
 
 </section>

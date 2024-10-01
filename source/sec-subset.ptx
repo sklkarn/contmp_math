@@ -5,21 +5,25 @@
 <introduction>
   <p>
     If all elements of set <m>A</m> are present in set <m>B</m>, then set <m>A</m> is called a subset of set <m>B</m>.
-    It is denoted by <m>A \subseteq B.</m> In other words, 
+    It is denoted by <m>A \subseteq B</m> or <m>A \subset B.</m>In other words, 
     <em> Set <m>A</m> is a subset of <m>B</m> if every elements of <m>A</m> is also an element of <m>B </m></em> 
     even if the set <m>B</m> has same elements as set <m>A</m> has.
   </p>
   <p>
     Example: If <me>A = \{3, 5, 7\},</me> 
-    <me>B = \{1, 2, 3 4, 5, 6, 7, 8\}</me> then 
+    <me>B = \{1, 2, 3, 4, 5, 6, 7, 8\}</me> then 
     <me>
       A \subseteq B
+    </me>
+    or 
+    <me>
+      A \subset B
     </me>
     <notation><usage><m>A \subseteq B</m></usage><description><m>A</m> is a subset of <m>B</m></description></notation>
     <me>\{4,5,8\} \subseteq \{2, 3, 4, 5, 6, 7, 8, 9 \}</me>
   </p>
 <p>
-  <term>Note:</term> Subset <m>A</m> has less elements or equal to the set <m>B</m>. For example: If
+  <term>Note:</term> Subset <m>A</m> has less number of elements or equal to the set <m>B</m>. For example: If
   <md>
     <mrow>X \amp =\{2,5,7\}</mrow>
     <mrow>\text{ and } Y  \amp =\{2,3,5,7\}</mrow>
@@ -27,6 +31,10 @@
   then 
   <me>
     X \subseteq Y
+  </me>
+  or 
+  <me>
+    X \subset Y
   </me>
   Also, if 
   <md>
@@ -143,11 +151,11 @@
     The possible number of subsets of any set is called a power set. 
    </p>
   <p>
-    The  number of subsets of a set with <m>n</m> number of elements is given by <m>|P(A)| = 2^n, </m> 
+    The  <em>number of subsets</em> of a set with <m>n</m> number of elements is given by <m>|P(A)| = 2^n, </m> 
     where <m>n = 0, 1, 2, \ldots </m> is a cardinal number of the set.
   </p>
   <p>
-    However, the  number of proper subsets of a set with <m>n</m> number of elements is given by <m>|P(A)| = 2^n-1, </m> 
+    However, the  <em>number of proper subsets</em> of a set with <m>n</m> number of elements is given by <m>|P(A)| = 2^n-1, </m> 
     where <m>n = 0, 1, 2, \ldots </m> is a cardinal number of that power set.
   </p>
 </subsection>
