@@ -88,6 +88,527 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#ch-numb-2-1-1 { counter-set: ch-numb-2-1-1 0; }
+#ch-numb-2-1-1 > li::marker { content: ""counter(ch-numb-2-1-1,decimal)"."; }
+#ch-numb-2-1-1 > li { counter-increment: ch-numb-2-1-1; }
+#sec-num_sys-2-2-1 { counter-set: sec-num_sys-2-2-1 0; }
+#sec-num_sys-2-2-1 > li::marker { content: ""counter(sec-num_sys-2-2-1,decimal)"."; }
+#sec-num_sys-2-2-1 > li { counter-increment: sec-num_sys-2-2-1; }
+#subsec-div_rule-2-1 { counter-set: subsec-div_rule-2-1 0; }
+#subsec-div_rule-2-1 > li::marker { content: ""counter(subsec-div_rule-2-1,lower-roman)""; }
+#subsec-div_rule-2-1 > li { counter-increment: subsec-div_rule-2-1; }
+#subsec-fam_pair-2-3 { counter-set: subsec-fam_pair-2-3 0; }
+#subsec-fam_pair-2-3 > li::marker { content: ""counter(subsec-fam_pair-2-3,lower-roman)""; }
+#subsec-fam_pair-2-3 > li { counter-increment: subsec-fam_pair-2-3; }
+#sec-numb_example-3-1-1-1 { counter-set: sec-numb_example-3-1-1-1 0; }
+#sec-numb_example-3-1-1-1 > li::marker { content: ""counter(sec-numb_example-3-1-1-1,lower-roman)""; }
+#sec-numb_example-3-1-1-1 > li { counter-increment: sec-numb_example-3-1-1-1; }
+#sec-numb_example-3-2-1-1 { counter-set: sec-numb_example-3-2-1-1 0; }
+#sec-numb_example-3-2-1-1 > li::marker { content: ""counter(sec-numb_example-3-2-1-1,lower-roman)""; }
+#sec-numb_example-3-2-1-1 > li { counter-increment: sec-numb_example-3-2-1-1; }
+#sec-numb_example-5-1-1-1 { counter-set: sec-numb_example-5-1-1-1 0; }
+#sec-numb_example-5-1-1-1 > li::marker { content: ""counter(sec-numb_example-5-1-1-1,lower-roman)""; }
+#sec-numb_example-5-1-1-1 > li { counter-increment: sec-numb_example-5-1-1-1; }
+#sec-numb_example-5-2-1-1 { counter-set: sec-numb_example-5-2-1-1 0; }
+#sec-numb_example-5-2-1-1 > li::marker { content: ""counter(sec-numb_example-5-2-1-1,lower-roman)""; }
+#sec-numb_example-5-2-1-1 > li { counter-increment: sec-numb_example-5-2-1-1; }
+#ex_first-4-2 { counter-set: ex_first-4-2 0; }
+#ex_first-4-2 > li::marker { content: ""counter(ex_first-4-2,lower-roman)""; }
+#ex_first-4-2 > li { counter-increment: ex_first-4-2; }
+#ex_first-5-2-1 { counter-set: ex_first-5-2-1 0; }
+#ex_first-5-2-1 > li::marker { content: ""counter(ex_first-5-2-1,lower-roman)""; }
+#ex_first-5-2-1 > li { counter-increment: ex_first-5-2-1; }
+#ex_first-6-1-1-1 { counter-set: ex_first-6-1-1-1 0; }
+#ex_first-6-1-1-1 > li::marker { content: ""counter(ex_first-6-1-1-1,lower-alpha)""; }
+#ex_first-6-1-1-1 > li { counter-increment: ex_first-6-1-1-1; }
+#ex_first-7-1-1-1 { counter-set: ex_first-7-1-1-1 0; }
+#ex_first-7-1-1-1 > li::marker { content: ""counter(ex_first-7-1-1-1,lower-alpha)""; }
+#ex_first-7-1-1-1 > li { counter-increment: ex_first-7-1-1-1; }
+#ch-set-2-3-2 { counter-set: ch-set-2-3-2 0; }
+#ch-set-2-3-2 > li::marker { content: ""counter(ch-set-2-3-2,lower-alpha)""; }
+#ch-set-2-3-2 > li { counter-increment: ch-set-2-3-2; }
+#sec-set_descrp-2-1 { counter-set: sec-set_descrp-2-1 0; }
+#sec-set_descrp-2-1 > li::marker { content: ""counter(sec-set_descrp-2-1,decimal)"."; }
+#sec-set_descrp-2-1 > li { counter-increment: sec-set_descrp-2-1; }
+#sec_set-exampleA-2-1-2-1 { counter-set: sec_set-exampleA-2-1-2-1 0; }
+#sec_set-exampleA-2-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-2-1-2-1,lower-roman)""; }
+#sec_set-exampleA-2-1-2-1 > li { counter-increment: sec_set-exampleA-2-1-2-1; }
+#sec_set-exampleA-3-1-2-1 { counter-set: sec_set-exampleA-3-1-2-1 0; }
+#sec_set-exampleA-3-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-3-1-2-1,lower-roman)""; }
+#sec_set-exampleA-3-1-2-1 > li { counter-increment: sec_set-exampleA-3-1-2-1; }
+#sec_set-exampleA-4-1-2-1 { counter-set: sec_set-exampleA-4-1-2-1 0; }
+#sec_set-exampleA-4-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-4-1-2-1,lower-roman)""; }
+#sec_set-exampleA-4-1-2-1 > li { counter-increment: sec_set-exampleA-4-1-2-1; }
+#sec_set-exampleA-5-1-2-1 { counter-set: sec_set-exampleA-5-1-2-1 0; }
+#sec_set-exampleA-5-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-5-1-2-1,lower-roman)""; }
+#sec_set-exampleA-5-1-2-1 > li { counter-increment: sec_set-exampleA-5-1-2-1; }
+#sec_set-exampleA-6-1-2-1 { counter-set: sec_set-exampleA-6-1-2-1 0; }
+#sec_set-exampleA-6-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-6-1-2-1,lower-roman)""; }
+#sec_set-exampleA-6-1-2-1 > li { counter-increment: sec_set-exampleA-6-1-2-1; }
+#sec-set_type-2-1-1 { counter-set: sec-set_type-2-1-1 0; }
+#sec-set_type-2-1-1 > li::marker { content: ""counter(sec-set_type-2-1-1,decimal)"."; }
+#sec-set_type-2-1-1 > li { counter-increment: sec-set_type-2-1-1; }
+#sec-set_type-2-1-1-2-4-1-1-3 { counter-set: sec-set_type-2-1-1-2-4-1-1-3 0; }
+#sec-set_type-2-1-1-2-4-1-1-3 > li::marker { content: ""counter(sec-set_type-2-1-1-2-4-1-1-3,lower-alpha)""; }
+#sec-set_type-2-1-1-2-4-1-1-3 > li { counter-increment: sec-set_type-2-1-1-2-4-1-1-3; }
+#sec-set_type-2-1-1-5-5-2 { counter-set: sec-set_type-2-1-1-5-5-2 0; }
+#sec-set_type-2-1-1-5-5-2 > li::marker { content: ""counter(sec-set_type-2-1-1-5-5-2,lower-roman)""; }
+#sec-set_type-2-1-1-5-5-2 > li { counter-increment: sec-set_type-2-1-1-5-5-2; }
+#ex_second-2-1-1-1 { counter-set: ex_second-2-1-1-1 0; }
+#ex_second-2-1-1-1 > li::marker { content: ""counter(ex_second-2-1-1-1,lower-alpha)""; }
+#ex_second-2-1-1-1 > li { counter-increment: ex_second-2-1-1-1; }
+#ex_second-3-1-1-1 { counter-set: ex_second-3-1-1-1 0; }
+#ex_second-3-1-1-1 > li::marker { content: ""counter(ex_second-3-1-1-1,lower-alpha)""; }
+#ex_second-3-1-1-1 > li { counter-increment: ex_second-3-1-1-1; }
+#ex_second-4-1-1-1 { counter-set: ex_second-4-1-1-1 0; }
+#ex_second-4-1-1-1 > li::marker { content: ""counter(ex_second-4-1-1-1,lower-alpha)""; }
+#ex_second-4-1-1-1 > li { counter-increment: ex_second-4-1-1-1; }
+#ex_second-5-1-1-2 { counter-set: ex_second-5-1-1-2 0; }
+#ex_second-5-1-1-2 > li::marker { content: ""counter(ex_second-5-1-1-2,lower-alpha)""; }
+#ex_second-5-1-1-2 > li { counter-increment: ex_second-5-1-1-2; }
+#ex_second-6-1-1-1 { counter-set: ex_second-6-1-1-1 0; }
+#ex_second-6-1-1-1 > li::marker { content: ""counter(ex_second-6-1-1-1,lower-alpha)""; }
+#ex_second-6-1-1-1 > li { counter-increment: ex_second-6-1-1-1; }
+#sec-subset-2-7-1-1 { counter-set: sec-subset-2-7-1-1 0; }
+#sec-subset-2-7-1-1 > li::marker { content: ""counter(sec-subset-2-7-1-1,lower-alpha)""; }
+#sec-subset-2-7-1-1 > li { counter-increment: sec-subset-2-7-1-1; }
+#subsubsec-intervals-5-1 { counter-set: subsubsec-intervals-5-1 0; }
+#subsubsec-intervals-5-1 > li::marker { content: ""counter(subsubsec-intervals-5-1,lower-roman)""; }
+#subsubsec-intervals-5-1 > li { counter-increment: subsubsec-intervals-5-1; }
+#ex_secondb-2-1-1-3 { counter-set: ex_secondb-2-1-1-3 0; }
+#ex_secondb-2-1-1-3 > li::marker { content: ""counter(ex_secondb-2-1-1-3,lower-alpha)""; }
+#ex_secondb-2-1-1-3 > li { counter-increment: ex_secondb-2-1-1-3; }
+#ex_secondb-3-1-2-1 { counter-set: ex_secondb-3-1-2-1 0; }
+#ex_secondb-3-1-2-1 > li::marker { content: ""counter(ex_secondb-3-1-2-1,lower-alpha)""; }
+#ex_secondb-3-1-2-1 > li { counter-increment: ex_secondb-3-1-2-1; }
+#ex_secondb-4-1-1-2 { counter-set: ex_secondb-4-1-1-2 0; }
+#ex_secondb-4-1-1-2 > li::marker { content: ""counter(ex_secondb-4-1-1-2,lower-alpha)""; }
+#ex_secondb-4-1-1-2 > li { counter-increment: ex_secondb-4-1-1-2; }
+#ex_secondb-5-1-1-1 { counter-set: ex_secondb-5-1-1-1 0; }
+#ex_secondb-5-1-1-1 > li::marker { content: ""counter(ex_secondb-5-1-1-1,lower-alpha)""; }
+#ex_secondb-5-1-1-1 > li { counter-increment: ex_secondb-5-1-1-1; }
+#ex_secondb-7-1-2-1 { counter-set: ex_secondb-7-1-2-1 0; }
+#ex_secondb-7-1-2-1 > li::marker { content: ""counter(ex_secondb-7-1-2-1,lower-alpha)""; }
+#ex_secondb-7-1-2-1 > li { counter-increment: ex_secondb-7-1-2-1; }
+#ex_secondb-8-1-2-1 { counter-set: ex_secondb-8-1-2-1 0; }
+#ex_secondb-8-1-2-1 > li::marker { content: ""counter(ex_secondb-8-1-2-1,lower-alpha)""; }
+#ex_secondb-8-1-2-1 > li { counter-increment: ex_secondb-8-1-2-1; }
+#ex_secondb-9-1-2 { counter-set: ex_secondb-9-1-2 0; }
+#ex_secondb-9-1-2 > li::marker { content: ""counter(ex_secondb-9-1-2,lower-roman)""; }
+#ex_secondb-9-1-2 > li { counter-increment: ex_secondb-9-1-2; }
+#ex_secondb-10-1-2-1 { counter-set: ex_secondb-10-1-2-1 0; }
+#ex_secondb-10-1-2-1 > li::marker { content: ""counter(ex_secondb-10-1-2-1,lower-roman)""; }
+#ex_secondb-10-1-2-1 > li { counter-increment: ex_secondb-10-1-2-1; }
+#sec-set_op-2-1-1 { counter-set: sec-set_op-2-1-1 0; }
+#sec-set_op-2-1-1 > li::marker { content: ""counter(sec-set_op-2-1-1,upper-roman)""; }
+#sec-set_op-2-1-1 > li { counter-increment: sec-set_op-2-1-1; }
+#sec-set_op-2-1-1-1-4-1 { counter-set: sec-set_op-2-1-1-1-4-1 0; }
+#sec-set_op-2-1-1-1-4-1 > li::marker { content: ""counter(sec-set_op-2-1-1-1-4-1,lower-roman)""; }
+#sec-set_op-2-1-1-1-4-1 > li { counter-increment: sec-set_op-2-1-1-1-4-1; }
+#sec-set_op-2-1-1-2-3-2 { counter-set: sec-set_op-2-1-1-2-3-2 0; }
+#sec-set_op-2-1-1-2-3-2 > li::marker { content: ""counter(sec-set_op-2-1-1-2-3-2,lower-roman)""; }
+#sec-set_op-2-1-1-2-3-2 > li { counter-increment: sec-set_op-2-1-1-2-3-2; }
+#set_exmB1Q1-1-1-1 { counter-set: set_exmB1Q1-1-1-1 0; }
+#set_exmB1Q1-1-1-1 > li::marker { content: ""counter(set_exmB1Q1-1-1-1,decimal)"."; }
+#set_exmB1Q1-1-1-1 > li { counter-increment: set_exmB1Q1-1-1-1; }
+#sec_set-exampleB-5-1-1-5 { counter-set: sec_set-exampleB-5-1-1-5 0; }
+#sec_set-exampleB-5-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-5-1-1-5,lower-alpha)""; }
+#sec_set-exampleB-5-1-1-5 > li { counter-increment: sec_set-exampleB-5-1-1-5; }
+#sec_set-exampleB-7-1-1-5 { counter-set: sec_set-exampleB-7-1-1-5 0; }
+#sec_set-exampleB-7-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-7-1-1-5,lower-roman)""; }
+#sec_set-exampleB-7-1-1-5 > li { counter-increment: sec_set-exampleB-7-1-1-5; }
+#sec_set-exampleB-8-1-1-5 { counter-set: sec_set-exampleB-8-1-1-5 0; }
+#sec_set-exampleB-8-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-8-1-1-5,lower-roman)""; }
+#sec_set-exampleB-8-1-1-5 > li { counter-increment: sec_set-exampleB-8-1-1-5; }
+#sec_set-exampleB-9-1-1-1 { counter-set: sec_set-exampleB-9-1-1-1 0; }
+#sec_set-exampleB-9-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-9-1-1-1,lower-roman)""; }
+#sec_set-exampleB-9-1-1-1 > li { counter-increment: sec_set-exampleB-9-1-1-1; }
+#sec_set-exampleB-10-1-1-5 { counter-set: sec_set-exampleB-10-1-1-5 0; }
+#sec_set-exampleB-10-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-10-1-1-5,lower-roman)""; }
+#sec_set-exampleB-10-1-1-5 > li { counter-increment: sec_set-exampleB-10-1-1-5; }
+#sec_set-exampleB-11-1-1-3 { counter-set: sec_set-exampleB-11-1-1-3 0; }
+#sec_set-exampleB-11-1-1-3 > li::marker { content: ""counter(sec_set-exampleB-11-1-1-3,lower-roman)""; }
+#sec_set-exampleB-11-1-1-3 > li { counter-increment: sec_set-exampleB-11-1-1-3; }
+#sec_set-exampleB-12-1-1-1 { counter-set: sec_set-exampleB-12-1-1-1 0; }
+#sec_set-exampleB-12-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-12-1-1-1,lower-roman)""; }
+#sec_set-exampleB-12-1-1-1 > li { counter-increment: sec_set-exampleB-12-1-1-1; }
+#sec_set-exampleB-14-1-1-1 { counter-set: sec_set-exampleB-14-1-1-1 0; }
+#sec_set-exampleB-14-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-14-1-1-1,lower-roman)""; }
+#sec_set-exampleB-14-1-1-1 > li { counter-increment: sec_set-exampleB-14-1-1-1; }
+#ex_secondc-2-1-1-5 { counter-set: ex_secondc-2-1-1-5 0; }
+#ex_secondc-2-1-1-5 > li::marker { content: ""counter(ex_secondc-2-1-1-5,lower-roman)""; }
+#ex_secondc-2-1-1-5 > li { counter-increment: ex_secondc-2-1-1-5; }
+#ex_secondc-3-1-1-2 { counter-set: ex_secondc-3-1-1-2 0; }
+#ex_secondc-3-1-1-2 > li::marker { content: ""counter(ex_secondc-3-1-1-2,lower-roman)""; }
+#ex_secondc-3-1-1-2 > li { counter-increment: ex_secondc-3-1-1-2; }
+#ex_secondc-4-1-1-1 { counter-set: ex_secondc-4-1-1-1 0; }
+#ex_secondc-4-1-1-1 > li::marker { content: ""counter(ex_secondc-4-1-1-1,lower-roman)""; }
+#ex_secondc-4-1-1-1 > li { counter-increment: ex_secondc-4-1-1-1; }
+#ex_secondc-5-1-1-4 { counter-set: ex_secondc-5-1-1-4 0; }
+#ex_secondc-5-1-1-4 > li::marker { content: ""counter(ex_secondc-5-1-1-4,lower-roman)""; }
+#ex_secondc-5-1-1-4 > li { counter-increment: ex_secondc-5-1-1-4; }
+#ex_secondc-6-1-1-1 { counter-set: ex_secondc-6-1-1-1 0; }
+#ex_secondc-6-1-1-1 > li::marker { content: ""counter(ex_secondc-6-1-1-1,lower-roman)""; }
+#ex_secondc-6-1-1-1 > li { counter-increment: ex_secondc-6-1-1-1; }
+#sec_prod-exampleB-2-1-1-1 { counter-set: sec_prod-exampleB-2-1-1-1 0; }
+#sec_prod-exampleB-2-1-1-1 > li::marker { content: ""counter(sec_prod-exampleB-2-1-1-1,lower-roman)""; }
+#sec_prod-exampleB-2-1-1-1 > li { counter-increment: sec_prod-exampleB-2-1-1-1; }
+#sec_prod-exampleB-2-2-1-1 { counter-set: sec_prod-exampleB-2-2-1-1 0; }
+#sec_prod-exampleB-2-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-2-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-2-2-1-1 > li { counter-increment: sec_prod-exampleB-2-2-1-1; }
+#sec_prod-exampleB-6-1-1-1 { counter-set: sec_prod-exampleB-6-1-1-1 0; }
+#sec_prod-exampleB-6-1-1-1 > li::marker { content: ""counter(sec_prod-exampleB-6-1-1-1,lower-roman)""; }
+#sec_prod-exampleB-6-1-1-1 > li { counter-increment: sec_prod-exampleB-6-1-1-1; }
+#sec_prod-exampleB-6-2-1-1 { counter-set: sec_prod-exampleB-6-2-1-1 0; }
+#sec_prod-exampleB-6-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-6-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-6-2-1-1 > li { counter-increment: sec_prod-exampleB-6-2-1-1; }
+#sec_prod-exampleB-17-1-1-2 { counter-set: sec_prod-exampleB-17-1-1-2 0; }
+#sec_prod-exampleB-17-1-1-2 > li::marker { content: ""counter(sec_prod-exampleB-17-1-1-2,lower-roman)""; }
+#sec_prod-exampleB-17-1-1-2 > li { counter-increment: sec_prod-exampleB-17-1-1-2; }
+#sec_prod-exampleB-17-2-1-1 { counter-set: sec_prod-exampleB-17-2-1-1 0; }
+#sec_prod-exampleB-17-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-17-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-17-2-1-1 > li { counter-increment: sec_prod-exampleB-17-2-1-1; }
+#ex_third-7-1-1-2 { counter-set: ex_third-7-1-1-2 0; }
+#ex_third-7-1-1-2 > li::marker { content: ""counter(ex_third-7-1-1-2,lower-roman)""; }
+#ex_third-7-1-1-2 > li { counter-increment: ex_third-7-1-1-2; }
+#sec-fact-5-1-1-1 { counter-set: sec-fact-5-1-1-1 0; }
+#sec-fact-5-1-1-1 > li::marker { content: ""counter(sec-fact-5-1-1-1,lower-roman)""; }
+#sec-fact-5-1-1-1 > li { counter-increment: sec-fact-5-1-1-1; }
+#sec-fact-5-2-1-1 { counter-set: sec-fact-5-2-1-1 0; }
+#sec-fact-5-2-1-1 > li::marker { content: ""counter(sec-fact-5-2-1-1,lower-roman)""; }
+#sec-fact-5-2-1-1 > li { counter-increment: sec-fact-5-2-1-1; }
+#sec-perm_example-11-1-1-1 { counter-set: sec-perm_example-11-1-1-1 0; }
+#sec-perm_example-11-1-1-1 > li::marker { content: ""counter(sec-perm_example-11-1-1-1,lower-roman)""; }
+#sec-perm_example-11-1-1-1 > li { counter-increment: sec-perm_example-11-1-1-1; }
+#sec-perm_example-11-2-2-1 { counter-set: sec-perm_example-11-2-2-1 0; }
+#sec-perm_example-11-2-2-1 > li::marker { content: ""counter(sec-perm_example-11-2-2-1,lower-roman)""; }
+#sec-perm_example-11-2-2-1 > li { counter-increment: sec-perm_example-11-2-2-1; }
+#sec-perm_example-19-1-1-1 { counter-set: sec-perm_example-19-1-1-1 0; }
+#sec-perm_example-19-1-1-1 > li::marker { content: ""counter(sec-perm_example-19-1-1-1,lower-roman)""; }
+#sec-perm_example-19-1-1-1 > li { counter-increment: sec-perm_example-19-1-1-1; }
+#sec-perm_example-19-2-1 { counter-set: sec-perm_example-19-2-1 0; }
+#sec-perm_example-19-2-1 > li::marker { content: ""counter(sec-perm_example-19-2-1,lower-roman)""; }
+#sec-perm_example-19-2-1 > li { counter-increment: sec-perm_example-19-2-1; }
+#sec-perm_example-20-1-1-1 { counter-set: sec-perm_example-20-1-1-1 0; }
+#sec-perm_example-20-1-1-1 > li::marker { content: ""counter(sec-perm_example-20-1-1-1,lower-roman)""; }
+#sec-perm_example-20-1-1-1 > li { counter-increment: sec-perm_example-20-1-1-1; }
+#sec-perm_example-20-1-1-1-2-1-1 { counter-set: sec-perm_example-20-1-1-1-2-1-1 0; }
+#sec-perm_example-20-1-1-1-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-1-1-1-2-1-1,lower-alpha)""; }
+#sec-perm_example-20-1-1-1-2-1-1 > li { counter-increment: sec-perm_example-20-1-1-1-2-1-1; }
+#sec-perm_example-20-2-1-1 { counter-set: sec-perm_example-20-2-1-1 0; }
+#sec-perm_example-20-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-2-1-1,lower-roman)""; }
+#sec-perm_example-20-2-1-1 > li { counter-increment: sec-perm_example-20-2-1-1; }
+#sec-perm_example-20-2-1-1-2-1-1 { counter-set: sec-perm_example-20-2-1-1-2-1-1 0; }
+#sec-perm_example-20-2-1-1-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-2-1-1-2-1-1,lower-alpha)""; }
+#sec-perm_example-20-2-1-1-2-1-1 > li { counter-increment: sec-perm_example-20-2-1-1-2-1-1; }
+#sec-perm_example-21-1-2-1 { counter-set: sec-perm_example-21-1-2-1 0; }
+#sec-perm_example-21-1-2-1 > li::marker { content: ""counter(sec-perm_example-21-1-2-1,lower-roman)""; }
+#sec-perm_example-21-1-2-1 > li { counter-increment: sec-perm_example-21-1-2-1; }
+#sec-perm_example-21-2-2-1 { counter-set: sec-perm_example-21-2-2-1 0; }
+#sec-perm_example-21-2-2-1 > li::marker { content: ""counter(sec-perm_example-21-2-2-1,lower-roman)""; }
+#sec-perm_example-21-2-2-1 > li { counter-increment: sec-perm_example-21-2-2-1; }
+#sec-perm_example-25-1-1-1 { counter-set: sec-perm_example-25-1-1-1 0; }
+#sec-perm_example-25-1-1-1 > li::marker { content: ""counter(sec-perm_example-25-1-1-1,lower-roman)""; }
+#sec-perm_example-25-1-1-1 > li { counter-increment: sec-perm_example-25-1-1-1; }
+#sec-perm_example-25-2-1-3 { counter-set: sec-perm_example-25-2-1-3 0; }
+#sec-perm_example-25-2-1-3 > li::marker { content: ""counter(sec-perm_example-25-2-1-3,lower-roman)""; }
+#sec-perm_example-25-2-1-3 > li { counter-increment: sec-perm_example-25-2-1-3; }
+#ex_fourthA-7-2-1 { counter-set: ex_fourthA-7-2-1 0; }
+#ex_fourthA-7-2-1 > li::marker { content: ""counter(ex_fourthA-7-2-1,lower-roman)""; }
+#ex_fourthA-7-2-1 > li { counter-increment: ex_fourthA-7-2-1; }
+#ex_fourthA-8-1-2 { counter-set: ex_fourthA-8-1-2 0; }
+#ex_fourthA-8-1-2 > li::marker { content: ""counter(ex_fourthA-8-1-2,lower-roman)""; }
+#ex_fourthA-8-1-2 > li { counter-increment: ex_fourthA-8-1-2; }
+#ex_fourthA-10-2-1-1 { counter-set: ex_fourthA-10-2-1-1 0; }
+#ex_fourthA-10-2-1-1 > li::marker { content: ""counter(ex_fourthA-10-2-1-1,lower-roman)""; }
+#ex_fourthA-10-2-1-1 > li { counter-increment: ex_fourthA-10-2-1-1; }
+#ex_fourthA-12-1-1-2 { counter-set: ex_fourthA-12-1-1-2 0; }
+#ex_fourthA-12-1-1-2 > li::marker { content: ""counter(ex_fourthA-12-1-1-2,lower-roman)""; }
+#ex_fourthA-12-1-1-2 > li { counter-increment: ex_fourthA-12-1-1-2; }
+#ex_fourthA-12-2-1-1 { counter-set: ex_fourthA-12-2-1-1 0; }
+#ex_fourthA-12-2-1-1 > li::marker { content: ""counter(ex_fourthA-12-2-1-1,lower-roman)""; }
+#ex_fourthA-12-2-1-1 > li { counter-increment: ex_fourthA-12-2-1-1; }
+#ex_fourthA-13-1-1-2 { counter-set: ex_fourthA-13-1-1-2 0; }
+#ex_fourthA-13-1-1-2 > li::marker { content: "("counter(ex_fourthA-13-1-1-2,lower-alpha)")"; }
+#ex_fourthA-13-1-1-2 > li { counter-increment: ex_fourthA-13-1-1-2; }
+#thm-comb6-1-1-4 { counter-set: thm-comb6-1-1-4 0; }
+#thm-comb6-1-1-4 > li::marker { content: ""counter(thm-comb6-1-1-4,upper-roman)""; }
+#thm-comb6-1-1-4 > li { counter-increment: thm-comb6-1-1-4; }
+#sec-comb_example-10-1-1-1 { counter-set: sec-comb_example-10-1-1-1 0; }
+#sec-comb_example-10-1-1-1 > li::marker { content: ""counter(sec-comb_example-10-1-1-1,lower-roman)""; }
+#sec-comb_example-10-1-1-1 > li { counter-increment: sec-comb_example-10-1-1-1; }
+#sec-comb_example-10-2-1-1 { counter-set: sec-comb_example-10-2-1-1 0; }
+#sec-comb_example-10-2-1-1 > li::marker { content: ""counter(sec-comb_example-10-2-1-1,lower-roman)""; }
+#sec-comb_example-10-2-1-1 > li { counter-increment: sec-comb_example-10-2-1-1; }
+#sec-comb_example-13-1-1-1 { counter-set: sec-comb_example-13-1-1-1 0; }
+#sec-comb_example-13-1-1-1 > li::marker { content: ""counter(sec-comb_example-13-1-1-1,lower-roman)""; }
+#sec-comb_example-13-1-1-1 > li { counter-increment: sec-comb_example-13-1-1-1; }
+#sec-comb_example-16-1-1-1 { counter-set: sec-comb_example-16-1-1-1 0; }
+#sec-comb_example-16-1-1-1 > li::marker { content: ""counter(sec-comb_example-16-1-1-1,lower-roman)""; }
+#sec-comb_example-16-1-1-1 > li { counter-increment: sec-comb_example-16-1-1-1; }
+#sec-comb_example-16-2-2-1 { counter-set: sec-comb_example-16-2-2-1 0; }
+#sec-comb_example-16-2-2-1 > li::marker { content: ""counter(sec-comb_example-16-2-2-1,lower-roman)""; }
+#sec-comb_example-16-2-2-1 > li { counter-increment: sec-comb_example-16-2-2-1; }
+#sec-comb_example-19-1-1-1 { counter-set: sec-comb_example-19-1-1-1 0; }
+#sec-comb_example-19-1-1-1 > li::marker { content: ""counter(sec-comb_example-19-1-1-1,lower-roman)""; }
+#sec-comb_example-19-1-1-1 > li { counter-increment: sec-comb_example-19-1-1-1; }
+#sec-comb_example-19-2-2-1 { counter-set: sec-comb_example-19-2-2-1 0; }
+#sec-comb_example-19-2-2-1 > li::marker { content: ""counter(sec-comb_example-19-2-2-1,lower-roman)""; }
+#sec-comb_example-19-2-2-1 > li { counter-increment: sec-comb_example-19-2-2-1; }
+#ex_fourthB-3-1-1-1 { counter-set: ex_fourthB-3-1-1-1 0; }
+#ex_fourthB-3-1-1-1 > li::marker { content: ""counter(ex_fourthB-3-1-1-1,lower-roman)""; }
+#ex_fourthB-3-1-1-1 > li { counter-increment: ex_fourthB-3-1-1-1; }
+#ex_fourthB-4-1-1-1 { counter-set: ex_fourthB-4-1-1-1 0; }
+#ex_fourthB-4-1-1-1 > li::marker { content: ""counter(ex_fourthB-4-1-1-1,lower-roman)""; }
+#ex_fourthB-4-1-1-1 > li { counter-increment: ex_fourthB-4-1-1-1; }
+#ex_fourthB-4-2-1-2 { counter-set: ex_fourthB-4-2-1-2 0; }
+#ex_fourthB-4-2-1-2 > li::marker { content: ""counter(ex_fourthB-4-2-1-2,lower-roman)""; }
+#ex_fourthB-4-2-1-2 > li { counter-increment: ex_fourthB-4-2-1-2; }
+#ch-prob-2-3-1 { counter-set: ch-prob-2-3-1 0; }
+#ch-prob-2-3-1 > li::marker { content: ""counter(ch-prob-2-3-1,decimal)"."; }
+#ch-prob-2-3-1 > li { counter-increment: ch-prob-2-3-1; }
+#ch-prob-2-4-2 { counter-set: ch-prob-2-4-2 0; }
+#ch-prob-2-4-2 > li::marker { content: ""counter(ch-prob-2-4-2,decimal)"."; }
+#ch-prob-2-4-2 > li { counter-increment: ch-prob-2-4-2; }
+#ch-prob-2-4-2-3-2-1 { counter-set: ch-prob-2-4-2-3-2-1 0; }
+#ch-prob-2-4-2-3-2-1 > li::marker { content: ""counter(ch-prob-2-4-2-3-2-1,upper-roman)""; }
+#ch-prob-2-4-2-3-2-1 > li { counter-increment: ch-prob-2-4-2-3-2-1; }
+#sec-prob_int-2-4-1-2-1 { counter-set: sec-prob_int-2-4-1-2-1 0; }
+#sec-prob_int-2-4-1-2-1 > li::marker { content: ""counter(sec-prob_int-2-4-1-2-1,lower-roman)""; }
+#sec-prob_int-2-4-1-2-1 > li { counter-increment: sec-prob_int-2-4-1-2-1; }
+#sec-prob_int-2-4-2-3-1 { counter-set: sec-prob_int-2-4-2-3-1 0; }
+#sec-prob_int-2-4-2-3-1 > li::marker { content: ""counter(sec-prob_int-2-4-2-3-1,lower-roman)""; }
+#sec-prob_int-2-4-2-3-1 > li { counter-increment: sec-prob_int-2-4-2-3-1; }
+#sec-prob_int-2-4-2-4-2 { counter-set: sec-prob_int-2-4-2-4-2 0; }
+#sec-prob_int-2-4-2-4-2 > li::marker { content: ""counter(sec-prob_int-2-4-2-4-2,lower-roman)""; }
+#sec-prob_int-2-4-2-4-2 > li { counter-increment: sec-prob_int-2-4-2-4-2; }
+#sec-prob_int-2-5-2 { counter-set: sec-prob_int-2-5-2 0; }
+#sec-prob_int-2-5-2 > li::marker { content: ""counter(sec-prob_int-2-5-2,lower-roman)""; }
+#sec-prob_int-2-5-2 > li { counter-increment: sec-prob_int-2-5-2; }
+#subsec-add_prod-2-1 { counter-set: subsec-add_prod-2-1 0; }
+#subsec-add_prod-2-1 > li::marker { content: ""counter(subsec-add_prod-2-1,upper-roman)""; }
+#subsec-add_prod-2-1 > li { counter-increment: subsec-add_prod-2-1; }
+#subsec-add_prod-2-1-1-1-4 { counter-set: subsec-add_prod-2-1-1-1-4 0; }
+#subsec-add_prod-2-1-1-1-4 > li::marker { content: ""counter(subsec-add_prod-2-1-1-1-4,lower-roman)""; }
+#subsec-add_prod-2-1-1-1-4 > li { counter-increment: subsec-add_prod-2-1-1-1-4; }
+#subsec-add_prod-2-1-2-1-2 { counter-set: subsec-add_prod-2-1-2-1-2 0; }
+#subsec-add_prod-2-1-2-1-2 > li::marker { content: ""counter(subsec-add_prod-2-1-2-1-2,lower-roman)""; }
+#subsec-add_prod-2-1-2-1-2 > li { counter-increment: subsec-add_prod-2-1-2-1-2; }
+#sec-prob_exampleA-3-1-1-1 { counter-set: sec-prob_exampleA-3-1-1-1 0; }
+#sec-prob_exampleA-3-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-3-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-3-1-1-1 > li { counter-increment: sec-prob_exampleA-3-1-1-1; }
+#sec-prob_exampleA-4-1-1-1 { counter-set: sec-prob_exampleA-4-1-1-1 0; }
+#sec-prob_exampleA-4-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-4-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-4-1-1-1 > li { counter-increment: sec-prob_exampleA-4-1-1-1; }
+#sec-prob_exampleA-5-1-1-1 { counter-set: sec-prob_exampleA-5-1-1-1 0; }
+#sec-prob_exampleA-5-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-5-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-5-1-1-1 > li { counter-increment: sec-prob_exampleA-5-1-1-1; }
+#sec-prob_exampleA-5-2-2-1 { counter-set: sec-prob_exampleA-5-2-2-1 0; }
+#sec-prob_exampleA-5-2-2-1 > li::marker { content: ""counter(sec-prob_exampleA-5-2-2-1,lower-roman)""; }
+#sec-prob_exampleA-5-2-2-1 > li { counter-increment: sec-prob_exampleA-5-2-2-1; }
+#sec-prob_exampleA-7-1-1-1 { counter-set: sec-prob_exampleA-7-1-1-1 0; }
+#sec-prob_exampleA-7-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-7-1-1-1 > li { counter-increment: sec-prob_exampleA-7-1-1-1; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 { counter-set: sec-prob_exampleA-7-1-1-1-3-1-1 0; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-1-1-1-3-1-1,lower-roman)""; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 > li { counter-increment: sec-prob_exampleA-7-1-1-1-3-1-1; }
+#sec-prob_exampleA-7-2-1-1 { counter-set: sec-prob_exampleA-7-2-1-1 0; }
+#sec-prob_exampleA-7-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-7-2-1-1 > li { counter-increment: sec-prob_exampleA-7-2-1-1; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 { counter-set: sec-prob_exampleA-7-2-1-1-3-1-1 0; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-2-1-1-3-1-1,lower-roman)""; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 > li { counter-increment: sec-prob_exampleA-7-2-1-1-3-1-1; }
+#sec-prob_exampleA-8-1-1-3 { counter-set: sec-prob_exampleA-8-1-1-3 0; }
+#sec-prob_exampleA-8-1-1-3 > li::marker { content: ""counter(sec-prob_exampleA-8-1-1-3,lower-roman)""; }
+#sec-prob_exampleA-8-1-1-3 > li { counter-increment: sec-prob_exampleA-8-1-1-3; }
+#sec-prob_exampleA-8-2-3-1 { counter-set: sec-prob_exampleA-8-2-3-1 0; }
+#sec-prob_exampleA-8-2-3-1 > li::marker { content: ""counter(sec-prob_exampleA-8-2-3-1,lower-roman)""; }
+#sec-prob_exampleA-8-2-3-1 > li { counter-increment: sec-prob_exampleA-8-2-3-1; }
+#sec-prob_exampleA-12-1-6-1 { counter-set: sec-prob_exampleA-12-1-6-1 0; }
+#sec-prob_exampleA-12-1-6-1 > li::marker { content: ""counter(sec-prob_exampleA-12-1-6-1,lower-roman)""; }
+#sec-prob_exampleA-12-1-6-1 > li { counter-increment: sec-prob_exampleA-12-1-6-1; }
+#sec-prob_exampleA-12-2-1-1 { counter-set: sec-prob_exampleA-12-2-1-1 0; }
+#sec-prob_exampleA-12-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-12-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-12-2-1-1 > li { counter-increment: sec-prob_exampleA-12-2-1-1; }
+#sec-prob_exampleA-20-1-1-4 { counter-set: sec-prob_exampleA-20-1-1-4 0; }
+#sec-prob_exampleA-20-1-1-4 > li::marker { content: ""counter(sec-prob_exampleA-20-1-1-4,lower-roman)""; }
+#sec-prob_exampleA-20-1-1-4 > li { counter-increment: sec-prob_exampleA-20-1-1-4; }
+#sec-prob_exampleA-20-2-1-2 { counter-set: sec-prob_exampleA-20-2-1-2 0; }
+#sec-prob_exampleA-20-2-1-2 > li::marker { content: ""counter(sec-prob_exampleA-20-2-1-2,lower-roman)""; }
+#sec-prob_exampleA-20-2-1-2 > li { counter-increment: sec-prob_exampleA-20-2-1-2; }
+#sec-prob_exampleA-24-1-1-1 { counter-set: sec-prob_exampleA-24-1-1-1 0; }
+#sec-prob_exampleA-24-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-24-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-24-1-1-1 > li { counter-increment: sec-prob_exampleA-24-1-1-1; }
+#sec-prob_exampleA-24-2-1-1 { counter-set: sec-prob_exampleA-24-2-1-1 0; }
+#sec-prob_exampleA-24-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-24-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-24-2-1-1 > li { counter-increment: sec-prob_exampleA-24-2-1-1; }
+#sec-prob_exampleA-26-1-1-1 { counter-set: sec-prob_exampleA-26-1-1-1 0; }
+#sec-prob_exampleA-26-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-26-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-26-1-1-1 > li { counter-increment: sec-prob_exampleA-26-1-1-1; }
+#sec-prob_exampleA-26-2-1-1 { counter-set: sec-prob_exampleA-26-2-1-1 0; }
+#sec-prob_exampleA-26-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-26-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-26-2-1-1 > li { counter-increment: sec-prob_exampleA-26-2-1-1; }
+#sec-prob_exampleA-27-1-1-1 { counter-set: sec-prob_exampleA-27-1-1-1 0; }
+#sec-prob_exampleA-27-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-27-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-27-1-1-1 > li { counter-increment: sec-prob_exampleA-27-1-1-1; }
+#sec-prob_exampleA-27-2-1-1 { counter-set: sec-prob_exampleA-27-2-1-1 0; }
+#sec-prob_exampleA-27-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-27-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-27-2-1-1 > li { counter-increment: sec-prob_exampleA-27-2-1-1; }
+#sec-prob_exampleA-28-1-1-1 { counter-set: sec-prob_exampleA-28-1-1-1 0; }
+#sec-prob_exampleA-28-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-28-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-28-1-1-1 > li { counter-increment: sec-prob_exampleA-28-1-1-1; }
+#sec-prob_exampleA-28-2-1-1 { counter-set: sec-prob_exampleA-28-2-1-1 0; }
+#sec-prob_exampleA-28-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-28-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-28-2-1-1 > li { counter-increment: sec-prob_exampleA-28-2-1-1; }
+#sec-prob_exampleA-29-1-1-1 { counter-set: sec-prob_exampleA-29-1-1-1 0; }
+#sec-prob_exampleA-29-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-29-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-29-1-1-1 > li { counter-increment: sec-prob_exampleA-29-1-1-1; }
+#sec-prob_exampleA-29-2-1-1 { counter-set: sec-prob_exampleA-29-2-1-1 0; }
+#sec-prob_exampleA-29-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-29-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-29-2-1-1 > li { counter-increment: sec-prob_exampleA-29-2-1-1; }
+#ex_fifth-3-1-1-1 { counter-set: ex_fifth-3-1-1-1 0; }
+#ex_fifth-3-1-1-1 > li::marker { content: ""counter(ex_fifth-3-1-1-1,lower-alpha)""; }
+#ex_fifth-3-1-1-1 > li { counter-increment: ex_fifth-3-1-1-1; }
+#ex_fifth-4-1-1-1 { counter-set: ex_fifth-4-1-1-1 0; }
+#ex_fifth-4-1-1-1 > li::marker { content: ""counter(ex_fifth-4-1-1-1,lower-alpha)""; }
+#ex_fifth-4-1-1-1 > li { counter-increment: ex_fifth-4-1-1-1; }
+#ex_fifth-5-1-1-1 { counter-set: ex_fifth-5-1-1-1 0; }
+#ex_fifth-5-1-1-1 > li::marker { content: ""counter(ex_fifth-5-1-1-1,lower-alpha)""; }
+#ex_fifth-5-1-1-1 > li { counter-increment: ex_fifth-5-1-1-1; }
+#ex_fifth-6-1-1-1 { counter-set: ex_fifth-6-1-1-1 0; }
+#ex_fifth-6-1-1-1 > li::marker { content: ""counter(ex_fifth-6-1-1-1,lower-alpha)""; }
+#ex_fifth-6-1-1-1 > li { counter-increment: ex_fifth-6-1-1-1; }
+#ex_fifth-7-1-1-1 { counter-set: ex_fifth-7-1-1-1 0; }
+#ex_fifth-7-1-1-1 > li::marker { content: ""counter(ex_fifth-7-1-1-1,lower-roman)""; }
+#ex_fifth-7-1-1-1 > li { counter-increment: ex_fifth-7-1-1-1; }
+#ex_fifth-9-1-1-1 { counter-set: ex_fifth-9-1-1-1 0; }
+#ex_fifth-9-1-1-1 > li::marker { content: ""counter(ex_fifth-9-1-1-1,lower-alpha)""; }
+#ex_fifth-9-1-1-1 > li { counter-increment: ex_fifth-9-1-1-1; }
+#ch-stat-2-1-1 { counter-set: ch-stat-2-1-1 0; }
+#ch-stat-2-1-1 > li::marker { content: ""counter(ch-stat-2-1-1,upper-roman)""; }
+#ch-stat-2-1-1 > li { counter-increment: ch-stat-2-1-1; }
+#ch-stat-2-1-1-1-4-1 { counter-set: ch-stat-2-1-1-1-4-1 0; }
+#ch-stat-2-1-1-1-4-1 > li::marker { content: ""counter(ch-stat-2-1-1-1-4-1,lower-roman)""; }
+#ch-stat-2-1-1-1-4-1 > li { counter-increment: ch-stat-2-1-1-1-4-1; }
+#ch-stat-2-4-1-1-2 { counter-set: ch-stat-2-4-1-1-2 0; }
+#ch-stat-2-4-1-1-2 > li::marker { content: ""counter(ch-stat-2-4-1-1-2,lower-roman)""; }
+#ch-stat-2-4-1-1-2 > li { counter-increment: ch-stat-2-4-1-1-2; }
+#ch-stat-2-4-2-1-2 { counter-set: ch-stat-2-4-2-1-2 0; }
+#ch-stat-2-4-2-1-2 > li::marker { content: ""counter(ch-stat-2-4-2-1-2,lower-roman)""; }
+#ch-stat-2-4-2-1-2 > li { counter-increment: ch-stat-2-4-2-1-2; }
+#ch-stat-2-5-1-1-1 { counter-set: ch-stat-2-5-1-1-1 0; }
+#ch-stat-2-5-1-1-1 > li::marker { content: ""counter(ch-stat-2-5-1-1-1,lower-roman)""; }
+#ch-stat-2-5-1-1-1 > li { counter-increment: ch-stat-2-5-1-1-1; }
+#sec-stat_int-2-1-2 { counter-set: sec-stat_int-2-1-2 0; }
+#sec-stat_int-2-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2,lower-roman)""; }
+#sec-stat_int-2-1-2 > li { counter-increment: sec-stat_int-2-1-2; }
+#sec-stat_int-2-1-2-1-1-2 { counter-set: sec-stat_int-2-1-2-1-1-2 0; }
+#sec-stat_int-2-1-2-1-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2-1-1-2,lower-alpha)""; }
+#sec-stat_int-2-1-2-1-1-2 > li { counter-increment: sec-stat_int-2-1-2-1-1-2; }
+#sec-stat_int-2-1-2-2-1-2 { counter-set: sec-stat_int-2-1-2-2-1-2 0; }
+#sec-stat_int-2-1-2-2-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2-2-1-2,lower-alpha)""; }
+#sec-stat_int-2-1-2-2-1-2 > li { counter-increment: sec-stat_int-2-1-2-2-1-2; }
+#subsec-pop_samp-6-2-1 { counter-set: subsec-pop_samp-6-2-1 0; }
+#subsec-pop_samp-6-2-1 > li::marker { content: ""counter(subsec-pop_samp-6-2-1,lower-roman)""; }
+#subsec-pop_samp-6-2-1 > li { counter-increment: subsec-pop_samp-6-2-1; }
+#sec-stat_centerT-2-2-2 { counter-set: sec-stat_centerT-2-2-2 0; }
+#sec-stat_centerT-2-2-2 > li::marker { content: ""counter(sec-stat_centerT-2-2-2,decimal)"."; }
+#sec-stat_centerT-2-2-2 > li { counter-increment: sec-stat_centerT-2-2-2; }
+#sec-stat_centerT-2-2-2-1-1-1 { counter-set: sec-stat_centerT-2-2-2-1-1-1 0; }
+#sec-stat_centerT-2-2-2-1-1-1 > li::marker { content: ""counter(sec-stat_centerT-2-2-2-1-1-1,lower-roman)""; }
+#sec-stat_centerT-2-2-2-1-1-1 > li { counter-increment: sec-stat_centerT-2-2-2-1-1-1; }
+#sec-stat_centerT-2-2-2-2-1-1 { counter-set: sec-stat_centerT-2-2-2-2-1-1 0; }
+#sec-stat_centerT-2-2-2-2-1-1 > li::marker { content: ""counter(sec-stat_centerT-2-2-2-2-1-1,lower-roman)""; }
+#sec-stat_centerT-2-2-2-2-1-1 > li { counter-increment: sec-stat_centerT-2-2-2-2-1-1; }
+#subsec-mean-2-1-1 { counter-set: subsec-mean-2-1-1 0; }
+#subsec-mean-2-1-1 > li::marker { content: ""counter(subsec-mean-2-1-1,upper-roman)""; }
+#subsec-mean-2-1-1 > li { counter-increment: subsec-mean-2-1-1; }
+#subsec-mean-2-2-1 { counter-set: subsec-mean-2-2-1 0; }
+#subsec-mean-2-2-1 > li::marker { content: ""counter(subsec-mean-2-2-1,lower-roman)""; }
+#subsec-mean-2-2-1 > li { counter-increment: subsec-mean-2-2-1; }
+#subsec-discrD-2-1 { counter-set: subsec-discrD-2-1 0; }
+#subsec-discrD-2-1 > li::marker { content: ""counter(subsec-discrD-2-1,lower-roman)""; }
+#subsec-discrD-2-1 > li { counter-increment: subsec-discrD-2-1; }
+#subsec-discrD-3-1 { counter-set: subsec-discrD-3-1 0; }
+#subsec-discrD-3-1 > li::marker { content: ""counter(subsec-discrD-3-1,decimal)"."; }
+#subsec-discrD-3-1 > li { counter-increment: subsec-discrD-3-1; }
+#subsubsec-contS-3-2 { counter-set: subsubsec-contS-3-2 0; }
+#subsubsec-contS-3-2 > li::marker { content: ""counter(subsubsec-contS-3-2,lower-alpha)""; }
+#subsubsec-contS-3-2 > li { counter-increment: subsubsec-contS-3-2; }
+#subsec-combM-3-1-1-1 { counter-set: subsec-combM-3-1-1-1 0; }
+#subsec-combM-3-1-1-1 > li::marker { content: ""counter(subsec-combM-3-1-1-1,lower-alpha)""; }
+#subsec-combM-3-1-1-1 > li { counter-increment: subsec-combM-3-1-1-1; }
+#subsubsec-mean_prop-2-1 { counter-set: subsubsec-mean_prop-2-1 0; }
+#subsubsec-mean_prop-2-1 > li::marker { content: ""counter(subsubsec-mean_prop-2-1,lower-roman)""; }
+#subsubsec-mean_prop-2-1 > li { counter-increment: subsubsec-mean_prop-2-1; }
+#subsubsec-mean_prop-4-1 { counter-set: subsubsec-mean_prop-4-1 0; }
+#subsubsec-mean_prop-4-1 > li::marker { content: ""counter(subsubsec-mean_prop-4-1,lower-roman)""; }
+#subsubsec-mean_prop-4-1 > li { counter-increment: subsubsec-mean_prop-4-1; }
+#subsubsec-med_is-2-1 { counter-set: subsubsec-med_is-2-1 0; }
+#subsubsec-med_is-2-1 > li::marker { content: ""counter(subsubsec-med_is-2-1,lower-roman)""; }
+#subsubsec-med_is-2-1 > li { counter-increment: subsubsec-med_is-2-1; }
+#subsubsec-med_is-3-1 { counter-set: subsubsec-med_is-3-1 0; }
+#subsubsec-med_is-3-1 > li::marker { content: ""counter(subsubsec-med_is-3-1,decimal)"."; }
+#subsubsec-med_is-3-1 > li { counter-increment: subsubsec-med_is-3-1; }
+#subsubsec-med_prop-2-1 { counter-set: subsubsec-med_prop-2-1 0; }
+#subsubsec-med_prop-2-1 > li::marker { content: ""counter(subsubsec-med_prop-2-1,lower-roman)""; }
+#subsubsec-med_prop-2-1 > li { counter-increment: subsubsec-med_prop-2-1; }
+#subsubsec-mod_is-2-1 { counter-set: subsubsec-mod_is-2-1 0; }
+#subsubsec-mod_is-2-1 > li::marker { content: ""counter(subsubsec-mod_is-2-1,lower-roman)""; }
+#subsubsec-mod_is-2-1 > li { counter-increment: subsubsec-mod_is-2-1; }
+#subsubsec-mod_cs-6-2 { counter-set: subsubsec-mod_cs-6-2 0; }
+#subsubsec-mod_cs-6-2 > li::marker { content: ""counter(subsubsec-mod_cs-6-2,lower-roman)""; }
+#subsubsec-mod_cs-6-2 > li { counter-increment: subsubsec-mod_cs-6-2; }
+#subsec-disp_msr-3-1 { counter-set: subsec-disp_msr-3-1 0; }
+#subsec-disp_msr-3-1 > li::marker { content: ""counter(subsec-disp_msr-3-1,decimal)"."; }
+#subsec-disp_msr-3-1 > li { counter-increment: subsec-disp_msr-3-1; }
+#subsec-disp_msr-3-1-1-2-1 { counter-set: subsec-disp_msr-3-1-1-2-1 0; }
+#subsec-disp_msr-3-1-1-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-1-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-1-2-1 > li { counter-increment: subsec-disp_msr-3-1-1-2-1; }
+#subsec-disp_msr-3-1-2-2-1 { counter-set: subsec-disp_msr-3-1-2-2-1 0; }
+#subsec-disp_msr-3-1-2-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-2-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-2-2-1 > li { counter-increment: subsec-disp_msr-3-1-2-2-1; }
+#subsubsec-rng_cs-2-1 { counter-set: subsubsec-rng_cs-2-1 0; }
+#subsubsec-rng_cs-2-1 > li::marker { content: ""counter(subsubsec-rng_cs-2-1,decimal)"."; }
+#subsubsec-rng_cs-2-1 > li { counter-increment: subsubsec-rng_cs-2-1; }
+#subsubsec-rng_merit-2-1 { counter-set: subsubsec-rng_merit-2-1 0; }
+#subsubsec-rng_merit-2-1 > li::marker { content: ""counter(subsubsec-rng_merit-2-1,decimal)"."; }
+#subsubsec-rng_merit-2-1 > li { counter-increment: subsubsec-rng_merit-2-1; }
+#subsubsec-rng_limit-2-1 { counter-set: subsubsec-rng_limit-2-1 0; }
+#subsubsec-rng_limit-2-1 > li::marker { content: ""counter(subsubsec-rng_limit-2-1,decimal)"."; }
+#subsubsec-rng_limit-2-1 > li { counter-increment: subsubsec-rng_limit-2-1; }
+#subsubsec-rng_use-2-1 { counter-set: subsubsec-rng_use-2-1 0; }
+#subsubsec-rng_use-2-1 > li::marker { content: ""counter(subsubsec-rng_use-2-1,decimal)"."; }
+#subsubsec-rng_use-2-1 > li { counter-increment: subsubsec-rng_use-2-1; }
+#subsec-st_dev-2-3-2 { counter-set: subsec-st_dev-2-3-2 0; }
+#subsec-st_dev-2-3-2 > li::marker { content: ""counter(subsec-st_dev-2-3-2,lower-roman)""; }
+#subsec-st_dev-2-3-2 > li { counter-increment: subsec-st_dev-2-3-2; }
+#subsubsec-sd_dscs-2-1 { counter-set: subsubsec-sd_dscs-2-1 0; }
+#subsubsec-sd_dscs-2-1 > li::marker { content: ""counter(subsubsec-sd_dscs-2-1,lower-alpha)""; }
+#subsubsec-sd_dscs-2-1 > li { counter-increment: subsubsec-sd_dscs-2-1; }
+#subsec-mean_dev-2-1-1 { counter-set: subsec-mean_dev-2-1-1 0; }
+#subsec-mean_dev-2-1-1 > li::marker { content: ""counter(subsec-mean_dev-2-1-1,decimal)"."; }
+#subsec-mean_dev-2-1-1 > li { counter-increment: subsec-mean_dev-2-1-1; }
+#sec_stat_example-2-1-1-1 { counter-set: sec_stat_example-2-1-1-1 0; }
+#sec_stat_example-2-1-1-1 > li::marker { content: ""counter(sec_stat_example-2-1-1-1,lower-roman)""; }
+#sec_stat_example-2-1-1-1 > li { counter-increment: sec_stat_example-2-1-1-1; }
+#sec_stat_example-3-1-1-1 { counter-set: sec_stat_example-3-1-1-1 0; }
+#sec_stat_example-3-1-1-1 > li::marker { content: ""counter(sec_stat_example-3-1-1-1,decimal)"."; }
+#sec_stat_example-3-1-1-1 > li { counter-increment: sec_stat_example-3-1-1-1; }
+#sec_stat_example-4-1-1-1 { counter-set: sec_stat_example-4-1-1-1 0; }
+#sec_stat_example-4-1-1-1 > li::marker { content: ""counter(sec_stat_example-4-1-1-1,lower-alpha)""; }
+#sec_stat_example-4-1-1-1 > li { counter-increment: sec_stat_example-4-1-1-1; }
+#sec_stat_example-5-1-1-1 { counter-set: sec_stat_example-5-1-1-1 0; }
+#sec_stat_example-5-1-1-1 > li::marker { content: ""counter(sec_stat_example-5-1-1-1,lower-roman)""; }
+#sec_stat_example-5-1-1-1 > li { counter-increment: sec_stat_example-5-1-1-1; }
+#sec_stat_example-5-2-1-2 { counter-set: sec_stat_example-5-2-1-2 0; }
+#sec_stat_example-5-2-1-2 > li::marker { content: ""counter(sec_stat_example-5-2-1-2,lower-roman)""; }
+#sec_stat_example-5-2-1-2 > li { counter-increment: sec_stat_example-5-2-1-2; }
+#ex_sixth-3-1-1-1 { counter-set: ex_sixth-3-1-1-1 0; }
+#ex_sixth-3-1-1-1 > li::marker { content: "("counter(ex_sixth-3-1-1-1,lower-alpha)")"; }
+#ex_sixth-3-1-1-1 > li { counter-increment: ex_sixth-3-1-1-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -155,14 +676,14 @@ window.MathJax = {
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondb.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise B</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-set_op.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Operations on Sets</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-venn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Venn Diagram</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.2</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-vennD_shade" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Shading of Venn Diagram</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Example B</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Exercise C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set_venn.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Venn Diagram</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_venn.html#subsec-ven_b" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Venn Diagram using checkmarks</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Example B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Exercise C</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter contains-active">
@@ -313,13 +834,13 @@ window.MathJax = {
 </h3>
 <div class="para logical" id="sec_prod-exampleB-2-1-1">
 <div class="para">There are 4 routs between Newyork to Washington. In how many different ways can a man go from Newyork to Washington and return, if for returning</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec_prod-exampleB-2-1-1-1">
 <li id="sec_prod-exampleB-2-1-1-1-1"><div class="para" id="sec_prod-exampleB-2-1-1-1-1-1">Any of the routes is taken.</div></li>
 <li id="sec_prod-exampleB-2-1-1-1-2"><div class="para" id="sec_prod-exampleB-2-1-1-1-2-1">The same route is taken.</div></li>
 <li id="sec_prod-exampleB-2-1-1-1-3"><div class="para" id="sec_prod-exampleB-2-1-1-1-3-1">The same route is not taken.</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec_prod-exampleB-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec_prod-exampleB-2-2-1"><ol class="lower-roman">
+<div class="solutions"><details id="sec_prod-exampleB-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec_prod-exampleB-2-2-1"><ol class="lower-roman" id="sec_prod-exampleB-2-2-1-1">
 <li id="sec_prod-exampleB-2-2-1-1-1">
 <div class="para" id="sec_prod-exampleB-2-2-1-1-1-1"><span class="process-math">\(4 \times 4 = 16.\)</span></div>
 <div class="para" id="sec_prod-exampleB-2-2-1-1-1-2">4 ways to go <dfn class="terminology">and</dfn> 4 ways to return.</div>
@@ -337,8 +858,11 @@ window.MathJax = {
 </h3>
 <div class="para" id="sec_prod-exampleB-3-1-1">Imagine you are getting dressed up for the day, and you have the following choices:</div> <div class="para" id="sec_prod-exampleB-3-1-2">Choice A: Selecting a shirt (5 options).</div> <div class="para" id="sec_prod-exampleB-3-1-3">Choice B: Choosing pants (3 options).</div> <div class="para" id="sec_prod-exampleB-3-1-4">Choice C: Picking shoes (2 options).</div> <div class="para" id="sec_prod-exampleB-3-1-5">How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?</div>
 <div class="solutions"><details id="sec_prod-exampleB-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-3-2-1">Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options.</div> <div class="para" id="sec_prod-exampleB-3-2-2">Total Outfits = <span class="process-math">\(5 \times 3 \times 2. \)</span>
-</div> <div class="para" id="sec_prod-exampleB-3-2-3">Total Outfits = 30 different outfits.</div> <div class="para" id="sec_prod-exampleB-3-2-4">You can create 30 different outfits by applying the product rule.</div>
+<div class="para" id="sec_prod-exampleB-3-2-1">Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options.</div>
+<div class="para" id="sec_prod-exampleB-3-2-2">Total Outfits = <span class="process-math">\(5 \times 3 \times 2. \)</span>
+</div>
+<div class="para" id="sec_prod-exampleB-3-2-3">Total Outfits = 30 different outfits.</div>
+<div class="para" id="sec_prod-exampleB-3-2-4">You can create 30 different outfits by applying the product rule.</div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-4"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.12</span><span class="period">.</span>
 </h3>
@@ -355,20 +879,21 @@ window.MathJax = {
 </h3>
 <div class="para" id="sec_prod-exampleB-5-1-1">Four flags of different colors are given. How many different signals can be generated, if a signal requires the use two flags, one below another.</div>
 <div class="solutions"><details id="sec_prod-exampleB-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-5-2-1">Make the 2 boxes and place their corresponding number of ways. Remember, the signal has to be generated with different colors.</div> <div class="para" id="sec_prod-exampleB-5-2-2"><span class="process-math">\(4 \times 3 = 12.\)</span></div>
+<div class="para" id="sec_prod-exampleB-5-2-1">Make the 2 boxes and place their corresponding number of ways. Remember, the signal has to be generated with different colors.</div>
+<div class="para" id="sec_prod-exampleB-5-2-2"><span class="process-math">\(4 \times 3 = 12.\)</span></div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-6"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.14</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="sec_prod-exampleB-6-1-1">
 <div class="para">Find the number of 4 letter words, with or without meaning, which can be formed out of the letters of the word "NOSE," when</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec_prod-exampleB-6-1-1-1">
 <li id="sec_prod-exampleB-6-1-1-1-1"><div class="para" id="sec_prod-exampleB-6-1-1-1-1-1">The repetition of letters is not allowed.</div></li>
 <li id="sec_prod-exampleB-6-1-1-1-2"><div class="para" id="sec_prod-exampleB-6-1-1-1-2-1">The repetition of letters is allowed.</div></li>
 </ol>
 </div>
 <div class="solutions"><details id="sec_prod-exampleB-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec_prod-exampleB-6-2-1">
 <div class="para">Make the 4 boxes and place their corresponding number of ways.</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec_prod-exampleB-6-2-1-1">
 <li id="sec_prod-exampleB-6-2-1-1-1"><div class="para" id="sec_prod-exampleB-6-2-1-1-1-1"><span class="process-math">\(\displaystyle 4 \times 3 \times 2 \times 1 = 24.\)</span></div></li>
 <li id="sec_prod-exampleB-6-2-1-1-2"><div class="para" id="sec_prod-exampleB-6-2-1-1-2-1"><span class="process-math">\(\displaystyle 4 \times 4 \times 4 \times 4 = 256.\)</span></div></li>
 </ol>
@@ -377,19 +902,27 @@ window.MathJax = {
 </h3>
 <div class="para" id="sec_prod-exampleB-7-1-1">Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:</div> <div class="para" id="sec_prod-exampleB-7-1-2">Choice A: Appetizer (3 options).</div> <div class="para" id="sec_prod-exampleB-7-1-3">Choice B: Main Course (5 options).</div> <div class="para" id="sec_prod-exampleB-7-1-4">Choice C: Dessert (2 options).</div> <div class="para" id="sec_prod-exampleB-7-1-5">You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?</div>
 <div class="solutions"><details id="sec_prod-exampleB-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-7-2-1">Total Meal Combinations = Number of Appetizer Options <span class="process-math">\(\times\)</span> Number of Main Course Options <span class="process-math">\(\times\)</span> Number of Dessert Options.</div> <div class="para" id="sec_prod-exampleB-7-2-2">Total Meal Combinations = 3 (appetizers) <span class="process-math">\(\times\)</span> 5 (main courses) <span class="process-math">\(\times\)</span> 2 (desserts).</div> <div class="para" id="sec_prod-exampleB-7-2-3">Total Meal Combinations = 30 different meal combinations.</div> <div class="para" id="sec_prod-exampleB-7-2-4">So, there are 30 different meal combinations you can create by applying the Product Rule.</div>
+<div class="para" id="sec_prod-exampleB-7-2-1">Total Meal Combinations = Number of Appetizer Options <span class="process-math">\(\times\)</span> Number of Main Course Options <span class="process-math">\(\times\)</span> Number of Dessert Options.</div>
+<div class="para" id="sec_prod-exampleB-7-2-2">Total Meal Combinations = 3 (appetizers) <span class="process-math">\(\times\)</span> 5 (main courses) <span class="process-math">\(\times\)</span> 2 (desserts).</div>
+<div class="para" id="sec_prod-exampleB-7-2-3">Total Meal Combinations = 30 different meal combinations.</div>
+<div class="para" id="sec_prod-exampleB-7-2-4">So, there are 30 different meal combinations you can create by applying the Product Rule.</div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-8"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.16</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec_prod-exampleB-8-1-1">Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:</div> <div class="para" id="sec_prod-exampleB-8-1-2">Choice A: Appetizer (3 options).</div> <div class="para" id="sec_prod-exampleB-8-1-3">Choice B: Main Course (5 options).</div> <div class="para" id="sec_prod-exampleB-8-1-4">Choice C: Dessert (2 options).</div> <div class="para" id="sec_prod-exampleB-8-1-5">You want to create a two-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?</div>
 <div class="solutions"><details id="sec_prod-exampleB-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-8-2-1">Total Meal Combinations = (Number of Appetizer Options <span class="process-math">\(\times\)</span> Number of Main Course Options) + (Number of Appetizer Options <span class="process-math">\(\times\)</span> Number of Dessert Options) + (Number of Dessert Options <span class="process-math">\(\times\)</span> Number of Main Course Options).</div> <div class="para" id="sec_prod-exampleB-8-2-2">Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31.</div> <div class="para" id="sec_prod-exampleB-8-2-3">Total Meal Combinations = 31 different meal combinations.</div>
+<div class="para" id="sec_prod-exampleB-8-2-1">Total Meal Combinations = (Number of Appetizer Options <span class="process-math">\(\times\)</span> Number of Main Course Options) + (Number of Appetizer Options <span class="process-math">\(\times\)</span> Number of Dessert Options) + (Number of Dessert Options <span class="process-math">\(\times\)</span> Number of Main Course Options).</div>
+<div class="para" id="sec_prod-exampleB-8-2-2">Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31.</div>
+<div class="para" id="sec_prod-exampleB-8-2-3">Total Meal Combinations = 31 different meal combinations.</div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-9"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.17</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec_prod-exampleB-9-1-1">Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:</div> <div class="para" id="sec_prod-exampleB-9-1-2">Choice X: Visit a beach town (2 options).</div> <div class="para" id="sec_prod-exampleB-9-1-3">Choice Y: Explore a historic city (3 options).</div> <div class="para" id="sec_prod-exampleB-9-1-4">Choice Z: Go on a nature hike (4 options).</div> <div class="para" id="sec_prod-exampleB-9-1-5">You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?</div>
 <div class="solutions"><details id="sec_prod-exampleB-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-9-2-1">Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.</div> <div class="para" id="sec_prod-exampleB-9-2-2">Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).</div> <div class="para" id="sec_prod-exampleB-9-2-3">Total Itinerary Options = 9 different vacation itineraries.</div> <div class="para" id="sec_prod-exampleB-9-2-4">There are 9 different vacation itineraries you can plan using the Addition Rule.</div>
+<div class="para" id="sec_prod-exampleB-9-2-1">Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.</div>
+<div class="para" id="sec_prod-exampleB-9-2-2">Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).</div>
+<div class="para" id="sec_prod-exampleB-9-2-3">Total Itinerary Options = 9 different vacation itineraries.</div>
+<div class="para" id="sec_prod-exampleB-9-2-4">There are 9 different vacation itineraries you can plan using the Addition Rule.</div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-10"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.18</span><span class="period">.</span>
 </h3>
@@ -404,14 +937,24 @@ window.MathJax = {
 </h3>
 <div class="para" id="sec_prod-exampleB-12-1-1">Harry went to a food restaurant, and he wants to order a combo deal that includes a pizza, drink, and dessert. The following choices are available: Pizza: Chicken Fajita, and Vegetable. Drink: Pepsi and 7-Up. Dessert: Ice-cream and Pie.</div>
 <div class="solutions"><details id="sec_prod-exampleB-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-12-2-1">As the tree diagram shows, we can work out the possible arrangements for a combo deal.</div> <div class="para" id="sec_prod-exampleB-12-2-2">Deal 1: Chicken fajita, Pepsi, and Ice-cream.</div> <div class="para" id="sec_prod-exampleB-12-2-3">Deal 2: Chicken fajita, Pepsi, and Pie.</div> <div class="para" id="sec_prod-exampleB-12-2-4">Deal 3: Chicken fajita, 7-UP, and Ice-cream.</div> <div class="para" id="sec_prod-exampleB-12-2-5">Deal 4: Chicken fajita, 7-UP, and Pie.</div> <div class="para" id="sec_prod-exampleB-12-2-6">Deal 5: Vegetable Pizza, Pepsi, and Ice-cream.</div> <div class="para" id="sec_prod-exampleB-12-2-7">Deal 6: Vegetable Pizza, Pepsi, and Pie.</div> <div class="para" id="sec_prod-exampleB-12-2-8">Deal 7: Vegetable Pizza, 7-UP and Ice-cream.</div> <div class="para" id="sec_prod-exampleB-12-2-9">Deal 8: Vegetable Pizza, 7-UP and Pie.</div> <div class="para" id="sec_prod-exampleB-12-2-10">Now solving it by counting principle, we have 2 options for pizza, 2 for drinks and 2 for desserts so, the total number of possible combo deals = <span class="process-math">\(2 \times 2 \times 2 =8\text{.}\)</span>
+<div class="para" id="sec_prod-exampleB-12-2-1">As the tree diagram shows, we can work out the possible arrangements for a combo deal.</div>
+<div class="para" id="sec_prod-exampleB-12-2-2">Deal 1: Chicken fajita, Pepsi, and Ice-cream.</div>
+<div class="para" id="sec_prod-exampleB-12-2-3">Deal 2: Chicken fajita, Pepsi, and Pie.</div>
+<div class="para" id="sec_prod-exampleB-12-2-4">Deal 3: Chicken fajita, 7-UP, and Ice-cream.</div>
+<div class="para" id="sec_prod-exampleB-12-2-5">Deal 4: Chicken fajita, 7-UP, and Pie.</div>
+<div class="para" id="sec_prod-exampleB-12-2-6">Deal 5: Vegetable Pizza, Pepsi, and Ice-cream.</div>
+<div class="para" id="sec_prod-exampleB-12-2-7">Deal 6: Vegetable Pizza, Pepsi, and Pie.</div>
+<div class="para" id="sec_prod-exampleB-12-2-8">Deal 7: Vegetable Pizza, 7-UP and Ice-cream.</div>
+<div class="para" id="sec_prod-exampleB-12-2-9">Deal 8: Vegetable Pizza, 7-UP and Pie.</div>
+<div class="para" id="sec_prod-exampleB-12-2-10">Now solving it by counting principle, we have 2 options for pizza, 2 for drinks and 2 for desserts so, the total number of possible combo deals = <span class="process-math">\(2 \times 2 \times 2 =8\text{.}\)</span>
 </div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-13"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.21</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec_prod-exampleB-13-1-1">Steve has to dress for a presentation. He has different shirts, different pants, and different shoes available in his closet. Wearing the Tie is optional. Calculate the total number of possible outfits.</div>
 <div class="solutions"><details id="sec_prod-exampleB-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-13-2-1">There are three types of shirts, two types of pants and three types of shoes. While the tie is optional, the tie has two options, either “Yes” or “No.”</div> <div class="para" id="sec_prod-exampleB-13-2-2">Total number of possible outfits = <span class="process-math">\(3 \times 2 \times 3 \times 2 = 36\text{.}\)</span>
+<div class="para" id="sec_prod-exampleB-13-2-1">There are three types of shirts, two types of pants and three types of shoes. While the tie is optional, the tie has two options, either “Yes” or “No.”</div>
+<div class="para" id="sec_prod-exampleB-13-2-2">Total number of possible outfits = <span class="process-math">\(3 \times 2 \times 3 \times 2 = 36\text{.}\)</span>
 </div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-14"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.22</span><span class="period">.</span>
@@ -451,12 +994,12 @@ window.MathJax = {
 </h3>
 <div class="para logical" id="sec_prod-exampleB-17-1-1">
 <div class="para">How many 3-digit odd numbers can be formed by using the digits <span class="process-math">\(1, 2, 3, 4, 5, 6\)</span> when</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec_prod-exampleB-17-1-1-2">
 <li id="sec_prod-exampleB-17-1-1-2-1"><div class="para" id="sec_prod-exampleB-17-1-1-2-1-1">The repetition of digit is not allowed.</div></li>
 <li id="sec_prod-exampleB-17-1-1-2-2"><div class="para" id="sec_prod-exampleB-17-1-1-2-2-1">The repetition of digit is allowed</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec_prod-exampleB-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec_prod-exampleB-17-2-1"><ol class="lower-roman">
+<div class="solutions"><details id="sec_prod-exampleB-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec_prod-exampleB-17-2-1"><ol class="lower-roman" id="sec_prod-exampleB-17-2-1-1">
 <li id="sec_prod-exampleB-17-2-1-1-1"><div class="para" id="sec_prod-exampleB-17-2-1-1-1-1">
 <span class="process-math">\(4 \times 5 \times 3 = 60.\)</span> The unit place only takes 1, 3, and 5, the tens place takes any of the 5 digits.</div></li>
 <li id="sec_prod-exampleB-17-2-1-1-2"><div class="para" id="sec_prod-exampleB-17-2-1-1-2-1"><span class="process-math">\(\displaystyle 6 \times 6 \times 3 = 108.\)</span></div></li>
@@ -472,7 +1015,10 @@ window.MathJax = {
 2 &amp; 3\times 2 =6  &amp; 3\times 4 \times 2 = 24 \\     
 \end{array}
 \end{equation*}
-</div></div> <div class="para" id="sec_prod-exampleB-18-2-2">In one-digit number we have only two choices <span class="process-math">\(5, 7\text{.}\)</span> In two-digit number we can place <span class="process-math">\(5, 7\)</span> at units place and any other digits except <span class="process-math">\(0\)</span> at tens place.</div> <div class="para" id="sec_prod-exampleB-18-2-3">In three digit numbers we can place only 5 and 7 at units place, any of the 4 digits can be placed at tens place, and any 3 digits except <span class="process-math">\(0\)</span> be placed at hundreds place.</div> <div class="para" id="sec_prod-exampleB-18-2-4">Hence, the total odd numbers formed = <span class="process-math">\(2+6+24 = 32.\)</span>
+</div></div>
+<div class="para" id="sec_prod-exampleB-18-2-2">In one-digit number we have only two choices <span class="process-math">\(5, 7\text{.}\)</span> In two-digit number we can place <span class="process-math">\(5, 7\)</span> at units place and any other digits except <span class="process-math">\(0\)</span> at tens place.</div>
+<div class="para" id="sec_prod-exampleB-18-2-3">In three digit numbers we can place only 5 and 7 at units place, any of the 4 digits can be placed at tens place, and any 3 digits except <span class="process-math">\(0\)</span> be placed at hundreds place.</div>
+<div class="para" id="sec_prod-exampleB-18-2-4">Hence, the total odd numbers formed = <span class="process-math">\(2+6+24 = 32.\)</span>
 </div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-19"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.27</span><span class="period">.</span>
@@ -490,28 +1036,36 @@ window.MathJax = {
 </h3>
 <div class="para" id="sec_prod-exampleB-20-1-1">HOw many numbers are there between 100 and 1000 such that at least one of their digits is 7?</div>
 <div class="solutions"><details id="sec_prod-exampleB-20-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-20-2-1">The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except <span class="process-math">\(0\)</span> (9 choices).</div> <div class="para" id="sec_prod-exampleB-20-2-2">In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except <span class="process-math">\(0\)</span> (9 choices).</div> <div class="para" id="sec_prod-exampleB-20-2-3">In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).</div> <div class="para logical" id="sec_prod-exampleB-20-2-4"><div class="displaymath process-math">
+<div class="para" id="sec_prod-exampleB-20-2-1">The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except <span class="process-math">\(0\)</span> (9 choices).</div>
+<div class="para" id="sec_prod-exampleB-20-2-2">In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except <span class="process-math">\(0\)</span> (9 choices).</div>
+<div class="para" id="sec_prod-exampleB-20-2-3">In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).</div>
+<div class="para logical" id="sec_prod-exampleB-20-2-4"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{c|c|c} 
 \text{ case one } &amp; \text{ case two }  &amp; \text{ case three }  \\ \hline 
 9 \times 10 \times 1 = 90 &amp; 9 \times 1 \times 10 = 90  &amp; 1\times 10 \times 10 = 100 \\     
 \end{array}
 \end{equation*}
-</div></div> <div class="para" id="sec_prod-exampleB-20-2-5">Hence the total numbers formed = <span class="process-math">\(90 + 90 + 100 = 280.\)</span>
+</div></div>
+<div class="para" id="sec_prod-exampleB-20-2-5">Hence the total numbers formed = <span class="process-math">\(90 + 90 + 100 = 280.\)</span>
 </div>
 </div></details></div></article><article class="example example-like" id="sec_prod-exampleB-21"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.29</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec_prod-exampleB-21-1-1">HOw many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?</div>
 <div class="solutions"><details id="sec_prod-exampleB-21-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec_prod-exampleB-21-2-1">The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers except <span class="process-math">\(7\)</span> (9 choices), and hundreds place takes any other numbers except <span class="process-math">\(0, 7 \)</span> (8 choices).</div> <div class="para" id="sec_prod-exampleB-21-2-2">In case two, place 7 at tens place (only 1 choice), units place takes any numbers except <span class="process-math">\(7\)</span> (9 choices), and hundreds place takes any other numbers except <span class="process-math">\(0, 7\)</span> (8 choices).</div> <div class="para" id="sec_prod-exampleB-21-2-3">In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers except <span class="process-math">\(7\)</span> (9 choices), and tens place takes any numbers except <span class="process-math">\(7\)</span> (9 choices).</div> <div class="para logical" id="sec_prod-exampleB-21-2-4"><div class="displaymath process-math">
+<div class="para" id="sec_prod-exampleB-21-2-1">The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers except <span class="process-math">\(7\)</span> (9 choices), and hundreds place takes any other numbers except <span class="process-math">\(0, 7 \)</span> (8 choices).</div>
+<div class="para" id="sec_prod-exampleB-21-2-2">In case two, place 7 at tens place (only 1 choice), units place takes any numbers except <span class="process-math">\(7\)</span> (9 choices), and hundreds place takes any other numbers except <span class="process-math">\(0, 7\)</span> (8 choices).</div>
+<div class="para" id="sec_prod-exampleB-21-2-3">In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers except <span class="process-math">\(7\)</span> (9 choices), and tens place takes any numbers except <span class="process-math">\(7\)</span> (9 choices).</div>
+<div class="para logical" id="sec_prod-exampleB-21-2-4"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{c|c|c} 
 \text{ case one } &amp; \text{ case two }  &amp; \text{ case three }  \\ \hline 
 8 \times 9 \times 1 = 72 &amp; 8 \times 1 \times 9 = 72  &amp; 1\times 9 \times 9 = 81 \\     
 \end{array}
 \end{equation*}
-</div></div> <div class="para" id="sec_prod-exampleB-21-2-5">Hence the total numbers formed = <span class="process-math">\(72 + 72 + 81 = 225.\)</span>
+</div></div>
+<div class="para" id="sec_prod-exampleB-21-2-5">Hence the total numbers formed = <span class="process-math">\(72 + 72 + 81 = 225.\)</span>
 </div>
 </div></details></div></article></section></div>
 <div class="ptx-content-footer">

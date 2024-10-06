@@ -88,6 +88,527 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#ch-numb-2-1-1 { counter-set: ch-numb-2-1-1 0; }
+#ch-numb-2-1-1 > li::marker { content: ""counter(ch-numb-2-1-1,decimal)"."; }
+#ch-numb-2-1-1 > li { counter-increment: ch-numb-2-1-1; }
+#sec-num_sys-2-2-1 { counter-set: sec-num_sys-2-2-1 0; }
+#sec-num_sys-2-2-1 > li::marker { content: ""counter(sec-num_sys-2-2-1,decimal)"."; }
+#sec-num_sys-2-2-1 > li { counter-increment: sec-num_sys-2-2-1; }
+#subsec-div_rule-2-1 { counter-set: subsec-div_rule-2-1 0; }
+#subsec-div_rule-2-1 > li::marker { content: ""counter(subsec-div_rule-2-1,lower-roman)""; }
+#subsec-div_rule-2-1 > li { counter-increment: subsec-div_rule-2-1; }
+#subsec-fam_pair-2-3 { counter-set: subsec-fam_pair-2-3 0; }
+#subsec-fam_pair-2-3 > li::marker { content: ""counter(subsec-fam_pair-2-3,lower-roman)""; }
+#subsec-fam_pair-2-3 > li { counter-increment: subsec-fam_pair-2-3; }
+#sec-numb_example-3-1-1-1 { counter-set: sec-numb_example-3-1-1-1 0; }
+#sec-numb_example-3-1-1-1 > li::marker { content: ""counter(sec-numb_example-3-1-1-1,lower-roman)""; }
+#sec-numb_example-3-1-1-1 > li { counter-increment: sec-numb_example-3-1-1-1; }
+#sec-numb_example-3-2-1-1 { counter-set: sec-numb_example-3-2-1-1 0; }
+#sec-numb_example-3-2-1-1 > li::marker { content: ""counter(sec-numb_example-3-2-1-1,lower-roman)""; }
+#sec-numb_example-3-2-1-1 > li { counter-increment: sec-numb_example-3-2-1-1; }
+#sec-numb_example-5-1-1-1 { counter-set: sec-numb_example-5-1-1-1 0; }
+#sec-numb_example-5-1-1-1 > li::marker { content: ""counter(sec-numb_example-5-1-1-1,lower-roman)""; }
+#sec-numb_example-5-1-1-1 > li { counter-increment: sec-numb_example-5-1-1-1; }
+#sec-numb_example-5-2-1-1 { counter-set: sec-numb_example-5-2-1-1 0; }
+#sec-numb_example-5-2-1-1 > li::marker { content: ""counter(sec-numb_example-5-2-1-1,lower-roman)""; }
+#sec-numb_example-5-2-1-1 > li { counter-increment: sec-numb_example-5-2-1-1; }
+#ex_first-4-2 { counter-set: ex_first-4-2 0; }
+#ex_first-4-2 > li::marker { content: ""counter(ex_first-4-2,lower-roman)""; }
+#ex_first-4-2 > li { counter-increment: ex_first-4-2; }
+#ex_first-5-2-1 { counter-set: ex_first-5-2-1 0; }
+#ex_first-5-2-1 > li::marker { content: ""counter(ex_first-5-2-1,lower-roman)""; }
+#ex_first-5-2-1 > li { counter-increment: ex_first-5-2-1; }
+#ex_first-6-1-1-1 { counter-set: ex_first-6-1-1-1 0; }
+#ex_first-6-1-1-1 > li::marker { content: ""counter(ex_first-6-1-1-1,lower-alpha)""; }
+#ex_first-6-1-1-1 > li { counter-increment: ex_first-6-1-1-1; }
+#ex_first-7-1-1-1 { counter-set: ex_first-7-1-1-1 0; }
+#ex_first-7-1-1-1 > li::marker { content: ""counter(ex_first-7-1-1-1,lower-alpha)""; }
+#ex_first-7-1-1-1 > li { counter-increment: ex_first-7-1-1-1; }
+#ch-set-2-3-2 { counter-set: ch-set-2-3-2 0; }
+#ch-set-2-3-2 > li::marker { content: ""counter(ch-set-2-3-2,lower-alpha)""; }
+#ch-set-2-3-2 > li { counter-increment: ch-set-2-3-2; }
+#sec-set_descrp-2-1 { counter-set: sec-set_descrp-2-1 0; }
+#sec-set_descrp-2-1 > li::marker { content: ""counter(sec-set_descrp-2-1,decimal)"."; }
+#sec-set_descrp-2-1 > li { counter-increment: sec-set_descrp-2-1; }
+#sec_set-exampleA-2-1-2-1 { counter-set: sec_set-exampleA-2-1-2-1 0; }
+#sec_set-exampleA-2-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-2-1-2-1,lower-roman)""; }
+#sec_set-exampleA-2-1-2-1 > li { counter-increment: sec_set-exampleA-2-1-2-1; }
+#sec_set-exampleA-3-1-2-1 { counter-set: sec_set-exampleA-3-1-2-1 0; }
+#sec_set-exampleA-3-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-3-1-2-1,lower-roman)""; }
+#sec_set-exampleA-3-1-2-1 > li { counter-increment: sec_set-exampleA-3-1-2-1; }
+#sec_set-exampleA-4-1-2-1 { counter-set: sec_set-exampleA-4-1-2-1 0; }
+#sec_set-exampleA-4-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-4-1-2-1,lower-roman)""; }
+#sec_set-exampleA-4-1-2-1 > li { counter-increment: sec_set-exampleA-4-1-2-1; }
+#sec_set-exampleA-5-1-2-1 { counter-set: sec_set-exampleA-5-1-2-1 0; }
+#sec_set-exampleA-5-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-5-1-2-1,lower-roman)""; }
+#sec_set-exampleA-5-1-2-1 > li { counter-increment: sec_set-exampleA-5-1-2-1; }
+#sec_set-exampleA-6-1-2-1 { counter-set: sec_set-exampleA-6-1-2-1 0; }
+#sec_set-exampleA-6-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-6-1-2-1,lower-roman)""; }
+#sec_set-exampleA-6-1-2-1 > li { counter-increment: sec_set-exampleA-6-1-2-1; }
+#sec-set_type-2-1-1 { counter-set: sec-set_type-2-1-1 0; }
+#sec-set_type-2-1-1 > li::marker { content: ""counter(sec-set_type-2-1-1,decimal)"."; }
+#sec-set_type-2-1-1 > li { counter-increment: sec-set_type-2-1-1; }
+#sec-set_type-2-1-1-2-4-1-1-3 { counter-set: sec-set_type-2-1-1-2-4-1-1-3 0; }
+#sec-set_type-2-1-1-2-4-1-1-3 > li::marker { content: ""counter(sec-set_type-2-1-1-2-4-1-1-3,lower-alpha)""; }
+#sec-set_type-2-1-1-2-4-1-1-3 > li { counter-increment: sec-set_type-2-1-1-2-4-1-1-3; }
+#sec-set_type-2-1-1-5-5-2 { counter-set: sec-set_type-2-1-1-5-5-2 0; }
+#sec-set_type-2-1-1-5-5-2 > li::marker { content: ""counter(sec-set_type-2-1-1-5-5-2,lower-roman)""; }
+#sec-set_type-2-1-1-5-5-2 > li { counter-increment: sec-set_type-2-1-1-5-5-2; }
+#ex_second-2-1-1-1 { counter-set: ex_second-2-1-1-1 0; }
+#ex_second-2-1-1-1 > li::marker { content: ""counter(ex_second-2-1-1-1,lower-alpha)""; }
+#ex_second-2-1-1-1 > li { counter-increment: ex_second-2-1-1-1; }
+#ex_second-3-1-1-1 { counter-set: ex_second-3-1-1-1 0; }
+#ex_second-3-1-1-1 > li::marker { content: ""counter(ex_second-3-1-1-1,lower-alpha)""; }
+#ex_second-3-1-1-1 > li { counter-increment: ex_second-3-1-1-1; }
+#ex_second-4-1-1-1 { counter-set: ex_second-4-1-1-1 0; }
+#ex_second-4-1-1-1 > li::marker { content: ""counter(ex_second-4-1-1-1,lower-alpha)""; }
+#ex_second-4-1-1-1 > li { counter-increment: ex_second-4-1-1-1; }
+#ex_second-5-1-1-2 { counter-set: ex_second-5-1-1-2 0; }
+#ex_second-5-1-1-2 > li::marker { content: ""counter(ex_second-5-1-1-2,lower-alpha)""; }
+#ex_second-5-1-1-2 > li { counter-increment: ex_second-5-1-1-2; }
+#ex_second-6-1-1-1 { counter-set: ex_second-6-1-1-1 0; }
+#ex_second-6-1-1-1 > li::marker { content: ""counter(ex_second-6-1-1-1,lower-alpha)""; }
+#ex_second-6-1-1-1 > li { counter-increment: ex_second-6-1-1-1; }
+#sec-subset-2-7-1-1 { counter-set: sec-subset-2-7-1-1 0; }
+#sec-subset-2-7-1-1 > li::marker { content: ""counter(sec-subset-2-7-1-1,lower-alpha)""; }
+#sec-subset-2-7-1-1 > li { counter-increment: sec-subset-2-7-1-1; }
+#subsubsec-intervals-5-1 { counter-set: subsubsec-intervals-5-1 0; }
+#subsubsec-intervals-5-1 > li::marker { content: ""counter(subsubsec-intervals-5-1,lower-roman)""; }
+#subsubsec-intervals-5-1 > li { counter-increment: subsubsec-intervals-5-1; }
+#ex_secondb-2-1-1-3 { counter-set: ex_secondb-2-1-1-3 0; }
+#ex_secondb-2-1-1-3 > li::marker { content: ""counter(ex_secondb-2-1-1-3,lower-alpha)""; }
+#ex_secondb-2-1-1-3 > li { counter-increment: ex_secondb-2-1-1-3; }
+#ex_secondb-3-1-2-1 { counter-set: ex_secondb-3-1-2-1 0; }
+#ex_secondb-3-1-2-1 > li::marker { content: ""counter(ex_secondb-3-1-2-1,lower-alpha)""; }
+#ex_secondb-3-1-2-1 > li { counter-increment: ex_secondb-3-1-2-1; }
+#ex_secondb-4-1-1-2 { counter-set: ex_secondb-4-1-1-2 0; }
+#ex_secondb-4-1-1-2 > li::marker { content: ""counter(ex_secondb-4-1-1-2,lower-alpha)""; }
+#ex_secondb-4-1-1-2 > li { counter-increment: ex_secondb-4-1-1-2; }
+#ex_secondb-5-1-1-1 { counter-set: ex_secondb-5-1-1-1 0; }
+#ex_secondb-5-1-1-1 > li::marker { content: ""counter(ex_secondb-5-1-1-1,lower-alpha)""; }
+#ex_secondb-5-1-1-1 > li { counter-increment: ex_secondb-5-1-1-1; }
+#ex_secondb-7-1-2-1 { counter-set: ex_secondb-7-1-2-1 0; }
+#ex_secondb-7-1-2-1 > li::marker { content: ""counter(ex_secondb-7-1-2-1,lower-alpha)""; }
+#ex_secondb-7-1-2-1 > li { counter-increment: ex_secondb-7-1-2-1; }
+#ex_secondb-8-1-2-1 { counter-set: ex_secondb-8-1-2-1 0; }
+#ex_secondb-8-1-2-1 > li::marker { content: ""counter(ex_secondb-8-1-2-1,lower-alpha)""; }
+#ex_secondb-8-1-2-1 > li { counter-increment: ex_secondb-8-1-2-1; }
+#ex_secondb-9-1-2 { counter-set: ex_secondb-9-1-2 0; }
+#ex_secondb-9-1-2 > li::marker { content: ""counter(ex_secondb-9-1-2,lower-roman)""; }
+#ex_secondb-9-1-2 > li { counter-increment: ex_secondb-9-1-2; }
+#ex_secondb-10-1-2-1 { counter-set: ex_secondb-10-1-2-1 0; }
+#ex_secondb-10-1-2-1 > li::marker { content: ""counter(ex_secondb-10-1-2-1,lower-roman)""; }
+#ex_secondb-10-1-2-1 > li { counter-increment: ex_secondb-10-1-2-1; }
+#sec-set_op-2-1-1 { counter-set: sec-set_op-2-1-1 0; }
+#sec-set_op-2-1-1 > li::marker { content: ""counter(sec-set_op-2-1-1,upper-roman)""; }
+#sec-set_op-2-1-1 > li { counter-increment: sec-set_op-2-1-1; }
+#sec-set_op-2-1-1-1-4-1 { counter-set: sec-set_op-2-1-1-1-4-1 0; }
+#sec-set_op-2-1-1-1-4-1 > li::marker { content: ""counter(sec-set_op-2-1-1-1-4-1,lower-roman)""; }
+#sec-set_op-2-1-1-1-4-1 > li { counter-increment: sec-set_op-2-1-1-1-4-1; }
+#sec-set_op-2-1-1-2-3-2 { counter-set: sec-set_op-2-1-1-2-3-2 0; }
+#sec-set_op-2-1-1-2-3-2 > li::marker { content: ""counter(sec-set_op-2-1-1-2-3-2,lower-roman)""; }
+#sec-set_op-2-1-1-2-3-2 > li { counter-increment: sec-set_op-2-1-1-2-3-2; }
+#set_exmB1Q1-1-1-1 { counter-set: set_exmB1Q1-1-1-1 0; }
+#set_exmB1Q1-1-1-1 > li::marker { content: ""counter(set_exmB1Q1-1-1-1,decimal)"."; }
+#set_exmB1Q1-1-1-1 > li { counter-increment: set_exmB1Q1-1-1-1; }
+#sec_set-exampleB-5-1-1-5 { counter-set: sec_set-exampleB-5-1-1-5 0; }
+#sec_set-exampleB-5-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-5-1-1-5,lower-alpha)""; }
+#sec_set-exampleB-5-1-1-5 > li { counter-increment: sec_set-exampleB-5-1-1-5; }
+#sec_set-exampleB-7-1-1-5 { counter-set: sec_set-exampleB-7-1-1-5 0; }
+#sec_set-exampleB-7-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-7-1-1-5,lower-roman)""; }
+#sec_set-exampleB-7-1-1-5 > li { counter-increment: sec_set-exampleB-7-1-1-5; }
+#sec_set-exampleB-8-1-1-5 { counter-set: sec_set-exampleB-8-1-1-5 0; }
+#sec_set-exampleB-8-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-8-1-1-5,lower-roman)""; }
+#sec_set-exampleB-8-1-1-5 > li { counter-increment: sec_set-exampleB-8-1-1-5; }
+#sec_set-exampleB-9-1-1-1 { counter-set: sec_set-exampleB-9-1-1-1 0; }
+#sec_set-exampleB-9-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-9-1-1-1,lower-roman)""; }
+#sec_set-exampleB-9-1-1-1 > li { counter-increment: sec_set-exampleB-9-1-1-1; }
+#sec_set-exampleB-10-1-1-5 { counter-set: sec_set-exampleB-10-1-1-5 0; }
+#sec_set-exampleB-10-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-10-1-1-5,lower-roman)""; }
+#sec_set-exampleB-10-1-1-5 > li { counter-increment: sec_set-exampleB-10-1-1-5; }
+#sec_set-exampleB-11-1-1-3 { counter-set: sec_set-exampleB-11-1-1-3 0; }
+#sec_set-exampleB-11-1-1-3 > li::marker { content: ""counter(sec_set-exampleB-11-1-1-3,lower-roman)""; }
+#sec_set-exampleB-11-1-1-3 > li { counter-increment: sec_set-exampleB-11-1-1-3; }
+#sec_set-exampleB-12-1-1-1 { counter-set: sec_set-exampleB-12-1-1-1 0; }
+#sec_set-exampleB-12-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-12-1-1-1,lower-roman)""; }
+#sec_set-exampleB-12-1-1-1 > li { counter-increment: sec_set-exampleB-12-1-1-1; }
+#sec_set-exampleB-14-1-1-1 { counter-set: sec_set-exampleB-14-1-1-1 0; }
+#sec_set-exampleB-14-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-14-1-1-1,lower-roman)""; }
+#sec_set-exampleB-14-1-1-1 > li { counter-increment: sec_set-exampleB-14-1-1-1; }
+#ex_secondc-2-1-1-5 { counter-set: ex_secondc-2-1-1-5 0; }
+#ex_secondc-2-1-1-5 > li::marker { content: ""counter(ex_secondc-2-1-1-5,lower-roman)""; }
+#ex_secondc-2-1-1-5 > li { counter-increment: ex_secondc-2-1-1-5; }
+#ex_secondc-3-1-1-2 { counter-set: ex_secondc-3-1-1-2 0; }
+#ex_secondc-3-1-1-2 > li::marker { content: ""counter(ex_secondc-3-1-1-2,lower-roman)""; }
+#ex_secondc-3-1-1-2 > li { counter-increment: ex_secondc-3-1-1-2; }
+#ex_secondc-4-1-1-1 { counter-set: ex_secondc-4-1-1-1 0; }
+#ex_secondc-4-1-1-1 > li::marker { content: ""counter(ex_secondc-4-1-1-1,lower-roman)""; }
+#ex_secondc-4-1-1-1 > li { counter-increment: ex_secondc-4-1-1-1; }
+#ex_secondc-5-1-1-4 { counter-set: ex_secondc-5-1-1-4 0; }
+#ex_secondc-5-1-1-4 > li::marker { content: ""counter(ex_secondc-5-1-1-4,lower-roman)""; }
+#ex_secondc-5-1-1-4 > li { counter-increment: ex_secondc-5-1-1-4; }
+#ex_secondc-6-1-1-1 { counter-set: ex_secondc-6-1-1-1 0; }
+#ex_secondc-6-1-1-1 > li::marker { content: ""counter(ex_secondc-6-1-1-1,lower-roman)""; }
+#ex_secondc-6-1-1-1 > li { counter-increment: ex_secondc-6-1-1-1; }
+#sec_prod-exampleB-2-1-1-1 { counter-set: sec_prod-exampleB-2-1-1-1 0; }
+#sec_prod-exampleB-2-1-1-1 > li::marker { content: ""counter(sec_prod-exampleB-2-1-1-1,lower-roman)""; }
+#sec_prod-exampleB-2-1-1-1 > li { counter-increment: sec_prod-exampleB-2-1-1-1; }
+#sec_prod-exampleB-2-2-1-1 { counter-set: sec_prod-exampleB-2-2-1-1 0; }
+#sec_prod-exampleB-2-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-2-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-2-2-1-1 > li { counter-increment: sec_prod-exampleB-2-2-1-1; }
+#sec_prod-exampleB-6-1-1-1 { counter-set: sec_prod-exampleB-6-1-1-1 0; }
+#sec_prod-exampleB-6-1-1-1 > li::marker { content: ""counter(sec_prod-exampleB-6-1-1-1,lower-roman)""; }
+#sec_prod-exampleB-6-1-1-1 > li { counter-increment: sec_prod-exampleB-6-1-1-1; }
+#sec_prod-exampleB-6-2-1-1 { counter-set: sec_prod-exampleB-6-2-1-1 0; }
+#sec_prod-exampleB-6-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-6-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-6-2-1-1 > li { counter-increment: sec_prod-exampleB-6-2-1-1; }
+#sec_prod-exampleB-17-1-1-2 { counter-set: sec_prod-exampleB-17-1-1-2 0; }
+#sec_prod-exampleB-17-1-1-2 > li::marker { content: ""counter(sec_prod-exampleB-17-1-1-2,lower-roman)""; }
+#sec_prod-exampleB-17-1-1-2 > li { counter-increment: sec_prod-exampleB-17-1-1-2; }
+#sec_prod-exampleB-17-2-1-1 { counter-set: sec_prod-exampleB-17-2-1-1 0; }
+#sec_prod-exampleB-17-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-17-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-17-2-1-1 > li { counter-increment: sec_prod-exampleB-17-2-1-1; }
+#ex_third-7-1-1-2 { counter-set: ex_third-7-1-1-2 0; }
+#ex_third-7-1-1-2 > li::marker { content: ""counter(ex_third-7-1-1-2,lower-roman)""; }
+#ex_third-7-1-1-2 > li { counter-increment: ex_third-7-1-1-2; }
+#sec-fact-5-1-1-1 { counter-set: sec-fact-5-1-1-1 0; }
+#sec-fact-5-1-1-1 > li::marker { content: ""counter(sec-fact-5-1-1-1,lower-roman)""; }
+#sec-fact-5-1-1-1 > li { counter-increment: sec-fact-5-1-1-1; }
+#sec-fact-5-2-1-1 { counter-set: sec-fact-5-2-1-1 0; }
+#sec-fact-5-2-1-1 > li::marker { content: ""counter(sec-fact-5-2-1-1,lower-roman)""; }
+#sec-fact-5-2-1-1 > li { counter-increment: sec-fact-5-2-1-1; }
+#sec-perm_example-11-1-1-1 { counter-set: sec-perm_example-11-1-1-1 0; }
+#sec-perm_example-11-1-1-1 > li::marker { content: ""counter(sec-perm_example-11-1-1-1,lower-roman)""; }
+#sec-perm_example-11-1-1-1 > li { counter-increment: sec-perm_example-11-1-1-1; }
+#sec-perm_example-11-2-2-1 { counter-set: sec-perm_example-11-2-2-1 0; }
+#sec-perm_example-11-2-2-1 > li::marker { content: ""counter(sec-perm_example-11-2-2-1,lower-roman)""; }
+#sec-perm_example-11-2-2-1 > li { counter-increment: sec-perm_example-11-2-2-1; }
+#sec-perm_example-19-1-1-1 { counter-set: sec-perm_example-19-1-1-1 0; }
+#sec-perm_example-19-1-1-1 > li::marker { content: ""counter(sec-perm_example-19-1-1-1,lower-roman)""; }
+#sec-perm_example-19-1-1-1 > li { counter-increment: sec-perm_example-19-1-1-1; }
+#sec-perm_example-19-2-1 { counter-set: sec-perm_example-19-2-1 0; }
+#sec-perm_example-19-2-1 > li::marker { content: ""counter(sec-perm_example-19-2-1,lower-roman)""; }
+#sec-perm_example-19-2-1 > li { counter-increment: sec-perm_example-19-2-1; }
+#sec-perm_example-20-1-1-1 { counter-set: sec-perm_example-20-1-1-1 0; }
+#sec-perm_example-20-1-1-1 > li::marker { content: ""counter(sec-perm_example-20-1-1-1,lower-roman)""; }
+#sec-perm_example-20-1-1-1 > li { counter-increment: sec-perm_example-20-1-1-1; }
+#sec-perm_example-20-1-1-1-2-1-1 { counter-set: sec-perm_example-20-1-1-1-2-1-1 0; }
+#sec-perm_example-20-1-1-1-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-1-1-1-2-1-1,lower-alpha)""; }
+#sec-perm_example-20-1-1-1-2-1-1 > li { counter-increment: sec-perm_example-20-1-1-1-2-1-1; }
+#sec-perm_example-20-2-1-1 { counter-set: sec-perm_example-20-2-1-1 0; }
+#sec-perm_example-20-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-2-1-1,lower-roman)""; }
+#sec-perm_example-20-2-1-1 > li { counter-increment: sec-perm_example-20-2-1-1; }
+#sec-perm_example-20-2-1-1-2-1-1 { counter-set: sec-perm_example-20-2-1-1-2-1-1 0; }
+#sec-perm_example-20-2-1-1-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-2-1-1-2-1-1,lower-alpha)""; }
+#sec-perm_example-20-2-1-1-2-1-1 > li { counter-increment: sec-perm_example-20-2-1-1-2-1-1; }
+#sec-perm_example-21-1-2-1 { counter-set: sec-perm_example-21-1-2-1 0; }
+#sec-perm_example-21-1-2-1 > li::marker { content: ""counter(sec-perm_example-21-1-2-1,lower-roman)""; }
+#sec-perm_example-21-1-2-1 > li { counter-increment: sec-perm_example-21-1-2-1; }
+#sec-perm_example-21-2-2-1 { counter-set: sec-perm_example-21-2-2-1 0; }
+#sec-perm_example-21-2-2-1 > li::marker { content: ""counter(sec-perm_example-21-2-2-1,lower-roman)""; }
+#sec-perm_example-21-2-2-1 > li { counter-increment: sec-perm_example-21-2-2-1; }
+#sec-perm_example-25-1-1-1 { counter-set: sec-perm_example-25-1-1-1 0; }
+#sec-perm_example-25-1-1-1 > li::marker { content: ""counter(sec-perm_example-25-1-1-1,lower-roman)""; }
+#sec-perm_example-25-1-1-1 > li { counter-increment: sec-perm_example-25-1-1-1; }
+#sec-perm_example-25-2-1-3 { counter-set: sec-perm_example-25-2-1-3 0; }
+#sec-perm_example-25-2-1-3 > li::marker { content: ""counter(sec-perm_example-25-2-1-3,lower-roman)""; }
+#sec-perm_example-25-2-1-3 > li { counter-increment: sec-perm_example-25-2-1-3; }
+#ex_fourthA-7-2-1 { counter-set: ex_fourthA-7-2-1 0; }
+#ex_fourthA-7-2-1 > li::marker { content: ""counter(ex_fourthA-7-2-1,lower-roman)""; }
+#ex_fourthA-7-2-1 > li { counter-increment: ex_fourthA-7-2-1; }
+#ex_fourthA-8-1-2 { counter-set: ex_fourthA-8-1-2 0; }
+#ex_fourthA-8-1-2 > li::marker { content: ""counter(ex_fourthA-8-1-2,lower-roman)""; }
+#ex_fourthA-8-1-2 > li { counter-increment: ex_fourthA-8-1-2; }
+#ex_fourthA-10-2-1-1 { counter-set: ex_fourthA-10-2-1-1 0; }
+#ex_fourthA-10-2-1-1 > li::marker { content: ""counter(ex_fourthA-10-2-1-1,lower-roman)""; }
+#ex_fourthA-10-2-1-1 > li { counter-increment: ex_fourthA-10-2-1-1; }
+#ex_fourthA-12-1-1-2 { counter-set: ex_fourthA-12-1-1-2 0; }
+#ex_fourthA-12-1-1-2 > li::marker { content: ""counter(ex_fourthA-12-1-1-2,lower-roman)""; }
+#ex_fourthA-12-1-1-2 > li { counter-increment: ex_fourthA-12-1-1-2; }
+#ex_fourthA-12-2-1-1 { counter-set: ex_fourthA-12-2-1-1 0; }
+#ex_fourthA-12-2-1-1 > li::marker { content: ""counter(ex_fourthA-12-2-1-1,lower-roman)""; }
+#ex_fourthA-12-2-1-1 > li { counter-increment: ex_fourthA-12-2-1-1; }
+#ex_fourthA-13-1-1-2 { counter-set: ex_fourthA-13-1-1-2 0; }
+#ex_fourthA-13-1-1-2 > li::marker { content: "("counter(ex_fourthA-13-1-1-2,lower-alpha)")"; }
+#ex_fourthA-13-1-1-2 > li { counter-increment: ex_fourthA-13-1-1-2; }
+#thm-comb6-1-1-4 { counter-set: thm-comb6-1-1-4 0; }
+#thm-comb6-1-1-4 > li::marker { content: ""counter(thm-comb6-1-1-4,upper-roman)""; }
+#thm-comb6-1-1-4 > li { counter-increment: thm-comb6-1-1-4; }
+#sec-comb_example-10-1-1-1 { counter-set: sec-comb_example-10-1-1-1 0; }
+#sec-comb_example-10-1-1-1 > li::marker { content: ""counter(sec-comb_example-10-1-1-1,lower-roman)""; }
+#sec-comb_example-10-1-1-1 > li { counter-increment: sec-comb_example-10-1-1-1; }
+#sec-comb_example-10-2-1-1 { counter-set: sec-comb_example-10-2-1-1 0; }
+#sec-comb_example-10-2-1-1 > li::marker { content: ""counter(sec-comb_example-10-2-1-1,lower-roman)""; }
+#sec-comb_example-10-2-1-1 > li { counter-increment: sec-comb_example-10-2-1-1; }
+#sec-comb_example-13-1-1-1 { counter-set: sec-comb_example-13-1-1-1 0; }
+#sec-comb_example-13-1-1-1 > li::marker { content: ""counter(sec-comb_example-13-1-1-1,lower-roman)""; }
+#sec-comb_example-13-1-1-1 > li { counter-increment: sec-comb_example-13-1-1-1; }
+#sec-comb_example-16-1-1-1 { counter-set: sec-comb_example-16-1-1-1 0; }
+#sec-comb_example-16-1-1-1 > li::marker { content: ""counter(sec-comb_example-16-1-1-1,lower-roman)""; }
+#sec-comb_example-16-1-1-1 > li { counter-increment: sec-comb_example-16-1-1-1; }
+#sec-comb_example-16-2-2-1 { counter-set: sec-comb_example-16-2-2-1 0; }
+#sec-comb_example-16-2-2-1 > li::marker { content: ""counter(sec-comb_example-16-2-2-1,lower-roman)""; }
+#sec-comb_example-16-2-2-1 > li { counter-increment: sec-comb_example-16-2-2-1; }
+#sec-comb_example-19-1-1-1 { counter-set: sec-comb_example-19-1-1-1 0; }
+#sec-comb_example-19-1-1-1 > li::marker { content: ""counter(sec-comb_example-19-1-1-1,lower-roman)""; }
+#sec-comb_example-19-1-1-1 > li { counter-increment: sec-comb_example-19-1-1-1; }
+#sec-comb_example-19-2-2-1 { counter-set: sec-comb_example-19-2-2-1 0; }
+#sec-comb_example-19-2-2-1 > li::marker { content: ""counter(sec-comb_example-19-2-2-1,lower-roman)""; }
+#sec-comb_example-19-2-2-1 > li { counter-increment: sec-comb_example-19-2-2-1; }
+#ex_fourthB-3-1-1-1 { counter-set: ex_fourthB-3-1-1-1 0; }
+#ex_fourthB-3-1-1-1 > li::marker { content: ""counter(ex_fourthB-3-1-1-1,lower-roman)""; }
+#ex_fourthB-3-1-1-1 > li { counter-increment: ex_fourthB-3-1-1-1; }
+#ex_fourthB-4-1-1-1 { counter-set: ex_fourthB-4-1-1-1 0; }
+#ex_fourthB-4-1-1-1 > li::marker { content: ""counter(ex_fourthB-4-1-1-1,lower-roman)""; }
+#ex_fourthB-4-1-1-1 > li { counter-increment: ex_fourthB-4-1-1-1; }
+#ex_fourthB-4-2-1-2 { counter-set: ex_fourthB-4-2-1-2 0; }
+#ex_fourthB-4-2-1-2 > li::marker { content: ""counter(ex_fourthB-4-2-1-2,lower-roman)""; }
+#ex_fourthB-4-2-1-2 > li { counter-increment: ex_fourthB-4-2-1-2; }
+#ch-prob-2-3-1 { counter-set: ch-prob-2-3-1 0; }
+#ch-prob-2-3-1 > li::marker { content: ""counter(ch-prob-2-3-1,decimal)"."; }
+#ch-prob-2-3-1 > li { counter-increment: ch-prob-2-3-1; }
+#ch-prob-2-4-2 { counter-set: ch-prob-2-4-2 0; }
+#ch-prob-2-4-2 > li::marker { content: ""counter(ch-prob-2-4-2,decimal)"."; }
+#ch-prob-2-4-2 > li { counter-increment: ch-prob-2-4-2; }
+#ch-prob-2-4-2-3-2-1 { counter-set: ch-prob-2-4-2-3-2-1 0; }
+#ch-prob-2-4-2-3-2-1 > li::marker { content: ""counter(ch-prob-2-4-2-3-2-1,upper-roman)""; }
+#ch-prob-2-4-2-3-2-1 > li { counter-increment: ch-prob-2-4-2-3-2-1; }
+#sec-prob_int-2-4-1-2-1 { counter-set: sec-prob_int-2-4-1-2-1 0; }
+#sec-prob_int-2-4-1-2-1 > li::marker { content: ""counter(sec-prob_int-2-4-1-2-1,lower-roman)""; }
+#sec-prob_int-2-4-1-2-1 > li { counter-increment: sec-prob_int-2-4-1-2-1; }
+#sec-prob_int-2-4-2-3-1 { counter-set: sec-prob_int-2-4-2-3-1 0; }
+#sec-prob_int-2-4-2-3-1 > li::marker { content: ""counter(sec-prob_int-2-4-2-3-1,lower-roman)""; }
+#sec-prob_int-2-4-2-3-1 > li { counter-increment: sec-prob_int-2-4-2-3-1; }
+#sec-prob_int-2-4-2-4-2 { counter-set: sec-prob_int-2-4-2-4-2 0; }
+#sec-prob_int-2-4-2-4-2 > li::marker { content: ""counter(sec-prob_int-2-4-2-4-2,lower-roman)""; }
+#sec-prob_int-2-4-2-4-2 > li { counter-increment: sec-prob_int-2-4-2-4-2; }
+#sec-prob_int-2-5-2 { counter-set: sec-prob_int-2-5-2 0; }
+#sec-prob_int-2-5-2 > li::marker { content: ""counter(sec-prob_int-2-5-2,lower-roman)""; }
+#sec-prob_int-2-5-2 > li { counter-increment: sec-prob_int-2-5-2; }
+#subsec-add_prod-2-1 { counter-set: subsec-add_prod-2-1 0; }
+#subsec-add_prod-2-1 > li::marker { content: ""counter(subsec-add_prod-2-1,upper-roman)""; }
+#subsec-add_prod-2-1 > li { counter-increment: subsec-add_prod-2-1; }
+#subsec-add_prod-2-1-1-1-4 { counter-set: subsec-add_prod-2-1-1-1-4 0; }
+#subsec-add_prod-2-1-1-1-4 > li::marker { content: ""counter(subsec-add_prod-2-1-1-1-4,lower-roman)""; }
+#subsec-add_prod-2-1-1-1-4 > li { counter-increment: subsec-add_prod-2-1-1-1-4; }
+#subsec-add_prod-2-1-2-1-2 { counter-set: subsec-add_prod-2-1-2-1-2 0; }
+#subsec-add_prod-2-1-2-1-2 > li::marker { content: ""counter(subsec-add_prod-2-1-2-1-2,lower-roman)""; }
+#subsec-add_prod-2-1-2-1-2 > li { counter-increment: subsec-add_prod-2-1-2-1-2; }
+#sec-prob_exampleA-3-1-1-1 { counter-set: sec-prob_exampleA-3-1-1-1 0; }
+#sec-prob_exampleA-3-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-3-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-3-1-1-1 > li { counter-increment: sec-prob_exampleA-3-1-1-1; }
+#sec-prob_exampleA-4-1-1-1 { counter-set: sec-prob_exampleA-4-1-1-1 0; }
+#sec-prob_exampleA-4-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-4-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-4-1-1-1 > li { counter-increment: sec-prob_exampleA-4-1-1-1; }
+#sec-prob_exampleA-5-1-1-1 { counter-set: sec-prob_exampleA-5-1-1-1 0; }
+#sec-prob_exampleA-5-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-5-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-5-1-1-1 > li { counter-increment: sec-prob_exampleA-5-1-1-1; }
+#sec-prob_exampleA-5-2-2-1 { counter-set: sec-prob_exampleA-5-2-2-1 0; }
+#sec-prob_exampleA-5-2-2-1 > li::marker { content: ""counter(sec-prob_exampleA-5-2-2-1,lower-roman)""; }
+#sec-prob_exampleA-5-2-2-1 > li { counter-increment: sec-prob_exampleA-5-2-2-1; }
+#sec-prob_exampleA-7-1-1-1 { counter-set: sec-prob_exampleA-7-1-1-1 0; }
+#sec-prob_exampleA-7-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-7-1-1-1 > li { counter-increment: sec-prob_exampleA-7-1-1-1; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 { counter-set: sec-prob_exampleA-7-1-1-1-3-1-1 0; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-1-1-1-3-1-1,lower-roman)""; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 > li { counter-increment: sec-prob_exampleA-7-1-1-1-3-1-1; }
+#sec-prob_exampleA-7-2-1-1 { counter-set: sec-prob_exampleA-7-2-1-1 0; }
+#sec-prob_exampleA-7-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-7-2-1-1 > li { counter-increment: sec-prob_exampleA-7-2-1-1; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 { counter-set: sec-prob_exampleA-7-2-1-1-3-1-1 0; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-2-1-1-3-1-1,lower-roman)""; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 > li { counter-increment: sec-prob_exampleA-7-2-1-1-3-1-1; }
+#sec-prob_exampleA-8-1-1-3 { counter-set: sec-prob_exampleA-8-1-1-3 0; }
+#sec-prob_exampleA-8-1-1-3 > li::marker { content: ""counter(sec-prob_exampleA-8-1-1-3,lower-roman)""; }
+#sec-prob_exampleA-8-1-1-3 > li { counter-increment: sec-prob_exampleA-8-1-1-3; }
+#sec-prob_exampleA-8-2-3-1 { counter-set: sec-prob_exampleA-8-2-3-1 0; }
+#sec-prob_exampleA-8-2-3-1 > li::marker { content: ""counter(sec-prob_exampleA-8-2-3-1,lower-roman)""; }
+#sec-prob_exampleA-8-2-3-1 > li { counter-increment: sec-prob_exampleA-8-2-3-1; }
+#sec-prob_exampleA-12-1-6-1 { counter-set: sec-prob_exampleA-12-1-6-1 0; }
+#sec-prob_exampleA-12-1-6-1 > li::marker { content: ""counter(sec-prob_exampleA-12-1-6-1,lower-roman)""; }
+#sec-prob_exampleA-12-1-6-1 > li { counter-increment: sec-prob_exampleA-12-1-6-1; }
+#sec-prob_exampleA-12-2-1-1 { counter-set: sec-prob_exampleA-12-2-1-1 0; }
+#sec-prob_exampleA-12-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-12-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-12-2-1-1 > li { counter-increment: sec-prob_exampleA-12-2-1-1; }
+#sec-prob_exampleA-20-1-1-4 { counter-set: sec-prob_exampleA-20-1-1-4 0; }
+#sec-prob_exampleA-20-1-1-4 > li::marker { content: ""counter(sec-prob_exampleA-20-1-1-4,lower-roman)""; }
+#sec-prob_exampleA-20-1-1-4 > li { counter-increment: sec-prob_exampleA-20-1-1-4; }
+#sec-prob_exampleA-20-2-1-2 { counter-set: sec-prob_exampleA-20-2-1-2 0; }
+#sec-prob_exampleA-20-2-1-2 > li::marker { content: ""counter(sec-prob_exampleA-20-2-1-2,lower-roman)""; }
+#sec-prob_exampleA-20-2-1-2 > li { counter-increment: sec-prob_exampleA-20-2-1-2; }
+#sec-prob_exampleA-24-1-1-1 { counter-set: sec-prob_exampleA-24-1-1-1 0; }
+#sec-prob_exampleA-24-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-24-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-24-1-1-1 > li { counter-increment: sec-prob_exampleA-24-1-1-1; }
+#sec-prob_exampleA-24-2-1-1 { counter-set: sec-prob_exampleA-24-2-1-1 0; }
+#sec-prob_exampleA-24-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-24-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-24-2-1-1 > li { counter-increment: sec-prob_exampleA-24-2-1-1; }
+#sec-prob_exampleA-26-1-1-1 { counter-set: sec-prob_exampleA-26-1-1-1 0; }
+#sec-prob_exampleA-26-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-26-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-26-1-1-1 > li { counter-increment: sec-prob_exampleA-26-1-1-1; }
+#sec-prob_exampleA-26-2-1-1 { counter-set: sec-prob_exampleA-26-2-1-1 0; }
+#sec-prob_exampleA-26-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-26-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-26-2-1-1 > li { counter-increment: sec-prob_exampleA-26-2-1-1; }
+#sec-prob_exampleA-27-1-1-1 { counter-set: sec-prob_exampleA-27-1-1-1 0; }
+#sec-prob_exampleA-27-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-27-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-27-1-1-1 > li { counter-increment: sec-prob_exampleA-27-1-1-1; }
+#sec-prob_exampleA-27-2-1-1 { counter-set: sec-prob_exampleA-27-2-1-1 0; }
+#sec-prob_exampleA-27-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-27-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-27-2-1-1 > li { counter-increment: sec-prob_exampleA-27-2-1-1; }
+#sec-prob_exampleA-28-1-1-1 { counter-set: sec-prob_exampleA-28-1-1-1 0; }
+#sec-prob_exampleA-28-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-28-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-28-1-1-1 > li { counter-increment: sec-prob_exampleA-28-1-1-1; }
+#sec-prob_exampleA-28-2-1-1 { counter-set: sec-prob_exampleA-28-2-1-1 0; }
+#sec-prob_exampleA-28-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-28-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-28-2-1-1 > li { counter-increment: sec-prob_exampleA-28-2-1-1; }
+#sec-prob_exampleA-29-1-1-1 { counter-set: sec-prob_exampleA-29-1-1-1 0; }
+#sec-prob_exampleA-29-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-29-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-29-1-1-1 > li { counter-increment: sec-prob_exampleA-29-1-1-1; }
+#sec-prob_exampleA-29-2-1-1 { counter-set: sec-prob_exampleA-29-2-1-1 0; }
+#sec-prob_exampleA-29-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-29-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-29-2-1-1 > li { counter-increment: sec-prob_exampleA-29-2-1-1; }
+#ex_fifth-3-1-1-1 { counter-set: ex_fifth-3-1-1-1 0; }
+#ex_fifth-3-1-1-1 > li::marker { content: ""counter(ex_fifth-3-1-1-1,lower-alpha)""; }
+#ex_fifth-3-1-1-1 > li { counter-increment: ex_fifth-3-1-1-1; }
+#ex_fifth-4-1-1-1 { counter-set: ex_fifth-4-1-1-1 0; }
+#ex_fifth-4-1-1-1 > li::marker { content: ""counter(ex_fifth-4-1-1-1,lower-alpha)""; }
+#ex_fifth-4-1-1-1 > li { counter-increment: ex_fifth-4-1-1-1; }
+#ex_fifth-5-1-1-1 { counter-set: ex_fifth-5-1-1-1 0; }
+#ex_fifth-5-1-1-1 > li::marker { content: ""counter(ex_fifth-5-1-1-1,lower-alpha)""; }
+#ex_fifth-5-1-1-1 > li { counter-increment: ex_fifth-5-1-1-1; }
+#ex_fifth-6-1-1-1 { counter-set: ex_fifth-6-1-1-1 0; }
+#ex_fifth-6-1-1-1 > li::marker { content: ""counter(ex_fifth-6-1-1-1,lower-alpha)""; }
+#ex_fifth-6-1-1-1 > li { counter-increment: ex_fifth-6-1-1-1; }
+#ex_fifth-7-1-1-1 { counter-set: ex_fifth-7-1-1-1 0; }
+#ex_fifth-7-1-1-1 > li::marker { content: ""counter(ex_fifth-7-1-1-1,lower-roman)""; }
+#ex_fifth-7-1-1-1 > li { counter-increment: ex_fifth-7-1-1-1; }
+#ex_fifth-9-1-1-1 { counter-set: ex_fifth-9-1-1-1 0; }
+#ex_fifth-9-1-1-1 > li::marker { content: ""counter(ex_fifth-9-1-1-1,lower-alpha)""; }
+#ex_fifth-9-1-1-1 > li { counter-increment: ex_fifth-9-1-1-1; }
+#ch-stat-2-1-1 { counter-set: ch-stat-2-1-1 0; }
+#ch-stat-2-1-1 > li::marker { content: ""counter(ch-stat-2-1-1,upper-roman)""; }
+#ch-stat-2-1-1 > li { counter-increment: ch-stat-2-1-1; }
+#ch-stat-2-1-1-1-4-1 { counter-set: ch-stat-2-1-1-1-4-1 0; }
+#ch-stat-2-1-1-1-4-1 > li::marker { content: ""counter(ch-stat-2-1-1-1-4-1,lower-roman)""; }
+#ch-stat-2-1-1-1-4-1 > li { counter-increment: ch-stat-2-1-1-1-4-1; }
+#ch-stat-2-4-1-1-2 { counter-set: ch-stat-2-4-1-1-2 0; }
+#ch-stat-2-4-1-1-2 > li::marker { content: ""counter(ch-stat-2-4-1-1-2,lower-roman)""; }
+#ch-stat-2-4-1-1-2 > li { counter-increment: ch-stat-2-4-1-1-2; }
+#ch-stat-2-4-2-1-2 { counter-set: ch-stat-2-4-2-1-2 0; }
+#ch-stat-2-4-2-1-2 > li::marker { content: ""counter(ch-stat-2-4-2-1-2,lower-roman)""; }
+#ch-stat-2-4-2-1-2 > li { counter-increment: ch-stat-2-4-2-1-2; }
+#ch-stat-2-5-1-1-1 { counter-set: ch-stat-2-5-1-1-1 0; }
+#ch-stat-2-5-1-1-1 > li::marker { content: ""counter(ch-stat-2-5-1-1-1,lower-roman)""; }
+#ch-stat-2-5-1-1-1 > li { counter-increment: ch-stat-2-5-1-1-1; }
+#sec-stat_int-2-1-2 { counter-set: sec-stat_int-2-1-2 0; }
+#sec-stat_int-2-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2,lower-roman)""; }
+#sec-stat_int-2-1-2 > li { counter-increment: sec-stat_int-2-1-2; }
+#sec-stat_int-2-1-2-1-1-2 { counter-set: sec-stat_int-2-1-2-1-1-2 0; }
+#sec-stat_int-2-1-2-1-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2-1-1-2,lower-alpha)""; }
+#sec-stat_int-2-1-2-1-1-2 > li { counter-increment: sec-stat_int-2-1-2-1-1-2; }
+#sec-stat_int-2-1-2-2-1-2 { counter-set: sec-stat_int-2-1-2-2-1-2 0; }
+#sec-stat_int-2-1-2-2-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2-2-1-2,lower-alpha)""; }
+#sec-stat_int-2-1-2-2-1-2 > li { counter-increment: sec-stat_int-2-1-2-2-1-2; }
+#subsec-pop_samp-6-2-1 { counter-set: subsec-pop_samp-6-2-1 0; }
+#subsec-pop_samp-6-2-1 > li::marker { content: ""counter(subsec-pop_samp-6-2-1,lower-roman)""; }
+#subsec-pop_samp-6-2-1 > li { counter-increment: subsec-pop_samp-6-2-1; }
+#sec-stat_centerT-2-2-2 { counter-set: sec-stat_centerT-2-2-2 0; }
+#sec-stat_centerT-2-2-2 > li::marker { content: ""counter(sec-stat_centerT-2-2-2,decimal)"."; }
+#sec-stat_centerT-2-2-2 > li { counter-increment: sec-stat_centerT-2-2-2; }
+#sec-stat_centerT-2-2-2-1-1-1 { counter-set: sec-stat_centerT-2-2-2-1-1-1 0; }
+#sec-stat_centerT-2-2-2-1-1-1 > li::marker { content: ""counter(sec-stat_centerT-2-2-2-1-1-1,lower-roman)""; }
+#sec-stat_centerT-2-2-2-1-1-1 > li { counter-increment: sec-stat_centerT-2-2-2-1-1-1; }
+#sec-stat_centerT-2-2-2-2-1-1 { counter-set: sec-stat_centerT-2-2-2-2-1-1 0; }
+#sec-stat_centerT-2-2-2-2-1-1 > li::marker { content: ""counter(sec-stat_centerT-2-2-2-2-1-1,lower-roman)""; }
+#sec-stat_centerT-2-2-2-2-1-1 > li { counter-increment: sec-stat_centerT-2-2-2-2-1-1; }
+#subsec-mean-2-1-1 { counter-set: subsec-mean-2-1-1 0; }
+#subsec-mean-2-1-1 > li::marker { content: ""counter(subsec-mean-2-1-1,upper-roman)""; }
+#subsec-mean-2-1-1 > li { counter-increment: subsec-mean-2-1-1; }
+#subsec-mean-2-2-1 { counter-set: subsec-mean-2-2-1 0; }
+#subsec-mean-2-2-1 > li::marker { content: ""counter(subsec-mean-2-2-1,lower-roman)""; }
+#subsec-mean-2-2-1 > li { counter-increment: subsec-mean-2-2-1; }
+#subsec-discrD-2-1 { counter-set: subsec-discrD-2-1 0; }
+#subsec-discrD-2-1 > li::marker { content: ""counter(subsec-discrD-2-1,lower-roman)""; }
+#subsec-discrD-2-1 > li { counter-increment: subsec-discrD-2-1; }
+#subsec-discrD-3-1 { counter-set: subsec-discrD-3-1 0; }
+#subsec-discrD-3-1 > li::marker { content: ""counter(subsec-discrD-3-1,decimal)"."; }
+#subsec-discrD-3-1 > li { counter-increment: subsec-discrD-3-1; }
+#subsubsec-contS-3-2 { counter-set: subsubsec-contS-3-2 0; }
+#subsubsec-contS-3-2 > li::marker { content: ""counter(subsubsec-contS-3-2,lower-alpha)""; }
+#subsubsec-contS-3-2 > li { counter-increment: subsubsec-contS-3-2; }
+#subsec-combM-3-1-1-1 { counter-set: subsec-combM-3-1-1-1 0; }
+#subsec-combM-3-1-1-1 > li::marker { content: ""counter(subsec-combM-3-1-1-1,lower-alpha)""; }
+#subsec-combM-3-1-1-1 > li { counter-increment: subsec-combM-3-1-1-1; }
+#subsubsec-mean_prop-2-1 { counter-set: subsubsec-mean_prop-2-1 0; }
+#subsubsec-mean_prop-2-1 > li::marker { content: ""counter(subsubsec-mean_prop-2-1,lower-roman)""; }
+#subsubsec-mean_prop-2-1 > li { counter-increment: subsubsec-mean_prop-2-1; }
+#subsubsec-mean_prop-4-1 { counter-set: subsubsec-mean_prop-4-1 0; }
+#subsubsec-mean_prop-4-1 > li::marker { content: ""counter(subsubsec-mean_prop-4-1,lower-roman)""; }
+#subsubsec-mean_prop-4-1 > li { counter-increment: subsubsec-mean_prop-4-1; }
+#subsubsec-med_is-2-1 { counter-set: subsubsec-med_is-2-1 0; }
+#subsubsec-med_is-2-1 > li::marker { content: ""counter(subsubsec-med_is-2-1,lower-roman)""; }
+#subsubsec-med_is-2-1 > li { counter-increment: subsubsec-med_is-2-1; }
+#subsubsec-med_is-3-1 { counter-set: subsubsec-med_is-3-1 0; }
+#subsubsec-med_is-3-1 > li::marker { content: ""counter(subsubsec-med_is-3-1,decimal)"."; }
+#subsubsec-med_is-3-1 > li { counter-increment: subsubsec-med_is-3-1; }
+#subsubsec-med_prop-2-1 { counter-set: subsubsec-med_prop-2-1 0; }
+#subsubsec-med_prop-2-1 > li::marker { content: ""counter(subsubsec-med_prop-2-1,lower-roman)""; }
+#subsubsec-med_prop-2-1 > li { counter-increment: subsubsec-med_prop-2-1; }
+#subsubsec-mod_is-2-1 { counter-set: subsubsec-mod_is-2-1 0; }
+#subsubsec-mod_is-2-1 > li::marker { content: ""counter(subsubsec-mod_is-2-1,lower-roman)""; }
+#subsubsec-mod_is-2-1 > li { counter-increment: subsubsec-mod_is-2-1; }
+#subsubsec-mod_cs-6-2 { counter-set: subsubsec-mod_cs-6-2 0; }
+#subsubsec-mod_cs-6-2 > li::marker { content: ""counter(subsubsec-mod_cs-6-2,lower-roman)""; }
+#subsubsec-mod_cs-6-2 > li { counter-increment: subsubsec-mod_cs-6-2; }
+#subsec-disp_msr-3-1 { counter-set: subsec-disp_msr-3-1 0; }
+#subsec-disp_msr-3-1 > li::marker { content: ""counter(subsec-disp_msr-3-1,decimal)"."; }
+#subsec-disp_msr-3-1 > li { counter-increment: subsec-disp_msr-3-1; }
+#subsec-disp_msr-3-1-1-2-1 { counter-set: subsec-disp_msr-3-1-1-2-1 0; }
+#subsec-disp_msr-3-1-1-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-1-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-1-2-1 > li { counter-increment: subsec-disp_msr-3-1-1-2-1; }
+#subsec-disp_msr-3-1-2-2-1 { counter-set: subsec-disp_msr-3-1-2-2-1 0; }
+#subsec-disp_msr-3-1-2-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-2-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-2-2-1 > li { counter-increment: subsec-disp_msr-3-1-2-2-1; }
+#subsubsec-rng_cs-2-1 { counter-set: subsubsec-rng_cs-2-1 0; }
+#subsubsec-rng_cs-2-1 > li::marker { content: ""counter(subsubsec-rng_cs-2-1,decimal)"."; }
+#subsubsec-rng_cs-2-1 > li { counter-increment: subsubsec-rng_cs-2-1; }
+#subsubsec-rng_merit-2-1 { counter-set: subsubsec-rng_merit-2-1 0; }
+#subsubsec-rng_merit-2-1 > li::marker { content: ""counter(subsubsec-rng_merit-2-1,decimal)"."; }
+#subsubsec-rng_merit-2-1 > li { counter-increment: subsubsec-rng_merit-2-1; }
+#subsubsec-rng_limit-2-1 { counter-set: subsubsec-rng_limit-2-1 0; }
+#subsubsec-rng_limit-2-1 > li::marker { content: ""counter(subsubsec-rng_limit-2-1,decimal)"."; }
+#subsubsec-rng_limit-2-1 > li { counter-increment: subsubsec-rng_limit-2-1; }
+#subsubsec-rng_use-2-1 { counter-set: subsubsec-rng_use-2-1 0; }
+#subsubsec-rng_use-2-1 > li::marker { content: ""counter(subsubsec-rng_use-2-1,decimal)"."; }
+#subsubsec-rng_use-2-1 > li { counter-increment: subsubsec-rng_use-2-1; }
+#subsec-st_dev-2-3-2 { counter-set: subsec-st_dev-2-3-2 0; }
+#subsec-st_dev-2-3-2 > li::marker { content: ""counter(subsec-st_dev-2-3-2,lower-roman)""; }
+#subsec-st_dev-2-3-2 > li { counter-increment: subsec-st_dev-2-3-2; }
+#subsubsec-sd_dscs-2-1 { counter-set: subsubsec-sd_dscs-2-1 0; }
+#subsubsec-sd_dscs-2-1 > li::marker { content: ""counter(subsubsec-sd_dscs-2-1,lower-alpha)""; }
+#subsubsec-sd_dscs-2-1 > li { counter-increment: subsubsec-sd_dscs-2-1; }
+#subsec-mean_dev-2-1-1 { counter-set: subsec-mean_dev-2-1-1 0; }
+#subsec-mean_dev-2-1-1 > li::marker { content: ""counter(subsec-mean_dev-2-1-1,decimal)"."; }
+#subsec-mean_dev-2-1-1 > li { counter-increment: subsec-mean_dev-2-1-1; }
+#sec_stat_example-2-1-1-1 { counter-set: sec_stat_example-2-1-1-1 0; }
+#sec_stat_example-2-1-1-1 > li::marker { content: ""counter(sec_stat_example-2-1-1-1,lower-roman)""; }
+#sec_stat_example-2-1-1-1 > li { counter-increment: sec_stat_example-2-1-1-1; }
+#sec_stat_example-3-1-1-1 { counter-set: sec_stat_example-3-1-1-1 0; }
+#sec_stat_example-3-1-1-1 > li::marker { content: ""counter(sec_stat_example-3-1-1-1,decimal)"."; }
+#sec_stat_example-3-1-1-1 > li { counter-increment: sec_stat_example-3-1-1-1; }
+#sec_stat_example-4-1-1-1 { counter-set: sec_stat_example-4-1-1-1 0; }
+#sec_stat_example-4-1-1-1 > li::marker { content: ""counter(sec_stat_example-4-1-1-1,lower-alpha)""; }
+#sec_stat_example-4-1-1-1 > li { counter-increment: sec_stat_example-4-1-1-1; }
+#sec_stat_example-5-1-1-1 { counter-set: sec_stat_example-5-1-1-1 0; }
+#sec_stat_example-5-1-1-1 > li::marker { content: ""counter(sec_stat_example-5-1-1-1,lower-roman)""; }
+#sec_stat_example-5-1-1-1 > li { counter-increment: sec_stat_example-5-1-1-1; }
+#sec_stat_example-5-2-1-2 { counter-set: sec_stat_example-5-2-1-2 0; }
+#sec_stat_example-5-2-1-2 > li::marker { content: ""counter(sec_stat_example-5-2-1-2,lower-roman)""; }
+#sec_stat_example-5-2-1-2 > li { counter-increment: sec_stat_example-5-2-1-2; }
+#ex_sixth-3-1-1-1 { counter-set: ex_sixth-3-1-1-1 0; }
+#ex_sixth-3-1-1-1 > li::marker { content: "("counter(ex_sixth-3-1-1-1,lower-alpha)")"; }
+#ex_sixth-3-1-1-1 > li { counter-increment: ex_sixth-3-1-1-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -155,14 +676,14 @@ window.MathJax = {
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondb.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise B</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-set_op.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Operations on Sets</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-venn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Venn Diagram</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.2</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-vennD_shade" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Shading of Venn Diagram</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Example B</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Exercise C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set_venn.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Venn Diagram</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_venn.html#subsec-ven_b" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Venn Diagram using checkmarks</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Example B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Exercise C</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -371,7 +892,8 @@ x+y = n
 </div>
 <div class="para">i.e., <span class="process-math">\(8+6 = 14.\)</span>
 </div>
-</div> <div class="para logical" id="sec-comb_example-4-2-2">
+</div>
+<div class="para logical" id="sec-comb_example-4-2-2">
 <div class="para">Hence,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/cor-comb_1th1.html">
 \begin{equation*}
@@ -420,7 +942,8 @@ x+y = n
 4n-9r =5\tag{4.6.1}
 \end{equation}
 </div>
-</div> Now, <div class="para logical" id="sec-comb_example-5-2-2">
+</div>
+<div class="para logical" id="sec-comb_example-5-2-2">
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comb1.html ./knowl/xref/eqn-comb2.html">
 \begin{equation*}
 ^nC_{(r-1)}:^nC_{r} = \frac{3}{4}
@@ -442,7 +965,8 @@ x+y = n
 \end{equation}
 </div>
 <div class="para">On solving <a href="sec-comb_example.html#eqn-comb1" class="xref" data-knowl="./knowl/xref/eqn-comb1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.6.1">(4.6.1)</a> and <a href="sec-comb_example.html#eqn-comb2" class="xref" data-knowl="./knowl/xref/eqn-comb2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.6.2">(4.6.2)</a>, we get -</div>
-</div> <div class="para" id="sec-comb_example-5-2-3">
+</div>
+<div class="para" id="sec-comb_example-5-2-3">
 <span class="process-math">\(r=27\)</span> and <span class="process-math">\(n=62.\)</span>
 </div>
 </div></details></div></article><article class="example example-like" id="sec-comb_example-6"><h3 class="heading">
@@ -506,7 +1030,8 @@ n = 6.
 n  = 1+r \tag{4.6.3}
 \end{equation}
 </div>
-</div> <div class="para logical" id="sec-comb_example-7-2-2">
+</div>
+<div class="para logical" id="sec-comb_example-7-2-2">
 <div class="para">also,</div>
 <div class="displaymath process-math" id="sec-comb_example-7-2-2-1">
 \begin{align*}
@@ -521,7 +1046,8 @@ n  = 1+r \tag{4.6.3}
 n  = 2r-1 \tag{4.6.4}
 \end{equation}
 </div>
-</div> <div class="para logical" id="sec-comb_example-7-2-3">
+</div>
+<div class="para logical" id="sec-comb_example-7-2-3">
 <div class="para">On solving <a href="sec-comb_example.html#eqn-comb3" class="xref" data-knowl="./knowl/xref/eqn-comb3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.6.3">(4.6.3)</a> and <a href="sec-comb_example.html#eqn-comb4" class="xref" data-knowl="./knowl/xref/eqn-comb4.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.6.4">(4.6.4)</a>, we get -</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comb3.html ./knowl/xref/eqn-comb4.html">
 \begin{equation*}
@@ -581,7 +1107,8 @@ r =2
 \frac{(n+2)(n+1)n(n-1)\cancel{(n-2)!}}{8!\cancel{(n-2)!}} \amp   =\frac{57}{16} \\
 (n+2)(n+1)n(n-1) \amp = 21 \times 20\times 19 \times 18
 \end{align*}
-</div></div> <div class="para logical" id="sec-comb_example-9-2-2"><div class="displaymath process-math">
+</div></div>
+<div class="para logical" id="sec-comb_example-9-2-2"><div class="displaymath process-math">
 \begin{equation*}
 \therefore \quad n=19.
 \end{equation*}
@@ -591,13 +1118,13 @@ r =2
 </h3>
 <div class="para logical" id="sec-comb_example-10-1-1">
 <div class="para">In how many ways can eleven team members be chosen out of a batch of 15 players, if</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-comb_example-10-1-1-1">
 <li id="sec-comb_example-10-1-1-1-1"><div class="para" id="sec-comb_example-10-1-1-1-1-1">there is no restriction on the selection?</div></li>
 <li id="sec-comb_example-10-1-1-1-2"><div class="para" id="sec-comb_example-10-1-1-1-2-1">a particular player is always chosen?</div></li>
 <li id="sec-comb_example-10-1-1-1-3"><div class="para" id="sec-comb_example-10-1-1-1-3-1">a particular player is never chosen?</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec-comb_example-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-comb_example-10-2-1"><ol class="lower-roman">
+<div class="solutions"><details id="sec-comb_example-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-comb_example-10-2-1"><ol class="lower-roman" id="sec-comb_example-10-2-1-1">
 <li id="sec-comb_example-10-2-1-1-1"><div class="para logical" id="sec-comb_example-10-2-1-1-1-1"><div class="displaymath process-math">
 \begin{equation*}
 ^{15}C_{11} \quad \Rightarrow \quad ^{15}C_{(15-11)} =  ^{15}C_{4}
@@ -626,7 +1153,9 @@ r =2
 <div class="solutions"><details id="sec-comb_example-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-comb_example-11-2-1">
 <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span> <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span> <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span> |  <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span> <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span>
-</div> <div class="para" id="sec-comb_example-11-2-2">committee of 5 memebrs with  3M and 2W selected from 6 men and 5 women.</div> <div class="para logical" id="sec-comb_example-11-2-3"><div class="displaymath process-math">
+</div>
+<div class="para" id="sec-comb_example-11-2-2">committee of 5 memebrs with  3M and 2W selected from 6 men and 5 women.</div>
+<div class="para logical" id="sec-comb_example-11-2-3"><div class="displaymath process-math">
 \begin{equation*}
 ^6C_3 \times ^5C_2 = 200.
 \end{equation*}
@@ -644,7 +1173,8 @@ r =2
 ^5C_2 \times ^2C_1 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-12-2-2">
+</div>
+<div class="para logical" id="sec-comb_example-12-2-2">
 <div class="para">
 <dfn class="terminology">Case II</dfn> 2 woman is included.</div>
 <div class="displaymath process-math">
@@ -652,7 +1182,8 @@ r =2
 ^5C_1 \times ^2C_2 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-12-2-3">
+</div>
+<div class="para logical" id="sec-comb_example-12-2-3">
 <div class="para">Therefore total ways of selection =</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -665,14 +1196,15 @@ r =2
 </h3>
 <div class="para logical" id="sec-comb_example-13-1-1">
 <div class="para">A committee of 5 is to be formed one of 6 men and 4 women. In how many ways can this be done. When</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-comb_example-13-1-1-1">
 <li id="sec-comb_example-13-1-1-1-1"><div class="para" id="sec-comb_example-13-1-1-1-1-1">at least 2 women are included,</div></li>
 <li id="sec-comb_example-13-1-1-1-2"><div class="para" id="sec-comb_example-13-1-1-1-2-1">at most 2 women are included?</div></li>
 </ol>
 </div>
 <div class="solutions"><details id="sec-comb_example-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-comb_example-13-2-1">(i) <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span> <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span> <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span> |  <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span> <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span>
-</div> <div class="para logical" id="sec-comb_example-13-2-2">
+</div>
+<div class="para logical" id="sec-comb_example-13-2-2">
 <div class="para">
 <dfn class="terminology">Case I</dfn> 2 woman is included.</div>
 <div class="displaymath process-math">
@@ -680,7 +1212,8 @@ r =2
 ^6C_3 \times ^4C_2 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-13-2-3">
+</div>
+<div class="para logical" id="sec-comb_example-13-2-3">
 <div class="para">
 <dfn class="terminology">Case II</dfn> 3 woman is included.</div>
 <div class="displaymath process-math">
@@ -688,7 +1221,8 @@ r =2
 ^6C_2 \times ^4C_3 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-13-2-4">
+</div>
+<div class="para logical" id="sec-comb_example-13-2-4">
 <div class="para">
 <dfn class="terminology">Case III</dfn> 4 woman is included.</div>
 <div class="displaymath process-math">
@@ -696,21 +1230,24 @@ r =2
 ^6C_1 \times ^4C_4 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-13-2-5">
+</div>
+<div class="para logical" id="sec-comb_example-13-2-5">
 <div class="para">Therefore total ways of selection =</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \left(  ^6C_3 \times ^4C_2 \right) +    \left(  ^6C_2 \times ^4C_3 \right) +   \left(  ^6C_1 \times ^4C_4 \right) = ----.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-13-2-6">
+</div>
+<div class="para logical" id="sec-comb_example-13-2-6">
 <div class="para">(ii) <dfn class="terminology">Case I</dfn>  No woman is included.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 ^6C_5 \times ^4C_0 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-13-2-7">
+</div>
+<div class="para logical" id="sec-comb_example-13-2-7">
 <div class="para">
 <dfn class="terminology">Case II</dfn> 1 woman is included.</div>
 <div class="displaymath process-math">
@@ -718,7 +1255,8 @@ r =2
 ^6C_4 \times ^4C_1 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-13-2-8">
+</div>
+<div class="para logical" id="sec-comb_example-13-2-8">
 <div class="para">
 <dfn class="terminology">Case III</dfn> 2 woman is included.</div>
 <div class="displaymath process-math">
@@ -726,7 +1264,8 @@ r =2
 ^6C_3 \times ^4C_2 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-13-2-9">
+</div>
+<div class="para logical" id="sec-comb_example-13-2-9">
 <div class="para">Therefore total ways of selection =</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -739,7 +1278,9 @@ r =2
 </h3>
 <div class="para" id="sec-comb_example-14-1-1">An examination paper contains 12 questions and has two parts A and B. Part A contains 7 questions and part B contains 5 questions. A student has to attempt 8 questions among them 3 questions must be from each parts. How many ways he/she can do that?</div>
 <div class="solutions"><details id="sec-comb_example-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-comb_example-14-2-1">Total of 12 Q; attempt 8Q among them 3 must be from each parts.</div> <div class="para" id="sec-comb_example-14-2-2"></div> <div class="para logical" id="sec-comb_example-14-2-3">
+<div class="para" id="sec-comb_example-14-2-1">Total of 12 Q; attempt 8Q among them 3 must be from each parts.</div>
+<div class="para" id="sec-comb_example-14-2-2"></div>
+<div class="para logical" id="sec-comb_example-14-2-3">
 <div class="para">
 <em class="alert">Case I</em> 3Q from part A.</div>
 <div class="displaymath process-math">
@@ -766,7 +1307,8 @@ Part A \fillinmath{XXX}part B
 ^7C_5 \times ^5C_3
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-14-2-4">
+</div>
+<div class="para logical" id="sec-comb_example-14-2-4">
 <div class="para">Hence, the total number ways he/she make selections =</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -779,9 +1321,12 @@ Part A \fillinmath{XXX}part B
 </h3>
 <div class="para" id="sec-comb_example-15-1-1">How many diagonals are there in a polygon of <span class="process-math">\(n\)</span> sides?</div>
 <div class="solutions"><details id="sec-comb_example-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-comb_example-15-2-1">Polygon of <span class="process-math">\(n\)</span> sides has <span class="process-math">\(n\)</span> vertex. In polygon (number of sides = number of vertex).</div> <div class="para" id="sec-comb_example-15-2-2">That is, total points on polygon = <span class="process-math">\(n.\)</span>
-</div> <div class="para" id="sec-comb_example-15-2-3">total line segments = <span class="process-math">\(^nC_2.\)</span>
-</div> <div class="para logical" id="sec-comb_example-15-2-4">
+<div class="para" id="sec-comb_example-15-2-1">Polygon of <span class="process-math">\(n\)</span> sides has <span class="process-math">\(n\)</span> vertex. In polygon (number of sides = number of vertex).</div>
+<div class="para" id="sec-comb_example-15-2-2">That is, total points on polygon = <span class="process-math">\(n.\)</span>
+</div>
+<div class="para" id="sec-comb_example-15-2-3">total line segments = <span class="process-math">\(^nC_2.\)</span>
+</div>
+<div class="para logical" id="sec-comb_example-15-2-4">
 <div class="para">number of diagonals = (total line segments)-(number of sides of polygon)</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -804,13 +1349,14 @@ or, \quad \text{  number of diagonals } = ^nC_2-n
 </h3>
 <div class="para logical" id="sec-comb_example-16-1-1">
 <div class="para">There are 10 points in a plane, three of which are not on the same straight line, except 4 points, which are collinear. Find</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-comb_example-16-1-1-1">
 <li id="sec-comb_example-16-1-1-1-1"><div class="para" id="sec-comb_example-16-1-1-1-1-1">The number of lines obtained from the pairs of these points.</div></li>
 <li id="sec-comb_example-16-1-1-1-2"><div class="para" id="sec-comb_example-16-1-1-1-2-1">The number of triangles that can be bormed with vertices as these points.</div></li>
 </ol>
 </div>
 <div class="solutions"><details id="sec-comb_example-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-comb_example-16-2-1">10 points given, where 4 points are collinear.</div> <div class="para logical" id="sec-comb_example-16-2-2"><ol class="lower-roman">
+<div class="para" id="sec-comb_example-16-2-1">10 points given, where 4 points are collinear.</div>
+<div class="para logical" id="sec-comb_example-16-2-2"><ol class="lower-roman" id="sec-comb_example-16-2-2-1">
 <li id="sec-comb_example-16-2-2-1-1">
 <div class="para" id="sec-comb_example-16-2-2-1-1-1">Number of lines = <span class="process-math">\(^nC_2 = ^{10}C_2 -^4C_2 +1\)</span>
 </div>
@@ -824,7 +1370,8 @@ or, \quad \text{  number of diagonals } = ^nC_2-n
 </h3>
 <div class="para" id="sec-comb_example-17-1-1">A box contains 6 red and 5 white balls. In how many ways can 6 balls selected so that there are at least two balls of each color?</div>
 <div class="solutions"><details id="sec-comb_example-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-comb_example-17-2-1">Box - 6R and 5W</div> <div class="para logical" id="sec-comb_example-17-2-2">
+<div class="para" id="sec-comb_example-17-2-1">Box - 6R and 5W</div>
+<div class="para logical" id="sec-comb_example-17-2-2">
 <div class="para">
 <em class="alert">Case I</em> 2R and 4W</div>
 <div class="displaymath process-math">
@@ -846,14 +1393,16 @@ or, \quad \text{  number of diagonals } = ^nC_2-n
 ^6C_4 \times ^5C_2
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-comb_example-17-2-3">Total number of ways = <span class="process-math">\(\left(  ^6C_2 \times ^5C_4 \right) + \left(  ^6C_3 \times ^5C_3 \right) + \left(  ^6C_4 \times ^5C_2 \right)\)</span>
+</div>
+<div class="para" id="sec-comb_example-17-2-3">Total number of ways = <span class="process-math">\(\left(  ^6C_2 \times ^5C_4 \right) + \left(  ^6C_3 \times ^5C_3 \right) + \left(  ^6C_4 \times ^5C_2 \right)\)</span>
 </div>
 </div></details></div></article><article class="example example-like" id="sec-comb_example-18"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.6.57</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec-comb_example-18-1-1">A box consists of 3 black, 2 white, and 4 red balls. In how many ways can 3 balls be drawn from the box, if at least one black ball is to be involved in the drawn?</div>
 <div class="solutions"><details id="sec-comb_example-18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-comb_example-18-2-1">3B, 2W,4R balls = 9 balls total. Choose 3 balls among them at least 1 ball must be black.</div> <div class="para logical" id="sec-comb_example-18-2-2">
+<div class="para" id="sec-comb_example-18-2-1">3B, 2W,4R balls = 9 balls total. Choose 3 balls among them at least 1 ball must be black.</div>
+<div class="para logical" id="sec-comb_example-18-2-2">
 <div class="para">
 <em class="alert">Case I</em> 1 black ball 2 non-black balls.</div>
 <div class="displaymath process-math">
@@ -863,7 +1412,8 @@ or, \quad \text{  number of diagonals } = ^nC_2-n
 </div>
 <div class="para">or, <span class="process-math">\(^3C_1 \times ^2C_1 \times ^4C_1 \)</span>
 </div>
-</div> <div class="para logical" id="sec-comb_example-18-2-3">
+</div>
+<div class="para logical" id="sec-comb_example-18-2-3">
 <div class="para">
 <em class="alert">Case II</em> 2 black ball 1 non-black balls.</div>
 <div class="displaymath process-math">
@@ -871,7 +1421,8 @@ or, \quad \text{  number of diagonals } = ^nC_2-n
 ^3C_2 \times ^6C_1 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-18-2-4">
+</div>
+<div class="para logical" id="sec-comb_example-18-2-4">
 <div class="para">
 <em class="alert">Case III</em> 3 black ball 0 non-black balls.</div>
 <div class="displaymath process-math">
@@ -879,7 +1430,8 @@ or, \quad \text{  number of diagonals } = ^nC_2-n
 ^3C_3 \times ^6C_0 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-comb_example-18-2-5">
+</div>
+<div class="para logical" id="sec-comb_example-18-2-5">
 <div class="para">So the total ways of drawing is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -893,14 +1445,15 @@ or, \quad \text{  number of diagonals } = ^nC_2-n
 </h3>
 <div class="para logical" id="sec-comb_example-19-1-1">
 <div class="para">A bag contains 6 white marbles and 5 red marbles. Find the number of ways in which 4 marbles can be drawn from the bag, if</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-comb_example-19-1-1-1">
 <li id="sec-comb_example-19-1-1-1-1"><div class="para" id="sec-comb_example-19-1-1-1-1-1">They can be of any color?</div></li>
 <li id="sec-comb_example-19-1-1-1-2"><div class="para" id="sec-comb_example-19-1-1-1-2-1">2 must be white and 2 red.</div></li>
 <li id="sec-comb_example-19-1-1-1-3"><div class="para" id="sec-comb_example-19-1-1-1-3-1">They must all be of same color.</div></li>
 </ol>
 </div>
 <div class="solutions"><details id="sec-comb_example-19-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-comb_example-19-2-1">6W, 5R = 11 balls among which select 4.</div> <div class="para logical" id="sec-comb_example-19-2-2"><ol class="lower-roman">
+<div class="para" id="sec-comb_example-19-2-1">6W, 5R = 11 balls among which select 4.</div>
+<div class="para logical" id="sec-comb_example-19-2-2"><ol class="lower-roman" id="sec-comb_example-19-2-2-1">
 <li id="sec-comb_example-19-2-2-1-1"><div class="para logical" id="sec-comb_example-19-2-2-1-1-1"><div class="displaymath process-math">
 \begin{equation*}
 ^{11}C_4
@@ -922,7 +1475,10 @@ or, \quad \text{  number of diagonals } = ^nC_2-n
 </h3>
 <div class="para" id="sec-comb_example-20-1-1">A convex polygon has 44 diagonals. Find the number of its sides?</div>
 <div class="solutions"><details id="sec-comb_example-20-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-comb_example-20-2-1">Number of sides = <span class="process-math">\(n\)</span> = number of vertex = number of points.</div> <div class="para" id="sec-comb_example-20-2-2">number of diagonal = 44</div> <div class="para" id="sec-comb_example-20-2-3">Total number of lines = <span class="process-math">\(^nC_2\)</span> in a polygon. Two points for every line.</div> <div class="para logical" id="sec-comb_example-20-2-4">
+<div class="para" id="sec-comb_example-20-2-1">Number of sides = <span class="process-math">\(n\)</span> = number of vertex = number of points.</div>
+<div class="para" id="sec-comb_example-20-2-2">number of diagonal = 44</div>
+<div class="para" id="sec-comb_example-20-2-3">Total number of lines = <span class="process-math">\(^nC_2\)</span> in a polygon. Two points for every line.</div>
+<div class="para logical" id="sec-comb_example-20-2-4">
 <div class="para">total lines = number of diagonal + number of sides.</div>
 <div class="displaymath process-math">
 \begin{equation*}

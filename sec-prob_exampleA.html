@@ -88,6 +88,527 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#ch-numb-2-1-1 { counter-set: ch-numb-2-1-1 0; }
+#ch-numb-2-1-1 > li::marker { content: ""counter(ch-numb-2-1-1,decimal)"."; }
+#ch-numb-2-1-1 > li { counter-increment: ch-numb-2-1-1; }
+#sec-num_sys-2-2-1 { counter-set: sec-num_sys-2-2-1 0; }
+#sec-num_sys-2-2-1 > li::marker { content: ""counter(sec-num_sys-2-2-1,decimal)"."; }
+#sec-num_sys-2-2-1 > li { counter-increment: sec-num_sys-2-2-1; }
+#subsec-div_rule-2-1 { counter-set: subsec-div_rule-2-1 0; }
+#subsec-div_rule-2-1 > li::marker { content: ""counter(subsec-div_rule-2-1,lower-roman)""; }
+#subsec-div_rule-2-1 > li { counter-increment: subsec-div_rule-2-1; }
+#subsec-fam_pair-2-3 { counter-set: subsec-fam_pair-2-3 0; }
+#subsec-fam_pair-2-3 > li::marker { content: ""counter(subsec-fam_pair-2-3,lower-roman)""; }
+#subsec-fam_pair-2-3 > li { counter-increment: subsec-fam_pair-2-3; }
+#sec-numb_example-3-1-1-1 { counter-set: sec-numb_example-3-1-1-1 0; }
+#sec-numb_example-3-1-1-1 > li::marker { content: ""counter(sec-numb_example-3-1-1-1,lower-roman)""; }
+#sec-numb_example-3-1-1-1 > li { counter-increment: sec-numb_example-3-1-1-1; }
+#sec-numb_example-3-2-1-1 { counter-set: sec-numb_example-3-2-1-1 0; }
+#sec-numb_example-3-2-1-1 > li::marker { content: ""counter(sec-numb_example-3-2-1-1,lower-roman)""; }
+#sec-numb_example-3-2-1-1 > li { counter-increment: sec-numb_example-3-2-1-1; }
+#sec-numb_example-5-1-1-1 { counter-set: sec-numb_example-5-1-1-1 0; }
+#sec-numb_example-5-1-1-1 > li::marker { content: ""counter(sec-numb_example-5-1-1-1,lower-roman)""; }
+#sec-numb_example-5-1-1-1 > li { counter-increment: sec-numb_example-5-1-1-1; }
+#sec-numb_example-5-2-1-1 { counter-set: sec-numb_example-5-2-1-1 0; }
+#sec-numb_example-5-2-1-1 > li::marker { content: ""counter(sec-numb_example-5-2-1-1,lower-roman)""; }
+#sec-numb_example-5-2-1-1 > li { counter-increment: sec-numb_example-5-2-1-1; }
+#ex_first-4-2 { counter-set: ex_first-4-2 0; }
+#ex_first-4-2 > li::marker { content: ""counter(ex_first-4-2,lower-roman)""; }
+#ex_first-4-2 > li { counter-increment: ex_first-4-2; }
+#ex_first-5-2-1 { counter-set: ex_first-5-2-1 0; }
+#ex_first-5-2-1 > li::marker { content: ""counter(ex_first-5-2-1,lower-roman)""; }
+#ex_first-5-2-1 > li { counter-increment: ex_first-5-2-1; }
+#ex_first-6-1-1-1 { counter-set: ex_first-6-1-1-1 0; }
+#ex_first-6-1-1-1 > li::marker { content: ""counter(ex_first-6-1-1-1,lower-alpha)""; }
+#ex_first-6-1-1-1 > li { counter-increment: ex_first-6-1-1-1; }
+#ex_first-7-1-1-1 { counter-set: ex_first-7-1-1-1 0; }
+#ex_first-7-1-1-1 > li::marker { content: ""counter(ex_first-7-1-1-1,lower-alpha)""; }
+#ex_first-7-1-1-1 > li { counter-increment: ex_first-7-1-1-1; }
+#ch-set-2-3-2 { counter-set: ch-set-2-3-2 0; }
+#ch-set-2-3-2 > li::marker { content: ""counter(ch-set-2-3-2,lower-alpha)""; }
+#ch-set-2-3-2 > li { counter-increment: ch-set-2-3-2; }
+#sec-set_descrp-2-1 { counter-set: sec-set_descrp-2-1 0; }
+#sec-set_descrp-2-1 > li::marker { content: ""counter(sec-set_descrp-2-1,decimal)"."; }
+#sec-set_descrp-2-1 > li { counter-increment: sec-set_descrp-2-1; }
+#sec_set-exampleA-2-1-2-1 { counter-set: sec_set-exampleA-2-1-2-1 0; }
+#sec_set-exampleA-2-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-2-1-2-1,lower-roman)""; }
+#sec_set-exampleA-2-1-2-1 > li { counter-increment: sec_set-exampleA-2-1-2-1; }
+#sec_set-exampleA-3-1-2-1 { counter-set: sec_set-exampleA-3-1-2-1 0; }
+#sec_set-exampleA-3-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-3-1-2-1,lower-roman)""; }
+#sec_set-exampleA-3-1-2-1 > li { counter-increment: sec_set-exampleA-3-1-2-1; }
+#sec_set-exampleA-4-1-2-1 { counter-set: sec_set-exampleA-4-1-2-1 0; }
+#sec_set-exampleA-4-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-4-1-2-1,lower-roman)""; }
+#sec_set-exampleA-4-1-2-1 > li { counter-increment: sec_set-exampleA-4-1-2-1; }
+#sec_set-exampleA-5-1-2-1 { counter-set: sec_set-exampleA-5-1-2-1 0; }
+#sec_set-exampleA-5-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-5-1-2-1,lower-roman)""; }
+#sec_set-exampleA-5-1-2-1 > li { counter-increment: sec_set-exampleA-5-1-2-1; }
+#sec_set-exampleA-6-1-2-1 { counter-set: sec_set-exampleA-6-1-2-1 0; }
+#sec_set-exampleA-6-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-6-1-2-1,lower-roman)""; }
+#sec_set-exampleA-6-1-2-1 > li { counter-increment: sec_set-exampleA-6-1-2-1; }
+#sec-set_type-2-1-1 { counter-set: sec-set_type-2-1-1 0; }
+#sec-set_type-2-1-1 > li::marker { content: ""counter(sec-set_type-2-1-1,decimal)"."; }
+#sec-set_type-2-1-1 > li { counter-increment: sec-set_type-2-1-1; }
+#sec-set_type-2-1-1-2-4-1-1-3 { counter-set: sec-set_type-2-1-1-2-4-1-1-3 0; }
+#sec-set_type-2-1-1-2-4-1-1-3 > li::marker { content: ""counter(sec-set_type-2-1-1-2-4-1-1-3,lower-alpha)""; }
+#sec-set_type-2-1-1-2-4-1-1-3 > li { counter-increment: sec-set_type-2-1-1-2-4-1-1-3; }
+#sec-set_type-2-1-1-5-5-2 { counter-set: sec-set_type-2-1-1-5-5-2 0; }
+#sec-set_type-2-1-1-5-5-2 > li::marker { content: ""counter(sec-set_type-2-1-1-5-5-2,lower-roman)""; }
+#sec-set_type-2-1-1-5-5-2 > li { counter-increment: sec-set_type-2-1-1-5-5-2; }
+#ex_second-2-1-1-1 { counter-set: ex_second-2-1-1-1 0; }
+#ex_second-2-1-1-1 > li::marker { content: ""counter(ex_second-2-1-1-1,lower-alpha)""; }
+#ex_second-2-1-1-1 > li { counter-increment: ex_second-2-1-1-1; }
+#ex_second-3-1-1-1 { counter-set: ex_second-3-1-1-1 0; }
+#ex_second-3-1-1-1 > li::marker { content: ""counter(ex_second-3-1-1-1,lower-alpha)""; }
+#ex_second-3-1-1-1 > li { counter-increment: ex_second-3-1-1-1; }
+#ex_second-4-1-1-1 { counter-set: ex_second-4-1-1-1 0; }
+#ex_second-4-1-1-1 > li::marker { content: ""counter(ex_second-4-1-1-1,lower-alpha)""; }
+#ex_second-4-1-1-1 > li { counter-increment: ex_second-4-1-1-1; }
+#ex_second-5-1-1-2 { counter-set: ex_second-5-1-1-2 0; }
+#ex_second-5-1-1-2 > li::marker { content: ""counter(ex_second-5-1-1-2,lower-alpha)""; }
+#ex_second-5-1-1-2 > li { counter-increment: ex_second-5-1-1-2; }
+#ex_second-6-1-1-1 { counter-set: ex_second-6-1-1-1 0; }
+#ex_second-6-1-1-1 > li::marker { content: ""counter(ex_second-6-1-1-1,lower-alpha)""; }
+#ex_second-6-1-1-1 > li { counter-increment: ex_second-6-1-1-1; }
+#sec-subset-2-7-1-1 { counter-set: sec-subset-2-7-1-1 0; }
+#sec-subset-2-7-1-1 > li::marker { content: ""counter(sec-subset-2-7-1-1,lower-alpha)""; }
+#sec-subset-2-7-1-1 > li { counter-increment: sec-subset-2-7-1-1; }
+#subsubsec-intervals-5-1 { counter-set: subsubsec-intervals-5-1 0; }
+#subsubsec-intervals-5-1 > li::marker { content: ""counter(subsubsec-intervals-5-1,lower-roman)""; }
+#subsubsec-intervals-5-1 > li { counter-increment: subsubsec-intervals-5-1; }
+#ex_secondb-2-1-1-3 { counter-set: ex_secondb-2-1-1-3 0; }
+#ex_secondb-2-1-1-3 > li::marker { content: ""counter(ex_secondb-2-1-1-3,lower-alpha)""; }
+#ex_secondb-2-1-1-3 > li { counter-increment: ex_secondb-2-1-1-3; }
+#ex_secondb-3-1-2-1 { counter-set: ex_secondb-3-1-2-1 0; }
+#ex_secondb-3-1-2-1 > li::marker { content: ""counter(ex_secondb-3-1-2-1,lower-alpha)""; }
+#ex_secondb-3-1-2-1 > li { counter-increment: ex_secondb-3-1-2-1; }
+#ex_secondb-4-1-1-2 { counter-set: ex_secondb-4-1-1-2 0; }
+#ex_secondb-4-1-1-2 > li::marker { content: ""counter(ex_secondb-4-1-1-2,lower-alpha)""; }
+#ex_secondb-4-1-1-2 > li { counter-increment: ex_secondb-4-1-1-2; }
+#ex_secondb-5-1-1-1 { counter-set: ex_secondb-5-1-1-1 0; }
+#ex_secondb-5-1-1-1 > li::marker { content: ""counter(ex_secondb-5-1-1-1,lower-alpha)""; }
+#ex_secondb-5-1-1-1 > li { counter-increment: ex_secondb-5-1-1-1; }
+#ex_secondb-7-1-2-1 { counter-set: ex_secondb-7-1-2-1 0; }
+#ex_secondb-7-1-2-1 > li::marker { content: ""counter(ex_secondb-7-1-2-1,lower-alpha)""; }
+#ex_secondb-7-1-2-1 > li { counter-increment: ex_secondb-7-1-2-1; }
+#ex_secondb-8-1-2-1 { counter-set: ex_secondb-8-1-2-1 0; }
+#ex_secondb-8-1-2-1 > li::marker { content: ""counter(ex_secondb-8-1-2-1,lower-alpha)""; }
+#ex_secondb-8-1-2-1 > li { counter-increment: ex_secondb-8-1-2-1; }
+#ex_secondb-9-1-2 { counter-set: ex_secondb-9-1-2 0; }
+#ex_secondb-9-1-2 > li::marker { content: ""counter(ex_secondb-9-1-2,lower-roman)""; }
+#ex_secondb-9-1-2 > li { counter-increment: ex_secondb-9-1-2; }
+#ex_secondb-10-1-2-1 { counter-set: ex_secondb-10-1-2-1 0; }
+#ex_secondb-10-1-2-1 > li::marker { content: ""counter(ex_secondb-10-1-2-1,lower-roman)""; }
+#ex_secondb-10-1-2-1 > li { counter-increment: ex_secondb-10-1-2-1; }
+#sec-set_op-2-1-1 { counter-set: sec-set_op-2-1-1 0; }
+#sec-set_op-2-1-1 > li::marker { content: ""counter(sec-set_op-2-1-1,upper-roman)""; }
+#sec-set_op-2-1-1 > li { counter-increment: sec-set_op-2-1-1; }
+#sec-set_op-2-1-1-1-4-1 { counter-set: sec-set_op-2-1-1-1-4-1 0; }
+#sec-set_op-2-1-1-1-4-1 > li::marker { content: ""counter(sec-set_op-2-1-1-1-4-1,lower-roman)""; }
+#sec-set_op-2-1-1-1-4-1 > li { counter-increment: sec-set_op-2-1-1-1-4-1; }
+#sec-set_op-2-1-1-2-3-2 { counter-set: sec-set_op-2-1-1-2-3-2 0; }
+#sec-set_op-2-1-1-2-3-2 > li::marker { content: ""counter(sec-set_op-2-1-1-2-3-2,lower-roman)""; }
+#sec-set_op-2-1-1-2-3-2 > li { counter-increment: sec-set_op-2-1-1-2-3-2; }
+#set_exmB1Q1-1-1-1 { counter-set: set_exmB1Q1-1-1-1 0; }
+#set_exmB1Q1-1-1-1 > li::marker { content: ""counter(set_exmB1Q1-1-1-1,decimal)"."; }
+#set_exmB1Q1-1-1-1 > li { counter-increment: set_exmB1Q1-1-1-1; }
+#sec_set-exampleB-5-1-1-5 { counter-set: sec_set-exampleB-5-1-1-5 0; }
+#sec_set-exampleB-5-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-5-1-1-5,lower-alpha)""; }
+#sec_set-exampleB-5-1-1-5 > li { counter-increment: sec_set-exampleB-5-1-1-5; }
+#sec_set-exampleB-7-1-1-5 { counter-set: sec_set-exampleB-7-1-1-5 0; }
+#sec_set-exampleB-7-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-7-1-1-5,lower-roman)""; }
+#sec_set-exampleB-7-1-1-5 > li { counter-increment: sec_set-exampleB-7-1-1-5; }
+#sec_set-exampleB-8-1-1-5 { counter-set: sec_set-exampleB-8-1-1-5 0; }
+#sec_set-exampleB-8-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-8-1-1-5,lower-roman)""; }
+#sec_set-exampleB-8-1-1-5 > li { counter-increment: sec_set-exampleB-8-1-1-5; }
+#sec_set-exampleB-9-1-1-1 { counter-set: sec_set-exampleB-9-1-1-1 0; }
+#sec_set-exampleB-9-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-9-1-1-1,lower-roman)""; }
+#sec_set-exampleB-9-1-1-1 > li { counter-increment: sec_set-exampleB-9-1-1-1; }
+#sec_set-exampleB-10-1-1-5 { counter-set: sec_set-exampleB-10-1-1-5 0; }
+#sec_set-exampleB-10-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-10-1-1-5,lower-roman)""; }
+#sec_set-exampleB-10-1-1-5 > li { counter-increment: sec_set-exampleB-10-1-1-5; }
+#sec_set-exampleB-11-1-1-3 { counter-set: sec_set-exampleB-11-1-1-3 0; }
+#sec_set-exampleB-11-1-1-3 > li::marker { content: ""counter(sec_set-exampleB-11-1-1-3,lower-roman)""; }
+#sec_set-exampleB-11-1-1-3 > li { counter-increment: sec_set-exampleB-11-1-1-3; }
+#sec_set-exampleB-12-1-1-1 { counter-set: sec_set-exampleB-12-1-1-1 0; }
+#sec_set-exampleB-12-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-12-1-1-1,lower-roman)""; }
+#sec_set-exampleB-12-1-1-1 > li { counter-increment: sec_set-exampleB-12-1-1-1; }
+#sec_set-exampleB-14-1-1-1 { counter-set: sec_set-exampleB-14-1-1-1 0; }
+#sec_set-exampleB-14-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-14-1-1-1,lower-roman)""; }
+#sec_set-exampleB-14-1-1-1 > li { counter-increment: sec_set-exampleB-14-1-1-1; }
+#ex_secondc-2-1-1-5 { counter-set: ex_secondc-2-1-1-5 0; }
+#ex_secondc-2-1-1-5 > li::marker { content: ""counter(ex_secondc-2-1-1-5,lower-roman)""; }
+#ex_secondc-2-1-1-5 > li { counter-increment: ex_secondc-2-1-1-5; }
+#ex_secondc-3-1-1-2 { counter-set: ex_secondc-3-1-1-2 0; }
+#ex_secondc-3-1-1-2 > li::marker { content: ""counter(ex_secondc-3-1-1-2,lower-roman)""; }
+#ex_secondc-3-1-1-2 > li { counter-increment: ex_secondc-3-1-1-2; }
+#ex_secondc-4-1-1-1 { counter-set: ex_secondc-4-1-1-1 0; }
+#ex_secondc-4-1-1-1 > li::marker { content: ""counter(ex_secondc-4-1-1-1,lower-roman)""; }
+#ex_secondc-4-1-1-1 > li { counter-increment: ex_secondc-4-1-1-1; }
+#ex_secondc-5-1-1-4 { counter-set: ex_secondc-5-1-1-4 0; }
+#ex_secondc-5-1-1-4 > li::marker { content: ""counter(ex_secondc-5-1-1-4,lower-roman)""; }
+#ex_secondc-5-1-1-4 > li { counter-increment: ex_secondc-5-1-1-4; }
+#ex_secondc-6-1-1-1 { counter-set: ex_secondc-6-1-1-1 0; }
+#ex_secondc-6-1-1-1 > li::marker { content: ""counter(ex_secondc-6-1-1-1,lower-roman)""; }
+#ex_secondc-6-1-1-1 > li { counter-increment: ex_secondc-6-1-1-1; }
+#sec_prod-exampleB-2-1-1-1 { counter-set: sec_prod-exampleB-2-1-1-1 0; }
+#sec_prod-exampleB-2-1-1-1 > li::marker { content: ""counter(sec_prod-exampleB-2-1-1-1,lower-roman)""; }
+#sec_prod-exampleB-2-1-1-1 > li { counter-increment: sec_prod-exampleB-2-1-1-1; }
+#sec_prod-exampleB-2-2-1-1 { counter-set: sec_prod-exampleB-2-2-1-1 0; }
+#sec_prod-exampleB-2-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-2-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-2-2-1-1 > li { counter-increment: sec_prod-exampleB-2-2-1-1; }
+#sec_prod-exampleB-6-1-1-1 { counter-set: sec_prod-exampleB-6-1-1-1 0; }
+#sec_prod-exampleB-6-1-1-1 > li::marker { content: ""counter(sec_prod-exampleB-6-1-1-1,lower-roman)""; }
+#sec_prod-exampleB-6-1-1-1 > li { counter-increment: sec_prod-exampleB-6-1-1-1; }
+#sec_prod-exampleB-6-2-1-1 { counter-set: sec_prod-exampleB-6-2-1-1 0; }
+#sec_prod-exampleB-6-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-6-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-6-2-1-1 > li { counter-increment: sec_prod-exampleB-6-2-1-1; }
+#sec_prod-exampleB-17-1-1-2 { counter-set: sec_prod-exampleB-17-1-1-2 0; }
+#sec_prod-exampleB-17-1-1-2 > li::marker { content: ""counter(sec_prod-exampleB-17-1-1-2,lower-roman)""; }
+#sec_prod-exampleB-17-1-1-2 > li { counter-increment: sec_prod-exampleB-17-1-1-2; }
+#sec_prod-exampleB-17-2-1-1 { counter-set: sec_prod-exampleB-17-2-1-1 0; }
+#sec_prod-exampleB-17-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-17-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-17-2-1-1 > li { counter-increment: sec_prod-exampleB-17-2-1-1; }
+#ex_third-7-1-1-2 { counter-set: ex_third-7-1-1-2 0; }
+#ex_third-7-1-1-2 > li::marker { content: ""counter(ex_third-7-1-1-2,lower-roman)""; }
+#ex_third-7-1-1-2 > li { counter-increment: ex_third-7-1-1-2; }
+#sec-fact-5-1-1-1 { counter-set: sec-fact-5-1-1-1 0; }
+#sec-fact-5-1-1-1 > li::marker { content: ""counter(sec-fact-5-1-1-1,lower-roman)""; }
+#sec-fact-5-1-1-1 > li { counter-increment: sec-fact-5-1-1-1; }
+#sec-fact-5-2-1-1 { counter-set: sec-fact-5-2-1-1 0; }
+#sec-fact-5-2-1-1 > li::marker { content: ""counter(sec-fact-5-2-1-1,lower-roman)""; }
+#sec-fact-5-2-1-1 > li { counter-increment: sec-fact-5-2-1-1; }
+#sec-perm_example-11-1-1-1 { counter-set: sec-perm_example-11-1-1-1 0; }
+#sec-perm_example-11-1-1-1 > li::marker { content: ""counter(sec-perm_example-11-1-1-1,lower-roman)""; }
+#sec-perm_example-11-1-1-1 > li { counter-increment: sec-perm_example-11-1-1-1; }
+#sec-perm_example-11-2-2-1 { counter-set: sec-perm_example-11-2-2-1 0; }
+#sec-perm_example-11-2-2-1 > li::marker { content: ""counter(sec-perm_example-11-2-2-1,lower-roman)""; }
+#sec-perm_example-11-2-2-1 > li { counter-increment: sec-perm_example-11-2-2-1; }
+#sec-perm_example-19-1-1-1 { counter-set: sec-perm_example-19-1-1-1 0; }
+#sec-perm_example-19-1-1-1 > li::marker { content: ""counter(sec-perm_example-19-1-1-1,lower-roman)""; }
+#sec-perm_example-19-1-1-1 > li { counter-increment: sec-perm_example-19-1-1-1; }
+#sec-perm_example-19-2-1 { counter-set: sec-perm_example-19-2-1 0; }
+#sec-perm_example-19-2-1 > li::marker { content: ""counter(sec-perm_example-19-2-1,lower-roman)""; }
+#sec-perm_example-19-2-1 > li { counter-increment: sec-perm_example-19-2-1; }
+#sec-perm_example-20-1-1-1 { counter-set: sec-perm_example-20-1-1-1 0; }
+#sec-perm_example-20-1-1-1 > li::marker { content: ""counter(sec-perm_example-20-1-1-1,lower-roman)""; }
+#sec-perm_example-20-1-1-1 > li { counter-increment: sec-perm_example-20-1-1-1; }
+#sec-perm_example-20-1-1-1-2-1-1 { counter-set: sec-perm_example-20-1-1-1-2-1-1 0; }
+#sec-perm_example-20-1-1-1-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-1-1-1-2-1-1,lower-alpha)""; }
+#sec-perm_example-20-1-1-1-2-1-1 > li { counter-increment: sec-perm_example-20-1-1-1-2-1-1; }
+#sec-perm_example-20-2-1-1 { counter-set: sec-perm_example-20-2-1-1 0; }
+#sec-perm_example-20-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-2-1-1,lower-roman)""; }
+#sec-perm_example-20-2-1-1 > li { counter-increment: sec-perm_example-20-2-1-1; }
+#sec-perm_example-20-2-1-1-2-1-1 { counter-set: sec-perm_example-20-2-1-1-2-1-1 0; }
+#sec-perm_example-20-2-1-1-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-2-1-1-2-1-1,lower-alpha)""; }
+#sec-perm_example-20-2-1-1-2-1-1 > li { counter-increment: sec-perm_example-20-2-1-1-2-1-1; }
+#sec-perm_example-21-1-2-1 { counter-set: sec-perm_example-21-1-2-1 0; }
+#sec-perm_example-21-1-2-1 > li::marker { content: ""counter(sec-perm_example-21-1-2-1,lower-roman)""; }
+#sec-perm_example-21-1-2-1 > li { counter-increment: sec-perm_example-21-1-2-1; }
+#sec-perm_example-21-2-2-1 { counter-set: sec-perm_example-21-2-2-1 0; }
+#sec-perm_example-21-2-2-1 > li::marker { content: ""counter(sec-perm_example-21-2-2-1,lower-roman)""; }
+#sec-perm_example-21-2-2-1 > li { counter-increment: sec-perm_example-21-2-2-1; }
+#sec-perm_example-25-1-1-1 { counter-set: sec-perm_example-25-1-1-1 0; }
+#sec-perm_example-25-1-1-1 > li::marker { content: ""counter(sec-perm_example-25-1-1-1,lower-roman)""; }
+#sec-perm_example-25-1-1-1 > li { counter-increment: sec-perm_example-25-1-1-1; }
+#sec-perm_example-25-2-1-3 { counter-set: sec-perm_example-25-2-1-3 0; }
+#sec-perm_example-25-2-1-3 > li::marker { content: ""counter(sec-perm_example-25-2-1-3,lower-roman)""; }
+#sec-perm_example-25-2-1-3 > li { counter-increment: sec-perm_example-25-2-1-3; }
+#ex_fourthA-7-2-1 { counter-set: ex_fourthA-7-2-1 0; }
+#ex_fourthA-7-2-1 > li::marker { content: ""counter(ex_fourthA-7-2-1,lower-roman)""; }
+#ex_fourthA-7-2-1 > li { counter-increment: ex_fourthA-7-2-1; }
+#ex_fourthA-8-1-2 { counter-set: ex_fourthA-8-1-2 0; }
+#ex_fourthA-8-1-2 > li::marker { content: ""counter(ex_fourthA-8-1-2,lower-roman)""; }
+#ex_fourthA-8-1-2 > li { counter-increment: ex_fourthA-8-1-2; }
+#ex_fourthA-10-2-1-1 { counter-set: ex_fourthA-10-2-1-1 0; }
+#ex_fourthA-10-2-1-1 > li::marker { content: ""counter(ex_fourthA-10-2-1-1,lower-roman)""; }
+#ex_fourthA-10-2-1-1 > li { counter-increment: ex_fourthA-10-2-1-1; }
+#ex_fourthA-12-1-1-2 { counter-set: ex_fourthA-12-1-1-2 0; }
+#ex_fourthA-12-1-1-2 > li::marker { content: ""counter(ex_fourthA-12-1-1-2,lower-roman)""; }
+#ex_fourthA-12-1-1-2 > li { counter-increment: ex_fourthA-12-1-1-2; }
+#ex_fourthA-12-2-1-1 { counter-set: ex_fourthA-12-2-1-1 0; }
+#ex_fourthA-12-2-1-1 > li::marker { content: ""counter(ex_fourthA-12-2-1-1,lower-roman)""; }
+#ex_fourthA-12-2-1-1 > li { counter-increment: ex_fourthA-12-2-1-1; }
+#ex_fourthA-13-1-1-2 { counter-set: ex_fourthA-13-1-1-2 0; }
+#ex_fourthA-13-1-1-2 > li::marker { content: "("counter(ex_fourthA-13-1-1-2,lower-alpha)")"; }
+#ex_fourthA-13-1-1-2 > li { counter-increment: ex_fourthA-13-1-1-2; }
+#thm-comb6-1-1-4 { counter-set: thm-comb6-1-1-4 0; }
+#thm-comb6-1-1-4 > li::marker { content: ""counter(thm-comb6-1-1-4,upper-roman)""; }
+#thm-comb6-1-1-4 > li { counter-increment: thm-comb6-1-1-4; }
+#sec-comb_example-10-1-1-1 { counter-set: sec-comb_example-10-1-1-1 0; }
+#sec-comb_example-10-1-1-1 > li::marker { content: ""counter(sec-comb_example-10-1-1-1,lower-roman)""; }
+#sec-comb_example-10-1-1-1 > li { counter-increment: sec-comb_example-10-1-1-1; }
+#sec-comb_example-10-2-1-1 { counter-set: sec-comb_example-10-2-1-1 0; }
+#sec-comb_example-10-2-1-1 > li::marker { content: ""counter(sec-comb_example-10-2-1-1,lower-roman)""; }
+#sec-comb_example-10-2-1-1 > li { counter-increment: sec-comb_example-10-2-1-1; }
+#sec-comb_example-13-1-1-1 { counter-set: sec-comb_example-13-1-1-1 0; }
+#sec-comb_example-13-1-1-1 > li::marker { content: ""counter(sec-comb_example-13-1-1-1,lower-roman)""; }
+#sec-comb_example-13-1-1-1 > li { counter-increment: sec-comb_example-13-1-1-1; }
+#sec-comb_example-16-1-1-1 { counter-set: sec-comb_example-16-1-1-1 0; }
+#sec-comb_example-16-1-1-1 > li::marker { content: ""counter(sec-comb_example-16-1-1-1,lower-roman)""; }
+#sec-comb_example-16-1-1-1 > li { counter-increment: sec-comb_example-16-1-1-1; }
+#sec-comb_example-16-2-2-1 { counter-set: sec-comb_example-16-2-2-1 0; }
+#sec-comb_example-16-2-2-1 > li::marker { content: ""counter(sec-comb_example-16-2-2-1,lower-roman)""; }
+#sec-comb_example-16-2-2-1 > li { counter-increment: sec-comb_example-16-2-2-1; }
+#sec-comb_example-19-1-1-1 { counter-set: sec-comb_example-19-1-1-1 0; }
+#sec-comb_example-19-1-1-1 > li::marker { content: ""counter(sec-comb_example-19-1-1-1,lower-roman)""; }
+#sec-comb_example-19-1-1-1 > li { counter-increment: sec-comb_example-19-1-1-1; }
+#sec-comb_example-19-2-2-1 { counter-set: sec-comb_example-19-2-2-1 0; }
+#sec-comb_example-19-2-2-1 > li::marker { content: ""counter(sec-comb_example-19-2-2-1,lower-roman)""; }
+#sec-comb_example-19-2-2-1 > li { counter-increment: sec-comb_example-19-2-2-1; }
+#ex_fourthB-3-1-1-1 { counter-set: ex_fourthB-3-1-1-1 0; }
+#ex_fourthB-3-1-1-1 > li::marker { content: ""counter(ex_fourthB-3-1-1-1,lower-roman)""; }
+#ex_fourthB-3-1-1-1 > li { counter-increment: ex_fourthB-3-1-1-1; }
+#ex_fourthB-4-1-1-1 { counter-set: ex_fourthB-4-1-1-1 0; }
+#ex_fourthB-4-1-1-1 > li::marker { content: ""counter(ex_fourthB-4-1-1-1,lower-roman)""; }
+#ex_fourthB-4-1-1-1 > li { counter-increment: ex_fourthB-4-1-1-1; }
+#ex_fourthB-4-2-1-2 { counter-set: ex_fourthB-4-2-1-2 0; }
+#ex_fourthB-4-2-1-2 > li::marker { content: ""counter(ex_fourthB-4-2-1-2,lower-roman)""; }
+#ex_fourthB-4-2-1-2 > li { counter-increment: ex_fourthB-4-2-1-2; }
+#ch-prob-2-3-1 { counter-set: ch-prob-2-3-1 0; }
+#ch-prob-2-3-1 > li::marker { content: ""counter(ch-prob-2-3-1,decimal)"."; }
+#ch-prob-2-3-1 > li { counter-increment: ch-prob-2-3-1; }
+#ch-prob-2-4-2 { counter-set: ch-prob-2-4-2 0; }
+#ch-prob-2-4-2 > li::marker { content: ""counter(ch-prob-2-4-2,decimal)"."; }
+#ch-prob-2-4-2 > li { counter-increment: ch-prob-2-4-2; }
+#ch-prob-2-4-2-3-2-1 { counter-set: ch-prob-2-4-2-3-2-1 0; }
+#ch-prob-2-4-2-3-2-1 > li::marker { content: ""counter(ch-prob-2-4-2-3-2-1,upper-roman)""; }
+#ch-prob-2-4-2-3-2-1 > li { counter-increment: ch-prob-2-4-2-3-2-1; }
+#sec-prob_int-2-4-1-2-1 { counter-set: sec-prob_int-2-4-1-2-1 0; }
+#sec-prob_int-2-4-1-2-1 > li::marker { content: ""counter(sec-prob_int-2-4-1-2-1,lower-roman)""; }
+#sec-prob_int-2-4-1-2-1 > li { counter-increment: sec-prob_int-2-4-1-2-1; }
+#sec-prob_int-2-4-2-3-1 { counter-set: sec-prob_int-2-4-2-3-1 0; }
+#sec-prob_int-2-4-2-3-1 > li::marker { content: ""counter(sec-prob_int-2-4-2-3-1,lower-roman)""; }
+#sec-prob_int-2-4-2-3-1 > li { counter-increment: sec-prob_int-2-4-2-3-1; }
+#sec-prob_int-2-4-2-4-2 { counter-set: sec-prob_int-2-4-2-4-2 0; }
+#sec-prob_int-2-4-2-4-2 > li::marker { content: ""counter(sec-prob_int-2-4-2-4-2,lower-roman)""; }
+#sec-prob_int-2-4-2-4-2 > li { counter-increment: sec-prob_int-2-4-2-4-2; }
+#sec-prob_int-2-5-2 { counter-set: sec-prob_int-2-5-2 0; }
+#sec-prob_int-2-5-2 > li::marker { content: ""counter(sec-prob_int-2-5-2,lower-roman)""; }
+#sec-prob_int-2-5-2 > li { counter-increment: sec-prob_int-2-5-2; }
+#subsec-add_prod-2-1 { counter-set: subsec-add_prod-2-1 0; }
+#subsec-add_prod-2-1 > li::marker { content: ""counter(subsec-add_prod-2-1,upper-roman)""; }
+#subsec-add_prod-2-1 > li { counter-increment: subsec-add_prod-2-1; }
+#subsec-add_prod-2-1-1-1-4 { counter-set: subsec-add_prod-2-1-1-1-4 0; }
+#subsec-add_prod-2-1-1-1-4 > li::marker { content: ""counter(subsec-add_prod-2-1-1-1-4,lower-roman)""; }
+#subsec-add_prod-2-1-1-1-4 > li { counter-increment: subsec-add_prod-2-1-1-1-4; }
+#subsec-add_prod-2-1-2-1-2 { counter-set: subsec-add_prod-2-1-2-1-2 0; }
+#subsec-add_prod-2-1-2-1-2 > li::marker { content: ""counter(subsec-add_prod-2-1-2-1-2,lower-roman)""; }
+#subsec-add_prod-2-1-2-1-2 > li { counter-increment: subsec-add_prod-2-1-2-1-2; }
+#sec-prob_exampleA-3-1-1-1 { counter-set: sec-prob_exampleA-3-1-1-1 0; }
+#sec-prob_exampleA-3-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-3-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-3-1-1-1 > li { counter-increment: sec-prob_exampleA-3-1-1-1; }
+#sec-prob_exampleA-4-1-1-1 { counter-set: sec-prob_exampleA-4-1-1-1 0; }
+#sec-prob_exampleA-4-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-4-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-4-1-1-1 > li { counter-increment: sec-prob_exampleA-4-1-1-1; }
+#sec-prob_exampleA-5-1-1-1 { counter-set: sec-prob_exampleA-5-1-1-1 0; }
+#sec-prob_exampleA-5-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-5-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-5-1-1-1 > li { counter-increment: sec-prob_exampleA-5-1-1-1; }
+#sec-prob_exampleA-5-2-2-1 { counter-set: sec-prob_exampleA-5-2-2-1 0; }
+#sec-prob_exampleA-5-2-2-1 > li::marker { content: ""counter(sec-prob_exampleA-5-2-2-1,lower-roman)""; }
+#sec-prob_exampleA-5-2-2-1 > li { counter-increment: sec-prob_exampleA-5-2-2-1; }
+#sec-prob_exampleA-7-1-1-1 { counter-set: sec-prob_exampleA-7-1-1-1 0; }
+#sec-prob_exampleA-7-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-7-1-1-1 > li { counter-increment: sec-prob_exampleA-7-1-1-1; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 { counter-set: sec-prob_exampleA-7-1-1-1-3-1-1 0; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-1-1-1-3-1-1,lower-roman)""; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 > li { counter-increment: sec-prob_exampleA-7-1-1-1-3-1-1; }
+#sec-prob_exampleA-7-2-1-1 { counter-set: sec-prob_exampleA-7-2-1-1 0; }
+#sec-prob_exampleA-7-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-7-2-1-1 > li { counter-increment: sec-prob_exampleA-7-2-1-1; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 { counter-set: sec-prob_exampleA-7-2-1-1-3-1-1 0; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-2-1-1-3-1-1,lower-roman)""; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 > li { counter-increment: sec-prob_exampleA-7-2-1-1-3-1-1; }
+#sec-prob_exampleA-8-1-1-3 { counter-set: sec-prob_exampleA-8-1-1-3 0; }
+#sec-prob_exampleA-8-1-1-3 > li::marker { content: ""counter(sec-prob_exampleA-8-1-1-3,lower-roman)""; }
+#sec-prob_exampleA-8-1-1-3 > li { counter-increment: sec-prob_exampleA-8-1-1-3; }
+#sec-prob_exampleA-8-2-3-1 { counter-set: sec-prob_exampleA-8-2-3-1 0; }
+#sec-prob_exampleA-8-2-3-1 > li::marker { content: ""counter(sec-prob_exampleA-8-2-3-1,lower-roman)""; }
+#sec-prob_exampleA-8-2-3-1 > li { counter-increment: sec-prob_exampleA-8-2-3-1; }
+#sec-prob_exampleA-12-1-6-1 { counter-set: sec-prob_exampleA-12-1-6-1 0; }
+#sec-prob_exampleA-12-1-6-1 > li::marker { content: ""counter(sec-prob_exampleA-12-1-6-1,lower-roman)""; }
+#sec-prob_exampleA-12-1-6-1 > li { counter-increment: sec-prob_exampleA-12-1-6-1; }
+#sec-prob_exampleA-12-2-1-1 { counter-set: sec-prob_exampleA-12-2-1-1 0; }
+#sec-prob_exampleA-12-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-12-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-12-2-1-1 > li { counter-increment: sec-prob_exampleA-12-2-1-1; }
+#sec-prob_exampleA-20-1-1-4 { counter-set: sec-prob_exampleA-20-1-1-4 0; }
+#sec-prob_exampleA-20-1-1-4 > li::marker { content: ""counter(sec-prob_exampleA-20-1-1-4,lower-roman)""; }
+#sec-prob_exampleA-20-1-1-4 > li { counter-increment: sec-prob_exampleA-20-1-1-4; }
+#sec-prob_exampleA-20-2-1-2 { counter-set: sec-prob_exampleA-20-2-1-2 0; }
+#sec-prob_exampleA-20-2-1-2 > li::marker { content: ""counter(sec-prob_exampleA-20-2-1-2,lower-roman)""; }
+#sec-prob_exampleA-20-2-1-2 > li { counter-increment: sec-prob_exampleA-20-2-1-2; }
+#sec-prob_exampleA-24-1-1-1 { counter-set: sec-prob_exampleA-24-1-1-1 0; }
+#sec-prob_exampleA-24-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-24-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-24-1-1-1 > li { counter-increment: sec-prob_exampleA-24-1-1-1; }
+#sec-prob_exampleA-24-2-1-1 { counter-set: sec-prob_exampleA-24-2-1-1 0; }
+#sec-prob_exampleA-24-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-24-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-24-2-1-1 > li { counter-increment: sec-prob_exampleA-24-2-1-1; }
+#sec-prob_exampleA-26-1-1-1 { counter-set: sec-prob_exampleA-26-1-1-1 0; }
+#sec-prob_exampleA-26-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-26-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-26-1-1-1 > li { counter-increment: sec-prob_exampleA-26-1-1-1; }
+#sec-prob_exampleA-26-2-1-1 { counter-set: sec-prob_exampleA-26-2-1-1 0; }
+#sec-prob_exampleA-26-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-26-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-26-2-1-1 > li { counter-increment: sec-prob_exampleA-26-2-1-1; }
+#sec-prob_exampleA-27-1-1-1 { counter-set: sec-prob_exampleA-27-1-1-1 0; }
+#sec-prob_exampleA-27-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-27-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-27-1-1-1 > li { counter-increment: sec-prob_exampleA-27-1-1-1; }
+#sec-prob_exampleA-27-2-1-1 { counter-set: sec-prob_exampleA-27-2-1-1 0; }
+#sec-prob_exampleA-27-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-27-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-27-2-1-1 > li { counter-increment: sec-prob_exampleA-27-2-1-1; }
+#sec-prob_exampleA-28-1-1-1 { counter-set: sec-prob_exampleA-28-1-1-1 0; }
+#sec-prob_exampleA-28-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-28-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-28-1-1-1 > li { counter-increment: sec-prob_exampleA-28-1-1-1; }
+#sec-prob_exampleA-28-2-1-1 { counter-set: sec-prob_exampleA-28-2-1-1 0; }
+#sec-prob_exampleA-28-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-28-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-28-2-1-1 > li { counter-increment: sec-prob_exampleA-28-2-1-1; }
+#sec-prob_exampleA-29-1-1-1 { counter-set: sec-prob_exampleA-29-1-1-1 0; }
+#sec-prob_exampleA-29-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-29-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-29-1-1-1 > li { counter-increment: sec-prob_exampleA-29-1-1-1; }
+#sec-prob_exampleA-29-2-1-1 { counter-set: sec-prob_exampleA-29-2-1-1 0; }
+#sec-prob_exampleA-29-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-29-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-29-2-1-1 > li { counter-increment: sec-prob_exampleA-29-2-1-1; }
+#ex_fifth-3-1-1-1 { counter-set: ex_fifth-3-1-1-1 0; }
+#ex_fifth-3-1-1-1 > li::marker { content: ""counter(ex_fifth-3-1-1-1,lower-alpha)""; }
+#ex_fifth-3-1-1-1 > li { counter-increment: ex_fifth-3-1-1-1; }
+#ex_fifth-4-1-1-1 { counter-set: ex_fifth-4-1-1-1 0; }
+#ex_fifth-4-1-1-1 > li::marker { content: ""counter(ex_fifth-4-1-1-1,lower-alpha)""; }
+#ex_fifth-4-1-1-1 > li { counter-increment: ex_fifth-4-1-1-1; }
+#ex_fifth-5-1-1-1 { counter-set: ex_fifth-5-1-1-1 0; }
+#ex_fifth-5-1-1-1 > li::marker { content: ""counter(ex_fifth-5-1-1-1,lower-alpha)""; }
+#ex_fifth-5-1-1-1 > li { counter-increment: ex_fifth-5-1-1-1; }
+#ex_fifth-6-1-1-1 { counter-set: ex_fifth-6-1-1-1 0; }
+#ex_fifth-6-1-1-1 > li::marker { content: ""counter(ex_fifth-6-1-1-1,lower-alpha)""; }
+#ex_fifth-6-1-1-1 > li { counter-increment: ex_fifth-6-1-1-1; }
+#ex_fifth-7-1-1-1 { counter-set: ex_fifth-7-1-1-1 0; }
+#ex_fifth-7-1-1-1 > li::marker { content: ""counter(ex_fifth-7-1-1-1,lower-roman)""; }
+#ex_fifth-7-1-1-1 > li { counter-increment: ex_fifth-7-1-1-1; }
+#ex_fifth-9-1-1-1 { counter-set: ex_fifth-9-1-1-1 0; }
+#ex_fifth-9-1-1-1 > li::marker { content: ""counter(ex_fifth-9-1-1-1,lower-alpha)""; }
+#ex_fifth-9-1-1-1 > li { counter-increment: ex_fifth-9-1-1-1; }
+#ch-stat-2-1-1 { counter-set: ch-stat-2-1-1 0; }
+#ch-stat-2-1-1 > li::marker { content: ""counter(ch-stat-2-1-1,upper-roman)""; }
+#ch-stat-2-1-1 > li { counter-increment: ch-stat-2-1-1; }
+#ch-stat-2-1-1-1-4-1 { counter-set: ch-stat-2-1-1-1-4-1 0; }
+#ch-stat-2-1-1-1-4-1 > li::marker { content: ""counter(ch-stat-2-1-1-1-4-1,lower-roman)""; }
+#ch-stat-2-1-1-1-4-1 > li { counter-increment: ch-stat-2-1-1-1-4-1; }
+#ch-stat-2-4-1-1-2 { counter-set: ch-stat-2-4-1-1-2 0; }
+#ch-stat-2-4-1-1-2 > li::marker { content: ""counter(ch-stat-2-4-1-1-2,lower-roman)""; }
+#ch-stat-2-4-1-1-2 > li { counter-increment: ch-stat-2-4-1-1-2; }
+#ch-stat-2-4-2-1-2 { counter-set: ch-stat-2-4-2-1-2 0; }
+#ch-stat-2-4-2-1-2 > li::marker { content: ""counter(ch-stat-2-4-2-1-2,lower-roman)""; }
+#ch-stat-2-4-2-1-2 > li { counter-increment: ch-stat-2-4-2-1-2; }
+#ch-stat-2-5-1-1-1 { counter-set: ch-stat-2-5-1-1-1 0; }
+#ch-stat-2-5-1-1-1 > li::marker { content: ""counter(ch-stat-2-5-1-1-1,lower-roman)""; }
+#ch-stat-2-5-1-1-1 > li { counter-increment: ch-stat-2-5-1-1-1; }
+#sec-stat_int-2-1-2 { counter-set: sec-stat_int-2-1-2 0; }
+#sec-stat_int-2-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2,lower-roman)""; }
+#sec-stat_int-2-1-2 > li { counter-increment: sec-stat_int-2-1-2; }
+#sec-stat_int-2-1-2-1-1-2 { counter-set: sec-stat_int-2-1-2-1-1-2 0; }
+#sec-stat_int-2-1-2-1-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2-1-1-2,lower-alpha)""; }
+#sec-stat_int-2-1-2-1-1-2 > li { counter-increment: sec-stat_int-2-1-2-1-1-2; }
+#sec-stat_int-2-1-2-2-1-2 { counter-set: sec-stat_int-2-1-2-2-1-2 0; }
+#sec-stat_int-2-1-2-2-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2-2-1-2,lower-alpha)""; }
+#sec-stat_int-2-1-2-2-1-2 > li { counter-increment: sec-stat_int-2-1-2-2-1-2; }
+#subsec-pop_samp-6-2-1 { counter-set: subsec-pop_samp-6-2-1 0; }
+#subsec-pop_samp-6-2-1 > li::marker { content: ""counter(subsec-pop_samp-6-2-1,lower-roman)""; }
+#subsec-pop_samp-6-2-1 > li { counter-increment: subsec-pop_samp-6-2-1; }
+#sec-stat_centerT-2-2-2 { counter-set: sec-stat_centerT-2-2-2 0; }
+#sec-stat_centerT-2-2-2 > li::marker { content: ""counter(sec-stat_centerT-2-2-2,decimal)"."; }
+#sec-stat_centerT-2-2-2 > li { counter-increment: sec-stat_centerT-2-2-2; }
+#sec-stat_centerT-2-2-2-1-1-1 { counter-set: sec-stat_centerT-2-2-2-1-1-1 0; }
+#sec-stat_centerT-2-2-2-1-1-1 > li::marker { content: ""counter(sec-stat_centerT-2-2-2-1-1-1,lower-roman)""; }
+#sec-stat_centerT-2-2-2-1-1-1 > li { counter-increment: sec-stat_centerT-2-2-2-1-1-1; }
+#sec-stat_centerT-2-2-2-2-1-1 { counter-set: sec-stat_centerT-2-2-2-2-1-1 0; }
+#sec-stat_centerT-2-2-2-2-1-1 > li::marker { content: ""counter(sec-stat_centerT-2-2-2-2-1-1,lower-roman)""; }
+#sec-stat_centerT-2-2-2-2-1-1 > li { counter-increment: sec-stat_centerT-2-2-2-2-1-1; }
+#subsec-mean-2-1-1 { counter-set: subsec-mean-2-1-1 0; }
+#subsec-mean-2-1-1 > li::marker { content: ""counter(subsec-mean-2-1-1,upper-roman)""; }
+#subsec-mean-2-1-1 > li { counter-increment: subsec-mean-2-1-1; }
+#subsec-mean-2-2-1 { counter-set: subsec-mean-2-2-1 0; }
+#subsec-mean-2-2-1 > li::marker { content: ""counter(subsec-mean-2-2-1,lower-roman)""; }
+#subsec-mean-2-2-1 > li { counter-increment: subsec-mean-2-2-1; }
+#subsec-discrD-2-1 { counter-set: subsec-discrD-2-1 0; }
+#subsec-discrD-2-1 > li::marker { content: ""counter(subsec-discrD-2-1,lower-roman)""; }
+#subsec-discrD-2-1 > li { counter-increment: subsec-discrD-2-1; }
+#subsec-discrD-3-1 { counter-set: subsec-discrD-3-1 0; }
+#subsec-discrD-3-1 > li::marker { content: ""counter(subsec-discrD-3-1,decimal)"."; }
+#subsec-discrD-3-1 > li { counter-increment: subsec-discrD-3-1; }
+#subsubsec-contS-3-2 { counter-set: subsubsec-contS-3-2 0; }
+#subsubsec-contS-3-2 > li::marker { content: ""counter(subsubsec-contS-3-2,lower-alpha)""; }
+#subsubsec-contS-3-2 > li { counter-increment: subsubsec-contS-3-2; }
+#subsec-combM-3-1-1-1 { counter-set: subsec-combM-3-1-1-1 0; }
+#subsec-combM-3-1-1-1 > li::marker { content: ""counter(subsec-combM-3-1-1-1,lower-alpha)""; }
+#subsec-combM-3-1-1-1 > li { counter-increment: subsec-combM-3-1-1-1; }
+#subsubsec-mean_prop-2-1 { counter-set: subsubsec-mean_prop-2-1 0; }
+#subsubsec-mean_prop-2-1 > li::marker { content: ""counter(subsubsec-mean_prop-2-1,lower-roman)""; }
+#subsubsec-mean_prop-2-1 > li { counter-increment: subsubsec-mean_prop-2-1; }
+#subsubsec-mean_prop-4-1 { counter-set: subsubsec-mean_prop-4-1 0; }
+#subsubsec-mean_prop-4-1 > li::marker { content: ""counter(subsubsec-mean_prop-4-1,lower-roman)""; }
+#subsubsec-mean_prop-4-1 > li { counter-increment: subsubsec-mean_prop-4-1; }
+#subsubsec-med_is-2-1 { counter-set: subsubsec-med_is-2-1 0; }
+#subsubsec-med_is-2-1 > li::marker { content: ""counter(subsubsec-med_is-2-1,lower-roman)""; }
+#subsubsec-med_is-2-1 > li { counter-increment: subsubsec-med_is-2-1; }
+#subsubsec-med_is-3-1 { counter-set: subsubsec-med_is-3-1 0; }
+#subsubsec-med_is-3-1 > li::marker { content: ""counter(subsubsec-med_is-3-1,decimal)"."; }
+#subsubsec-med_is-3-1 > li { counter-increment: subsubsec-med_is-3-1; }
+#subsubsec-med_prop-2-1 { counter-set: subsubsec-med_prop-2-1 0; }
+#subsubsec-med_prop-2-1 > li::marker { content: ""counter(subsubsec-med_prop-2-1,lower-roman)""; }
+#subsubsec-med_prop-2-1 > li { counter-increment: subsubsec-med_prop-2-1; }
+#subsubsec-mod_is-2-1 { counter-set: subsubsec-mod_is-2-1 0; }
+#subsubsec-mod_is-2-1 > li::marker { content: ""counter(subsubsec-mod_is-2-1,lower-roman)""; }
+#subsubsec-mod_is-2-1 > li { counter-increment: subsubsec-mod_is-2-1; }
+#subsubsec-mod_cs-6-2 { counter-set: subsubsec-mod_cs-6-2 0; }
+#subsubsec-mod_cs-6-2 > li::marker { content: ""counter(subsubsec-mod_cs-6-2,lower-roman)""; }
+#subsubsec-mod_cs-6-2 > li { counter-increment: subsubsec-mod_cs-6-2; }
+#subsec-disp_msr-3-1 { counter-set: subsec-disp_msr-3-1 0; }
+#subsec-disp_msr-3-1 > li::marker { content: ""counter(subsec-disp_msr-3-1,decimal)"."; }
+#subsec-disp_msr-3-1 > li { counter-increment: subsec-disp_msr-3-1; }
+#subsec-disp_msr-3-1-1-2-1 { counter-set: subsec-disp_msr-3-1-1-2-1 0; }
+#subsec-disp_msr-3-1-1-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-1-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-1-2-1 > li { counter-increment: subsec-disp_msr-3-1-1-2-1; }
+#subsec-disp_msr-3-1-2-2-1 { counter-set: subsec-disp_msr-3-1-2-2-1 0; }
+#subsec-disp_msr-3-1-2-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-2-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-2-2-1 > li { counter-increment: subsec-disp_msr-3-1-2-2-1; }
+#subsubsec-rng_cs-2-1 { counter-set: subsubsec-rng_cs-2-1 0; }
+#subsubsec-rng_cs-2-1 > li::marker { content: ""counter(subsubsec-rng_cs-2-1,decimal)"."; }
+#subsubsec-rng_cs-2-1 > li { counter-increment: subsubsec-rng_cs-2-1; }
+#subsubsec-rng_merit-2-1 { counter-set: subsubsec-rng_merit-2-1 0; }
+#subsubsec-rng_merit-2-1 > li::marker { content: ""counter(subsubsec-rng_merit-2-1,decimal)"."; }
+#subsubsec-rng_merit-2-1 > li { counter-increment: subsubsec-rng_merit-2-1; }
+#subsubsec-rng_limit-2-1 { counter-set: subsubsec-rng_limit-2-1 0; }
+#subsubsec-rng_limit-2-1 > li::marker { content: ""counter(subsubsec-rng_limit-2-1,decimal)"."; }
+#subsubsec-rng_limit-2-1 > li { counter-increment: subsubsec-rng_limit-2-1; }
+#subsubsec-rng_use-2-1 { counter-set: subsubsec-rng_use-2-1 0; }
+#subsubsec-rng_use-2-1 > li::marker { content: ""counter(subsubsec-rng_use-2-1,decimal)"."; }
+#subsubsec-rng_use-2-1 > li { counter-increment: subsubsec-rng_use-2-1; }
+#subsec-st_dev-2-3-2 { counter-set: subsec-st_dev-2-3-2 0; }
+#subsec-st_dev-2-3-2 > li::marker { content: ""counter(subsec-st_dev-2-3-2,lower-roman)""; }
+#subsec-st_dev-2-3-2 > li { counter-increment: subsec-st_dev-2-3-2; }
+#subsubsec-sd_dscs-2-1 { counter-set: subsubsec-sd_dscs-2-1 0; }
+#subsubsec-sd_dscs-2-1 > li::marker { content: ""counter(subsubsec-sd_dscs-2-1,lower-alpha)""; }
+#subsubsec-sd_dscs-2-1 > li { counter-increment: subsubsec-sd_dscs-2-1; }
+#subsec-mean_dev-2-1-1 { counter-set: subsec-mean_dev-2-1-1 0; }
+#subsec-mean_dev-2-1-1 > li::marker { content: ""counter(subsec-mean_dev-2-1-1,decimal)"."; }
+#subsec-mean_dev-2-1-1 > li { counter-increment: subsec-mean_dev-2-1-1; }
+#sec_stat_example-2-1-1-1 { counter-set: sec_stat_example-2-1-1-1 0; }
+#sec_stat_example-2-1-1-1 > li::marker { content: ""counter(sec_stat_example-2-1-1-1,lower-roman)""; }
+#sec_stat_example-2-1-1-1 > li { counter-increment: sec_stat_example-2-1-1-1; }
+#sec_stat_example-3-1-1-1 { counter-set: sec_stat_example-3-1-1-1 0; }
+#sec_stat_example-3-1-1-1 > li::marker { content: ""counter(sec_stat_example-3-1-1-1,decimal)"."; }
+#sec_stat_example-3-1-1-1 > li { counter-increment: sec_stat_example-3-1-1-1; }
+#sec_stat_example-4-1-1-1 { counter-set: sec_stat_example-4-1-1-1 0; }
+#sec_stat_example-4-1-1-1 > li::marker { content: ""counter(sec_stat_example-4-1-1-1,lower-alpha)""; }
+#sec_stat_example-4-1-1-1 > li { counter-increment: sec_stat_example-4-1-1-1; }
+#sec_stat_example-5-1-1-1 { counter-set: sec_stat_example-5-1-1-1 0; }
+#sec_stat_example-5-1-1-1 > li::marker { content: ""counter(sec_stat_example-5-1-1-1,lower-roman)""; }
+#sec_stat_example-5-1-1-1 > li { counter-increment: sec_stat_example-5-1-1-1; }
+#sec_stat_example-5-2-1-2 { counter-set: sec_stat_example-5-2-1-2 0; }
+#sec_stat_example-5-2-1-2 > li::marker { content: ""counter(sec_stat_example-5-2-1-2,lower-roman)""; }
+#sec_stat_example-5-2-1-2 > li { counter-increment: sec_stat_example-5-2-1-2; }
+#ex_sixth-3-1-1-1 { counter-set: ex_sixth-3-1-1-1 0; }
+#ex_sixth-3-1-1-1 > li::marker { content: "("counter(ex_sixth-3-1-1-1,lower-alpha)")"; }
+#ex_sixth-3-1-1-1 > li { counter-increment: ex_sixth-3-1-1-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -155,14 +676,14 @@ window.MathJax = {
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondb.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise B</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-set_op.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Operations on Sets</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-venn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Venn Diagram</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.2</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-vennD_shade" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Shading of Venn Diagram</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Example B</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Exercise C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set_venn.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Venn Diagram</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_venn.html#subsec-ven_b" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Venn Diagram using checkmarks</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Example B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Exercise C</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -327,7 +848,7 @@ E \cap F \amp =\{4 \} \neq \phi
 </h3>
 <div class="para logical" id="sec-prob_exampleA-3-1-1">
 <div class="para">A dice is thrown. Describe the following events:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-3-1-1-1">
 <li id="sec-prob_exampleA-3-1-1-1-1"><div class="para" id="sec-prob_exampleA-3-1-1-1-1-1">A: a number less than 7</div></li>
 <li id="sec-prob_exampleA-3-1-1-1-2"><div class="para" id="sec-prob_exampleA-3-1-1-1-2-1">B: a number greater than 7</div></li>
 <li id="sec-prob_exampleA-3-1-1-1-3"><div class="para" id="sec-prob_exampleA-3-1-1-1-3-1">C: a multiple of 3</div></li>
@@ -349,7 +870,7 @@ E \amp = \{6\}
 </h3>
 <div class="para logical" id="sec-prob_exampleA-4-1-1">
 <div class="para">An experiment involving rolling a pair of die and recording the numbers that come up. Describe the following events:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-4-1-1-1">
 <li id="sec-prob_exampleA-4-1-1-1-1"><div class="para" id="sec-prob_exampleA-4-1-1-1-1-1">A: the sum greater than 8.</div></li>
 <li id="sec-prob_exampleA-4-1-1-1-2"><div class="para" id="sec-prob_exampleA-4-1-1-1-2-1">B: 2 occurs on either die</div></li>
 <li id="sec-prob_exampleA-4-1-1-1-3"><div class="para" id="sec-prob_exampleA-4-1-1-1-3-1">C: the sum is at least 7 and a multiple of 3.</div></li>
@@ -376,7 +897,7 @@ A \cap B = \{ \phi \}.
 </h3>
 <div class="para logical" id="sec-prob_exampleA-5-1-1">
 <div class="para">Three coins are tossed once. Let A denote the event ’three heads up’, B denote the event ’two heads and one tail up’, C denote the event ’three tails up’, and D denote the event ’a head up on the first coin’. Which events are</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-5-1-1-1">
 <li id="sec-prob_exampleA-5-1-1-1-1"><div class="para" id="sec-prob_exampleA-5-1-1-1-1-1">Mutually exclusive?</div></li>
 <li id="sec-prob_exampleA-5-1-1-1-2"><div class="para" id="sec-prob_exampleA-5-1-1-1-2-1">Simple?</div></li>
 <li id="sec-prob_exampleA-5-1-1-1-3"><div class="para" id="sec-prob_exampleA-5-1-1-1-3-1">Compound?</div></li>
@@ -395,7 +916,8 @@ C \amp = \{(TTT) \} \\
 D \amp =\{(HTT),(HTH),(HHT),(HHH) \} 
 \end{align*}
 </div>
-</div> <div class="para logical" id="sec-prob_exampleA-5-2-2"><ol class="lower-roman">
+</div>
+<div class="para logical" id="sec-prob_exampleA-5-2-2"><ol class="lower-roman" id="sec-prob_exampleA-5-2-2-1">
 <li id="sec-prob_exampleA-5-2-2-1-1"><div class="para" id="sec-prob_exampleA-5-2-2-1-1-1">MEE = AB, AC, CD.</div></li>
 <li id="sec-prob_exampleA-5-2-2-1-2"><div class="para" id="sec-prob_exampleA-5-2-2-1-2-1">A and C.</div></li>
 <li id="sec-prob_exampleA-5-2-2-1-3"><div class="para" id="sec-prob_exampleA-5-2-2-1-3-1">B and D.</div></li>
@@ -429,19 +951,19 @@ P(E) = \frac{3}{4}.
 </h3>
 <div class="para logical" id="sec-prob_exampleA-7-1-1">
 <div class="para">A card is selected from a deck of 52 cards.</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-prob_exampleA-7-1-1-1">
 <li id="sec-prob_exampleA-7-1-1-1-1"><div class="para" id="sec-prob_exampleA-7-1-1-1-1-1">How many points are there in a sample space?</div></li>
 <li id="sec-prob_exampleA-7-1-1-1-2"><div class="para" id="sec-prob_exampleA-7-1-1-1-2-1">Calculate the probability that the card is an Ace of Spade?</div></li>
 <li id="sec-prob_exampleA-7-1-1-1-3"><div class="para logical" id="sec-prob_exampleA-7-1-1-1-3-1">
 <div class="para">Calculate the probability that the card is an</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-7-1-1-1-3-1-1">
 <li id="sec-prob_exampleA-7-1-1-1-3-1-1-1"><div class="para" id="sec-prob_exampleA-7-1-1-1-3-1-1-1-1">Ace.</div></li>
 <li id="sec-prob_exampleA-7-1-1-1-3-1-1-2"><div class="para" id="sec-prob_exampleA-7-1-1-1-3-1-1-2-1">Black card.</div></li>
 </ol>
 </div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec-prob_exampleA-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-7-2-1"><ol class="lower-alpha">
+<div class="solutions"><details id="sec-prob_exampleA-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-7-2-1"><ol class="lower-alpha" id="sec-prob_exampleA-7-2-1-1">
 <li id="sec-prob_exampleA-7-2-1-1-1"><div class="para" id="sec-prob_exampleA-7-2-1-1-1-1">52.</div></li>
 <li id="sec-prob_exampleA-7-2-1-1-2"><div class="para logical" id="sec-prob_exampleA-7-2-1-1-2-1">
 <div class="displaymath process-math">
@@ -451,7 +973,7 @@ P(E) = \frac{3}{4}.
 </div>
 <div class="para">only one Ace of Spade in a deck of cards.</div>
 </div></li>
-<li id="sec-prob_exampleA-7-2-1-1-3"><div class="para logical" id="sec-prob_exampleA-7-2-1-1-3-1"><ol class="lower-roman">
+<li id="sec-prob_exampleA-7-2-1-1-3"><div class="para logical" id="sec-prob_exampleA-7-2-1-1-3-1"><ol class="lower-roman" id="sec-prob_exampleA-7-2-1-1-3-1-1">
 <li id="sec-prob_exampleA-7-2-1-1-3-1-1-1"><div class="para logical" id="sec-prob_exampleA-7-2-1-1-3-1-1-1-1"><div class="displaymath process-math">
 \begin{equation*}
 \frac{4}{52} = \frac{1}{13}.
@@ -468,7 +990,7 @@ P(E) = \frac{3}{4}.
 </h3>
 <div class="para logical" id="sec-prob_exampleA-8-1-1">
 <div class="para">A fair coin with marked <span class="process-math">\(1\)</span> on one face and <span class="process-math">\(6\)</span> on the other face and a fair die are both tossed. Find the probability that the sum of numbers that turn up is</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-8-1-1-3">
 <li id="sec-prob_exampleA-8-1-1-3-1"><div class="para" id="sec-prob_exampleA-8-1-1-3-1-1"><span class="process-math">\(\displaystyle 3.\)</span></div></li>
 <li id="sec-prob_exampleA-8-1-1-3-2"><div class="para" id="sec-prob_exampleA-8-1-1-3-2-1"><span class="process-math">\(\displaystyle 12.\)</span></div></li>
 </ol>
@@ -478,9 +1000,11 @@ P(E) = \frac{3}{4}.
 \begin{equation*}
 S = \{(1,1), (1,2),(1,3),(1,4),(1,5),(1,6),(6,1),(6,2),(6,3),(6,4),(6,5),(6,6) \}
 \end{equation*}
-</div></div> <div class="para" id="sec-prob_exampleA-8-2-2">
+</div></div>
+<div class="para" id="sec-prob_exampleA-8-2-2">
 <em class="alert">Note:</em> Total outcomes in a die = <span class="process-math">\(6^n\)</span> and in a coin = <span class="process-math">\(2^n.\)</span> Here <span class="process-math">\(n\)</span> is either number of tosses or number of coins or dies. Hence total outcomes = <span class="process-math">\(6^1 \times 2^1 =12\text{.}\)</span>
-</div> <div class="para logical" id="sec-prob_exampleA-8-2-3"><ol class="lower-roman">
+</div>
+<div class="para logical" id="sec-prob_exampleA-8-2-3"><ol class="lower-roman" id="sec-prob_exampleA-8-2-3-1">
 <li id="sec-prob_exampleA-8-2-3-1-1"><div class="para logical" id="sec-prob_exampleA-8-2-3-1-1-1">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -512,8 +1036,10 @@ E_2 =\{(6,6) \}
 <div class="para" id="sec-prob_exampleA-9-1-1">Find the probability of getting 3 on rolling a die.</div>
 <div class="solutions"><details id="sec-prob_exampleA-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-prob_exampleA-9-2-1">Sample Space = <span class="process-math">\(S = \{1, 2, 3, 4, 5, 6\}\)</span>
-</div> <div class="para" id="sec-prob_exampleA-9-2-2">Total number of outcomes = <span class="process-math">\(n(S) = 6\)</span>
-</div> <div class="para logical" id="sec-prob_exampleA-9-2-3">
+</div>
+<div class="para" id="sec-prob_exampleA-9-2-2">Total number of outcomes = <span class="process-math">\(n(S) = 6\)</span>
+</div>
+<div class="para logical" id="sec-prob_exampleA-9-2-3">
 <div class="para">Let A be the event of getting 3. Then, Number of favourable outcomes = <span class="process-math">\(n(A) = 1\text{.}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -521,14 +1047,20 @@ E_2 =\{(6,6) \}
 i.e. A  = \{3\}
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-prob_exampleA-9-2-4">Probability, <span class="process-math">\(P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}\)</span>
-</div> <div class="para" id="sec-prob_exampleA-9-2-5">Hence, P(getting 3 on rolling a die) = 1/6.</div>
+</div>
+<div class="para" id="sec-prob_exampleA-9-2-4">Probability, <span class="process-math">\(P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}\)</span>
+</div>
+<div class="para" id="sec-prob_exampleA-9-2-5">Hence, P(getting 3 on rolling a die) = 1/6.</div>
 </div></details></div></article><article class="example example-like" id="sec-prob_exampleA-10"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.10</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec-prob_exampleA-10-1-1">Draw a random card from a pack of cards. What is the probability that the card drawn is a face card?</div>
 <div class="solutions"><details id="sec-prob_exampleA-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-prob_exampleA-10-2-1">Let <span class="process-math">\(E\)</span> be the event of drawing a face card.</div> <div class="para" id="sec-prob_exampleA-10-2-2">Number of favourable events = <span class="process-math">\(n(E) = 4 \times 3 = 12\)</span> (considered Jack, Queen and King only)</div> <div class="para" id="sec-prob_exampleA-10-2-3">Probability, P = Number of Favourable Outcomes/Total Number of Outcomes</div> <div class="para" id="sec-prob_exampleA-10-2-4"><span class="process-math">\(P(E) = \frac{n(A)}{n(S)} = \frac{^{12}C_1}{^{52}C_1} = 12/52 = 3/13\)</span></div> <div class="para" id="sec-prob_exampleA-10-2-5">P(the card drawn is a face card) = 3/13.</div>
+<div class="para" id="sec-prob_exampleA-10-2-1">Let <span class="process-math">\(E\)</span> be the event of drawing a face card.</div>
+<div class="para" id="sec-prob_exampleA-10-2-2">Number of favourable events = <span class="process-math">\(n(E) = 4 \times 3 = 12\)</span> (considered Jack, Queen and King only)</div>
+<div class="para" id="sec-prob_exampleA-10-2-3">Probability, P = Number of Favourable Outcomes/Total Number of Outcomes</div>
+<div class="para" id="sec-prob_exampleA-10-2-4"><span class="process-math">\(P(E) = \frac{n(A)}{n(S)} = \frac{^{12}C_1}{^{52}C_1} = 12/52 = 3/13\)</span></div>
+<div class="para" id="sec-prob_exampleA-10-2-5">P(the card drawn is a face card) = 3/13.</div>
 </div></details></div></article><article class="example example-like" id="sec-prob_exampleA-11"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.11</span><span class="period">.</span>
 </h3>
@@ -540,11 +1072,11 @@ P(E) = \frac{2}{6} = \frac{1}{3}.
 </div></div></div></details></div></article><article class="example example-like" id="sec-prob_exampleA-12"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.12</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-prob_exampleA-12-1-1">There is a container full of coloured bottles, red, blue, green and orange. Some of the bottles are picked out and displaced. Dan did this 1000 times and got the following results:</div> <div class="para" id="sec-prob_exampleA-12-1-2">No. of blue bottles picked out: 300</div> <div class="para" id="sec-prob_exampleA-12-1-3">No. of red bottles: 200</div> <div class="para" id="sec-prob_exampleA-12-1-4">No. of green bottles: 450</div> <div class="para" id="sec-prob_exampleA-12-1-5">No. of orange bottles: 50</div> <div class="para logical" id="sec-prob_exampleA-12-1-6"><ol class="lower-roman">
+<div class="para" id="sec-prob_exampleA-12-1-1">There is a container full of coloured bottles, red, blue, green and orange. Some of the bottles are picked out and displaced. Dan did this 1000 times and got the following results:</div> <div class="para" id="sec-prob_exampleA-12-1-2">No. of blue bottles picked out: 300</div> <div class="para" id="sec-prob_exampleA-12-1-3">No. of red bottles: 200</div> <div class="para" id="sec-prob_exampleA-12-1-4">No. of green bottles: 450</div> <div class="para" id="sec-prob_exampleA-12-1-5">No. of orange bottles: 50</div> <div class="para logical" id="sec-prob_exampleA-12-1-6"><ol class="lower-roman" id="sec-prob_exampleA-12-1-6-1">
 <li id="sec-prob_exampleA-12-1-6-1-1"><div class="para" id="sec-prob_exampleA-12-1-6-1-1-1">What is the probability that Dan will pick a green bottle?</div></li>
 <li id="sec-prob_exampleA-12-1-6-1-2"><div class="para" id="sec-prob_exampleA-12-1-6-1-2-1">If there are 100 bottles in the container, how many of them are likely to be green?</div></li>
 </ol></div>
-<div class="solutions"><details id="sec-prob_exampleA-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-12-2-1"><ol class="lower-roman">
+<div class="solutions"><details id="sec-prob_exampleA-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-12-2-1"><ol class="lower-roman" id="sec-prob_exampleA-12-2-1-1">
 <li id="sec-prob_exampleA-12-2-1-1-1"><div class="para logical" id="sec-prob_exampleA-12-2-1-1-1-1"><div class="displaymath process-math">
 \begin{equation*}
 P(G) = \frac{450}{1000} = 0.45.
@@ -564,7 +1096,8 @@ P(G) = \frac{450}{1000} = 0.45.
 </h3>
 <div class="para" id="sec-prob_exampleA-13-1-1">A vessel contains 4 blue balls, 5 red balls, and 11 white balls. If three balls are drawn from the vessel at random, what is the probability that the first ball is red, the second ball is blue, and the third ball is white?</div>
 <div class="solutions"><details id="sec-prob_exampleA-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-prob_exampleA-13-2-1">4B, 5R, 11W, total balls = 20.</div> <div class="para logical" id="sec-prob_exampleA-13-2-2">
+<div class="para" id="sec-prob_exampleA-13-2-1">4B, 5R, 11W, total balls = 20.</div>
+<div class="para logical" id="sec-prob_exampleA-13-2-2">
 <div class="para">3 balls selected, one at each time.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -601,7 +1134,8 @@ P(I) =0
 </div>
 <div class="para">The sum of outcomes of two dices are always <span class="process-math">\(\geq 2\text{.}\)</span>
 </div>
-</div> <div class="para logical" id="sec-prob_exampleA-14-2-2">
+</div>
+<div class="para logical" id="sec-prob_exampleA-14-2-2">
 <div class="para">The sample space,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -614,7 +1148,8 @@ S_2 = \{ (1,3),(2,2), (3,1) \}
 P(II) = 3/36 = 1/12.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-prob_exampleA-14-2-3">
+</div>
+<div class="para logical" id="sec-prob_exampleA-14-2-3">
 <div class="para">The sample space,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -646,7 +1181,8 @@ P(III) = 36/36 =1
 \end{equation*}
 </div>
 <div class="para">here all the events are equally likely.</div>
-</div> <div class="para logical" id="sec-prob_exampleA-15-2-2">
+</div>
+<div class="para logical" id="sec-prob_exampleA-15-2-2">
 <div class="para">therefore, the probability,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -668,16 +1204,20 @@ P(E) = \frac{ ^{6}C_4 \times ^{9}C_4}{^{15}C_4 \times ^{11}C_4} = \frac{3}{715}.
 <div class="solutions"><details id="sec-prob_exampleA-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-prob_exampleA-16-2-1">
 <span class="process-math">\(x\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> <span class="process-math">\(y\)</span>
-</div> <div class="para" id="sec-prob_exampleA-16-2-2">Total ways = <span class="process-math">\(11 \times 11 = 121.\)</span>
-</div> <div class="para" id="sec-prob_exampleA-16-2-3">Favourable events = <span class="process-math">\(|x-y| \gt 5 \)</span>
-</div> <div class="para logical" id="sec-prob_exampleA-16-2-4">
+</div>
+<div class="para" id="sec-prob_exampleA-16-2-2">Total ways = <span class="process-math">\(11 \times 11 = 121.\)</span>
+</div>
+<div class="para" id="sec-prob_exampleA-16-2-3">Favourable events = <span class="process-math">\(|x-y| \gt 5 \)</span>
+</div>
+<div class="para logical" id="sec-prob_exampleA-16-2-4">
 <div class="para">sample space,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 S = \{ (0,0), (0,1), (0,2), (0,3) \ldots \} = 121 \text{ events}.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-prob_exampleA-16-2-5">
+</div>
+<div class="para logical" id="sec-prob_exampleA-16-2-5">
 <div class="para">For favourable outcomes, set <span class="process-math">\(x=0\text{,}\)</span> then <span class="process-math">\(y \gt 5\text{,}\)</span> that is,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -710,7 +1250,8 @@ y = \{ 10\}
 </div>
 <div class="para">
 <span class="process-math">\(x\)</span> should not be equal to 5 otherwise <span class="process-math">\(y\)</span> is greater than 10.</div>
-</div> <div class="para logical" id="sec-prob_exampleA-16-2-6">
+</div>
+<div class="para logical" id="sec-prob_exampleA-16-2-6">
 <div class="para">no. of favourable outcomes = 15 for <span class="process-math">\(x-y\)</span> for positive part and <span class="process-math">\(15\times 2\)</span> for negative part <span class="process-math">\(x-y\)</span>
 </div>
 <div class="displaymath process-math">
@@ -718,7 +1259,8 @@ y = \{ 10\}
 P(E) = \frac{15}{121} \times \frac{15\times 2}{121}
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-prob_exampleA-16-2-7"><details id="sec-prob_exampleA-16-2-7-1" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-16-2-7-1-1">
+</div>
+<div class="para" id="sec-prob_exampleA-16-2-7"><details id="sec-prob_exampleA-16-2-7-1" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-16-2-7-1-1">
 <div class="para">for <span class="process-math">\(x=1\)</span>
 </div>
 <div class="displaymath process-math" id="sec-prob_exampleA-16-2-7-1-1-2">
@@ -753,7 +1295,9 @@ E = ^6C_1 =6.
 <div class="para" id="sec-prob_exampleA-18-1-1">A fair coin is tossed four times and a person win $1 for each head and loss $1.50 for each tail that turns up. From the sample space calculate how many different amounts of money you can have after four tosses and the probability of having each of these amounts.</div>
 <div class="solutions"><details id="sec-prob_exampleA-18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-prob_exampleA-18-2-1">Totaol outcomes = <span class="process-math">\(2^4 = 16.\)</span>
-</div> <div class="para" id="sec-prob_exampleA-18-2-2">To right all the possible permutations of these 16 outcomes, we put <span class="process-math">\(8 H\)</span> and <span class="process-math">\(8 T\)</span> in the vertical column, then in the second columns we put <span class="process-math">\(4H\text{,}\)</span> <span class="process-math">\(4T\text{,}\)</span> <span class="process-math">\(4H\text{,}\)</span> and <span class="process-math">\(4T\text{,}\)</span> in the third column <span class="process-math">\(2H\text{,}\)</span> <span class="process-math">\(2T\)</span> in succession, and finally <span class="process-math">\(H\text{,}\)</span> <span class="process-math">\(T\)</span> alternatly in the entire column as shown in below.</div> <div class="para logical" id="sec-prob_exampleA-18-2-3"><div class="displaymath process-math">
+</div>
+<div class="para" id="sec-prob_exampleA-18-2-2">To right all the possible permutations of these 16 outcomes, we put <span class="process-math">\(8 H\)</span> and <span class="process-math">\(8 T\)</span> in the vertical column, then in the second columns we put <span class="process-math">\(4H\text{,}\)</span> <span class="process-math">\(4T\text{,}\)</span> <span class="process-math">\(4H\text{,}\)</span> and <span class="process-math">\(4T\text{,}\)</span> in the third column <span class="process-math">\(2H\text{,}\)</span> <span class="process-math">\(2T\)</span> in succession, and finally <span class="process-math">\(H\text{,}\)</span> <span class="process-math">\(T\)</span> alternatly in the entire column as shown in below.</div>
+<div class="para logical" id="sec-prob_exampleA-18-2-3"><div class="displaymath process-math">
 \begin{equation*}
 \begin{array}{c|cccc} 
 \circ &amp; I &amp; II &amp; III &amp; IV \\ \hline 
@@ -775,14 +1319,17 @@ E = ^6C_1 =6.
 16 &amp; T &amp; T &amp; T &amp; T  \\
 \end{array}
 \end{equation*}
-</div></div> <div class="para logical" id="sec-prob_exampleA-18-2-4">
+</div></div>
+<div class="para logical" id="sec-prob_exampleA-18-2-4">
 <div class="para">Now collect all the outcomes from row, as shown below.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 S = \{(HHHH),(HHHT),(HHTH),(HHTT), (HTHH), (HTHT), \ldots  \}
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-prob_exampleA-18-2-5">Now for <span class="process-math">\(4H\)</span> he wins +$4.0, for <span class="process-math">\(3H1T\)</span> he wind +$1.50, for <span class="process-math">\(2H2T\)</span> he losses -$1.0, for <span class="process-math">\(1H3T\)</span> he losses -$3.50, for <span class="process-math">\(4T\)</span> he losses -$6.0.</div> <div class="para logical" id="sec-prob_exampleA-18-2-6">
+</div>
+<div class="para" id="sec-prob_exampleA-18-2-5">Now for <span class="process-math">\(4H\)</span> he wins +$4.0, for <span class="process-math">\(3H1T\)</span> he wind +$1.50, for <span class="process-math">\(2H2T\)</span> he losses -$1.0, for <span class="process-math">\(1H3T\)</span> he losses -$3.50, for <span class="process-math">\(4T\)</span> he losses -$6.0.</div>
+<div class="para logical" id="sec-prob_exampleA-18-2-6">
 <div class="displaymath process-math">
 \begin{equation*}
 P(4H) = P($4.0) = \frac{1}{16} = 1/16
@@ -822,7 +1369,7 @@ P(A \text{ or } B) =  P(A \cup B) = P(A)+P(B)-P(A\cap B) = \frac{3}{5} +\frac{1}
 </h3>
 <div class="para logical" id="sec-prob_exampleA-20-1-1">
 <div class="para">If E and F are events such that <span class="process-math">\(P(E)=\frac{1}{4}\text{,}\)</span>  <span class="process-math">\(P(F)=\frac{1}{2}\text{,}\)</span> and <span class="process-math">\(P(E \text{ and } F) =\frac{1}{8}\text{.}\)</span> Find</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-20-1-1-4">
 <li id="sec-prob_exampleA-20-1-1-4-1"><div class="para logical" id="sec-prob_exampleA-20-1-1-4-1-1"><div class="displaymath process-math">
 \begin{equation*}
 P(E \text{ or } F),
@@ -838,7 +1385,7 @@ P(E' \text{ and } F' ).
 <div class="solutions"><details id="sec-prob_exampleA-20-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-20-2-1">
 <div class="para">use <a href="sec-prob_int.html#subsec-prob_set" class="internal" title="Subsection 5.1.1: Useful Set-Formulae for Probability">Subsection 5.1.1</a>
 </div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-20-2-1-2">
 <li id="sec-prob_exampleA-20-2-1-2-1"><div class="para logical" id="sec-prob_exampleA-20-2-1-2-1-1"><div class="displaymath process-math" id="sec-prob_exampleA-20-2-1-2-1-1-1">
 \begin{align*}
 P(E \text{ or } F) \amp  = P(E\cup F) = P(E)+P(F)-P(E \cap F) \\
@@ -901,14 +1448,14 @@ P(S) \amp = 1- P(E) + P(E\cap S) \\
 </h3>
 <div class="para logical" id="sec-prob_exampleA-24-1-1">
 <div class="para">In a class of 60 students, 30 opted for english (E), 32 opted for spanish (S), and 24 opted for both E and S. If one of these students is selected at random, find the probability that</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-24-1-1-1">
 <li id="sec-prob_exampleA-24-1-1-1-1"><div class="para" id="sec-prob_exampleA-24-1-1-1-1-1">The student opted for the E or S.</div></li>
 <li id="sec-prob_exampleA-24-1-1-1-2"><div class="para" id="sec-prob_exampleA-24-1-1-1-2-1">The student has opted neither E nor S.</div></li>
 <li id="sec-prob_exampleA-24-1-1-1-3"><div class="para" id="sec-prob_exampleA-24-1-1-1-3-1">The student has opted S but not E.</div></li>
 <li id="sec-prob_exampleA-24-1-1-1-4"><div class="para" id="sec-prob_exampleA-24-1-1-1-4-1">The student has opted only for S.</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec-prob_exampleA-24-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-24-2-1"><ol class="lower-roman">
+<div class="solutions"><details id="sec-prob_exampleA-24-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-24-2-1"><ol class="lower-roman" id="sec-prob_exampleA-24-2-1-1">
 <li id="sec-prob_exampleA-24-2-1-1-1"><div class="para logical" id="sec-prob_exampleA-24-2-1-1-1-1">
 <div class="para">P(E or S)</div>
 <div class="displaymath process-math" id="sec-prob_exampleA-24-2-1-1-1-1-1">
@@ -951,14 +1498,17 @@ P(S \cap E') \amp = P(S)-P(S \cap E) \\
 <div class="para" id="sec-prob_exampleA-25-1-1">In a lottery, a person chose six different natural numbers at random from 1 to 20, and if these six numbers match with the six numbers already fixed by the lottery committee, he wins the prize. What is the probability of winning the prize in the game?</div>
 <div class="solutions"><details id="sec-prob_exampleA-25-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-prob_exampleA-25-2-1">Total outcomes = <span class="process-math">\(^{20}C_6 = \frac{20!}{6!14!}\)</span>
-</div> <div class="para" id="sec-prob_exampleA-25-2-2">Favourable outcome = 1.</div> <div class="para logical" id="sec-prob_exampleA-25-2-3">
+</div>
+<div class="para" id="sec-prob_exampleA-25-2-2">Favourable outcome = 1.</div>
+<div class="para logical" id="sec-prob_exampleA-25-2-3">
 <div class="para">if the numbers match without order</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(E) = \frac{1}{^{20}C_6} = -----.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-prob_exampleA-25-2-4">
+</div>
+<div class="para logical" id="sec-prob_exampleA-25-2-4">
 <div class="para">if the numbers match in order</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -971,12 +1521,12 @@ P(E) = \frac{1}{^{20}P_6} = -----.
 </h3>
 <div class="para logical" id="sec-prob_exampleA-26-1-1">
 <div class="para">A box contains 10 red marbles, 20 blue marbles, and 30 green marbles. If 5 marbles are drawn from the box, what is the probability that</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-prob_exampleA-26-1-1-1">
 <li id="sec-prob_exampleA-26-1-1-1-1"><div class="para" id="sec-prob_exampleA-26-1-1-1-1-1">all will be blue</div></li>
 <li id="sec-prob_exampleA-26-1-1-1-2"><div class="para" id="sec-prob_exampleA-26-1-1-1-2-1">at least one will be green?</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec-prob_exampleA-26-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-26-2-1"><ol class="lower-roman">
+<div class="solutions"><details id="sec-prob_exampleA-26-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-26-2-1"><ol class="lower-roman" id="sec-prob_exampleA-26-2-1-1">
 <li id="sec-prob_exampleA-26-2-1-1-1"><div class="para logical" id="sec-prob_exampleA-26-2-1-1-1-1"><div class="displaymath process-math">
 \begin{equation*}
 P(B) = \frac{^{20}C_5}{^{60}C_5} = ------
@@ -992,13 +1542,13 @@ P(E) = 1- P(G') = 1- \frac{^{30}C_5}{^{60}C_5} = ------
 </h3>
 <div class="para logical" id="sec-prob_exampleA-27-1-1">
 <div class="para">In a certain lottery, 10000 tickets are sold and 10 equal prizes are awarded. What is the probability of not getting a proze if you buy</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-prob_exampleA-27-1-1-1">
 <li id="sec-prob_exampleA-27-1-1-1-1"><div class="para" id="sec-prob_exampleA-27-1-1-1-1-1">one ticket</div></li>
 <li id="sec-prob_exampleA-27-1-1-1-2"><div class="para" id="sec-prob_exampleA-27-1-1-1-2-1">two tickets</div></li>
 <li id="sec-prob_exampleA-27-1-1-1-3"><div class="para" id="sec-prob_exampleA-27-1-1-1-3-1">ten tickets.</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec-prob_exampleA-27-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-27-2-1"><ol class="lower-alpha">
+<div class="solutions"><details id="sec-prob_exampleA-27-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-27-2-1"><ol class="lower-alpha" id="sec-prob_exampleA-27-2-1-1">
 <li id="sec-prob_exampleA-27-2-1-1-1"><div class="para logical" id="sec-prob_exampleA-27-2-1-1-1-1">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1023,12 +1573,12 @@ P (10T) = \frac{^{9990}C_{10}}{^{10000}C_{10}}
 </h3>
 <div class="para logical" id="sec-prob_exampleA-28-1-1">
 <div class="para">Out of 100 studnets, two sections of 40 and 60 are formed. If you and your friend are among 100 students, what is the probability that</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-prob_exampleA-28-1-1-1">
 <li id="sec-prob_exampleA-28-1-1-1-1"><div class="para" id="sec-prob_exampleA-28-1-1-1-1-1">you both enter the same section?</div></li>
 <li id="sec-prob_exampleA-28-1-1-1-2"><div class="para" id="sec-prob_exampleA-28-1-1-1-2-1">you both enter the different sections?</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec-prob_exampleA-28-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-28-2-1"><ol class="lower-alpha">
+<div class="solutions"><details id="sec-prob_exampleA-28-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-28-2-1"><ol class="lower-alpha" id="sec-prob_exampleA-28-2-1-1">
 <li id="sec-prob_exampleA-28-2-1-1-1"><div class="para logical" id="sec-prob_exampleA-28-2-1-1-1-1">
 <div class="para">P(both enter same section )</div>
 <div class="displaymath process-math">
@@ -1050,12 +1600,12 @@ P (10T) = \frac{^{9990}C_{10}}{^{10000}C_{10}}
 </h3>
 <div class="para logical" id="sec-prob_exampleA-29-1-1">
 <div class="para">If 4-digit numbers greater than 5000 are randomly formed from the digits 0,1,3,5, and 7. What is the probability of forming a number divisible by 5 when</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-prob_exampleA-29-1-1-1">
 <li id="sec-prob_exampleA-29-1-1-1-1"><div class="para" id="sec-prob_exampleA-29-1-1-1-1-1">the digits are repeated.</div></li>
 <li id="sec-prob_exampleA-29-1-1-1-2"><div class="para" id="sec-prob_exampleA-29-1-1-1-2-1">the repetition of digits is not allowed.</div></li>
 </ol>
 </div>
-<div class="solutions"><details id="sec-prob_exampleA-29-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-29-2-1"><ol class="lower-alpha">
+<div class="solutions"><details id="sec-prob_exampleA-29-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-prob_exampleA-29-2-1"><ol class="lower-alpha" id="sec-prob_exampleA-29-2-1-1">
 <li id="sec-prob_exampleA-29-2-1-1-1">
 <div class="para" id="sec-prob_exampleA-29-2-1-1-1-1">Total outcome = <span class="process-math">\(2 \times 5\times 5 \times 5 = 250 -1=249\)</span>
 </div>
@@ -1098,7 +1648,8 @@ P &amp; 0.75 &amp; 0.25  \\
 Q &amp; 0.8 &amp; 0.2  \\ 
 \end{array}
 \end{equation*}
-</div></div> <div class="para" id="sec-prob_exampleA-30-2-2">Contradict = <span class="process-math">\(0.8\times 0.25+ 0.75\times 0.2 = 35\%\)</span>
+</div></div>
+<div class="para" id="sec-prob_exampleA-30-2-2">Contradict = <span class="process-math">\(0.8\times 0.25+ 0.75\times 0.2 = 35\%\)</span>
 </div>
 </div></details></div></article><article class="example example-like" id="sec-prob_exampleA-31"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.31</span><span class="period">.</span>
@@ -1113,7 +1664,8 @@ A &amp; 1/5    \\
 B &amp; 3/4    \\ 
 \end{array}
 \end{equation*}
-</div></div> <div class="para" id="sec-prob_exampleA-31-2-2">Both winning the prize = <span class="process-math">\(1/5\times 3/4 = 3/20.\)</span>
+</div></div>
+<div class="para" id="sec-prob_exampleA-31-2-2">Both winning the prize = <span class="process-math">\(1/5\times 3/4 = 3/20.\)</span>
 </div>
 </div></details></div></article><article class="example example-like" id="sec-prob_exampleA-32"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.32</span><span class="period">.</span>
@@ -1128,7 +1680,8 @@ A &amp; 25\% &amp; 75\%  \\
 B &amp; 30\% &amp;  70\% \\ 
 \end{array}
 \end{equation*}
-</div></div> <div class="para logical" id="sec-prob_exampleA-32-2-2">
+</div></div>
+<div class="para logical" id="sec-prob_exampleA-32-2-2">
 <div class="para">Neither participate,</div>
 <div class="displaymath process-math">
 \begin{equation*}

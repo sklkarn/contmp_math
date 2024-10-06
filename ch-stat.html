@@ -88,6 +88,527 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#ch-numb-2-1-1 { counter-set: ch-numb-2-1-1 0; }
+#ch-numb-2-1-1 > li::marker { content: ""counter(ch-numb-2-1-1,decimal)"."; }
+#ch-numb-2-1-1 > li { counter-increment: ch-numb-2-1-1; }
+#sec-num_sys-2-2-1 { counter-set: sec-num_sys-2-2-1 0; }
+#sec-num_sys-2-2-1 > li::marker { content: ""counter(sec-num_sys-2-2-1,decimal)"."; }
+#sec-num_sys-2-2-1 > li { counter-increment: sec-num_sys-2-2-1; }
+#subsec-div_rule-2-1 { counter-set: subsec-div_rule-2-1 0; }
+#subsec-div_rule-2-1 > li::marker { content: ""counter(subsec-div_rule-2-1,lower-roman)""; }
+#subsec-div_rule-2-1 > li { counter-increment: subsec-div_rule-2-1; }
+#subsec-fam_pair-2-3 { counter-set: subsec-fam_pair-2-3 0; }
+#subsec-fam_pair-2-3 > li::marker { content: ""counter(subsec-fam_pair-2-3,lower-roman)""; }
+#subsec-fam_pair-2-3 > li { counter-increment: subsec-fam_pair-2-3; }
+#sec-numb_example-3-1-1-1 { counter-set: sec-numb_example-3-1-1-1 0; }
+#sec-numb_example-3-1-1-1 > li::marker { content: ""counter(sec-numb_example-3-1-1-1,lower-roman)""; }
+#sec-numb_example-3-1-1-1 > li { counter-increment: sec-numb_example-3-1-1-1; }
+#sec-numb_example-3-2-1-1 { counter-set: sec-numb_example-3-2-1-1 0; }
+#sec-numb_example-3-2-1-1 > li::marker { content: ""counter(sec-numb_example-3-2-1-1,lower-roman)""; }
+#sec-numb_example-3-2-1-1 > li { counter-increment: sec-numb_example-3-2-1-1; }
+#sec-numb_example-5-1-1-1 { counter-set: sec-numb_example-5-1-1-1 0; }
+#sec-numb_example-5-1-1-1 > li::marker { content: ""counter(sec-numb_example-5-1-1-1,lower-roman)""; }
+#sec-numb_example-5-1-1-1 > li { counter-increment: sec-numb_example-5-1-1-1; }
+#sec-numb_example-5-2-1-1 { counter-set: sec-numb_example-5-2-1-1 0; }
+#sec-numb_example-5-2-1-1 > li::marker { content: ""counter(sec-numb_example-5-2-1-1,lower-roman)""; }
+#sec-numb_example-5-2-1-1 > li { counter-increment: sec-numb_example-5-2-1-1; }
+#ex_first-4-2 { counter-set: ex_first-4-2 0; }
+#ex_first-4-2 > li::marker { content: ""counter(ex_first-4-2,lower-roman)""; }
+#ex_first-4-2 > li { counter-increment: ex_first-4-2; }
+#ex_first-5-2-1 { counter-set: ex_first-5-2-1 0; }
+#ex_first-5-2-1 > li::marker { content: ""counter(ex_first-5-2-1,lower-roman)""; }
+#ex_first-5-2-1 > li { counter-increment: ex_first-5-2-1; }
+#ex_first-6-1-1-1 { counter-set: ex_first-6-1-1-1 0; }
+#ex_first-6-1-1-1 > li::marker { content: ""counter(ex_first-6-1-1-1,lower-alpha)""; }
+#ex_first-6-1-1-1 > li { counter-increment: ex_first-6-1-1-1; }
+#ex_first-7-1-1-1 { counter-set: ex_first-7-1-1-1 0; }
+#ex_first-7-1-1-1 > li::marker { content: ""counter(ex_first-7-1-1-1,lower-alpha)""; }
+#ex_first-7-1-1-1 > li { counter-increment: ex_first-7-1-1-1; }
+#ch-set-2-3-2 { counter-set: ch-set-2-3-2 0; }
+#ch-set-2-3-2 > li::marker { content: ""counter(ch-set-2-3-2,lower-alpha)""; }
+#ch-set-2-3-2 > li { counter-increment: ch-set-2-3-2; }
+#sec-set_descrp-2-1 { counter-set: sec-set_descrp-2-1 0; }
+#sec-set_descrp-2-1 > li::marker { content: ""counter(sec-set_descrp-2-1,decimal)"."; }
+#sec-set_descrp-2-1 > li { counter-increment: sec-set_descrp-2-1; }
+#sec_set-exampleA-2-1-2-1 { counter-set: sec_set-exampleA-2-1-2-1 0; }
+#sec_set-exampleA-2-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-2-1-2-1,lower-roman)""; }
+#sec_set-exampleA-2-1-2-1 > li { counter-increment: sec_set-exampleA-2-1-2-1; }
+#sec_set-exampleA-3-1-2-1 { counter-set: sec_set-exampleA-3-1-2-1 0; }
+#sec_set-exampleA-3-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-3-1-2-1,lower-roman)""; }
+#sec_set-exampleA-3-1-2-1 > li { counter-increment: sec_set-exampleA-3-1-2-1; }
+#sec_set-exampleA-4-1-2-1 { counter-set: sec_set-exampleA-4-1-2-1 0; }
+#sec_set-exampleA-4-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-4-1-2-1,lower-roman)""; }
+#sec_set-exampleA-4-1-2-1 > li { counter-increment: sec_set-exampleA-4-1-2-1; }
+#sec_set-exampleA-5-1-2-1 { counter-set: sec_set-exampleA-5-1-2-1 0; }
+#sec_set-exampleA-5-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-5-1-2-1,lower-roman)""; }
+#sec_set-exampleA-5-1-2-1 > li { counter-increment: sec_set-exampleA-5-1-2-1; }
+#sec_set-exampleA-6-1-2-1 { counter-set: sec_set-exampleA-6-1-2-1 0; }
+#sec_set-exampleA-6-1-2-1 > li::marker { content: ""counter(sec_set-exampleA-6-1-2-1,lower-roman)""; }
+#sec_set-exampleA-6-1-2-1 > li { counter-increment: sec_set-exampleA-6-1-2-1; }
+#sec-set_type-2-1-1 { counter-set: sec-set_type-2-1-1 0; }
+#sec-set_type-2-1-1 > li::marker { content: ""counter(sec-set_type-2-1-1,decimal)"."; }
+#sec-set_type-2-1-1 > li { counter-increment: sec-set_type-2-1-1; }
+#sec-set_type-2-1-1-2-4-1-1-3 { counter-set: sec-set_type-2-1-1-2-4-1-1-3 0; }
+#sec-set_type-2-1-1-2-4-1-1-3 > li::marker { content: ""counter(sec-set_type-2-1-1-2-4-1-1-3,lower-alpha)""; }
+#sec-set_type-2-1-1-2-4-1-1-3 > li { counter-increment: sec-set_type-2-1-1-2-4-1-1-3; }
+#sec-set_type-2-1-1-5-5-2 { counter-set: sec-set_type-2-1-1-5-5-2 0; }
+#sec-set_type-2-1-1-5-5-2 > li::marker { content: ""counter(sec-set_type-2-1-1-5-5-2,lower-roman)""; }
+#sec-set_type-2-1-1-5-5-2 > li { counter-increment: sec-set_type-2-1-1-5-5-2; }
+#ex_second-2-1-1-1 { counter-set: ex_second-2-1-1-1 0; }
+#ex_second-2-1-1-1 > li::marker { content: ""counter(ex_second-2-1-1-1,lower-alpha)""; }
+#ex_second-2-1-1-1 > li { counter-increment: ex_second-2-1-1-1; }
+#ex_second-3-1-1-1 { counter-set: ex_second-3-1-1-1 0; }
+#ex_second-3-1-1-1 > li::marker { content: ""counter(ex_second-3-1-1-1,lower-alpha)""; }
+#ex_second-3-1-1-1 > li { counter-increment: ex_second-3-1-1-1; }
+#ex_second-4-1-1-1 { counter-set: ex_second-4-1-1-1 0; }
+#ex_second-4-1-1-1 > li::marker { content: ""counter(ex_second-4-1-1-1,lower-alpha)""; }
+#ex_second-4-1-1-1 > li { counter-increment: ex_second-4-1-1-1; }
+#ex_second-5-1-1-2 { counter-set: ex_second-5-1-1-2 0; }
+#ex_second-5-1-1-2 > li::marker { content: ""counter(ex_second-5-1-1-2,lower-alpha)""; }
+#ex_second-5-1-1-2 > li { counter-increment: ex_second-5-1-1-2; }
+#ex_second-6-1-1-1 { counter-set: ex_second-6-1-1-1 0; }
+#ex_second-6-1-1-1 > li::marker { content: ""counter(ex_second-6-1-1-1,lower-alpha)""; }
+#ex_second-6-1-1-1 > li { counter-increment: ex_second-6-1-1-1; }
+#sec-subset-2-7-1-1 { counter-set: sec-subset-2-7-1-1 0; }
+#sec-subset-2-7-1-1 > li::marker { content: ""counter(sec-subset-2-7-1-1,lower-alpha)""; }
+#sec-subset-2-7-1-1 > li { counter-increment: sec-subset-2-7-1-1; }
+#subsubsec-intervals-5-1 { counter-set: subsubsec-intervals-5-1 0; }
+#subsubsec-intervals-5-1 > li::marker { content: ""counter(subsubsec-intervals-5-1,lower-roman)""; }
+#subsubsec-intervals-5-1 > li { counter-increment: subsubsec-intervals-5-1; }
+#ex_secondb-2-1-1-3 { counter-set: ex_secondb-2-1-1-3 0; }
+#ex_secondb-2-1-1-3 > li::marker { content: ""counter(ex_secondb-2-1-1-3,lower-alpha)""; }
+#ex_secondb-2-1-1-3 > li { counter-increment: ex_secondb-2-1-1-3; }
+#ex_secondb-3-1-2-1 { counter-set: ex_secondb-3-1-2-1 0; }
+#ex_secondb-3-1-2-1 > li::marker { content: ""counter(ex_secondb-3-1-2-1,lower-alpha)""; }
+#ex_secondb-3-1-2-1 > li { counter-increment: ex_secondb-3-1-2-1; }
+#ex_secondb-4-1-1-2 { counter-set: ex_secondb-4-1-1-2 0; }
+#ex_secondb-4-1-1-2 > li::marker { content: ""counter(ex_secondb-4-1-1-2,lower-alpha)""; }
+#ex_secondb-4-1-1-2 > li { counter-increment: ex_secondb-4-1-1-2; }
+#ex_secondb-5-1-1-1 { counter-set: ex_secondb-5-1-1-1 0; }
+#ex_secondb-5-1-1-1 > li::marker { content: ""counter(ex_secondb-5-1-1-1,lower-alpha)""; }
+#ex_secondb-5-1-1-1 > li { counter-increment: ex_secondb-5-1-1-1; }
+#ex_secondb-7-1-2-1 { counter-set: ex_secondb-7-1-2-1 0; }
+#ex_secondb-7-1-2-1 > li::marker { content: ""counter(ex_secondb-7-1-2-1,lower-alpha)""; }
+#ex_secondb-7-1-2-1 > li { counter-increment: ex_secondb-7-1-2-1; }
+#ex_secondb-8-1-2-1 { counter-set: ex_secondb-8-1-2-1 0; }
+#ex_secondb-8-1-2-1 > li::marker { content: ""counter(ex_secondb-8-1-2-1,lower-alpha)""; }
+#ex_secondb-8-1-2-1 > li { counter-increment: ex_secondb-8-1-2-1; }
+#ex_secondb-9-1-2 { counter-set: ex_secondb-9-1-2 0; }
+#ex_secondb-9-1-2 > li::marker { content: ""counter(ex_secondb-9-1-2,lower-roman)""; }
+#ex_secondb-9-1-2 > li { counter-increment: ex_secondb-9-1-2; }
+#ex_secondb-10-1-2-1 { counter-set: ex_secondb-10-1-2-1 0; }
+#ex_secondb-10-1-2-1 > li::marker { content: ""counter(ex_secondb-10-1-2-1,lower-roman)""; }
+#ex_secondb-10-1-2-1 > li { counter-increment: ex_secondb-10-1-2-1; }
+#sec-set_op-2-1-1 { counter-set: sec-set_op-2-1-1 0; }
+#sec-set_op-2-1-1 > li::marker { content: ""counter(sec-set_op-2-1-1,upper-roman)""; }
+#sec-set_op-2-1-1 > li { counter-increment: sec-set_op-2-1-1; }
+#sec-set_op-2-1-1-1-4-1 { counter-set: sec-set_op-2-1-1-1-4-1 0; }
+#sec-set_op-2-1-1-1-4-1 > li::marker { content: ""counter(sec-set_op-2-1-1-1-4-1,lower-roman)""; }
+#sec-set_op-2-1-1-1-4-1 > li { counter-increment: sec-set_op-2-1-1-1-4-1; }
+#sec-set_op-2-1-1-2-3-2 { counter-set: sec-set_op-2-1-1-2-3-2 0; }
+#sec-set_op-2-1-1-2-3-2 > li::marker { content: ""counter(sec-set_op-2-1-1-2-3-2,lower-roman)""; }
+#sec-set_op-2-1-1-2-3-2 > li { counter-increment: sec-set_op-2-1-1-2-3-2; }
+#set_exmB1Q1-1-1-1 { counter-set: set_exmB1Q1-1-1-1 0; }
+#set_exmB1Q1-1-1-1 > li::marker { content: ""counter(set_exmB1Q1-1-1-1,decimal)"."; }
+#set_exmB1Q1-1-1-1 > li { counter-increment: set_exmB1Q1-1-1-1; }
+#sec_set-exampleB-5-1-1-5 { counter-set: sec_set-exampleB-5-1-1-5 0; }
+#sec_set-exampleB-5-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-5-1-1-5,lower-alpha)""; }
+#sec_set-exampleB-5-1-1-5 > li { counter-increment: sec_set-exampleB-5-1-1-5; }
+#sec_set-exampleB-7-1-1-5 { counter-set: sec_set-exampleB-7-1-1-5 0; }
+#sec_set-exampleB-7-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-7-1-1-5,lower-roman)""; }
+#sec_set-exampleB-7-1-1-5 > li { counter-increment: sec_set-exampleB-7-1-1-5; }
+#sec_set-exampleB-8-1-1-5 { counter-set: sec_set-exampleB-8-1-1-5 0; }
+#sec_set-exampleB-8-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-8-1-1-5,lower-roman)""; }
+#sec_set-exampleB-8-1-1-5 > li { counter-increment: sec_set-exampleB-8-1-1-5; }
+#sec_set-exampleB-9-1-1-1 { counter-set: sec_set-exampleB-9-1-1-1 0; }
+#sec_set-exampleB-9-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-9-1-1-1,lower-roman)""; }
+#sec_set-exampleB-9-1-1-1 > li { counter-increment: sec_set-exampleB-9-1-1-1; }
+#sec_set-exampleB-10-1-1-5 { counter-set: sec_set-exampleB-10-1-1-5 0; }
+#sec_set-exampleB-10-1-1-5 > li::marker { content: ""counter(sec_set-exampleB-10-1-1-5,lower-roman)""; }
+#sec_set-exampleB-10-1-1-5 > li { counter-increment: sec_set-exampleB-10-1-1-5; }
+#sec_set-exampleB-11-1-1-3 { counter-set: sec_set-exampleB-11-1-1-3 0; }
+#sec_set-exampleB-11-1-1-3 > li::marker { content: ""counter(sec_set-exampleB-11-1-1-3,lower-roman)""; }
+#sec_set-exampleB-11-1-1-3 > li { counter-increment: sec_set-exampleB-11-1-1-3; }
+#sec_set-exampleB-12-1-1-1 { counter-set: sec_set-exampleB-12-1-1-1 0; }
+#sec_set-exampleB-12-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-12-1-1-1,lower-roman)""; }
+#sec_set-exampleB-12-1-1-1 > li { counter-increment: sec_set-exampleB-12-1-1-1; }
+#sec_set-exampleB-14-1-1-1 { counter-set: sec_set-exampleB-14-1-1-1 0; }
+#sec_set-exampleB-14-1-1-1 > li::marker { content: ""counter(sec_set-exampleB-14-1-1-1,lower-roman)""; }
+#sec_set-exampleB-14-1-1-1 > li { counter-increment: sec_set-exampleB-14-1-1-1; }
+#ex_secondc-2-1-1-5 { counter-set: ex_secondc-2-1-1-5 0; }
+#ex_secondc-2-1-1-5 > li::marker { content: ""counter(ex_secondc-2-1-1-5,lower-roman)""; }
+#ex_secondc-2-1-1-5 > li { counter-increment: ex_secondc-2-1-1-5; }
+#ex_secondc-3-1-1-2 { counter-set: ex_secondc-3-1-1-2 0; }
+#ex_secondc-3-1-1-2 > li::marker { content: ""counter(ex_secondc-3-1-1-2,lower-roman)""; }
+#ex_secondc-3-1-1-2 > li { counter-increment: ex_secondc-3-1-1-2; }
+#ex_secondc-4-1-1-1 { counter-set: ex_secondc-4-1-1-1 0; }
+#ex_secondc-4-1-1-1 > li::marker { content: ""counter(ex_secondc-4-1-1-1,lower-roman)""; }
+#ex_secondc-4-1-1-1 > li { counter-increment: ex_secondc-4-1-1-1; }
+#ex_secondc-5-1-1-4 { counter-set: ex_secondc-5-1-1-4 0; }
+#ex_secondc-5-1-1-4 > li::marker { content: ""counter(ex_secondc-5-1-1-4,lower-roman)""; }
+#ex_secondc-5-1-1-4 > li { counter-increment: ex_secondc-5-1-1-4; }
+#ex_secondc-6-1-1-1 { counter-set: ex_secondc-6-1-1-1 0; }
+#ex_secondc-6-1-1-1 > li::marker { content: ""counter(ex_secondc-6-1-1-1,lower-roman)""; }
+#ex_secondc-6-1-1-1 > li { counter-increment: ex_secondc-6-1-1-1; }
+#sec_prod-exampleB-2-1-1-1 { counter-set: sec_prod-exampleB-2-1-1-1 0; }
+#sec_prod-exampleB-2-1-1-1 > li::marker { content: ""counter(sec_prod-exampleB-2-1-1-1,lower-roman)""; }
+#sec_prod-exampleB-2-1-1-1 > li { counter-increment: sec_prod-exampleB-2-1-1-1; }
+#sec_prod-exampleB-2-2-1-1 { counter-set: sec_prod-exampleB-2-2-1-1 0; }
+#sec_prod-exampleB-2-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-2-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-2-2-1-1 > li { counter-increment: sec_prod-exampleB-2-2-1-1; }
+#sec_prod-exampleB-6-1-1-1 { counter-set: sec_prod-exampleB-6-1-1-1 0; }
+#sec_prod-exampleB-6-1-1-1 > li::marker { content: ""counter(sec_prod-exampleB-6-1-1-1,lower-roman)""; }
+#sec_prod-exampleB-6-1-1-1 > li { counter-increment: sec_prod-exampleB-6-1-1-1; }
+#sec_prod-exampleB-6-2-1-1 { counter-set: sec_prod-exampleB-6-2-1-1 0; }
+#sec_prod-exampleB-6-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-6-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-6-2-1-1 > li { counter-increment: sec_prod-exampleB-6-2-1-1; }
+#sec_prod-exampleB-17-1-1-2 { counter-set: sec_prod-exampleB-17-1-1-2 0; }
+#sec_prod-exampleB-17-1-1-2 > li::marker { content: ""counter(sec_prod-exampleB-17-1-1-2,lower-roman)""; }
+#sec_prod-exampleB-17-1-1-2 > li { counter-increment: sec_prod-exampleB-17-1-1-2; }
+#sec_prod-exampleB-17-2-1-1 { counter-set: sec_prod-exampleB-17-2-1-1 0; }
+#sec_prod-exampleB-17-2-1-1 > li::marker { content: ""counter(sec_prod-exampleB-17-2-1-1,lower-roman)""; }
+#sec_prod-exampleB-17-2-1-1 > li { counter-increment: sec_prod-exampleB-17-2-1-1; }
+#ex_third-7-1-1-2 { counter-set: ex_third-7-1-1-2 0; }
+#ex_third-7-1-1-2 > li::marker { content: ""counter(ex_third-7-1-1-2,lower-roman)""; }
+#ex_third-7-1-1-2 > li { counter-increment: ex_third-7-1-1-2; }
+#sec-fact-5-1-1-1 { counter-set: sec-fact-5-1-1-1 0; }
+#sec-fact-5-1-1-1 > li::marker { content: ""counter(sec-fact-5-1-1-1,lower-roman)""; }
+#sec-fact-5-1-1-1 > li { counter-increment: sec-fact-5-1-1-1; }
+#sec-fact-5-2-1-1 { counter-set: sec-fact-5-2-1-1 0; }
+#sec-fact-5-2-1-1 > li::marker { content: ""counter(sec-fact-5-2-1-1,lower-roman)""; }
+#sec-fact-5-2-1-1 > li { counter-increment: sec-fact-5-2-1-1; }
+#sec-perm_example-11-1-1-1 { counter-set: sec-perm_example-11-1-1-1 0; }
+#sec-perm_example-11-1-1-1 > li::marker { content: ""counter(sec-perm_example-11-1-1-1,lower-roman)""; }
+#sec-perm_example-11-1-1-1 > li { counter-increment: sec-perm_example-11-1-1-1; }
+#sec-perm_example-11-2-2-1 { counter-set: sec-perm_example-11-2-2-1 0; }
+#sec-perm_example-11-2-2-1 > li::marker { content: ""counter(sec-perm_example-11-2-2-1,lower-roman)""; }
+#sec-perm_example-11-2-2-1 > li { counter-increment: sec-perm_example-11-2-2-1; }
+#sec-perm_example-19-1-1-1 { counter-set: sec-perm_example-19-1-1-1 0; }
+#sec-perm_example-19-1-1-1 > li::marker { content: ""counter(sec-perm_example-19-1-1-1,lower-roman)""; }
+#sec-perm_example-19-1-1-1 > li { counter-increment: sec-perm_example-19-1-1-1; }
+#sec-perm_example-19-2-1 { counter-set: sec-perm_example-19-2-1 0; }
+#sec-perm_example-19-2-1 > li::marker { content: ""counter(sec-perm_example-19-2-1,lower-roman)""; }
+#sec-perm_example-19-2-1 > li { counter-increment: sec-perm_example-19-2-1; }
+#sec-perm_example-20-1-1-1 { counter-set: sec-perm_example-20-1-1-1 0; }
+#sec-perm_example-20-1-1-1 > li::marker { content: ""counter(sec-perm_example-20-1-1-1,lower-roman)""; }
+#sec-perm_example-20-1-1-1 > li { counter-increment: sec-perm_example-20-1-1-1; }
+#sec-perm_example-20-1-1-1-2-1-1 { counter-set: sec-perm_example-20-1-1-1-2-1-1 0; }
+#sec-perm_example-20-1-1-1-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-1-1-1-2-1-1,lower-alpha)""; }
+#sec-perm_example-20-1-1-1-2-1-1 > li { counter-increment: sec-perm_example-20-1-1-1-2-1-1; }
+#sec-perm_example-20-2-1-1 { counter-set: sec-perm_example-20-2-1-1 0; }
+#sec-perm_example-20-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-2-1-1,lower-roman)""; }
+#sec-perm_example-20-2-1-1 > li { counter-increment: sec-perm_example-20-2-1-1; }
+#sec-perm_example-20-2-1-1-2-1-1 { counter-set: sec-perm_example-20-2-1-1-2-1-1 0; }
+#sec-perm_example-20-2-1-1-2-1-1 > li::marker { content: ""counter(sec-perm_example-20-2-1-1-2-1-1,lower-alpha)""; }
+#sec-perm_example-20-2-1-1-2-1-1 > li { counter-increment: sec-perm_example-20-2-1-1-2-1-1; }
+#sec-perm_example-21-1-2-1 { counter-set: sec-perm_example-21-1-2-1 0; }
+#sec-perm_example-21-1-2-1 > li::marker { content: ""counter(sec-perm_example-21-1-2-1,lower-roman)""; }
+#sec-perm_example-21-1-2-1 > li { counter-increment: sec-perm_example-21-1-2-1; }
+#sec-perm_example-21-2-2-1 { counter-set: sec-perm_example-21-2-2-1 0; }
+#sec-perm_example-21-2-2-1 > li::marker { content: ""counter(sec-perm_example-21-2-2-1,lower-roman)""; }
+#sec-perm_example-21-2-2-1 > li { counter-increment: sec-perm_example-21-2-2-1; }
+#sec-perm_example-25-1-1-1 { counter-set: sec-perm_example-25-1-1-1 0; }
+#sec-perm_example-25-1-1-1 > li::marker { content: ""counter(sec-perm_example-25-1-1-1,lower-roman)""; }
+#sec-perm_example-25-1-1-1 > li { counter-increment: sec-perm_example-25-1-1-1; }
+#sec-perm_example-25-2-1-3 { counter-set: sec-perm_example-25-2-1-3 0; }
+#sec-perm_example-25-2-1-3 > li::marker { content: ""counter(sec-perm_example-25-2-1-3,lower-roman)""; }
+#sec-perm_example-25-2-1-3 > li { counter-increment: sec-perm_example-25-2-1-3; }
+#ex_fourthA-7-2-1 { counter-set: ex_fourthA-7-2-1 0; }
+#ex_fourthA-7-2-1 > li::marker { content: ""counter(ex_fourthA-7-2-1,lower-roman)""; }
+#ex_fourthA-7-2-1 > li { counter-increment: ex_fourthA-7-2-1; }
+#ex_fourthA-8-1-2 { counter-set: ex_fourthA-8-1-2 0; }
+#ex_fourthA-8-1-2 > li::marker { content: ""counter(ex_fourthA-8-1-2,lower-roman)""; }
+#ex_fourthA-8-1-2 > li { counter-increment: ex_fourthA-8-1-2; }
+#ex_fourthA-10-2-1-1 { counter-set: ex_fourthA-10-2-1-1 0; }
+#ex_fourthA-10-2-1-1 > li::marker { content: ""counter(ex_fourthA-10-2-1-1,lower-roman)""; }
+#ex_fourthA-10-2-1-1 > li { counter-increment: ex_fourthA-10-2-1-1; }
+#ex_fourthA-12-1-1-2 { counter-set: ex_fourthA-12-1-1-2 0; }
+#ex_fourthA-12-1-1-2 > li::marker { content: ""counter(ex_fourthA-12-1-1-2,lower-roman)""; }
+#ex_fourthA-12-1-1-2 > li { counter-increment: ex_fourthA-12-1-1-2; }
+#ex_fourthA-12-2-1-1 { counter-set: ex_fourthA-12-2-1-1 0; }
+#ex_fourthA-12-2-1-1 > li::marker { content: ""counter(ex_fourthA-12-2-1-1,lower-roman)""; }
+#ex_fourthA-12-2-1-1 > li { counter-increment: ex_fourthA-12-2-1-1; }
+#ex_fourthA-13-1-1-2 { counter-set: ex_fourthA-13-1-1-2 0; }
+#ex_fourthA-13-1-1-2 > li::marker { content: "("counter(ex_fourthA-13-1-1-2,lower-alpha)")"; }
+#ex_fourthA-13-1-1-2 > li { counter-increment: ex_fourthA-13-1-1-2; }
+#thm-comb6-1-1-4 { counter-set: thm-comb6-1-1-4 0; }
+#thm-comb6-1-1-4 > li::marker { content: ""counter(thm-comb6-1-1-4,upper-roman)""; }
+#thm-comb6-1-1-4 > li { counter-increment: thm-comb6-1-1-4; }
+#sec-comb_example-10-1-1-1 { counter-set: sec-comb_example-10-1-1-1 0; }
+#sec-comb_example-10-1-1-1 > li::marker { content: ""counter(sec-comb_example-10-1-1-1,lower-roman)""; }
+#sec-comb_example-10-1-1-1 > li { counter-increment: sec-comb_example-10-1-1-1; }
+#sec-comb_example-10-2-1-1 { counter-set: sec-comb_example-10-2-1-1 0; }
+#sec-comb_example-10-2-1-1 > li::marker { content: ""counter(sec-comb_example-10-2-1-1,lower-roman)""; }
+#sec-comb_example-10-2-1-1 > li { counter-increment: sec-comb_example-10-2-1-1; }
+#sec-comb_example-13-1-1-1 { counter-set: sec-comb_example-13-1-1-1 0; }
+#sec-comb_example-13-1-1-1 > li::marker { content: ""counter(sec-comb_example-13-1-1-1,lower-roman)""; }
+#sec-comb_example-13-1-1-1 > li { counter-increment: sec-comb_example-13-1-1-1; }
+#sec-comb_example-16-1-1-1 { counter-set: sec-comb_example-16-1-1-1 0; }
+#sec-comb_example-16-1-1-1 > li::marker { content: ""counter(sec-comb_example-16-1-1-1,lower-roman)""; }
+#sec-comb_example-16-1-1-1 > li { counter-increment: sec-comb_example-16-1-1-1; }
+#sec-comb_example-16-2-2-1 { counter-set: sec-comb_example-16-2-2-1 0; }
+#sec-comb_example-16-2-2-1 > li::marker { content: ""counter(sec-comb_example-16-2-2-1,lower-roman)""; }
+#sec-comb_example-16-2-2-1 > li { counter-increment: sec-comb_example-16-2-2-1; }
+#sec-comb_example-19-1-1-1 { counter-set: sec-comb_example-19-1-1-1 0; }
+#sec-comb_example-19-1-1-1 > li::marker { content: ""counter(sec-comb_example-19-1-1-1,lower-roman)""; }
+#sec-comb_example-19-1-1-1 > li { counter-increment: sec-comb_example-19-1-1-1; }
+#sec-comb_example-19-2-2-1 { counter-set: sec-comb_example-19-2-2-1 0; }
+#sec-comb_example-19-2-2-1 > li::marker { content: ""counter(sec-comb_example-19-2-2-1,lower-roman)""; }
+#sec-comb_example-19-2-2-1 > li { counter-increment: sec-comb_example-19-2-2-1; }
+#ex_fourthB-3-1-1-1 { counter-set: ex_fourthB-3-1-1-1 0; }
+#ex_fourthB-3-1-1-1 > li::marker { content: ""counter(ex_fourthB-3-1-1-1,lower-roman)""; }
+#ex_fourthB-3-1-1-1 > li { counter-increment: ex_fourthB-3-1-1-1; }
+#ex_fourthB-4-1-1-1 { counter-set: ex_fourthB-4-1-1-1 0; }
+#ex_fourthB-4-1-1-1 > li::marker { content: ""counter(ex_fourthB-4-1-1-1,lower-roman)""; }
+#ex_fourthB-4-1-1-1 > li { counter-increment: ex_fourthB-4-1-1-1; }
+#ex_fourthB-4-2-1-2 { counter-set: ex_fourthB-4-2-1-2 0; }
+#ex_fourthB-4-2-1-2 > li::marker { content: ""counter(ex_fourthB-4-2-1-2,lower-roman)""; }
+#ex_fourthB-4-2-1-2 > li { counter-increment: ex_fourthB-4-2-1-2; }
+#ch-prob-2-3-1 { counter-set: ch-prob-2-3-1 0; }
+#ch-prob-2-3-1 > li::marker { content: ""counter(ch-prob-2-3-1,decimal)"."; }
+#ch-prob-2-3-1 > li { counter-increment: ch-prob-2-3-1; }
+#ch-prob-2-4-2 { counter-set: ch-prob-2-4-2 0; }
+#ch-prob-2-4-2 > li::marker { content: ""counter(ch-prob-2-4-2,decimal)"."; }
+#ch-prob-2-4-2 > li { counter-increment: ch-prob-2-4-2; }
+#ch-prob-2-4-2-3-2-1 { counter-set: ch-prob-2-4-2-3-2-1 0; }
+#ch-prob-2-4-2-3-2-1 > li::marker { content: ""counter(ch-prob-2-4-2-3-2-1,upper-roman)""; }
+#ch-prob-2-4-2-3-2-1 > li { counter-increment: ch-prob-2-4-2-3-2-1; }
+#sec-prob_int-2-4-1-2-1 { counter-set: sec-prob_int-2-4-1-2-1 0; }
+#sec-prob_int-2-4-1-2-1 > li::marker { content: ""counter(sec-prob_int-2-4-1-2-1,lower-roman)""; }
+#sec-prob_int-2-4-1-2-1 > li { counter-increment: sec-prob_int-2-4-1-2-1; }
+#sec-prob_int-2-4-2-3-1 { counter-set: sec-prob_int-2-4-2-3-1 0; }
+#sec-prob_int-2-4-2-3-1 > li::marker { content: ""counter(sec-prob_int-2-4-2-3-1,lower-roman)""; }
+#sec-prob_int-2-4-2-3-1 > li { counter-increment: sec-prob_int-2-4-2-3-1; }
+#sec-prob_int-2-4-2-4-2 { counter-set: sec-prob_int-2-4-2-4-2 0; }
+#sec-prob_int-2-4-2-4-2 > li::marker { content: ""counter(sec-prob_int-2-4-2-4-2,lower-roman)""; }
+#sec-prob_int-2-4-2-4-2 > li { counter-increment: sec-prob_int-2-4-2-4-2; }
+#sec-prob_int-2-5-2 { counter-set: sec-prob_int-2-5-2 0; }
+#sec-prob_int-2-5-2 > li::marker { content: ""counter(sec-prob_int-2-5-2,lower-roman)""; }
+#sec-prob_int-2-5-2 > li { counter-increment: sec-prob_int-2-5-2; }
+#subsec-add_prod-2-1 { counter-set: subsec-add_prod-2-1 0; }
+#subsec-add_prod-2-1 > li::marker { content: ""counter(subsec-add_prod-2-1,upper-roman)""; }
+#subsec-add_prod-2-1 > li { counter-increment: subsec-add_prod-2-1; }
+#subsec-add_prod-2-1-1-1-4 { counter-set: subsec-add_prod-2-1-1-1-4 0; }
+#subsec-add_prod-2-1-1-1-4 > li::marker { content: ""counter(subsec-add_prod-2-1-1-1-4,lower-roman)""; }
+#subsec-add_prod-2-1-1-1-4 > li { counter-increment: subsec-add_prod-2-1-1-1-4; }
+#subsec-add_prod-2-1-2-1-2 { counter-set: subsec-add_prod-2-1-2-1-2 0; }
+#subsec-add_prod-2-1-2-1-2 > li::marker { content: ""counter(subsec-add_prod-2-1-2-1-2,lower-roman)""; }
+#subsec-add_prod-2-1-2-1-2 > li { counter-increment: subsec-add_prod-2-1-2-1-2; }
+#sec-prob_exampleA-3-1-1-1 { counter-set: sec-prob_exampleA-3-1-1-1 0; }
+#sec-prob_exampleA-3-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-3-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-3-1-1-1 > li { counter-increment: sec-prob_exampleA-3-1-1-1; }
+#sec-prob_exampleA-4-1-1-1 { counter-set: sec-prob_exampleA-4-1-1-1 0; }
+#sec-prob_exampleA-4-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-4-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-4-1-1-1 > li { counter-increment: sec-prob_exampleA-4-1-1-1; }
+#sec-prob_exampleA-5-1-1-1 { counter-set: sec-prob_exampleA-5-1-1-1 0; }
+#sec-prob_exampleA-5-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-5-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-5-1-1-1 > li { counter-increment: sec-prob_exampleA-5-1-1-1; }
+#sec-prob_exampleA-5-2-2-1 { counter-set: sec-prob_exampleA-5-2-2-1 0; }
+#sec-prob_exampleA-5-2-2-1 > li::marker { content: ""counter(sec-prob_exampleA-5-2-2-1,lower-roman)""; }
+#sec-prob_exampleA-5-2-2-1 > li { counter-increment: sec-prob_exampleA-5-2-2-1; }
+#sec-prob_exampleA-7-1-1-1 { counter-set: sec-prob_exampleA-7-1-1-1 0; }
+#sec-prob_exampleA-7-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-7-1-1-1 > li { counter-increment: sec-prob_exampleA-7-1-1-1; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 { counter-set: sec-prob_exampleA-7-1-1-1-3-1-1 0; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-1-1-1-3-1-1,lower-roman)""; }
+#sec-prob_exampleA-7-1-1-1-3-1-1 > li { counter-increment: sec-prob_exampleA-7-1-1-1-3-1-1; }
+#sec-prob_exampleA-7-2-1-1 { counter-set: sec-prob_exampleA-7-2-1-1 0; }
+#sec-prob_exampleA-7-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-7-2-1-1 > li { counter-increment: sec-prob_exampleA-7-2-1-1; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 { counter-set: sec-prob_exampleA-7-2-1-1-3-1-1 0; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 > li::marker { content: ""counter(sec-prob_exampleA-7-2-1-1-3-1-1,lower-roman)""; }
+#sec-prob_exampleA-7-2-1-1-3-1-1 > li { counter-increment: sec-prob_exampleA-7-2-1-1-3-1-1; }
+#sec-prob_exampleA-8-1-1-3 { counter-set: sec-prob_exampleA-8-1-1-3 0; }
+#sec-prob_exampleA-8-1-1-3 > li::marker { content: ""counter(sec-prob_exampleA-8-1-1-3,lower-roman)""; }
+#sec-prob_exampleA-8-1-1-3 > li { counter-increment: sec-prob_exampleA-8-1-1-3; }
+#sec-prob_exampleA-8-2-3-1 { counter-set: sec-prob_exampleA-8-2-3-1 0; }
+#sec-prob_exampleA-8-2-3-1 > li::marker { content: ""counter(sec-prob_exampleA-8-2-3-1,lower-roman)""; }
+#sec-prob_exampleA-8-2-3-1 > li { counter-increment: sec-prob_exampleA-8-2-3-1; }
+#sec-prob_exampleA-12-1-6-1 { counter-set: sec-prob_exampleA-12-1-6-1 0; }
+#sec-prob_exampleA-12-1-6-1 > li::marker { content: ""counter(sec-prob_exampleA-12-1-6-1,lower-roman)""; }
+#sec-prob_exampleA-12-1-6-1 > li { counter-increment: sec-prob_exampleA-12-1-6-1; }
+#sec-prob_exampleA-12-2-1-1 { counter-set: sec-prob_exampleA-12-2-1-1 0; }
+#sec-prob_exampleA-12-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-12-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-12-2-1-1 > li { counter-increment: sec-prob_exampleA-12-2-1-1; }
+#sec-prob_exampleA-20-1-1-4 { counter-set: sec-prob_exampleA-20-1-1-4 0; }
+#sec-prob_exampleA-20-1-1-4 > li::marker { content: ""counter(sec-prob_exampleA-20-1-1-4,lower-roman)""; }
+#sec-prob_exampleA-20-1-1-4 > li { counter-increment: sec-prob_exampleA-20-1-1-4; }
+#sec-prob_exampleA-20-2-1-2 { counter-set: sec-prob_exampleA-20-2-1-2 0; }
+#sec-prob_exampleA-20-2-1-2 > li::marker { content: ""counter(sec-prob_exampleA-20-2-1-2,lower-roman)""; }
+#sec-prob_exampleA-20-2-1-2 > li { counter-increment: sec-prob_exampleA-20-2-1-2; }
+#sec-prob_exampleA-24-1-1-1 { counter-set: sec-prob_exampleA-24-1-1-1 0; }
+#sec-prob_exampleA-24-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-24-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-24-1-1-1 > li { counter-increment: sec-prob_exampleA-24-1-1-1; }
+#sec-prob_exampleA-24-2-1-1 { counter-set: sec-prob_exampleA-24-2-1-1 0; }
+#sec-prob_exampleA-24-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-24-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-24-2-1-1 > li { counter-increment: sec-prob_exampleA-24-2-1-1; }
+#sec-prob_exampleA-26-1-1-1 { counter-set: sec-prob_exampleA-26-1-1-1 0; }
+#sec-prob_exampleA-26-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-26-1-1-1,lower-roman)""; }
+#sec-prob_exampleA-26-1-1-1 > li { counter-increment: sec-prob_exampleA-26-1-1-1; }
+#sec-prob_exampleA-26-2-1-1 { counter-set: sec-prob_exampleA-26-2-1-1 0; }
+#sec-prob_exampleA-26-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-26-2-1-1,lower-roman)""; }
+#sec-prob_exampleA-26-2-1-1 > li { counter-increment: sec-prob_exampleA-26-2-1-1; }
+#sec-prob_exampleA-27-1-1-1 { counter-set: sec-prob_exampleA-27-1-1-1 0; }
+#sec-prob_exampleA-27-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-27-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-27-1-1-1 > li { counter-increment: sec-prob_exampleA-27-1-1-1; }
+#sec-prob_exampleA-27-2-1-1 { counter-set: sec-prob_exampleA-27-2-1-1 0; }
+#sec-prob_exampleA-27-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-27-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-27-2-1-1 > li { counter-increment: sec-prob_exampleA-27-2-1-1; }
+#sec-prob_exampleA-28-1-1-1 { counter-set: sec-prob_exampleA-28-1-1-1 0; }
+#sec-prob_exampleA-28-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-28-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-28-1-1-1 > li { counter-increment: sec-prob_exampleA-28-1-1-1; }
+#sec-prob_exampleA-28-2-1-1 { counter-set: sec-prob_exampleA-28-2-1-1 0; }
+#sec-prob_exampleA-28-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-28-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-28-2-1-1 > li { counter-increment: sec-prob_exampleA-28-2-1-1; }
+#sec-prob_exampleA-29-1-1-1 { counter-set: sec-prob_exampleA-29-1-1-1 0; }
+#sec-prob_exampleA-29-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-29-1-1-1,lower-alpha)""; }
+#sec-prob_exampleA-29-1-1-1 > li { counter-increment: sec-prob_exampleA-29-1-1-1; }
+#sec-prob_exampleA-29-2-1-1 { counter-set: sec-prob_exampleA-29-2-1-1 0; }
+#sec-prob_exampleA-29-2-1-1 > li::marker { content: ""counter(sec-prob_exampleA-29-2-1-1,lower-alpha)""; }
+#sec-prob_exampleA-29-2-1-1 > li { counter-increment: sec-prob_exampleA-29-2-1-1; }
+#ex_fifth-3-1-1-1 { counter-set: ex_fifth-3-1-1-1 0; }
+#ex_fifth-3-1-1-1 > li::marker { content: ""counter(ex_fifth-3-1-1-1,lower-alpha)""; }
+#ex_fifth-3-1-1-1 > li { counter-increment: ex_fifth-3-1-1-1; }
+#ex_fifth-4-1-1-1 { counter-set: ex_fifth-4-1-1-1 0; }
+#ex_fifth-4-1-1-1 > li::marker { content: ""counter(ex_fifth-4-1-1-1,lower-alpha)""; }
+#ex_fifth-4-1-1-1 > li { counter-increment: ex_fifth-4-1-1-1; }
+#ex_fifth-5-1-1-1 { counter-set: ex_fifth-5-1-1-1 0; }
+#ex_fifth-5-1-1-1 > li::marker { content: ""counter(ex_fifth-5-1-1-1,lower-alpha)""; }
+#ex_fifth-5-1-1-1 > li { counter-increment: ex_fifth-5-1-1-1; }
+#ex_fifth-6-1-1-1 { counter-set: ex_fifth-6-1-1-1 0; }
+#ex_fifth-6-1-1-1 > li::marker { content: ""counter(ex_fifth-6-1-1-1,lower-alpha)""; }
+#ex_fifth-6-1-1-1 > li { counter-increment: ex_fifth-6-1-1-1; }
+#ex_fifth-7-1-1-1 { counter-set: ex_fifth-7-1-1-1 0; }
+#ex_fifth-7-1-1-1 > li::marker { content: ""counter(ex_fifth-7-1-1-1,lower-roman)""; }
+#ex_fifth-7-1-1-1 > li { counter-increment: ex_fifth-7-1-1-1; }
+#ex_fifth-9-1-1-1 { counter-set: ex_fifth-9-1-1-1 0; }
+#ex_fifth-9-1-1-1 > li::marker { content: ""counter(ex_fifth-9-1-1-1,lower-alpha)""; }
+#ex_fifth-9-1-1-1 > li { counter-increment: ex_fifth-9-1-1-1; }
+#ch-stat-2-1-1 { counter-set: ch-stat-2-1-1 0; }
+#ch-stat-2-1-1 > li::marker { content: ""counter(ch-stat-2-1-1,upper-roman)""; }
+#ch-stat-2-1-1 > li { counter-increment: ch-stat-2-1-1; }
+#ch-stat-2-1-1-1-4-1 { counter-set: ch-stat-2-1-1-1-4-1 0; }
+#ch-stat-2-1-1-1-4-1 > li::marker { content: ""counter(ch-stat-2-1-1-1-4-1,lower-roman)""; }
+#ch-stat-2-1-1-1-4-1 > li { counter-increment: ch-stat-2-1-1-1-4-1; }
+#ch-stat-2-4-1-1-2 { counter-set: ch-stat-2-4-1-1-2 0; }
+#ch-stat-2-4-1-1-2 > li::marker { content: ""counter(ch-stat-2-4-1-1-2,lower-roman)""; }
+#ch-stat-2-4-1-1-2 > li { counter-increment: ch-stat-2-4-1-1-2; }
+#ch-stat-2-4-2-1-2 { counter-set: ch-stat-2-4-2-1-2 0; }
+#ch-stat-2-4-2-1-2 > li::marker { content: ""counter(ch-stat-2-4-2-1-2,lower-roman)""; }
+#ch-stat-2-4-2-1-2 > li { counter-increment: ch-stat-2-4-2-1-2; }
+#ch-stat-2-5-1-1-1 { counter-set: ch-stat-2-5-1-1-1 0; }
+#ch-stat-2-5-1-1-1 > li::marker { content: ""counter(ch-stat-2-5-1-1-1,lower-roman)""; }
+#ch-stat-2-5-1-1-1 > li { counter-increment: ch-stat-2-5-1-1-1; }
+#sec-stat_int-2-1-2 { counter-set: sec-stat_int-2-1-2 0; }
+#sec-stat_int-2-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2,lower-roman)""; }
+#sec-stat_int-2-1-2 > li { counter-increment: sec-stat_int-2-1-2; }
+#sec-stat_int-2-1-2-1-1-2 { counter-set: sec-stat_int-2-1-2-1-1-2 0; }
+#sec-stat_int-2-1-2-1-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2-1-1-2,lower-alpha)""; }
+#sec-stat_int-2-1-2-1-1-2 > li { counter-increment: sec-stat_int-2-1-2-1-1-2; }
+#sec-stat_int-2-1-2-2-1-2 { counter-set: sec-stat_int-2-1-2-2-1-2 0; }
+#sec-stat_int-2-1-2-2-1-2 > li::marker { content: ""counter(sec-stat_int-2-1-2-2-1-2,lower-alpha)""; }
+#sec-stat_int-2-1-2-2-1-2 > li { counter-increment: sec-stat_int-2-1-2-2-1-2; }
+#subsec-pop_samp-6-2-1 { counter-set: subsec-pop_samp-6-2-1 0; }
+#subsec-pop_samp-6-2-1 > li::marker { content: ""counter(subsec-pop_samp-6-2-1,lower-roman)""; }
+#subsec-pop_samp-6-2-1 > li { counter-increment: subsec-pop_samp-6-2-1; }
+#sec-stat_centerT-2-2-2 { counter-set: sec-stat_centerT-2-2-2 0; }
+#sec-stat_centerT-2-2-2 > li::marker { content: ""counter(sec-stat_centerT-2-2-2,decimal)"."; }
+#sec-stat_centerT-2-2-2 > li { counter-increment: sec-stat_centerT-2-2-2; }
+#sec-stat_centerT-2-2-2-1-1-1 { counter-set: sec-stat_centerT-2-2-2-1-1-1 0; }
+#sec-stat_centerT-2-2-2-1-1-1 > li::marker { content: ""counter(sec-stat_centerT-2-2-2-1-1-1,lower-roman)""; }
+#sec-stat_centerT-2-2-2-1-1-1 > li { counter-increment: sec-stat_centerT-2-2-2-1-1-1; }
+#sec-stat_centerT-2-2-2-2-1-1 { counter-set: sec-stat_centerT-2-2-2-2-1-1 0; }
+#sec-stat_centerT-2-2-2-2-1-1 > li::marker { content: ""counter(sec-stat_centerT-2-2-2-2-1-1,lower-roman)""; }
+#sec-stat_centerT-2-2-2-2-1-1 > li { counter-increment: sec-stat_centerT-2-2-2-2-1-1; }
+#subsec-mean-2-1-1 { counter-set: subsec-mean-2-1-1 0; }
+#subsec-mean-2-1-1 > li::marker { content: ""counter(subsec-mean-2-1-1,upper-roman)""; }
+#subsec-mean-2-1-1 > li { counter-increment: subsec-mean-2-1-1; }
+#subsec-mean-2-2-1 { counter-set: subsec-mean-2-2-1 0; }
+#subsec-mean-2-2-1 > li::marker { content: ""counter(subsec-mean-2-2-1,lower-roman)""; }
+#subsec-mean-2-2-1 > li { counter-increment: subsec-mean-2-2-1; }
+#subsec-discrD-2-1 { counter-set: subsec-discrD-2-1 0; }
+#subsec-discrD-2-1 > li::marker { content: ""counter(subsec-discrD-2-1,lower-roman)""; }
+#subsec-discrD-2-1 > li { counter-increment: subsec-discrD-2-1; }
+#subsec-discrD-3-1 { counter-set: subsec-discrD-3-1 0; }
+#subsec-discrD-3-1 > li::marker { content: ""counter(subsec-discrD-3-1,decimal)"."; }
+#subsec-discrD-3-1 > li { counter-increment: subsec-discrD-3-1; }
+#subsubsec-contS-3-2 { counter-set: subsubsec-contS-3-2 0; }
+#subsubsec-contS-3-2 > li::marker { content: ""counter(subsubsec-contS-3-2,lower-alpha)""; }
+#subsubsec-contS-3-2 > li { counter-increment: subsubsec-contS-3-2; }
+#subsec-combM-3-1-1-1 { counter-set: subsec-combM-3-1-1-1 0; }
+#subsec-combM-3-1-1-1 > li::marker { content: ""counter(subsec-combM-3-1-1-1,lower-alpha)""; }
+#subsec-combM-3-1-1-1 > li { counter-increment: subsec-combM-3-1-1-1; }
+#subsubsec-mean_prop-2-1 { counter-set: subsubsec-mean_prop-2-1 0; }
+#subsubsec-mean_prop-2-1 > li::marker { content: ""counter(subsubsec-mean_prop-2-1,lower-roman)""; }
+#subsubsec-mean_prop-2-1 > li { counter-increment: subsubsec-mean_prop-2-1; }
+#subsubsec-mean_prop-4-1 { counter-set: subsubsec-mean_prop-4-1 0; }
+#subsubsec-mean_prop-4-1 > li::marker { content: ""counter(subsubsec-mean_prop-4-1,lower-roman)""; }
+#subsubsec-mean_prop-4-1 > li { counter-increment: subsubsec-mean_prop-4-1; }
+#subsubsec-med_is-2-1 { counter-set: subsubsec-med_is-2-1 0; }
+#subsubsec-med_is-2-1 > li::marker { content: ""counter(subsubsec-med_is-2-1,lower-roman)""; }
+#subsubsec-med_is-2-1 > li { counter-increment: subsubsec-med_is-2-1; }
+#subsubsec-med_is-3-1 { counter-set: subsubsec-med_is-3-1 0; }
+#subsubsec-med_is-3-1 > li::marker { content: ""counter(subsubsec-med_is-3-1,decimal)"."; }
+#subsubsec-med_is-3-1 > li { counter-increment: subsubsec-med_is-3-1; }
+#subsubsec-med_prop-2-1 { counter-set: subsubsec-med_prop-2-1 0; }
+#subsubsec-med_prop-2-1 > li::marker { content: ""counter(subsubsec-med_prop-2-1,lower-roman)""; }
+#subsubsec-med_prop-2-1 > li { counter-increment: subsubsec-med_prop-2-1; }
+#subsubsec-mod_is-2-1 { counter-set: subsubsec-mod_is-2-1 0; }
+#subsubsec-mod_is-2-1 > li::marker { content: ""counter(subsubsec-mod_is-2-1,lower-roman)""; }
+#subsubsec-mod_is-2-1 > li { counter-increment: subsubsec-mod_is-2-1; }
+#subsubsec-mod_cs-6-2 { counter-set: subsubsec-mod_cs-6-2 0; }
+#subsubsec-mod_cs-6-2 > li::marker { content: ""counter(subsubsec-mod_cs-6-2,lower-roman)""; }
+#subsubsec-mod_cs-6-2 > li { counter-increment: subsubsec-mod_cs-6-2; }
+#subsec-disp_msr-3-1 { counter-set: subsec-disp_msr-3-1 0; }
+#subsec-disp_msr-3-1 > li::marker { content: ""counter(subsec-disp_msr-3-1,decimal)"."; }
+#subsec-disp_msr-3-1 > li { counter-increment: subsec-disp_msr-3-1; }
+#subsec-disp_msr-3-1-1-2-1 { counter-set: subsec-disp_msr-3-1-1-2-1 0; }
+#subsec-disp_msr-3-1-1-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-1-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-1-2-1 > li { counter-increment: subsec-disp_msr-3-1-1-2-1; }
+#subsec-disp_msr-3-1-2-2-1 { counter-set: subsec-disp_msr-3-1-2-2-1 0; }
+#subsec-disp_msr-3-1-2-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-2-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-2-2-1 > li { counter-increment: subsec-disp_msr-3-1-2-2-1; }
+#subsubsec-rng_cs-2-1 { counter-set: subsubsec-rng_cs-2-1 0; }
+#subsubsec-rng_cs-2-1 > li::marker { content: ""counter(subsubsec-rng_cs-2-1,decimal)"."; }
+#subsubsec-rng_cs-2-1 > li { counter-increment: subsubsec-rng_cs-2-1; }
+#subsubsec-rng_merit-2-1 { counter-set: subsubsec-rng_merit-2-1 0; }
+#subsubsec-rng_merit-2-1 > li::marker { content: ""counter(subsubsec-rng_merit-2-1,decimal)"."; }
+#subsubsec-rng_merit-2-1 > li { counter-increment: subsubsec-rng_merit-2-1; }
+#subsubsec-rng_limit-2-1 { counter-set: subsubsec-rng_limit-2-1 0; }
+#subsubsec-rng_limit-2-1 > li::marker { content: ""counter(subsubsec-rng_limit-2-1,decimal)"."; }
+#subsubsec-rng_limit-2-1 > li { counter-increment: subsubsec-rng_limit-2-1; }
+#subsubsec-rng_use-2-1 { counter-set: subsubsec-rng_use-2-1 0; }
+#subsubsec-rng_use-2-1 > li::marker { content: ""counter(subsubsec-rng_use-2-1,decimal)"."; }
+#subsubsec-rng_use-2-1 > li { counter-increment: subsubsec-rng_use-2-1; }
+#subsec-st_dev-2-3-2 { counter-set: subsec-st_dev-2-3-2 0; }
+#subsec-st_dev-2-3-2 > li::marker { content: ""counter(subsec-st_dev-2-3-2,lower-roman)""; }
+#subsec-st_dev-2-3-2 > li { counter-increment: subsec-st_dev-2-3-2; }
+#subsubsec-sd_dscs-2-1 { counter-set: subsubsec-sd_dscs-2-1 0; }
+#subsubsec-sd_dscs-2-1 > li::marker { content: ""counter(subsubsec-sd_dscs-2-1,lower-alpha)""; }
+#subsubsec-sd_dscs-2-1 > li { counter-increment: subsubsec-sd_dscs-2-1; }
+#subsec-mean_dev-2-1-1 { counter-set: subsec-mean_dev-2-1-1 0; }
+#subsec-mean_dev-2-1-1 > li::marker { content: ""counter(subsec-mean_dev-2-1-1,decimal)"."; }
+#subsec-mean_dev-2-1-1 > li { counter-increment: subsec-mean_dev-2-1-1; }
+#sec_stat_example-2-1-1-1 { counter-set: sec_stat_example-2-1-1-1 0; }
+#sec_stat_example-2-1-1-1 > li::marker { content: ""counter(sec_stat_example-2-1-1-1,lower-roman)""; }
+#sec_stat_example-2-1-1-1 > li { counter-increment: sec_stat_example-2-1-1-1; }
+#sec_stat_example-3-1-1-1 { counter-set: sec_stat_example-3-1-1-1 0; }
+#sec_stat_example-3-1-1-1 > li::marker { content: ""counter(sec_stat_example-3-1-1-1,decimal)"."; }
+#sec_stat_example-3-1-1-1 > li { counter-increment: sec_stat_example-3-1-1-1; }
+#sec_stat_example-4-1-1-1 { counter-set: sec_stat_example-4-1-1-1 0; }
+#sec_stat_example-4-1-1-1 > li::marker { content: ""counter(sec_stat_example-4-1-1-1,lower-alpha)""; }
+#sec_stat_example-4-1-1-1 > li { counter-increment: sec_stat_example-4-1-1-1; }
+#sec_stat_example-5-1-1-1 { counter-set: sec_stat_example-5-1-1-1 0; }
+#sec_stat_example-5-1-1-1 > li::marker { content: ""counter(sec_stat_example-5-1-1-1,lower-roman)""; }
+#sec_stat_example-5-1-1-1 > li { counter-increment: sec_stat_example-5-1-1-1; }
+#sec_stat_example-5-2-1-2 { counter-set: sec_stat_example-5-2-1-2 0; }
+#sec_stat_example-5-2-1-2 > li::marker { content: ""counter(sec_stat_example-5-2-1-2,lower-roman)""; }
+#sec_stat_example-5-2-1-2 > li { counter-increment: sec_stat_example-5-2-1-2; }
+#ex_sixth-3-1-1-1 { counter-set: ex_sixth-3-1-1-1 0; }
+#ex_sixth-3-1-1-1 > li::marker { content: "("counter(ex_sixth-3-1-1-1,lower-alpha)")"; }
+#ex_sixth-3-1-1-1 > li { counter-increment: ex_sixth-3-1-1-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -155,14 +676,14 @@ window.MathJax = {
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondb.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercise B</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-set_op.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Operations on Sets</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-venn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Venn Diagram</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.2</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-vennD_shade" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Shading of Venn Diagram</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_op.html#subsec-DeMorgn" class="internal"><span class="codenumber">2.7.1</span> <span class="title">De Morgan’s Law in Set Theory</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Example B</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Exercise C</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-set_venn.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Venn Diagram</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-set_venn.html#subsec-ven_b" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Venn Diagram using checkmarks</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_set-exampleB.html" class="internal"><span class="codenumber">2.9</span> <span class="title">Example B</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_secondc.html" class="internal"><span class="codenumber">2.10</span> <span class="title">Exercise C</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -310,7 +831,7 @@ window.MathJax = {
 </h2>
 <section class="introduction" id="ch-stat-2"><div class="para logical" id="ch-stat-2-1">
 <div class="para">Statistics is the science of collecting, arranging, and analyzing data for better decision making. It is of two types:</div>
-<ol class="upper-roman">
+<ol class="upper-roman" id="ch-stat-2-1-1">
 <li id="ch-stat-2-1-1-1">
 <div class="para" id="ch-stat-2-1-1-1-1">
 <dfn class="terminology">Descriptive Statistics:</dfn> It consists of organizing and summarizing the data using quantitative methods.</div>
@@ -330,7 +851,7 @@ window.MathJax = {
 </div>
 </div>
 <div class="para" id="ch-stat-2-1-1-1-3">Histogram, probability, permutation, combination, mean, median, mode, standard deviation, Gaussian distribution, log-normal distribution, binomial distribution, etc.</div>
-<div class="para logical" id="ch-stat-2-1-1-1-4"><ol class="lower-roman">
+<div class="para logical" id="ch-stat-2-1-1-1-4"><ol class="lower-roman" id="ch-stat-2-1-1-1-4-1">
 <li id="ch-stat-2-1-1-1-4-1-1"><div class="para" id="ch-stat-2-1-1-1-4-1-1-1">Measure of central tendency</div></li>
 <li id="ch-stat-2-1-1-1-4-1-2"><div class="para" id="ch-stat-2-1-1-1-4-1-2-1">Measure of dispersion</div></li>
 </ol></div>
@@ -341,12 +862,15 @@ window.MathJax = {
 <div class="para" id="ch-stat-2-1-1-2-2">z test, t-test, anova test, chi-square test, hypothesis testing, p-value, confidence inetrval.</div>
 </li>
 </ol>
-</div> <div class="para" id="ch-stat-2-2">Descriptive stat. tells about the questions like: What is the average marks of students in the class?  What percentage of students are passing the class? Descriptive statistics include graphical and numerial procedure that are used to summarize data and to transform data into information.  Examples: The number of customers who visited a jeweelery shop in the last 10 days were <span class="process-math">\(83, 80, 79, 84, 85, 106, 110, 120, 74, 77.\)</span> By looking to the data one can see there is not much variation in the first 5 days, high sale in next two days (Weekend?), high again in the next day (specific occasion?).</div> <div class="para" id="ch-stat-2-3">Inferential stat. tells about the questions like: Are the markes of the students of this class room similar to the markes of other math classes in the school. Here we are comparing the data set of one class room to the other many math class rooms. Inferential statistics provides bases for forcast, predictioins, and estimations that are used to transform information into knowledge. Estimating parameter: average age of customers, test a hypothesis, forcast for rain tomorrow.</div> <article class="example example-like" id="ch-stat-2-4"><h3 class="heading">
+</div>
+<div class="para" id="ch-stat-2-2">Descriptive stat. tells about the questions like: What is the average marks of students in the class?  What percentage of students are passing the class? Descriptive statistics include graphical and numerial procedure that are used to summarize data and to transform data into information.  Examples: The number of customers who visited a jeweelery shop in the last 10 days were <span class="process-math">\(83, 80, 79, 84, 85, 106, 110, 120, 74, 77.\)</span> By looking to the data one can see there is not much variation in the first 5 days, high sale in next two days (Weekend?), high again in the next day (specific occasion?).</div>
+<div class="para" id="ch-stat-2-3">Inferential stat. tells about the questions like: Are the markes of the students of this class room similar to the markes of other math classes in the school. Here we are comparing the data set of one class room to the other many math class rooms. Inferential statistics provides bases for forcast, predictioins, and estimations that are used to transform information into knowledge. Estimating parameter: average age of customers, test a hypothesis, forcast for rain tomorrow.</div>
+<article class="example example-like" id="ch-stat-2-4"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="ch-stat-2-4-1-1">
 <div class="para"><em class="alert">Compare:</em></div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="ch-stat-2-4-1-1-2">
 <li id="ch-stat-2-4-1-1-2-1"><div class="para" id="ch-stat-2-4-1-1-2-1-1">6’3" boy to a 5’1" boy.</div></li>
 <li id="ch-stat-2-4-1-1-2-2"><div class="para" id="ch-stat-2-4-1-1-2-2-1">GPA of 4.0 to GPA of 2.5</div></li>
 <li id="ch-stat-2-4-1-1-2-3"><div class="para" id="ch-stat-2-4-1-1-2-3-1">Income of $24,000 to income $15,000.</div></li>
@@ -355,31 +879,31 @@ window.MathJax = {
 </div>
 <div class="solutions"><details id="ch-stat-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="ch-stat-2-4-2-1">
 <div class="para"><dfn class="terminology">Interpret or infer:</dfn></div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="ch-stat-2-4-2-1-2">
 <li id="ch-stat-2-4-2-1-2-1"><div class="para" id="ch-stat-2-4-2-1-2-1-1">taller</div></li>
 <li id="ch-stat-2-4-2-1-2-2"><div class="para" id="ch-stat-2-4-2-1-2-2-1">more intelligent</div></li>
 <li id="ch-stat-2-4-2-1-2-3"><div class="para" id="ch-stat-2-4-2-1-2-3-1">wealth</div></li>
 <li id="ch-stat-2-4-2-1-2-4"><div class="para" id="ch-stat-2-4-2-1-2-4-1">power.</div></li>
 </ol>
-</div></div></details></div></article> <article class="example example-like" id="ch-stat-2-5"><h3 class="heading">
+</div></div></details></div></article><article class="example example-like" id="ch-stat-2-5"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="ch-stat-2-5-1-1"><ol class="lower-roman">
+<div class="para logical" id="ch-stat-2-5-1-1"><ol class="lower-roman" id="ch-stat-2-5-1-1-1">
 <li id="ch-stat-2-5-1-1-1-1"><div class="para" id="ch-stat-2-5-1-1-1-1-1">How do I price this car?</div></li>
 <li id="ch-stat-2-5-1-1-1-2"><div class="para" id="ch-stat-2-5-1-1-1-2-1">How much the customer is willing to pay?</div></li>
 <li id="ch-stat-2-5-1-1-1-3"><div class="para" id="ch-stat-2-5-1-1-1-3-1">What should be the capacity of the plant?</div></li>
-</ol></div></article> <div class="para" id="ch-stat-2-6">
+</ol></div></article><div class="para" id="ch-stat-2-6">
 <dfn class="terminology">Why study Statistics:</dfn> It helps in decision making or prediction in an uncertain environment. We collect and analyze data to make decision.</div></section><section class="section" id="sec-stat_int"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.1</span><span class="space"> </span><span class="title">Data Analysis</span>
 </h3>
 <section class="introduction" id="sec-stat_int-2"><div class="para logical" id="sec-stat_int-2-1">
 <div class="para">
 <dfn class="terminology">Data:</dfn> Facts or pieces of information that can be measured. Data can be collected from investigations, observations, experiements, etc. Data are organized in two basic types</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-stat_int-2-1-2">
 <li id="sec-stat_int-2-1-2-1"><div class="para logical" id="sec-stat_int-2-1-2-1-1">
 <div class="para">
 <dfn class="terminology">Qualitative or Categorical Data:</dfn> It describes the features such as color, gender, code, birth date, address, blood group, etc. It cannot be used to perform any mathematical operations.</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-stat_int-2-1-2-1-1-2">
 <li id="sec-stat_int-2-1-2-1-1-2-1"><div class="para" id="sec-stat_int-2-1-2-1-1-2-1-1">Nominal Data: It helps to label the variables without providing the numerical value. Nominal data are letters, symbols, words, gender, numbers, cloth’s size, etc. These data are grouped into categories, and then the frequency or the percentage of the data can be calculated.</div></li>
 <li id="sec-stat_int-2-1-2-1-1-2-2">
 <div class="para" id="sec-stat_int-2-1-2-1-1-2-2-1">Ordinal Data: The order of data is presented here. In orderinal data, order is important but not their values. The information may be expressed using tables in which each row in the table shows the distinct category.</div>
@@ -401,7 +925,7 @@ window.MathJax = {
 <li id="sec-stat_int-2-1-2-2"><div class="para logical" id="sec-stat_int-2-1-2-2-1">
 <div class="para">
 <dfn class="terminology">Quantitative or Numerical Data:</dfn> Numerical data gives information about the quantities of a specific thing. e.g., height, length, size, weight, and so on. It can be used for mathematical operations.</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-stat_int-2-1-2-2-1-2">
 <li id="sec-stat_int-2-1-2-2-1-2-1"><div class="para" id="sec-stat_int-2-1-2-2-1-2-1-1">Discrete Data: It can take only discrete values. Discrete information contains only a finite number of possible values. e.g., number of bank account, number of children, number of students in the class.</div></li>
 <li id="sec-stat_int-2-1-2-2-1-2-2">
 <div class="para" id="sec-stat_int-2-1-2-2-1-2-2-1">Continuous Data: It has an infinite number of probable values that can be selected within a given specific range. For example, height <span class="process-math">\(= 60.4, 70.0, 50.15\)</span> inches; weight <span class="process-math">\(= 45, 70.3, 65.6, 101.7\)</span> pounds, etc.</div>
@@ -424,7 +948,7 @@ window.MathJax = {
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3</span><span class="period">.</span>
 </h5></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-pop_samp-6-1">
 <em class="alert">Simple Exercise:</em> An airline claims that less than 6% of its flights from Lexington depart late. From a sample of 100 flight 6 flights were found to depart late.</div>
-<div class="para logical" id="subsec-pop_samp-6-2"><ol class="lower-roman">
+<div class="para logical" id="subsec-pop_samp-6-2"><ol class="lower-roman" id="subsec-pop_samp-6-2-1">
 <li id="subsec-pop_samp-6-2-1-1"><div class="para" id="subsec-pop_samp-6-2-1-1-1">What is the population?</div></li>
 <li id="subsec-pop_samp-6-2-1-2"><div class="para" id="subsec-pop_samp-6-2-1-2-1">What is the sample?</div></li>
 <li id="subsec-pop_samp-6-2-1-3"><div class="para" id="subsec-pop_samp-6-2-1-3-1">What is the statistic?</div></li>
@@ -455,12 +979,13 @@ window.MathJax = {
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/tree.png" class="contained"></div></section></section><section class="section" id="sec-stat_centerT"><h3 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.2</span><span class="space"> </span><span class="title">Central Tendency</span>
 </h3>
-<section class="introduction" id="sec-stat_centerT-2"><div class="para" id="sec-stat_centerT-2-1">In statistics, understanding the data is very import to draw any information and conclusion. <dfn class="terminology">Central tendency</dfn> and <dfn class="terminology">dispersion</dfn> help us know the data distribution and their characteristics. Central tendency is the descriptive summary of a data set. It aims to provide an accurate description of the entire data in the distribution. The central tendency of the dataset can be found using the three important measures namely <dfn class="terminology">mean, median</dfn> and <dfn class="terminology">mode</dfn>.</div> <div class="para logical" id="sec-stat_centerT-2-2">
+<section class="introduction" id="sec-stat_centerT-2"><div class="para" id="sec-stat_centerT-2-1">In statistics, understanding the data is very import to draw any information and conclusion. <dfn class="terminology">Central tendency</dfn> and <dfn class="terminology">dispersion</dfn> help us know the data distribution and their characteristics. Central tendency is the descriptive summary of a data set. It aims to provide an accurate description of the entire data in the distribution. The central tendency of the dataset can be found using the three important measures namely <dfn class="terminology">mean, median</dfn> and <dfn class="terminology">mode</dfn>.</div>
+<div class="para logical" id="sec-stat_centerT-2-2">
 <div class="para">An <em class="alert">average</em> of the data can be the best measurement of central tendency. There are two ways to determine an average of the data:</div>
-<ol class="decimal">
+<ol class="decimal" id="sec-stat_centerT-2-2-2">
 <li id="sec-stat_centerT-2-2-2-1"><div class="para logical" id="sec-stat_centerT-2-2-2-1-1">
 <div class="para">Mathematical:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-stat_centerT-2-2-2-1-1-1">
 <li id="sec-stat_centerT-2-2-2-1-1-1-1"><div class="para" id="sec-stat_centerT-2-2-2-1-1-1-1-1">Arithmatic Mean (Mean)</div></li>
 <li id="sec-stat_centerT-2-2-2-1-1-1-2"><div class="para" id="sec-stat_centerT-2-2-2-1-1-1-2-1">Geometric Mean</div></li>
 <li id="sec-stat_centerT-2-2-2-1-1-1-3"><div class="para" id="sec-stat_centerT-2-2-2-1-1-1-3-1">Harmonic Mean</div></li>
@@ -468,7 +993,7 @@ window.MathJax = {
 </div></li>
 <li id="sec-stat_centerT-2-2-2-2"><div class="para logical" id="sec-stat_centerT-2-2-2-2-1">
 <div class="para">Positional:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-stat_centerT-2-2-2-2-1-1">
 <li id="sec-stat_centerT-2-2-2-2-1-1-1"><div class="para" id="sec-stat_centerT-2-2-2-2-1-1-1-1">Median</div></li>
 <li id="sec-stat_centerT-2-2-2-2-1-1-2"><div class="para" id="sec-stat_centerT-2-2-2-2-1-1-2-1">Mode</div></li>
 </ol>
@@ -479,14 +1004,15 @@ window.MathJax = {
 </h4>
 <section class="introduction" id="subsec-mean-2"><div class="para logical" id="subsec-mean-2-1">
 <div class="para">There are three types of mean being used in mathematical operations: Arithmetic mean, geometric mean, and harmonic mean. Here we only discuss the arithmetic mean. There are three methods to determine the arithmetic mean.</div>
-<ol class="upper-roman">
+<ol class="upper-roman" id="subsec-mean-2-1-1">
 <li id="subsec-mean-2-1-1-1"><div class="para" id="subsec-mean-2-1-1-1-1">Direct Method</div></li>
 <li id="subsec-mean-2-1-1-2"><div class="para" id="subsec-mean-2-1-1-2-1">Assume Mean Method, and</div></li>
 <li id="subsec-mean-2-1-1-3"><div class="para" id="subsec-mean-2-1-1-3-1">Step Deviation Method</div></li>
 </ol>
-</div> <div class="para logical" id="subsec-mean-2-2">
+</div>
+<div class="para logical" id="subsec-mean-2-2">
 <div class="para">Here we are trying to build an idea to find mean of the three different data (series):</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsec-mean-2-2-1">
 <li id="subsec-mean-2-2-1-1"><div class="para" id="subsec-mean-2-2-1-1-1">Individual Series</div></li>
 <li id="subsec-mean-2-2-1-2"><div class="para" id="subsec-mean-2-2-1-2-1">Discrete Series, and</div></li>
 <li id="subsec-mean-2-2-1-3"><div class="para" id="subsec-mean-2-2-1-3-1">Continuous Series.</div></li>
@@ -558,7 +1084,7 @@ window.MathJax = {
 </h5>
 <div class="para logical" id="subsec-discrD-2">
 <div class="para">The mean can be calculated using the following methods:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsec-discrD-2-1">
 <li id="subsec-discrD-2-1-1"><div class="para logical" id="subsec-discrD-2-1-1-1">
 <div class="para"><dfn class="terminology">Direct method:</dfn></div>
 <div class="displaymath process-math">
@@ -579,7 +1105,7 @@ window.MathJax = {
 </div></li>
 </ol>
 </div>
-<div class="para logical" id="subsec-discrD-3"><ol class="decimal">
+<div class="para logical" id="subsec-discrD-3"><ol class="decimal" id="subsec-discrD-3-1">
 <li id="subsec-discrD-3-1-1"><div class="para logical" id="subsec-discrD-3-1-1-1">
 <div class="para">Direct method to calculate <dfn class="terminology">Mean of grouped data:</dfn>
 </div>
@@ -699,7 +1225,7 @@ Sum  &amp;   &amp; 26 &amp; &amp;  -39 \\
 </div>
 <div class="para logical" id="subsubsec-contS-3">
 <div class="para">The mean (<dfn class="terminology">weighted mean of grouped data</dfn>) can be calculated using the following methods:</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="subsubsec-contS-3-2">
 <li id="subsubsec-contS-3-2-1"><div class="para logical" id="subsubsec-contS-3-2-1-1">
 <div class="para">Direct method:</div>
 <div class="displaymath process-math">
@@ -778,7 +1304,7 @@ Sum  &amp;   &amp; 22 &amp; &amp;  &amp; 1 \\
 </h6>
 <div class="para logical" id="subsec-combM-3-1-1">
 <div class="para">The mean weight of 15 students is 110 kg. The mean of 5 of them is 100 kg and another 5 kg of them is 125 kg, then the mean weight of remaining students is</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="subsec-combM-3-1-1-1">
 <li id="subsec-combM-3-1-1-1-1"><div class="para" id="subsec-combM-3-1-1-1-1-1">120</div></li>
 <li id="subsec-combM-3-1-1-1-2"><div class="para" id="subsec-combM-3-1-1-1-2-1">105</div></li>
 <li id="subsec-combM-3-1-1-1-3"><div class="para" id="subsec-combM-3-1-1-1-3-1">115</div></li>
@@ -835,7 +1361,7 @@ or, \quad 40 \amp = \frac{\text{ Incorrect} \sum {x}}{100} \\
 </h5>
 <div class="para logical" id="subsubsec-mean_prop-2">
 <div class="para">If origin or scale of data is changed then their mean is also changed by the same corresponding value. For example:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsubsec-mean_prop-2-1">
 <li id="subsubsec-mean_prop-2-1-1">
 <div class="para logical" id="subsubsec-mean_prop-2-1-1-1">
 <div class="para">
@@ -886,7 +1412,7 @@ or, y =  2\times 3-1 = 5.
 </div>
 </div></div></details></div></article><div class="para logical" id="subsubsec-mean_prop-4">
 <div class="para">Other properties:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsubsec-mean_prop-4-1">
 <li id="subsubsec-mean_prop-4-1-1"><div class="para" id="subsubsec-mean_prop-4-1-1-1">Mean is the best measure of central tendency, it is the most stable average of the data based on all the observations.</div></li>
 <li id="subsubsec-mean_prop-4-1-2"><div class="para" id="subsubsec-mean_prop-4-1-2-1">It is affected by the extreme values of the data.</div></li>
 <li id="subsubsec-mean_prop-4-1-3"><div class="para" id="subsubsec-mean_prop-4-1-3-1">it cannot be calculated for the open ended classification.</div></li>
@@ -899,7 +1425,7 @@ or, y =  2\times 3-1 = 5.
 </h5>
 <div class="para logical" id="subsubsec-med_is-2">
 <div class="para">The median of the following data can be found by rearranging them either in ascending or in descending order then select middle item.</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsubsec-med_is-2-1">
 <li id="subsubsec-med_is-2-1-1"><div class="para logical" id="subsubsec-med_is-2-1-1-1">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -935,7 +1461,7 @@ median =  \frac{9+12}{2} = 10.5
 </div></li>
 </ol>
 </div>
-<div class="para logical" id="subsubsec-med_is-3"><ol class="decimal">
+<div class="para logical" id="subsubsec-med_is-3"><ol class="decimal" id="subsubsec-med_is-3-1">
 <li id="subsubsec-med_is-3-1-1"><div class="para logical" id="subsubsec-med_is-3-1-1-1">
 <div class="para">Median for <dfn class="terminology">odd</dfn> number of terms is given by</div>
 <div class="displaymath process-math" id="eqn-median1">
@@ -1175,7 +1701,7 @@ median = 69.5 +\frac{1}{4}\left(11-7 \right)\times 10 = 79.5.
 </div></article></section><section class="subsubsection" id="subsubsec-med_prop"><h5 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.2.2.4</span><span class="space"> </span><span class="title">Properties of Median</span>
 </h5>
-<div class="para logical" id="subsubsec-med_prop-2"><ol class="lower-roman">
+<div class="para logical" id="subsubsec-med_prop-2"><ol class="lower-roman" id="subsubsec-med_prop-2-1">
 <li id="subsubsec-med_prop-2-1-1"><div class="para" id="subsubsec-med_prop-2-1-1-1">Median is a Middle most values of ascending or descending order of the series.</div></li>
 <li id="subsubsec-med_prop-2-1-2"><div class="para" id="subsubsec-med_prop-2-1-2-1">It is a positional average</div></li>
 <li id="subsubsec-med_prop-2-1-3"><div class="para" id="subsubsec-med_prop-2-1-3-1">It is Not based on all the observation.</div></li>
@@ -1187,7 +1713,7 @@ median = 69.5 +\frac{1}{4}\left(11-7 \right)\times 10 = 79.5.
 <section class="introduction" id="subsec-mode-2"><div class="para" id="subsec-mode-2-1">It is the most frequent value of the data.</div></section><section class="subsubsection" id="subsubsec-mod_is"><h5 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.2.3.1</span><span class="space"> </span><span class="title">Individual Series</span>
 </h5>
-<div class="para logical" id="subsubsec-mod_is-2"><ol class="lower-roman">
+<div class="para logical" id="subsubsec-mod_is-2"><ol class="lower-roman" id="subsubsec-mod_is-2-1">
 <li id="subsubsec-mod_is-2-1-1"><div class="para logical" id="subsubsec-mod_is-2-1-1-1">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1331,7 +1857,7 @@ mode= L + \left(\frac{f_1-f_o}{2f_1-f_o-f_2}\right)h = 99.5 + \left(\frac{10-7}{
 </div>
 <div class="para logical" id="subsubsec-mod_cs-6">
 <div class="para"><dfn class="terminology">Properties of mode</dfn></div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsubsec-mod_cs-6-2">
 <li id="subsubsec-mod_cs-6-2-1"><div class="para" id="subsubsec-mod_cs-6-2-1-1">It is the most frequent value.</div></li>
 <li id="subsubsec-mod_cs-6-2-2"><div class="para" id="subsubsec-mod_cs-6-2-2-1">Series can have unimodal, bimodal, multimodal, or no modal.</div></li>
 <li id="subsubsec-mod_cs-6-2-3"><div class="para" id="subsubsec-mod_cs-6-2-3-1">It is the most unstable average.</div></li>
@@ -1589,7 +2115,8 @@ mean=\frac{\sum x}{n} = \frac{2+4+9}{3} =5.
 \end{equation*}
 </div>
 <div class="para">Here, the dispersion shows how far are the observations from the mean (central value). The difference in each data point from the central value is represents deviation of the data.</div>
-</div> <div class="para logical" id="sec-stat_disp-2-2">
+</div>
+<div class="para logical" id="sec-stat_disp-2-2">
 <div class="para">Suppose I have the three data set as shown below:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1612,11 +2139,11 @@ Dispersion &amp;  No &amp; Less   &amp; High \\  \hline
 </h4>
 <div class="para" id="subsec-disp_msr-2">Dispersion can be measured using two different approaches.</div>
 <div class="para logical" id="subsec-disp_msr-3">
-<ol class="decimal">
+<ol class="decimal" id="subsec-disp_msr-3-1">
 <li id="subsec-disp_msr-3-1-1">
 <span class="heading"><span class="title">Absolute Measure (same unit).</span></span><div class="para logical" id="subsec-disp_msr-3-1-1-2">
 <div class="para">Absolute measures of dispersion use the original units of data, and are most useful on understanding the dispersion within the context of your experiment and measurements.</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsec-disp_msr-3-1-1-2-1">
 <li id="subsec-disp_msr-3-1-1-2-1-1"><div class="para" id="subsec-disp_msr-3-1-1-2-1-1-1">Range</div></li>
 <li id="subsec-disp_msr-3-1-1-2-1-2"><div class="para" id="subsec-disp_msr-3-1-1-2-1-2-1">Quartile Deviation</div></li>
 <li id="subsec-disp_msr-3-1-1-2-1-3"><div class="para" id="subsec-disp_msr-3-1-1-2-1-3-1">Mean Deviation</div></li>
@@ -1628,7 +2155,7 @@ Dispersion &amp;  No &amp; Less   &amp; High \\  \hline
 <li id="subsec-disp_msr-3-1-2">
 <span class="heading"><span class="title">Relative Measure (unit free).</span></span><div class="para logical" id="subsec-disp_msr-3-1-2-2">
 <div class="para">In order to compare separate data sets or different experiments that might use different units and the difference in their central values are very high, we use relative measures.</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsec-disp_msr-3-1-2-2-1">
 <li id="subsec-disp_msr-3-1-2-2-1-1"><div class="para" id="subsec-disp_msr-3-1-2-2-1-1-1">Coefficient of Range</div></li>
 <li id="subsec-disp_msr-3-1-2-2-1-2"><div class="para" id="subsec-disp_msr-3-1-2-2-1-2-1">Coefficient of Quartile Deviation</div></li>
 <li id="subsec-disp_msr-3-1-2-2-1-3"><div class="para" id="subsec-disp_msr-3-1-2-2-1-3-1">Coefficient of Mean Deviation</div></li>
@@ -1643,11 +2170,13 @@ Dispersion &amp;  No &amp; Less   &amp; High \\  \hline
 </div></section><section class="subsection" id="subsec-range"><h4 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="space"> </span><span class="title">Range</span>
 </h4>
-<section class="introduction" id="subsec-range-2"><div class="para" id="subsec-range-2-1">Range is the difference between the highest and the lowest value of observations for a given frequency distribution. The coefficient of range on the other hand is the ratio of difference between the highest and lowest value of observations to the sum of highest and lowest value of observations.</div> <div class="para logical" id="subsec-range-2-2"><div class="displaymath process-math" id="eqn-range1">
+<section class="introduction" id="subsec-range-2"><div class="para" id="subsec-range-2-1">Range is the difference between the highest and the lowest value of observations for a given frequency distribution. The coefficient of range on the other hand is the ratio of difference between the highest and lowest value of observations to the sum of highest and lowest value of observations.</div>
+<div class="para logical" id="subsec-range-2-2"><div class="displaymath process-math" id="eqn-range1">
 \begin{equation}
 Range = L - S \tag{6.9}
 \end{equation}
-</div></div> <div class="para logical" id="subsec-range-2-3">
+</div></div>
+<div class="para logical" id="subsec-range-2-3">
 <div class="displaymath process-math" id="eqn-co_range1">
 \begin{equation}
 \text{Coefficient of Range} = \left(\frac{L-S}{L+S}\right) \times 100\%\tag{6.10}
@@ -1754,7 +2283,7 @@ Range = 180-40=140.
 </div></div></details></div></article></section><section class="subsubsection" id="subsubsec-rng_cs"><h5 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.3</span><span class="space"> </span><span class="title">Continuous Series</span>
 </h5>
-<div class="para logical" id="subsubsec-rng_cs-2"><ol class="decimal">
+<div class="para logical" id="subsubsec-rng_cs-2"><ol class="decimal" id="subsubsec-rng_cs-2-1">
 <li id="subsubsec-rng_cs-2-1-1">
 <div class="para" id="subsubsec-rng_cs-2-1-1-1">Exclusive Series</div>
 <div class="para logical" id="subsubsec-rng_cs-2-1-1-2">
@@ -1825,13 +2354,13 @@ Range = 44.5-19.5=25.
 </ol></div></section><section class="subsubsection" id="subsubsec-rng_merit"><h5 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.4</span><span class="space"> </span><span class="title">Merits of Range:</span>
 </h5>
-<div class="para logical" id="subsubsec-rng_merit-2"><ol class="decimal">
+<div class="para logical" id="subsubsec-rng_merit-2"><ol class="decimal" id="subsubsec-rng_merit-2-1">
 <li id="subsubsec-rng_merit-2-1-1"><div class="para" id="subsubsec-rng_merit-2-1-1-1">Among all the methods of studying dispersion range is the simplest to understand and easiest to compare.</div></li>
 <li id="subsubsec-rng_merit-2-1-2"><div class="para" id="subsubsec-rng_merit-2-1-2-1">Range is quickest measure of dispersion.</div></li>
 </ol></div></section><section class="subsubsection" id="subsubsec-rng_limit"><h5 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.5</span><span class="space"> </span><span class="title">Limits of Range:</span>
 </h5>
-<div class="para logical" id="subsubsec-rng_limit-2"><ol class="decimal">
+<div class="para logical" id="subsubsec-rng_limit-2"><ol class="decimal" id="subsubsec-rng_limit-2-1">
 <li id="subsubsec-rng_limit-2-1-1"><div class="para" id="subsubsec-rng_limit-2-1-1-1">Range is not based on each and every observation of series.</div></li>
 <li id="subsubsec-rng_limit-2-1-2"><div class="para" id="subsubsec-rng_limit-2-1-2-1">It is most affected by sampling fluctuations.</div></li>
 <li id="subsubsec-rng_limit-2-1-3"><div class="para" id="subsubsec-rng_limit-2-1-3-1">Range is most unreliable as a guide of the dispersion.</div></li>
@@ -1839,7 +2368,7 @@ Range = 44.5-19.5=25.
 </ol></div></section><section class="subsubsection" id="subsubsec-rng_use"><h5 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.2.6</span><span class="space"> </span><span class="title">Uses of Range</span>
 </h5>
-<div class="para logical" id="subsubsec-rng_use-2"><ol class="decimal">
+<div class="para logical" id="subsubsec-rng_use-2"><ol class="decimal" id="subsubsec-rng_use-2-1">
 <li id="subsubsec-rng_use-2-1-1"><div class="para" id="subsubsec-rng_use-2-1-1-1">Quality control</div></li>
 <li id="subsubsec-rng_use-2-1-2"><div class="para" id="subsubsec-rng_use-2-1-2-1">Fluctuations in the share prices</div></li>
 <li id="subsubsec-rng_use-2-1-3"><div class="para" id="subsubsec-rng_use-2-1-3-1">Weather forecast</div></li>
@@ -1847,14 +2376,18 @@ Range = 44.5-19.5=25.
 </ol></div></section></section><section class="subsection" id="subsec-qrt_dev"><h4 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="space"> </span><span class="title">Quartile Deviation</span>
 </h4>
-<section class="introduction" id="subsec-qrt_dev-2"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="generated/latex-image/subsec-qrt_dev-2-1.svg" role="img" class="contained"></div> <div class="para" id="subsec-qrt_dev-2-2">Quartile deviation is a statistic that measures the deviation in the middle of the data. Quartile deviation is also referred to as the semi interquartile range and is half of the difference between the third quartile and the first quartile value. Quartiles divide a group of observations into four equal parts. The first quartile, denoted by <span class="process-math">\(Q_1\)</span> is defined as the <span class="process-math">\(25^{th}\)</span> percentile, the second quartile (<span class="process-math">\(Q_2\)</span>) is defined as the <span class="process-math">\(50^{th}\)</span> percentile (median), and the third quartile (<span class="process-math">\(Q_3\)</span>) is defined as the <span class="process-math">\(75^{th}\)</span> percentile.</div> <div class="para logical" id="subsec-qrt_dev-2-3">
+<section class="introduction" id="subsec-qrt_dev-2"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="generated/latex-image/subsec-qrt_dev-2-1.svg" role="img" class="contained"></div>
+<div class="para" id="subsec-qrt_dev-2-2">Quartile deviation is a statistic that measures the deviation in the middle of the data. Quartile deviation is also referred to as the semi interquartile range and is half of the difference between the third quartile and the first quartile value. Quartiles divide a group of observations into four equal parts. The first quartile, denoted by <span class="process-math">\(Q_1\)</span> is defined as the <span class="process-math">\(25^{th}\)</span> percentile, the second quartile (<span class="process-math">\(Q_2\)</span>) is defined as the <span class="process-math">\(50^{th}\)</span> percentile (median), and the third quartile (<span class="process-math">\(Q_3\)</span>) is defined as the <span class="process-math">\(75^{th}\)</span> percentile.</div>
+<div class="para logical" id="subsec-qrt_dev-2-3">
 <div class="para">The formula for quartile deviation of the data is</div>
 <div class="displaymath process-math" id="eqn-qd1">
 \begin{equation}
 Q.D = \frac{Q_3 - Q_1}{2}.\tag{6.11}
 \end{equation}
 </div>
-</div> <div class="para" id="subsec-qrt_dev-2-4">The coefficient of quartile deviation is a measure of dispersion, which is used to describe the spread or distribution of data.</div> <div class="para logical" id="subsec-qrt_dev-2-5">
+</div>
+<div class="para" id="subsec-qrt_dev-2-4">The coefficient of quartile deviation is a measure of dispersion, which is used to describe the spread or distribution of data.</div>
+<div class="para logical" id="subsec-qrt_dev-2-5">
 <div class="para">Coefficient of quartile deviation,</div>
 <div class="displaymath process-math" id="eqn-cqd1">
 \begin{equation}
@@ -1919,7 +2452,8 @@ Q_3 = [3(n+1)/4]^{th} \text{ item }
 </div>
 <div class="para">Number of data values = <span class="process-math">\(n = 16\text{.}\)</span>
 </div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-2">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-2">
 <div class="para">Median of the even number data set using <a href="ch-stat.html#eqn-median2" class="xref" data-knowl="./knowl/xref/eqn-median2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.7">(6.7)</a>,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-median2.html" id="subsubsec-qd_is-3-2-2-2">
 \begin{align*}
@@ -1928,7 +2462,8 @@ Q_2  \amp = \frac{1}{2}\{\left( \frac{n}{2}\right)^{th} term + \left( \frac{n}{2
 \therefore Q_2 \amp = \frac{10+14}{2} = 12. 
 \end{align*}
 </div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-3">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-3">
 <div class="para">Now, lower half of the data is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1946,7 +2481,8 @@ Q_1 = \text{ Median of lower half of the data }
 = (1/2)[4^{th} \text{ term }   + 5^{th} \text{ term}] = \frac{7+8}{2} =7.5.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-4">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-4">
 <div class="para">Also, the upper half of the data is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1964,7 +2500,8 @@ Q_3 = \text{ Median of upper half of the data }
 = (1/2)[4^{th} \text{ term } + 5^{th} \text{ term}]= \frac{18+24}{2} =21.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-5">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-5">
 <div class="para">Therefore the Quartile deviation,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-qd1.html">
 \begin{equation*}
@@ -1972,7 +2509,8 @@ QD = \frac{1}{2}(Q_3-Q_1) = \frac{21-7.5}{2}=6.75.
 \end{equation*}
 </div>
 <div class="para">using equation <a href="ch-stat.html#eqn-qd1" class="xref" data-knowl="./knowl/xref/eqn-qd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.11">(6.11)</a>.</div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-6">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-6">
 <div class="para">and the coefficient of Quartile deviation using <a href="ch-stat.html#eqn-cqd1" class="xref" data-knowl="./knowl/xref/eqn-cqd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.12">(6.12)</a>,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-cqd1.html">
 \begin{equation*}
@@ -2335,9 +2873,11 @@ and, \quad CQD = \frac{81.16-57.35}{81.16+57.35}\times 100 =17.19\%.
 </div></section></section><section class="subsection" id="subsec-st_dev"><h4 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="space"> </span><span class="title">Standard Deviation, <span class="process-math">\(\sigma\)</span> and Variance, <span class="process-math">\(\sigma^2\)</span></span>
 </h4>
-<section class="introduction" id="subsec-st_dev-2"><div class="para" id="subsec-st_dev-2-1">Standard deviation tells how far a group of numbers (observation) is from the mean.</div> <div class="para" id="subsec-st_dev-2-2">Variance is the average of the squared differences of a group of numbers (observation) from the mean.</div> <div class="para logical" id="subsec-st_dev-2-3">
+<section class="introduction" id="subsec-st_dev-2"><div class="para" id="subsec-st_dev-2-1">Standard deviation tells how far a group of numbers (observation) is from the mean.</div>
+<div class="para" id="subsec-st_dev-2-2">Variance is the average of the squared differences of a group of numbers (observation) from the mean.</div>
+<div class="para logical" id="subsec-st_dev-2-3">
 <div class="para">Standard deviation is the square root of the variance. It is also called <em class="emphasis">root mean square deviation.</em> Standard deviation, Variance and their coefficients can be calculated using the following formulae:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsec-st_dev-2-3-2">
 <li id="subsec-st_dev-2-3-2-1">
 <span class="heading"><span class="title">Actual Mean Method.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-1-2">
 <div class="displaymath process-math" id="eqn-sd1a">
@@ -2386,7 +2926,8 @@ CV = \frac{\sigma}{\bar{x}}\times 100\%\tag{6.18}
 </h5>
 <div class="para" id="subsubsec-sd_is-2">The standard deviation of the data below: <span class="process-math">\(10,12,13,15,20\)</span>
 </div>
-<section class="paragraphs" id="subsubsec-sd_is-3"><h6 class="heading"><span class="title">Actual Mean Method (direct method).</span></h6> <div class="para logical" id="subsubsec-sd_is-3-2">
+<section class="paragraphs" id="subsubsec-sd_is-3"><h6 class="heading"><span class="title">Actual Mean Method (direct method).</span></h6>
+<div class="para logical" id="subsubsec-sd_is-3-2">
 <div class="para">from equation <a href="ch-stat.html#eqn-mean1" class="xref" data-knowl="./knowl/xref/eqn-mean1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.1">(6.1)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
@@ -2436,7 +2977,8 @@ CSD = \frac{\sigma}{\bar{x}} =3.4/14 =0.2428.
 CV =\frac{\sigma}{\bar{x}}\times 100 = 24.28/%.
 \end{equation*}
 </div>
-</div></section><section class="paragraphs" id="subsubsec-sd_is-4"><h6 class="heading"><span class="title">Assumed Mean Method (short-cut method).</span></h6> <div class="para logical" id="subsubsec-sd_is-4-2">
+</div></section><section class="paragraphs" id="subsubsec-sd_is-4"><h6 class="heading"><span class="title">Assumed Mean Method (short-cut method).</span></h6>
+<div class="para logical" id="subsubsec-sd_is-4-2">
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-sd1b.html">
 \begin{equation*}
 \begin{array}{c|c|c} 
@@ -2460,7 +3002,7 @@ sum &amp;  5  &amp;  63
 </div></section></section><section class="subsubsection" id="subsubsec-sd_dscs"><h5 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">6.3.4.2</span><span class="space"> </span><span class="title">Discrete Series and Continuous Series</span>
 </h5>
-<div class="para logical" id="subsubsec-sd_dscs-2"><ol class="lower-alpha">
+<div class="para logical" id="subsubsec-sd_dscs-2"><ol class="lower-alpha" id="subsubsec-sd_dscs-2-1">
 <li id="subsubsec-sd_dscs-2-1-1">
 <span class="heading"><span class="title">Assumed Mean Method:.</span></span><div class="para logical" id="subsubsec-sd_dscs-2-1-1-2">
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-amean1.html" id="eqn-asd2">
@@ -2543,7 +3085,8 @@ sum &amp;  &amp;   &amp;  &amp; 15  &amp; 85
 </div>
 <div class="para">here, we set <span class="process-math">\(A = 5\text{.}\)</span>
 </div>
-</div> <div class="para logical" id="subsubsec-sd_dscs-3-2-2">
+</div>
+<div class="para logical" id="subsubsec-sd_dscs-3-2-2">
 <div class="para">Now from equation <a href="ch-stat.html#eqn-asd2" class="xref" data-knowl="./knowl/xref/eqn-asd2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.19">(6.19)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-amean1.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
@@ -2583,12 +3126,13 @@ CV = \frac{\sigma}{\bar{x}}\times 100 = 36/%.
 </h4>
 <section class="introduction" id="subsec-mean_dev-2"><div class="para logical" id="subsec-mean_dev-2-1">
 <div class="para">The mean deviation is the average deviation from the mean value of the given data set. The mean deviation of the data values can be easily calculated using the procedure below.</div>
-<ol class="decimal">
+<ol class="decimal" id="subsec-mean_dev-2-1-1">
 <li id="subsec-mean_dev-2-1-1-1"><div class="para" id="subsec-mean_dev-2-1-1-1-1">Step 1: Find the mean value for the given data values</div></li>
 <li id="subsec-mean_dev-2-1-1-2"><div class="para" id="subsec-mean_dev-2-1-1-2-1">Step 2: Now, subtract the mean value from each of the data values given (Note: Ignore the minus symbol)</div></li>
 <li id="subsec-mean_dev-2-1-1-3"><div class="para" id="subsec-mean_dev-2-1-1-3-1">Step 3: Now, find the mean of those values obtained in step 2.</div></li>
 </ol>
-</div> <div class="para logical" id="subsec-mean_dev-2-2">
+</div>
+<div class="para logical" id="subsec-mean_dev-2-2">
 <div class="para">The formula to calculate the mean deviation is given below.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -2715,7 +3259,8 @@ P_3 = \text{ size of 3 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{6.29}
 </div>
 <div class="para">Number of item, <span class="process-math">\(n = 11.\)</span>
 </div>
-</div> <div class="para logical" id="subsec-QDP-5-2-2">
+</div>
+<div class="para logical" id="subsec-QDP-5-2-2">
 <div class="para">Using <a href="ch-stat.html#eqn-qrt3" class="xref" data-knowl="./knowl/xref/eqn-qrt3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.23">(6.23)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-qrt3.html" id="subsec-QDP-5-2-2-2">
@@ -2726,7 +3271,8 @@ Q_3  \amp = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} \text{ item} \\
 \amp  = \text{ size of } 9^{th} \text{ item} = 27. 
 \end{align*}
 </div>
-</div> <div class="para logical" id="subsec-QDP-5-2-3"><div class="displaymath process-math" id="subsec-QDP-5-2-3-1">
+</div>
+<div class="para logical" id="subsec-QDP-5-2-3"><div class="displaymath process-math" id="subsec-QDP-5-2-3-1">
 \begin{align*}
 D_6  \amp = \text{ size of 6 } \left[ \frac{n+1}{10}\right]^{th} \text{ item} \\
 \amp  = \text{ size of 6 } \left[ \frac{11+1}{10}\right]^{th} \text{ item} \\
@@ -2737,7 +3283,8 @@ D_6  \amp = \text{ size of 6 } \left[ \frac{n+1}{10}\right]^{th} \text{ item} \\
 \amp  = 25 + 0.2\times  1 \\
 \amp  = 25.2 
 \end{align*}
-</div></div> <div class="para logical" id="subsec-QDP-5-2-4"><div class="displaymath process-math" id="subsec-QDP-5-2-4-1">
+</div></div>
+<div class="para logical" id="subsec-QDP-5-2-4"><div class="displaymath process-math" id="subsec-QDP-5-2-4-1">
 \begin{align*}
 P_{70}  \amp = \text{ size of 70 } \left[ \frac{n+1}{100}\right]^{th} \text{ item} \\
 \amp  = \text{ size of 70 } \left[ \frac{11+1}{100}\right]^{th} \text{ item} \\
@@ -2756,7 +3303,7 @@ P_{70}  \amp = \text{ size of 70 } \left[ \frac{n+1}{100}\right]^{th} \text{ ite
 </h4>
 <div class="para logical" id="sec_stat_example-2-1-1">
 <div class="para">Classify the data into four types and give unit for numerical data.</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec_stat_example-2-1-1-1">
 <li id="sec_stat_example-2-1-1-1-1"><div class="para" id="sec_stat_example-2-1-1-1-1-1">Salary (range)</div></li>
 <li id="sec_stat_example-2-1-1-1-2"><div class="para" id="sec_stat_example-2-1-1-1-2-1">Car model</div></li>
 <li id="sec_stat_example-2-1-1-1-3"><div class="para" id="sec_stat_example-2-1-1-1-3-1">Year of Graduation</div></li>
@@ -2770,7 +3317,7 @@ P_{70}  \amp = \text{ size of 70 } \left[ \frac{n+1}{100}\right]^{th} \text{ ite
 </h4>
 <div class="para logical" id="sec_stat_example-3-1-1">
 <div class="para">For the following variables, give a name and indicate the type of variables (categorical, ordinal, numerical):</div>
-<ol class="decimal">
+<ol class="decimal" id="sec_stat_example-3-1-1-1">
 <li id="sec_stat_example-3-1-1-1-1"><div class="para" id="sec_stat_example-3-1-1-1-1-1">Car owned by 10 friends</div></li>
 <li id="sec_stat_example-3-1-1-1-2"><div class="para" id="sec_stat_example-3-1-1-1-2-1">Income of 20 employees</div></li>
 <li id="sec_stat_example-3-1-1-1-3"><div class="para" id="sec_stat_example-3-1-1-1-3-1">Size of clothes as S, M, L, XL.</div></li>
@@ -2794,20 +3341,22 @@ P_{70}  \amp = \text{ size of 70 } \left[ \frac{n+1}{100}\right]^{th} \text{ ite
 </h4>
 <div class="para logical" id="sec_stat_example-4-1-1">
 <div class="para">Average score of a class is 65. Average score of boys in that class is 60 and average score of girls is 75. Find the</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec_stat_example-4-1-1-1">
 <li id="sec_stat_example-4-1-1-1-1"><div class="para" id="sec_stat_example-4-1-1-1-1-1">number of girls : number of boys</div></li>
 <li id="sec_stat_example-4-1-1-1-2"><div class="para" id="sec_stat_example-4-1-1-1-2-1">% Boys</div></li>
 <li id="sec_stat_example-4-1-1-1-3"><div class="para" id="sec_stat_example-4-1-1-1-3-1">% girls.</div></li>
 </ol>
 </div>
 <div class="solutions"><details id="sec_stat_example-4-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
-<div class="para" id="sec_stat_example-4-2-1">(a) 1/2</div> <div class="para" id="sec_stat_example-4-2-2">66.66%</div> <div class="para" id="sec_stat_example-4-2-3">33.33%.</div>
+<div class="para" id="sec_stat_example-4-2-1">(a) 1/2</div>
+<div class="para" id="sec_stat_example-4-2-2">66.66%</div>
+<div class="para" id="sec_stat_example-4-2-3">33.33%.</div>
 </div></details></div></article><article class="example example-like" id="sec_stat_example-5"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.22</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="sec_stat_example-5-1-1">
 <div class="para">The mean of 20 observations are found to be 10 on rechecking, it was found that an observation 8 was incorrect. Calculate the correct mean:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec_stat_example-5-1-1-1">
 <li id="sec_stat_example-5-1-1-1-1"><div class="para" id="sec_stat_example-5-1-1-1-1-1">if wrong item is omitted.</div></li>
 <li id="sec_stat_example-5-1-1-1-2"><div class="para" id="sec_stat_example-5-1-1-1-2-1">if wrong item is replaced by 12.</div></li>
 </ol>
@@ -2815,7 +3364,7 @@ P_{70}  \amp = \text{ size of 70 } \left[ \frac{n+1}{100}\right]^{th} \text{ ite
 <div class="solutions"><details id="sec_stat_example-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec_stat_example-5-2-1">
 <div class="para">using <a href="ch-stat.html#eqn-meancor1" class="xref" data-knowl="./knowl/xref/eqn-meancor1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.5">(6.5)</a>
 </div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec_stat_example-5-2-1-2">
 <li id="sec_stat_example-5-2-1-2-1"><div class="para logical" id="sec_stat_example-5-2-1-2-1-1">
 <div class="displaymath process-math" id="sec_stat_example-5-2-1-2-1-1-1">
 \begin{align*}
@@ -2893,7 +3442,8 @@ x &amp; f_i  &amp; CF \\ \hline
 sum &amp; 123 &amp; 
 \end{array}
 \end{equation*}
-</div></div> <div class="para logical" id="sec_stat_example-7-2-2">
+</div></div>
+<div class="para logical" id="sec_stat_example-7-2-2">
 <div class="displaymath process-math">
 \begin{equation*}
 Q_1 = \left( \frac{n+1}{4}\right)^{th} \text{ item} 
@@ -2904,7 +3454,8 @@ Q_1 = \left( \frac{n+1}{4}\right)^{th} \text{ item}
 or, \quad Q_1 = \left( \frac{123+1}{4}\right)^{th} \text{ item} = 31^{st}  \text{ item} = 4.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec_stat_example-7-2-3">
+</div>
+<div class="para logical" id="sec_stat_example-7-2-3">
 <div class="displaymath process-math">
 \begin{equation*}
 Q_3 = 3\left( \frac{n+1}{4}\right)^{th} \text{ item} 
@@ -2915,7 +3466,8 @@ Q_3 = 3\left( \frac{n+1}{4}\right)^{th} \text{ item}
 or, \quad Q_3 = 3\left( 31\right)^{st} \text{ item} = 93^{rd}  \text{ item} = 7.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec_stat_example-7-2-4">
+</div>
+<div class="para logical" id="sec_stat_example-7-2-4">
 <div class="para">Hence,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -3151,7 +3703,7 @@ CV =\frac{\sigma}{\bar{x}}\times 100 = 56.20/%.
 <div class="para" id="ex_sixth-2-1">What kind of data (variable) is gender, marital status, river length, population of the state, song length, PIN Code?</div></article><article class="exercise exercise-like" id="ex_sixth-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="para logical" id="ex_sixth-3-1-1">
 <div class="para">True or False:</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="ex_sixth-3-1-1-1">
 <li id="ex_sixth-3-1-1-1-1"><div class="para" id="ex_sixth-3-1-1-1-1-1">PIN Code are examples of numerical data.</div></li>
 <li id="ex_sixth-3-1-1-1-2"><div class="para" id="ex_sixth-3-1-1-1-2-1">Cases represents columns in a data table</div></li>
 <li id="ex_sixth-3-1-1-1-3"><div class="para" id="ex_sixth-3-1-1-1-3-1">Likert scale represents numerical data.</div></li>
