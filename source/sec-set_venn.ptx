@@ -231,12 +231,65 @@
   </figure>  
 
 
-
-     <figure xml:id="fig-AICUBIC">
-      <caption>Set <m>(A\cap C )\cup (B\cap C)</m></caption>
-      <image source="AICUBIC.png" width = "40%"/>
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="40% 40%"> 
+      <figure xml:id="fig-AICUBIC">
+        <caption><m>(A\cap C )\cup (B\cap C)</m></caption>
+        <image source="AICUBIC.png" width = "40%"/>
   </figure>
- 
+  <figure xml:id="fig-AIBUC">
+    <caption><m>A\cap (B\cup C)= (A\cap B)\cup(A\cap C)</m></caption>
+    <image source="AIBUC.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
+  
+
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="40% 40%"> 
+      <figure xml:id="fig-ASB">
+        <caption> <m>(A \subset B )</m></caption>
+        <image source="ASB.png" width = "40%"/>
+  </figure>
+  <figure xml:id="fig-AcIB">
+    <caption><m>A'\cap B </m> (Just B) </caption>
+    <image source="AcIB.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
+
+
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="40% 40%"> 
+      <figure xml:id="fig-AIBcIC">
+        <caption> <m>(A \cap B)' \cap C</m></caption>
+        <image source="AIBcIC.png" width = "40%"/>
+  </figure>
+  <figure xml:id="fig-AcUB">
+    <caption><m>A'\cup B </m> </caption>
+    <image source="AcUB.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
+
+
+
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="40% 40%"> 
+      <figure xml:id="fig-AIBICc">
+        <caption> <m>(A \cap B) \cap C'</m></caption>
+        <image source="AIBICc.png" width = "40%"/>
+  </figure>
+  <figure xml:id="fig-AUBICc">
+    <caption><m>(A\cup B)\cap C' </m> </caption>
+    <image source="AUBICc.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
 
 
 </subsection>
