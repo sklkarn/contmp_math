@@ -87,8 +87,9 @@
   <xi:include href="ex_secondb.ptx" />
 
   <xi:include href="sec-set_op.ptx" />
+  <xi:include href="sec-set_venn.ptx" />
   <xi:include href="sec_set-exampleB.ptx" />
   <xi:include href="ex_secondc.ptx" />
-
+ 
   
 </chapter>

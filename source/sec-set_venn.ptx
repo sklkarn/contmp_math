@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-set_venn" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Venn Diagram</title>
+
+  <introduction>
+    <p>
+      It is used to represent all possible relations of different sets. It can be represented by any closed figure, 
+       (a Circle or a Polygon) but usually circles are prefered for each set. <term>Venn-Diagram of Universal set</term> including 
+       sets <m>A</m> and <m>B</m> are drawn below.
+         </p>
+       
+    <image width="25%" xml:id="set_vennU">
+  
+  <latex-image >
+  \begin{tikzpicture}
+  \draw (0,0) rectangle (5,3);
+  \draw [] (1.8,1.5) circle [radius=1];
+  \draw [] (3.3,1.5) circle [radius=1];
+  \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
+   \end{tikzpicture}
+  </latex-image>
+    </image>
+
+     <p>
+      Some more set examples:
+     </p>
+
+  <figure>
+    <caption> i. Set A <m>\quad</m> ii. Set <m>A\cup B</m> </caption>
+    <sidebyside widths="40% 40%"> 
+     <image width="25%" xml:id="set_ven_A">
+         <latex-image >
+          \begin{tikzpicture}
+          \draw (0,0) rectangle (5,3);
+          \filldraw [green, opacity =0.7] (1.8,1.5) circle [radius=1];
+          \draw [] (3.3,1.5) circle [radius=1];
+          \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
+           \end{tikzpicture}
+          </latex-image>
+            </image>
+            <image width="25%" xml:id="set_ven_AUB">
+              <latex-image >
+              \begin{tikzpicture}
+              \draw (0,0) rectangle (5,3);
+              \filldraw [green, opacity = 0.7] (1.8,1.5) circle [radius=1];
+              \filldraw [red, opacity = 0.7] (3.3,1.5) circle [radius=1];
+              \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
+               \end{tikzpicture}
+              </latex-image>
+                </image>
+      </sidebyside>
+  </figure>  
+
+
+
+  <figure>
+    <caption> i. Set <m>A\cap B</m> <m>\quad</m> ii. Set <m>A'=A^c=\bar{A}</m> </caption>
+    <sidebyside widths="40% 40%"> 
+      <image width="25%" xml:id="set_ven_AIB">
+  
+        <latex-image >
+     \def\secondcircle{(210:1.75cm) circle (2.5cm)}
+      \def\thirdcircle{(330:1.75cm) circle (2.5cm)}
+        \begin{tikzpicture}
+        \begin{scope}
+        \clip \secondcircle;
+        \fill[cyan] \thirdcircle;
+         \end{scope}
+          \draw (-5,-4) rectangle (5,3);
+          \draw \secondcircle node [text=black,below left] {\LARGE $A$};
+          \draw \thirdcircle node [text=black,below right] {\Large $B$};
+         \end{tikzpicture}
+        </latex-image>
+          </image>
+            
+  <image width="25%" xml:id="set_ven_A-comp">
+  
+    <latex-image >
+     \begin{tikzpicture}
+    \scope
+\clip (-1.5,-1.5) rectangle (2.5,1.5)
+      (0,0) circle (1);
+\fill (1,0) circle (1);
+\fill [gray] (-1.5,-1.5) rectangle (2.5,1.5);
+\endscope
+\draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+      (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
+      (-1.5,-1.5) rectangle (2.5,1.5) ;
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+      </sidebyside>
+  </figure>  
+
+
+
+  <figure>
+    <caption> i. Set <m>A-B</m> <m>\quad</m> ii. Set <m>(A\cup B)'</m> </caption>
+    <sidebyside widths="40% 40%"> 
+      <image width="25%" xml:id="set_ven_A-B">
+  
+        <latex-image >
+         \begin{tikzpicture}
+         \scope
+         \clip (-1.5,-1.5) rectangle (2.5,1.5)
+               (1,0) circle (1);
+         \fill[cyan] (0,0) circle (1);
+         
+         \endscope
+         \draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+               (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
+               (-1.5,-1.5) rectangle (2.5,1.5) ;
+         \end{tikzpicture}
+        </latex-image>
+          </image>
+    
+          
+          <image width="25%" xml:id="set_ven_comp-AUB">
+  
+            <latex-image >
+             \begin{tikzpicture}
+             
+          \filldraw [cyan, opacity =0.7]   (-1.5,-1.5) rectangle (2.5,1.5) ;		
+        
+          \filldraw [white] (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
+                (1,0) circle (1) (1,1)  node [text=black,above] {$B$};
+             \end{tikzpicture}
+            </latex-image>
+              </image>
+      </sidebyside>
+  </figure>  
+
+
+      
+  <image width="25%" xml:id="set_ven_comp-AIB">
+  
+    <latex-image >
+     \begin{tikzpicture}
+     
+     \filldraw[fill=gray] (-1.5,-1.5) rectangle (2.5,1.5) ;
+     \scope % A \cap B
+     \clip (0,0) circle (1);
+     \fill[white] (1,0) circle (1);
+     \endscope
+     % outline
+     \draw (0,0) circle (1) (0,1) node [text=black,above] {$A$}
+           (1,0) circle (1) (1,1) node [text=black,above] {$B$};
+     \end{tikzpicture}
+    </latex-image>
+      </image>
+
+  </introduction>
+   
+
+<subsection xml:id="subsec-ven_b">
+  <title>Venn Diagram using checkmarks</title>
+  
+    <p>
+      Put tick marks in the set cirecles and rectangle of Venn diagram according to set 
+      operations and shade them once all the ticks are put.
+      Shade only for each ticks regions for union set <m>\cup </m> operation, 
+      shade only double or triple ticks for intersection set <m>\cap </m> operation, 
+      and shade the regions where no ticks are made for complement set operation.
+    </p>
+
+
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="40% 40%"> 
+    <figure xml:id="fig-A">
+      <caption>Set A</caption>
+      <image source="A.png"/>
+  </figure>
+  <figure xml:id="fig-Ac">
+    <caption>Set A'</caption>
+    <image source="Ac.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
+  
+
+
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="40% 40%"> 
+    <figure xml:id="fig-AUB">
+      <caption>Set <m>A\cup B</m></caption>
+      <image source="AUB.png"/>
+  </figure>
+  <figure xml:id="fig-AIB">
+    <caption>Set <m>A\cap B</m></caption>
+    <image source="AIB.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
+  
+
+
+
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="40% 40%"> 
+    <figure xml:id="fig-AUBc">
+      <caption>Set <m>(A\cup B)'=A'\cap B'</m></caption>
+      <image source="AUBc.png"/>
+  </figure>
+  <figure xml:id="fig-AIBc">
+    <caption>Set <m>(A\cap B)'=A'\cup B'</m></caption>
+    <image source="AIBc.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
+  
+
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="40% 40%"> 
+    <figure xml:id="fig-AUBUC">
+      <caption>Set <m>A\cup B \cup C</m></caption>
+      <image source="AUBUC.png"/>
+  </figure>
+  <figure xml:id="fig-AIBIC">
+    <caption>Set <m>A\cap B\cap C</m></caption>
+    <image source="AIBIC.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
+
+
+
+     <figure xml:id="fig-AICUBIC">
+      <caption>Set <m>(A\cap C )\cup (B\cap C)</m></caption>
+      <image source="AICUBIC.png" width = "40%"/>
+  </figure>
+ 
+
+
+</subsection>
+  
+
+
+</section>

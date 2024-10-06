@@ -157,223 +157,29 @@
   </introduction>
  
 
-
-  <subsection xml:id="subsec-venn">
-    <title>Venn Diagram</title>
+  <subsection xml:id="subsec-DeMorgn">
+    <title>De Morgan's Law in Set Theory</title>
     <p>
-      It is used to represent all possible relations of different sets. It can be represented by any closed figure, 
-       (a Circle or a Polygon) but usually circles are prefered for each set. <term>Venn-Diagram of Universal set</term> including 
-       sets <m>A</m> and <m>B</m> are drawn below.
+      De Morgan's law defines the relationship between the union, intersection, and complements of the sets. 
+      In set theory, there are two De Morgan's Laws:
          </p>
-       
-    <image width="25%" xml:id="set_vennU">
-  
-  <latex-image >
-  \begin{tikzpicture}
-  \draw (0,0) rectangle (5,3);
-  \draw [] (1.8,1.5) circle [radius=1];
-  \draw [] (3.3,1.5) circle [radius=1];
-  \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
-   \end{tikzpicture}
-  </latex-image>
-    </image>
-  
-  
-  </subsection>
-
-<subsection xml:id="subsec-DeMorgn">
-  <title>De Morgan's Law in Set Theory</title>
-  <p>
-    De Morgan's law defines the relationship between the union, intersection, and complements of the sets. 
-    In set theory, there are two De Morgan's Laws:
-       </p>
-       <p>
-        <term>First De Morgan's Law</term> The complement of the union of two sets is equal to the intersection 
-        of the complements of each set. That is,
+         <p>
+          <term>First De Morgan's Law</term> The complement of the union of two sets is equal to the intersection 
+          of the complements of each set. That is,
+            <me>
+              (A \cup B)' = A' \cap B'
+            </me>
+             </p>
+         <p>
+          <term>Second De Morgan's Law</term> The complement of intersection of two sets is equal to the 
+          union of the complements of each set.
+          That is, 
           <me>
-            (A \cup B)' = A' \cap B'
+            (A \cap B)' = A' \cup B'
           </me>
-           </p>
-       <p>
-        <term>Second De Morgan's Law</term> The complement of intersection of two sets is equal to the 
-        union of the complements of each set.
-        That is, 
-        <me>
-          (A \cap B)' = A' \cup B'
-        </me>
-       </p>
-</subsection>
-
-<subsection xml:id="subsec-vennD_shade">
-  <title>Shading of Venn Diagram</title>
- <example>
-  <p>
-    Set <m>A</m>
-  </p>
-
-      
-  <image width="25%" xml:id="set_ven_A">
+         </p>
+  </subsection>
   
-    <latex-image >
-    \begin{tikzpicture}
-    \draw (0,0) rectangle (5,3);
-    \filldraw [green, opacity =0.7] (1.8,1.5) circle [radius=1];
-    \draw [] (3.3,1.5) circle [radius=1];
-    \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
-     \end{tikzpicture}
-    </latex-image>
-      </image>
-
- </example>
-
- <example>
-  <p>
-    Set <m>A\cup B</m>
-  </p>
-
-      
-  <image width="25%" xml:id="set_ven_AUB">
-  
-    <latex-image >
-    \begin{tikzpicture}
-    \draw (0,0) rectangle (5,3);
-    \filldraw [green, opacity = 0.7] (1.8,1.5) circle [radius=1];
-    \filldraw [red, opacity = 0.7] (3.3,1.5) circle [radius=1];
-    \node [left] at (0,2.5) {$U$}   node at (1.5,1.5) {$A$}    node at (3.5,1.5) {$B$};
-     \end{tikzpicture}
-    </latex-image>
-      </image>
-
- </example>
-
-
- <example>
-  <p>
-    Set <m>A\cap B</m>
-  </p>
-
-      
-  <image width="25%" xml:id="set_ven_AIB">
-  
-    <latex-image >
- \def\secondcircle{(210:1.75cm) circle (2.5cm)}
-  \def\thirdcircle{(330:1.75cm) circle (2.5cm)}
-    \begin{tikzpicture}
-    \begin{scope}
-    \clip \secondcircle;
-    \fill[cyan] \thirdcircle;
-     \end{scope}
-      \draw (-5,-4) rectangle (5,3);
-      \draw \secondcircle node [text=black,below left] {\LARGE $A$};
-      \draw \thirdcircle node [text=black,below right] {\Large $B$};
-     \end{tikzpicture}
-    </latex-image>
-      </image>
-
- </example>
-
-
- <example>
-  <p>
-    Set <m>\bar{A}</m> (Not A or A')
-  </p>
-
-      
-  <image width="25%" xml:id="set_ven_A-comp">
-  
-    <latex-image >
-     \begin{tikzpicture}
-    \scope
-\clip (-1.5,-1.5) rectangle (2.5,1.5)
-      (0,0) circle (1);
-\fill (1,0) circle (1);
-\fill [gray] (-1.5,-1.5) rectangle (2.5,1.5);
-\endscope
-\draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
-      (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
-      (-1.5,-1.5) rectangle (2.5,1.5) node [text=black,above] {$\bigcup$};
-     \end{tikzpicture}
-    </latex-image>
-      </image>
-
- </example>
-
-
- <example>
-  <p>
-    Set <m>A-B</m> 
-  </p>
-
-      
-  <image width="25%" xml:id="set_ven_A-B">
-  
-    <latex-image >
-     \begin{tikzpicture}
-     \scope
-     \clip (-1.5,-1.5) rectangle (2.5,1.5)
-           (1,0) circle (1);
-     \fill[cyan] (0,0) circle (1);
-     
-     \endscope
-     \draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
-           (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
-           (-1.5,-1.5) rectangle (2.5,1.5) node [text=black,above] {$\bigcup$};
-     \end{tikzpicture}
-    </latex-image>
-      </image>
-
- </example>
-
-
- <example>
-  <p>
-    Set <m>(AUB)'</m> 
-  </p>
-
-      
-  <image width="25%" xml:id="set_ven_comp-AUB">
-  
-    <latex-image >
-     \begin{tikzpicture}
-     
-	\filldraw [cyan, opacity =0.7]   (-1.5,-1.5) rectangle (2.5,1.5) node [text=black,above] {$\bigcup$};		
-
-  \filldraw [white] (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
-        (1,0) circle (1) (1,1)  node [text=black,above] {$B$};
-     \end{tikzpicture}
-    </latex-image>
-      </image>
-
- </example>
-
-
- <example>
-  <p>
-    Set <m>(A\cap B)'</m> 
-  </p>
-
-      
-  <image width="25%" xml:id="set_ven_comp-AIB">
-  
-    <latex-image >
-     \begin{tikzpicture}
-     
-     \filldraw[fill=gray] (-1.5,-1.5) rectangle (2.5,1.5) node [text=black,above] {$\bigcup$};
-     \scope % A \cap B
-     \clip (0,0) circle (1);
-     \fill[white] (1,0) circle (1);
-     \endscope
-     % outline
-     \draw (0,0) circle (1) (0,1) node [text=black,above] {$A$}
-           (1,0) circle (1) (1,1) node [text=black,above] {$B$};
-     \end{tikzpicture}
-    </latex-image>
-      </image>
-
- </example>
-
-</subsection>
-
 
 
 </section>
