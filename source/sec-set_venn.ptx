@@ -132,7 +132,9 @@
   </figure>  
 
 
-      
+   <p>
+    Set <m>(A\cap B)'</m>
+   </p>   
   <image width="25%" xml:id="set_ven_comp-AIB">
   
     <latex-image >
@@ -161,7 +163,8 @@
       operations and shade them once all the ticks are put.
       Shade only for each ticks regions for union set <m>\cup </m> operation, 
       shade only double or triple ticks for intersection set <m>\cap </m> operation, 
-      and shade the regions where no ticks are made for complement set operation.
+      and shade the regions where no ticks are made for complement set operation or 
+      make your own policy on how to shade the region for set operation.
     </p>
 
 
