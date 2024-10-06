@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.8",
   "title": "Venn Diagram",
-  "body": " Venn Diagram   It is used to represent all possible relations of different sets. It can be represented by any closed figure, (a Circle or a Polygon) but usually circles are prefered for each set. Venn-Diagram of Universal set including sets and are drawn below.     Some more set examples:   i. Set A ii. Set             i. Set  ii. Set             i. Set  ii. Set            Set        Venn Diagram using checkmarks  Put tick marks in the set cirecles and rectangle of Venn diagram according to set operations and shade them once all the ticks are put. Shade only for each ticks regions for union set operation, shade only double or triple ticks for intersection set operation, and shade the regions where no ticks are made for complement set operation or make your own policy on how to shade the region for set operation.       Set A     Set A'           Set     Set           Set     Set           Set     Set       Set     "
+  "body": " Venn Diagram   It is used to represent all possible relations of different sets. It can be represented by any closed figure, (a Circle or a Polygon) but usually circles are prefered for each set. Venn-Diagram of Universal set including sets and are drawn below.     Some more set examples:   i. Set A ii. Set             i. Set  ii. Set             i. Set  ii. Set            Set        Venn Diagram using checkmarks  Put tick marks in the set cirecles and rectangle of Venn diagram according to set operations and shade them once all the ticks are put. Shade only for each ticks regions for union set operation, shade only double or triple ticks for intersection set operation, and shade the regions where no ticks are made for complement set operation or make your own policy on how to shade the region for set operation.       Set A     Set A'           Set     Set           Set     Set           Set     Set                              (Just B)                                       "
 },
 {
   "id": "sec-set_venn-2-1",
@@ -640,13 +640,40 @@ var ptx_lunr_docs = [
   "body": "     Set     Set     "
 },
 {
-  "id": "fig-AICUBIC",
+  "id": "subsec-ven_b-7",
   "level": "2",
-  "url": "sec-set_venn.html#fig-AICUBIC",
+  "url": "sec-set_venn.html#subsec-ven_b-7",
   "type": "Figure",
   "number": "2.8.17",
   "title": "",
-  "body": " Set   "
+  "body": "             "
+},
+{
+  "id": "subsec-ven_b-8",
+  "level": "2",
+  "url": "sec-set_venn.html#subsec-ven_b-8",
+  "type": "Figure",
+  "number": "2.8.18",
+  "title": "",
+  "body": "          (Just B)     "
+},
+{
+  "id": "subsec-ven_b-9",
+  "level": "2",
+  "url": "sec-set_venn.html#subsec-ven_b-9",
+  "type": "Figure",
+  "number": "2.8.19",
+  "title": "",
+  "body": "               "
+},
+{
+  "id": "subsec-ven_b-10",
+  "level": "2",
+  "url": "sec-set_venn.html#subsec-ven_b-10",
+  "type": "Figure",
+  "number": "2.8.20",
+  "title": "",
+  "body": "               "
 },
 {
   "id": "sec_set-exampleB",
@@ -662,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#set_exmB1Q1",
   "type": "Example",
-  "number": "2.9.18",
+  "number": "2.9.21",
   "title": "",
   "body": "  Find the union of each of the following pairs of sets:    ,      ,      ,      ,      , .      "
 },
@@ -671,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-3",
   "type": "Example",
-  "number": "2.9.19",
+  "number": "2.9.22",
   "title": "",
   "body": "  Let , is ? what is ?   "
 },
@@ -680,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-4",
   "type": "Example",
-  "number": "2.9.20",
+  "number": "2.9.23",
   "title": "",
   "body": "  If and are two sets such that What is ?   "
 },
@@ -689,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-5",
   "type": "Example",
-  "number": "2.9.21",
+  "number": "2.9.24",
   "title": "",
   "body": "  If , , and ; find                                  .      "
 },
@@ -698,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-6",
   "type": "Example",
-  "number": "2.9.22",
+  "number": "2.9.25",
   "title": "",
   "body": "  Find the intersection of each pair of sets of question above.   "
 },
@@ -707,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-7",
   "type": "Example",
-  "number": "2.9.23",
+  "number": "2.9.26",
   "title": "",
   "body": "  If , , and ; find                                                 .      "
 },
@@ -716,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-8",
   "type": "Example",
-  "number": "2.9.24",
+  "number": "2.9.27",
   "title": "",
   "body": "  If , , , and , find                             .      "
 },
@@ -725,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-9",
   "type": "Example",
-  "number": "2.9.25",
+  "number": "2.9.28",
   "title": "",
   "body": "  Which of the following pairs of sets are disjoint:    and      and      and       "
 },
@@ -734,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-10",
   "type": "Example",
-  "number": "2.9.26",
+  "number": "2.9.29",
   "title": "",
   "body": "  If , , , , find                                                                 "
 },
@@ -743,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-11",
   "type": "Example",
-  "number": "2.9.27",
+  "number": "2.9.30",
   "title": "",
   "body": "  If , and find                    "
 },
@@ -752,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-12",
   "type": "Example",
-  "number": "2.9.28",
+  "number": "2.9.31",
   "title": "",
   "body": "  Fill in the blanks to make each of the following a true statement:                                             "
 },
@@ -761,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-13",
   "type": "Example",
-  "number": "2.9.29",
+  "number": "2.9.32",
   "title": "",
   "body": "  If is the set of real numbers and is the set of rational numbers, then find .   "
 },
@@ -770,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-14",
   "type": "Example",
-  "number": "2.9.30",
+  "number": "2.9.33",
   "title": "",
   "body": "  State if the following pairs of sets are disjoint.    and      and      and      and       "
 },
@@ -779,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-15",
   "type": "Example",
-  "number": "2.9.31",
+  "number": "2.9.34",
   "title": "",
   "body": "  In a class of 35 students, 24 like to play baseball and 16 like to play soccer. Also, each student likes to play at least one of the two games. How many students like to play both games?     Venn diagram Total number of students, . Number of students like to play Baseball, . Number of students like to play Soccer, . Number of students like to play both game    or, or,    "
 },
@@ -788,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-16",
   "type": "Example",
-  "number": "2.9.32",
+  "number": "2.9.35",
   "title": "",
   "body": "  In a group of 70 people, 37 like coffee, 52 like tea, and each person likes at least one of the two drinkes. How many people like both coffee and tea?        "
 },
@@ -797,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-17",
   "type": "Example",
-  "number": "2.9.33",
+  "number": "2.9.36",
   "title": "",
   "body": "  In a group of 65 people, 40 like baseball, 10 like both baseball and tennis. How many people like tennis only and not baseball? How many like tennis?     Hence, 35 people like tennis. Among them, some of also like baseball. Hence the only people who only like tennis is given by    "
 },
@@ -806,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-18",
   "type": "Example",
-  "number": "2.9.34",
+  "number": "2.9.37",
   "title": "",
   "body": "  In a committee, 50 people speak French, 20 speak Spanish and 10 speak both Spanish and French. How many speak at least one of these two languages?     Hence, 60 people speak at least one of these languages.   "
 },
@@ -815,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-19",
   "type": "Example",
-  "number": "2.9.35",
+  "number": "2.9.38",
   "title": "",
   "body": "  In a group of 400 people, 250 can speak Spanish and 200 can speak English. How many people can speak both Spanish and English?     or,    "
 },
