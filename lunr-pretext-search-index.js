@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.8",
   "title": "Venn Diagram",
-  "body": " Venn Diagram   It is used to represent all possible relations of different sets. It can be represented by any closed figure, (a Circle or a Polygon) but usually circles are prefered for each set. Venn-Diagram of Universal set including sets and are drawn below.     Some more set examples:   i. Set A ii. Set             i. Set  ii. Set             i. Set  ii. Set            Set        Venn Diagram using checkmarks  Put tick marks in the set cirecles and rectangle of Venn diagram according to set operations and shade them once all the ticks are put. Shade only for each ticks regions for union set operation, shade only double or triple ticks for intersection set operation, and shade the regions where no ticks are made for complement set operation or make your own policy on how to shade the region for set operation.       Set A     Set A'           Set     Set           Set     Set           Set     Set                              (Just B)                                       "
+  "body": " Venn Diagram   It is used to represent all possible relations of different sets. It can be represented by any closed figure, (a Circle or a Polygon) but usually circles are prefered for each set. Venn-Diagram of Universal set including sets and are drawn below.     Some more set examples:   i. Set A ii. Set             i. Set  ii. Set             i. Set  ii. Set            Set        Venn Diagram using checkmarks  Put tick marks in the set cirecles and rectangle of Venn diagram according to set operations and shade them once all the ticks are put. Shade only for each ticks regions for union set operation, shade only double or triple ticks for intersection set operation, and shade the regions where no ticks are made for complement set operation or make your own policy on how to shade the region for set operation.       Set A     Set A'           Set     Set           Set     Set           Set     Set                              (Just B)                                                (Just A)     (Just B)       "
 },
 {
   "id": "sec-set_venn-2-1",
@@ -676,6 +676,15 @@ var ptx_lunr_docs = [
   "body": "               "
 },
 {
+  "id": "subsec-ven_b-11",
+  "level": "2",
+  "url": "sec-set_venn.html#subsec-ven_b-11",
+  "type": "Figure",
+  "number": "2.8.21",
+  "title": "",
+  "body": "          (Just A)     (Just B)     "
+},
+{
   "id": "sec_set-exampleB",
   "level": "1",
   "url": "sec_set-exampleB.html",
@@ -689,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#set_exmB1Q1",
   "type": "Example",
-  "number": "2.9.21",
+  "number": "2.9.22",
   "title": "",
   "body": "  Find the union of each of the following pairs of sets:    ,      ,      ,      ,      , .      "
 },
@@ -698,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-3",
   "type": "Example",
-  "number": "2.9.22",
+  "number": "2.9.23",
   "title": "",
   "body": "  Let , is ? what is ?   "
 },
@@ -707,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-4",
   "type": "Example",
-  "number": "2.9.23",
+  "number": "2.9.24",
   "title": "",
   "body": "  If and are two sets such that What is ?   "
 },
@@ -716,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-5",
   "type": "Example",
-  "number": "2.9.24",
+  "number": "2.9.25",
   "title": "",
   "body": "  If , , and ; find                                  .      "
 },
@@ -725,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-6",
   "type": "Example",
-  "number": "2.9.25",
+  "number": "2.9.26",
   "title": "",
   "body": "  Find the intersection of each pair of sets of question above.   "
 },
@@ -734,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-7",
   "type": "Example",
-  "number": "2.9.26",
+  "number": "2.9.27",
   "title": "",
   "body": "  If , , and ; find                                                 .      "
 },
@@ -743,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-8",
   "type": "Example",
-  "number": "2.9.27",
+  "number": "2.9.28",
   "title": "",
   "body": "  If , , , and , find                             .      "
 },
@@ -752,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-9",
   "type": "Example",
-  "number": "2.9.28",
+  "number": "2.9.29",
   "title": "",
   "body": "  Which of the following pairs of sets are disjoint:    and      and      and       "
 },
@@ -761,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-10",
   "type": "Example",
-  "number": "2.9.29",
+  "number": "2.9.30",
   "title": "",
   "body": "  If , , , , find                                                                 "
 },
@@ -770,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-11",
   "type": "Example",
-  "number": "2.9.30",
+  "number": "2.9.31",
   "title": "",
   "body": "  If , and find                    "
 },
@@ -779,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-12",
   "type": "Example",
-  "number": "2.9.31",
+  "number": "2.9.32",
   "title": "",
   "body": "  Fill in the blanks to make each of the following a true statement:                                             "
 },
@@ -788,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-13",
   "type": "Example",
-  "number": "2.9.32",
+  "number": "2.9.33",
   "title": "",
   "body": "  If is the set of real numbers and is the set of rational numbers, then find .   "
 },
@@ -797,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-14",
   "type": "Example",
-  "number": "2.9.33",
+  "number": "2.9.34",
   "title": "",
   "body": "  State if the following pairs of sets are disjoint.    and      and      and      and       "
 },
@@ -806,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-15",
   "type": "Example",
-  "number": "2.9.34",
+  "number": "2.9.35",
   "title": "",
   "body": "  In a class of 35 students, 24 like to play baseball and 16 like to play soccer. Also, each student likes to play at least one of the two games. How many students like to play both games?     Venn diagram Total number of students, . Number of students like to play Baseball, . Number of students like to play Soccer, . Number of students like to play both game    or, or,    "
 },
@@ -815,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-16",
   "type": "Example",
-  "number": "2.9.35",
+  "number": "2.9.36",
   "title": "",
   "body": "  In a group of 70 people, 37 like coffee, 52 like tea, and each person likes at least one of the two drinkes. How many people like both coffee and tea?        "
 },
@@ -824,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-17",
   "type": "Example",
-  "number": "2.9.36",
+  "number": "2.9.37",
   "title": "",
   "body": "  In a group of 65 people, 40 like baseball, 10 like both baseball and tennis. How many people like tennis only and not baseball? How many like tennis?     Hence, 35 people like tennis. Among them, some of also like baseball. Hence the only people who only like tennis is given by    "
 },
@@ -833,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-18",
   "type": "Example",
-  "number": "2.9.37",
+  "number": "2.9.38",
   "title": "",
   "body": "  In a committee, 50 people speak French, 20 speak Spanish and 10 speak both Spanish and French. How many speak at least one of these two languages?     Hence, 60 people speak at least one of these languages.   "
 },
@@ -842,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_set-exampleB.html#sec_set-exampleB-19",
   "type": "Example",
-  "number": "2.9.38",
+  "number": "2.9.39",
   "title": "",
   "body": "  In a group of 400 people, 250 can speak Spanish and 200 can speak English. How many people can speak both Spanish and English?     or,    "
 },
@@ -1078,7 +1087,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Example B",
-  "body": " Example B    There are 4 routs between Newyork to Washington. In how many different ways can a man go from Newyork to Washington and return, if for returning   Any of the routes is taken.    The same route is taken.    The same route is not taken.             4 ways to go and 4 ways to return.       4 ways to go and 1 ways to return.       4 ways to go and 3 ways to return.         Imagine you are getting dressed up for the day, and you have the following choices:  Choice A: Selecting a shirt (5 options).  Choice B: Choosing pants (3 options).  Choice C: Picking shoes (2 options).  How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?    Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options.  Total Outfits =   Total Outfits = 30 different outfits.  You can create 30 different outfits by applying the product rule.      There are 6 multiple choice questions in an examination. Find the total number of ways of answering these questions, if the first 3 questions have 5 choices each and the next 3 questions have 4 choices each.    Make the 6 boxes and place their corresponding number of ways.       Four flags of different colors are given. How many different signals can be generated, if a signal requires the use two flags, one below another.    Make the 2 boxes and place their corresponding number of ways. Remember, the signal has to be generated with different colors.         Find the number of 4 letter words, with or without meaning, which can be formed out of the letters of the word \"NOSE,\" when   The repetition of letters is not allowed.    The repetition of letters is allowed.       Make the 4 boxes and place their corresponding number of ways.                  In a local election, there are three candidates running for mayor (Candidate A, Candidate B, Candidate C) and two candidates running for city council (Candidate X, Candidate Y).  How many different voting options are there if a voter must select one candidate for mayor and one candidate for city council?    Total Voting Options = Number of Mayor Candidates Number of City Council Candidates.  Total Voting Options = 3 (mayor candidates) 2 (city council candidates).  Total Voting Options = 6 different voting options.  There are 6 different voting options in this local election using the product Rule.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options Number of Main Course Options Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) 5 (main courses) 2 (desserts).  Total Meal Combinations = 30 different meal combinations.  So, there are 30 different meal combinations you can create by applying the Product Rule.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a two-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = (Number of Appetizer Options Number of Main Course Options) + (Number of Appetizer Options Number of Dessert Options) + (Number of Dessert Options Number of Main Course Options).  Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31.  Total Meal Combinations = 31 different meal combinations.      Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:  Choice X: Visit a beach town (2 options).  Choice Y: Explore a historic city (3 options).  Choice Z: Go on a nature hike (4 options).  You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?    Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.  Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).  Total Itinerary Options = 9 different vacation itineraries.  There are 9 different vacation itineraries you can plan using the Addition Rule.      How many words, with or without meaning of three distinct letters of the english alphabet are there.    Make the 3 boxes and place their corresponding number of ways.       Let's say you are selecting a three course dinner meal at your cafeteria. There are four different salads, three different entrees, and two different desserts to choose from. Assume you want to eat a salad, an entrée and a desert, how many different meals are possible?    The total number of meals is 24.      Harry went to a food restaurant, and he wants to order a combo deal that includes a pizza, drink, and dessert. The following choices are available: Pizza: Chicken Fajita, and Vegetable. Drink: Pepsi and 7-Up. Dessert: Ice-cream and Pie.    As the tree diagram shows, we can work out the possible arrangements for a combo deal.  Deal 1: Chicken fajita, Pepsi, and Ice-cream.  Deal 2: Chicken fajita, Pepsi, and Pie.  Deal 3: Chicken fajita, 7-UP, and Ice-cream.  Deal 4: Chicken fajita, 7-UP, and Pie.  Deal 5: Vegetable Pizza, Pepsi, and Ice-cream.  Deal 6: Vegetable Pizza, Pepsi, and Pie.  Deal 7: Vegetable Pizza, 7-UP and Ice-cream.  Deal 8: Vegetable Pizza, 7-UP and Pie.  Now solving it by counting principle, we have 2 options for pizza, 2 for drinks and 2 for desserts so, the total number of possible combo deals = .      Steve has to dress for a presentation. He has different shirts, different pants, and different shoes available in his closet. Wearing the Tie is optional. Calculate the total number of possible outfits.    There are three types of shirts, two types of pants and three types of shoes. While the tie is optional, the tie has two options, either “Yes” or “No.”  Total number of possible outfits = .      How many numbers are there between 100 and 1000 in which all the digits are distinct?    For the distinct digits 9 8 7 is a maximum number and 1 0 2 is minimum a number. Hence, in the boxes of 3 digit number. comes at the hundreds place (zero does not take this position as the number becomes less than 100), comes at the tens place (as total 10 numbers from 0, 1, 2, --- 9 with number 1 less due to hundreds place digit), and at the units place.       How many 9-digit numbers of different digits can be formed?    Out of 10 digits from 0, 1, 2 ---9, we can place any 9 digit at place, because 0 at the place makes the number 8-digit only. Hence,       How many numbers are there between and can be formed from the digits when the repetition of digits is not allowed?    The place only takes number 2, the places takes any numbers with no repetition.       How many 3-digit odd numbers can be formed by using the digits when   The repetition of digit is not allowed.    The repetition of digit is allowed           The unit place only takes 1, 3, and 5, the tens place takes any of the 5 digits.              How many odd numbers less than 1000 can be formed using the digits 0, 2, 5, 7. When the repetition of digits is allowed?       In one-digit number we have only two choices . In two-digit number we can place at units place and any other digits except at tens place.  In three digit numbers we can place only 5 and 7 at units place, any of the 4 digits can be placed at tens place, and any 3 digits except be placed at hundreds place.  Hence, the total odd numbers formed =       HOw many numbers are there between 100 and 1000 such that 7 is in the units place?    The numbers formed here are all three digits between 107 to 997. So we place 7 at unit place (only one choice), any other numbers can be placed at the tens place (10 choices from 0,1,2,3,---9), and the hundreds place take any numbers except (9 choices) because repetition allowed.       HOw many numbers are there between 100 and 1000 such that at least one of their digits is 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).     Hence the total numbers formed =       HOw many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers except (9 choices), and tens place takes any numbers except (9 choices).     Hence the total numbers formed =     "
+  "body": " Example B    There are 4 routs between Newyork to Washington. In how many different ways can a man go from Newyork to Washington and return, if for returning   Any of the routes is taken.    The same route is taken.    The same route is not taken.             4 ways to go and 4 ways to return.       4 ways to go and 1 ways to return.       4 ways to go and 3 ways to return.         Imagine you are getting dressed up for the day, and you have the following choices:  Choice A: Selecting a shirt (5 options).  Choice B: Choosing pants (3 options).  Choice C: Picking shoes (2 options).  How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?    Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options.  Total Outfits =   Total Outfits = 30 different outfits.  You can create 30 different outfits by applying the product rule.      There are 6 multiple choice questions in an examination. Find the total number of ways of answering these questions, if the first 3 questions have 5 choices each and the next 3 questions have 4 choices each.    Make the 6 boxes and place their corresponding number of ways.       Four flags of different colors are given. How many different signals can be generated, if a signal requires the use two flags, one below another.    Make the 2 boxes and place their corresponding number of ways. Remember, the signal has to be generated with different colors.         Find the number of 4 letter words, with or without meaning, which can be formed out of the letters of the word \"NOSE,\" when   The repetition of letters is not allowed.    The repetition of letters is allowed.       Make the 4 boxes and place their corresponding number of ways.                  In a local election, there are three candidates running for mayor (Candidate A, Candidate B, Candidate C) and two candidates running for city council (Candidate X, Candidate Y).  How many different voting options are there if a voter must select one candidate for mayor and one candidate for city council?    Total Voting Options = Number of Mayor Candidates Number of City Council Candidates.  Total Voting Options = 3 (mayor candidates) 2 (city council candidates).  Total Voting Options = 6 different voting options.  There are 6 different voting options in this local election using the product Rule.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options Number of Main Course Options Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) 5 (main courses) 2 (desserts).  Total Meal Combinations = 30 different meal combinations.  So, there are 30 different meal combinations you can create by applying the Product Rule.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a two-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = (Number of Appetizer Options Number of Main Course Options) + (Number of Appetizer Options Number of Dessert Options) + (Number of Dessert Options Number of Main Course Options).  Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31.  Total Meal Combinations = 31 different meal combinations.      Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:  Choice X: Visit a beach town (2 options).  Choice Y: Explore a historic city (3 options).  Choice Z: Go on a nature hike (4 options).  You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?    Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.  Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).  Total Itinerary Options = 9 different vacation itineraries.  There are 9 different vacation itineraries you can plan using the Addition Rule.      How many words, with or without meaning of three distinct letters of the english alphabet are there.    Make the 3 boxes and place their corresponding number of ways.       Let's say you are selecting a three course dinner meal at your cafeteria. There are four different salads, three different entrees, and two different desserts to choose from. Assume you want to eat a salad, an entrée and a desert, how many different meals are possible?    The total number of meals is 24.      Harry went to a food restaurant, and he wants to order a combo deal that includes a pizza, drink, and dessert. The following choices are available: Pizza: Chicken Fajita, and Vegetable. Drink: Pepsi and 7-Up. Dessert: Ice-cream and Pie.    As the tree diagram shows, we can work out the possible arrangements for a combo deal.  Deal 1: Chicken fajita, Pepsi, and Ice-cream.  Deal 2: Chicken fajita, Pepsi, and Pie.  Deal 3: Chicken fajita, 7-UP, and Ice-cream.  Deal 4: Chicken fajita, 7-UP, and Pie.  Deal 5: Vegetable Pizza, Pepsi, and Ice-cream.  Deal 6: Vegetable Pizza, Pepsi, and Pie.  Deal 7: Vegetable Pizza, 7-UP and Ice-cream.  Deal 8: Vegetable Pizza, 7-UP and Pie.  Now solving it by counting principle, we have 2 options for pizza, 2 for drinks and 2 for desserts so, the total number of possible combo deals = .      Steve has to dress for a presentation. He has different shirts, different pants, and different shoes available in his closet. Wearing the Tie is optional. Calculate the total number of possible outfits.    There are three types of shirts, two types of pants and three types of shoes. While the tie is optional, the tie has two options, either “Yes” or “No.”  Total number of possible outfits = .      How many numbers are there between 100 and 1000 in which all the digits are distinct?    For the distinct digits 9 8 7 is a maximum number and 1 0 2 is minimum a number. Hence, in the boxes of 3 digit number. comes at the hundreds place (zero does not take this position as the number becomes less than 100), comes at the tens place (as total 10 numbers from 0, 1, 2, --- 9 with number 1 less due to hundreds place digit), and at the units place.       How many 9-digit numbers of different digits can be formed?    Out of 10 digits from 0, 1, 2 ---9, we can place any 9 digit at place, because 0 at the place makes the number 8-digit only. Hence,       How many numbers are there between and can be formed from the digits when the repetition of digits is not allowed?    The place only takes number 2, the places takes any numbers with no repetition.       How many 3-digit odd numbers can be formed by using the digits when   The repetition of digit is not allowed.    The repetition of digit is allowed           The unit place only takes 1, 3, and 5, the tens place takes any of the 5 digits.              How many odd numbers less than 1000 can be formed using the digits 0, 2, 5, 7. When the repetition of digits is allowed?       In one-digit number we have only two choices . In two-digit number we can place at units place and any other digits except at tens place.  In three digit numbers we can place only 5 and 7 at units place, any of the 4 digits can be placed at tens place, and any 3 digits except be placed at hundreds place.  Hence, the total odd numbers formed =       How many numbers are there between 100 and 1000 such that 7 is in the units place?    The numbers formed here are all three digits between 107 to 997. So we place 7 at unit place (only one choice), any other numbers can be placed at the tens place (10 choices from 0,1,2,3,---9), and the hundreds place take any numbers except (9 choices) because repetition allowed.       How many numbers are there between 100 and 1000 such that at least one of their digits is 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).     Hence the total numbers formed =       How many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers except (9 choices), and tens place takes any numbers except (9 choices).     Hence the total numbers formed =     "
 },
 {
   "id": "sec_prod-exampleB-2",
@@ -1249,7 +1258,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.4.27",
   "title": "",
-  "body": "  HOw many numbers are there between 100 and 1000 such that 7 is in the units place?    The numbers formed here are all three digits between 107 to 997. So we place 7 at unit place (only one choice), any other numbers can be placed at the tens place (10 choices from 0,1,2,3,---9), and the hundreds place take any numbers except (9 choices) because repetition allowed.    "
+  "body": "  How many numbers are there between 100 and 1000 such that 7 is in the units place?    The numbers formed here are all three digits between 107 to 997. So we place 7 at unit place (only one choice), any other numbers can be placed at the tens place (10 choices from 0,1,2,3,---9), and the hundreds place take any numbers except (9 choices) because repetition allowed.    "
 },
 {
   "id": "sec_prod-exampleB-21",
@@ -1258,7 +1267,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.4.28",
   "title": "",
-  "body": "  HOw many numbers are there between 100 and 1000 such that at least one of their digits is 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).     Hence the total numbers formed =    "
+  "body": "  How many numbers are there between 100 and 1000 such that at least one of their digits is 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).     Hence the total numbers formed =    "
 },
 {
   "id": "sec_prod-exampleB-22",
@@ -1267,7 +1276,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.4.29",
   "title": "",
-  "body": "  HOw many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers except (9 choices), and tens place takes any numbers except (9 choices).     Hence the total numbers formed =    "
+  "body": "  How many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers except (9 choices), and tens place takes any numbers except (9 choices).     Hence the total numbers formed =    "
 },
 {
   "id": "ex_third",
