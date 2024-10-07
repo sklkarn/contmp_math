@@ -168,6 +168,34 @@
   </solution>
 </example>
 
+
+<example>
+  <statement>
+  <p>
+    In a local election, there are three candidates running for mayor (Candidate A, Candidate B, Candidate C) 
+    and two candidates running for city council (Candidate X, Candidate Y). 
+  </p>
+  <p>
+    How many different voting options are there if a voter must select one candidate for mayor and one 
+    candidate for city council?
+  </p>
+  </statement>
+  <solution>
+  <p>
+    Total Voting Options = Number of Mayor Candidates <m>\times</m> Number of City Council Candidates. 
+   </p>
+   <p>
+    Total Voting Options = 3 (mayor candidates) <m>\times</m> 2 (city council candidates). 
+    </p>
+    <p>
+      Total Voting Options = 6 different voting options. 
+      </p>
+      <p>
+        There are 6 different voting options in this local election using the product Rule.
+      </p>
+  </solution>
+  </example>
+
 <example>
   <statement>
     <p>
@@ -496,7 +524,7 @@
 <example>
   <statement>
     <p>
-      HOw many numbers are there between 100 and 1000 such that 7 is in the units place?
+      How many numbers are there between 100 and 1000 such that 7 is in the units place?
     </p>
   </statement>
   <solution>
@@ -516,7 +544,7 @@
 <example>
   <statement>
     <p>
-      HOw many numbers are there between 100 and 1000 such that at least one of their digits is 7?
+      How many numbers are there between 100 and 1000 such that at least one of their digits is 7?
     </p>
   </statement>
   <solution>
@@ -553,7 +581,7 @@
 <example>
   <statement>
     <p>
-      HOw many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?
+      How many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?
     </p>
   </statement>
   <solution>
