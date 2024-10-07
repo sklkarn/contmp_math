@@ -979,7 +979,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Example A",
-  "body": " Example A    Jessica has a jar of cookies. It has 3 chocolate and 3 peanut cookies in it. Jessica only wants to eat one cookie. How many possible options does Jessica have?    Since Jessica only wants one cookie, she has to choose only one cookie from 3 chocolate or 3 peanut cookies. The choices are mutually exclusives, so by applying the rule of sum, we have possible options.      In a standard deck of playing cards, you have four suits (hearts, diamonds, clubs, spades), and each suit has 13 ranks (Ace through King). How many ways can you draw a card that is either a Heart or a King?    Using the Addition Rule:  Total Ways = Number of Ways to Draw a Heart + Number of Ways to Draw a King.  Total Ways = 13 (hearts) + 4 (Kings).  Total Ways = 17 ways.  There are 17 ways to draw a card that is either a heart or a King from a standard deck.      You and your friends are planning a movie night, and you have the following movie genre choices:  Choice X: Action movies (4 options).  Choice Y: Comedy movies (3 options).  Choice Z: Science fiction movies (2 options).  How many different combinations of movie genres can you choose for your movie night?    Total Combinations = Number of Action Movies + Number of Comedy Movies + Number of Science Fiction Movies.  Total Combinations = 4 + 3 + 2.  Total Combinations = 9 different combinations.  There are 9 different combinations of movie genres you can choose for your movie night.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a one-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options + Number of Main Course Options + Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) + 5 (main courses) + 2 (desserts).  Total Meal Combinations = 10 different meal combinations.  So, there are 10 different meal combinations you can create by applying the Addition Rule.      Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:  Choice X: Visit a beach town (2 options).  Choice Y: Explore a historic city (3 options).  Choice Z: Go on a nature hike (4 options).  You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?    Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.  Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).  Total Itinerary Options = 9 different vacation itineraries.  There are 9 different vacation itineraries you can plan using the Addition Rule.      Suppose you are designing a logo for a new company, and you have the following color choices:  Choice P: Primary colors (3 options).  Choice S: Secondary colors (3 options).  Choice M: Metallic colors (2 options).  You want to select a color scheme by choosing one color from each category (primary, secondary, metallic). How many different color schemes can you create?    Total Color Schemes = Number of Primary Color Options + Number of Secondary Color Options + Number of Metallic Color Options.  Total Color Schemes = 3 (primary colors) + 3 (secondary colors) + 2 (metallic colors).  Total Color Schemes = 8 different color schemes.  There are 8 different color schemes you can create for the company logo using the Addition Rule.      In a local election, there are three candidates running for mayor (Candidate A, Candidate B, Candidate C) and two candidates running for city council (Candidate X, Candidate Y).  How many different voting options are there if a voter must select one candidate for mayor and one candidate for city council?    Total Voting Options = Number of Mayor Candidates + Number of City Council Candidates.  Total Voting Options = 3 (mayor candidates) + 2 (city council candidates).  Total Voting Options = 5 different voting options.  There are 5 different voting options in this local election using the Addition Rule.    "
+  "body": " Example A    Jessica has a jar of cookies. It has 3 chocolate and 3 peanut cookies in it. Jessica only wants to eat one cookie. How many possible options does Jessica have?    Since Jessica only wants one cookie, she has to choose only one cookie from 3 chocolate or 3 peanut cookies. The choices are mutually exclusives, so by applying the rule of sum, we have possible options.      In a standard deck of playing cards, you have four suits (hearts, diamonds, clubs, spades), and each suit has 13 ranks (Ace through King). How many ways can you draw a card that is either a Heart or a King?    Using the Addition Rule:  Total Ways = Number of Ways to Draw a Heart + Number of Ways to Draw a King.  Total Ways = 13 (hearts) + 4 (Kings).  Total Ways = 17 ways.  There are 17 ways to draw a card that is either a heart or a King from a standard deck.      You and your friends are planning a movie night, and you have the following movie genre choices:  Choice X: Action movies (4 options).  Choice Y: Comedy movies (3 options).  Choice Z: Science fiction movies (2 options).  How many different combinations of movie genres can you choose for your movie night?    Total Combinations = Number of Action Movies + Number of Comedy Movies + Number of Science Fiction Movies.  Total Combinations = 4 + 3 + 2.  Total Combinations = 9 different combinations.  There are 9 different combinations of movie genres you can choose for your movie night.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a one-course meal by selecting either one from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options + Number of Main Course Options + Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) + 5 (main courses) + 2 (desserts).  Total Meal Combinations = 10 different meal combinations.  So, there are 10 different meal combinations you can create by applying the Addition Rule.      Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:  Choice X: Visit a beach town (2 options).  Choice Y: Explore a historic city (3 options).  Choice Z: Go on a nature hike (4 options).  You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?    Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.  Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).  Total Itinerary Options = 9 different vacation itineraries.  There are 9 different vacation itineraries you can plan using the Addition Rule.      Suppose you are designing a logo for a new company, and you have the following color choices:  Choice P: Primary colors (3 options).  Choice S: Secondary colors (3 options).  Choice M: Metallic colors (2 options).  You want to select a color scheme by choosing one color from each category (primary, secondary, metallic). How many different color schemes can you create?    Total Color Schemes = Number of Primary Color Options + Number of Secondary Color Options + Number of Metallic Color Options.  Total Color Schemes = 3 (primary colors) + 3 (secondary colors) + 2 (metallic colors).  Total Color Schemes = 8 different color schemes.  There are 8 different color schemes you can create for the company logo using the Addition Rule.    "
 },
 {
   "id": "sec_add-exampleA-2",
@@ -1015,7 +1015,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.5",
   "title": "",
-  "body": "  Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a one-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options + Number of Main Course Options + Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) + 5 (main courses) + 2 (desserts).  Total Meal Combinations = 10 different meal combinations.  So, there are 10 different meal combinations you can create by applying the Addition Rule.   "
+  "body": "  Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a one-course meal by selecting either one from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options + Number of Main Course Options + Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) + 5 (main courses) + 2 (desserts).  Total Meal Combinations = 10 different meal combinations.  So, there are 10 different meal combinations you can create by applying the Addition Rule.   "
 },
 {
   "id": "sec_add-exampleA-6",
@@ -1034,15 +1034,6 @@ var ptx_lunr_docs = [
   "number": "3.2.7",
   "title": "",
   "body": "  Suppose you are designing a logo for a new company, and you have the following color choices:  Choice P: Primary colors (3 options).  Choice S: Secondary colors (3 options).  Choice M: Metallic colors (2 options).  You want to select a color scheme by choosing one color from each category (primary, secondary, metallic). How many different color schemes can you create?    Total Color Schemes = Number of Primary Color Options + Number of Secondary Color Options + Number of Metallic Color Options.  Total Color Schemes = 3 (primary colors) + 3 (secondary colors) + 2 (metallic colors).  Total Color Schemes = 8 different color schemes.  There are 8 different color schemes you can create for the company logo using the Addition Rule.   "
-},
-{
-  "id": "sec_add-exampleA-8",
-  "level": "2",
-  "url": "sec_add-exampleA.html#sec_add-exampleA-8",
-  "type": "Example",
-  "number": "3.2.8",
-  "title": "",
-  "body": "  In a local election, there are three candidates running for mayor (Candidate A, Candidate B, Candidate C) and two candidates running for city council (Candidate X, Candidate Y).  How many different voting options are there if a voter must select one candidate for mayor and one candidate for city council?    Total Voting Options = Number of Mayor Candidates + Number of City Council Candidates.  Total Voting Options = 3 (mayor candidates) + 2 (city council candidates).  Total Voting Options = 5 different voting options.  There are 5 different voting options in this local election using the Addition Rule.   "
 },
 {
   "id": "sec-count_prod",
@@ -1076,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-count_prod.html#sec-count_prod-8",
   "type": "Example",
-  "number": "3.3.9",
+  "number": "3.3.8",
   "title": "",
   "body": "  In a class there are 15 boys and 12 girls. The teacher wants to select 1 boy and 1 girl to represent the class for a function. In how many ways can the teacher make the selection?    Select 1 boy AND 1 girl. Selecting a boy and a girl is compulsory. Hence, use principle of multiplication. ways.   "
 },
@@ -1087,14 +1078,14 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Example B",
-  "body": " Example B    There are 4 routs between Newyork to Washington. In how many different ways can a man go from Newyork to Washington and return, if for returning   Any of the routes is taken.    The same route is taken.    The same route is not taken.             4 ways to go and 4 ways to return.       4 ways to go and 1 ways to return.       4 ways to go and 3 ways to return.         Imagine you are getting dressed up for the day, and you have the following choices:  Choice A: Selecting a shirt (5 options).  Choice B: Choosing pants (3 options).  Choice C: Picking shoes (2 options).  How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?    Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options.  Total Outfits =   Total Outfits = 30 different outfits.  You can create 30 different outfits by applying the product rule.      There are 6 multiple choice questions in an examination. Find the total number of ways of answering these questions, if the first 3 questions have 5 choices each and the next 3 questions have 4 choices each.    Make the 6 boxes and place their corresponding number of ways.       Four flags of different colors are given. How many different signals can be generated, if a signal requires the use two flags, one below another.    Make the 2 boxes and place their corresponding number of ways. Remember, the signal has to be generated with different colors.         Find the number of 4 letter words, with or without meaning, which can be formed out of the letters of the word \"NOSE,\" when   The repetition of letters is not allowed.    The repetition of letters is allowed.       Make the 4 boxes and place their corresponding number of ways.                  Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options Number of Main Course Options Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) 5 (main courses) 2 (desserts).  Total Meal Combinations = 30 different meal combinations.  So, there are 30 different meal combinations you can create by applying the Product Rule.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a two-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = (Number of Appetizer Options Number of Main Course Options) + (Number of Appetizer Options Number of Dessert Options) + (Number of Dessert Options Number of Main Course Options).  Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31.  Total Meal Combinations = 31 different meal combinations.      Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:  Choice X: Visit a beach town (2 options).  Choice Y: Explore a historic city (3 options).  Choice Z: Go on a nature hike (4 options).  You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?    Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.  Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).  Total Itinerary Options = 9 different vacation itineraries.  There are 9 different vacation itineraries you can plan using the Addition Rule.      How many words, with or without meaning of three distinct letters of the english alphabet are there.    Make the 3 boxes and place their corresponding number of ways.       Let's say you are selecting a three course dinner meal at your cafeteria. There are four different salads, three different entrees, and two different desserts to choose from. Assume you want to eat a salad, an entrée and a desert, how many different meals are possible?    The total number of meals is 24.      Harry went to a food restaurant, and he wants to order a combo deal that includes a pizza, drink, and dessert. The following choices are available: Pizza: Chicken Fajita, and Vegetable. Drink: Pepsi and 7-Up. Dessert: Ice-cream and Pie.    As the tree diagram shows, we can work out the possible arrangements for a combo deal.  Deal 1: Chicken fajita, Pepsi, and Ice-cream.  Deal 2: Chicken fajita, Pepsi, and Pie.  Deal 3: Chicken fajita, 7-UP, and Ice-cream.  Deal 4: Chicken fajita, 7-UP, and Pie.  Deal 5: Vegetable Pizza, Pepsi, and Ice-cream.  Deal 6: Vegetable Pizza, Pepsi, and Pie.  Deal 7: Vegetable Pizza, 7-UP and Ice-cream.  Deal 8: Vegetable Pizza, 7-UP and Pie.  Now solving it by counting principle, we have 2 options for pizza, 2 for drinks and 2 for desserts so, the total number of possible combo deals = .      Steve has to dress for a presentation. He has different shirts, different pants, and different shoes available in his closet. Wearing the Tie is optional. Calculate the total number of possible outfits.    There are three types of shirts, two types of pants and three types of shoes. While the tie is optional, the tie has two options, either “Yes” or “No.”  Total number of possible outfits = .      How many numbers are there between 100 and 1000 in which all the digits are distinct?    For the distinct digits 9 8 7 is a maximum number and 1 0 2 is minimum a number. Hence, in the boxes of 3 digit number. comes at the hundreds place (zero does not take this position as the number becomes less than 100), comes at the tens place (as total 10 numbers from 0, 1, 2, --- 9 with number 1 less due to hundreds place digit), and at the units place.       How many 9-digit numbers of different digits can be formed?    Out of 10 digits from 0, 1, 2 ---9, we can place any 9 digit at place, because 0 at the place makes the number 8-digit only. Hence,       How many numbers are there between and can be formed from the digits when the repetition of digits is not allowed?    The place only takes number 2, the places takes any numbers with no repetition.       How many 3-digit odd numbers can be formed by using the digits when   The repetition of digit is not allowed.    The repetition of digit is allowed           The unit place only takes 1, 3, and 5, the tens place takes any of the 5 digits.              How many odd numbers less than 1000 can be formed using the digits 0, 2, 5, 7. When the repetition of digits is allowed?       In one-digit number we have only two choices . In two-digit number we can place at units place and any other digits except at tens place.  In three digit numbers we can place only 5 and 7 at units place, any of the 4 digits can be placed at tens place, and any 3 digits except be placed at hundreds place.  Hence, the total odd numbers formed =       HOw many numbers are there between 100 and 1000 such that 7 is in the units place?    The numbers formed here are all three digits between 107 to 997. So we place 7 at unit place (only one choice), any other numbers can be placed at the tens place (10 choices from 0,1,2,3,---9), and the hundreds place take any numbers except (9 choices) because repetition allowed.       HOw many numbers are there between 100 and 1000 such that at least one of their digits is 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).     Hence the total numbers formed =       HOw many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers except (9 choices), and tens place takes any numbers except (9 choices).     Hence the total numbers formed =     "
+  "body": " Example B    There are 4 routs between Newyork to Washington. In how many different ways can a man go from Newyork to Washington and return, if for returning   Any of the routes is taken.    The same route is taken.    The same route is not taken.             4 ways to go and 4 ways to return.       4 ways to go and 1 ways to return.       4 ways to go and 3 ways to return.         Imagine you are getting dressed up for the day, and you have the following choices:  Choice A: Selecting a shirt (5 options).  Choice B: Choosing pants (3 options).  Choice C: Picking shoes (2 options).  How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?    Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options.  Total Outfits =   Total Outfits = 30 different outfits.  You can create 30 different outfits by applying the product rule.      There are 6 multiple choice questions in an examination. Find the total number of ways of answering these questions, if the first 3 questions have 5 choices each and the next 3 questions have 4 choices each.    Make the 6 boxes and place their corresponding number of ways.       Four flags of different colors are given. How many different signals can be generated, if a signal requires the use two flags, one below another.    Make the 2 boxes and place their corresponding number of ways. Remember, the signal has to be generated with different colors.         Find the number of 4 letter words, with or without meaning, which can be formed out of the letters of the word \"NOSE,\" when   The repetition of letters is not allowed.    The repetition of letters is allowed.       Make the 4 boxes and place their corresponding number of ways.                  In a local election, there are three candidates running for mayor (Candidate A, Candidate B, Candidate C) and two candidates running for city council (Candidate X, Candidate Y).  How many different voting options are there if a voter must select one candidate for mayor and one candidate for city council?    Total Voting Options = Number of Mayor Candidates Number of City Council Candidates.  Total Voting Options = 3 (mayor candidates) 2 (city council candidates).  Total Voting Options = 6 different voting options.  There are 6 different voting options in this local election using the product Rule.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options Number of Main Course Options Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) 5 (main courses) 2 (desserts).  Total Meal Combinations = 30 different meal combinations.  So, there are 30 different meal combinations you can create by applying the Product Rule.      Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a two-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = (Number of Appetizer Options Number of Main Course Options) + (Number of Appetizer Options Number of Dessert Options) + (Number of Dessert Options Number of Main Course Options).  Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31.  Total Meal Combinations = 31 different meal combinations.      Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:  Choice X: Visit a beach town (2 options).  Choice Y: Explore a historic city (3 options).  Choice Z: Go on a nature hike (4 options).  You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?    Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.  Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).  Total Itinerary Options = 9 different vacation itineraries.  There are 9 different vacation itineraries you can plan using the Addition Rule.      How many words, with or without meaning of three distinct letters of the english alphabet are there.    Make the 3 boxes and place their corresponding number of ways.       Let's say you are selecting a three course dinner meal at your cafeteria. There are four different salads, three different entrees, and two different desserts to choose from. Assume you want to eat a salad, an entrée and a desert, how many different meals are possible?    The total number of meals is 24.      Harry went to a food restaurant, and he wants to order a combo deal that includes a pizza, drink, and dessert. The following choices are available: Pizza: Chicken Fajita, and Vegetable. Drink: Pepsi and 7-Up. Dessert: Ice-cream and Pie.    As the tree diagram shows, we can work out the possible arrangements for a combo deal.  Deal 1: Chicken fajita, Pepsi, and Ice-cream.  Deal 2: Chicken fajita, Pepsi, and Pie.  Deal 3: Chicken fajita, 7-UP, and Ice-cream.  Deal 4: Chicken fajita, 7-UP, and Pie.  Deal 5: Vegetable Pizza, Pepsi, and Ice-cream.  Deal 6: Vegetable Pizza, Pepsi, and Pie.  Deal 7: Vegetable Pizza, 7-UP and Ice-cream.  Deal 8: Vegetable Pizza, 7-UP and Pie.  Now solving it by counting principle, we have 2 options for pizza, 2 for drinks and 2 for desserts so, the total number of possible combo deals = .      Steve has to dress for a presentation. He has different shirts, different pants, and different shoes available in his closet. Wearing the Tie is optional. Calculate the total number of possible outfits.    There are three types of shirts, two types of pants and three types of shoes. While the tie is optional, the tie has two options, either “Yes” or “No.”  Total number of possible outfits = .      How many numbers are there between 100 and 1000 in which all the digits are distinct?    For the distinct digits 9 8 7 is a maximum number and 1 0 2 is minimum a number. Hence, in the boxes of 3 digit number. comes at the hundreds place (zero does not take this position as the number becomes less than 100), comes at the tens place (as total 10 numbers from 0, 1, 2, --- 9 with number 1 less due to hundreds place digit), and at the units place.       How many 9-digit numbers of different digits can be formed?    Out of 10 digits from 0, 1, 2 ---9, we can place any 9 digit at place, because 0 at the place makes the number 8-digit only. Hence,       How many numbers are there between and can be formed from the digits when the repetition of digits is not allowed?    The place only takes number 2, the places takes any numbers with no repetition.       How many 3-digit odd numbers can be formed by using the digits when   The repetition of digit is not allowed.    The repetition of digit is allowed           The unit place only takes 1, 3, and 5, the tens place takes any of the 5 digits.              How many odd numbers less than 1000 can be formed using the digits 0, 2, 5, 7. When the repetition of digits is allowed?       In one-digit number we have only two choices . In two-digit number we can place at units place and any other digits except at tens place.  In three digit numbers we can place only 5 and 7 at units place, any of the 4 digits can be placed at tens place, and any 3 digits except be placed at hundreds place.  Hence, the total odd numbers formed =       HOw many numbers are there between 100 and 1000 such that 7 is in the units place?    The numbers formed here are all three digits between 107 to 997. So we place 7 at unit place (only one choice), any other numbers can be placed at the tens place (10 choices from 0,1,2,3,---9), and the hundreds place take any numbers except (9 choices) because repetition allowed.       HOw many numbers are there between 100 and 1000 such that at least one of their digits is 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).     Hence the total numbers formed =       HOw many numbers are there between 100 and 1000 such that they have exactly one of their digits as 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers except (9 choices), and hundreds place takes any other numbers except (8 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers except (9 choices), and tens place takes any numbers except (9 choices).     Hence the total numbers formed =     "
 },
 {
   "id": "sec_prod-exampleB-2",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-2",
   "type": "Example",
-  "number": "3.4.10",
+  "number": "3.4.9",
   "title": "",
   "body": "  There are 4 routs between Newyork to Washington. In how many different ways can a man go from Newyork to Washington and return, if for returning   Any of the routes is taken.    The same route is taken.    The same route is not taken.             4 ways to go and 4 ways to return.       4 ways to go and 1 ways to return.       4 ways to go and 3 ways to return.      "
 },
@@ -1103,7 +1094,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-3",
   "type": "Example",
-  "number": "3.4.11",
+  "number": "3.4.10",
   "title": "",
   "body": "  Imagine you are getting dressed up for the day, and you have the following choices:  Choice A: Selecting a shirt (5 options).  Choice B: Choosing pants (3 options).  Choice C: Picking shoes (2 options).  How many different outfits can you create by making one choice for each category (shirt, pants, shoes)?    Total Outfits = Number of Shirt Options + Number of Pants Options + Number of Shoes Options.  Total Outfits =   Total Outfits = 30 different outfits.  You can create 30 different outfits by applying the product rule.   "
 },
@@ -1112,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-4",
   "type": "Example",
-  "number": "3.4.12",
+  "number": "3.4.11",
   "title": "",
   "body": "  There are 6 multiple choice questions in an examination. Find the total number of ways of answering these questions, if the first 3 questions have 5 choices each and the next 3 questions have 4 choices each.    Make the 6 boxes and place their corresponding number of ways.    "
 },
@@ -1121,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-5",
   "type": "Example",
-  "number": "3.4.13",
+  "number": "3.4.12",
   "title": "",
   "body": "  Four flags of different colors are given. How many different signals can be generated, if a signal requires the use two flags, one below another.    Make the 2 boxes and place their corresponding number of ways. Remember, the signal has to be generated with different colors.      "
 },
@@ -1130,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-6",
   "type": "Example",
-  "number": "3.4.14",
+  "number": "3.4.13",
   "title": "",
   "body": "  Find the number of 4 letter words, with or without meaning, which can be formed out of the letters of the word \"NOSE,\" when   The repetition of letters is not allowed.    The repetition of letters is allowed.       Make the 4 boxes and place their corresponding number of ways.               "
 },
@@ -1139,131 +1130,140 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-7",
   "type": "Example",
-  "number": "3.4.15",
+  "number": "3.4.14",
   "title": "",
-  "body": "  Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options Number of Main Course Options Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) 5 (main courses) 2 (desserts).  Total Meal Combinations = 30 different meal combinations.  So, there are 30 different meal combinations you can create by applying the Product Rule.   "
+  "body": "  In a local election, there are three candidates running for mayor (Candidate A, Candidate B, Candidate C) and two candidates running for city council (Candidate X, Candidate Y).  How many different voting options are there if a voter must select one candidate for mayor and one candidate for city council?    Total Voting Options = Number of Mayor Candidates Number of City Council Candidates.  Total Voting Options = 3 (mayor candidates) 2 (city council candidates).  Total Voting Options = 6 different voting options.  There are 6 different voting options in this local election using the product Rule.   "
 },
 {
   "id": "sec_prod-exampleB-8",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-8",
   "type": "Example",
-  "number": "3.4.16",
+  "number": "3.4.15",
   "title": "",
-  "body": "  Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a two-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = (Number of Appetizer Options Number of Main Course Options) + (Number of Appetizer Options Number of Dessert Options) + (Number of Dessert Options Number of Main Course Options).  Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31.  Total Meal Combinations = 31 different meal combinations.   "
+  "body": "  Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a three-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = Number of Appetizer Options Number of Main Course Options Number of Dessert Options.  Total Meal Combinations = 3 (appetizers) 5 (main courses) 2 (desserts).  Total Meal Combinations = 30 different meal combinations.  So, there are 30 different meal combinations you can create by applying the Product Rule.   "
 },
 {
   "id": "sec_prod-exampleB-9",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-9",
   "type": "Example",
-  "number": "3.4.17",
+  "number": "3.4.16",
   "title": "",
-  "body": "  Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:  Choice X: Visit a beach town (2 options).  Choice Y: Explore a historic city (3 options).  Choice Z: Go on a nature hike (4 options).  You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?    Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.  Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).  Total Itinerary Options = 9 different vacation itineraries.  There are 9 different vacation itineraries you can plan using the Addition Rule.   "
+  "body": "  Imagine you are at a restaurant with a diverse menu. You have the following choices for each course:  Choice A: Appetizer (3 options).  Choice B: Main Course (5 options).  Choice C: Dessert (2 options).  You want to create a two-course meal by selecting one option from each category (appetizer, main course, dessert). How many different meal combinations can you create?    Total Meal Combinations = (Number of Appetizer Options Number of Main Course Options) + (Number of Appetizer Options Number of Dessert Options) + (Number of Dessert Options Number of Main Course Options).  Total Meal Combinations = (3*5)+(3*2)+(2*5) = 31.  Total Meal Combinations = 31 different meal combinations.   "
 },
 {
   "id": "sec_prod-exampleB-10",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-10",
   "type": "Example",
-  "number": "3.4.18",
+  "number": "3.4.17",
   "title": "",
-  "body": "  How many words, with or without meaning of three distinct letters of the english alphabet are there.    Make the 3 boxes and place their corresponding number of ways.    "
+  "body": "  Suppose you are planning a vacation with multiple destinations, and you have the following choices for your itinerary:  Choice X: Visit a beach town (2 options).  Choice Y: Explore a historic city (3 options).  Choice Z: Go on a nature hike (4 options).  You want to plan a vacation itinerary that includes visiting one destination from each category (beach town, historic city, nature hike). How many different vacation itineraries can you create?    Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options.  Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes).  Total Itinerary Options = 9 different vacation itineraries.  There are 9 different vacation itineraries you can plan using the Addition Rule.   "
 },
 {
   "id": "sec_prod-exampleB-11",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-11",
   "type": "Example",
-  "number": "3.4.19",
+  "number": "3.4.18",
   "title": "",
-  "body": "  Let's say you are selecting a three course dinner meal at your cafeteria. There are four different salads, three different entrees, and two different desserts to choose from. Assume you want to eat a salad, an entrée and a desert, how many different meals are possible?    The total number of meals is 24.   "
+  "body": "  How many words, with or without meaning of three distinct letters of the english alphabet are there.    Make the 3 boxes and place their corresponding number of ways.    "
 },
 {
   "id": "sec_prod-exampleB-12",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-12",
   "type": "Example",
-  "number": "3.4.20",
+  "number": "3.4.19",
   "title": "",
-  "body": "  Harry went to a food restaurant, and he wants to order a combo deal that includes a pizza, drink, and dessert. The following choices are available: Pizza: Chicken Fajita, and Vegetable. Drink: Pepsi and 7-Up. Dessert: Ice-cream and Pie.    As the tree diagram shows, we can work out the possible arrangements for a combo deal.  Deal 1: Chicken fajita, Pepsi, and Ice-cream.  Deal 2: Chicken fajita, Pepsi, and Pie.  Deal 3: Chicken fajita, 7-UP, and Ice-cream.  Deal 4: Chicken fajita, 7-UP, and Pie.  Deal 5: Vegetable Pizza, Pepsi, and Ice-cream.  Deal 6: Vegetable Pizza, Pepsi, and Pie.  Deal 7: Vegetable Pizza, 7-UP and Ice-cream.  Deal 8: Vegetable Pizza, 7-UP and Pie.  Now solving it by counting principle, we have 2 options for pizza, 2 for drinks and 2 for desserts so, the total number of possible combo deals = .   "
+  "body": "  Let's say you are selecting a three course dinner meal at your cafeteria. There are four different salads, three different entrees, and two different desserts to choose from. Assume you want to eat a salad, an entrée and a desert, how many different meals are possible?    The total number of meals is 24.   "
 },
 {
   "id": "sec_prod-exampleB-13",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-13",
   "type": "Example",
-  "number": "3.4.21",
+  "number": "3.4.20",
   "title": "",
-  "body": "  Steve has to dress for a presentation. He has different shirts, different pants, and different shoes available in his closet. Wearing the Tie is optional. Calculate the total number of possible outfits.    There are three types of shirts, two types of pants and three types of shoes. While the tie is optional, the tie has two options, either “Yes” or “No.”  Total number of possible outfits = .   "
+  "body": "  Harry went to a food restaurant, and he wants to order a combo deal that includes a pizza, drink, and dessert. The following choices are available: Pizza: Chicken Fajita, and Vegetable. Drink: Pepsi and 7-Up. Dessert: Ice-cream and Pie.    As the tree diagram shows, we can work out the possible arrangements for a combo deal.  Deal 1: Chicken fajita, Pepsi, and Ice-cream.  Deal 2: Chicken fajita, Pepsi, and Pie.  Deal 3: Chicken fajita, 7-UP, and Ice-cream.  Deal 4: Chicken fajita, 7-UP, and Pie.  Deal 5: Vegetable Pizza, Pepsi, and Ice-cream.  Deal 6: Vegetable Pizza, Pepsi, and Pie.  Deal 7: Vegetable Pizza, 7-UP and Ice-cream.  Deal 8: Vegetable Pizza, 7-UP and Pie.  Now solving it by counting principle, we have 2 options for pizza, 2 for drinks and 2 for desserts so, the total number of possible combo deals = .   "
 },
 {
   "id": "sec_prod-exampleB-14",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-14",
   "type": "Example",
-  "number": "3.4.22",
+  "number": "3.4.21",
   "title": "",
-  "body": "  How many numbers are there between 100 and 1000 in which all the digits are distinct?    For the distinct digits 9 8 7 is a maximum number and 1 0 2 is minimum a number. Hence, in the boxes of 3 digit number. comes at the hundreds place (zero does not take this position as the number becomes less than 100), comes at the tens place (as total 10 numbers from 0, 1, 2, --- 9 with number 1 less due to hundreds place digit), and at the units place.    "
+  "body": "  Steve has to dress for a presentation. He has different shirts, different pants, and different shoes available in his closet. Wearing the Tie is optional. Calculate the total number of possible outfits.    There are three types of shirts, two types of pants and three types of shoes. While the tie is optional, the tie has two options, either “Yes” or “No.”  Total number of possible outfits = .   "
 },
 {
   "id": "sec_prod-exampleB-15",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-15",
   "type": "Example",
-  "number": "3.4.23",
+  "number": "3.4.22",
   "title": "",
-  "body": "  How many 9-digit numbers of different digits can be formed?    Out of 10 digits from 0, 1, 2 ---9, we can place any 9 digit at place, because 0 at the place makes the number 8-digit only. Hence,    "
+  "body": "  How many numbers are there between 100 and 1000 in which all the digits are distinct?    For the distinct digits 9 8 7 is a maximum number and 1 0 2 is minimum a number. Hence, in the boxes of 3 digit number. comes at the hundreds place (zero does not take this position as the number becomes less than 100), comes at the tens place (as total 10 numbers from 0, 1, 2, --- 9 with number 1 less due to hundreds place digit), and at the units place.    "
 },
 {
   "id": "sec_prod-exampleB-16",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-16",
   "type": "Example",
-  "number": "3.4.24",
+  "number": "3.4.23",
   "title": "",
-  "body": "  How many numbers are there between and can be formed from the digits when the repetition of digits is not allowed?    The place only takes number 2, the places takes any numbers with no repetition.    "
+  "body": "  How many 9-digit numbers of different digits can be formed?    Out of 10 digits from 0, 1, 2 ---9, we can place any 9 digit at place, because 0 at the place makes the number 8-digit only. Hence,    "
 },
 {
   "id": "sec_prod-exampleB-17",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-17",
   "type": "Example",
-  "number": "3.4.25",
+  "number": "3.4.24",
   "title": "",
-  "body": "  How many 3-digit odd numbers can be formed by using the digits when   The repetition of digit is not allowed.    The repetition of digit is allowed           The unit place only takes 1, 3, and 5, the tens place takes any of the 5 digits.           "
+  "body": "  How many numbers are there between and can be formed from the digits when the repetition of digits is not allowed?    The place only takes number 2, the places takes any numbers with no repetition.    "
 },
 {
   "id": "sec_prod-exampleB-18",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-18",
   "type": "Example",
-  "number": "3.4.26",
+  "number": "3.4.25",
   "title": "",
-  "body": "  How many odd numbers less than 1000 can be formed using the digits 0, 2, 5, 7. When the repetition of digits is allowed?       In one-digit number we have only two choices . In two-digit number we can place at units place and any other digits except at tens place.  In three digit numbers we can place only 5 and 7 at units place, any of the 4 digits can be placed at tens place, and any 3 digits except be placed at hundreds place.  Hence, the total odd numbers formed =    "
+  "body": "  How many 3-digit odd numbers can be formed by using the digits when   The repetition of digit is not allowed.    The repetition of digit is allowed           The unit place only takes 1, 3, and 5, the tens place takes any of the 5 digits.           "
 },
 {
   "id": "sec_prod-exampleB-19",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-19",
   "type": "Example",
-  "number": "3.4.27",
+  "number": "3.4.26",
   "title": "",
-  "body": "  HOw many numbers are there between 100 and 1000 such that 7 is in the units place?    The numbers formed here are all three digits between 107 to 997. So we place 7 at unit place (only one choice), any other numbers can be placed at the tens place (10 choices from 0,1,2,3,---9), and the hundreds place take any numbers except (9 choices) because repetition allowed.    "
+  "body": "  How many odd numbers less than 1000 can be formed using the digits 0, 2, 5, 7. When the repetition of digits is allowed?       In one-digit number we have only two choices . In two-digit number we can place at units place and any other digits except at tens place.  In three digit numbers we can place only 5 and 7 at units place, any of the 4 digits can be placed at tens place, and any 3 digits except be placed at hundreds place.  Hence, the total odd numbers formed =    "
 },
 {
   "id": "sec_prod-exampleB-20",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-20",
   "type": "Example",
-  "number": "3.4.28",
+  "number": "3.4.27",
   "title": "",
-  "body": "  HOw many numbers are there between 100 and 1000 such that at least one of their digits is 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).     Hence the total numbers formed =    "
+  "body": "  HOw many numbers are there between 100 and 1000 such that 7 is in the units place?    The numbers formed here are all three digits between 107 to 997. So we place 7 at unit place (only one choice), any other numbers can be placed at the tens place (10 choices from 0,1,2,3,---9), and the hundreds place take any numbers except (9 choices) because repetition allowed.    "
 },
 {
   "id": "sec_prod-exampleB-21",
   "level": "2",
   "url": "sec_prod-exampleB.html#sec_prod-exampleB-21",
+  "type": "Example",
+  "number": "3.4.28",
+  "title": "",
+  "body": "  HOw many numbers are there between 100 and 1000 such that at least one of their digits is 7?    The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), tens place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and hundreds place takes any numbers except (9 choices).  In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and tens place takes any numbers (10 choices).     Hence the total numbers formed =    "
+},
+{
+  "id": "sec_prod-exampleB-22",
+  "level": "2",
+  "url": "sec_prod-exampleB.html#sec_prod-exampleB-22",
   "type": "Example",
   "number": "3.4.29",
   "title": "",
