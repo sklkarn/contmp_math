@@ -292,6 +292,25 @@
   </figure>  
 
 
+  <figure>
+    <caption> </caption>
+    <sidebyside widths="30% 30% 30%"> 
+      <figure xml:id="fig-AUBcc">
+        <caption> <m>A \cup B'</m></caption>
+        <image source="AUBcc.png" width = "40%"/>
+  </figure>
+  <figure xml:id="fig-AIBcc">
+    <caption><m>A\cap B' </m> (Just A) </caption>
+    <image source="AIBcc.png" />
+  </figure>
+  <figure xml:id="fig-AccIB">
+    <caption><m>A'\cap B </m> (Just B) </caption>
+    <image source="AccIB.png" />
+  </figure>
+      </sidebyside>
+  </figure>  
+
+
 </subsection>
   
 
