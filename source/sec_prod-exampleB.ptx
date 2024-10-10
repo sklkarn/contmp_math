@@ -287,16 +287,16 @@
   </statement>
   <solution>
     <p>
-      Total Itinerary Options = Number of Beach Town Options + Number of Historic City Options + Number of Nature Hike Options. 
+      Total Itinerary Options = Number of Beach Town Options <m>\times</m>  Number of Historic City Options <m>\times</m> Number of Nature Hike Options. 
        </p>
        <p>
-        Total Itinerary Options = 2 (beach towns) + 3 (historic cities) + 4 (nature hikes). 
+        Total Itinerary Options = 2 (beach towns) <m>\times</m> 3 (historic cities) <m>\times</m>  4 (nature hikes). 
           </p>
           <p>
-            Total Itinerary Options = 9 different vacation itineraries. 
+            Total Itinerary Options = 24 different vacation itineraries. 
                 </p>
                 <p>
-                  There are 9 different vacation itineraries you can plan using the Addition Rule.
+                  There are 24 different vacation itineraries you can plan using the Addition Rule.
                 </p>
   </solution>
  </example>
