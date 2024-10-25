@@ -549,29 +549,18 @@
   </statement>
   <solution>
      <p>
-      The numbers formed here are all three digits. In case one, place 7 at units place (only 1 choice), 
-      tens place takes any numbers (10 choices), and hundreds place takes any numbers except <m>0</m> (9 choices).
+      Total 3-digit numbers between 100 to 1000 is <m>9\times 10\times10=900.</m>
          </p>
          <p>
-          In case two, place 7 at tens place (only 1 choice), units place takes any numbers (10 choices), and 
-          hundreds place takes any numbers except <m>0</m> (9 choices).
-           </p>
-           <p>
-            In case three, place 7 at hundreds place (only 1 choice), units place takes any numbers (10 choices), and 
-            tens place takes any numbers (10 choices).
+         Total 3-digit numbers that do not contain any 7 is <m>8\times 9\times 9 =648.</m>
            </p>
 <p>
+  Therefore total 3-digt numbers that contain at least one 7 is  
   <me>
-    \begin{array}{c|c|c} 
-    \text{ case one } &amp; \text{ case two }  &amp; \text{ case three }  \\ \hline 
-    9 \times 10 \times 1 = 90 &amp; 9 \times 1 \times 10 = 90  &amp; 1\times 10 \times 10 = 100 \\     
-   \end{array}
+ = 900-648=252.
   </me>
 </p>
-        
-<p>
-  Hence the total numbers formed = <m>90 + 90 + 100 = 280.</m>
-</p>
+ 
   </solution>
 </example>
 
