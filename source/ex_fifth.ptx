@@ -39,7 +39,7 @@
   <statement>
     <p>
       Two dice are thrown together. Find the probability that the product of the numbers on the top of the dice is:
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             6
@@ -65,7 +65,7 @@
   <statement>
     <p>
       A bag contains 10 red, 5 blue and 7 green balls. A ball is drawn at random. Find the probability of this ball being a
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             red ball 
@@ -94,7 +94,7 @@
       All the jacks, queens and kings are removed from a deck of 52 playing cards. The remaining cards are well 
       shuffled and then one card is drawn at random. Giving ace a value 1 similar value for other cards, 
       find the probability that the card has a value
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
            7
@@ -122,7 +122,7 @@
   <statement>
     <p>
       A die has its six faces marked 0, 1, 1, 1, 6, 6. Two such dice are thrown together and the total score is recorded.
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             How many different scores are possible?
@@ -145,7 +145,7 @@
   <statement>
     <p>
       Two cards are drawn from a pack of 52 cards. What is the probability of given conditions:
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             Both cards will be Face cards?
@@ -190,7 +190,7 @@
     <p>
       A box contains 4 red, 5 green, and 6 white balls. A ball is drawn at random from the box, what is the probability that 
     the ball drawn is  
-  <ol marker ="a">
+  <ol marker ="a.">
     <li>
       <p>
         either red or green?

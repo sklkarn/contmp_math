@@ -19,7 +19,7 @@
         <li>
           <p>
             Mathematical: 
-            <ol marker="i">
+            <ol marker="i.">
               <li>
                 <p>
                   Arithmatic Mean (Mean)
@@ -41,7 +41,7 @@
         <li>
           <p>
             Positional:
-            <ol marker="i">
+            <ol marker="i.">
               <li>
                 <p>
                   Median
@@ -68,7 +68,7 @@
     <p>
       There are three types of mean being used in mathematical operations: Arithmetic mean, geometric mean, and harmonic mean. 
       Here we only discuss the arithmetic mean. There are three methods to determine the arithmetic mean. 
-      <ol marker="I">
+      <ol marker="I.">
         <li>
           <p>
             Direct Method
@@ -88,7 +88,7 @@
     </p>
     <p>
       Here we are trying to build an idea to find mean of the three different data (series):
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             Individual Series
@@ -163,7 +163,7 @@
       <title>Discrete Series: </title>
           <p>
         The mean can be calculated using the following methods:
-        <ol marker="i">
+        <ol marker="i.">
           <li>
             <p>
              <term> Direct method: </term>
@@ -307,7 +307,7 @@ Here is the caculation:
     </p>
   <p>
     The mean (<term>weighted mean of grouped data</term>) can be calculated using the following methods: 
-    <ol marker ="a">
+    <ol marker ="a.">
       <li>
         <p>
           Direct method: 
@@ -378,7 +378,7 @@ Here is the caculation:
       <p>
      The mean weight of 15 students is 110 kg. 
      The mean of 5 of them is 100 kg and another 5 kg of them is 125 kg, then the mean weight of remaining students is 
-     <ol marker ="a">
+     <ol marker ="a.">
       <li>
         <p>
           120
@@ -461,7 +461,7 @@ Here is the caculation:
   <title>Properties of mean</title>
   <p>
     If origin or scale of data is changed then their mean is also changed by the same corresponding value. For example: 
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           <term>Change of origin: </term> Suppose we have an individual series (raw data) 
@@ -519,7 +519,7 @@ Here is the caculation:
 
   <p>
     Other properties: 
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           Mean is the best measure of central tendency, it is the most stable average of the data based on all the observations.
@@ -561,7 +561,7 @@ Here is the caculation:
     <p>
       The median of the following data can be found by rearranging them either in ascending 
       or in descending order then select middle item.
-      <ol marker="i">
+      <ol marker="i.">
         <li>
           <p>
             <me>
@@ -829,7 +829,7 @@ Here is the caculation:
   
  <p>
     
-<ol marker="i">
+<ol marker="i.">
   <li>
     <p>
       Median is a Middle most values of ascending or descending order of the series.
@@ -874,7 +874,7 @@ Here is the caculation:
   <title>Individual Series</title>
   
       <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <me>
@@ -1009,7 +1009,7 @@ Here is the caculation:
        </p>
        <p>
         <term>Properties of mode</term> 
-        <ol marker="i">
+        <ol marker="i.">
           <li>
             <p>
               It is the most frequent value.

@@ -8,7 +8,7 @@
     <statement>
       <p>
         Which of the following are examples of the null set
-        <ol marker="a">
+        <ol marker="a.">
           <li> Set of odd natural numbers divisible by 2.</li>
           <li>Set of even prime numbers  </li>
           <li><m>\{ x: x \text{ is a natural n umbers, } x \lt 5 \text{ and} x \gt 7 \}</m> </li>
@@ -23,7 +23,7 @@
       <statement>
         <p>
           Which of the following sets are finite and infinite. 
-          <ol marker="a">
+          <ol marker="a.">
             <li> The set of months of a year.</li>
             <li><m>\{ 1, 2, 3, \ldots \}</m>  </li>
             <li><m>\{ 1, 2, 3, \ldots, 99, 100 \}</m> </li>
@@ -39,7 +39,7 @@
         <statement>
           <p>
             State whether each of the following set is finite and infinite. 
-            <ol marker="a">
+            <ol marker="a.">
               <li> The set of lines which are parallel to the x-axis.</li>
               <li>The set of letters in the english alphabet. </li>
               <li>The set of numbers which are multiple of 5.</li>
@@ -55,7 +55,7 @@
           <statement>
             <p>
               In the following, state whether <m>A = B</m> or not.
-              <ol marker="a">
+              <ol marker="a.">
                 <li> <me>A = \{a, b, c, d\} </me>, 
                   <me>B = \{d, c, b, a\}</me>  
                   <fillin characters="5" /></li>
@@ -79,7 +79,7 @@
           <statement>
             <p>
             Are the following pair of sets equal? Give reasons.
-              <ol marker="a">
+              <ol marker="a.">
                 <li> <me>A = \{2, 3\} </me>, 
                   <me>B = \{x : x \text{ is solution of } x^2+5x+6=0.\}</me></li>
                 <li> <me>A = \{x : x \text{ is a letter in the word FOLLOW } \} </me>, 
@@ -93,18 +93,18 @@
           <exercise>
             <statement>
               <p>
-              From the sets given below, select equal sets:
-                 <me>A = \{2, 4, 8, 12\}, </me> 
+              From the sets given below, select equal sets: 
+                  <me>A = \{2, 4, 8, 12\}, </me> 
                  <me>B = \{1, 2, 3, 4\}, </me> 
-                   <me>C = \{4, 8, 12, 14 \}, 
-
-                   </me> <me>D = \{3, 1, 4, 2 \}, </me>
+                   <me>C = \{4, 8, 12, 14 \}, </me> 
+                   <me>D = \{3, 1, 4, 2 \}, </me>
                    <me>E = \{-1, 1 \}, </me>  
                     <me>F = \{0, a \}, </me> 
                    <me>G = \{1, -1 \}, </me> 
                     <me>H = \{0, 1 \}. </me>
-                  </p>
+</p>
             </statement>
+
             </exercise>
 
             

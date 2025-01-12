@@ -10,7 +10,7 @@
     even if the set <m>B</m> has same elements as set <m>A</m> has.
   </p>
   <p>
-    Example: If <me>A = \{3, 5, 7\},</me> 
+    Example: If <me>A = \{3, 5, 7\},</me> and 
     <me>B = \{1, 2, 3, 4, 5, 6, 7, 8\}</me> then 
     <me>
       A \subseteq B
@@ -23,12 +23,13 @@
     <me>\{4,5,8\} \subseteq \{2, 3, 4, 5, 6, 7, 8, 9 \}</me>
   </p>
 <p>
-  <term>Note:</term> Subset <m>A</m> has less number of elements or equal to the set <m>B</m>. For example: If
-  <md>
-    <mrow>X \amp =\{2,5,7\}</mrow>
-    <mrow>\text{ and } Y  \amp =\{2,3,5,7\}</mrow>
-  </md>
-  then 
+  <term>Note:</term> Subset <m>A</m> has less number of elements or equal to the set <m>B</m>. For example: If 
+  <me>X  =\{2,5,7\}</me> 
+  and 
+  <me>
+  Y  =\{2,3,5,7\}
+  </me>
+    then 
   <me>
     X \subseteq Y
   </me>
@@ -37,11 +38,12 @@
     X \subset Y
   </me>
   Also, if 
-  <md>
-    <mrow>X \amp =\{2,5,7\}</mrow>
-    <mrow>\text{ and } Y  \amp =\{2,5,7\}</mrow>
-  </md>
-  then 
+   <me>X  =\{2,5,7\}</me> 
+  and 
+  <me>
+  Y  =\{2,5,7\}
+  </me>
+   then 
   <me>
     X \subseteq Y
   </me>
@@ -53,12 +55,13 @@
 
 <p>
   <term>Proper subset</term>
-  Proper subset has less elements than the set. For example: If
-  <md>
-    <mrow>X \amp =\{2,5,7\}</mrow>
-    <mrow>\text{ and } Y  \amp =\{2,3,5,7\}</mrow>
-  </md>
-  then 
+  Proper subset has less elements than the set. For example: If 
+   <me>X  =\{2,5,7\}</me> 
+  and 
+  <me>
+  Y  =\{2,3,5,7\}
+  </me>
+   then 
   <me>
     X \subset Y
   </me>
@@ -69,7 +72,7 @@
  
   <remark>
     <p>
-    <ol marker ="a">
+    <ol marker ="a.">
       <li>
         <p>
           Every set is a subset of itself, <m>A \subset A</m>.
@@ -204,11 +207,11 @@
        Half-open intervals, Degenerate intervals, and Bounded and Unbounded intervals. 
       </p>
   <p>
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           <term>Open Interval: </term>
-          (a, b) or, <m>a \lt x \lt b</m>
+          <m>(a, b)</m> or, <m>a \lt x \lt b</m>
           </p>
 
     <image width="25%" xml:id="set_intrvla">
@@ -229,7 +232,7 @@
       <li>
         <p>
           <term>Closed Interval: </term>
-          [a, b] or, <m>a \leq x \leq b</m>
+          <m>[a, b]</m>  or, <m>a \leq x \leq b</m>
         </p>
 
         <image width="25%" xml:id="set_intrvlb">
@@ -249,7 +252,7 @@
       <li>
         <p>
           <term>Closed - open Interval: </term> <m>\ldots </m> including <m>a</m> but excluding <m>b.</m>
-          [a, b) or, <m>a \leq x \lt b</m>
+          <m>[a, b)</m> or, <m>a \leq x \lt b</m>
         </p>
 
         <image width="25%" xml:id="set_intrvlc">

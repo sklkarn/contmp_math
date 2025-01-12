@@ -56,7 +56,7 @@
    How many words can be formed with the letters of the word <m>MISSOURI</m> 
   </p>
   <p>
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           Have <m>M</m> and <m>R</m> together?
@@ -79,7 +79,7 @@
 <exercise>
   <p>
     In how many ways can the letters of the word <m>PERMUTATIONS</m> be arranged, if 
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           the words start with <m>P </m> and end with <m>S?</m>
@@ -126,7 +126,7 @@
  </statement>
   <solution>
        <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             In alphabetical order <m>A A G I N </m>
@@ -200,7 +200,7 @@
  <statement>
   <p>
     How many words with or without meaning can be made from the letters of the word <m>MONDAY</m>, that no letter is repeated, if 
-    <ol marker="i">
+    <ol marker="i.">
       <li>
         <p>
           4 letters are used at a time,
@@ -221,7 +221,7 @@
  </statement>
   <hint>
     <p>
-    <ol marker="i">
+    <ol marker="i.">
       <li>
         <p>
           <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> <fillin characters="3" /> = <m>^6P_4</m>

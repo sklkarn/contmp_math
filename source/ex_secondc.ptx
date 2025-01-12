@@ -9,7 +9,7 @@
       <p>
         Let <m>\bigcup = \{1,2,3,4,5,6,7,8,9\}</m>, <m>A = \{1,2,3,4\}</m>,  <m>C = \{2,4,6,8\}</m>, 
         and  <m>D = \{3,4,5,6\}</m>, find
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <m>A' </m>
@@ -49,7 +49,7 @@
       <statement>
         <p>
           If <m>\bigcup = \{a,b,c,d,e,f,g,h\}</m>, find the complements of the following sets:
-          <ol marker ="i">
+          <ol marker ="i.">
             <li>
               <p>
                 <m>A = \{a,b,c\}</m>
@@ -79,7 +79,7 @@
   <statement>
     <p>
       Taking the set of natural numbers as the universal set, write the components of the following sets: 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <m> \{x : x \text{ is an even natural number} \}</m>
@@ -144,7 +144,7 @@
   <statement>
     <p>
       If <m>\bigcup = \{1,2,3,4,5,6,7,8,9\}</m>, <m>A = \{2,4,6,8\}</m>, and <m>B=\{2,3,5,7\}</m>, verify that 
-      <ol marker="i">
+      <ol marker="i.">
         <li>
           <p>
             <m>(A\cup B)' = A' \cap B'</m>
@@ -164,7 +164,7 @@
   <statement>
     <p>
       Draw Venn diagram for each of the following: 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <m>(A \cup B)'</m>

@@ -30,7 +30,7 @@
       <p>
         State whether the following statements are true or false. Give reasons for your answers.
      
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             Every natural number is a whole number.
@@ -61,7 +61,7 @@
     </statement>
     <solution>
       <p>
-        <ol marker="i">
+        <ol marker="i.">
           <li>
             <p>
                 <term>True</term> whole numbers have all the elements of natural numbers and zero. 
@@ -123,7 +123,7 @@
         <p>
           Write the following in decimal form and say what kind of decimal expansion and number each has:
      
-        <ol marker="i">
+        <ol marker="i.">
           <li>
             <p>
               <m>\frac{26}{100}</m>
@@ -144,7 +144,7 @@
       </statement>
       <solution>
         <p>
-          <ol marker="i">
+          <ol marker="i.">
             <li>
               <p>
                 <m>\frac{26}{100} =0.26 </m> (terminating, rational).

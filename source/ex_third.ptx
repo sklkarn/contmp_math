@@ -58,7 +58,7 @@
     <statement>
       <p>
         How many 3 digit numbers can be formed from the digits <m>1, 2, 3, 4, 5</m> assuming that 
-        <ol marker ="i">
+        <ol marker ="i.">
           <li>
             <p>
               repetition of the digits is allowed.

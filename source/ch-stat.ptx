@@ -13,7 +13,7 @@
   <introduction>
     <p> 
       Statistics is the science of collecting, arranging, and analyzing data for better decision making. It is of two types:
-      <ol marker ="I">
+      <ol marker ="I.">
         <li>
           <p>
             <term>Descriptive Statistics:</term> It consists of organizing and summarizing the data using quantitative methods.
@@ -36,7 +36,7 @@
             log-normal distribution, binomial distribution, etc.
           </p>
           <p>
-             <ol marker="i">
+             <ol marker="i.">
               <li>
                 <p>
                   Measure of central tendency
@@ -82,7 +82,7 @@
   <statement>
     <p>
       <alert>Compare: </alert> 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             6'3" boy to a 5'1" boy.
@@ -109,7 +109,7 @@
   <solution>
     <p>
       <term>Interpret or infer: </term> 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
            taller
@@ -140,7 +140,7 @@
   <example>
    <statement>
     <p>
-      <ol marker="i">
+      <ol marker="i.">
         <li>
           <p>
             How do I price this car?

@@ -37,7 +37,7 @@
       A coin is tossed, if it shows head then toss it again, otherwise throw a dice. Here, 
       </p>
       <p> 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <m>E_1</m> = getting two heads.
@@ -67,7 +67,7 @@
       has total outcomes = 8, but each outcome has different probability, i.e., they are not equally likely.
     </p>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <me>
@@ -93,7 +93,7 @@
     </p>
     <p>
       The probability of event <m>E_1</m> is given by 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <me>
@@ -129,7 +129,7 @@
 
 <p>
   <term>Important Note: </term> 
-  <ol marker ="i">
+  <ol marker ="i.">
     <li>
       <p>
         Sum of probabilities of each sample point = 1.
@@ -232,12 +232,12 @@
 <subsection xml:id="subsec-add_prod">
   <title>Rules of Probability</title>
   <p> 
-    <ol marker="I">
+    <ol marker="I.">
       <li>
         <p>
           <term>Additional Rule:</term> It is used to calculate the probability that either (or both) of two events will happen. 
          <em> Notation:</em> <m>P(A \cup B), P(A + B), P(A \text{ or } B), P( \text{ either} A \text { or} B), P(\text{ at least } 1).</m>
-          <ol marker="i">
+          <ol marker="i.">
             <li>
               <p>
                 For <term>mutually exclusive</term> (disjoint) events (A) and (B) [events that cannot happen at the same time], 
@@ -273,7 +273,7 @@
         <p>
           <term>Multiplication Rule:</term> It allows us to calculate the joint probability of multiple events 
           occurring together using known probabilities of those events individually. 
-          <ol marker="i">
+          <ol marker="i.">
             <li>
               <p>
                 For <term>Independent events</term> (A) and (B) [events where occurance of one does not affect the other], 

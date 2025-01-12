@@ -49,7 +49,7 @@
       <statement>
         <p>
           Express the following product in factorial form:
-          <ol marker ="i">
+          <ol marker ="i.">
             <li>
               <p>
                 <m>5\times 6\times 7 \times 8 \times 9</m>
@@ -65,7 +65,7 @@
       </statement>
       <solution>
         <p>
-          <ol marker ="i">
+          <ol marker ="i.">
             <li>
               <p>
                <md>

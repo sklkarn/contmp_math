@@ -36,7 +36,7 @@
               <p>
                 Number of elements in a finite set is called the order or the cardinality of the set. 
                 It is denoted by <m>n(A) </m>  or, <m> o(A)</m>.  For examples: 
-               <ol marker ="a">
+               <ol marker ="a.">
                   <li>
                    <p>
                     <m>A = \{1, 2, 3 \}</m> has n(A) = 3.
@@ -112,7 +112,7 @@ because each set can be written as <m>\{ F, O, L, W\}.</m>   Also <m>n(A) = n(B)
 </p>
 <p>
   <term>Remember:</term> 
-  <ol marker ="i">
+  <ol marker ="i.">
     <li>
       <p>
         Equal sets are always equivalent, but converse is not always true.

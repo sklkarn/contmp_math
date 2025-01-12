@@ -10,7 +10,7 @@
          Which of the following are sets? Justify your answers.
         </p>
         <p>
-        <ol marker ="i">
+        <ol marker ="i.">
           <li>
             <p>
               The collection of all the months of a year begining with letter 'J'.
@@ -67,7 +67,7 @@
         Let <m>A = \{1, 2, 3, 4, 5, 6\}.</m> Insert the appropriate symbol <m>\in</m> or <m>\notin</m> in the spaces:
       </p>
       <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <m>5 \ldots A</m>
@@ -109,7 +109,7 @@
       write the following sets in the roster form:
     </p>
     <p>
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           <m>X = \{ x : 2x^2-5x+2 =0, x\in \mathbb N \}</m>
@@ -167,7 +167,7 @@
       Write the following sets in a set-builder form:
     </p>
     <p>
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           <m>\{ 3, 6, 9, 12 \}</m>
@@ -235,7 +235,7 @@
         List all the elements of the following sets:
       </p>
       <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <m>A = \{ x: x \text{ is an integer, } -\frac{1}{2} \lt x \lt \frac{9}{2} \}</m>
@@ -286,7 +286,7 @@
     <p>
        Match each of the set in the roster form on left to the set-builder form on the right:</p>
     
-      <tabular halign="center">
+      <tabular halign="left">
         <row>
           <cell>(a) <m>\{1,2,4,8\}</m></cell>
           <cell>(i) <m>\{ x : x \text{ is a prime number and a divisor of } 6 \}</m></cell>

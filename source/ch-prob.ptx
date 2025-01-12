@@ -66,7 +66,7 @@
             e.g. <m>E = \{1,3,5\}</m>
            </p>
            <p>
-            <ol marker ="I">
+            <ol marker ="I.">
               <li>
                 <p>
                   <alert>Null Event: </alert> It has no outcome, or no element in it. For example suppose a sample space 

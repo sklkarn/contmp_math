@@ -8,12 +8,12 @@
   <p>
     <term>Data:</term> Facts or pieces of information that can be measured. 
     Data can be collected from investigations, observations, experiements, etc. Data are organized in two basic types 
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           <term>Qualitative or Categorical Data:</term> It describes the features such as color, gender, code, birth date, 
           address, blood group, etc. It cannot be used to perform any mathematical operations.
-          <ol marker ="a">
+          <ol marker ="a.">
             <li>
               <p>
                 Nominal Data: It helps to label the variables without providing the numerical value. 
@@ -46,7 +46,7 @@
         <p>
           <term>Quantitative or Numerical Data:</term> Numerical data gives information about the quantities of a specific thing. 
           e.g., height, length, size, weight, and so on. It can be used for mathematical operations.
-          <ol marker ="a">
+          <ol marker ="a.">
             <li>
               <p>
                 Discrete Data: It can take only discrete values. Discrete information contains only a finite number of possible values. 
@@ -104,7 +104,7 @@
             From a sample of 100 flight 6 flights were found to depart late.
           </p>
           <p>
-            <ol marker ="i">
+            <ol marker ="i.">
               <li>
                 <p>
                   What is the population?

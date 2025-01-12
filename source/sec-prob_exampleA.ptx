@@ -28,7 +28,7 @@
     <statement>
       <p>
         A dice is thrown. Describe the following events:
-        <ol marker ="i">
+        <ol marker ="i.">
           <li>
             <p>
               A: a number less than 7
@@ -77,7 +77,7 @@
     <p>
       An experiment involving rolling a pair of die and recording the numbers that come up. Describe 
       the following events:
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             A: the sum greater than 8.
@@ -118,7 +118,7 @@
     <p>
       Three coins are tossed once. Let A denote the event 'three heads up', B denote the event 'two heads and one tail up', 
       C denote the event 'three tails up', and D denote the event 'a head up on the first coin'. Which events are 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             Mutually exclusive?
@@ -149,7 +149,7 @@
       </md>
     </p>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             MEE = AB, AC, CD.
@@ -198,7 +198,7 @@
   <statement>
     <p>
       A card is selected from a deck of 52 cards. 
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             How many points are there in a sample space?
@@ -212,7 +212,7 @@
         <li>
           <p>
             Calculate the probability that the card is an 
-            <ol marker ="i">
+            <ol marker ="i.">
               <li>
                 <p>
                   Ace.
@@ -231,7 +231,7 @@
   </statement>
   <solution>
     <p>
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             52.
@@ -247,7 +247,7 @@
         </li>
         <li>
           <p>
-            <ol marker ="i">
+            <ol marker ="i.">
               <li>
                 <p>
                   <me>
@@ -275,7 +275,7 @@
     <p>
       A fair coin with marked <m>1</m> on one face and <m>6</m> on the other face and a fair die are both tossed. 
       Find the probability that the sum of numbers that turn up is 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <m>3.</m>
@@ -301,7 +301,7 @@
         Hence total outcomes = <m>6^1 \times 2^1 =12</m>.
       </p>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <me>
@@ -418,7 +418,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
     No. of orange bottles: 50
   </p>
   <p>
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           What is the probability that Dan will pick a green bottle?
@@ -434,7 +434,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
 </statement>
 <solution>
   <p>
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           <me>
@@ -668,22 +668,22 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
       <me>
         \begin{array}{c|cccc} 
         \circ &amp; I &amp; II &amp; III &amp; IV \\ \hline 
-        1 &amp; H &amp; H &amp; H &amp; H \\ 
-        2 &amp; H &amp; H &amp; H &amp; T \\ 
-        3 &amp; H &amp; H &amp; T &amp; H \\ 
-        4 &amp; H &amp; H &amp; T &amp; T  \\
-        5 &amp; H &amp; T &amp; H &amp; H \\
-        6 &amp; H &amp; T &amp; H &amp; T \\
-        7 &amp; H &amp; T &amp; T &amp; H \\ 
-        8 &amp; H &amp; T &amp; T &amp; T \\ 
-        9 &amp; T &amp; H &amp; H &amp; H  \\
-        10 &amp; T &amp; H &amp; H &amp; T  \\
-        11 &amp; T &amp; H &amp; T &amp; H  \\
-        12 &amp; T &amp; H &amp; T &amp; T  \\
-        13 &amp; T &amp; T &amp; H &amp; H  \\
-        14 &amp; T &amp; T &amp; H &amp; T  \\
-        15 &amp; T &amp; T &amp; T &amp; H  \\
-        16 &amp; T &amp; T &amp; T &amp; T  \\
+        1. &amp; H &amp; H &amp; H &amp; H \\ 
+        2. &amp; H &amp; H &amp; H &amp; T \\ 
+        3. &amp; H &amp; H &amp; T &amp; H \\ 
+        4. &amp; H &amp; H &amp; T &amp; T  \\
+        5. &amp; H &amp; T &amp; H &amp; H \\
+        6. &amp; H &amp; T &amp; H &amp; T \\
+        7. &amp; H &amp; T &amp; T &amp; H \\ 
+        8. &amp; H &amp; T &amp; T &amp; T \\ 
+        9. &amp; T &amp; H &amp; H &amp; H  \\
+        10. &amp; T &amp; H &amp; H &amp; T  \\
+        11. &amp; T &amp; H &amp; T &amp; H  \\
+        12. &amp; T &amp; H &amp; T &amp; T  \\
+        13. &amp; T &amp; T &amp; H &amp; H  \\
+        14. &amp; T &amp; T &amp; H &amp; T  \\
+        15. &amp; T &amp; T &amp; T &amp; H  \\
+        16. &amp; T &amp; T &amp; T &amp; T  \\
         \end{array}
       </me>
     </p>
@@ -739,7 +739,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
     <p>
       If E and F are events such that <m>P(E)=\frac{1}{4}</m>,  <m>P(F)=\frac{1}{2}</m>, and  
       <m>P(E \text{ and } F) =\frac{1}{8}</m>. Find 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <me>
@@ -760,7 +760,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
   <solution>
     <p>
       use <xref ref="subsec-prob_set"/>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
           <md>
@@ -852,7 +852,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
     <p>
       In a class of 60 students, 30 opted for english (E), 32 opted for spanish (S), and 24 opted for both E and S. 
       If one of these students is selected at random, find the probability that 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             The student opted for the E or S.
@@ -878,7 +878,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
   </statement>
   <solution>
     <p>
-     <ol marker ="i">
+     <ol marker ="i.">
       <li>
         <p>
           P(E or S)
@@ -955,7 +955,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
     <p>
       A box contains 10 red marbles, 20 blue marbles, and 30 green marbles. If 5 marbles are drawn from the box, what is the 
       probability that 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             all will be blue
@@ -971,7 +971,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
   </statement>
   <solution>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
            <me>
@@ -998,7 +998,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
    <p>
      In a certain lottery, 10000 tickets are sold and 10 equal prizes are awarded. 
      What is the probability of not getting a proze if you buy 
-     <ol marker ="a">
+     <ol marker ="a.">
        <li>
          <p>
            one ticket
@@ -1019,7 +1019,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
   </statement> 
   <solution>
    <p>
-    <ol marker ="a">
+    <ol marker ="a.">
       <li>
         <p>
           <me>
@@ -1053,7 +1053,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
     <p>
       Out of 100 studnets, two sections of 40 and 60 are formed. 
       If you and your friend are among 100 students, what is the probability that 
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             you both enter the same section?
@@ -1069,7 +1069,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
   </statement>
   <solution>
     <p>
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
            P(both enter same section ) <me>
@@ -1094,7 +1094,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
     <p>
       If 4-digit numbers greater than 5000 are randomly formed from the digits 0,1,3,5, and 7. 
       What is the probability of forming a number divisible by 5 when 
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             the digits are repeated.
@@ -1110,7 +1110,7 @@ Probability, <m>P(A) = \frac{n(A)}{n(S)} = \frac{1}{6}</m>
   </statement>
   <solution>
     <p>
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
            Total outcome = <m>2 \times 5\times 5 \times 5 = 250 -1=249</m>

@@ -128,7 +128,7 @@
   <statement>
     <p>
       If <m>n</m> and <m>r</m> are positive integers such that <m>1\leq r\leq n,</m> then we have 
-      <ol marker ="I">
+      <ol marker ="I.">
         <li>
           <p>
             <me>

@@ -200,7 +200,7 @@
     <p>
       A code is to consist of two distinct letters followed by two distinct numbers between 1 and 9. 
       For example, CA35, DQ72, etc. are codes.
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             How many such codes are there?
@@ -227,7 +227,7 @@
 
    
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             We need distinct alphabets and digits to make codes. Hence the total codes are <m>26\times 25\times 9\times 8 = 46800. </m>. 
@@ -412,7 +412,7 @@
 <example>
   <statement>
     <p>
-     <ol marker ="i">
+     <ol marker ="i.">
       <li>
         <p>
           Find how many arrangements can be made with the letters of the word <m>MATHEMATICS.</m>
@@ -427,7 +427,7 @@
      </p>
   </statement>
   <solution>
-        <ol marker ="i">
+        <ol marker ="i.">
         <li>
           <p>
             In the letter <m>M,A,T,H,E,M,A,T,I,C,S </m>
@@ -462,7 +462,7 @@
 <example>
   <statement>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             Find the number of arrangements of the letters of the word <m>INDEPENDENCE</m>
@@ -471,7 +471,7 @@
         <li>
           <p>
             In how many of these arrangements:
-            <ol marker ="a">
+            <ol marker ="a.">
               <li>
                 <p>
                   Do the words start with <m>P</m>?
@@ -500,7 +500,7 @@
   </statement>
   <solution>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <me>
@@ -510,7 +510,7 @@
         </li>
         <li>
           <p>
-            <ol marker ="a">
+            <ol marker ="a.">
               <li>
                 <p>
                   Fix <m>P,</m> and then <m>I N D E E N D E N C E</m>
@@ -568,7 +568,7 @@
     </p>
     <p>
       In how many of them 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             Both <m>L</m> do not come together?
@@ -589,7 +589,7 @@
       </me>
     </p>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             Put all <m>L </m> into one box as 1 object and remaining others in another box as 7 objects.
@@ -696,7 +696,7 @@
   <statement>
     <p>
       In how many ways can 3 prizes be distributed among 4 boys, when 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             No boys get more than 1 prize,
@@ -718,7 +718,7 @@
   <solution>
     <p>
       Here, we have prizes: <m>P1, P2, P3</m> and boys: <m>B1, B2, B3, B4</m> 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             First prize can be received by any one of the boys, so 4 choice, and 3 choice, and so on.

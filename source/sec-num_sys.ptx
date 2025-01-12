@@ -10,14 +10,14 @@
        multiplication, and division. 
     </p>
  <p>
-  The counting number systems are given as 
+  
   <ol>
     <li>
       <p>
        <term> Natural Numbers:</term> 
        <me>1,2,3,4,5,6,7,8,9,10,11,\ldots, \infty</me> 
-       Natural numbers starts from 1 which is the first number to begin counting and continue endlessly. Each number in natural 
-       number can be obtained by adding 1 to the previous number. It may contain 10, 20, 100, etc. but not mare <em>zero</em>. 
+       Natural numbers starts from 1 which is the first number to begin counting and continue endlessly. It is also called counting numbers. 
+       Each number in natural number can be obtained by adding 1 to the previous number. It may contain 10, 20, 100, etc. but not mare <em>zero</em>. 
        Natural numbers are all positive numbers.
       </p>
     </li>
@@ -38,7 +38,8 @@
     </li>
     <li>
       <p>
-        <term> Prime Numbers:</term> The natural numbers which has two factors or divisible by only itself and by a <m>1</m> is known as prime numbers.
+        <term> Prime Numbers:</term> The natural numbers which has two factors or divisible 
+        by only itself and by a <m>1</m> is known as prime numbers. It is also all positive.
         <me>
           2, 3, 5, 7, 11, 13, \ldots, \infty. 
         </me>
@@ -50,7 +51,7 @@
       <p>
         <term> Composite Numbers:</term>  The number which has at least three divisors is known as composite number. 
         Example: 4 can be divisible by 1, 2, and 4. Hence 4 is one of the composite numbers. 
-        Similarly, <me>4, 6, 8, 9, 10, 12, 14, 15, \ldots </me> are composite numbers.
+        Similarly, <me>4, 6, 8, 9, 10, 12, 14, 15, \ldots </me> are composite numbers. It is also all positive.
            </p>
     </li>
     <li>
@@ -222,7 +223,7 @@
 <subsection xml:id="subsec-div_rule">
      <title>Divisibility rules</title>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <em>Divisible by 1: </em> all numbers are divisible by <m>1.</m>
@@ -354,7 +355,7 @@
     
  <p>
   In addition to these numbers there are some famous numbers pairs such as <term>Amicable Numbers Pair</term> and <term>Co-prime Numbers pair.</term>
-  <ol marker="i">
+  <ol marker="i.">
     <li>
       <p>
         <term>Amicable Numbers: </term> Pairs of distinct natural numbers where each number 

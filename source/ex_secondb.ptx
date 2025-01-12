@@ -8,7 +8,7 @@
     <statement>
       <p>
         Make the correct statements by filling the symbol <m>\subset </m> or <m>\not \subset </m> in the blanck spaces:
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             <m>\{2, 3, 4\}\ldots \ldots \{1, 2, 3, 4, 5\} </m>
@@ -56,7 +56,7 @@
       Examine whether the following statements are true or false:
     </p>
     <p>
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             <m>\{ a, b\} \not \subset \{b, c, a\}</m>
@@ -96,7 +96,7 @@
   <statement>
     <p>
       Let <m>A = \{1, 2, \{3, 4\}, 5 \}</m> which of the following statements are incorrect and why?
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             <m>\{3, 4\} \subset A </m>
@@ -162,7 +162,7 @@
   <statement>
     <p>
       Write down all the subsets of the following sets:
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             <m>\{a\}</m>
@@ -205,7 +205,7 @@
       Write the following as intervals:
     </p>
     <p>
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
            <m> \{x : x \in \mathbb R, -4 \lt x \leq 6 \}</m>
@@ -238,7 +238,7 @@
       Write the following intervals in set-builder form:
     </p>
     <p>
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             <m>(-3, 0)</m>
@@ -269,7 +269,7 @@
     <p>
       Which Universal Set(s) would you propose for each of the following:
     </p>
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           The set of right triangles
@@ -292,7 +292,7 @@
       <m>\bigcup </m> for all the three sets <m>A, B</m> and <m>C.</m>
     </p>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <m>\{0, 1, 2, 3, 4, 5\}</m>

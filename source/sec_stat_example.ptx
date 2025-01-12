@@ -10,7 +10,7 @@
   <statement>
     <p>
       Classify the data into four types and give unit for numerical data.
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             Salary (range)
@@ -106,7 +106,7 @@
   <statement>
     <p>
       Average score of a class is 65. Average score of boys in that class is 60 and average score of girls is 75. Find the 
-      <ol marker ="a">
+      <ol marker ="a.">
         <li>
           <p>
             number of girls : number of boys
@@ -145,7 +145,7 @@
     <p>
       The mean of 20 observations are found to be 10 on rechecking, it was found that an observation 8 was incorrect. 
       Calculate the correct mean: 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             if wrong item is omitted.
@@ -162,7 +162,7 @@
   <solution>
     <p>
       using <xref ref="eqn-meancor1"/> 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <md>

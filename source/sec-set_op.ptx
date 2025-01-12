@@ -6,7 +6,7 @@
 
   <introduction>
     <p>
-      <ol marker ="I">
+      <ol marker ="I.">
         <li>
           <p>
             <term>Union of Sets: </term> 
@@ -31,7 +31,7 @@
           <alert>Properties of Union:</alert> 
           </p> 
           <p>
-          <ol marker ="i">
+          <ol marker ="i.">
             <li>
               <p>
                 <m>A \cup B = B \cup A</m> (Commulative law)
@@ -83,7 +83,7 @@
           </p>
           <p>
           <alert>Properties of Intersection:</alert>
-          <ol marker ="i">
+          <ol marker ="i.">
             <li>
               <p>
                 <m>A \cap B = B \cap A</m> (Commulative law)

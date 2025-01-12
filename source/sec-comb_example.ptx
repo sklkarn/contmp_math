@@ -104,8 +104,9 @@
         4n-9r =5
       </men>
        </p>
-       Now, 
+      
        <p>
+         Now, 
         <me>
           ^nC_{(r-1)}:^nC_{r} = \frac{3}{4}
         </me>
@@ -263,7 +264,7 @@
   <statement>
     <p>
       In how many ways can eleven team members be chosen out of a batch of 15 players, if 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             there is no restriction on the selection?
@@ -284,7 +285,7 @@
   </statement>
   <solution>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <me>
@@ -368,7 +369,7 @@
   <statement>
     <p>
       A committee of 5 is to be formed one of 6 men and 4 women. In how many ways can this be done. When 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             at least 2 women are included, 
@@ -515,7 +516,7 @@
     <p>
       There are 10 points in a plane, three of which are not on the same straight line, 
       except 4 points, which are collinear. Find  
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             The number of lines obtained from the pairs of these points.
@@ -534,7 +535,7 @@
       10 points given, where 4 points are collinear.
     </p>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
            Number of lines = <m>^nC_2 = ^{10}C_2 -^4C_2 +1</m> 
@@ -630,7 +631,7 @@
     <p>
       A bag contains 6 white marbles and 5 red marbles. Find the number of ways in which 4 marbles can be drawn from the bag, 
       if 
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             They can be of any color?
@@ -654,7 +655,7 @@
       6W, 5R = 11 balls among which select 4.
     </p>
     <p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
             <me>

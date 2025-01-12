@@ -32,7 +32,7 @@
       <p>
         Classify the following numbers as rational or irrational according to their type:
       </p>
-      <ol marker ="i">
+      <ol marker ="i.">
         <li>
           <p>
           <m>  \sqrt{23}</m>
@@ -66,7 +66,7 @@
         Classify the following numbers as rational or irrational:
       </p>
       <p>
-        <ol marker="i">
+        <ol marker="i.">
           <li>
             <p>
               <m>2-\sqrt{5}</m>
@@ -95,7 +95,7 @@
       <statement>
         <p>
           Which of the following pairs are coprime numbers?
-          <ol marker ="a">
+          <ol marker ="a.">
             <li>
               <p>
                 35 and 64
@@ -125,7 +125,7 @@
       <statement>
         <p>
           Which of the following pairs is an amicable pair?
-          <ol marker ="a">
+          <ol marker ="a.">
             <li>
               <p>
                 12 and 18
