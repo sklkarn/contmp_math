@@ -296,14 +296,23 @@
 
 
 <subsection xml:id="subsec-divisors">
-  <title>Finding Divisors:</title>
+  <title>Finding Divisors and number of divisors:</title>
   
  <p>
+  To find the number of divisors of any number, we need the prime factorization of the number first. 
+  Let say, we are looking for the number of divisors of 20, then find the prime factors of 20 first.
+    <me>20= 2\times2 \times5.</me>
+    write these prime numbers in exponent form, such as <m>2^2,5^1</m>
+    Now add <m>1</m> to each exponents andthen multiply them, 
+    the number of divisors of 20 is given by <me>(2+1)\times(1+1)=3\times2=6.</me>
+    i.e., we have 6 divisors of 20. To find all the divisors of 20 
+    look at the process below for the number 220 and replicate the process for 20.
   <ul>
   <li>
     <p>
-      To find the divisors (or factors) of 220, you need to determine all the integers 
-      that divide 220 exactly (without leaving a remainder). Here's a step-by-step method:
+      Step-by-step method to find the divisors (or factors) of any number. 
+      To find the divisors of 220 for example, you need to determine all the integers 
+      that divide 220 exactly (without leaving a remainder). See the process below:
     </p>
     <p>
       <em>Prime Factorization of 220: </em> 
@@ -315,7 +324,14 @@
       <me>
         220=2^2\times 5\times 11
       </me>
-    </p>
+     </p>
+     <p>
+       Write these prime factors in exponent form, such as <m>2^2, \, 5^1, \, 11^1</m>
+     </p>
+     <p>
+      Add <m>1</m> to the exponents of these prime factors and then multiply them, such as <m>, (2+1)\times (1+1)\times(1+1) = 12.</m>
+      i.e., 220 has 12 divisors only.
+     </p>
   </li>
   <li>
     <p>
