@@ -645,7 +645,7 @@ window.MathJax = {
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-prime" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Prime Numbers</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-div_rule" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Divisibility rules</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-divisors" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Finding Divisors:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-divisors" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Finding Divisors and number of divisors:</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-num_sys.html#subsec-fam_pair" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Famous prime Pairs</span></a></div></li>
 </ul>
 </li>
@@ -1059,12 +1059,26 @@ window.MathJax = {
 <li id="subsec-div_rule-2-1-9"><div class="para" id="subsec-div_rule-2-1-9-1">
 <em class="emphasis">Divisible by 9:</em> A number is divisible by 9 if the sum of its digits is divisible by 9.</div></li>
 </ol></div></section><section class="subsection" id="subsec-divisors"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="space"> </span><span class="title">Finding Divisors:</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="space"> </span><span class="title">Finding Divisors and number of divisors:</span>
 </h3>
-<div class="para logical" id="subsec-divisors-2"><ul class="disc" id="subsec-divisors-2-1">
-<li id="subsec-divisors-2-1-1">
-<div class="para" id="subsec-divisors-2-1-1-1">To find the divisors (or factors) of 220, you need to determine all the integers that divide 220 exactly (without leaving a remainder). Here’s a step-by-step method:</div>
-<div class="para logical" id="subsec-divisors-2-1-1-2">
+<div class="para logical" id="subsec-divisors-2">
+<div class="para">To find the number of divisors of any number, we need the prime factorization of the number first. Let say, we are looking for the number of divisors of 20, then find the prime factors of 20 first.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+20= 2\times2 \times5.
+\end{equation*}
+</div>
+<div class="para">write these prime numbers in exponent form, such as <span class="process-math">\(2^2,5^1\)</span> Now add <span class="process-math">\(1\)</span> to each exponents andthen multiply them, the number of divisors of 20 is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(2+1)\times(1+1)=3\times2=6.
+\end{equation*}
+</div>
+<div class="para">i.e., we have 6 divisors of 20. To find all the divisors of 20 look at the process below for the number 220 and replicate the process for 20.</div>
+<ul class="disc" id="subsec-divisors-2-5">
+<li id="subsec-divisors-2-5-1">
+<div class="para" id="subsec-divisors-2-5-1-1">Step-by-step method to find the divisors (or factors) of any number. To find the divisors of 220 for example, you need to determine all the integers that divide 220 exactly (without leaving a remainder). See the process below:</div>
+<div class="para logical" id="subsec-divisors-2-5-1-2">
 <div class="para"><em class="emphasis">Prime Factorization of 220:</em></div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1095,11 +1109,14 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
+<div class="para" id="subsec-divisors-2-5-1-3">Write these prime factors in exponent form, such as <span class="process-math">\(2^2, \, 5^1, \, 11^1\)</span>
+</div>
+<div class="para" id="subsec-divisors-2-5-1-4">Add <span class="process-math">\(1\)</span> to the exponents of these prime factors and then multiply them, such as <span class="process-math">\(, (2+1)\times (1+1)\times(1+1) = 12.\)</span> i.e., 220 has 12 divisors only.</div>
 </li>
-<li id="subsec-divisors-2-1-2">
-<div class="para" id="subsec-divisors-2-1-2-1">
+<li id="subsec-divisors-2-5-2">
+<div class="para" id="subsec-divisors-2-5-2-1">
 <em class="emphasis">Generate All Divisors:</em>  To find all divisors of 220, take every combination of the prime factors raised to their respective powers:</div>
-<div class="para logical" id="subsec-divisors-2-1-2-2">
+<div class="para logical" id="subsec-divisors-2-5-2-2">
 <div class="para">Start with the powers of 2:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1119,9 +1136,9 @@ window.MathJax = {
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="subsec-divisors-2-1-2-3">
+<div class="para logical" id="subsec-divisors-2-5-2-3">
 <div class="para">The divisors are all the products of these combinations:</div>
-<div class="displaymath process-math" id="subsec-divisors-2-1-2-3-1">
+<div class="displaymath process-math" id="subsec-divisors-2-5-2-3-1">
 \begin{align*}
 2^0\times 5^0\times 11^0 \amp =1\\
 2^0\times 5^1\times 11^0 \amp =5\\
@@ -1139,7 +1156,8 @@ window.MathJax = {
 </div>
 </div>
 </li>
-</ul></div></section><section class="subsection" id="subsec-fam_pair"><h3 class="heading hide-type">
+</ul>
+</div></section><section class="subsection" id="subsec-fam_pair"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="space"> </span><span class="title">Famous prime Pairs</span>
 </h3>
 <div class="para logical" id="subsec-fam_pair-2">
