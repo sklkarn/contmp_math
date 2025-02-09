@@ -23,6 +23,7 @@
     \newcommand{\N}{\mathbb N} 
      </macros>
 
+
   <!-- If you put any latex-image elements you can include preambles -->
   <!-- for those in the next element. -->
   <latex-image-preamble> 
@@ -30,7 +31,7 @@
     \usetikzlibrary{positioning, matrix, trees, arrows} 
     \usetikzlibrary{shapes, decorations, shadows, fadings, patterns} 
     \usetikzlibrary{decorations.markings} 
-  </latex-image-preamble>
+     </latex-image-preamble>
 
  
   <!-- It is possible to rename elements: -->
