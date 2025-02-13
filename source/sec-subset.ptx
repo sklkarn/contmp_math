@@ -5,7 +5,7 @@
 <introduction>
   <p>
     If all elements of set <m>A</m> are present in set <m>B</m>, then set <m>A</m> is called a subset of set <m>B</m>.
-    It is denoted by <m>A \subseteq B</m> or <m>A \subset B.</m>In other words, 
+    It is denoted by <m>A \subseteq B</m>. In other words, 
     <em> Set <m>A</m> is a subset of <m>B</m> if every elements of <m>A</m> is also an element of <m>B </m></em> 
     even if the set <m>B</m> has same elements as set <m>A</m> has.
   </p>
@@ -14,10 +14,6 @@
     <me>B = \{1, 2, 3, 4, 5, 6, 7, 8\}</me> then 
     <me>
       A \subseteq B
-    </me>
-    or 
-    <me>
-      A \subset B
     </me>
     <notation><usage><m>A \subseteq B</m></usage><description><m>A</m> is a subset of <m>B</m></description></notation>
     <me>\{4,5,8\} \subseteq \{2, 3, 4, 5, 6, 7, 8, 9 \}</me>
@@ -54,7 +50,7 @@
  
 
 <p>
-  <term>Proper subset</term>
+  <term>Proper subset:</term>
   Proper subset has less elements than the set. For example: If 
    <me>X  =\{2,5,7\}</me> 
   and 
@@ -67,7 +63,7 @@
   </me>
   </p>
   <p>
-    If <m>A</m> is a <term>proper subset</term> of <m>B</m> then <m>A \subseteq B,</m> and <m>A \neq B.</m>
+    If <m>A</m> is a <term>proper subset</term> of <m>B</m> then <m>A \subset B,</m> and <m>A \neq B.</m>
    </p>
  
   <remark>
@@ -85,7 +81,7 @@
       </li>
       <li>
         <p>
-          If <m>A \subset B</m> and <m>B \subset A</m> then <m>A = B.</m>
+          If <m>A \subset B</m> and <m>B \subset A</m> then <m>A = B </m> and also <m>A \subseteq B.</m>
         </p>
       </li>
     </ol>
@@ -109,18 +105,20 @@
    <me>
     B \supseteq A
    </me>
-   <term> Proper Superset:</term> If Set <m>B</m> has more elements than set <m>A</m> then we can say 
-   <me>
-    B \supset A
-   </me>
-   <me>
+   
+    <me>
     \{4, 14, 24\} \supseteq \{4, 14, 24\}
    </me>
    or, 
    <me>
     \{4, 14, 24, 34, 44\} \supseteq \{4, 14, 24\}
    </me>
-   But,
+
+   <term> Proper Superset:</term> If Set <m>B</m> has more elements than set <m>A</m> then we can say 
+   <me>
+    B \supset A
+   </me>
+  For example:   
    <me>
     \{4, 14, 24, 34, 44\} \supset \{4, 14\}
    </me>
@@ -129,16 +127,17 @@
 
 
 <subsection xml:id="subsec-power_set">
-  <title>Power Set</title>
+  <title>Power Set and Cardinal Number</title>
     <p>
     The collection of all subsets of a set <m>A</m> is called the power set of <m>A.</m> It is denoted by <m>P(A).</m>
     In <m>P(A)</m>, every element is a set. i.e., 
     <me>
       P(A) = \{s : s \subseteq A\}.
     </me>
-    Since, the empty set and the set <m>A</m> itself are subsets of <m>A</m> and therefore elements of 
-    <m>P(A).</m> Thus, the power set of a given set is always non-empty.
-  </p>
+    Since, the empty set and the set <m>A</m> itself are subsets of <m>A</m> therefore the elements of 
+    <m>P(A).</m> Thus, the power set of a given set is always non-empty. 
+       The possible number of subsets of any set is called a power set. 
+     </p>
   <p>
     Example: If <m>A = \{1, 2, 3\},</m> then 
     <me>
@@ -146,13 +145,6 @@
     </me>
     </p>
 
-</subsection>
-
-<subsection xml:id="subsec-powerset">
-  <title>Power Set</title>
-  <p>
-    The possible number of subsets of any set is called a power set. 
-   </p>
   <p>
     The  <em>number of subsets</em> of a set with <m>n</m> number of elements is given by <m>|P(A)| = 2^n, </m> 
     where <m>n = 0, 1, 2, \ldots </m> is a cardinal number of the set.
@@ -299,17 +291,20 @@
 
 </subsection>
 
-<subsection xml:id="subsec-">
+<subsection xml:id="subsec-dis_set">
   <title>Disjoint Sets: </title>
   <p>
     Two sets are said to be disjoint if they do not have any common element. 
    If <m>A=\{1, 2, 3\}</m> and <m>B = \{4, 5, 6\}</m> are two disjoint sets, then <m>A \cap B = \phi </m>.
-   <remark>
-   There is a difference between the intersection of two sets and the difference of two sets. 
-   In the case of disjoint, only intersection will be considered.
-   </remark>
    The empty set is disjoint with itself. i.e., <m>\phi \cap \phi = \phi.</m>
-  </p>
+     </p>
+<warning>
+    <p>
+      There is a difference between the intersection of two sets and the difference of two sets. 
+   In the case of disjoint, only intersection will be considered.
+     </p>
+   </warning>
+
   <p>
     <term>Difference between Joint and Disjoint Sets:</term>
     If <m> X = \{1, 5, 7\}</m> and <m>Y = \{3, 5, 6\}</m>, then 
