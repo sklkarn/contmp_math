@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "Subset",
-  "body": " Subset   If all elements of set are present in set , then set is called a subset of set . It is denoted by or In other words, Set is a subset of if every elements of is also an element of even if the set has same elements as set has.  Example: If and then or  is a subset of     Note: Subset has less number of elements or equal to the set . For example: If and then or Also, if and then   If is a subset of then and    Proper subset Proper subset has less elements than the set. For example: If and then   If is a proper subset of then and       Every set is a subset of itself, .    Null set is a subset of every set,      If and then         Superset  When set is a subset of , then set is called the superset of Symbolically, .  Example:  , then and but    Superset: If Set has more elements or equal to set then we can say  Proper Superset: If Set has more elements than set then we can say  or, But,     Power Set  The collection of all subsets of a set is called the power set of It is denoted by In , every element is a set. i.e., Since, the empty set and the set itself are subsets of and therefore elements of Thus, the power set of a given set is always non-empty.  Example: If then     Power Set  The possible number of subsets of any set is called a power set.  The number of subsets of a set with number of elements is given by where is a cardinal number of the set.  However, the number of proper subsets of a set with number of elements is given by where is a cardinal number of that power set.    Universal Set   A set that contains all the elements of the related sets is called an universal set. It is denoted by . The set is a subset of universal set .   Note: If Universal set contains Sets A, B and C, then these sets are also called subsets of Universal set. Denoted by: , , and .  Example: Let the sets  and , then their Universal set is defined as     Intervals, for  In mathematics, an interval can be defined as a set of real numbers that contains all real numbers lying within any two specific numbers of the set . Interval Notation uses inequalities to represent a subset of real numbers by those numbers that bound them.  Consider an interval signified as , which means a set of numbers lying between 0 and 5 (excluding 0 but including 5) represent the value of x.   Types of Interval Notation: There are different types of notations of intervals that are classified based on the endpoints of intervals. They are: Open intervals, Closed intervals, Half-open intervals, Degenerate intervals, and Bounded and Unbounded intervals.      Open Interval:  or,         Closed Interval:  or,         Closed - open Interval:  including but excluding  or,         Open - closed Interval:  excluding but including (a, b] or,            Disjoint Sets:  Two sets are said to be disjoint if they do not have any common element. If and are two disjoint sets, then . There is a difference between the intersection of two sets and the difference of two sets. In the case of disjoint, only intersection will be considered. The empty set is disjoint with itself. i.e.,    Difference between Joint and Disjoint Sets: If and , then . Hence, X and Y are joint sets.  But, if and , then . Therefore, X and Y are disjoint sets.   "
+  "body": " Subset   If all elements of set are present in set , then set is called a subset of set . It is denoted by . In other words, Set is a subset of if every elements of is also an element of even if the set has same elements as set has.  Example: If and then  is a subset of     Note: Subset has less number of elements or equal to the set . For example: If and then or Also, if and then   If is a subset of then and    Proper subset: Proper subset has less elements than the set. For example: If and then   If is a proper subset of then and       Every set is a subset of itself, .    Null set is a subset of every set,      If and then and also         Superset  When set is a subset of , then set is called the superset of Symbolically, .  Example:  , then and but    Superset: If Set has more elements or equal to set then we can say  or,  Proper Superset: If Set has more elements than set then we can say For example:     Power Set and Cardinal Number  The collection of all subsets of a set is called the power set of It is denoted by In , every element is a set. i.e., Since, the empty set and the set itself are subsets of therefore the elements of Thus, the power set of a given set is always non-empty. The possible number of subsets of any set is called a power set.  Example: If then   The number of subsets of a set with number of elements is given by where is a cardinal number of the set.  However, the number of proper subsets of a set with number of elements is given by where is a cardinal number of that power set.    Universal Set   A set that contains all the elements of the related sets is called an universal set. It is denoted by . The set is a subset of universal set .   Note: If Universal set contains Sets A, B and C, then these sets are also called subsets of Universal set. Denoted by: , , and .  Example: Let the sets  and , then their Universal set is defined as     Intervals, for  In mathematics, an interval can be defined as a set of real numbers that contains all real numbers lying within any two specific numbers of the set . Interval Notation uses inequalities to represent a subset of real numbers by those numbers that bound them.  Consider an interval signified as , which means a set of numbers lying between 0 and 5 (excluding 0 but including 5) represent the value of x.   Types of Interval Notation: There are different types of notations of intervals that are classified based on the endpoints of intervals. They are: Open intervals, Closed intervals, Half-open intervals, Degenerate intervals, and Bounded and Unbounded intervals.      Open Interval:  or,         Closed Interval:  or,         Closed - open Interval:  including but excluding  or,         Open - closed Interval:  excluding but including (a, b] or,            Disjoint Sets:  Two sets are said to be disjoint if they do not have any common element. If and are two disjoint sets, then . The empty set is disjoint with itself. i.e.,    There is a difference between the intersection of two sets and the difference of two sets. In the case of disjoint, only intersection will be considered.    Difference between Joint and Disjoint Sets: If and , then . Hence, X and Y are joint sets.  But, if and , then . Therefore, X and Y are disjoint sets.   "
 },
 {
   "id": "sec-subset-2-3",
@@ -340,7 +340,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Proper subset "
+  "body": "Proper subset: "
 },
 {
   "id": "sec-subset-2-6",
@@ -358,7 +358,7 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "2.5.8",
   "title": "",
-  "body": "    Every set is a subset of itself, .    Null set is a subset of every set,      If and then      "
+  "body": "    Every set is a subset of itself, .    Null set is a subset of every set,      If and then and also      "
 },
 {
   "id": "subsec-superset-4",
@@ -406,18 +406,18 @@ var ptx_lunr_docs = [
   "body": "Open Interval: Closed Interval: Closed - open Interval: Open - closed Interval: "
 },
 {
-  "id": "subsec--2-4",
+  "id": "subsec-dis_set-3",
   "level": "2",
-  "url": "sec-subset.html#subsec--2-4",
-  "type": "Remark",
+  "url": "sec-subset.html#subsec-dis_set-3",
+  "type": "Warning",
   "number": "2.5.9",
   "title": "",
-  "body": "There is a difference between the intersection of two sets and the difference of two sets. In the case of disjoint, only intersection will be considered. "
+  "body": " There is a difference between the intersection of two sets and the difference of two sets. In the case of disjoint, only intersection will be considered.  "
 },
 {
-  "id": "subsec--3",
+  "id": "subsec-dis_set-4",
   "level": "2",
-  "url": "sec-subset.html#subsec--3",
+  "url": "sec-subset.html#subsec-dis_set-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
