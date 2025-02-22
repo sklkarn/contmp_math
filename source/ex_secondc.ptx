@@ -165,6 +165,26 @@
     <p>
       Draw Venn diagram for each of the following: 
       <ol marker ="i.">
+         <li>
+          <p>
+            <m>A \cup B</m>
+          </p>
+        </li>
+         <li>
+          <p>
+            <m>A \cap B</m>
+          </p>
+        </li>
+         <li>
+          <p>
+            <m>A'</m>
+          </p>
+        </li>
+         <li>
+          <p>
+            <m>A-B</m>
+          </p>
+        </li>
         <li>
           <p>
             <m>(A \cup B)'</m>

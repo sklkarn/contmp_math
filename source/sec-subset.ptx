@@ -207,8 +207,7 @@
           </p>
 
     <image width="25%" xml:id="set_intrvla">
-  
-  <latex-image >
+    <latex-image >
   \begin{tikzpicture}
   \draw (0,0) -- (2,0);
   \draw [] (0.5,0) circle [radius=0.1];
@@ -218,9 +217,8 @@
    \end{tikzpicture}
   </latex-image>
     </image>
-
-
       </li>
+
       <li>
         <p>
           <term>Closed Interval: </term>
@@ -279,9 +277,8 @@
            \end{tikzpicture}
           </latex-image>
             </image>
-
       </li>
-    </ol>
+         </ol>
   </p>
 
 

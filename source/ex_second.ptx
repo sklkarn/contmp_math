@@ -11,7 +11,7 @@
         <ol marker="a.">
           <li> Set of odd natural numbers divisible by 2.</li>
           <li>Set of even prime numbers  </li>
-          <li><m>\{ x: x \text{ is a natural n umbers, } x \lt 5 \text{ and} x \gt 7 \}</m> </li>
+          <li><m>\{ x: x \lt 5 \text{ and } x \gt 7, x \in {\mathbb N}\}</m> </li>
           <li><m>\{ y: y \text{ is a point commmon to any two parallel lines} \}</m> </li>
         </ol>
       </p>

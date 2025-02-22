@@ -27,7 +27,7 @@
      </p>
 
   <figure>
-    <caption> i. Set A <m>\quad</m> ii. Set <m>A\cup B</m> </caption>
+    <caption> i. Set A <m>\hspace{5cm} </m>  ii. Set <m>A\cup B</m> </caption>
     <sidebyside widths="40% 40%"> 
      <image width="25%" xml:id="set_ven_A">
          <latex-image >
@@ -55,7 +55,7 @@
 
 
   <figure>
-    <caption> i. Set <m>A\cap B</m> <m>\quad</m> ii. Set <m>A'=A^c=\bar{A}</m> </caption>
+    <caption> i. Set <m>A\cap B</m> <m>\hspace{4cm} </m> ii. Set <m>A'=A^c=\bar{A}</m> </caption>
     <sidebyside widths="40% 40%"> 
       <image width="25%" xml:id="set_ven_AIB">
   
@@ -96,7 +96,7 @@
 
 
   <figure>
-    <caption> i. Set <m>A-B</m> <m>\quad</m> ii. Set <m>(A\cup B)'</m> </caption>
+    <caption> i. Set <m>A-B = A\cap B' </m> <m>\hspace{3cm} </m> ii. Set <m>(A\cup B)'= A'\cap B'</m></caption>
     <sidebyside widths="40% 40%"> 
       <image width="25%" xml:id="set_ven_A-B">
   
@@ -132,11 +132,13 @@
   </figure>  
 
 
-   <p>
-    Set <m>(A\cap B)'</m>
-   </p>   
+    <p>
+      Set <m>(A\cap B)'</m>
+   </p> 
   <image width="25%" xml:id="set_ven_comp-AIB">
-  
+   
+   
+
     <latex-image >
      \begin{tikzpicture}
      
@@ -209,7 +211,7 @@
       <image source="AUBc.png"/>
   </figure>
   <figure xml:id="fig-AIBc">
-    <caption>Set <m>(A\cap B)'=A'\cup B'</m></caption>
+    <caption>Set <m>(A\cap B)'= A'\cup B'</m></caption>
     <image source="AIBc.png" />
   </figure>
       </sidebyside>
@@ -239,7 +241,7 @@
         <image source="AICUBIC.png" width = "40%"/>
   </figure>
   <figure xml:id="fig-AIBUC">
-    <caption><m>A\cap (B\cup C)= (A\cap B)\cup(A\cap C)</m></caption>
+    <caption><m>A\cap (B\cup C)=(A\cap B)\cup(A\cap C)</m></caption>
     <image source="AIBUC.png" />
   </figure>
       </sidebyside>
@@ -250,11 +252,11 @@
     <caption> </caption>
     <sidebyside widths="40% 40%"> 
       <figure xml:id="fig-ASB">
-        <caption> <m>(A \subset B )</m></caption>
+        <caption> <m>(B \subset A )</m></caption>
         <image source="ASB.png" width = "40%"/>
   </figure>
   <figure xml:id="fig-AcIB">
-    <caption><m>A'\cap B </m> (Just B) </caption>
+    <caption><m>A'\cap B </m> </caption>
     <image source="AcIB.png" />
   </figure>
       </sidebyside>
@@ -300,11 +302,11 @@
         <image source="AUBcc.png" width = "40%"/>
   </figure>
   <figure xml:id="fig-AIBcc">
-    <caption><m>A\cap B' </m> (Just A) </caption>
+    <caption><m>A\cap B' </m>  = <m>A-B</m></caption>
     <image source="AIBcc.png" />
   </figure>
   <figure xml:id="fig-AccIB">
-    <caption><m>A'\cap B </m> (Just B) </caption>
+    <caption><m>A'\cap B </m>  </caption>
     <image source="AccIB.png" />
   </figure>
       </sidebyside>
