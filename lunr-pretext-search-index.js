@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.8",
   "title": "Venn Diagram",
-  "body": " Venn Diagram   It is used to represent all possible relations of different sets. It can be represented by any closed figure, (a Circle or a Polygon) but usually circles are prefered for each set. Venn-Diagram of Universal set including sets and are drawn below.     Some more set examples:   i. Set A ii. Set             i. Set  ii. Set             i. Set  ii. Set            Set        Venn Diagram using checkmarks  Put tick marks in the set cirecles and rectangle of Venn diagram according to set operations and shade them once all the ticks are put. Shade only for each ticks regions for union set operation, shade only double or triple ticks for intersection set operation, and shade the regions where no ticks are made for complement set operation or make your own policy on how to shade the region for set operation.       Set A     Set A'           Set     Set           Set     Set           Set     Set                              (Just B)                                                (Just A)     (Just B)       "
+  "body": " Venn Diagram   It is used to represent all possible relations of different sets. It can be represented by any closed figure, (a Circle or a Polygon) but usually circles are prefered for each set. Venn-Diagram of Universal set including sets and are drawn below.     Some more set examples:   i. Set A ii. Set             i. Set  ii. Set             i. Set  ii. Set           Set        Venn Diagram using checkmarks  Put tick marks in the set cirecles and rectangle of Venn diagram according to set operations and shade them once all the ticks are put. Shade only for each ticks regions for union set operation, shade only double or triple ticks for intersection set operation, and shade the regions where no ticks are made for complement set operation or make your own policy on how to shade the region for set operation.       Set A     Set A'           Set     Set           Set     Set           Set     Set                                                                              =            "
 },
 {
   "id": "sec-set_venn-2-1",
@@ -601,7 +601,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "2.8.12",
   "title": "",
-  "body": " i. Set  ii. Set           "
+  "body": " i. Set  ii. Set          "
 },
 {
   "id": "subsec-ven_b-3",
@@ -655,7 +655,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "2.8.18",
   "title": "",
-  "body": "          (Just B)     "
+  "body": "               "
 },
 {
   "id": "subsec-ven_b-9",
@@ -682,7 +682,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "2.8.21",
   "title": "",
-  "body": "          (Just A)     (Just B)     "
+  "body": "          =          "
 },
 {
   "id": "sec_set-exampleB",
@@ -862,7 +862,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "2.10",
   "title": "Exercise C",
-  "body": "  Exercise C   Let , , , and , find                                    If , find the complements of the following sets:                          Taking the set of natural numbers as the universal set, write the components of the following sets:                                                             If , , and , verify that                Draw Venn diagram for each of the following:                          If and are two sets such that  and Find     If and are two sets such that has 18 elements, has 8 elements and has 15 elements. How many elements does have?    If and are two sets such that has 21 elements, has 32 elements, and has 11 elements, how many elements does have?    If and are two sets such that has 40 elements, has 60 elements, and has 10 elements, how many elements does have?   "
+  "body": "  Exercise C   Let , , , and , find                                    If , find the complements of the following sets:                          Taking the set of natural numbers as the universal set, write the components of the following sets:                                                             If , , and , verify that                Draw Venn diagram for each of the following:                                              If and are two sets such that  and Find     If and are two sets such that has 18 elements, has 8 elements and has 15 elements. How many elements does have?    If and are two sets such that has 21 elements, has 32 elements, and has 11 elements, how many elements does have?    If and are two sets such that has 40 elements, has 60 elements, and has 10 elements, how many elements does have?   "
 },
 {
   "id": "ex_secondc-2",
@@ -907,7 +907,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.10.5",
   "title": "",
-  "body": " Draw Venn diagram for each of the following:                        "
+  "body": " Draw Venn diagram for each of the following:                                            "
 },
 {
   "id": "ex_secondc-7",
