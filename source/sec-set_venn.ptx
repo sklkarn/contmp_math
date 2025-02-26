@@ -73,7 +73,8 @@
          \end{tikzpicture}
         </latex-image>
           </image>
-            
+
+
   <image width="25%" xml:id="set_ven_A-comp">
   
     <latex-image >
@@ -82,7 +83,7 @@
 \clip (-1.5,-1.5) rectangle (2.5,1.5)
       (0,0) circle (1);
 \fill (1,0) circle (1);
-\fill [gray] (-1.5,-1.5) rectangle (2.5,1.5);
+\fill [cyan] (-1.5,-1.5) rectangle (2.5,1.5);
 \endscope
 \draw (0,0) circle (1) (0,1)  node [text=black,above] {$A$}
       (1,0) circle (1) (1,1)  node [text=black,above] {$B$}
@@ -131,18 +132,13 @@
       </sidebyside>
   </figure>  
 
-
-    <p>
-      Set <m>(A\cap B)'</m>
-   </p> 
-  <image width="25%" xml:id="set_ven_comp-AIB">
-   
-   
-
-    <latex-image >
+<figure>
+    <caption> Set <m>(A\cap B)'</m></caption>
+    <image width="35%" xml:id="set_ven_comp-AIB">
+ 
+   <latex-image >
      \begin{tikzpicture}
-     
-     \filldraw[fill=gray] (-1.5,-1.5) rectangle (2.5,1.5) ;
+     \filldraw[cyan, opacity=0.7] (-1.5,-1.5) rectangle (2.5,1.5) ;
      \scope % A \cap B
      \clip (0,0) circle (1);
      \fill[white] (1,0) circle (1);
@@ -153,6 +149,7 @@
      \end{tikzpicture}
     </latex-image>
       </image>
+ </figure>  
 
   </introduction>
    
@@ -241,7 +238,7 @@
         <image source="AICUBIC.png" width = "40%"/>
   </figure>
   <figure xml:id="fig-AIBUC">
-    <caption><m>A\cap (B\cup C)=(A\cap B)\cup(A\cap C)</m></caption>
+    <caption><m>A\cap (B\cup C)</m></caption>
     <image source="AIBUC.png" />
   </figure>
       </sidebyside>

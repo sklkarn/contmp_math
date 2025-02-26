@@ -174,9 +174,10 @@
 <example>
   <statement>
     <p>
-      If <m>A = \{x : x \text{is a natural number}\}</m>, 
-      <m>B = \{x : x \text{is an even natural number}\}</m>, <m>C = \{x : x \text{is an odd natural number}\}</m>, 
-      and <m>D = \{x : x \text{is a prime number}\}</m>, find 
+      If <m>A = \{x : x \text{ is a natural number}\}</m>, 
+      <m>B = \{x : x \text{ is an even natural number}\}</m>, 
+      <m>C = \{x : x \text{ is an odd natural number}\}</m>, 
+      and <m>D = \{x : x \text{ is a prime number}\}</m>, find 
       <ol marker ="i.">
         <li>
           <p>

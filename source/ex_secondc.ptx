@@ -251,6 +251,59 @@
   </statement>
 </exercise>
 
+<exercise>
+  <statement>
+    <p>
+      Write description of the given Venn diagram.
+    </p>
+
+  
+    <figure xml:id="fig-vnn">
+      <caption>Venn Diagram for three sets.</caption>
+           <image source="vnn.png" width="40%"/>
+            <shortdescription>Descriptions of the set is written in the respective places.</shortdescription>
+  </figure>
+  </statement>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+      Draw the Venn diagram for the following descriptions:
+      <ol>
+        <li>
+          <p>
+              <m>A\cup (B\cap C)'</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+             <m>(A\cap C)\cap B'</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>B' \cap C </m>.
+          </p>
+        </li>
+        <li>
+          <p>
+              <m>(A\cap B) \cup C </m>.
+          </p>
+        </li>
+        <li>
+          <p>
+             <m>(A'\cup B) </m>.
+          </p>
+        </li>
+      </ol>
+     
+    </p>
+     </statement>
+</exercise>
+
+
 
 </exercises>
 
