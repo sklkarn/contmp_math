@@ -33,15 +33,19 @@
                      </p>
                      <p>
                      Total Ways = Number of Ways to Draw a Heart + Number of Ways to Draw a King. 
+                     <note>
+                        <m>n(A\cup B) = n(A) + n(B) - n(A\cap B)</m>
+                      </note>
                     </p>
                     <p>
-                      Total Ways = 13 (hearts) + 4 (Kings). 
-                          </p>
+                      Total Ways = 13 (hearts) + 4 (Kings) - 1 King of hearts. 
+                       </p>
+                       
                          <p>
-                          Total Ways = 17 ways. 
+                          Total Ways = 16 ways. 
                                   </p>
                                   <p>
-                                    There are 17 ways to draw a card that is either a heart or a King from a standard deck.
+                                    There are 16 ways to draw a card that is either a heart or a King from a standard deck.
                                   </p>
                    </solution>
    </example>
